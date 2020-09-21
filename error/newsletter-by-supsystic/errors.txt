@@ -1,0 +1,45 @@
+
+modules/mail/engines/PHPMailerAutoload.php
+FILE: classes/html.php
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 432 | ERROR | Indirect access to variables, properties and methods will be evaluated strictly in left-to-right order since PHP 7.0. Use curly braces to remove ambiguity.
+     |       | (PHPCompatibility.Variables.NewUniformVariableSyntax.Found)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+FILE: functions.php
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 1 LINE
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 246 | ERROR | Extension 'ereg' is deprecated since PHP 5.3 and removed since PHP 7.0; Use pcre instead (PHPCompatibility.Extensions.RemovedExtensions.eregDeprecatedRemoved)
+ 246 | ERROR | Function ereg_replace() is deprecated since PHP 5.3 and removed since PHP 7.0; Use preg_replace() instead
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.ereg_replaceDeprecatedRemoved)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+FILE: modules/mail/engines/class.phpmailer.php
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+FOUND 5 ERRORS AFFECTING 5 LINES
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 2649 | ERROR | Function get_magic_quotes_runtime() is deprecated since PHP 7.4 and removed since PHP 8.0
+      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_runtimeDeprecatedRemoved)
+ 2652 | ERROR | Function set_magic_quotes_runtime() is deprecated since PHP 5.3 and removed since PHP 7.0
+      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.set_magic_quotes_runtimeDeprecatedRemoved)
+ 2657 | ERROR | INI directive 'magic_quotes_runtime' is deprecated since PHP 5.3 and removed since PHP 5.4
+      |       | (PHPCompatibility.IniDirectives.RemovedIniDirectives.magic_quotes_runtimeDeprecatedRemoved)
+ 2664 | ERROR | Function set_magic_quotes_runtime() is deprecated since PHP 5.3 and removed since PHP 7.0
+      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.set_magic_quotes_runtimeDeprecatedRemoved)
+ 2666 | ERROR | INI directive 'magic_quotes_runtime' is deprecated since PHP 5.3 and removed since PHP 5.4
+      |       | (PHPCompatibility.IniDirectives.RemovedIniDirectives.magic_quotes_runtimeDeprecatedRemoved)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+FILE: modules/mail/engines/PHPMailerAutoload.php
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 45 | ERROR | Specifying an autoloader using an __autoload() function is deprecated since PHP 7.2 and no longer supported since PHP 8.0
+    |       | (PHPCompatibility.FunctionNameRestrictions.RemovedMagicAutoload.Removed)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
