@@ -1,0 +1,38 @@
+::warning::Plugin: https://wordpress.org/plugins/sermon-browser/%0ATrac: https://plugins.trac.wordpress.org/browser/sermon-browser/
+No syntax errors detected in sermon-browser/sermon-browser/sb-includes/admin.php
+No syntax errors detected in sermon-browser/sermon-browser/sb-includes/ajax.php
+No syntax errors detected in sermon-browser/sermon-browser/sb-includes/dictionary.php
+No syntax errors detected in sermon-browser/sermon-browser/sb-includes/filetypes.php
+No syntax errors detected in sermon-browser/sermon-browser/sb-includes/frontend.php
+No syntax errors detected in sermon-browser/sermon-browser/sb-includes/podcast.php
+No syntax errors detected in sermon-browser/sermon-browser/sb-includes/sb-install.php
+No syntax errors detected in sermon-browser/sermon-browser/sb-includes/style.php
+No syntax errors detected in sermon-browser/sermon-browser/sb-includes/uninstall.php
+No syntax errors detected in sermon-browser/sermon-browser/sb-includes/upgrade.php
+No syntax errors detected in sermon-browser/sermon-browser/sb-includes/widget.php
+No syntax errors detected in sermon-browser/sermon-browser/sermon.php
+[31mE[0m...[31mE[0m....... 12 / 12 (100%)
+
+
+
+[1mFILE: sb-includes/admin.php[0m
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 1550 | [31mERROR[0m | [1mpreg_replace() - /e modifier is deprecated since PHP 5.5 and removed since PHP 7.0[0m
+      |       | (PHPCompatibility.ParameterValues.RemovedPCREModifiers.Removed)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+[1mFILE: sb-includes/frontend.php[0m
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[1mFOUND 2 ERRORS AFFECTING 2 LINES[0m
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 279 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse order to implode has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first
+     |       | parameter and $pieces the second[0m (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
+ 732 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse order to implode has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first
+     |       | parameter and $pieces the second[0m (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Time: 835ms; Memory: 28MB
+::error::FILE: sb-includes/admin.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 1550 | ERROR | preg_replace() - /e modifier is deprecated since PHP 5.5 and removed since PHP 7.0%0A      |       | (PHPCompatibility.ParameterValues.RemovedPCREModifiers.Removed)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: sb-includes/frontend.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 279 | ERROR | Passing the $glue and $pieces parameters in reverse order to implode has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first%0A     |       | parameter and $pieces the second (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A 732 | ERROR | Passing the $glue and $pieces parameters in reverse order to implode has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first%0A     |       | parameter and $pieces the second (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
