@@ -1,0 +1,39 @@
+::warning::Plugin: https://wordpress.org/plugins/wpdeepl/%0ATrac: https://plugins.trac.wordpress.org/browser/wpdeepl/
+No syntax errors detected in wpdeepl/wpdeepl/admin/deepl-admin-functions.php
+No syntax errors detected in wpdeepl/wpdeepl/admin/deepl-admin-hooks.php
+No syntax errors detected in wpdeepl/wpdeepl/admin/deepl-metabox.php
+No syntax errors detected in wpdeepl/wpdeepl/client/deeplapi.class.php
+No syntax errors detected in wpdeepl/wpdeepl/client/deeplapi-functions.php
+No syntax errors detected in wpdeepl/wpdeepl/client/deeplapi-translate.class.php
+No syntax errors detected in wpdeepl/wpdeepl/client/deeplapi-usage.class.php
+No syntax errors detected in wpdeepl/wpdeepl/client/deepl-data.class.php
+No syntax errors detected in wpdeepl/wpdeepl/deepl-configuration.class.php
+No syntax errors detected in wpdeepl/wpdeepl/includes/deepl-functions.php
+No syntax errors detected in wpdeepl/wpdeepl/includes/deepl-plugin-install.php
+No syntax errors detected in wpdeepl/wpdeepl/settings/wp-improved-settings-api.class.php
+No syntax errors detected in wpdeepl/wpdeepl/settings/wp-improved-settings.class.php
+No syntax errors detected in wpdeepl/wpdeepl/settings/wp-improved-settings-wpdeepl.class.php
+No syntax errors detected in wpdeepl/wpdeepl/wpdeepl.php
+...[31mE[0m...[31mE[0m....... 15 / 15 (100%)
+
+
+
+[1mFILE: client/deeplapi.class.php[0m
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 138 | [31mERROR[0m | [1m"$this" can no longer be used in a plain function or method since PHP 7.1.[0m
+     |       | (PHPCompatibility.Variables.ForbiddenThisUseContexts.OutsideObjectContext)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+[1mFILE: client/deepl-data.class.php[0m
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 102 | [31mERROR[0m | [1mPassing the encoding to mb_strrpos() as third parameter is soft deprecated since PHP 5.2, hard deprecated since PHP 7.4 and removed since PHP 8.0. Use an explicit 0
+     |       | as the offset in the third parameter.[0m (PHPCompatibility.ParameterValues.RemovedMbStrrposEncodingThirdParam.Removed)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Time: 438ms; Memory: 18MB
+::error::FILE: client/deeplapi.class.php%0A---------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A---------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 138 | ERROR | "$this" can no longer be used in a plain function or method since PHP 7.1.%0A     |       | (PHPCompatibility.Variables.ForbiddenThisUseContexts.OutsideObjectContext)%0A---------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: client/deepl-data.class.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 102 | ERROR | Passing the encoding to mb_strrpos() as third parameter is soft deprecated since PHP 5.2, hard deprecated since PHP 7.4 and removed since PHP 8.0. Use an explicit 0%0A     |       | as the offset in the third parameter. (PHPCompatibility.ParameterValues.RemovedMbStrrposEncodingThirdParam.Removed)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
