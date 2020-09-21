@@ -1,0 +1,33 @@
+::warning::Plugin: https://wordpress.org/plugins/pulsemaps/%0ATrac: https://plugins.trac.wordpress.org/browser/pulsemaps/
+No syntax errors detected in pulsemaps/pulsemaps/pm-config.php
+No syntax errors detected in pulsemaps/pulsemaps/pm-proxy.php
+No syntax errors detected in pulsemaps/pulsemaps/pm-register.php
+No syntax errors detected in pulsemaps/pulsemaps/pm-settings-page.php
+No syntax errors detected in pulsemaps/pulsemaps/pm-util.php
+No syntax errors detected in pulsemaps/pulsemaps/pm-widget.php
+No syntax errors detected in pulsemaps/pulsemaps/pulsemaps.php
+....[31mE[0m[31mE[0m. 7 / 7 (100%)
+
+
+
+[1mFILE: pm-util.php[0m
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 19 | [31mERROR[0m | [1mINI directive 'track_errors' is deprecated since PHP 7.2 and removed since PHP 8.0[0m
+    |       | (PHPCompatibility.IniDirectives.RemovedIniDirectives.track_errorsDeprecatedRemoved)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+[1mFILE: pm-widget.php[0m
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[1mFOUND 2 ERRORS AFFECTING 2 LINES[0m
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 21 | [31mERROR[0m | [1mDeclaration of a PHP4 style class constructor is deprecated since PHP 7.0 and removed since PHP 8.0[0m
+    |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+ 96 | [31mERROR[0m | [1mFunction create_function() is deprecated since PHP 7.2 and removed since PHP 8.0; Use an anonymous function instead[0m
+    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Time: 123ms; Memory: 12MB
+::error::FILE: pm-util.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 19 | ERROR | INI directive 'track_errors' is deprecated since PHP 7.2 and removed since PHP 8.0%0A    |       | (PHPCompatibility.IniDirectives.RemovedIniDirectives.track_errorsDeprecatedRemoved)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: pm-widget.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 21 | ERROR | Declaration of a PHP4 style class constructor is deprecated since PHP 7.0 and removed since PHP 8.0%0A    |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)%0A 96 | ERROR | Function create_function() is deprecated since PHP 7.2 and removed since PHP 8.0; Use an anonymous function instead%0A    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
