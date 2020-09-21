@@ -1,0 +1,180 @@
+
+includes/classes/class.upload.php
+
+includes/lib/class.upload.php
+
+modules/emailtemplate/model.php
+
+modules/job/model.php
+
+modules/jsjobs/model.php
+
+modules/resume/controller.php
+FILE: includes/classes/class.upload.php
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 2718 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $size{strlen($size)-1}
+      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+FILE: includes/lib/class.upload.php
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 2572 | ERROR | [ ] Declaration of a PHP4 style class constructor is deprecated since PHP 7.0 and removed since PHP 8.0
+      |       |     (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+ 3224 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $size{strlen($size) - 1}
+      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+FILE: includes/lib/pclzip.lib.php
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+FOUND 3 ERRORS AFFECTING 3 LINES
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 5345 | ERROR | Function get_magic_quotes_runtime() is deprecated since PHP 7.4 and removed since PHP 8.0
+      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_runtimeDeprecatedRemoved)
+ 5349 | ERROR | Function set_magic_quotes_runtime() is deprecated since PHP 5.3 and removed since PHP 7.0
+      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.set_magic_quotes_runtimeDeprecatedRemoved)
+ 5380 | ERROR | Function set_magic_quotes_runtime() is deprecated since PHP 5.3 and removed since PHP 7.0
+      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.set_magic_quotes_runtimeDeprecatedRemoved)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+FILE: modules/common/model.php
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 530 | ERROR | Function create_function() is deprecated since PHP 7.2 and removed since PHP 8.0; Use an anonymous function instead
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+FILE: modules/emailtemplate/model.php
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+FOUND 21 ERRORS AFFECTING 21 LINES
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+   71 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found:
+      |       |     $matcharray{'{COMPANY_LINK}'} (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+  300 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $matcharray{'{JOB_LINK}'}
+      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+  440 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $matcharray{'{JOB_LINK}'}
+      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+  498 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $matcharray{'{JOB_LINK}'}
+      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+  561 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $matcharray{'{JOB_LINK}'}
+      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+  624 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found:
+      |       |     $matcharray{'{RESUME_LINK}'} (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+  696 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found:
+      |       |     $matcharray{'{RESUME_LINK}'} (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+  697 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found:
+      |       |     $matcharray{'{RESUME_STATUS}'} (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+  698 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found:
+      |       |     $matcharray{'{RESUME_CREDITS}'} (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+  774 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found:
+      |       |     $matcharray{'{RESUME_LINK}'} (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+  775 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found:
+      |       |     $matcharray{'{RESUME_STATUS}'} (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+  776 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found:
+      |       |     $matcharray{'{RESUME_CREDITS}'} (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+  855 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found:
+      |       |     $matcharray{'{RESUME_LINK}'} (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+  856 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found:
+      |       |     $matcharray{'{RESUME_STATUS}'} (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+  857 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found:
+      |       |     $matcharray{'{RESUME_CREDITS}'} (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+  904 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found:
+      |       |     $matcharray{'{RESUME_LINK}'} (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+  973 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found:
+      |       |     $matcharray{'{PACKAGE_LINK}'} (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 1018 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found:
+      |       |     $matcharray{'{PACKAGE_LINK}'} (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 1215 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found:
+      |       |     $matcharray{'{CONTROL_PANEL_LINK}'} (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 1257 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found:
+      |       |     $matcharray{'{CONTROL_PANEL_LINK}'} (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 1447 | ERROR | [ ] Function create_function() is deprecated since PHP 7.2 and removed since PHP 8.0; Use an anonymous function instead
+      |       |     (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 20 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+FILE: modules/job/model.php
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 1 LINE
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 2281 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $id{0}
+      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 2281 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $id{1}
+      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+FILE: modules/jsjobs/model.php
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+FOUND 4 ERRORS AFFECTING 1 LINE
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 915 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $lang_name{0}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 915 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $lang_name{1}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 915 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $k{0}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 915 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $k{1}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 4 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+FILE: modules/report/tmpl/fpdf.php
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+FOUND 3 ERRORS AFFECTING 3 LINES
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  79 | ERROR | Declaration of a PHP4 style class constructor is deprecated since PHP 7.0 and removed since PHP 8.0
+     |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+ 949 | ERROR | Function get_magic_quotes_runtime() is deprecated since PHP 7.4 and removed since PHP 8.0
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_runtimeDeprecatedRemoved)
+ 950 | ERROR | Function set_magic_quotes_runtime() is deprecated since PHP 5.3 and removed since PHP 7.0
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.set_magic_quotes_runtimeDeprecatedRemoved)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+FILE: modules/resume/controller.php
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+FOUND 5 ERRORS AFFECTING 2 LINES
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  44 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $id{0}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+  44 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $id{1}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 125 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $resumeid{0}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 125 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $resumeid{1}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 125 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $resumeid{2}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 5 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+FILE: modules/resume/tmpl/tfpdf.php
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 1154 | ERROR | Function get_magic_quotes_runtime() is deprecated since PHP 7.4 and removed since PHP 8.0
+      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_runtimeDeprecatedRemoved)
+ 1155 | ERROR | Function set_magic_quotes_runtime() is deprecated since PHP 5.3 and removed since PHP 7.0
+      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.set_magic_quotes_runtimeDeprecatedRemoved)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
