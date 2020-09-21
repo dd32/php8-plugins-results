@@ -1,0 +1,34 @@
+::warning::Plugin: https://wordpress.org/plugins/duplicate-and-merge-posts/%0ATrac: https://plugins.trac.wordpress.org/browser/duplicate-and-merge-posts/
+No syntax errors detected in duplicate-and-merge-posts/duplicate-and-merge-posts/admin/class.settings-api.php
+No syntax errors detected in duplicate-and-merge-posts/duplicate-and-merge-posts/admin/duplicate-post.php
+No syntax errors detected in duplicate-and-merge-posts/duplicate-and-merge-posts/admin/php_diff/Diff/Renderer/Abstract.php
+Errors parsing duplicate-and-merge-posts/duplicate-and-merge-posts/admin/php_diff/Diff/Renderer/Html/Array.php
+No syntax errors detected in duplicate-and-merge-posts/duplicate-and-merge-posts/admin/php_diff/Diff/Renderer/Html/Inline.php
+No syntax errors detected in duplicate-and-merge-posts/duplicate-and-merge-posts/admin/php_diff/Diff/Renderer/Html/SideBySide.php
+No syntax errors detected in duplicate-and-merge-posts/duplicate-and-merge-posts/admin/php_diff/Diff/Renderer/Text/Context.php
+No syntax errors detected in duplicate-and-merge-posts/duplicate-and-merge-posts/admin/php_diff/Diff/Renderer/Text/Unified.php
+No syntax errors detected in duplicate-and-merge-posts/duplicate-and-merge-posts/admin/php_diff/Diff/SequenceMatcher.php
+No syntax errors detected in duplicate-and-merge-posts/duplicate-and-merge-posts/admin/php_diff/Diff.php
+No syntax errors detected in duplicate-and-merge-posts/duplicate-and-merge-posts/admin/settings.php
+No syntax errors detected in duplicate-and-merge-posts/duplicate-and-merge-posts/duplicate-and-merge-posts.php
+No syntax errors detected in duplicate-and-merge-posts/duplicate-and-merge-posts/index.php
+::error::%0Aadmin/php_diff/Diff/Renderer/Html/Array.php
+...[32mE[0m......... 13 / 13 (100%)
+
+
+
+[1mFILE: admin/php_diff/Diff/Renderer/Html/Array.php[0m
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[1mFOUND 3 ERRORS AFFECTING 2 LINES[0m
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 153 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $fromLine{$start}[0m
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 153 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $toLine{$start}[0m
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 180 | [31mERROR[0m | [ ] [1mpreg_replace() - /e modifier is deprecated since PHP 5.5 and removed since PHP 7.0[0m (PHPCompatibility.ParameterValues.RemovedPCREModifiers.Removed)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[1mPHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Time: 412ms; Memory: 18MB
+::error::FILE: admin/php_diff/Diff/Renderer/Html/Array.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 3 ERRORS AFFECTING 2 LINES%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 153 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $fromLine{$start}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 153 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $toLine{$start}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 180 | ERROR | [ ] preg_replace() - /e modifier is deprecated since PHP 5.5 and removed since PHP 7.0 (PHPCompatibility.ParameterValues.RemovedPCREModifiers.Removed)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0APHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
