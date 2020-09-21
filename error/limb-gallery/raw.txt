@@ -1,0 +1,61 @@
+::warning::Plugin: https://wordpress.org/plugins/limb-gallery/%0ATrac: https://plugins.trac.wordpress.org/browser/limb-gallery/
+No syntax errors detected in limb-gallery/limb-gallery/admin/controllers/Controller.php
+No syntax errors detected in limb-gallery/limb-gallery/admin/controllers/LimbGalleryThumbnailWidgetController.php
+No syntax errors detected in limb-gallery/limb-gallery/admin/models/Model.php
+No syntax errors detected in limb-gallery/limb-gallery/admin/views/ViewGalleries.php
+No syntax errors detected in limb-gallery/limb-gallery/admin/views/ViewShortcode.php
+No syntax errors detected in limb-gallery/limb-gallery/ajax/GRSAdminActions.php
+No syntax errors detected in limb-gallery/limb-gallery/ajax/GRSCaptcha.php
+No syntax errors detected in limb-gallery/limb-gallery/ajax/GRSComment.php
+No syntax errors detected in limb-gallery/limb-gallery/ajax/GRSGalleryAjax.php
+No syntax errors detected in limb-gallery/limb-gallery/ajax/GRSGetCarousel3dCss.php
+No syntax errors detected in limb-gallery/limb-gallery/ajax/GRSGetFilmCss.php
+No syntax errors detected in limb-gallery/limb-gallery/ajax/GRSGetFrontendData.php
+No syntax errors detected in limb-gallery/limb-gallery/ajax/GRSGetLightboxCss.php
+No syntax errors detected in limb-gallery/limb-gallery/ajax/GRSGetMasonryCss.php
+No syntax errors detected in limb-gallery/limb-gallery/ajax/GRSGetMosaicCss.php
+No syntax errors detected in limb-gallery/limb-gallery/ajax/GRSGetNavigationCss.php
+No syntax errors detected in limb-gallery/limb-gallery/ajax/GRSGetThumbnailCss.php
+No syntax errors detected in limb-gallery/limb-gallery/ajax/GRSShare.php
+No syntax errors detected in limb-gallery/limb-gallery/database/GRSGalleryCreate.php
+No syntax errors detected in limb-gallery/limb-gallery/database/GRSGalleryInsert.php
+No syntax errors detected in limb-gallery/limb-gallery/database/GRSGalleryUninstall.php
+No syntax errors detected in limb-gallery/limb-gallery/database/GRSGalleryUpdate.php
+No syntax errors detected in limb-gallery/limb-gallery/embed/GRSGalleryEmbed.php
+No syntax errors detected in limb-gallery/limb-gallery/frontend/controllers/Controller.php
+No syntax errors detected in limb-gallery/limb-gallery/frontend/models/Model.php
+No syntax errors detected in limb-gallery/limb-gallery/frontend/views/ViewAlbum.php
+No syntax errors detected in limb-gallery/limb-gallery/frontend/views/ViewFilm.php
+No syntax errors detected in limb-gallery/limb-gallery/frontend/views/ViewMasonry.php
+No syntax errors detected in limb-gallery/limb-gallery/frontend/views/ViewThumbnail.php
+No syntax errors detected in limb-gallery/limb-gallery/gallery-rs.php
+No syntax errors detected in limb-gallery/limb-gallery/js/localizations/admin.php
+No syntax errors detected in limb-gallery/limb-gallery/js/localizations/frontend.php
+No syntax errors detected in limb-gallery/limb-gallery/smart/GRSGallerySmart.php
+No syntax errors detected in limb-gallery/limb-gallery/uploader/index.php
+No syntax errors detected in limb-gallery/limb-gallery/uploader/UploadHandler.php
+.....[31mE[0m............................[31mE[0m 35 / 35 (100%)
+
+
+
+[1mFILE: ajax/GRSAdminActions.php[0m
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[1mFOUND 2 ERRORS AFFECTING 2 LINES[0m
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  62 | [31mERROR[0m | [1mFunction create_function() is deprecated since PHP 7.2 and removed since PHP 8.0; Use an anonymous function instead[0m
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
+ 920 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse order to implode has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first
+     |       | parameter and $pieces the second[0m (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+[1mFILE: uploader/UploadHandler.php[0m
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 1145 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse order to implode has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first
+      |       | parameter and $pieces the second[0m (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Time: 1.94 secs; Memory: 30MB
+::error::FILE: ajax/GRSAdminActions.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A  62 | ERROR | Function create_function() is deprecated since PHP 7.2 and removed since PHP 8.0; Use an anonymous function instead%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)%0A 920 | ERROR | Passing the $glue and $pieces parameters in reverse order to implode has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first%0A     |       | parameter and $pieces the second (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: uploader/UploadHandler.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 1145 | ERROR | Passing the $glue and $pieces parameters in reverse order to implode has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first%0A      |       | parameter and $pieces the second (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
