@@ -1,0 +1,37 @@
+
+extensive-vc.php
+  Warning: The magic method Extensive_VC_Addon::__sleep() must have public visibility on line 48
+  Warning: The magic method Extensive_VC_Addon::__wakeup() must have public visibility on line 54
+
+post-types/post-types-class.php
+  Warning: The magic method ExtensiveVC\CPT\PostTypesClass::__sleep() must have public visibility on line 46
+  Warning: The magic method ExtensiveVC\CPT\PostTypesClass::__wakeup() must have public visibility on line 52
+
+shortcodes/shortcodes-class.php
+  Warning: The magic method ExtensiveVC\Shortcodes\ShortcodesClass::__sleep() must have public visibility on line 46
+  Warning: The magic method ExtensiveVC\Shortcodes\ShortcodesClass::__wakeup() must have public visibility on line 52
+FILE: extensive-vc.php
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 48 | ERROR | Visibility for magic method __sleep must be public. Found: private
+    |       | (PHPCompatibility.FunctionDeclarations.NonStaticMagicMethods.__sleepMethodVisibility)
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+FILE: post-types/post-types-class.php
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 46 | ERROR | Visibility for magic method __sleep must be public. Found: private
+    |       | (PHPCompatibility.FunctionDeclarations.NonStaticMagicMethods.__sleepMethodVisibility)
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+FILE: shortcodes/shortcodes-class.php
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 46 | ERROR | Visibility for magic method __sleep must be public. Found: private
+    |       | (PHPCompatibility.FunctionDeclarations.NonStaticMagicMethods.__sleepMethodVisibility)
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
