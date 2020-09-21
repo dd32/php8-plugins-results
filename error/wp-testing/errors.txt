@@ -1,0 +1,201 @@
+
+src/Facade.php
+FILE: src/Facade.php
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 1 LINE
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 52 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $e{$l+$o}
+    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 52 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $e{$l}
+    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+FILE: vendor/flourish/flourish/fCookie.php
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 94 | ERROR | Function get_magic_quotes_gpc() is deprecated since PHP 7.4 and removed since PHP 8.0
+    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_gpcDeprecatedRemoved)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+FILE: vendor/flourish/flourish/fCryptography.php
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 519 | ERROR | Function mdecrypt_generic() is deprecated since PHP 7.1 and removed since PHP 7.2; Use OpenSSL instead
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.mdecrypt_genericDeprecatedRemoved)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+FILE: vendor/flourish/flourish/fDatabase.php
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+FOUND 52 ERRORS AFFECTING 25 LINES
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  362 | ERROR | Extension 'mssql' is removed since PHP 7.0 (PHPCompatibility.Extensions.RemovedExtensions.mssqlRemoved)
+  362 | ERROR | Function mssql_close() is removed since PHP 7.0 (PHPCompatibility.FunctionUse.RemovedFunctions.mssql_closeRemoved)
+  376 | ERROR | Extension 'sqlite' is removed since PHP 5.4 (PHPCompatibility.Extensions.RemovedExtensions.sqliteRemoved)
+  376 | ERROR | Function sqlite_close() is removed since PHP 5.4 (PHPCompatibility.FunctionUse.RemovedFunctions.sqlite_closeRemoved)
+  438 | ERROR | Extension 'sqlite' is removed since PHP 5.4 (PHPCompatibility.Extensions.RemovedExtensions.sqliteRemoved)
+  438 | ERROR | Function sqlite_error_string() is removed since PHP 5.4 (PHPCompatibility.FunctionUse.RemovedFunctions.sqlite_error_stringRemoved)
+  438 | ERROR | Extension 'sqlite' is removed since PHP 5.4 (PHPCompatibility.Extensions.RemovedExtensions.sqliteRemoved)
+  438 | ERROR | Function sqlite_last_error() is removed since PHP 5.4 (PHPCompatibility.FunctionUse.RemovedFunctions.sqlite_last_errorRemoved)
+  622 | ERROR | Extension 'sqlite' is removed since PHP 5.4 (PHPCompatibility.Extensions.RemovedExtensions.sqliteRemoved)
+  622 | ERROR | Function sqlite_open() is removed since PHP 5.4 (PHPCompatibility.FunctionUse.RemovedFunctions.sqlite_openRemoved)
+  653 | ERROR | INI directive 'mssql.connect_timeout' is removed since PHP 7.0
+      |       | (PHPCompatibility.IniDirectives.RemovedIniDirectives.mssql_connect_timeoutRemoved)
+  659 | ERROR | Extension 'mssql' is removed since PHP 7.0 (PHPCompatibility.Extensions.RemovedExtensions.mssqlRemoved)
+  659 | ERROR | Function mssql_connect() is removed since PHP 7.0 (PHPCompatibility.FunctionUse.RemovedFunctions.mssql_connectRemoved)
+  661 | ERROR | Extension 'mssql' is removed since PHP 7.0 (PHPCompatibility.Extensions.RemovedExtensions.mssqlRemoved)
+  661 | ERROR | Function mssql_select_db() is removed since PHP 7.0 (PHPCompatibility.FunctionUse.RemovedFunctions.mssql_select_dbRemoved)
+  668 | ERROR | INI directive 'mssql.connect_timeout' is removed since PHP 7.0
+      |       | (PHPCompatibility.IniDirectives.RemovedIniDirectives.mssql_connect_timeoutRemoved)
+ 1376 | ERROR | Extension 'sqlite' is removed since PHP 5.4 (PHPCompatibility.Extensions.RemovedExtensions.sqliteRemoved)
+ 1376 | ERROR | Function sqlite_escape_string() is removed since PHP 5.4 (PHPCompatibility.FunctionUse.RemovedFunctions.sqlite_escape_stringRemoved)
+ 1911 | ERROR | Extension 'mssql' is removed since PHP 7.0 (PHPCompatibility.Extensions.RemovedExtensions.mssqlRemoved)
+ 1911 | ERROR | Function mssql_query() is removed since PHP 7.0 (PHPCompatibility.FunctionUse.RemovedFunctions.mssql_queryRemoved)
+ 1912 | ERROR | Extension 'mssql' is removed since PHP 7.0 (PHPCompatibility.Extensions.RemovedExtensions.mssqlRemoved)
+ 1912 | ERROR | Function mssql_result() is removed since PHP 7.0 (PHPCompatibility.FunctionUse.RemovedFunctions.mssql_resultRemoved)
+ 1913 | ERROR | Extension 'mssql' is removed since PHP 7.0 (PHPCompatibility.Extensions.RemovedExtensions.mssqlRemoved)
+ 1913 | ERROR | Function mssql_free_result() is removed since PHP 7.0 (PHPCompatibility.FunctionUse.RemovedFunctions.mssql_free_resultRemoved)
+ 1940 | ERROR | Extension 'sqlite' is removed since PHP 5.4 (PHPCompatibility.Extensions.RemovedExtensions.sqliteRemoved)
+ 1940 | ERROR | Function sqlite_last_insert_rowid() is removed since PHP 5.4 (PHPCompatibility.FunctionUse.RemovedFunctions.sqlite_last_insert_rowidRemoved)
+ 2385 | ERROR | Extension 'mssql' is removed since PHP 7.0 (PHPCompatibility.Extensions.RemovedExtensions.mssqlRemoved)
+ 2385 | ERROR | Function mssql_query() is removed since PHP 7.0 (PHPCompatibility.FunctionUse.RemovedFunctions.mssql_queryRemoved)
+ 2396 | ERROR | Extension 'sqlite' is removed since PHP 5.4 (PHPCompatibility.Extensions.RemovedExtensions.sqliteRemoved)
+ 2396 | ERROR | Function sqlite_exec() is removed since PHP 5.4 (PHPCompatibility.FunctionUse.RemovedFunctions.sqlite_execRemoved)
+ 2440 | ERROR | Extension 'mssql' is removed since PHP 7.0 (PHPCompatibility.Extensions.RemovedExtensions.mssqlRemoved)
+ 2440 | ERROR | Function mssql_free_result() is removed since PHP 7.0 (PHPCompatibility.FunctionUse.RemovedFunctions.mssql_free_resultRemoved)
+ 2486 | ERROR | Extension 'mssql' is removed since PHP 7.0 (PHPCompatibility.Extensions.RemovedExtensions.mssqlRemoved)
+ 2486 | ERROR | Function mssql_query() is removed since PHP 7.0 (PHPCompatibility.FunctionUse.RemovedFunctions.mssql_queryRemoved)
+ 2508 | ERROR | Extension 'sqlite' is removed since PHP 5.4 (PHPCompatibility.Extensions.RemovedExtensions.sqliteRemoved)
+ 2508 | ERROR | Function sqlite_query() is removed since PHP 5.4 (PHPCompatibility.FunctionUse.RemovedFunctions.sqlite_queryRemoved)
+ 2508 | ERROR | The constant "SQLITE_ASSOC" is removed since PHP 5.4 (PHPCompatibility.Constants.RemovedConstants.sqlite_assocRemoved)
+ 2634 | ERROR | Extension 'mssql' is removed since PHP 7.0 (PHPCompatibility.Extensions.RemovedExtensions.mssqlRemoved)
+ 2634 | ERROR | Function mssql_query() is removed since PHP 7.0 (PHPCompatibility.FunctionUse.RemovedFunctions.mssql_queryRemoved)
+ 2649 | ERROR | Extension 'sqlite' is removed since PHP 5.4 (PHPCompatibility.Extensions.RemovedExtensions.sqliteRemoved)
+ 2649 | ERROR | Function sqlite_unbuffered_query() is removed since PHP 5.4 (PHPCompatibility.FunctionUse.RemovedFunctions.sqlite_unbuffered_queryRemoved)
+ 2649 | ERROR | The constant "SQLITE_ASSOC" is removed since PHP 5.4 (PHPCompatibility.Constants.RemovedConstants.sqlite_assocRemoved)
+ 3144 | ERROR | Extension 'mssql' is removed since PHP 7.0 (PHPCompatibility.Extensions.RemovedExtensions.mssqlRemoved)
+ 3144 | ERROR | Function mssql_query() is removed since PHP 7.0 (PHPCompatibility.FunctionUse.RemovedFunctions.mssql_queryRemoved)
+ 3145 | ERROR | Extension 'mssql' is removed since PHP 7.0 (PHPCompatibility.Extensions.RemovedExtensions.mssqlRemoved)
+ 3145 | ERROR | Function mssql_result() is removed since PHP 7.0 (PHPCompatibility.FunctionUse.RemovedFunctions.mssql_resultRemoved)
+ 3159 | ERROR | Extension 'sqlite' is removed since PHP 5.4 (PHPCompatibility.Extensions.RemovedExtensions.sqliteRemoved)
+ 3159 | ERROR | Function sqlite_changes() is removed since PHP 5.4 (PHPCompatibility.FunctionUse.RemovedFunctions.sqlite_changesRemoved)
+ 3193 | ERROR | Extension 'mssql' is removed since PHP 7.0 (PHPCompatibility.Extensions.RemovedExtensions.mssqlRemoved)
+ 3193 | ERROR | Function mssql_num_rows() is removed since PHP 7.0 (PHPCompatibility.FunctionUse.RemovedFunctions.mssql_num_rowsRemoved)
+ 3201 | ERROR | Extension 'sqlite' is removed since PHP 5.4 (PHPCompatibility.Extensions.RemovedExtensions.sqliteRemoved)
+ 3201 | ERROR | Function sqlite_num_rows() is removed since PHP 5.4 (PHPCompatibility.FunctionUse.RemovedFunctions.sqlite_num_rowsRemoved)
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+FILE: vendor/flourish/flourish/fRequest.php
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 153 | ERROR | Function get_magic_quotes_gpc() is deprecated since PHP 7.4 and removed since PHP 8.0
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_gpcDeprecatedRemoved)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+FILE: vendor/flourish/flourish/fResult.php
+------------------------------------------------------------------------------------------------------------------------------------------------
+FOUND 11 ERRORS AFFECTING 5 LINES
+------------------------------------------------------------------------------------------------------------------------------------------------
+ 217 | ERROR | Extension 'mssql' is removed since PHP 7.0 (PHPCompatibility.Extensions.RemovedExtensions.mssqlRemoved)
+ 217 | ERROR | Function mssql_free_result() is removed since PHP 7.0
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.mssql_free_resultRemoved)
+ 264 | ERROR | Extension 'mssql' is removed since PHP 7.0 (PHPCompatibility.Extensions.RemovedExtensions.mssqlRemoved)
+ 264 | ERROR | Function mssql_fetch_assoc() is removed since PHP 7.0
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.mssql_fetch_assocRemoved)
+ 287 | ERROR | Extension 'sqlite' is removed since PHP 5.4 (PHPCompatibility.Extensions.RemovedExtensions.sqliteRemoved)
+ 287 | ERROR | Function sqlite_fetch_array() is removed since PHP 5.4
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.sqlite_fetch_arrayRemoved)
+ 287 | ERROR | The constant "SQLITE_ASSOC" is removed since PHP 5.4 (PHPCompatibility.Constants.RemovedConstants.sqlite_assocRemoved)
+ 682 | ERROR | Extension 'mssql' is removed since PHP 7.0 (PHPCompatibility.Extensions.RemovedExtensions.mssqlRemoved)
+ 682 | ERROR | Function mssql_data_seek() is removed since PHP 7.0 (PHPCompatibility.FunctionUse.RemovedFunctions.mssql_data_seekRemoved)
+ 702 | ERROR | Extension 'sqlite' is removed since PHP 5.4 (PHPCompatibility.Extensions.RemovedExtensions.sqliteRemoved)
+ 702 | ERROR | Function sqlite_seek() is removed since PHP 5.4 (PHPCompatibility.FunctionUse.RemovedFunctions.sqlite_seekRemoved)
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+FILE: vendor/flourish/flourish/fSQLTranslation.php
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+FOUND 4 ERRORS AFFECTING 2 LINES
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+ 351 | ERROR | Extension 'sqlite' is removed since PHP 5.4 (PHPCompatibility.Extensions.RemovedExtensions.sqliteRemoved)
+ 351 | ERROR | Function sqlite_libencoding() is removed since PHP 5.4 (PHPCompatibility.FunctionUse.RemovedFunctions.sqlite_libencodingRemoved)
+ 361 | ERROR | Extension 'sqlite' is removed since PHP 5.4 (PHPCompatibility.Extensions.RemovedExtensions.sqliteRemoved)
+ 361 | ERROR | Function sqlite_create_function() is removed since PHP 5.4
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.sqlite_create_functionRemoved)
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+FILE: vendor/flourish/flourish/fStatement.php
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+FOUND 14 ERRORS AFFECTING 6 LINES
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+ 345 | ERROR | Extension 'mssql' is removed since PHP 7.0 (PHPCompatibility.Extensions.RemovedExtensions.mssqlRemoved)
+ 345 | ERROR | Function mssql_query() is removed since PHP 7.0 (PHPCompatibility.FunctionUse.RemovedFunctions.mssql_queryRemoved)
+ 366 | ERROR | Extension 'sqlite' is removed since PHP 5.4 (PHPCompatibility.Extensions.RemovedExtensions.sqliteRemoved)
+ 366 | ERROR | Function sqlite_exec() is removed since PHP 5.4 (PHPCompatibility.FunctionUse.RemovedFunctions.sqlite_execRemoved)
+ 447 | ERROR | Extension 'mssql' is removed since PHP 7.0 (PHPCompatibility.Extensions.RemovedExtensions.mssqlRemoved)
+ 447 | ERROR | Function mssql_query() is removed since PHP 7.0 (PHPCompatibility.FunctionUse.RemovedFunctions.mssql_queryRemoved)
+ 508 | ERROR | Extension 'sqlite' is removed since PHP 5.4 (PHPCompatibility.Extensions.RemovedExtensions.sqliteRemoved)
+ 508 | ERROR | Function sqlite_query() is removed since PHP 5.4 (PHPCompatibility.FunctionUse.RemovedFunctions.sqlite_queryRemoved)
+ 508 | ERROR | The constant "SQLITE_ASSOC" is removed since PHP 5.4 (PHPCompatibility.Constants.RemovedConstants.sqlite_assocRemoved)
+ 626 | ERROR | Extension 'mssql' is removed since PHP 7.0 (PHPCompatibility.Extensions.RemovedExtensions.mssqlRemoved)
+ 626 | ERROR | Function mssql_query() is removed since PHP 7.0 (PHPCompatibility.FunctionUse.RemovedFunctions.mssql_queryRemoved)
+ 651 | ERROR | Extension 'sqlite' is removed since PHP 5.4 (PHPCompatibility.Extensions.RemovedExtensions.sqliteRemoved)
+ 651 | ERROR | Function sqlite_unbuffered_query() is removed since PHP 5.4
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.sqlite_unbuffered_queryRemoved)
+ 651 | ERROR | The constant "SQLITE_ASSOC" is removed since PHP 5.4 (PHPCompatibility.Constants.RemovedConstants.sqlite_assocRemoved)
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+FILE: vendor/flourish/flourish/fUnbufferedResult.php
+------------------------------------------------------------------------------------------------------------------------------------------------
+FOUND 13 ERRORS AFFECTING 6 LINES
+------------------------------------------------------------------------------------------------------------------------------------------------
+ 210 | ERROR | Extension 'mssql' is removed since PHP 7.0 (PHPCompatibility.Extensions.RemovedExtensions.mssqlRemoved)
+ 210 | ERROR | Function mssql_free_result() is removed since PHP 7.0
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.mssql_free_resultRemoved)
+ 277 | ERROR | Extension 'mssql' is removed since PHP 7.0 (PHPCompatibility.Extensions.RemovedExtensions.mssqlRemoved)
+ 277 | ERROR | Function mssql_num_rows() is removed since PHP 7.0 (PHPCompatibility.FunctionUse.RemovedFunctions.mssql_num_rowsRemoved)
+ 281 | ERROR | Extension 'mssql' is removed since PHP 7.0 (PHPCompatibility.Extensions.RemovedExtensions.mssqlRemoved)
+ 281 | ERROR | Function mssql_fetch_assoc() is removed since PHP 7.0
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.mssql_fetch_assocRemoved)
+ 283 | ERROR | Extension 'mssql' is removed since PHP 7.0 (PHPCompatibility.Extensions.RemovedExtensions.mssqlRemoved)
+ 283 | ERROR | Function mssql_fetch_batch() is removed since PHP 7.0
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.mssql_fetch_batchRemoved)
+ 284 | ERROR | Extension 'mssql' is removed since PHP 7.0 (PHPCompatibility.Extensions.RemovedExtensions.mssqlRemoved)
+ 284 | ERROR | Function mssql_fetch_assoc() is removed since PHP 7.0
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.mssql_fetch_assocRemoved)
+ 327 | ERROR | Extension 'sqlite' is removed since PHP 5.4 (PHPCompatibility.Extensions.RemovedExtensions.sqliteRemoved)
+ 327 | ERROR | Function sqlite_fetch_array() is removed since PHP 5.4
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.sqlite_fetch_arrayRemoved)
+ 327 | ERROR | The constant "SQLITE_ASSOC" is removed since PHP 5.4 (PHPCompatibility.Constants.RemovedConstants.sqlite_assocRemoved)
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+FILE: vendor/flourish/flourish/fURL.php
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 208 | ERROR | Function get_magic_quotes_gpc() is deprecated since PHP 7.4 and removed since PHP 8.0
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_gpcDeprecatedRemoved)
+ 233 | ERROR | Function get_magic_quotes_gpc() is deprecated since PHP 7.4 and removed since PHP 8.0
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_gpcDeprecatedRemoved)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+FILE: vendor/yahnis-elsts/plugin-update-checker/vendor/Parsedown.php
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 1412 | ERROR | Indirect access to variables, properties and methods will be evaluated strictly in left-to-right order since PHP 7.0. Use curly braces to remove ambiguity.
+      |       | (PHPCompatibility.Variables.NewUniformVariableSyntax.Found)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
