@@ -1,0 +1,40 @@
+::warning::Plugin: https://wordpress.org/plugins/wpuppy/%0ATrac: https://plugins.trac.wordpress.org/browser/wpuppy/
+No syntax errors detected in wpuppy/wpuppy/lib/database/mysqldump.php
+No syntax errors detected in wpuppy/wpuppy/lib/pclzip/pclzip.lib.php
+No syntax errors detected in wpuppy/wpuppy/recovery/wpuppy-reactivate.php
+No syntax errors detected in wpuppy/wpuppy/recovery/wpuppy-restore.php
+No syntax errors detected in wpuppy/wpuppy/traits/wpuppy-api.php
+No syntax errors detected in wpuppy/wpuppy/wpuppy-admin.php
+No syntax errors detected in wpuppy/wpuppy/wpuppy-api.php
+No syntax errors detected in wpuppy/wpuppy/wpuppy-cachecleaner.php
+No syntax errors detected in wpuppy/wpuppy/wpuppy-login.php
+No syntax errors detected in wpuppy/wpuppy/wpuppy.php
+No syntax errors detected in wpuppy/wpuppy/wpuppy-settings.php
+No syntax errors detected in wpuppy/wpuppy/wpuppy-setup.php
+[31mE[0m[31mE[0m.......... 12 / 12 (100%)
+
+
+
+[1mFILE: lib/database/mysqldump.php[0m
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 869 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse order to implode has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first
+     |       | parameter and $pieces the second[0m (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+[1mFILE: lib/pclzip/pclzip.lib.php[0m
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[1mFOUND 3 ERRORS AFFECTING 3 LINES[0m
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 5092 | [31mERROR[0m | [1mFunction get_magic_quotes_runtime() is deprecated since PHP 7.4 and removed since PHP 8.0[0m
+      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_runtimeDeprecatedRemoved)
+ 5096 | [31mERROR[0m | [1mFunction set_magic_quotes_runtime() is deprecated since PHP 5.3 and removed since PHP 7.0[0m
+      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.set_magic_quotes_runtimeDeprecatedRemoved)
+ 5126 | [31mERROR[0m | [1mFunction set_magic_quotes_runtime() is deprecated since PHP 5.3 and removed since PHP 7.0[0m
+      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.set_magic_quotes_runtimeDeprecatedRemoved)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Time: 1.04 secs; Memory: 42.01MB
+::error::FILE: lib/database/mysqldump.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 869 | ERROR | Passing the $glue and $pieces parameters in reverse order to implode has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first%0A     |       | parameter and $pieces the second (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: lib/pclzip/pclzip.lib.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 3 ERRORS AFFECTING 3 LINES%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 5092 | ERROR | Function get_magic_quotes_runtime() is deprecated since PHP 7.4 and removed since PHP 8.0%0A      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_runtimeDeprecatedRemoved)%0A 5096 | ERROR | Function set_magic_quotes_runtime() is deprecated since PHP 5.3 and removed since PHP 7.0%0A      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.set_magic_quotes_runtimeDeprecatedRemoved)%0A 5126 | ERROR | Function set_magic_quotes_runtime() is deprecated since PHP 5.3 and removed since PHP 7.0%0A      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.set_magic_quotes_runtimeDeprecatedRemoved)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
