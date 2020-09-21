@@ -1,0 +1,55 @@
+
+src/FormValidator.php
+FILE: src/FormValidator.php
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 139 | ERROR | The left-associativity of the ternary operator has been deprecated in PHP 7.4 and removed in PHP 8.0. Multiple consecutive ternaries detected. Use parenthesis to
+     |       | clarify the order in which the operations should be executed (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+FILE: src/Image/CustomImage.php
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+FOUND 5 ERRORS AFFECTING 5 LINES
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 53 | ERROR | Indirect access to variables, properties and methods will be evaluated strictly in left-to-right order since PHP 7.0. Use curly braces to remove ambiguity.
+    |       | (PHPCompatibility.Variables.NewUniformVariableSyntax.Found)
+ 56 | ERROR | Indirect access to variables, properties and methods will be evaluated strictly in left-to-right order since PHP 7.0. Use curly braces to remove ambiguity.
+    |       | (PHPCompatibility.Variables.NewUniformVariableSyntax.Found)
+ 57 | ERROR | Indirect access to variables, properties and methods will be evaluated strictly in left-to-right order since PHP 7.0. Use curly braces to remove ambiguity.
+    |       | (PHPCompatibility.Variables.NewUniformVariableSyntax.Found)
+ 60 | ERROR | Indirect access to variables, properties and methods will be evaluated strictly in left-to-right order since PHP 7.0. Use curly braces to remove ambiguity.
+    |       | (PHPCompatibility.Variables.NewUniformVariableSyntax.Found)
+ 61 | ERROR | Indirect access to variables, properties and methods will be evaluated strictly in left-to-right order since PHP 7.0. Use curly braces to remove ambiguity.
+    |       | (PHPCompatibility.Variables.NewUniformVariableSyntax.Found)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+FILE: src/Shortcode/Field.php
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 140 | ERROR | Function money_format() is deprecated since PHP 7.4 and removed since PHP 8.0; Use NumberFormatter::formatCurrency() instead
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.money_formatDeprecatedRemoved)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+FILE: vendor/alexacrm/php-crm-toolkit/src/Client.php
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 1115 | ERROR | The behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: "0x80048831"
+      |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+FILE: views/admin/nav_tabs.php
+---------------------------------------------------------------------------------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+---------------------------------------------------------------------------------------------------------------------------------------------
+ 42 | ERROR | Late static binding is not supported outside of class scope.
+    |       | (PHPCompatibility.Classes.NewLateStaticBinding.OutsideClassScope)
+ 55 | ERROR | Late static binding is not supported outside of class scope.
+    |       | (PHPCompatibility.Classes.NewLateStaticBinding.OutsideClassScope)
+---------------------------------------------------------------------------------------------------------------------------------------------
