@@ -1,0 +1,86 @@
+::warning::Plugin: https://wordpress.org/plugins/papercite/%0ATrac: https://plugins.trac.wordpress.org/browser/papercite/
+No syntax errors detected in papercite/papercite/bib2tpl/bib2tpl-entry.php
+No syntax errors detected in papercite/papercite/bib2tpl/bibtex_converter.php
+No syntax errors detected in papercite/papercite/bib2tpl/helper.inc.php
+No syntax errors detected in papercite/papercite/bib2tpl/lang/de.php
+No syntax errors detected in papercite/papercite/bib2tpl/lang/en.php
+No syntax errors detected in papercite/papercite/lib/bibtex_common.php
+Errors parsing papercite/papercite/lib/BibTex_osbib.php
+Errors parsing papercite/papercite/lib/BibTex_pear.php
+No syntax errors detected in papercite/papercite/lib/PARSECREATORS.php
+No syntax errors detected in papercite/papercite/lib/PEAR5.php
+No syntax errors detected in papercite/papercite/lib/PEAR.php
+No syntax errors detected in papercite/papercite/papercite.classes.php
+No syntax errors detected in papercite/papercite/papercite_db.php
+No syntax errors detected in papercite/papercite/papercite_options.php
+No syntax errors detected in papercite/papercite/papercite-wp-plugin.php
+No syntax errors detected in papercite/papercite/tests/basic-tests.php
+No syntax errors detected in papercite/papercite/tests/bootstrap.php
+No syntax errors detected in papercite/papercite/tests/common.inc.php
+No syntax errors detected in papercite/papercite/tests/test-highlight.php
+No syntax errors detected in papercite/papercite/tests/test-html-modifier.php
+No syntax errors detected in papercite/papercite/tests/test-issue-95.php
+No syntax errors detected in papercite/papercite/tests/test-limit.php
+No syntax errors detected in papercite/papercite/tests/test-parsers.php
+No syntax errors detected in papercite/papercite/tests/test-remote.php
+No syntax errors detected in papercite/papercite/tests/test-show_links.php
+No syntax errors detected in papercite/papercite/utils/osbib2tpl.php
+No syntax errors detected in papercite/papercite/utils/STYLEMAPBIBTEX.php
+::error::%0Alib/BibTex_osbib.php%0A%0Alib/BibTex_pear.php
+......[32mE[0m[32mE[0m..[31mE[0m...............[31mE[0m 27 / 27 (100%)
+
+
+
+[1mFILE: lib/BibTex_osbib.php[0m
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[1mFOUND 4 ERRORS AFFECTING 4 LINES[0m
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 179 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $rev{0}[0m
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 191 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $rev{0}[0m
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 248 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $string{0}[0m
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 253 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $string{0}[0m
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[1mPHPCBF CAN FIX THE 4 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+[1mFILE: lib/BibTex_pear.php[0m
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[1mFOUND 3 ERRORS AFFECTING 3 LINES[0m
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 498 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $ret['entrytype']{0}[0m
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 573 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found:
+     |       |     $entrycopy{strlen($entrycopy)-1}[0m (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 575 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found:
+     |       |     $entrycopy{strlen($entrycopy)-2}[0m (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[1mPHPCBF CAN FIX THE 3 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+[1mFILE: lib/PEAR.php[0m
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[1mFOUND 2 ERRORS AFFECTING 2 LINES[0m
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  55 | [31mERROR[0m | [1mINI directive 'track_errors' is deprecated since PHP 7.2 and removed since PHP 8.0[0m
+     |       | (PHPCompatibility.IniDirectives.RemovedIniDirectives.track_errorsDeprecatedRemoved)
+ 750 | [31mERROR[0m | [1mFunction each() is deprecated since PHP 7.2 and removed since PHP 8.0; Use a foreach loop or ArrayIterator instead[0m
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+[1mFILE: utils/STYLEMAPBIBTEX.php[0m
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 37 | [31mERROR[0m | [1mDeclaration of a PHP4 style class constructor is deprecated since PHP 7.0 and removed since PHP 8.0[0m
+    |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Time: 858ms; Memory: 18MB
+::error::FILE: lib/BibTex_osbib.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 4 ERRORS AFFECTING 4 LINES%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 179 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $rev{0}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 191 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $rev{0}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 248 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $string{0}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 253 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $string{0}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0APHPCBF CAN FIX THE 4 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: lib/BibTex_pear.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 3 ERRORS AFFECTING 3 LINES%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 498 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $ret['entrytype']{0}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 573 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found:%0A     |       |     $entrycopy{strlen($entrycopy)-1} (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 575 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found:%0A     |       |     $entrycopy{strlen($entrycopy)-2} (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0APHPCBF CAN FIX THE 3 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: lib/PEAR.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A  55 | ERROR | INI directive 'track_errors' is deprecated since PHP 7.2 and removed since PHP 8.0%0A     |       | (PHPCompatibility.IniDirectives.RemovedIniDirectives.track_errorsDeprecatedRemoved)%0A 750 | ERROR | Function each() is deprecated since PHP 7.2 and removed since PHP 8.0; Use a foreach loop or ArrayIterator instead%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: utils/STYLEMAPBIBTEX.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 37 | ERROR | Declaration of a PHP4 style class constructor is deprecated since PHP 7.0 and removed since PHP 8.0%0A    |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
