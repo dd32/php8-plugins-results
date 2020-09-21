@@ -1,0 +1,69 @@
+::warning::Plugin: https://wordpress.org/plugins/my-calendar/%0ATrac: https://plugins.trac.wordpress.org/browser/my-calendar/
+No syntax errors detected in my-calendar/my-calendar/includes/date-utilities.php
+No syntax errors detected in my-calendar/my-calendar/includes/db.php
+No syntax errors detected in my-calendar/my-calendar/includes/deprecated.php
+No syntax errors detected in my-calendar/my-calendar/includes/general-utilities.php
+No syntax errors detected in my-calendar/my-calendar/includes/kses.php
+No syntax errors detected in my-calendar/my-calendar/includes/screen-options.php
+No syntax errors detected in my-calendar/my-calendar/includes/widgets/class-my-calendar-filters.php
+No syntax errors detected in my-calendar/my-calendar/includes/widgets/class-my-calendar-mini-widget.php
+No syntax errors detected in my-calendar/my-calendar/includes/widgets/class-my-calendar-simple-search.php
+No syntax errors detected in my-calendar/my-calendar/includes/widgets/class-my-calendar-today-widget.php
+No syntax errors detected in my-calendar/my-calendar/includes/widgets/class-my-calendar-upcoming-widget.php
+No syntax errors detected in my-calendar/my-calendar/my-calendar-api.php
+No syntax errors detected in my-calendar/my-calendar/my-calendar-behaviors.php
+No syntax errors detected in my-calendar/my-calendar/my-calendar-categories.php
+No syntax errors detected in my-calendar/my-calendar/my-calendar-core.php
+No syntax errors detected in my-calendar/my-calendar/my-calendar-event-manager.php
+No syntax errors detected in my-calendar/my-calendar/my-calendar-events.php
+No syntax errors detected in my-calendar/my-calendar/my-calendar-generator.php
+No syntax errors detected in my-calendar/my-calendar/my-calendar-group-manager.php
+No syntax errors detected in my-calendar/my-calendar/my-calendar-help.php
+No syntax errors detected in my-calendar/my-calendar/my-calendar-install.php
+No syntax errors detected in my-calendar/my-calendar/my-calendar-limits.php
+No syntax errors detected in my-calendar/my-calendar/my-calendar-location-manager.php
+No syntax errors detected in my-calendar/my-calendar/my-calendar-locations.php
+No syntax errors detected in my-calendar/my-calendar/my-calendar-output.php
+No syntax errors detected in my-calendar/my-calendar/my-calendar.php
+No syntax errors detected in my-calendar/my-calendar/my-calendar-print.php
+No syntax errors detected in my-calendar/my-calendar/my-calendar-settings.php
+No syntax errors detected in my-calendar/my-calendar/my-calendar-shortcodes.php
+No syntax errors detected in my-calendar/my-calendar/my-calendar-styles.php
+No syntax errors detected in my-calendar/my-calendar/my-calendar-templates.php
+No syntax errors detected in my-calendar/my-calendar/my-calendar-templating.php
+No syntax errors detected in my-calendar/my-calendar/my-calendar-upgrade-db.php
+No syntax errors detected in my-calendar/my-calendar/my-calendar-widgets.php
+No syntax errors detected in my-calendar/my-calendar/uninstall.php
+No syntax errors detected in my-calendar/my-calendar/uninstall.php
+......[31mE[0m........[31mE[0m..[31mE[0m................ 35 / 35 (100%)
+
+
+
+[1mFILE: includes/widgets/class-my-calendar-filters.php[0m
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 59 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse order to implode has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first
+    |       | parameter and $pieces the second[0m (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+[1mFILE: my-calendar-event-manager.php[0m
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 2567 | [31mERROR[0m | [1mFunction get_magic_quotes_gpc() is deprecated since PHP 7.4 and removed since PHP 8.0[0m
+      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_gpcDeprecatedRemoved)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+[1mFILE: my-calendar-group-manager.php[0m
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 804 | [31mERROR[0m | [1mFunction get_magic_quotes_gpc() is deprecated since PHP 7.4 and removed since PHP 8.0[0m
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_gpcDeprecatedRemoved)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Time: 3.47 secs; Memory: 52.01MB
+::error::FILE: includes/widgets/class-my-calendar-filters.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 59 | ERROR | Passing the $glue and $pieces parameters in reverse order to implode has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first%0A    |       | parameter and $pieces the second (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: my-calendar-event-manager.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 2567 | ERROR | Function get_magic_quotes_gpc() is deprecated since PHP 7.4 and removed since PHP 8.0%0A      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_gpcDeprecatedRemoved)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: my-calendar-group-manager.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 804 | ERROR | Function get_magic_quotes_gpc() is deprecated since PHP 7.4 and removed since PHP 8.0%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_gpcDeprecatedRemoved)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
