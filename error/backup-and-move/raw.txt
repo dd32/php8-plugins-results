@@ -1,0 +1,30 @@
+::warning::Plugin: https://wordpress.org/plugins/backup-and-move/%0ATrac: https://plugins.trac.wordpress.org/browser/backup-and-move/
+No syntax errors detected in backup-and-move/backup-and-move/backup_and_move.php
+No syntax errors detected in backup-and-move/backup-and-move/core/backup_and_move_core.php
+No syntax errors detected in backup-and-move/backup-and-move/core/backup_and_move_functions.php
+Errors parsing backup-and-move/backup-and-move/core/backup_and_move_zip.php
+::error::%0Acore/backup_and_move_zip.php
+..[31mE[0m[31mE[0m 4 / 4 (100%)
+
+
+
+[1mFILE: core/backup_and_move_functions.php[0m
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[1mFOUND 2 ERRORS AFFECTING 1 LINE[0m
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 25 | [31mERROR[0m | [1mExtension 'ereg' is deprecated since PHP 5.3 and removed since PHP 7.0; Use pcre instead[0m (PHPCompatibility.Extensions.RemovedExtensions.eregDeprecatedRemoved)
+ 25 | [31mERROR[0m | [1mFunction ereg_replace() is deprecated since PHP 5.3 and removed since PHP 7.0; Use preg_replace() instead[0m
+    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.ereg_replaceDeprecatedRemoved)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+[1mFILE: core/backup_and_move_zip.php[0m
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 10 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has been deprecated in PHP 7.4 and removed in PHP 8.0. Multiple consecutive ternaries detected. Use parenthesis to
+    |       | clarify the order in which the operations should be executed[0m (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Time: 100ms; Memory: 10MB
+::error::FILE: core/backup_and_move_functions.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 25 | ERROR | Extension 'ereg' is deprecated since PHP 5.3 and removed since PHP 7.0; Use pcre instead (PHPCompatibility.Extensions.RemovedExtensions.eregDeprecatedRemoved)%0A 25 | ERROR | Function ereg_replace() is deprecated since PHP 5.3 and removed since PHP 7.0; Use preg_replace() instead%0A    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.ereg_replaceDeprecatedRemoved)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: core/backup_and_move_zip.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 10 | ERROR | The left-associativity of the ternary operator has been deprecated in PHP 7.4 and removed in PHP 8.0. Multiple consecutive ternaries detected. Use parenthesis to%0A    |       | clarify the order in which the operations should be executed (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
