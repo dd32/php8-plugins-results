@@ -1,0 +1,41 @@
+::warning::Plugin: https://wordpress.org/plugins/cf7-cpfcnpj-validations/%0ATrac: https://plugins.trac.wordpress.org/browser/cf7-cpfcnpj-validations/
+No syntax errors detected in cf7-cpfcnpj-validations/cf7-cpfcnpj-validations/classes/AbstractValidator.php
+Errors parsing cf7-cpfcnpj-validations/cf7-cpfcnpj-validations/classes/Cnpj.php
+No syntax errors detected in cf7-cpfcnpj-validations/cf7-cpfcnpj-validations/classes/CpfCnpjValidator.php
+Errors parsing cf7-cpfcnpj-validations/cf7-cpfcnpj-validations/classes/Cpf.php
+No syntax errors detected in cf7-cpfcnpj-validations/cf7-cpfcnpj-validations/classes/Validator.php
+No syntax errors detected in cf7-cpfcnpj-validations/cf7-cpfcnpj-validations/contact-form-7-cpf-cnpj-validations.php
+::error::%0Aclasses/Cnpj.php%0A%0Aclasses/Cpf.php
+.[32mE[0m.[32mE[0m.. 6 / 6 (100%)
+
+
+
+[1mFILE: classes/Cnpj.php[0m
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[1mFOUND 3 ERRORS AFFECTING 3 LINES[0m
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  58 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found:
+     |       |     $cnpj_numbers{self::FIRST_DIGIT_POSITION}[0m (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+  65 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found:
+     |       |     $cnpj_numbers{self::SECOND_DIGIT_POSITION}[0m (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 130 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $numbers{$str_length - $i}[0m
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[1mPHPCBF CAN FIX THE 3 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+[1mFILE: classes/Cpf.php[0m
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[1mFOUND 2 ERRORS AFFECTING 2 LINES[0m
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 91 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $cpf{$c}[0m
+    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 94 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $cpf{$c}[0m
+    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[1mPHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Time: 129ms; Memory: 10MB
+::error::FILE: classes/Cnpj.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 3 ERRORS AFFECTING 3 LINES%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A  58 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found:%0A     |       |     $cnpj_numbers{self::FIRST_DIGIT_POSITION} (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A  65 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found:%0A     |       |     $cnpj_numbers{self::SECOND_DIGIT_POSITION} (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 130 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $numbers{$str_length - $i}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0APHPCBF CAN FIX THE 3 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: classes/Cpf.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 91 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $cpf{$c}%0A    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 94 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $cpf{$c}%0A    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0APHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
