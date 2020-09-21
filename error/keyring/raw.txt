@@ -1,0 +1,79 @@
+::warning::Plugin: https://wordpress.org/plugins/keyring/%0ATrac: https://plugins.trac.wordpress.org/browser/keyring/
+No syntax errors detected in keyring/keyring/admin-ui.php
+Errors parsing keyring/keyring/includes/oauth-php/OAuth.php
+No syntax errors detected in keyring/keyring/includes/oauth-php/OAuth_TestServer.php
+No syntax errors detected in keyring/keyring/includes/oauth-php/tests/common.php
+No syntax errors detected in keyring/keyring/includes/oauth-php/tests/Mock_OAuthBaseStringRequest.php
+No syntax errors detected in keyring/keyring/includes/oauth-php/tests/Mock_OAuthDataStore.php
+No syntax errors detected in keyring/keyring/includes/oauth-php/tests/Mock_OAuthSignatureMethod_RSA_SHA1.php
+No syntax errors detected in keyring/keyring/includes/oauth-php/tests/OAuthConsumerTest.php
+No syntax errors detected in keyring/keyring/includes/oauth-php/tests/OAuthRequestTest.php
+No syntax errors detected in keyring/keyring/includes/oauth-php/tests/OAuthServerTest.php
+No syntax errors detected in keyring/keyring/includes/oauth-php/tests/OAuthSignatureMethodHmacSha1Test.php
+No syntax errors detected in keyring/keyring/includes/oauth-php/tests/OAuthSignatureMethodPlaintextTest.php
+No syntax errors detected in keyring/keyring/includes/oauth-php/tests/OAuthSignatureMethodRsaSha1Test.php
+No syntax errors detected in keyring/keyring/includes/oauth-php/tests/OAuthTokenTest.php
+No syntax errors detected in keyring/keyring/includes/oauth-php/tests/OAuthUtilTest.php
+No syntax errors detected in keyring/keyring/includes/services/core/http-basic.php
+No syntax errors detected in keyring/keyring/includes/services/core/oauth1.php
+No syntax errors detected in keyring/keyring/includes/services/core/oauth2.php
+No syntax errors detected in keyring/keyring/includes/services/extended/0-google-base.php
+No syntax errors detected in keyring/keyring/includes/services/extended/500px.php
+No syntax errors detected in keyring/keyring/includes/services/extended/delicious.php
+No syntax errors detected in keyring/keyring/includes/services/extended/eventbrite.php
+No syntax errors detected in keyring/keyring/includes/services/extended/facebook.php
+No syntax errors detected in keyring/keyring/includes/services/extended/fitbit.php
+No syntax errors detected in keyring/keyring/includes/services/extended/flickr.php
+No syntax errors detected in keyring/keyring/includes/services/extended/foursquare.php
+No syntax errors detected in keyring/keyring/includes/services/extended/google-analytics.php
+No syntax errors detected in keyring/keyring/includes/services/extended/google-contacts.php
+No syntax errors detected in keyring/keyring/includes/services/extended/google-mail.php
+No syntax errors detected in keyring/keyring/includes/services/extended/instagram.php
+No syntax errors detected in keyring/keyring/includes/services/extended/instapaper.php
+No syntax errors detected in keyring/keyring/includes/services/extended/jetpack.php
+No syntax errors detected in keyring/keyring/includes/services/extended/linkedin.php
+No syntax errors detected in keyring/keyring/includes/services/extended/moves.php
+No syntax errors detected in keyring/keyring/includes/services/extended/nest.php
+No syntax errors detected in keyring/keyring/includes/services/extended/pinterest.php
+No syntax errors detected in keyring/keyring/includes/services/extended/pocket.php
+No syntax errors detected in keyring/keyring/includes/services/extended/runkeeper.php
+No syntax errors detected in keyring/keyring/includes/services/extended/strava.php
+No syntax errors detected in keyring/keyring/includes/services/extended/tripit.php
+No syntax errors detected in keyring/keyring/includes/services/extended/tumblr.php
+No syntax errors detected in keyring/keyring/includes/services/extended/twitter.php
+No syntax errors detected in keyring/keyring/includes/services/extended/yahoo.php
+No syntax errors detected in keyring/keyring/includes/services/extended/youtube.php
+No syntax errors detected in keyring/keyring/includes/stores/singlestore.php
+No syntax errors detected in keyring/keyring/keyring.php
+No syntax errors detected in keyring/keyring/service.php
+No syntax errors detected in keyring/keyring/store.php
+No syntax errors detected in keyring/keyring/token.php
+::error::%0Aincludes/oauth-php/OAuth.php
+No syntax errors detected in keyring/keyring/token.php
+.[32mE[0m.[31mE[0m............................................. 49 / 49 (100%)
+
+
+
+[1mFILE: includes/oauth-php/OAuth.php[0m
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[1mFOUND 2 ERRORS AFFECTING 1 LINE[0m
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 103 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $built{$i}[0m
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 103 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $signature{$i}[0m
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[1mPHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+[1mFILE: includes/oauth-php/tests/common.php[0m
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 52 | [31mERROR[0m | [1mThe "result" parameter for function parse_str() is missing. Passing this parameter is no longer optional. The optional nature of the parameter is deprecated since PHP
+    |       | 7.2 and removed since PHP 8.0[0m (PHPCompatibility.FunctionUse.OptionalToRequiredFunctionParameters.parse_str_resultSoftRequiredHardRequired)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Time: 1.07 secs; Memory: 14MB
+::error::FILE: includes/oauth-php/OAuth.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 103 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $built{$i}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 103 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $signature{$i}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0APHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: includes/oauth-php/tests/common.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 52 | ERROR | The "result" parameter for function parse_str() is missing. Passing this parameter is no longer optional. The optional nature of the parameter is deprecated since PHP%0A    |       | 7.2 and removed since PHP 8.0 (PHPCompatibility.FunctionUse.OptionalToRequiredFunctionParameters.parse_str_resultSoftRequiredHardRequired)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
