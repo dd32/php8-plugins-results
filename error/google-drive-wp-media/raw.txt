@@ -1,0 +1,64 @@
+::warning::Plugin: https://wordpress.org/plugins/google-drive-wp-media/%0ATrac: https://plugins.trac.wordpress.org/browser/google-drive-wp-media/
+No syntax errors detected in google-drive-wp-media/google-drive-wp-media/gdwpm-api/auth/Google_AssertionCredentials.php
+No syntax errors detected in google-drive-wp-media/google-drive-wp-media/gdwpm-api/auth/Google_AuthNone.php
+No syntax errors detected in google-drive-wp-media/google-drive-wp-media/gdwpm-api/auth/Google_Auth.php
+No syntax errors detected in google-drive-wp-media/google-drive-wp-media/gdwpm-api/auth/Google_LoginTicket.php
+No syntax errors detected in google-drive-wp-media/google-drive-wp-media/gdwpm-api/auth/Google_OAuth2.php
+No syntax errors detected in google-drive-wp-media/google-drive-wp-media/gdwpm-api/auth/Google_P12Signer.php
+No syntax errors detected in google-drive-wp-media/google-drive-wp-media/gdwpm-api/auth/Google_PemVerifier.php
+No syntax errors detected in google-drive-wp-media/google-drive-wp-media/gdwpm-api/auth/Google_Signer.php
+No syntax errors detected in google-drive-wp-media/google-drive-wp-media/gdwpm-api/auth/Google_Verifier.php
+No syntax errors detected in google-drive-wp-media/google-drive-wp-media/gdwpm-api/cache/Google_ApcCache.php
+No syntax errors detected in google-drive-wp-media/google-drive-wp-media/gdwpm-api/cache/Google_Cache.php
+No syntax errors detected in google-drive-wp-media/google-drive-wp-media/gdwpm-api/cache/Google_FileCache.php
+No syntax errors detected in google-drive-wp-media/google-drive-wp-media/gdwpm-api/cache/Google_MemcacheCache.php
+No syntax errors detected in google-drive-wp-media/google-drive-wp-media/gdwpm-api/contrib/Google_DriveService.php
+No syntax errors detected in google-drive-wp-media/google-drive-wp-media/gdwpm-api/external/URITemplateParser.php
+No syntax errors detected in google-drive-wp-media/google-drive-wp-media/gdwpm-api/gdwpm_config.php
+No syntax errors detected in google-drive-wp-media/google-drive-wp-media/gdwpm-api/Google_Client.php
+No syntax errors detected in google-drive-wp-media/google-drive-wp-media/gdwpm-api/io/Google_CacheParser.php
+No syntax errors detected in google-drive-wp-media/google-drive-wp-media/gdwpm-api/io/Google_CurlIO.php
+No syntax errors detected in google-drive-wp-media/google-drive-wp-media/gdwpm-api/io/Google_HttpRequest.php
+No syntax errors detected in google-drive-wp-media/google-drive-wp-media/gdwpm-api/io/Google_HttpStreamIO.php
+No syntax errors detected in google-drive-wp-media/google-drive-wp-media/gdwpm-api/io/Google_IO.php
+No syntax errors detected in google-drive-wp-media/google-drive-wp-media/gdwpm-api/io/Google_REST.php
+No syntax errors detected in google-drive-wp-media/google-drive-wp-media/gdwpm-api/service/Google_BatchRequest.php
+No syntax errors detected in google-drive-wp-media/google-drive-wp-media/gdwpm-api/service/Google_MediaFileUpload.php
+No syntax errors detected in google-drive-wp-media/google-drive-wp-media/gdwpm-api/service/Google_Model.php
+No syntax errors detected in google-drive-wp-media/google-drive-wp-media/gdwpm-api/service/Google_Service.php
+No syntax errors detected in google-drive-wp-media/google-drive-wp-media/gdwpm-api/service/Google_ServiceResource.php
+Errors parsing google-drive-wp-media/google-drive-wp-media/gdwpm-api/service/Google_Utils.php
+No syntax errors detected in google-drive-wp-media/google-drive-wp-media/google-drive-wp-media-albums.php
+No syntax errors detected in google-drive-wp-media/google-drive-wp-media/google-drive-wp-media-docapi.php
+No syntax errors detected in google-drive-wp-media/google-drive-wp-media/google-drive-wp-media-docservice.php
+No syntax errors detected in google-drive-wp-media/google-drive-wp-media/google-drive-wp-media-galleries.php
+No syntax errors detected in google-drive-wp-media/google-drive-wp-media/google-drive-wp-media-info.php
+No syntax errors detected in google-drive-wp-media/google-drive-wp-media/google-drive-wp-media-options.php
+No syntax errors detected in google-drive-wp-media/google-drive-wp-media/google-drive-wp-media.php
+No syntax errors detected in google-drive-wp-media/google-drive-wp-media/google-drive-wp-media-themes.php
+::error::%0Agdwpm-api/service/Google_Utils.php
+......................[31mE[0m.....[32mE[0m........ 37 / 37 (100%)
+
+
+
+[1mFILE: gdwpm-api/io/Google_REST.php[0m
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 123 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse order to implode has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first
+     |       | parameter and $pieces the second[0m (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+[1mFILE: gdwpm-api/service/Google_Utils.php[0m
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 58 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $str{$ret}[0m
+    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[1mPHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Time: 1.47 secs; Memory: 34MB
+::error::FILE: gdwpm-api/io/Google_REST.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 123 | ERROR | Passing the $glue and $pieces parameters in reverse order to implode has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first%0A     |       | parameter and $pieces the second (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: gdwpm-api/service/Google_Utils.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 58 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $str{$ret}%0A    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0APHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
