@@ -1,0 +1,36 @@
+
+vendor/jaeger/phpquery-single/phpQuery.php
+FILE: vendor/jaeger/phpquery-single/phpQuery.php
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+FOUND 4 ERRORS AFFECTING 4 LINES
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 1036 | ERROR | [ ] Function create_function() is deprecated since PHP 7.2 and removed since PHP 8.0; Use an anonymous function instead
+      |       |     (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
+ 2166 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $param{0}
+      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 3427 | ERROR | [ ] "$this" can no longer be used in a plain function or method since PHP 7.1. (PHPCompatibility.Variables.ForbiddenThisUseContexts.OutsideObjectContext)
+ 5679 | ERROR | [ ] Using 'break' outside of a loop or switch structure is invalid and will throw a fatal error since PHP 7.0
+      |       |     (PHPCompatibility.ControlStructures.ForbiddenBreakContinueOutsideLoop.FatalError)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+FILE: vendor/paragonie/random_compat/lib/byte_safe_strings.php
+-------------------------------------------------------------------------------------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+-------------------------------------------------------------------------------------------------------------------------------------------------
+ 33 | ERROR | The constant "MB_OVERLOAD_STRING" is removed since PHP 8.0
+    |       | (PHPCompatibility.Constants.RemovedConstants.mb_overload_stringRemoved)
+ 87 | ERROR | The constant "MB_OVERLOAD_STRING" is removed since PHP 8.0
+    |       | (PHPCompatibility.Constants.RemovedConstants.mb_overload_stringRemoved)
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+FILE: vendor/vierbergenlars/php-semver/src/vierbergenlars/LibJs/JSArray.php
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 197 | ERROR | Function each() is deprecated since PHP 7.2 and removed since PHP 8.0; Use a foreach loop or ArrayIterator instead
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
