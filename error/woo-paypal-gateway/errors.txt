@@ -1,0 +1,78 @@
+
+includes/gateways/express-checkout-nvp/class-woo-paypal-gateway-express-checkout-api-handler.php
+
+includes/gateways/paypal-pro/class-woo-paypal-gateway-paypal-pro-api-handler.php
+
+includes/php-library/braintree/lib/Braintree/Digest.php
+
+includes/php-library/paypal-rest/vendor/sebastian/diff/tests/ParserTest.php
+  Parse error: Invalid body indentation level (expecting an indentation level of at least 1) on line 78
+FILE: includes/gateways/express-checkout-nvp/class-woo-paypal-gateway-express-checkout-api-handler.php
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 805 | ERROR | The left-associativity of the ternary operator has been deprecated in PHP 7.4 and removed in PHP 8.0. Multiple consecutive ternaries detected. Use parenthesis to
+     |       | clarify the order in which the operations should be executed (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+FILE: includes/gateways/paypal-pro/class-woo-paypal-gateway-paypal-pro-api-handler.php
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 432 | ERROR | The left-associativity of the ternary operator has been deprecated in PHP 7.4 and removed in PHP 8.0. Multiple consecutive ternaries detected. Use parenthesis to
+     |       | clarify the order in which the operations should be executed (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+FILE: includes/php-library/braintree/lib/Braintree/Digest.php
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+FOUND 6 ERRORS AFFECTING 2 LINES
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 53 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $innerPad{$i}
+    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 53 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $keyDigest{$i}
+    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 53 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $innerPad{$i}
+    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 54 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $outerPad{$i}
+    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 54 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $keyDigest{$i}
+    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 54 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $outerPad{$i}
+    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 6 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+FILE: includes/php-library/paypal-rest/vendor/sebastian/diff/tests/ParserTest.php
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+FOUND 5 ERRORS AFFECTING 5 LINES
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  83 | ERROR | The body of a heredoc/nowdoc can not contain the heredoc/nowdoc closing marker as text at the start of a line since PHP 7.3.
+     |       | (PHPCompatibility.Syntax.NewFlexibleHeredocNowdoc.ClosingMarkerNoNewLine)
+ 126 | ERROR | The body of a heredoc/nowdoc can not contain the heredoc/nowdoc closing marker as text at the start of a line since PHP 7.3.
+     |       | (PHPCompatibility.Syntax.NewFlexibleHeredocNowdoc.ClosingMarkerNoNewLine)
+ 130 | ERROR | Using an unparenthesized expression containing a "." before a "+" or "-" has been deprecated in PHP 7.4 and removed in PHP 8.0
+     |       | (PHPCompatibility.Operators.ChangedConcatOperatorPrecedence.Found)
+ 131 | ERROR | Using an unparenthesized expression containing a "." before a "+" or "-" has been deprecated in PHP 7.4 and removed in PHP 8.0
+     |       | (PHPCompatibility.Operators.ChangedConcatOperatorPrecedence.Found)
+ 132 | ERROR | Using an unparenthesized expression containing a "." before a "+" or "-" has been deprecated in PHP 7.4 and removed in PHP 8.0
+     |       | (PHPCompatibility.Operators.ChangedConcatOperatorPrecedence.Found)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+FILE: includes/php-library/paypal-rest/vendor/symfony/yaml/Tests/InlineTest.php
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+FOUND 4 ERRORS AFFECTING 4 LINES
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 386 | ERROR | The behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x4D2'
+     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
+ 387 | ERROR | The behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x_4_D_2_'
+     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
+ 467 | ERROR | The behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x4D2'
+     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
+ 550 | ERROR | The behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x_4_D_2_'
+     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
