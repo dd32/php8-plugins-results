@@ -1,0 +1,31 @@
+
+inc/vendors/social-login/Google/service/apiUtils.php
+FILE: inc/taxonomies/class-taxonomy-neighborhood.php
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 24 | ERROR | "$this" can no longer be used in a plain function or method since PHP 7.1.
+    |       | (PHPCompatibility.Variables.ForbiddenThisUseContexts.OutsideObjectContext)
+ 26 | ERROR | "$this" can no longer be used in a plain function or method since PHP 7.1.
+    |       | (PHPCompatibility.Variables.ForbiddenThisUseContexts.OutsideObjectContext)
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+FILE: inc/vendors/social-login/Google/io/apiREST.php
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 138 | ERROR | Passing the $glue and $pieces parameters in reverse order to implode has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first
+     |       | parameter and $pieces the second (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+FILE: inc/vendors/social-login/Google/service/apiUtils.php
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 52 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $str{$ret}
+    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
