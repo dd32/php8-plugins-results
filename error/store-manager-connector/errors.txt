@@ -1,0 +1,15 @@
+FILE: classes/smconnector_common.php
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+FOUND 4 ERRORS AFFECTING 3 LINES
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  583 | ERROR | [ ] Function get_magic_quotes_runtime() is deprecated since PHP 7.4 and removed since PHP 8.0
+      |       |     (PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_runtimeDeprecatedRemoved)
+  583 | ERROR | [ ] Function get_magic_quotes_gpc() is deprecated since PHP 7.4 and removed since PHP 8.0
+      |       |     (PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_gpcDeprecatedRemoved)
+ 1276 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found:
+      |       |     $this->smconnector_options['exclude_db_tables']{0} (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 1290 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found:
+      |       |     $this->request_params['include_tables']{0} (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
