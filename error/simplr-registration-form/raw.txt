@@ -1,0 +1,81 @@
+::warning::Plugin: https://wordpress.org/plugins/simplr-registration-form/%0ATrac: https://plugins.trac.wordpress.org/browser/simplr-registration-form/
+No syntax errors detected in simplr-registration-form/simplr-registration-form/lib/ajax.php
+No syntax errors detected in simplr-registration-form/simplr-registration-form/lib/base_facebook.php
+No syntax errors detected in simplr-registration-form/simplr-registration-form/lib/facebook.php
+No syntax errors detected in simplr-registration-form/simplr-registration-form/lib/fb.class.php
+No syntax errors detected in simplr-registration-form/simplr-registration-form/lib/fields.class.php
+No syntax errors detected in simplr-registration-form/simplr-registration-form/lib/fields-table.class.php
+No syntax errors detected in simplr-registration-form/simplr-registration-form/lib/form.class.php
+No syntax errors detected in simplr-registration-form/simplr-registration-form/lib/helpers/perms.php
+No syntax errors detected in simplr-registration-form/simplr-registration-form/lib/helpers/skins.php
+No syntax errors detected in simplr-registration-form/simplr-registration-form/lib/login.php
+No syntax errors detected in simplr-registration-form/simplr-registration-form/lib/messages.php
+No syntax errors detected in simplr-registration-form/simplr-registration-form/lib/mod.php
+No syntax errors detected in simplr-registration-form/simplr-registration-form/lib/profile.php
+No syntax errors detected in simplr-registration-form/simplr-registration-form/lib/recaptchalib.php
+No syntax errors detected in simplr-registration-form/simplr-registration-form/lib/sreg.class.php
+No syntax errors detected in simplr-registration-form/simplr-registration-form/lib/wp-session-manager/includes/class-recursive-arrayaccess.php
+No syntax errors detected in simplr-registration-form/simplr-registration-form/lib/wp-session-manager/includes/class-wp-session.php
+No syntax errors detected in simplr-registration-form/simplr-registration-form/lib/wp-session-manager/includes/class-wp-session-utils.php
+No syntax errors detected in simplr-registration-form/simplr-registration-form/lib/wp-session-manager/includes/wp-cli.php
+No syntax errors detected in simplr-registration-form/simplr-registration-form/lib/wp-session-manager/includes/wp-session.php
+No syntax errors detected in simplr-registration-form/simplr-registration-form/lib/wp-session-manager/wp-session-manager.php
+No syntax errors detected in simplr-registration-form/simplr-registration-form/main_options_page.php
+No syntax errors detected in simplr-registration-form/simplr-registration-form/recaptchalib.php
+No syntax errors detected in simplr-registration-form/simplr-registration-form/simplr_form_functions.php
+No syntax errors detected in simplr-registration-form/simplr-registration-form/simplr_reg_options.php
+No syntax errors detected in simplr-registration-form/simplr-registration-form/simplr_reg_page.php
+No syntax errors detected in simplr-registration-form/simplr-registration-form/views/api.php
+No syntax errors detected in simplr-registration-form/simplr-registration-form/views/fields.php
+No syntax errors detected in simplr-registration-form/simplr-registration-form/views/instructions.php
+No syntax errors detected in simplr-registration-form/simplr-registration-form/views/main.php
+No syntax errors detected in simplr-registration-form/simplr-registration-form/views/moderation.php
+[31mE[0m[31mE[0m..........[31mE[0m..........[31mE[0m....... 31 / 31 (100%)
+
+
+
+[1mFILE: lib/ajax.php[0m
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[1mFOUND 4 ERRORS AFFECTING 3 LINES[0m
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 16 | [31mERROR[0m | [1m"$this" can no longer be used in a plain function or method since PHP 7.1.[0m
+    |       | (PHPCompatibility.Variables.ForbiddenThisUseContexts.OutsideObjectContext)
+ 16 | [31mERROR[0m | [1m"$this" can no longer be used in a plain function or method since PHP 7.1.[0m
+    |       | (PHPCompatibility.Variables.ForbiddenThisUseContexts.OutsideObjectContext)
+ 18 | [31mERROR[0m | [1m"$this" can no longer be used in a plain function or method since PHP 7.1.[0m
+    |       | (PHPCompatibility.Variables.ForbiddenThisUseContexts.OutsideObjectContext)
+ 19 | [31mERROR[0m | [1m"$this" can no longer be used in a plain function or method since PHP 7.1.[0m
+    |       | (PHPCompatibility.Variables.ForbiddenThisUseContexts.OutsideObjectContext)
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+[1mFILE: lib/base_facebook.php[0m
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 994 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse order to implode has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first
+     |       | parameter and $pieces the second[0m (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+[1mFILE: lib/profile.php[0m
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 72 | [31mERROR[0m | [1mIndirect access to variables, properties and methods will be evaluated strictly in left-to-right order since PHP 7.0. Use curly braces to remove ambiguity.[0m
+    |       | (PHPCompatibility.Variables.NewUniformVariableSyntax.Found)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+[1mFILE: simplr_form_functions.php[0m
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[1mFOUND 2 ERRORS AFFECTING 2 LINES[0m
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 1221 | [31mERROR[0m | [1mThe "result" parameter for function parse_str() is missing. Passing this parameter is no longer optional. The optional nature of the parameter is deprecated since
+      |       | PHP 7.2 and removed since PHP 8.0[0m (PHPCompatibility.FunctionUse.OptionalToRequiredFunctionParameters.parse_str_resultSoftRequiredHardRequired)
+ 1480 | [31mERROR[0m | [1mFunction create_function() is deprecated since PHP 7.2 and removed since PHP 8.0; Use an anonymous function instead[0m
+      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Time: 790ms; Memory: 22MB
+::error::FILE: lib/ajax.php%0A--------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 4 ERRORS AFFECTING 3 LINES%0A--------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 16 | ERROR | "$this" can no longer be used in a plain function or method since PHP 7.1.%0A    |       | (PHPCompatibility.Variables.ForbiddenThisUseContexts.OutsideObjectContext)%0A 16 | ERROR | "$this" can no longer be used in a plain function or method since PHP 7.1.%0A    |       | (PHPCompatibility.Variables.ForbiddenThisUseContexts.OutsideObjectContext)%0A 18 | ERROR | "$this" can no longer be used in a plain function or method since PHP 7.1.%0A    |       | (PHPCompatibility.Variables.ForbiddenThisUseContexts.OutsideObjectContext)%0A 19 | ERROR | "$this" can no longer be used in a plain function or method since PHP 7.1.%0A    |       | (PHPCompatibility.Variables.ForbiddenThisUseContexts.OutsideObjectContext)%0A--------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: lib/base_facebook.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 994 | ERROR | Passing the $glue and $pieces parameters in reverse order to implode has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first%0A     |       | parameter and $pieces the second (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: lib/profile.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 72 | ERROR | Indirect access to variables, properties and methods will be evaluated strictly in left-to-right order since PHP 7.0. Use curly braces to remove ambiguity.%0A    |       | (PHPCompatibility.Variables.NewUniformVariableSyntax.Found)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: simplr_form_functions.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 1221 | ERROR | The "result" parameter for function parse_str() is missing. Passing this parameter is no longer optional. The optional nature of the parameter is deprecated since%0A      |       | PHP 7.2 and removed since PHP 8.0 (PHPCompatibility.FunctionUse.OptionalToRequiredFunctionParameters.parse_str_resultSoftRequiredHardRequired)%0A 1480 | ERROR | Function create_function() is deprecated since PHP 7.2 and removed since PHP 8.0; Use an anonymous function instead%0A      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
