@@ -1,0 +1,25 @@
+FILE: counterize_admin.php
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 89 | ERROR | Passing the $glue and $pieces parameters in reverse order to join has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first parameter
+    |       | and $pieces the second (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+FILE: counterize.php
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+FOUND 6 ERRORS AFFECTING 5 LINES
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 328 | ERROR | Function each() is deprecated since PHP 7.2 and removed since PHP 8.0; Use a foreach loop or ArrayIterator instead
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)
+ 354 | ERROR | Function each() is deprecated since PHP 7.2 and removed since PHP 8.0; Use a foreach loop or ArrayIterator instead
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)
+ 380 | ERROR | Function each() is deprecated since PHP 7.2 and removed since PHP 8.0; Use a foreach loop or ArrayIterator instead
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)
+ 478 | ERROR | Extension 'ereg' is deprecated since PHP 5.3 and removed since PHP 7.0; Use pcre instead (PHPCompatibility.Extensions.RemovedExtensions.eregDeprecatedRemoved)
+ 478 | ERROR | Function eregi() is deprecated since PHP 5.3 and removed since PHP 7.0; Use preg_match() (with the i modifier) instead
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eregiDeprecatedRemoved)
+ 805 | ERROR | list() will assign variable from left-to-right since PHP 7.0. Ensure all variables in list() are unique to prevent unexpected results.
+     |       | (PHPCompatibility.Lists.AssignmentOrder.Affected)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
