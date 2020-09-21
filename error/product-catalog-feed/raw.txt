@@ -1,0 +1,59 @@
+::warning::Plugin: https://wordpress.org/plugins/product-catalog-feed/%0ATrac: https://plugins.trac.wordpress.org/browser/product-catalog-feed/
+No syntax errors detected in product-catalog-feed/product-catalog-feed/inc/admin_notices.php
+No syntax errors detected in product-catalog-feed/product-catalog-feed/inc/admin.php
+No syntax errors detected in product-catalog-feed/product-catalog-feed/inc/common.php
+No syntax errors detected in product-catalog-feed/product-catalog-feed/inc/countries.php
+Errors parsing product-catalog-feed/product-catalog-feed/inc/Encode.php
+No syntax errors detected in product-catalog-feed/product-catalog-feed/inc/feed-list-table.php
+No syntax errors detected in product-catalog-feed/product-catalog-feed/inc/generate-feed.php
+No syntax errors detected in product-catalog-feed/product-catalog-feed/inc/helpers.php
+No syntax errors detected in product-catalog-feed/product-catalog-feed/product-catalog-feed.php
+No syntax errors detected in product-catalog-feed/product-catalog-feed/view/admin/add-feed.php
+No syntax errors detected in product-catalog-feed/product-catalog-feed/view/admin/admin-settings.php
+No syntax errors detected in product-catalog-feed/product-catalog-feed/view/admin/feed-manage-list.php
+No syntax errors detected in product-catalog-feed/product-catalog-feed/view/admin/manage-feed.php
+No syntax errors detected in product-catalog-feed/product-catalog-feed/view/admin/settings-bottom.php
+No syntax errors detected in product-catalog-feed/product-catalog-feed/view/admin/settings.php
+No syntax errors detected in product-catalog-feed/product-catalog-feed/view/admin/settings-top.php
+::error::%0Ainc/Encode.php
+No syntax errors detected in product-catalog-feed/product-catalog-feed/view/admin/settings-top.php
+....[32mE[0m.[31mE[0m.[31mE[0m....... 16 / 16 (100%)
+
+
+
+[1mFILE: inc/Encode.php[0m
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[1mFOUND 4 ERRORS AFFECTING 4 LINES[0m
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 170 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $text{$i}[0m
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 172 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $text{$i+1}[0m
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 173 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $text{$i+2}[0m
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 174 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $text{$i+3}[0m
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[1mPHPCBF CAN FIX THE 4 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+[1mFILE: inc/generate-feed.php[0m
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 525 | [31mERROR[0m | [1mFunction create_function() is deprecated since PHP 7.2 and removed since PHP 8.0; Use an anonymous function instead[0m
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+[1mFILE: product-catalog-feed.php[0m
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 377 | [31mERROR[0m | [1mFunction create_function() is deprecated since PHP 7.2 and removed since PHP 8.0; Use an anonymous function instead[0m
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Time: 814ms; Memory: 22MB
+::error::FILE: inc/Encode.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 4 ERRORS AFFECTING 4 LINES%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 170 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $text{$i}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 172 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $text{$i+1}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 173 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $text{$i+2}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 174 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $text{$i+3}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0APHPCBF CAN FIX THE 4 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: inc/generate-feed.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 525 | ERROR | Function create_function() is deprecated since PHP 7.2 and removed since PHP 8.0; Use an anonymous function instead%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: product-catalog-feed.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 377 | ERROR | Function create_function() is deprecated since PHP 7.2 and removed since PHP 8.0; Use an anonymous function instead%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
