@@ -1,0 +1,51 @@
+
+include/classes/otw_pctl_dispatcher.class.php
+
+include/otw_components/otw_image/otw_image.class.php
+FILE: include/classes/otw_pctl_dispatcher.class.php
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+FOUND 3 ERRORS AFFECTING 2 LINES
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 823 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $content{ $cC }
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 835 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $content{ $cC + 1 }
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 835 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $content{ $cC + 1 }
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 3 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+FILE: include/otw_components/otw_functions/otw_functions.php
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 272 | ERROR | Function get_magic_quotes_gpc() is deprecated since PHP 7.4 and removed since PHP 8.0
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_gpcDeprecatedRemoved)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+FILE: include/otw_components/otw_image/otw_image.class.php
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+FOUND 8 ERRORS AFFECTING 4 LINES
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 142 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $scale_matches[1]{0}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 142 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $scale_matches[2]{0}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 813 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $color{0}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 813 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $color{1}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 814 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $color{2}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 814 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $color{3}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 815 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $color{4}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 815 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $color{5}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 8 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
