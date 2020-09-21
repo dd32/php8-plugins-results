@@ -1,0 +1,56 @@
+::warning::Plugin: https://wordpress.org/plugins/wp-qiniu/%0ATrac: https://plugins.trac.wordpress.org/browser/wp-qiniu/
+No syntax errors detected in wp-qiniu/wp-qiniu/lib/autoload.php
+No syntax errors detected in wp-qiniu/wp-qiniu/lib/Qiniu/Auth.php
+No syntax errors detected in wp-qiniu/wp-qiniu/lib/Qiniu/Cdn/CdnManager.php
+No syntax errors detected in wp-qiniu/wp-qiniu/lib/Qiniu/Config.php
+No syntax errors detected in wp-qiniu/wp-qiniu/lib/Qiniu/Etag.php
+No syntax errors detected in wp-qiniu/wp-qiniu/lib/Qiniu/functions.php
+No syntax errors detected in wp-qiniu/wp-qiniu/lib/Qiniu/Http/Client.php
+No syntax errors detected in wp-qiniu/wp-qiniu/lib/Qiniu/Http/Error.php
+No syntax errors detected in wp-qiniu/wp-qiniu/lib/Qiniu/Http/Request.php
+No syntax errors detected in wp-qiniu/wp-qiniu/lib/Qiniu/Http/Response.php
+No syntax errors detected in wp-qiniu/wp-qiniu/lib/Qiniu/Processing/ImageUrlBuilder.php
+No syntax errors detected in wp-qiniu/wp-qiniu/lib/Qiniu/Processing/Operation.php
+No syntax errors detected in wp-qiniu/wp-qiniu/lib/Qiniu/Processing/PersistentFop.php
+No syntax errors detected in wp-qiniu/wp-qiniu/lib/Qiniu/Rtc/AppClient.php
+No syntax errors detected in wp-qiniu/wp-qiniu/lib/Qiniu/Storage/BucketManager.php
+No syntax errors detected in wp-qiniu/wp-qiniu/lib/Qiniu/Storage/FormUploader.php
+No syntax errors detected in wp-qiniu/wp-qiniu/lib/Qiniu/Storage/ResumeUploader.php
+No syntax errors detected in wp-qiniu/wp-qiniu/lib/Qiniu/Storage/UploadManager.php
+No syntax errors detected in wp-qiniu/wp-qiniu/lib/Qiniu/Zone.php
+No syntax errors detected in wp-qiniu/wp-qiniu/wp-qiniu-ajax.php
+No syntax errors detected in wp-qiniu/wp-qiniu/wp-qiniu-backup.php
+No syntax errors detected in wp-qiniu/wp-qiniu/wp-qiniu-debug.php
+No syntax errors detected in wp-qiniu/wp-qiniu/wp-qiniu-file-manage.php
+No syntax errors detected in wp-qiniu/wp-qiniu/wp-qiniu-functions.php
+No syntax errors detected in wp-qiniu/wp-qiniu/wp-qiniu-insert-to-content.php
+No syntax errors detected in wp-qiniu/wp-qiniu/wp-qiniu.php
+No syntax errors detected in wp-qiniu/wp-qiniu/wp-qiniu-shortcodes-audiojs-grindplayer.php
+No syntax errors detected in wp-qiniu/wp-qiniu/wp-qiniu-shortcodes-ckplayer.php
+No syntax errors detected in wp-qiniu/wp-qiniu/wp-qiniu-shortcodes.php
+...................[31mE[0m...[31mE[0m..... 29 / 29 (100%)
+
+
+
+[1mFILE: wp-qiniu-ajax.php[0m
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[1mFOUND 2 ERRORS AFFECTING 2 LINES[0m
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 130 | [31mERROR[0m | [1mThe "result" parameter for function parse_str() is missing. Passing this parameter is no longer optional. The optional nature of the parameter is deprecated since
+     |       | PHP 7.2 and removed since PHP 8.0[0m (PHPCompatibility.FunctionUse.OptionalToRequiredFunctionParameters.parse_str_resultSoftRequiredHardRequired)
+ 185 | [31mERROR[0m | [1mThe "result" parameter for function parse_str() is missing. Passing this parameter is no longer optional. The optional nature of the parameter is deprecated since
+     |       | PHP 7.2 and removed since PHP 8.0[0m (PHPCompatibility.FunctionUse.OptionalToRequiredFunctionParameters.parse_str_resultSoftRequiredHardRequired)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+[1mFILE: wp-qiniu-functions.php[0m
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[1mFOUND 2 ERRORS AFFECTING 1 LINE[0m
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 623 | [31mERROR[0m | [1mThe constant "CURLOPT_CLOSEPOLICY" is removed since PHP 5.6[0m (PHPCompatibility.Constants.RemovedConstants.curlopt_closepolicyRemoved)
+ 623 | [31mERROR[0m | [1mThe constant "CURLCLOSEPOLICY_LEAST_RECENTLY_USED" is removed since PHP 5.6[0m
+     |       | (PHPCompatibility.Constants.RemovedConstants.curlclosepolicy_least_recently_usedRemoved)
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Time: 734ms; Memory: 16MB
+::error::FILE: wp-qiniu-ajax.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 130 | ERROR | The "result" parameter for function parse_str() is missing. Passing this parameter is no longer optional. The optional nature of the parameter is deprecated since%0A     |       | PHP 7.2 and removed since PHP 8.0 (PHPCompatibility.FunctionUse.OptionalToRequiredFunctionParameters.parse_str_resultSoftRequiredHardRequired)%0A 185 | ERROR | The "result" parameter for function parse_str() is missing. Passing this parameter is no longer optional. The optional nature of the parameter is deprecated since%0A     |       | PHP 7.2 and removed since PHP 8.0 (PHPCompatibility.FunctionUse.OptionalToRequiredFunctionParameters.parse_str_resultSoftRequiredHardRequired)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: wp-qiniu-functions.php%0A------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 1 LINE%0A------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 623 | ERROR | The constant "CURLOPT_CLOSEPOLICY" is removed since PHP 5.6 (PHPCompatibility.Constants.RemovedConstants.curlopt_closepolicyRemoved)%0A 623 | ERROR | The constant "CURLCLOSEPOLICY_LEAST_RECENTLY_USED" is removed since PHP 5.6%0A     |       | (PHPCompatibility.Constants.RemovedConstants.curlclosepolicy_least_recently_usedRemoved)%0A------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
