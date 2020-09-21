@@ -1,0 +1,31 @@
+::warning::Plugin: https://wordpress.org/plugins/yacaptcha/%0ATrac: https://plugins.trac.wordpress.org/browser/yacaptcha/
+No syntax errors detected in yacaptcha/yacaptcha/captcha-image.php
+No syntax errors detected in yacaptcha/yacaptcha/kcaptcha_config.php
+Errors parsing yacaptcha/yacaptcha/kcaptcha.php
+No syntax errors detected in yacaptcha/yacaptcha/util/font_preparer.php
+No syntax errors detected in yacaptcha/yacaptcha/yacaptcha.php
+::error::%0Akcaptcha.php
+..[32mE[0m.. 5 / 5 (100%)
+
+
+
+[1mFILE: kcaptcha.php[0m
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[1mFOUND 5 ERRORS AFFECTING 5 LINES[0m
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 22 | [31mERROR[0m | [ ] [1mDeclaration of a PHP4 style class constructor is deprecated since PHP 7.0 and removed since PHP 8.0[0m
+    |       |     (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+ 43 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found:
+    |       |     $allowed_symbols{mt_rand(0,strlen($allowed_symbols)-1)}[0m (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 62 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $alphabet{$symbol}[0m
+    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 68 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $alphabet{$symbol}[0m
+    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 85 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $this->keystring{$i}[0m
+    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[1mPHPCBF CAN FIX THE 4 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Time: 106ms; Memory: 12MB
+::error::FILE: kcaptcha.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 5 ERRORS AFFECTING 5 LINES%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 22 | ERROR | [ ] Declaration of a PHP4 style class constructor is deprecated since PHP 7.0 and removed since PHP 8.0%0A    |       |     (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)%0A 43 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found:%0A    |       |     $allowed_symbols{mt_rand(0,strlen($allowed_symbols)-1)} (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 62 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $alphabet{$symbol}%0A    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 68 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $alphabet{$symbol}%0A    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 85 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $this->keystring{$i}%0A    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0APHPCBF CAN FIX THE 4 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
