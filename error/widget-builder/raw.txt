@@ -1,0 +1,39 @@
+::warning::Plugin: https://wordpress.org/plugins/widget-builder/%0ATrac: https://plugins.trac.wordpress.org/browser/widget-builder/
+No syntax errors detected in widget-builder/widget-builder/classes/custom-widget-display.php
+No syntax errors detected in widget-builder/widget-builder/classes/widget-builder.php
+Errors parsing widget-builder/widget-builder/classes/wp_add_dashboard_widget.php
+No syntax errors detected in widget-builder/widget-builder/lib/tribe-widget-factory/tribe-widget-factory.php
+No syntax errors detected in widget-builder/widget-builder/lib/tribe-widget-factory/Tribe_WP_Widget_Factory.php
+No syntax errors detected in widget-builder/widget-builder/views/metabox_admin.php
+No syntax errors detected in widget-builder/widget-builder/views/metabox_link.php
+No syntax errors detected in widget-builder/widget-builder/views/metabox_pub.php
+No syntax errors detected in widget-builder/widget-builder/views/widget_dashboard.php
+No syntax errors detected in widget-builder/widget-builder/views/widget_options.php
+No syntax errors detected in widget-builder/widget-builder/views/widget.php
+No syntax errors detected in widget-builder/widget-builder/widget-builder.php
+::error::%0Aclasses/wp_add_dashboard_widget.php
+[31mE[0m.[31mE[0m......... 12 / 12 (100%)
+
+
+
+[1mFILE: classes/custom-widget-display.php[0m
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 30 | [31mERROR[0m | [1mDeclaration of a PHP4 style class constructor is deprecated since PHP 7.0 and removed since PHP 8.0[0m
+    |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+[1mFILE: classes/wp_add_dashboard_widget.php[0m
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[1mFOUND 2 ERRORS AFFECTING 2 LINES[0m
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 5 | [31mERROR[0m | [1mVariables bound to a closure via the use construct cannot use the same name as superglobals, $this, or a declared parameter since PHP 7.1. Found: $widget[0m
+   |       | (PHPCompatibility.FunctionDeclarations.ForbiddenVariableNamesInClosureUse.FoundShadowParam)
+ 6 | [31mERROR[0m | [1mVariables bound to a closure via the use construct cannot use the same name as superglobals, $this, or a declared parameter since PHP 7.1. Found: $widget[0m
+   |       | (PHPCompatibility.FunctionDeclarations.ForbiddenVariableNamesInClosureUse.FoundShadowParam)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Time: 195ms; Memory: 14MB
+::error::FILE: classes/custom-widget-display.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 30 | ERROR | Declaration of a PHP4 style class constructor is deprecated since PHP 7.0 and removed since PHP 8.0%0A    |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: classes/wp_add_dashboard_widget.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 5 | ERROR | Variables bound to a closure via the use construct cannot use the same name as superglobals, $this, or a declared parameter since PHP 7.1. Found: $widget%0A   |       | (PHPCompatibility.FunctionDeclarations.ForbiddenVariableNamesInClosureUse.FoundShadowParam)%0A 6 | ERROR | Variables bound to a closure via the use construct cannot use the same name as superglobals, $this, or a declared parameter since PHP 7.1. Found: $widget%0A   |       | (PHPCompatibility.FunctionDeclarations.ForbiddenVariableNamesInClosureUse.FoundShadowParam)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
