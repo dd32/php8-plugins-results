@@ -1,0 +1,35 @@
+::warning::Plugin: https://wordpress.org/plugins/cm-answers/%0ATrac: https://plugins.trac.wordpress.org/browser/cm-answers/
+No syntax errors detected in cm-answers/cm-answers/cm-answers.php
+No syntax errors detected in cm-answers/cm-answers/lib/CMA.php
+No syntax errors detected in cm-answers/cm-answers/lib/controllers/AnswerController.php
+No syntax errors detected in cm-answers/cm-answers/lib/controllers/BaseController.php
+No syntax errors detected in cm-answers/cm-answers/lib/controllers/ErrorController.php
+No syntax errors detected in cm-answers/cm-answers/lib/helpers/BuddyPress.php
+No syntax errors detected in cm-answers/cm-answers/lib/models/Answer.php
+No syntax errors detected in cm-answers/cm-answers/lib/models/AnswerThread.php
+No syntax errors detected in cm-answers/cm-answers/lib/models/Category.php
+No syntax errors detected in cm-answers/cm-answers/lib/models/Labels.php
+
+Warning: The magic method CMA_PostType::__sleep() must have public visibility in cm-answers/cm-answers/lib/models/PostType.php on line 215
+No syntax errors detected in cm-answers/cm-answers/lib/models/PostType.php
+No syntax errors detected in cm-answers/cm-answers/package/cminds-api.php
+No syntax errors detected in cm-answers/cm-answers/package/cminds-free.php
+No syntax errors detected in cm-answers/cm-answers/package/cminds-plugin-config.php
+No syntax errors detected in cm-answers/cm-answers/package/views/activation.php
+No syntax errors detected in cm-answers/cm-answers/package/views/deactivation_feedback_modal.php
+No syntax errors detected in cm-answers/cm-answers/package/views/userguide_free.php
+::error::%0Alib/models/PostType.php%0A  Warning: The magic method CMA_PostType::__sleep() must have public visibility on line 215
+..........[31mE[0m...... 17 / 17 (100%)
+
+
+
+[1mFILE: lib/models/PostType.php[0m
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 215 | [31mERROR[0m | [1mVisibility for magic method __sleep must be public. Found: protected[0m
+     |       | (PHPCompatibility.FunctionDeclarations.NonStaticMagicMethods.__sleepMethodVisibility)
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Time: 1.88 secs; Memory: 26MB
+::error::FILE: lib/models/PostType.php%0A--------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A--------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 215 | ERROR | Visibility for magic method __sleep must be public. Found: protected%0A     |       | (PHPCompatibility.FunctionDeclarations.NonStaticMagicMethods.__sleepMethodVisibility)%0A--------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
