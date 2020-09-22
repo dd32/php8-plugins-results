@@ -1,0 +1,36 @@
+FILE: bitid/BitID.php
+----------------------------------------------------------------------
+FOUND 4 ERRORS AFFECTING 4 LINES
+----------------------------------------------------------------------
+ 59 | ERROR | The behaviour of hexadecimal numeric strings was
+    |       | inconsistent prior to PHP 7 and support has been
+    |       | removed in PHP 7. Found:
+    |       | '0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEFFFFFC2F'
+    |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
+ 64 | ERROR | The behaviour of hexadecimal numeric strings was
+    |       | inconsistent prior to PHP 7 and support has been
+    |       | removed in PHP 7. Found:
+    |       | '0x79BE667EF9DCBBAC55A06295CE870B07029BFCDB2DCE28D959F2815B16F81798'
+    |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
+ 65 | ERROR | The behaviour of hexadecimal numeric strings was
+    |       | inconsistent prior to PHP 7 and support has been
+    |       | removed in PHP 7. Found:
+    |       | '0x483ADA7726A3C4655DA4FBFC0E1108A8FD17B448A68554199C47D08FFB10D4B8'
+    |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
+ 66 | ERROR | The behaviour of hexadecimal numeric strings was
+    |       | inconsistent prior to PHP 7 and support has been
+    |       | removed in PHP 7. Found:
+    |       | '0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEBAAEDCE6AF48A03BBFD25E8CD0364141'
+    |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
+----------------------------------------------------------------------
+
+
+FILE: bitid/gmp_Utils.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 46 | ERROR | Function gmp_random() is deprecated since PHP 7.2 and
+    |       | removed since PHP 8.0; Use gmp_random_bits() or
+    |       | gmp_random_range() instead
+    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.gmp_randomDeprecatedRemoved)
+----------------------------------------------------------------------

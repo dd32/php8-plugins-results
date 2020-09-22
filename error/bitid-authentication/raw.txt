@@ -1,0 +1,57 @@
+::warning::Plugin: https://wordpress.org/plugins/bitid-authentication/%0ATrac: https://plugins.trac.wordpress.org/browser/bitid-authentication/
+No syntax errors detected in bitid-authentication/bitid-authentication/bitid/BitID.php
+No syntax errors detected in bitid-authentication/bitid-authentication/bitid/CurveFpInterface.php
+No syntax errors detected in bitid-authentication/bitid-authentication/bitid/CurveFp.php
+No syntax errors detected in bitid-authentication/bitid-authentication/bitid/gmp_Utils.php
+No syntax errors detected in bitid-authentication/bitid-authentication/bitid/NumberTheory.php
+No syntax errors detected in bitid-authentication/bitid-authentication/bitid/PointInterface.php
+No syntax errors detected in bitid-authentication/bitid-authentication/bitid/Point.php
+No syntax errors detected in bitid-authentication/bitid-authentication/bitid/PublicKeyInterface.php
+No syntax errors detected in bitid-authentication/bitid-authentication/bitid/PublicKey.php
+No syntax errors detected in bitid-authentication/bitid-authentication/bitid/SignatureInterface.php
+No syntax errors detected in bitid-authentication/bitid-authentication/bitid/Signature.php
+No syntax errors detected in bitid-authentication/bitid-authentication/bitid-authentication.php
+No syntax errors detected in bitid-authentication/bitid-authentication/BitidAuthentication.php
+[31mE[0m..[31mE[0m......... 13 / 13 (100%)
+
+
+
+[1mFILE: bitid/BitID.php[0m
+----------------------------------------------------------------------
+[1mFOUND 4 ERRORS AFFECTING 4 LINES[0m
+----------------------------------------------------------------------
+ 59 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+    |       | inconsistent prior to PHP 7 and support has been
+    |       | removed in PHP 7. Found:
+    |       | '0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEFFFFFC2F'[0m
+    |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
+ 64 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+    |       | inconsistent prior to PHP 7 and support has been
+    |       | removed in PHP 7. Found:
+    |       | '0x79BE667EF9DCBBAC55A06295CE870B07029BFCDB2DCE28D959F2815B16F81798'[0m
+    |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
+ 65 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+    |       | inconsistent prior to PHP 7 and support has been
+    |       | removed in PHP 7. Found:
+    |       | '0x483ADA7726A3C4655DA4FBFC0E1108A8FD17B448A68554199C47D08FFB10D4B8'[0m
+    |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
+ 66 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+    |       | inconsistent prior to PHP 7 and support has been
+    |       | removed in PHP 7. Found:
+    |       | '0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEBAAEDCE6AF48A03BBFD25E8CD0364141'[0m
+    |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
+----------------------------------------------------------------------
+
+
+[1mFILE: bitid/gmp_Utils.php[0m
+----------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 46 | [31mERROR[0m | [1mFunction gmp_random() is deprecated since PHP 7.2 and
+    |       | removed since PHP 8.0; Use gmp_random_bits() or
+    |       | gmp_random_range() instead[0m
+    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.gmp_randomDeprecatedRemoved)
+----------------------------------------------------------------------
+
+Time: 505ms; Memory: 18MB
+::error::FILE: bitid/BitID.php%0A----------------------------------------------------------------------%0AFOUND 4 ERRORS AFFECTING 4 LINES%0A----------------------------------------------------------------------%0A 59 | ERROR | The behaviour of hexadecimal numeric strings was%0A    |       | inconsistent prior to PHP 7 and support has been%0A    |       | removed in PHP 7. Found:%0A    |       | '0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEFFFFFC2F'%0A    |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 64 | ERROR | The behaviour of hexadecimal numeric strings was%0A    |       | inconsistent prior to PHP 7 and support has been%0A    |       | removed in PHP 7. Found:%0A    |       | '0x79BE667EF9DCBBAC55A06295CE870B07029BFCDB2DCE28D959F2815B16F81798'%0A    |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 65 | ERROR | The behaviour of hexadecimal numeric strings was%0A    |       | inconsistent prior to PHP 7 and support has been%0A    |       | removed in PHP 7. Found:%0A    |       | '0x483ADA7726A3C4655DA4FBFC0E1108A8FD17B448A68554199C47D08FFB10D4B8'%0A    |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 66 | ERROR | The behaviour of hexadecimal numeric strings was%0A    |       | inconsistent prior to PHP 7 and support has been%0A    |       | removed in PHP 7. Found:%0A    |       | '0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEBAAEDCE6AF48A03BBFD25E8CD0364141'%0A    |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A----------------------------------------------------------------------%0A%0A%0AFILE: bitid/gmp_Utils.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 46 | ERROR | Function gmp_random() is deprecated since PHP 7.2 and%0A    |       | removed since PHP 8.0; Use gmp_random_bits() or%0A    |       | gmp_random_range() instead%0A    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.gmp_randomDeprecatedRemoved)%0A----------------------------------------------------------------------%0A
