@@ -1,0 +1,30 @@
+::warning::Plugin: https://wordpress.org/plugins/fortunekookie/%0ATrac: https://plugins.trac.wordpress.org/browser/fortunekookie/
+No syntax errors detected in fortunekookie/fortunekookie/fortunekookie.php
+No syntax errors detected in fortunekookie/fortunekookie/includes/fortunekookie.api.class.php
+[31mE[0m[31mE[0m 2 / 2 (100%)
+
+
+
+[1mFILE: fortunekookie.php[0m
+----------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 389 | [31mERROR[0m | [1mpreg_replace() - /e modifier is deprecated since PHP
+     |       | 5.5 and removed since PHP 7.0[0m
+     |       | (PHPCompatibility.ParameterValues.RemovedPCREModifiers.Removed)
+----------------------------------------------------------------------
+
+
+[1mFILE: includes/fortunekookie.api.class.php[0m
+----------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 101 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse
+     |       | order to implode has been deprecated since PHP 7.4 and
+     |       | is removed since PHP 8.0; $glue should be the first
+     |       | parameter and $pieces the second[0m
+     |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
+----------------------------------------------------------------------
+
+Time: 98ms; Memory: 12MB
+::error::FILE: fortunekookie.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 389 | ERROR | preg_replace() - /e modifier is deprecated since PHP%0A     |       | 5.5 and removed since PHP 7.0%0A     |       | (PHPCompatibility.ParameterValues.RemovedPCREModifiers.Removed)%0A----------------------------------------------------------------------%0A%0A%0AFILE: includes/fortunekookie.api.class.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 101 | ERROR | Passing the $glue and $pieces parameters in reverse%0A     |       | order to implode has been deprecated since PHP 7.4 and%0A     |       | is removed since PHP 8.0; $glue should be the first%0A     |       | parameter and $pieces the second%0A     |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A----------------------------------------------------------------------%0A

@@ -1,0 +1,165 @@
+
+vendor/phpdocumentor/type-resolver/src/Types/Mixed.php
+  Fatal error: Cannot use 'Mixed' as class name as it is reserved on line 20
+
+vendor/phpunit/phpunit/src/Util/Configuration.php
+  Warning: Private methods cannot be final as they are never overridden by other classes on line 165
+
+vendor/phpunit/phpunit/tests/_files/Singleton.php
+  Warning: Private methods cannot be final as they are never overridden by other classes on line 10
+
+vendor/phpunit/phpunit-mock-objects/tests/_fixture/SingletonClass.php
+  Warning: Private methods cannot be final as they are never overridden by other classes on line 17
+  Warning: The magic method SingletonClass::__sleep() must have public visibility on line 17
+  Warning: Private methods cannot be final as they are never overridden by other classes on line 21
+  Warning: The magic method SingletonClass::__wakeup() must have public visibility on line 21
+  Warning: Private methods cannot be final as they are never overridden by other classes on line 25
+
+vendor/sebastian/diff/tests/ParserTest.php
+  Parse error: Invalid body indentation level (expecting an indentation level of at least 1) on line 78
+
+vendor/simplon/helper/src/SingletonTrait.php
+  Warning: The magic method Simplon\Helper\SingletonTrait::__wakeup() must have public visibility on line 47
+FILE: vendor/happyr/linkedin-api-client/src/Http/UrlGenerator.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 117 | ERROR | Passing the $glue and $pieces parameters in reverse
+     |       | order to implode has been deprecated since PHP 7.4 and
+     |       | is removed since PHP 8.0; $glue should be the first
+     |       | parameter and $pieces the second
+     |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
+----------------------------------------------------------------------
+
+
+FILE: vendor/phpfastcache/phpfastcache/examples/sqlite.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 52 | ERROR | Extension 'sqlite' is removed since PHP 5.4
+    |       | (PHPCompatibility.Extensions.RemovedExtensions.sqliteRemoved)
+----------------------------------------------------------------------
+
+
+FILE: ...pfastcache/phpfastcache/src/phpFastCache/Core/DriverAbstract.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 667 | ERROR | Extension 'sqlite' is removed since PHP 5.4
+     |       | (PHPCompatibility.Extensions.RemovedExtensions.sqliteRemoved)
+----------------------------------------------------------------------
+
+
+FILE: .../_extensions/predis-1.0/src/Collection/Iterator/SortedSetKey.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 52 | ERROR | Function each() is deprecated since PHP 7.2 and removed
+    |       | since PHP 8.0; Use a foreach loop or ArrayIterator
+    |       | instead
+    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)
+----------------------------------------------------------------------
+
+
+FILE: vendor/php-http/curl-client/src/PromiseCore.php
+----------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+----------------------------------------------------------------------
+ 79 | ERROR | Using a string as the assertion passed to assert() is
+    |       | deprecated since PHP 7.2 and removed since PHP 8.0.
+    |       | Found: 'is_resource($handle)'
+    |       | (PHPCompatibility.ParameterValues.RemovedAssertStringAssertion.Found)
+ 80 | ERROR | Using a string as the assertion passed to assert() is
+    |       | deprecated since PHP 7.2 and removed since PHP 8.0.
+    |       | Found: 'get_resource_type($handle) === "curl"'
+    |       | (PHPCompatibility.ParameterValues.RemovedAssertStringAssertion.Found)
+----------------------------------------------------------------------
+
+
+FILE: vendor/phpunit/php-token-stream/tests/_fixture/source.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 5 | ERROR | Declaration of a PHP4 style class constructor is
+   |       | deprecated since PHP 7.0 and removed since PHP 8.0
+   |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+----------------------------------------------------------------------
+
+
+FILE: vendor/phpunit/phpunit/src/Util/Getopt.php
+----------------------------------------------------------------------
+FOUND 3 ERRORS AFFECTING 3 LINES
+----------------------------------------------------------------------
+  38 | ERROR | Function each() is deprecated since PHP 7.2 and
+     |       | removed since PHP 8.0; Use a foreach loop or
+     |       | ArrayIterator instead
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)
+  97 | ERROR | Function each() is deprecated since PHP 7.2 and
+     |       | removed since PHP 8.0; Use a foreach loop or
+     |       | ArrayIterator instead
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)
+ 143 | ERROR | Function each() is deprecated since PHP 7.2 and
+     |       | removed since PHP 8.0; Use a foreach loop or
+     |       | ArrayIterator instead
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)
+----------------------------------------------------------------------
+
+
+FILE: ...r/phpunit/phpunit-mock-objects/tests/_fixture/SingletonClass.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 17 | ERROR | Visibility for magic method __sleep must be public.
+    |       | Found: private
+    |       | (PHPCompatibility.FunctionDeclarations.NonStaticMagicMethods.__sleepMethodVisibility)
+----------------------------------------------------------------------
+
+
+FILE: vendor/sebastian/diff/tests/ParserTest.php
+----------------------------------------------------------------------
+FOUND 5 ERRORS AFFECTING 5 LINES
+----------------------------------------------------------------------
+  83 | ERROR | The body of a heredoc/nowdoc can not contain the
+     |       | heredoc/nowdoc closing marker as text at the start of
+     |       | a line since PHP 7.3.
+     |       | (PHPCompatibility.Syntax.NewFlexibleHeredocNowdoc.ClosingMarkerNoNewLine)
+ 126 | ERROR | The body of a heredoc/nowdoc can not contain the
+     |       | heredoc/nowdoc closing marker as text at the start of
+     |       | a line since PHP 7.3.
+     |       | (PHPCompatibility.Syntax.NewFlexibleHeredocNowdoc.ClosingMarkerNoNewLine)
+ 130 | ERROR | Using an unparenthesized expression containing a "."
+     |       | before a "+" or "-" has been deprecated in PHP 7.4 and
+     |       | removed in PHP 8.0
+     |       | (PHPCompatibility.Operators.ChangedConcatOperatorPrecedence.Found)
+ 131 | ERROR | Using an unparenthesized expression containing a "."
+     |       | before a "+" or "-" has been deprecated in PHP 7.4 and
+     |       | removed in PHP 8.0
+     |       | (PHPCompatibility.Operators.ChangedConcatOperatorPrecedence.Found)
+ 132 | ERROR | Using an unparenthesized expression containing a "."
+     |       | before a "+" or "-" has been deprecated in PHP 7.4 and
+     |       | removed in PHP 8.0
+     |       | (PHPCompatibility.Operators.ChangedConcatOperatorPrecedence.Found)
+----------------------------------------------------------------------
+
+
+FILE: vendor/symfony/yaml/Tests/InlineTest.php
+----------------------------------------------------------------------
+FOUND 4 ERRORS AFFECTING 4 LINES
+----------------------------------------------------------------------
+ 386 | ERROR | The behaviour of hexadecimal numeric strings was
+     |       | inconsistent prior to PHP 7 and support has been
+     |       | removed in PHP 7. Found: '0x4D2'
+     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
+ 387 | ERROR | The behaviour of hexadecimal numeric strings was
+     |       | inconsistent prior to PHP 7 and support has been
+     |       | removed in PHP 7. Found: '0x_4_D_2_'
+     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
+ 467 | ERROR | The behaviour of hexadecimal numeric strings was
+     |       | inconsistent prior to PHP 7 and support has been
+     |       | removed in PHP 7. Found: '0x4D2'
+     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
+ 550 | ERROR | The behaviour of hexadecimal numeric strings was
+     |       | inconsistent prior to PHP 7 and support has been
+     |       | removed in PHP 7. Found: '0x_4_D_2_'
+     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
+----------------------------------------------------------------------

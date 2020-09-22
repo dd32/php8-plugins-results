@@ -1,0 +1,29 @@
+
+wp_smf/smf_api_1.1.php
+  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 1186
+FILE: wp_smf/smf_api_1.1.php
+----------------------------------------------------------------------
+FOUND 5 ERRORS AFFECTING 5 LINES
+----------------------------------------------------------------------
+  151 | ERROR | [ ] Function set_magic_quotes_runtime() is deprecated
+      |       |     since PHP 5.3 and removed since PHP 7.0
+      |       |     (PHPCompatibility.FunctionUse.RemovedFunctions.set_magic_quotes_runtimeDeprecatedRemoved)
+  477 | ERROR | [ ] Global variable '$HTTP_COOKIE_VARS' is deprecated
+      |       |     since PHP 5.3 and removed since PHP 5.4; Use
+      |       |     $_COOKIE instead
+      |       |     (PHPCompatibility.Variables.RemovedPredefinedGlobalVariables.http_cookie_varsDeprecatedRemoved)
+ 1052 | ERROR | [ ] Global variable '$HTTP_SESSION_VARS' is
+      |       |     deprecated since PHP 5.3 and removed since PHP
+      |       |     5.4; Use $_SESSION instead
+      |       |     (PHPCompatibility.Variables.RemovedPredefinedGlobalVariables.http_session_varsDeprecatedRemoved)
+ 1081 | ERROR | [ ] Global variable '$HTTP_SESSION_VARS' is
+      |       |     deprecated since PHP 5.3 and removed since PHP
+      |       |     5.4; Use $_SESSION instead
+      |       |     (PHPCompatibility.Variables.RemovedPredefinedGlobalVariables.http_session_varsDeprecatedRemoved)
+ 1186 | ERROR | [x] Curly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found: $str{$i}
+      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------

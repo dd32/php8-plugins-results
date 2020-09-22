@@ -1,0 +1,131 @@
+::warning::Plugin: https://wordpress.org/plugins/calicotek-gsr-chart/%0ATrac: https://plugins.trac.wordpress.org/browser/calicotek-gsr-chart/
+No syntax errors detected in calicotek-gsr-chart/calicotek-gsr-chart/cct-gsr-chart.php
+No syntax errors detected in calicotek-gsr-chart/calicotek-gsr-chart/includes/rss_scripts/FeedForAll_XMLParser.inc.php
+No syntax errors detected in calicotek-gsr-chart/calicotek-gsr-chart/includes/rss_scripts/rss2html.php
+No syntax errors detected in calicotek-gsr-chart/calicotek-gsr-chart/includes/settings.php
+No syntax errors detected in calicotek-gsr-chart/calicotek-gsr-chart/options/cct-gsr-chart-formula-options.php
+No syntax errors detected in calicotek-gsr-chart/calicotek-gsr-chart/pages/cct-gsr-chart-options-output.php
+No syntax errors detected in calicotek-gsr-chart/calicotek-gsr-chart/pages/cct-gsr-chart-output.php
+No syntax errors detected in calicotek-gsr-chart/calicotek-gsr-chart/pages/cct-gsr-chart.php
+No syntax errors detected in calicotek-gsr-chart/calicotek-gsr-chart/pages/formulas.php
+No syntax errors detected in calicotek-gsr-chart/calicotek-gsr-chart/pages/inc-pg-footer.php
+No syntax errors detected in calicotek-gsr-chart/calicotek-gsr-chart/pages/inc-pg-menu.php
+
+Parse error: syntax error, unexpected token "-", expecting "(" in calicotek-gsr-chart/calicotek-gsr-chart/widgets/widget_dash.php on line 3
+Errors parsing calicotek-gsr-chart/calicotek-gsr-chart/widgets/widget_dash.php
+No syntax errors detected in calicotek-gsr-chart/calicotek-gsr-chart/widgets/widget_front.php
+::error::%0Awidgets/widget_dash.php%0A  Parse error: syntax error, unexpected token "-", expecting "(" on line 3
+.[31mE[0m.........[32mE[0m. 13 / 13 (100%)
+
+
+
+[1mFILE: includes/rss_scripts/FeedForAll_XMLParser.inc.php[0m
+----------------------------------------------------------------------
+[1mFOUND 4 ERRORS AFFECTING 4 LINES[0m
+----------------------------------------------------------------------
+  698 | [31mERROR[0m | [1mDeclaration of a PHP4 style class constructor is
+      |       | deprecated since PHP 7.0 and removed since PHP
+      |       | 8.0[0m
+      |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+  884 | [31mERROR[0m | [1mDeclaration of a PHP4 style class constructor is
+      |       | deprecated since PHP 7.0 and removed since PHP
+      |       | 8.0[0m
+      |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+  936 | [31mERROR[0m | [1mDeclaration of a PHP4 style class constructor is
+      |       | deprecated since PHP 7.0 and removed since PHP
+      |       | 8.0[0m
+      |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+ 1716 | [31mERROR[0m | [1mDeclaration of a PHP4 style class constructor is
+      |       | deprecated since PHP 7.0 and removed since PHP
+      |       | 8.0[0m
+      |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+----------------------------------------------------------------------
+
+
+[1mFILE: widgets/widget_dash.php[0m
+----------------------------------------------------------------------
+[1mFOUND 3 ERRORS AFFECTING 3 LINES[0m
+----------------------------------------------------------------------
+  3 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and
+    |       |     string offsets has been deprecated in PHP 7.4 and
+    |       |     removed in PHP 8.0. Found: chart_setup_function() {
+    |       |     	$options = get_option('lcgmv-chart_options');
+    |       |     	$widgettitle = $options['widget_title'];
+    |       |     	add_meta_box( 'lcgmv-chart_widget',  $widgettitle,
+    |       |     'lcgmv-chart_widget_function', 'dashboard',
+    |       |     'normal', 'high' );
+    |       |     }[0m
+    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+  9 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and
+    |       |     string offsets has been deprecated in PHP 7.4 and
+    |       |     removed in PHP 8.0. Found: chart_widget_function()
+    |       |     {
+    |       |     	$options = get_option('lcgmv-chart_options');
+    |       |     	$feedurl = $options['feed_url'];
+    |       |     	$select = $options['drp_select_box'];
+    |       |
+    |       |     	$rss = fetch_feed($feedurl);
+    |       |     	if (!is_wp_error($rss)) { // Checks that the
+    |       |     object is created correctly
+    |       |     	// Figure out how many total items there are, but
+    |       |     limit it to 3.
+    |       |     	$maxitems = $rss->get_item_quantity($select);
+    |       |     	// Build an array of all the items, starting with
+    |       |     element 0 (first element).
+    |       |     	$rss_items = $rss->get_items(0, $maxitems);
+    |       |     	}
+    |       |     	if (!empty($maxitems)) {
+    |       |     ?>
+    |       |
+    |       |     <!-- Start Widget  top buttons Output-->
+    |       |
+    |       |         <div class="cct_widget_menu" align=center>
+    |       |           <a href="http://my.ebay.com/"
+    |       |     target="_blank"><img src="<?php echo plugins_url();
+    |       |     ?>/lcgmv-chart/images/my-ebay-selling.gif"
+    |       |     height="20px" width="20px" title="Open MyEbay in
+    |       |     New Window" /></a>
+    |       |           </div>
+    |       |
+    |       |       <!-- Start Widget Scroller feed Output -->
+    |       |       <div class="scroller">
+    |       |     		<ul>
+    |       |     <?php
+    |       |         // Loop through each feed item and display each
+    |       |     item as a hyperlink.
+    |       |         foreach ($rss_items as $item) {
+    |       |
+    |       |     ?>
+    |       |     		<li><span class="rss-date"><?php echo
+    |       |     $item->get_date('j F Y'); ?> </span><a
+    |       |     class="rsswidget" href='<?php echo
+    |       |     $item->get_permalink(); ?>'><?php echo
+    |       |     $item->get_title(); ?></a> </li>
+    |       |     <?php } ?>
+    |       |     	</ul>
+    |       |       </div>
+    |       |
+    |       |     <?php
+    |       |
+    |       |     }
+    |       |     	$x = is_rtl() ? 'left' : 'right'; // This makes
+    |       |     sure that the positioning is also correct for
+    |       |     right-to-left languages
+    |       |     	echo '<style type="text/css">#lcgmv-chart_widget
+    |       |     {float:$x;}</style>';
+    |       |     }[0m
+    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 61 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and
+    |       |     string offsets has been deprecated in PHP 7.4 and
+    |       |     removed in PHP 8.0. Found:
+    |       |     chart_load_custom_admin_css() {
+    |       |     	wp_enqueue_style( 'lcgmv-chart_custom_admin_css',
+    |       |     plugins_url( '/style.css', __FILE__ ) );
+    |       |     }[0m
+    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+----------------------------------------------------------------------
+[1mPHPCBF CAN FIX THE 3 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
+----------------------------------------------------------------------
+
+Time: 463ms; Memory: 22MB
+::error::FILE: includes/rss_scripts/FeedForAll_XMLParser.inc.php%0A----------------------------------------------------------------------%0AFOUND 4 ERRORS AFFECTING 4 LINES%0A----------------------------------------------------------------------%0A  698 | ERROR | Declaration of a PHP4 style class constructor is%0A      |       | deprecated since PHP 7.0 and removed since PHP%0A      |       | 8.0%0A      |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)%0A  884 | ERROR | Declaration of a PHP4 style class constructor is%0A      |       | deprecated since PHP 7.0 and removed since PHP%0A      |       | 8.0%0A      |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)%0A  936 | ERROR | Declaration of a PHP4 style class constructor is%0A      |       | deprecated since PHP 7.0 and removed since PHP%0A      |       | 8.0%0A      |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)%0A 1716 | ERROR | Declaration of a PHP4 style class constructor is%0A      |       | deprecated since PHP 7.0 and removed since PHP%0A      |       | 8.0%0A      |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)%0A----------------------------------------------------------------------%0A%0A%0AFILE: widgets/widget_dash.php%0A----------------------------------------------------------------------%0AFOUND 3 ERRORS AFFECTING 3 LINES%0A----------------------------------------------------------------------%0A  3 | ERROR | [x] Curly brace syntax for accessing array elements and%0A    |       |     string offsets has been deprecated in PHP 7.4 and%0A    |       |     removed in PHP 8.0. Found: chart_setup_function() {%0A    |       |     	$options = get_option('lcgmv-chart_options');%0A    |       |     	$widgettitle = $options['widget_title'];%0A    |       |     	add_meta_box( 'lcgmv-chart_widget',  $widgettitle,%0A    |       |     'lcgmv-chart_widget_function', 'dashboard',%0A    |       |     'normal', 'high' );%0A    |       |     }%0A    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A  9 | ERROR | [x] Curly brace syntax for accessing array elements and%0A    |       |     string offsets has been deprecated in PHP 7.4 and%0A    |       |     removed in PHP 8.0. Found: chart_widget_function()%0A    |       |     {%0A    |       |     	$options = get_option('lcgmv-chart_options');%0A    |       |     	$feedurl = $options['feed_url'];%0A    |       |     	$select = $options['drp_select_box'];%0A    |       |%0A    |       |     	$rss = fetch_feed($feedurl);%0A    |       |     	if (!is_wp_error($rss)) { // Checks that the%0A    |       |     object is created correctly%0A    |       |     	// Figure out how many total items there are, but%0A    |       |     limit it to 3.%0A    |       |     	$maxitems = $rss->get_item_quantity($select);%0A    |       |     	// Build an array of all the items, starting with%0A    |       |     element 0 (first element).%0A    |       |     	$rss_items = $rss->get_items(0, $maxitems);%0A    |       |     	}%0A    |       |     	if (!empty($maxitems)) {%0A    |       |     ?>%0A    |       |%0A    |       |     <!-- Start Widget  top buttons Output-->%0A    |       |%0A    |       |         <div class="cct_widget_menu" align=center>%0A    |       |           <a href="http://my.ebay.com/"%0A    |       |     target="_blank"><img src="<?php echo plugins_url();%0A    |       |     ?>/lcgmv-chart/images/my-ebay-selling.gif"%0A    |       |     height="20px" width="20px" title="Open MyEbay in%0A    |       |     New Window" /></a>%0A    |       |           </div>%0A    |       |%0A    |       |       <!-- Start Widget Scroller feed Output -->%0A    |       |       <div class="scroller">%0A    |       |     		<ul>%0A    |       |     <?php%0A    |       |         // Loop through each feed item and display each%0A    |       |     item as a hyperlink.%0A    |       |         foreach ($rss_items as $item) {%0A    |       |%0A    |       |     ?>%0A    |       |     		<li><span class="rss-date"><?php echo%0A    |       |     $item->get_date('j F Y'); ?> </span><a%0A    |       |     class="rsswidget" href='<?php echo%0A    |       |     $item->get_permalink(); ?>'><?php echo%0A    |       |     $item->get_title(); ?></a> </li>%0A    |       |     <?php } ?>%0A    |       |     	</ul>%0A    |       |       </div>%0A    |       |%0A    |       |     <?php%0A    |       |%0A    |       |     }%0A    |       |     	$x = is_rtl() ? 'left' : 'right'; // This makes%0A    |       |     sure that the positioning is also correct for%0A    |       |     right-to-left languages%0A    |       |     	echo '<style type="text/css">#lcgmv-chart_widget%0A    |       |     {float:$x;}</style>';%0A    |       |     }%0A    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 61 | ERROR | [x] Curly brace syntax for accessing array elements and%0A    |       |     string offsets has been deprecated in PHP 7.4 and%0A    |       |     removed in PHP 8.0. Found:%0A    |       |     chart_load_custom_admin_css() {%0A    |       |     	wp_enqueue_style( 'lcgmv-chart_custom_admin_css',%0A    |       |     plugins_url( '/style.css', __FILE__ ) );%0A    |       |     }%0A    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A----------------------------------------------------------------------%0APHPCBF CAN FIX THE 3 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A----------------------------------------------------------------------%0A

@@ -1,0 +1,110 @@
+
+widgets/widget_dash.php
+  Parse error: syntax error, unexpected token "-", expecting "(" on line 3
+FILE: includes/rss_scripts/FeedForAll_XMLParser.inc.php
+----------------------------------------------------------------------
+FOUND 4 ERRORS AFFECTING 4 LINES
+----------------------------------------------------------------------
+  698 | ERROR | Declaration of a PHP4 style class constructor is
+      |       | deprecated since PHP 7.0 and removed since PHP
+      |       | 8.0
+      |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+  884 | ERROR | Declaration of a PHP4 style class constructor is
+      |       | deprecated since PHP 7.0 and removed since PHP
+      |       | 8.0
+      |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+  936 | ERROR | Declaration of a PHP4 style class constructor is
+      |       | deprecated since PHP 7.0 and removed since PHP
+      |       | 8.0
+      |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+ 1716 | ERROR | Declaration of a PHP4 style class constructor is
+      |       | deprecated since PHP 7.0 and removed since PHP
+      |       | 8.0
+      |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+----------------------------------------------------------------------
+
+
+FILE: widgets/widget_dash.php
+----------------------------------------------------------------------
+FOUND 3 ERRORS AFFECTING 3 LINES
+----------------------------------------------------------------------
+  3 | ERROR | [x] Curly brace syntax for accessing array elements and
+    |       |     string offsets has been deprecated in PHP 7.4 and
+    |       |     removed in PHP 8.0. Found: chart_setup_function() {
+    |       |     	$options = get_option('lcgmv-chart_options');
+    |       |     	$widgettitle = $options['widget_title'];
+    |       |     	add_meta_box( 'lcgmv-chart_widget',  $widgettitle,
+    |       |     'lcgmv-chart_widget_function', 'dashboard',
+    |       |     'normal', 'high' );
+    |       |     }
+    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+  9 | ERROR | [x] Curly brace syntax for accessing array elements and
+    |       |     string offsets has been deprecated in PHP 7.4 and
+    |       |     removed in PHP 8.0. Found: chart_widget_function()
+    |       |     {
+    |       |     	$options = get_option('lcgmv-chart_options');
+    |       |     	$feedurl = $options['feed_url'];
+    |       |     	$select = $options['drp_select_box'];
+    |       |
+    |       |     	$rss = fetch_feed($feedurl);
+    |       |     	if (!is_wp_error($rss)) { // Checks that the
+    |       |     object is created correctly
+    |       |     	// Figure out how many total items there are, but
+    |       |     limit it to 3.
+    |       |     	$maxitems = $rss->get_item_quantity($select);
+    |       |     	// Build an array of all the items, starting with
+    |       |     element 0 (first element).
+    |       |     	$rss_items = $rss->get_items(0, $maxitems);
+    |       |     	}
+    |       |     	if (!empty($maxitems)) {
+    |       |     ?>
+    |       |
+    |       |     <!-- Start Widget  top buttons Output-->
+    |       |
+    |       |         <div class="cct_widget_menu" align=center>
+    |       |           <a href="http://my.ebay.com/"
+    |       |     target="_blank"><img src="<?php echo plugins_url();
+    |       |     ?>/lcgmv-chart/images/my-ebay-selling.gif"
+    |       |     height="20px" width="20px" title="Open MyEbay in
+    |       |     New Window" /></a>
+    |       |           </div>
+    |       |
+    |       |       <!-- Start Widget Scroller feed Output -->
+    |       |       <div class="scroller">
+    |       |     		<ul>
+    |       |     <?php
+    |       |         // Loop through each feed item and display each
+    |       |     item as a hyperlink.
+    |       |         foreach ($rss_items as $item) {
+    |       |
+    |       |     ?>
+    |       |     		<li><span class="rss-date"><?php echo
+    |       |     $item->get_date('j F Y'); ?> </span><a
+    |       |     class="rsswidget" href='<?php echo
+    |       |     $item->get_permalink(); ?>'><?php echo
+    |       |     $item->get_title(); ?></a> </li>
+    |       |     <?php } ?>
+    |       |     	</ul>
+    |       |       </div>
+    |       |
+    |       |     <?php
+    |       |
+    |       |     }
+    |       |     	$x = is_rtl() ? 'left' : 'right'; // This makes
+    |       |     sure that the positioning is also correct for
+    |       |     right-to-left languages
+    |       |     	echo '<style type="text/css">#lcgmv-chart_widget
+    |       |     {float:$x;}</style>';
+    |       |     }
+    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 61 | ERROR | [x] Curly brace syntax for accessing array elements and
+    |       |     string offsets has been deprecated in PHP 7.4 and
+    |       |     removed in PHP 8.0. Found:
+    |       |     chart_load_custom_admin_css() {
+    |       |     	wp_enqueue_style( 'lcgmv-chart_custom_admin_css',
+    |       |     plugins_url( '/style.css', __FILE__ ) );
+    |       |     }
+    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 3 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------
