@@ -1,0 +1,32 @@
+FILE: functions/ajax.php
+----------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+----------------------------------------------------------------------
+  92 | ERROR | The "result" parameter for function parse_str() is
+     |       | missing. Passing this parameter is no longer optional.
+     |       | The optional nature of the parameter is deprecated
+     |       | since PHP 7.2 and removed since PHP 8.0
+     |       | (PHPCompatibility.FunctionUse.OptionalToRequiredFunctionParameters.parse_str_resultSoftRequiredHardRequired)
+ 126 | ERROR | The "result" parameter for function parse_str() is
+     |       | missing. Passing this parameter is no longer optional.
+     |       | The optional nature of the parameter is deprecated
+     |       | since PHP 7.2 and removed since PHP 8.0
+     |       | (PHPCompatibility.FunctionUse.OptionalToRequiredFunctionParameters.parse_str_resultSoftRequiredHardRequired)
+----------------------------------------------------------------------
+
+
+FILE: functions/backup.php
+----------------------------------------------------------------------
+FOUND 3 ERRORS AFFECTING 2 LINES
+----------------------------------------------------------------------
+ 14 | ERROR | Function create_function() is deprecated since PHP 7.2
+    |       | and removed since PHP 8.0; Use an anonymous function
+    |       | instead
+    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
+ 55 | ERROR | Extension 'ereg' is deprecated since PHP 5.3 and
+    |       | removed since PHP 7.0; Use pcre instead
+    |       | (PHPCompatibility.Extensions.RemovedExtensions.eregDeprecatedRemoved)
+ 55 | ERROR | Function ereg_replace() is deprecated since PHP 5.3 and
+    |       | removed since PHP 7.0; Use preg_replace() instead
+    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.ereg_replaceDeprecatedRemoved)
+----------------------------------------------------------------------
