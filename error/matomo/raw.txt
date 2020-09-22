@@ -365,6 +365,8 @@ No syntax errors detected in matomo/matomo/app/core/Settings/Storage/Factory.php
 No syntax errors detected in matomo/matomo/app/core/Settings/Storage/Storage.php
 No syntax errors detected in matomo/matomo/app/core/SettingsPiwik.php
 No syntax errors detected in matomo/matomo/app/core/SettingsServer.php
+
+Warning: Private methods cannot be final as they are never overridden by other classes in matomo/matomo/app/core/Singleton.php on line 27
 No syntax errors detected in matomo/matomo/app/core/Singleton.php
 No syntax errors detected in matomo/matomo/app/core/Site.php
 No syntax errors detected in matomo/matomo/app/core/TaskScheduler.php
@@ -2150,6 +2152,8 @@ No syntax errors detected in matomo/matomo/app/vendor/geoip2/geoip2/src/Record/S
 No syntax errors detected in matomo/matomo/app/vendor/geoip2/geoip2/src/Record/Traits.php
 No syntax errors detected in matomo/matomo/app/vendor/geoip2/geoip2/src/WebService/Client.php
 No syntax errors detected in matomo/matomo/app/vendor/leafo/lessphp/lessc.inc.php
+
+Fatal error: Array and string offset access syntax with curly braces is no longer supported in matomo/matomo/app/vendor/leafo/lessphp/lessify.inc.php on line 57
 Errors parsing matomo/matomo/app/vendor/leafo/lessphp/lessify.inc.php
 No syntax errors detected in matomo/matomo/app/vendor/matomo-org/jshrink/src/JShrink/Minifier.php
 No syntax errors detected in matomo/matomo/app/vendor/maxmind/web-service-common/src/Exception/AuthenticationException.php
@@ -2271,11 +2275,17 @@ No syntax errors detected in matomo/matomo/app/vendor/mustangostang/spyc/example
 No syntax errors detected in matomo/matomo/app/vendor/mustangostang/spyc/php4/5to4.php
 No syntax errors detected in matomo/matomo/app/vendor/mustangostang/spyc/Spyc.php
 No syntax errors detected in matomo/matomo/app/vendor/pear/archive_tar/Archive/Tar.php
+
+Fatal error: Array and string offset access syntax with curly braces is no longer supported in matomo/matomo/app/vendor/pear/console_getopt/Console/Getopt.php on line 126
 Errors parsing matomo/matomo/app/vendor/pear/console_getopt/Console/Getopt.php
+
+Fatal error: Array and string offset access syntax with curly braces is no longer supported in matomo/matomo/app/vendor/pear/pear-core-minimal/src/OS/Guess.php on line 243
 Errors parsing matomo/matomo/app/vendor/pear/pear-core-minimal/src/OS/Guess.php
 No syntax errors detected in matomo/matomo/app/vendor/pear/pear-core-minimal/src/PEAR/Error.php
 No syntax errors detected in matomo/matomo/app/vendor/pear/pear-core-minimal/src/PEAR/ErrorStack.php
 No syntax errors detected in matomo/matomo/app/vendor/pear/pear-core-minimal/src/PEAR.php
+
+Fatal error: Array and string offset access syntax with curly braces is no longer supported in matomo/matomo/app/vendor/pear/pear-core-minimal/src/System.php on line 268
 Errors parsing matomo/matomo/app/vendor/pear/pear-core-minimal/src/System.php
 No syntax errors detected in matomo/matomo/app/vendor/pear/pear_exception/PEAR/Exception.php
 No syntax errors detected in matomo/matomo/app/vendor/php-di/invoker/src/CallableResolver.php
@@ -2549,7 +2559,11 @@ No syntax errors detected in matomo/matomo/app/vendor/tecnickcom/tcpdf/fonts/msu
 No syntax errors detected in matomo/matomo/app/vendor/tecnickcom/tcpdf/fonts/stsongstdlight.php
 No syntax errors detected in matomo/matomo/app/vendor/tecnickcom/tcpdf/fonts/symbol.php
 No syntax errors detected in matomo/matomo/app/vendor/tecnickcom/tcpdf/fonts/zapfdingbats.php
+
+Fatal error: Array and string offset access syntax with curly braces is no longer supported in matomo/matomo/app/vendor/tecnickcom/tcpdf/include/barcodes/datamatrix.php on line 632
 Errors parsing matomo/matomo/app/vendor/tecnickcom/tcpdf/include/barcodes/datamatrix.php
+
+Fatal error: Array and string offset access syntax with curly braces is no longer supported in matomo/matomo/app/vendor/tecnickcom/tcpdf/include/barcodes/pdf417.php on line 881
 Errors parsing matomo/matomo/app/vendor/tecnickcom/tcpdf/include/barcodes/pdf417.php
 No syntax errors detected in matomo/matomo/app/vendor/tecnickcom/tcpdf/include/barcodes/qrcode.php
 No syntax errors detected in matomo/matomo/app/vendor/tecnickcom/tcpdf/include/tcpdf_colors.php
@@ -3041,8 +3055,7 @@ No syntax errors detected in matomo/matomo/plugins/WordPress/WordPress.php
 No syntax errors detected in matomo/matomo/plugins/WordPress/WpAssetManager.php
 No syntax errors detected in matomo/matomo/shared.php
 No syntax errors detected in matomo/matomo/uninstall.php
-::error::%0Aapp/vendor/leafo/lessphp/lessify.inc.php%0A%0Aapp/vendor/pear/console_getopt/Console/Getopt.php%0A%0Aapp/vendor/pear/pear-core-minimal/src/OS/Guess.php%0A%0Aapp/vendor/pear/pear-core-minimal/src/System.php%0A%0Aapp/vendor/tecnickcom/tcpdf/include/barcodes/datamatrix.php%0A%0Aapp/vendor/tecnickcom/tcpdf/include/barcodes/pdf417.php
-No syntax errors detected in matomo/matomo/uninstall.php
+::error::%0Aapp/core/Singleton.php%0A  Warning: Private methods cannot be final as they are never overridden by other classes on line 27%0A%0Aapp/vendor/leafo/lessphp/lessify.inc.php%0A  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 57%0A%0Aapp/vendor/pear/console_getopt/Console/Getopt.php%0A  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 126%0A%0Aapp/vendor/pear/pear-core-minimal/src/OS/Guess.php%0A  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 243%0A%0Aapp/vendor/pear/pear-core-minimal/src/System.php%0A  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 268%0A%0Aapp/vendor/tecnickcom/tcpdf/include/barcodes/datamatrix.php%0A  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 632%0A%0Aapp/vendor/tecnickcom/tcpdf/include/barcodes/pdf417.php%0A  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 881
 ............................................................   60 / 3039 (2%)
 ............................................................  120 / 3039 (4%)
 ............................................................  180 / 3039 (6%)
