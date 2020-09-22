@@ -1,0 +1,54 @@
+
+php/controller/calendarPlugin.class.php
+  Warning: Private methods cannot be final as they are never overridden by other classes on line 60
+
+php/model/Object.class.php
+  Fatal error: Cannot use 'Object' as class name as it is reserved on line 4
+FILE: html/widget/widgets.php
+----------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+----------------------------------------------------------------------
+   8 | ERROR | Declaration of a PHP4 style class constructor is
+     |       | deprecated since PHP 7.0 and removed since PHP 8.0
+     |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+ 114 | ERROR | Declaration of a PHP4 style class constructor is
+     |       | deprecated since PHP 7.0 and removed since PHP 8.0
+     |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+----------------------------------------------------------------------
+
+
+FILE: php/controller/validation/eventValidator.php
+----------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 83 | ERROR | Extension 'ereg' is deprecated since PHP 5.3 and
+    |       | removed since PHP 7.0; Use pcre instead
+    |       | (PHPCompatibility.Extensions.RemovedExtensions.eregDeprecatedRemoved)
+ 83 | ERROR | Function eregi() is deprecated since PHP 5.3 and
+    |       | removed since PHP 7.0; Use preg_match() (with the i
+    |       | modifier) instead
+    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eregiDeprecatedRemoved)
+----------------------------------------------------------------------
+
+
+FILE: php/model/Object.class.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 4 | ERROR | 'object' is a soft reserved keyword as of PHP version
+   |       | 7.0 and a reserved keyword as of PHP version 7.2 and
+   |       | should not be used to name a class, interface or trait
+   |       | or as part of a namespace (T_CLASS)
+   |       | (PHPCompatibility.Keywords.ForbiddenNamesAsDeclared.objectFound)
+----------------------------------------------------------------------
+
+
+FILE: php/support/adminSupport.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 78 | ERROR | Function create_function() is deprecated since PHP 7.2
+    |       | and removed since PHP 8.0; Use an anonymous function
+    |       | instead
+    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
+----------------------------------------------------------------------

@@ -1,0 +1,42 @@
+::warning::Plugin: https://wordpress.org/plugins/gallery-showcase/%0ATrac: https://plugins.trac.wordpress.org/browser/gallery-showcase/
+
+Fatal error: Array and string offset access syntax with curly braces is no longer supported in gallery-showcase/gallery-showcase/assets/less/lessc.inc.php on line 748
+Errors parsing gallery-showcase/gallery-showcase/assets/less/lessc.inc.php
+No syntax errors detected in gallery-showcase/gallery-showcase/gallery-showcase.php
+No syntax errors detected in gallery-showcase/gallery-showcase/includes/add_metaboxes.php
+No syntax errors detected in gallery-showcase/gallery-showcase/includes/admin_menu_funcitons.php
+No syntax errors detected in gallery-showcase/gallery-showcase/includes/admin_notices.php
+No syntax errors detected in gallery-showcase/gallery-showcase/includes/functions.php
+No syntax errors detected in gallery-showcase/gallery-showcase/includes/register_posttypes.php
+No syntax errors detected in gallery-showcase/gallery-showcase/includes/shortcode.php
+::error::%0Aassets/less/lessc.inc.php%0A  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 748
+[32mE[0m....... 8 / 8 (100%)
+
+
+
+[1mFILE: assets/less/lessc.inc.php[0m
+----------------------------------------------------------------------
+[1mFOUND 4 ERRORS AFFECTING 4 LINES[0m
+----------------------------------------------------------------------
+  748 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found: $subProp[1]{0}[0m
+      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 1886 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found: $name{0}[0m
+      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 2533 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found: $tag{0}[0m
+      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 2586 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found: $tag{0}[0m
+      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+----------------------------------------------------------------------
+[1mPHPCBF CAN FIX THE 4 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
+----------------------------------------------------------------------
+
+Time: 812ms; Memory: 38MB
+::error::FILE: assets/less/lessc.inc.php%0A----------------------------------------------------------------------%0AFOUND 4 ERRORS AFFECTING 4 LINES%0A----------------------------------------------------------------------%0A  748 | ERROR | [x] Curly brace syntax for accessing array elements%0A      |       |     and string offsets has been deprecated in PHP 7.4%0A      |       |     and removed in PHP 8.0. Found: $subProp[1]{0}%0A      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 1886 | ERROR | [x] Curly brace syntax for accessing array elements%0A      |       |     and string offsets has been deprecated in PHP 7.4%0A      |       |     and removed in PHP 8.0. Found: $name{0}%0A      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 2533 | ERROR | [x] Curly brace syntax for accessing array elements%0A      |       |     and string offsets has been deprecated in PHP 7.4%0A      |       |     and removed in PHP 8.0. Found: $tag{0}%0A      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 2586 | ERROR | [x] Curly brace syntax for accessing array elements%0A      |       |     and string offsets has been deprecated in PHP 7.4%0A      |       |     and removed in PHP 8.0. Found: $tag{0}%0A      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A----------------------------------------------------------------------%0APHPCBF CAN FIX THE 4 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A----------------------------------------------------------------------%0A
