@@ -35,22 +35,27 @@ No syntax errors detected in woo-sofortuberweisung-gateway/woo-sofortuberweisung
 No syntax errors detected in woo-sofortuberweisung-gateway/woo-sofortuberweisung-gateway/sofort/unittests/sofortLibSofortUeberweisungTest.php
 No syntax errors detected in woo-sofortuberweisung-gateway/woo-sofortuberweisung-gateway/sofort/unittests/sofortLibTest.php
 No syntax errors detected in woo-sofortuberweisung-gateway/woo-sofortuberweisung-gateway/sofort/unittests/sofortLibTransactionDataTest.php
+
+Fatal error: Cannot use 'Object' as class name as it is reserved in woo-sofortuberweisung-gateway/woo-sofortuberweisung-gateway/sofort/unittests/SofortObject.php on line 3
 Errors parsing woo-sofortuberweisung-gateway/woo-sofortuberweisung-gateway/sofort/unittests/SofortObject.php
 No syntax errors detected in woo-sofortuberweisung-gateway/woo-sofortuberweisung-gateway/sofort/unittests/xmlToArrayNodeTest.php
 No syntax errors detected in woo-sofortuberweisung-gateway/woo-sofortuberweisung-gateway/sofort/unittests/xmlToArrayTest.php
 No syntax errors detected in woo-sofortuberweisung-gateway/woo-sofortuberweisung-gateway/woo-sofortuberweisung-gateway.php
-::error::%0Asofort/unittests/SofortObject.php
+::error::%0Asofort/unittests/SofortObject.php%0A  Fatal error: Cannot use 'Object' as class name as it is reserved on line 3
 ....................................[31mE[0m... 40 / 40 (100%)
 
 
 
 [1mFILE: sofort/unittests/SofortObject.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 3 | [31mERROR[0m | [1m'object' is a soft reserved keyword as of PHP version 7.0 and a reserved keyword as of PHP version 7.2 and should not be used to name a class, interface or trait or as
-   |       | part of a namespace (T_CLASS)[0m (PHPCompatibility.Keywords.ForbiddenNamesAsDeclared.objectFound)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
+ 3 | [31mERROR[0m | [1m'object' is a soft reserved keyword as of PHP version
+   |       | 7.0 and a reserved keyword as of PHP version 7.2 and
+   |       | should not be used to name a class, interface or trait
+   |       | or as part of a namespace (T_CLASS)[0m
+   |       | (PHPCompatibility.Keywords.ForbiddenNamesAsDeclared.objectFound)
+----------------------------------------------------------------------
 
-Time: 1.71 secs; Memory: 36MB
-::error::FILE: sofort/unittests/SofortObject.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 3 | ERROR | 'object' is a soft reserved keyword as of PHP version 7.0 and a reserved keyword as of PHP version 7.2 and should not be used to name a class, interface or trait or as%0A   |       | part of a namespace (T_CLASS) (PHPCompatibility.Keywords.ForbiddenNamesAsDeclared.objectFound)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
+Time: 1.63 secs; Memory: 36MB
+::error::FILE: sofort/unittests/SofortObject.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 3 | ERROR | 'object' is a soft reserved keyword as of PHP version%0A   |       | 7.0 and a reserved keyword as of PHP version 7.2 and%0A   |       | should not be used to name a class, interface or trait%0A   |       | or as part of a namespace (T_CLASS)%0A   |       | (PHPCompatibility.Keywords.ForbiddenNamesAsDeclared.objectFound)%0A----------------------------------------------------------------------%0A
