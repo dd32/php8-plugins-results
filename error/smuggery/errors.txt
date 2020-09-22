@@ -1,0 +1,267 @@
+
+phpSmug/PEAR/DB/common.php
+  Parse error: syntax error, unexpected token "new" on line 963
+
+phpSmug/PEAR/DB/storage.php
+  Parse error: syntax error, unexpected token "new" on line 296
+
+phpSmug/PEAR/DB.php
+  Parse error: syntax error, unexpected token "new" on line 470
+
+phpSmug/PEAR/HTTP/Request.php
+  Parse error: syntax error, unexpected token "new" on line 402
+
+phpSmug/PEAR/Net/URL.php
+  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 184
+
+phpSmug/phpSmug.php
+  Parse error: syntax error, unexpected token "new" on line 105
+FILE: phpSmug/examples/example-oauth.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 48 | ERROR | Function session_unregister() is deprecated since PHP
+    |       | 5.3 and removed since PHP 5.4; Use $_SESSION
+    |       | instead
+    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.session_unregisterDeprecatedRemoved)
+----------------------------------------------------------------------
+
+
+FILE: phpSmug/PEAR/DB/common.php
+----------------------------------------------------------------------
+FOUND 4 ERRORS AFFECTING 4 LINES
+----------------------------------------------------------------------
+  133 | ERROR | [ ] Declaration of a PHP4 style class constructor is
+      |       |     deprecated since PHP 7.0 and removed since PHP
+      |       |     8.0
+      |       |     (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+  250 | ERROR | [x] Curly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found: $string{0}
+      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+  963 | ERROR | [ ] Assigning the return value of new by reference is
+      |       |     deprecated in PHP 5.3 and has been removed in PHP
+      |       |     7.0
+      |       |     (PHPCompatibility.Syntax.RemovedNewReference.Removed)
+ 1166 | ERROR | [ ] Assigning the return value of new by reference is
+      |       |     deprecated in PHP 5.3 and has been removed in PHP
+      |       |     7.0
+      |       |     (PHPCompatibility.Syntax.RemovedNewReference.Removed)
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------
+
+
+FILE: phpSmug/PEAR/DB/mysql.php
+----------------------------------------------------------------------
+FOUND 3 ERRORS AFFECTING 3 LINES
+----------------------------------------------------------------------
+ 166 | ERROR | Declaration of a PHP4 style class constructor is
+     |       | deprecated since PHP 7.0 and removed since PHP 8.0
+     |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+ 239 | ERROR | INI directive 'track_errors' is deprecated since PHP
+     |       | 7.2 and removed since PHP 8.0
+     |       | (PHPCompatibility.IniDirectives.RemovedIniDirectives.track_errorsDeprecatedRemoved)
+ 242 | ERROR | INI directive 'track_errors' is deprecated since PHP
+     |       | 7.2 and removed since PHP 8.0
+     |       | (PHPCompatibility.IniDirectives.RemovedIniDirectives.track_errorsDeprecatedRemoved)
+----------------------------------------------------------------------
+
+
+FILE: phpSmug/PEAR/DB/pgsql.php
+----------------------------------------------------------------------
+FOUND 3 ERRORS AFFECTING 3 LINES
+----------------------------------------------------------------------
+ 155 | ERROR | Declaration of a PHP4 style class constructor is
+     |       | deprecated since PHP 7.0 and removed since PHP 8.0
+     |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+ 280 | ERROR | INI directive 'track_errors' is deprecated since PHP
+     |       | 7.2 and removed since PHP 8.0
+     |       | (PHPCompatibility.IniDirectives.RemovedIniDirectives.track_errorsDeprecatedRemoved)
+ 283 | ERROR | INI directive 'track_errors' is deprecated since PHP
+     |       | 7.2 and removed since PHP 8.0
+     |       | (PHPCompatibility.IniDirectives.RemovedIniDirectives.track_errorsDeprecatedRemoved)
+----------------------------------------------------------------------
+
+
+FILE: phpSmug/PEAR/DB/storage.php
+----------------------------------------------------------------------
+FOUND 3 ERRORS AFFECTING 3 LINES
+----------------------------------------------------------------------
+  97 | ERROR | Declaration of a PHP4 style class constructor is
+     |       | deprecated since PHP 7.0 and removed since PHP 8.0
+     |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+ 255 | ERROR | Indirect access to variables, properties and methods
+     |       | will be evaluated strictly in left-to-right order
+     |       | since PHP 7.0. Use curly braces to remove
+     |       | ambiguity.
+     |       | (PHPCompatibility.Variables.NewUniformVariableSyntax.Found)
+ 296 | ERROR | Assigning the return value of new by reference is
+     |       | deprecated in PHP 5.3 and has been removed in PHP
+     |       | 7.0
+     |       | (PHPCompatibility.Syntax.RemovedNewReference.Removed)
+----------------------------------------------------------------------
+
+
+FILE: phpSmug/PEAR/DB.php
+----------------------------------------------------------------------
+FOUND 6 ERRORS AFFECTING 6 LINES
+----------------------------------------------------------------------
+  470 | ERROR | Assigning the return value of new by reference is
+      |       | deprecated in PHP 5.3 and has been removed in PHP
+      |       | 7.0
+      |       | (PHPCompatibility.Syntax.RemovedNewReference.Removed)
+  547 | ERROR | Assigning the return value of new by reference is
+      |       | deprecated in PHP 5.3 and has been removed in PHP
+      |       | 7.0
+      |       | (PHPCompatibility.Syntax.RemovedNewReference.Removed)
+  883 | ERROR | Declaration of a PHP4 style class constructor is
+      |       | deprecated since PHP 7.0 and removed since PHP
+      |       | 8.0
+      |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+ 1019 | ERROR | Declaration of a PHP4 style class constructor is
+      |       | deprecated since PHP 7.0 and removed since PHP
+      |       | 8.0
+      |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+ 1124 | ERROR | Assigning the return value of new by reference is
+      |       | deprecated in PHP 5.3 and has been removed in PHP
+      |       | 7.0
+      |       | (PHPCompatibility.Syntax.RemovedNewReference.Removed)
+ 1369 | ERROR | Declaration of a PHP4 style class constructor is
+      |       | deprecated since PHP 7.0 and removed since PHP
+      |       | 8.0
+      |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+----------------------------------------------------------------------
+
+
+FILE: phpSmug/PEAR/HTTP/Request.php
+----------------------------------------------------------------------
+FOUND 19 ERRORS AFFECTING 19 LINES
+----------------------------------------------------------------------
+   63 | ERROR | [ ] The "case_insensitive" parameter for function
+      |       |     define() is deprecated since PHP 7.3 and removed
+      |       |     since PHP 8.0
+      |       |     (PHPCompatibility.FunctionUse.RemovedFunctionParameters.define_case_insensitiveDeprecatedRemoved)
+   64 | ERROR | [ ] The "case_insensitive" parameter for function
+      |       |     define() is deprecated since PHP 7.3 and removed
+      |       |     since PHP 8.0
+      |       |     (PHPCompatibility.FunctionUse.RemovedFunctionParameters.define_case_insensitiveDeprecatedRemoved)
+   65 | ERROR | [ ] The "case_insensitive" parameter for function
+      |       |     define() is deprecated since PHP 7.3 and removed
+      |       |     since PHP 8.0
+      |       |     (PHPCompatibility.FunctionUse.RemovedFunctionParameters.define_case_insensitiveDeprecatedRemoved)
+   66 | ERROR | [ ] The "case_insensitive" parameter for function
+      |       |     define() is deprecated since PHP 7.3 and removed
+      |       |     since PHP 8.0
+      |       |     (PHPCompatibility.FunctionUse.RemovedFunctionParameters.define_case_insensitiveDeprecatedRemoved)
+   67 | ERROR | [ ] The "case_insensitive" parameter for function
+      |       |     define() is deprecated since PHP 7.3 and removed
+      |       |     since PHP 8.0
+      |       |     (PHPCompatibility.FunctionUse.RemovedFunctionParameters.define_case_insensitiveDeprecatedRemoved)
+   68 | ERROR | [ ] The "case_insensitive" parameter for function
+      |       |     define() is deprecated since PHP 7.3 and removed
+      |       |     since PHP 8.0
+      |       |     (PHPCompatibility.FunctionUse.RemovedFunctionParameters.define_case_insensitiveDeprecatedRemoved)
+   69 | ERROR | [ ] The "case_insensitive" parameter for function
+      |       |     define() is deprecated since PHP 7.3 and removed
+      |       |     since PHP 8.0
+      |       |     (PHPCompatibility.FunctionUse.RemovedFunctionParameters.define_case_insensitiveDeprecatedRemoved)
+   89 | ERROR | [ ] The "case_insensitive" parameter for function
+      |       |     define() is deprecated since PHP 7.3 and removed
+      |       |     since PHP 8.0
+      |       |     (PHPCompatibility.FunctionUse.RemovedFunctionParameters.define_case_insensitiveDeprecatedRemoved)
+   90 | ERROR | [ ] The "case_insensitive" parameter for function
+      |       |     define() is deprecated since PHP 7.3 and removed
+      |       |     since PHP 8.0
+      |       |     (PHPCompatibility.FunctionUse.RemovedFunctionParameters.define_case_insensitiveDeprecatedRemoved)
+  302 | ERROR | [ ] Declaration of a PHP4 style class constructor is
+      |       |     deprecated since PHP 7.0 and removed since PHP
+      |       |     8.0
+      |       |     (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+  402 | ERROR | [ ] Assigning the return value of new by reference is
+      |       |     deprecated in PHP 5.3 and has been removed in PHP
+      |       |     7.0
+      |       |     (PHPCompatibility.Syntax.RemovedNewReference.Removed)
+  698 | ERROR | [ ] INI directive 'magic_quotes_runtime' is
+      |       |     deprecated since PHP 5.3 and removed since PHP
+      |       |     5.4
+      |       |     (PHPCompatibility.IniDirectives.RemovedIniDirectives.magic_quotes_runtimeDeprecatedRemoved)
+  722 | ERROR | [ ] Assigning the return value of new by reference is
+      |       |     deprecated in PHP 5.3 and has been removed in PHP
+      |       |     7.0
+      |       |     (PHPCompatibility.Syntax.RemovedNewReference.Removed)
+  735 | ERROR | [ ] Assigning the return value of new by reference is
+      |       |     deprecated in PHP 5.3 and has been removed in PHP
+      |       |     7.0
+      |       |     (PHPCompatibility.Syntax.RemovedNewReference.Removed)
+  755 | ERROR | [ ] INI directive 'magic_quotes_runtime' is
+      |       |     deprecated since PHP 5.3 and removed since PHP
+      |       |     5.4
+      |       |     (PHPCompatibility.IniDirectives.RemovedIniDirectives.magic_quotes_runtimeDeprecatedRemoved)
+  780 | ERROR | [ ] Assigning the return value of new by reference is
+      |       |     deprecated in PHP 5.3 and has been removed in PHP
+      |       |     7.0
+      |       |     (PHPCompatibility.Syntax.RemovedNewReference.Removed)
+  783 | ERROR | [x] Curly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found: $redirect{0}
+      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+  951 | ERROR | [ ] Function create_function() is deprecated since
+      |       |     PHP 7.2 and removed since PHP 8.0; Use an
+      |       |     anonymous function instead
+      |       |     (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
+ 1181 | ERROR | [ ] Declaration of a PHP4 style class constructor is
+      |       |     deprecated since PHP 7.0 and removed since PHP
+      |       |     8.0
+      |       |     (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------
+
+
+FILE: phpSmug/PEAR/Net/URL.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 184 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $value{0}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------
+
+
+FILE: phpSmug/PEAR/PEAR.php
+----------------------------------------------------------------------
+FOUND 4 ERRORS AFFECTING 4 LINES
+----------------------------------------------------------------------
+  70 | ERROR | INI directive 'track_errors' is deprecated since PHP
+     |       | 7.2 and removed since PHP 8.0
+     |       | (PHPCompatibility.IniDirectives.RemovedIniDirectives.track_errorsDeprecatedRemoved)
+ 170 | ERROR | Declaration of a PHP4 style class constructor is
+     |       | deprecated since PHP 7.0 and removed since PHP 8.0
+     |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+ 760 | ERROR | Function each() is deprecated since PHP 7.2 and
+     |       | removed since PHP 8.0; Use a foreach loop or
+     |       | ArrayIterator instead
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)
+ 838 | ERROR | Declaration of a PHP4 style class constructor is
+     |       | deprecated since PHP 7.0 and removed since PHP 8.0
+     |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+----------------------------------------------------------------------
+
+
+FILE: phpSmug/phpSmug.php
+----------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+----------------------------------------------------------------------
+ 105 | ERROR | Assigning the return value of new by reference is
+     |       | deprecated in PHP 5.3 and has been removed in PHP
+     |       | 7.0
+     |       | (PHPCompatibility.Syntax.RemovedNewReference.Removed)
+ 472 | ERROR | Assigning the return value of new by reference is
+     |       | deprecated in PHP 5.3 and has been removed in PHP
+     |       | 7.0
+     |       | (PHPCompatibility.Syntax.RemovedNewReference.Removed)
+----------------------------------------------------------------------

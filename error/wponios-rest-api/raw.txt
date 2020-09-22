@@ -1,0 +1,58 @@
+::warning::Plugin: https://wordpress.org/plugins/wponios-rest-api/%0ATrac: https://plugins.trac.wordpress.org/browser/wponios-rest-api/
+No syntax errors detected in wponios-rest-api/wponios-rest-api/index.php
+No syntax errors detected in wponios-rest-api/wponios-rest-api/Slim/Exception/Pass.php
+No syntax errors detected in wponios-rest-api/wponios-rest-api/Slim/Exception/RequestSlash.php
+No syntax errors detected in wponios-rest-api/wponios-rest-api/Slim/Exception/Stop.php
+No syntax errors detected in wponios-rest-api/wponios-rest-api/Slim/Http/CookieJar.php
+No syntax errors detected in wponios-rest-api/wponios-rest-api/Slim/Http/Cookie.php
+No syntax errors detected in wponios-rest-api/wponios-rest-api/Slim/Http/Request.php
+No syntax errors detected in wponios-rest-api/wponios-rest-api/Slim/Http/Response.php
+No syntax errors detected in wponios-rest-api/wponios-rest-api/Slim/Http/Uri.php
+No syntax errors detected in wponios-rest-api/wponios-rest-api/Slim/Logger.php
+No syntax errors detected in wponios-rest-api/wponios-rest-api/Slim/Log.php
+No syntax errors detected in wponios-rest-api/wponios-rest-api/Slim/Route.php
+No syntax errors detected in wponios-rest-api/wponios-rest-api/Slim/Router.php
+No syntax errors detected in wponios-rest-api/wponios-rest-api/Slim/Session/Flash.php
+No syntax errors detected in wponios-rest-api/wponios-rest-api/Slim/Session/Handler/Cookies.php
+No syntax errors detected in wponios-rest-api/wponios-rest-api/Slim/Session/Handler.php
+No syntax errors detected in wponios-rest-api/wponios-rest-api/Slim/Slim.php
+No syntax errors detected in wponios-rest-api/wponios-rest-api/Slim/View.php
+No syntax errors detected in wponios-rest-api/wponios-rest-api/wponios.php
+....[31mE[0m.[31mE[0m.........[31mE[0m.. 19 / 19 (100%)
+
+
+
+[1mFILE: Slim/Http/CookieJar.php[0m
+----------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 363 | [31mERROR[0m | [1mFunction mdecrypt_generic() is deprecated since PHP
+     |       | 7.1 and removed since PHP 7.2; Use OpenSSL instead[0m
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.mdecrypt_genericDeprecatedRemoved)
+----------------------------------------------------------------------
+
+
+[1mFILE: Slim/Http/Request.php[0m
+----------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 328 | [31mERROR[0m | [1mFunction get_magic_quotes_gpc() is deprecated since
+     |       | PHP 7.4 and removed since PHP 8.0[0m
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_gpcDeprecatedRemoved)
+----------------------------------------------------------------------
+
+
+[1mFILE: Slim/Slim.php[0m
+----------------------------------------------------------------------
+[1mFOUND 2 ERRORS AFFECTING 2 LINES[0m
+----------------------------------------------------------------------
+ 34 | [31mERROR[0m | [1mINI directive 'session.hash_bits_per_character' is
+    |       | removed since PHP 7.1[0m
+    |       | (PHPCompatibility.IniDirectives.RemovedIniDirectives.session_hash_bits_per_characterRemoved)
+ 35 | [31mERROR[0m | [1mINI directive 'session.hash_function' is removed since
+    |       | PHP 7.1[0m
+    |       | (PHPCompatibility.IniDirectives.RemovedIniDirectives.session_hash_functionRemoved)
+----------------------------------------------------------------------
+
+Time: 469ms; Memory: 16MB
+::error::FILE: Slim/Http/CookieJar.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 363 | ERROR | Function mdecrypt_generic() is deprecated since PHP%0A     |       | 7.1 and removed since PHP 7.2; Use OpenSSL instead%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.mdecrypt_genericDeprecatedRemoved)%0A----------------------------------------------------------------------%0A%0A%0AFILE: Slim/Http/Request.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 328 | ERROR | Function get_magic_quotes_gpc() is deprecated since%0A     |       | PHP 7.4 and removed since PHP 8.0%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_gpcDeprecatedRemoved)%0A----------------------------------------------------------------------%0A%0A%0AFILE: Slim/Slim.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A----------------------------------------------------------------------%0A 34 | ERROR | INI directive 'session.hash_bits_per_character' is%0A    |       | removed since PHP 7.1%0A    |       | (PHPCompatibility.IniDirectives.RemovedIniDirectives.session_hash_bits_per_characterRemoved)%0A 35 | ERROR | INI directive 'session.hash_function' is removed since%0A    |       | PHP 7.1%0A    |       | (PHPCompatibility.IniDirectives.RemovedIniDirectives.session_hash_functionRemoved)%0A----------------------------------------------------------------------%0A
