@@ -35,6 +35,8 @@ No syntax errors detected in cf7-editor-button/cf7-editor-button/libraries/ariso
 No syntax errors detected in cf7-editor-button/cf7-editor-button/libraries/arisoft/core/utils/class-array-helper.php
 No syntax errors detected in cf7-editor-button/cf7-editor-button/libraries/arisoft/core/utils/class-filter.php
 No syntax errors detected in cf7-editor-button/cf7-editor-button/libraries/arisoft/core/utils/class-object-factory.php
+
+Fatal error: Cannot use 'Object' as class name as it is reserved in cf7-editor-button/cf7-editor-button/libraries/arisoft/core/utils/class-object.php on line 4
 Errors parsing cf7-editor-button/cf7-editor-button/libraries/arisoft/core/utils/class-object.php
 No syntax errors detected in cf7-editor-button/cf7-editor-button/libraries/arisoft/core/utils/class-options.php
 No syntax errors detected in cf7-editor-button/cf7-editor-button/libraries/arisoft/core/utils/class-priority-queue.php
@@ -48,18 +50,21 @@ No syntax errors detected in cf7-editor-button/cf7-editor-button/libraries/ariso
 No syntax errors detected in cf7-editor-button/cf7-editor-button/libraries/arisoft/loader.php
 No syntax errors detected in cf7-editor-button/cf7-editor-button/loader.php
 No syntax errors detected in cf7-editor-button/cf7-editor-button/uninstall.php
-::error::%0Alibraries/arisoft/core/utils/class-object.php
+::error::%0Alibraries/arisoft/core/utils/class-object.php%0A  Fatal error: Cannot use 'Object' as class name as it is reserved on line 4
 ....................................[31mE[0m............ 49 / 49 (100%)
 
 
 
 [1mFILE: libraries/arisoft/core/utils/class-object.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 4 | [31mERROR[0m | [1m'object' is a soft reserved keyword as of PHP version 7.0 and a reserved keyword as of PHP version 7.2 and should not be used to name a class, interface or trait or as
-   |       | part of a namespace (T_CLASS)[0m (PHPCompatibility.Keywords.ForbiddenNamesAsDeclared.objectFound)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
+ 4 | [31mERROR[0m | [1m'object' is a soft reserved keyword as of PHP version
+   |       | 7.0 and a reserved keyword as of PHP version 7.2 and
+   |       | should not be used to name a class, interface or trait
+   |       | or as part of a namespace (T_CLASS)[0m
+   |       | (PHPCompatibility.Keywords.ForbiddenNamesAsDeclared.objectFound)
+----------------------------------------------------------------------
 
-Time: 398ms; Memory: 12MB
-::error::FILE: libraries/arisoft/core/utils/class-object.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 4 | ERROR | 'object' is a soft reserved keyword as of PHP version 7.0 and a reserved keyword as of PHP version 7.2 and should not be used to name a class, interface or trait or as%0A   |       | part of a namespace (T_CLASS) (PHPCompatibility.Keywords.ForbiddenNamesAsDeclared.objectFound)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
+Time: 346ms; Memory: 12MB
+::error::FILE: libraries/arisoft/core/utils/class-object.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 4 | ERROR | 'object' is a soft reserved keyword as of PHP version%0A   |       | 7.0 and a reserved keyword as of PHP version 7.2 and%0A   |       | should not be used to name a class, interface or trait%0A   |       | or as part of a namespace (T_CLASS)%0A   |       | (PHPCompatibility.Keywords.ForbiddenNamesAsDeclared.objectFound)%0A----------------------------------------------------------------------%0A
