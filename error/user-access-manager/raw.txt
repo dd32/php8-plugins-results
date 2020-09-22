@@ -105,6 +105,8 @@ No syntax errors detected in user-access-manager/user-access-manager/src/UserGro
 No syntax errors detected in user-access-manager/user-access-manager/src/UserGroup/UserGroup.php
 No syntax errors detected in user-access-manager/user-access-manager/src/UserGroup/UserGroupTypeException.php
 No syntax errors detected in user-access-manager/user-access-manager/src/Util/DateUtil.php
+
+Fatal error: Unparenthesized `a ? b : c ? d : e` is not supported. Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)` in user-access-manager/user-access-manager/src/Util/Util.php on line 100
 Errors parsing user-access-manager/user-access-manager/src/Util/Util.php
 No syntax errors detected in user-access-manager/user-access-manager/src/View/AdminAbout.php
 No syntax errors detected in user-access-manager/user-access-manager/src/View/AdminForm/Input.php
@@ -146,8 +148,7 @@ No syntax errors detected in user-access-manager/user-access-manager/vendor/comp
 No syntax errors detected in user-access-manager/user-access-manager/vendor/composer/autoload_real.php
 No syntax errors detected in user-access-manager/user-access-manager/vendor/composer/autoload_static.php
 No syntax errors detected in user-access-manager/user-access-manager/vendor/composer/ClassLoader.php
-::error::%0Asrc/Util/Util.php
-No syntax errors detected in user-access-manager/user-access-manager/vendor/composer/ClassLoader.php
+::error::%0Asrc/Util/Util.php%0A  Fatal error: Unparenthesized `a ? b : c ? d : e` is not supported.%0A      Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)`%0A      on line 100
 ............................................................  60 / 147 (41%)
 .......[31mE[0m[31mE[0m.....................................[31mE[0m............. 120 / 147 (82%)
 ...........................                                  147 / 147 (100%)
@@ -155,30 +156,40 @@ No syntax errors detected in user-access-manager/user-access-manager/vendor/comp
 
 
 [1mFILE: src/Object/ObjectHandler.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 15 | [31mERROR[0m | [1m'object' is a soft reserved keyword as of PHP version 7.0 and a reserved keyword as of PHP version 7.2 and should not be used to name a class, interface or trait or
-    |       | as part of a namespace (T_NAMESPACE)[0m (PHPCompatibility.Keywords.ForbiddenNamesAsDeclared.objectFound)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
+ 15 | [31mERROR[0m | [1m'object' is a soft reserved keyword as of PHP version
+    |       | 7.0 and a reserved keyword as of PHP version 7.2 and
+    |       | should not be used to name a class, interface or trait
+    |       | or as part of a namespace (T_NAMESPACE)[0m
+    |       | (PHPCompatibility.Keywords.ForbiddenNamesAsDeclared.objectFound)
+----------------------------------------------------------------------
 
 
 [1mFILE: src/Object/ObjectMapHandler.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 15 | [31mERROR[0m | [1m'object' is a soft reserved keyword as of PHP version 7.0 and a reserved keyword as of PHP version 7.2 and should not be used to name a class, interface or trait or
-    |       | as part of a namespace (T_NAMESPACE)[0m (PHPCompatibility.Keywords.ForbiddenNamesAsDeclared.objectFound)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
+ 15 | [31mERROR[0m | [1m'object' is a soft reserved keyword as of PHP version
+    |       | 7.0 and a reserved keyword as of PHP version 7.2 and
+    |       | should not be used to name a class, interface or trait
+    |       | or as part of a namespace (T_NAMESPACE)[0m
+    |       | (PHPCompatibility.Keywords.ForbiddenNamesAsDeclared.objectFound)
+----------------------------------------------------------------------
 
 
 [1mFILE: src/Util/Util.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 100 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has been deprecated in PHP 7.4 and removed in PHP 8.0. Multiple consecutive ternaries detected. Use parenthesis to
-     |       | clarify the order in which the operations should be executed[0m (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
+ 100 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has
+     |       | been deprecated in PHP 7.4 and removed in PHP 8.0.
+     |       | Multiple consecutive ternaries detected. Use
+     |       | parenthesis to clarify the order in which the
+     |       | operations should be executed[0m
+     |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
+----------------------------------------------------------------------
 
-Time: 2.12 secs; Memory: 16MB
-::error::FILE: src/Object/ObjectHandler.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 15 | ERROR | 'object' is a soft reserved keyword as of PHP version 7.0 and a reserved keyword as of PHP version 7.2 and should not be used to name a class, interface or trait or%0A    |       | as part of a namespace (T_NAMESPACE) (PHPCompatibility.Keywords.ForbiddenNamesAsDeclared.objectFound)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: src/Object/ObjectMapHandler.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 15 | ERROR | 'object' is a soft reserved keyword as of PHP version 7.0 and a reserved keyword as of PHP version 7.2 and should not be used to name a class, interface or trait or%0A    |       | as part of a namespace (T_NAMESPACE) (PHPCompatibility.Keywords.ForbiddenNamesAsDeclared.objectFound)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: src/Util/Util.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 100 | ERROR | The left-associativity of the ternary operator has been deprecated in PHP 7.4 and removed in PHP 8.0. Multiple consecutive ternaries detected. Use parenthesis to%0A     |       | clarify the order in which the operations should be executed (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
+Time: 2.08 secs; Memory: 16MB
+::error::FILE: src/Object/ObjectHandler.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 15 | ERROR | 'object' is a soft reserved keyword as of PHP version%0A    |       | 7.0 and a reserved keyword as of PHP version 7.2 and%0A    |       | should not be used to name a class, interface or trait%0A    |       | or as part of a namespace (T_NAMESPACE)%0A    |       | (PHPCompatibility.Keywords.ForbiddenNamesAsDeclared.objectFound)%0A----------------------------------------------------------------------%0A%0A%0AFILE: src/Object/ObjectMapHandler.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 15 | ERROR | 'object' is a soft reserved keyword as of PHP version%0A    |       | 7.0 and a reserved keyword as of PHP version 7.2 and%0A    |       | should not be used to name a class, interface or trait%0A    |       | or as part of a namespace (T_NAMESPACE)%0A    |       | (PHPCompatibility.Keywords.ForbiddenNamesAsDeclared.objectFound)%0A----------------------------------------------------------------------%0A%0A%0AFILE: src/Util/Util.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 100 | ERROR | The left-associativity of the ternary operator has%0A     |       | been deprecated in PHP 7.4 and removed in PHP 8.0.%0A     |       | Multiple consecutive ternaries detected. Use%0A     |       | parenthesis to clarify the order in which the%0A     |       | operations should be executed%0A     |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A----------------------------------------------------------------------%0A
