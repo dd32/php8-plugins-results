@@ -1,0 +1,266 @@
+
+itheora/lib/aws-sdk/_samples/lib/ProgressBar.php
+  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 214
+
+itheora/lib/aws-sdk/sdk.class.php
+  Warning: "continue" targeting switch is equivalent to "break".
+      Did you mean to use "continue 2"?
+      on line 1233
+FILE: itheora/lib/aws-sdk/lib/requestcore/requestcore.class.php
+----------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 602 | ERROR | The constant "CURLOPT_CLOSEPOLICY" is removed since
+     |       | PHP 5.6
+     |       | (PHPCompatibility.Constants.RemovedConstants.curlopt_closepolicyRemoved)
+ 602 | ERROR | The constant "CURLCLOSEPOLICY_LEAST_RECENTLY_USED" is
+     |       | removed since PHP 5.6
+     |       | (PHPCompatibility.Constants.RemovedConstants.curlclosepolicy_least_recently_usedRemoved)
+----------------------------------------------------------------------
+
+
+FILE: itheora/lib/aws-sdk/lib/yaml/lib/sfYamlInline.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 138 | ERROR | Function create_function() is deprecated since PHP 7.2
+     |       | and removed since PHP 8.0; Use an anonymous function
+     |       | instead
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
+----------------------------------------------------------------------
+
+
+FILE: itheora/lib/aws-sdk/_samples/lib/ProgressBar.php
+----------------------------------------------------------------------
+FOUND 5 ERRORS AFFECTING 5 LINES
+----------------------------------------------------------------------
+  93 | ERROR | [ ] Declaration of a PHP4 style class constructor is
+     |       |     deprecated since PHP 7.0 and removed since PHP
+     |       |     8.0
+     |       |     (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+ 214 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found:
+     |       |     $options['fraction_pad']{0}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 216 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $max{1}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 224 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found:
+     |       |     $options['percent_pad']{0}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 250 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $bar{0}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 4 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------
+
+
+FILE: itheora/lib/ogg.class.php
+----------------------------------------------------------------------
+FOUND 5 ERRORS AFFECTING 4 LINES
+----------------------------------------------------------------------
+  34 | ERROR | Declaration of a PHP4 style class constructor is
+     |       | deprecated since PHP 7.0 and removed since PHP 8.0
+     |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+ 302 | ERROR | Extension 'ereg' is deprecated since PHP 5.3 and
+     |       | removed since PHP 7.0; Use pcre instead
+     |       | (PHPCompatibility.Extensions.RemovedExtensions.eregDeprecatedRemoved)
+ 302 | ERROR | Function ereg_replace() is deprecated since PHP 5.3
+     |       | and removed since PHP 7.0; Use preg_replace()
+     |       | instead
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.ereg_replaceDeprecatedRemoved)
+ 374 | ERROR | Using 'break' outside of a loop or switch structure is
+     |       | invalid and will throw a fatal error since PHP 7.0
+     |       | (PHPCompatibility.ControlStructures.ForbiddenBreakContinueOutsideLoop.FatalError)
+ 527 | ERROR | Using 'break' outside of a loop or switch structure is
+     |       | invalid and will throw a fatal error since PHP 7.0
+     |       | (PHPCompatibility.ControlStructures.ForbiddenBreakContinueOutsideLoop.FatalError)
+----------------------------------------------------------------------
+
+
+FILE: itheora/lib/Zend/Cache/Backend/Sqlite.php
+----------------------------------------------------------------------
+FOUND 41 ERRORS AFFECTING 18 LINES
+----------------------------------------------------------------------
+ 103 | ERROR | Extension 'sqlite' is removed since PHP 5.4
+     |       | (PHPCompatibility.Extensions.RemovedExtensions.sqliteRemoved)
+ 103 | ERROR | Function sqlite_close() is removed since PHP 5.4
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.sqlite_closeRemoved)
+ 121 | ERROR | Extension 'sqlite' is removed since PHP 5.4
+     |       | (PHPCompatibility.Extensions.RemovedExtensions.sqliteRemoved)
+ 121 | ERROR | Function sqlite_fetch_array() is removed since PHP
+     |       | 5.4
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.sqlite_fetch_arrayRemoved)
+ 139 | ERROR | Extension 'sqlite' is removed since PHP 5.4
+     |       | (PHPCompatibility.Extensions.RemovedExtensions.sqliteRemoved)
+ 139 | ERROR | Function sqlite_fetch_array() is removed since PHP
+     |       | 5.4
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.sqlite_fetch_arrayRemoved)
+ 163 | ERROR | Extension 'sqlite' is removed since PHP 5.4
+     |       | (PHPCompatibility.Extensions.RemovedExtensions.sqliteRemoved)
+ 163 | ERROR | Function sqlite_escape_string() is removed since PHP
+     |       | 5.4
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.sqlite_escape_stringRemoved)
+ 194 | ERROR | Extension 'sqlite' is removed since PHP 5.4
+     |       | (PHPCompatibility.Extensions.RemovedExtensions.sqliteRemoved)
+ 194 | ERROR | Function sqlite_fetch_single() is removed since PHP
+     |       | 5.4
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.sqlite_fetch_singleRemoved)
+ 236 | ERROR | Extension 'sqlite' is removed since PHP 5.4
+     |       | (PHPCompatibility.Extensions.RemovedExtensions.sqliteRemoved)
+ 236 | ERROR | Function sqlite_fetch_single() is removed since PHP
+     |       | 5.4
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.sqlite_fetch_singleRemoved)
+ 252 | ERROR | Extension 'sqlite' is removed since PHP 5.4
+     |       | (PHPCompatibility.Extensions.RemovedExtensions.sqliteRemoved)
+ 252 | ERROR | Function sqlite_fetch_single() is removed since PHP
+     |       | 5.4
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.sqlite_fetch_singleRemoved)
+ 275 | ERROR | Extension 'sqlite' is removed since PHP 5.4
+     |       | (PHPCompatibility.Extensions.RemovedExtensions.sqliteRemoved)
+ 275 | ERROR | Function sqlite_fetch_all() is removed since PHP
+     |       | 5.4
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.sqlite_fetch_allRemoved)
+ 275 | ERROR | The constant "SQLITE_ASSOC" is removed since PHP
+     |       | 5.4
+     |       | (PHPCompatibility.Constants.RemovedConstants.sqlite_assocRemoved)
+ 305 | ERROR | Extension 'sqlite' is removed since PHP 5.4
+     |       | (PHPCompatibility.Extensions.RemovedExtensions.sqliteRemoved)
+ 305 | ERROR | Function sqlite_fetch_all() is removed since PHP
+     |       | 5.4
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.sqlite_fetch_allRemoved)
+ 305 | ERROR | The constant "SQLITE_ASSOC" is removed since PHP
+     |       | 5.4
+     |       | (PHPCompatibility.Constants.RemovedConstants.sqlite_assocRemoved)
+ 315 | ERROR | Extension 'sqlite' is removed since PHP 5.4
+     |       | (PHPCompatibility.Extensions.RemovedExtensions.sqliteRemoved)
+ 315 | ERROR | Function sqlite_fetch_single() is removed since PHP
+     |       | 5.4
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.sqlite_fetch_singleRemoved)
+ 344 | ERROR | Extension 'sqlite' is removed since PHP 5.4
+     |       | (PHPCompatibility.Extensions.RemovedExtensions.sqliteRemoved)
+ 344 | ERROR | Function sqlite_fetch_all() is removed since PHP
+     |       | 5.4
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.sqlite_fetch_allRemoved)
+ 344 | ERROR | The constant "SQLITE_ASSOC" is removed since PHP
+     |       | 5.4
+     |       | (PHPCompatibility.Constants.RemovedConstants.sqlite_assocRemoved)
+ 400 | ERROR | Extension 'sqlite' is removed since PHP 5.4
+     |       | (PHPCompatibility.Extensions.RemovedExtensions.sqliteRemoved)
+ 400 | ERROR | Function sqlite_fetch_all() is removed since PHP
+     |       | 5.4
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.sqlite_fetch_allRemoved)
+ 400 | ERROR | The constant "SQLITE_ASSOC" is removed since PHP
+     |       | 5.4
+     |       | (PHPCompatibility.Constants.RemovedConstants.sqlite_assocRemoved)
+ 410 | ERROR | Extension 'sqlite' is removed since PHP 5.4
+     |       | (PHPCompatibility.Extensions.RemovedExtensions.sqliteRemoved)
+ 410 | ERROR | Function sqlite_fetch_array() is removed since PHP
+     |       | 5.4
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.sqlite_fetch_arrayRemoved)
+ 410 | ERROR | The constant "SQLITE_ASSOC" is removed since PHP
+     |       | 5.4
+     |       | (PHPCompatibility.Constants.RemovedConstants.sqlite_assocRemoved)
+ 432 | ERROR | Extension 'sqlite' is removed since PHP 5.4
+     |       | (PHPCompatibility.Extensions.RemovedExtensions.sqliteRemoved)
+ 432 | ERROR | Function sqlite_fetch_single() is removed since PHP
+     |       | 5.4
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.sqlite_fetch_singleRemoved)
+ 494 | ERROR | Extension 'sqlite' is removed since PHP 5.4
+     |       | (PHPCompatibility.Extensions.RemovedExtensions.sqliteRemoved)
+ 494 | ERROR | Function sqlite_open() is removed since PHP 5.4
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.sqlite_openRemoved)
+ 512 | ERROR | Extension 'sqlite' is removed since PHP 5.4
+     |       | (PHPCompatibility.Extensions.RemovedExtensions.sqliteRemoved)
+ 512 | ERROR | Function sqlite_query() is removed since PHP 5.4
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.sqlite_queryRemoved)
+ 533 | ERROR | Extension 'sqlite' is removed since PHP 5.4
+     |       | (PHPCompatibility.Extensions.RemovedExtensions.sqliteRemoved)
+ 533 | ERROR | Function sqlite_close() is removed since PHP 5.4
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.sqlite_closeRemoved)
+ 586 | ERROR | Extension 'sqlite' is removed since PHP 5.4
+     |       | (PHPCompatibility.Extensions.RemovedExtensions.sqliteRemoved)
+ 586 | ERROR | Function sqlite_fetch_array() is removed since PHP
+     |       | 5.4
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.sqlite_fetch_arrayRemoved)
+----------------------------------------------------------------------
+
+
+FILE: itheora/lib/Zend/Cache/Backend.php
+----------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+----------------------------------------------------------------------
+ 66 | ERROR | Function each() is deprecated since PHP 7.2 and removed
+    |       | since PHP 8.0; Use a foreach loop or ArrayIterator
+    |       | instead
+    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)
+ 81 | ERROR | Function each() is deprecated since PHP 7.2 and removed
+    |       | since PHP 8.0; Use a foreach loop or ArrayIterator
+    |       | instead
+    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)
+----------------------------------------------------------------------
+
+
+FILE: itheora/lib/Zend/Cache/Core.php
+----------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+----------------------------------------------------------------------
+ 146 | ERROR | Function each() is deprecated since PHP 7.2 and
+     |       | removed since PHP 8.0; Use a foreach loop or
+     |       | ArrayIterator instead
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)
+ 161 | ERROR | Function each() is deprecated since PHP 7.2 and
+     |       | removed since PHP 8.0; Use a foreach loop or
+     |       | ArrayIterator instead
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)
+----------------------------------------------------------------------
+
+
+FILE: itheora/lib/Zend/Cache/Frontend/Class.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 110 | ERROR | Function each() is deprecated since PHP 7.2 and
+     |       | removed since PHP 8.0; Use a foreach loop or
+     |       | ArrayIterator instead
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)
+----------------------------------------------------------------------
+
+
+FILE: itheora/lib/Zend/Cache/Frontend/File.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 91 | ERROR | Function each() is deprecated since PHP 7.2 and removed
+    |       | since PHP 8.0; Use a foreach loop or ArrayIterator
+    |       | instead
+    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)
+----------------------------------------------------------------------
+
+
+FILE: itheora/lib/Zend/Cache/Frontend/Function.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 66 | ERROR | Function each() is deprecated since PHP 7.2 and removed
+    |       | since PHP 8.0; Use a foreach loop or ArrayIterator
+    |       | instead
+    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)
+----------------------------------------------------------------------
+
+
+FILE: itheora/lib/Zend/Cache/Frontend/Page.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 132 | ERROR | Function each() is deprecated since PHP 7.2 and
+     |       | removed since PHP 8.0; Use a foreach loop or
+     |       | ArrayIterator instead
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)
+----------------------------------------------------------------------
