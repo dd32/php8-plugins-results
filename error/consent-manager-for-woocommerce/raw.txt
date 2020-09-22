@@ -1,0 +1,58 @@
+::warning::Plugin: https://wordpress.org/plugins/consent-manager-for-woocommerce/%0ATrac: https://plugins.trac.wordpress.org/browser/consent-manager-for-woocommerce/
+No syntax errors detected in consent-manager-for-woocommerce/consent-manager-for-woocommerce/consent-manager-for-woocommerce.php
+No syntax errors detected in consent-manager-for-woocommerce/consent-manager-for-woocommerce/functions.php
+No syntax errors detected in consent-manager-for-woocommerce/consent-manager-for-woocommerce/includes/admin/class-cmw-admin-adults-report.php
+No syntax errors detected in consent-manager-for-woocommerce/consent-manager-for-woocommerce/includes/admin/class-cmw-admin-menu.php
+No syntax errors detected in consent-manager-for-woocommerce/consent-manager-for-woocommerce/includes/admin/class-cmw-admin.php
+No syntax errors detected in consent-manager-for-woocommerce/consent-manager-for-woocommerce/includes/admin/class-cmw-organisation.php
+No syntax errors detected in consent-manager-for-woocommerce/consent-manager-for-woocommerce/includes/admin/cmw-admin-functions.php
+No syntax errors detected in consent-manager-for-woocommerce/consent-manager-for-woocommerce/includes/admin/templates/adult-info.php
+No syntax errors detected in consent-manager-for-woocommerce/consent-manager-for-woocommerce/includes/admin/templates/introduction.php
+No syntax errors detected in consent-manager-for-woocommerce/consent-manager-for-woocommerce/includes/admin/templates/pagination.php
+No syntax errors detected in consent-manager-for-woocommerce/consent-manager-for-woocommerce/includes/admin/templates/partials/search_by_name.php
+No syntax errors detected in consent-manager-for-woocommerce/consent-manager-for-woocommerce/includes/admin/templates/policy-pages.php
+No syntax errors detected in consent-manager-for-woocommerce/consent-manager-for-woocommerce/includes/admin/templates/search-and-report.php
+No syntax errors detected in consent-manager-for-woocommerce/consent-manager-for-woocommerce/includes/admin/templates/settings.php
+No syntax errors detected in consent-manager-for-woocommerce/consent-manager-for-woocommerce/includes/class-cmw-custom-endpoint.php
+No syntax errors detected in consent-manager-for-woocommerce/consent-manager-for-woocommerce/includes/class-cmw-install.php
+No syntax errors detected in consent-manager-for-woocommerce/consent-manager-for-woocommerce/includes/class-cmw-validate.php
+No syntax errors detected in consent-manager-for-woocommerce/consent-manager-for-woocommerce/includes/class-consent-manager.php
+No syntax errors detected in consent-manager-for-woocommerce/consent-manager-for-woocommerce/includes/cmw-adult-functions.php
+No syntax errors detected in consent-manager-for-woocommerce/consent-manager-for-woocommerce/includes/cmw-child-functions.php
+No syntax errors detected in consent-manager-for-woocommerce/consent-manager-for-woocommerce/includes/cmw-email-functions.php
+No syntax errors detected in consent-manager-for-woocommerce/consent-manager-for-woocommerce/includes/cmw-parent-functions.php
+No syntax errors detected in consent-manager-for-woocommerce/consent-manager-for-woocommerce/includes/cmw-template-functions.php
+No syntax errors detected in consent-manager-for-woocommerce/consent-manager-for-woocommerce/includes/cmw-template-hooks.php
+No syntax errors detected in consent-manager-for-woocommerce/consent-manager-for-woocommerce/includes/models/child_order.php
+No syntax errors detected in consent-manager-for-woocommerce/consent-manager-for-woocommerce/includes/models/children.php
+No syntax errors detected in consent-manager-for-woocommerce/consent-manager-for-woocommerce/includes/models/parent.php
+No syntax errors detected in consent-manager-for-woocommerce/consent-manager-for-woocommerce/index.php
+No syntax errors detected in consent-manager-for-woocommerce/consent-manager-for-woocommerce/templates/adult-details/agree-form.php
+No syntax errors detected in consent-manager-for-woocommerce/consent-manager-for-woocommerce/templates/adult-details/edit-layout.php
+No syntax errors detected in consent-manager-for-woocommerce/consent-manager-for-woocommerce/templates/adult-details/emergncy-form.php
+
+Fatal error: Unparenthesized `a ? b : c ? d : e` is not supported. Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)` in consent-manager-for-woocommerce/consent-manager-for-woocommerce/templates/adult-details/info-form.php on line 50
+Errors parsing consent-manager-for-woocommerce/consent-manager-for-woocommerce/templates/adult-details/info-form.php
+No syntax errors detected in consent-manager-for-woocommerce/consent-manager-for-woocommerce/templates/emails/children_order_details.php
+No syntax errors detected in consent-manager-for-woocommerce/consent-manager-for-woocommerce/templates/parent-details/info.php
+No syntax errors detected in consent-manager-for-woocommerce/consent-manager-for-woocommerce/templates/parent-details/privacy.php
+No syntax errors detected in consent-manager-for-woocommerce/consent-manager-for-woocommerce/uninstall.php
+::error::%0Atemplates/adult-details/info-form.php%0A  Fatal error: Unparenthesized `a ? b : c ? d : e` is not supported.%0A      Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)`%0A      on line 50
+...............................[31mE[0m.... 36 / 36 (100%)
+
+
+
+[1mFILE: templates/adult-details/info-form.php[0m
+----------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 50 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has been
+    |       | deprecated in PHP 7.4 and removed in PHP 8.0. Multiple
+    |       | consecutive ternaries detected. Use parenthesis to
+    |       | clarify the order in which the operations should be
+    |       | executed[0m
+    |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
+----------------------------------------------------------------------
+
+Time: 361ms; Memory: 12MB
+::error::FILE: templates/adult-details/info-form.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 50 | ERROR | The left-associativity of the ternary operator has been%0A    |       | deprecated in PHP 7.4 and removed in PHP 8.0. Multiple%0A    |       | consecutive ternaries detected. Use parenthesis to%0A    |       | clarify the order in which the operations should be%0A    |       | executed%0A    |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A----------------------------------------------------------------------%0A
