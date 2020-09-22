@@ -1,0 +1,41 @@
+::warning::Plugin: https://wordpress.org/plugins/dc-artists/%0ATrac: https://plugins.trac.wordpress.org/browser/dc-artists/
+No syntax errors detected in dc-artists/dc-artists/dcartists.php
+No syntax errors detected in dc-artists/dc-artists/libraries/core.php
+No syntax errors detected in dc-artists/dc-artists/libraries/lib.form.php
+No syntax errors detected in dc-artists/dc-artists/libraries/lib.functions.php
+No syntax errors detected in dc-artists/dc-artists/libraries/lib.metabox.php
+No syntax errors detected in dc-artists/dc-artists/libraries/lib.posttype.php
+No syntax errors detected in dc-artists/dc-artists/libraries/lib.shortcodes.php
+No syntax errors detected in dc-artists/dc-artists/libraries/lib.widgets.php
+......[31mE[0m[31mE[0m 8 / 8 (100%)
+
+
+
+[1mFILE: libraries/lib.shortcodes.php[0m
+----------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 277 | [31mERROR[0m | [1mSelf-closing XHTML tags are ignored. Only
+     |       | non-self-closing tags should be used in the
+     |       | strip_tags() $allowable_tags parameter since PHP
+     |       | 5.3.4. Found: '<p><a><br />'[0m
+     |       | (PHPCompatibility.ParameterValues.ForbiddenStripTagsSelfClosingXHTML.Found)
+----------------------------------------------------------------------
+
+
+[1mFILE: libraries/lib.widgets.php[0m
+----------------------------------------------------------------------
+[1mFOUND 2 ERRORS AFFECTING 2 LINES[0m
+----------------------------------------------------------------------
+ 120 | [31mERROR[0m | [1mFunction create_function() is deprecated since PHP 7.2
+     |       | and removed since PHP 8.0; Use an anonymous function
+     |       | instead[0m
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
+ 242 | [31mERROR[0m | [1mFunction create_function() is deprecated since PHP 7.2
+     |       | and removed since PHP 8.0; Use an anonymous function
+     |       | instead[0m
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
+----------------------------------------------------------------------
+
+Time: 285ms; Memory: 14MB
+::error::FILE: libraries/lib.shortcodes.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 277 | ERROR | Self-closing XHTML tags are ignored. Only%0A     |       | non-self-closing tags should be used in the%0A     |       | strip_tags() $allowable_tags parameter since PHP%0A     |       | 5.3.4. Found: '<p><a><br />'%0A     |       | (PHPCompatibility.ParameterValues.ForbiddenStripTagsSelfClosingXHTML.Found)%0A----------------------------------------------------------------------%0A%0A%0AFILE: libraries/lib.widgets.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A----------------------------------------------------------------------%0A 120 | ERROR | Function create_function() is deprecated since PHP 7.2%0A     |       | and removed since PHP 8.0; Use an anonymous function%0A     |       | instead%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)%0A 242 | ERROR | Function create_function() is deprecated since PHP 7.2%0A     |       | and removed since PHP 8.0; Use an anonymous function%0A     |       | instead%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)%0A----------------------------------------------------------------------%0A
