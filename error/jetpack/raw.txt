@@ -763,7 +763,6 @@ No syntax errors detected in jetpack/jetpack/views/admin/network-admin-footer.ph
 No syntax errors detected in jetpack/jetpack/views/admin/network-admin-header.php
 No syntax errors detected in jetpack/jetpack/views/admin/network-settings.php
 ::error::%0Asal/class.json-api-links.php%0A  Warning: The magic method WPCOM_JSON_API_Links::__wakeup() must have public visibility on line 25
-No syntax errors detected in jetpack/jetpack/views/admin/network-settings.php
 ............................................[31mE[0m...............  60 / 761 (8%)
 ............................................................ 120 / 761 (16%)
 ............................................................ 180 / 761 (24%)
@@ -781,21 +780,25 @@ No syntax errors detected in jetpack/jetpack/views/admin/network-settings.php
 
 
 [1mFILE: class.json-api-endpoints.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 2090 | [31mERROR[0m | [1mThe constant "INTL_IDNA_VARIANT_2003" is deprecated since PHP 7.2 and removed since PHP 8.0[0m
+----------------------------------------------------------------------
+ 2090 | [31mERROR[0m | [1mThe constant "INTL_IDNA_VARIANT_2003" is deprecated
+      |       | since PHP 7.2 and removed since PHP 8.0[0m
       |       | (PHPCompatibility.Constants.RemovedConstants.intl_idna_variant_2003DeprecatedRemoved)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 [1mFILE: modules/shortcodes/crowdsignal.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 391 | [31mERROR[0m | [1mThe "hour" parameter for function mktime() is missing. Passing this parameter is no longer optional. The optional nature of the parameter is deprecated since PHP 5.1
-     |       | and removed since PHP 8.0[0m (PHPCompatibility.FunctionUse.OptionalToRequiredFunctionParameters.mktime_hourSoftRequiredHardRequired)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
+ 391 | [31mERROR[0m | [1mThe "hour" parameter for function mktime() is missing.
+     |       | Passing this parameter is no longer optional. The
+     |       | optional nature of the parameter is deprecated since
+     |       | PHP 5.1 and removed since PHP 8.0[0m
+     |       | (PHPCompatibility.FunctionUse.OptionalToRequiredFunctionParameters.mktime_hourSoftRequiredHardRequired)
+----------------------------------------------------------------------
 
-Time: 40.22 secs; Memory: 60.01MB
-::error::FILE: class.json-api-endpoints.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 2090 | ERROR | The constant "INTL_IDNA_VARIANT_2003" is deprecated since PHP 7.2 and removed since PHP 8.0%0A      |       | (PHPCompatibility.Constants.RemovedConstants.intl_idna_variant_2003DeprecatedRemoved)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: modules/shortcodes/crowdsignal.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 391 | ERROR | The "hour" parameter for function mktime() is missing. Passing this parameter is no longer optional. The optional nature of the parameter is deprecated since PHP 5.1%0A     |       | and removed since PHP 8.0 (PHPCompatibility.FunctionUse.OptionalToRequiredFunctionParameters.mktime_hourSoftRequiredHardRequired)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
+Time: 25.48 secs; Memory: 60.01MB
+::error::FILE: class.json-api-endpoints.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 2090 | ERROR | The constant "INTL_IDNA_VARIANT_2003" is deprecated%0A      |       | since PHP 7.2 and removed since PHP 8.0%0A      |       | (PHPCompatibility.Constants.RemovedConstants.intl_idna_variant_2003DeprecatedRemoved)%0A----------------------------------------------------------------------%0A%0A%0AFILE: modules/shortcodes/crowdsignal.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 391 | ERROR | The "hour" parameter for function mktime() is missing.%0A     |       | Passing this parameter is no longer optional. The%0A     |       | optional nature of the parameter is deprecated since%0A     |       | PHP 5.1 and removed since PHP 8.0%0A     |       | (PHPCompatibility.FunctionUse.OptionalToRequiredFunctionParameters.mktime_hourSoftRequiredHardRequired)%0A----------------------------------------------------------------------%0A
