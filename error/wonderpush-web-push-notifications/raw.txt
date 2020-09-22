@@ -53,6 +53,8 @@ No syntax errors detected in wonderpush-web-push-notifications/wonderpush-web-pu
 No syntax errors detected in wonderpush-web-push-notifications/wonderpush-web-push-notifications/lib/Obj/NotificationPush.php
 No syntax errors detected in wonderpush-web-push-notifications/wonderpush-web-push-notifications/lib/Obj/NotificationPushWeb.php
 No syntax errors detected in wonderpush-web-push-notifications/wonderpush-web-push-notifications/lib/Obj/NullObject.php
+
+Fatal error: Cannot use 'Object' as class name as it is reserved in wonderpush-web-push-notifications/wonderpush-web-push-notifications/lib/Obj/Object.php on line 8
 Errors parsing wonderpush-web-push-notifications/wonderpush-web-push-notifications/lib/Obj/Object.php
 No syntax errors detected in wonderpush-web-push-notifications/wonderpush-web-push-notifications/lib/Obj/Pagination.php
 No syntax errors detected in wonderpush-web-push-notifications/wonderpush-web-push-notifications/lib/Obj/SuccessResponse.php
@@ -80,25 +82,33 @@ No syntax errors detected in wonderpush-web-push-notifications/wonderpush-web-pu
 No syntax errors detected in wonderpush-web-push-notifications/wonderpush-web-push-notifications/wonderpush-settings.php
 No syntax errors detected in wonderpush-web-push-notifications/wonderpush-web-push-notifications/wonderpush-utils.php
 No syntax errors detected in wonderpush-web-push-notifications/wonderpush-web-push-notifications/wonderpush-woocommerce.php
-::error::%0Alib/Obj/Object.php
+::error::%0Alib/Obj/Object.php%0A  Fatal error: Cannot use 'Object' as class name as it is reserved on line 8
 ......................................................[32mE[0m..... 60 / 81 (74%)
 .....................                                        81 / 81 (100%)
 
 
 
 [1mFILE: lib/Obj/Object.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 3 ERRORS AFFECTING 2 LINES[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  8 | [31mERROR[0m | [ ] [1m'object' is a soft reserved keyword as of PHP version 7.0 and a reserved keyword as of PHP version 7.2 and should not be used to name a class, interface or trait
-    |       |     or as part of a namespace (T_CLASS)[0m (PHPCompatibility.Keywords.ForbiddenNamesAsDeclared.objectFound)
- 85 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $field{0}[0m
+----------------------------------------------------------------------
+  8 | [31mERROR[0m | [ ] [1m'object' is a soft reserved keyword as of PHP
+    |       |     version 7.0 and a reserved keyword as of PHP
+    |       |     version 7.2 and should not be used to name a class,
+    |       |     interface or trait or as part of a namespace
+    |       |     (T_CLASS)[0m
+    |       |     (PHPCompatibility.Keywords.ForbiddenNamesAsDeclared.objectFound)
+ 85 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and
+    |       |     string offsets has been deprecated in PHP 7.4 and
+    |       |     removed in PHP 8.0. Found: $field{0}[0m
     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
- 85 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $field{0}[0m
+ 85 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and
+    |       |     string offsets has been deprecated in PHP 7.4 and
+    |       |     removed in PHP 8.0. Found: $field{0}[0m
     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mPHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
-Time: 1.15 secs; Memory: 14MB
-::error::FILE: lib/Obj/Object.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 3 ERRORS AFFECTING 2 LINES%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A  8 | ERROR | [ ] 'object' is a soft reserved keyword as of PHP version 7.0 and a reserved keyword as of PHP version 7.2 and should not be used to name a class, interface or trait%0A    |       |     or as part of a namespace (T_CLASS) (PHPCompatibility.Keywords.ForbiddenNamesAsDeclared.objectFound)%0A 85 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $field{0}%0A    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 85 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $field{0}%0A    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0APHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
+Time: 1.07 secs; Memory: 14MB
+::error::FILE: lib/Obj/Object.php%0A----------------------------------------------------------------------%0AFOUND 3 ERRORS AFFECTING 2 LINES%0A----------------------------------------------------------------------%0A  8 | ERROR | [ ] 'object' is a soft reserved keyword as of PHP%0A    |       |     version 7.0 and a reserved keyword as of PHP%0A    |       |     version 7.2 and should not be used to name a class,%0A    |       |     interface or trait or as part of a namespace%0A    |       |     (T_CLASS)%0A    |       |     (PHPCompatibility.Keywords.ForbiddenNamesAsDeclared.objectFound)%0A 85 | ERROR | [x] Curly brace syntax for accessing array elements and%0A    |       |     string offsets has been deprecated in PHP 7.4 and%0A    |       |     removed in PHP 8.0. Found: $field{0}%0A    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 85 | ERROR | [x] Curly brace syntax for accessing array elements and%0A    |       |     string offsets has been deprecated in PHP 7.4 and%0A    |       |     removed in PHP 8.0. Found: $field{0}%0A    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A----------------------------------------------------------------------%0APHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A----------------------------------------------------------------------%0A

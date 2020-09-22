@@ -1,15 +1,24 @@
 
 lib/Obj/Object.php
+  Fatal error: Cannot use 'Object' as class name as it is reserved on line 8
 FILE: lib/Obj/Object.php
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 FOUND 3 ERRORS AFFECTING 2 LINES
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  8 | ERROR | [ ] 'object' is a soft reserved keyword as of PHP version 7.0 and a reserved keyword as of PHP version 7.2 and should not be used to name a class, interface or trait
-    |       |     or as part of a namespace (T_CLASS) (PHPCompatibility.Keywords.ForbiddenNamesAsDeclared.objectFound)
- 85 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $field{0}
+----------------------------------------------------------------------
+  8 | ERROR | [ ] 'object' is a soft reserved keyword as of PHP
+    |       |     version 7.0 and a reserved keyword as of PHP
+    |       |     version 7.2 and should not be used to name a class,
+    |       |     interface or trait or as part of a namespace
+    |       |     (T_CLASS)
+    |       |     (PHPCompatibility.Keywords.ForbiddenNamesAsDeclared.objectFound)
+ 85 | ERROR | [x] Curly brace syntax for accessing array elements and
+    |       |     string offsets has been deprecated in PHP 7.4 and
+    |       |     removed in PHP 8.0. Found: $field{0}
     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
- 85 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $field{0}
+ 85 | ERROR | [x] Curly brace syntax for accessing array elements and
+    |       |     string offsets has been deprecated in PHP 7.4 and
+    |       |     removed in PHP 8.0. Found: $field{0}
     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------

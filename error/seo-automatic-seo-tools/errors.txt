@@ -1,237 +1,367 @@
 
 extensions.php
+  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 104
 
 kwmultiplier.php
+  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 125
 
 libs/phpQuery/jQueryPhpProxy/JSON.php
+  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 311
 FILE: csv-merger/addfiles.php
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 FOUND 1 ERROR AFFECTING 1 LINE
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 8 | ERROR | Function each() is deprecated since PHP 7.2 and removed since PHP 8.0; Use a foreach loop or ArrayIterator instead
+----------------------------------------------------------------------
+ 8 | ERROR | Function each() is deprecated since PHP 7.2 and removed
+   |       | since PHP 8.0; Use a foreach loop or ArrayIterator
+   |       | instead
    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 FILE: csv-merger/csvdownload.php
---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 FOUND 1 ERROR AFFECTING 1 LINE
---------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 25 | ERROR | "$this" can no longer be used in a plain function or method since PHP 7.1.
+----------------------------------------------------------------------
+ 25 | ERROR | "$this" can no longer be used in a plain function or
+    |       | method since PHP 7.1.
     |       | (PHPCompatibility.Variables.ForbiddenThisUseContexts.OutsideObjectContext)
---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 FILE: extensions.php
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 FOUND 1 ERROR AFFECTING 1 LINE
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 104 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $element{0}
+----------------------------------------------------------------------
+ 104 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $element{0}
      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 FILE: feedcommander/rssread.php
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 FOUND 4 ERRORS AFFECTING 2 LINES
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  9 | ERROR | Extension 'ereg' is deprecated since PHP 5.3 and removed since PHP 7.0; Use pcre instead (PHPCompatibility.Extensions.RemovedExtensions.eregDeprecatedRemoved)
-  9 | ERROR | Function ereg_replace() is deprecated since PHP 5.3 and removed since PHP 7.0; Use preg_replace() instead
+----------------------------------------------------------------------
+  9 | ERROR | Extension 'ereg' is deprecated since PHP 5.3 and
+    |       | removed since PHP 7.0; Use pcre instead
+    |       | (PHPCompatibility.Extensions.RemovedExtensions.eregDeprecatedRemoved)
+  9 | ERROR | Function ereg_replace() is deprecated since PHP 5.3 and
+    |       | removed since PHP 7.0; Use preg_replace() instead
     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.ereg_replaceDeprecatedRemoved)
- 10 | ERROR | Extension 'ereg' is deprecated since PHP 5.3 and removed since PHP 7.0; Use pcre instead (PHPCompatibility.Extensions.RemovedExtensions.eregDeprecatedRemoved)
- 10 | ERROR | Function ereg_replace() is deprecated since PHP 5.3 and removed since PHP 7.0; Use preg_replace() instead
+ 10 | ERROR | Extension 'ereg' is deprecated since PHP 5.3 and
+    |       | removed since PHP 7.0; Use pcre instead
+    |       | (PHPCompatibility.Extensions.RemovedExtensions.eregDeprecatedRemoved)
+ 10 | ERROR | Function ereg_replace() is deprecated since PHP 5.3 and
+    |       | removed since PHP 7.0; Use preg_replace() instead
     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.ereg_replaceDeprecatedRemoved)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 FILE: init.php
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 FOUND 1 ERROR AFFECTING 1 LINE
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 8 | ERROR | Function get_magic_quotes_gpc() is deprecated since PHP 7.4 and removed since PHP 8.0
+----------------------------------------------------------------------
+ 8 | ERROR | Function get_magic_quotes_gpc() is deprecated since PHP
+   |       | 7.4 and removed since PHP 8.0
    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_gpcDeprecatedRemoved)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 FILE: kwmultiplier.php
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 FOUND 1 ERROR AFFECTING 1 LINE
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 125 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $result{0}
+----------------------------------------------------------------------
+ 125 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $result{0}
      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 FILE: libs/phpQuery/jQueryPhpProxy/JSON.php
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 FOUND 43 ERRORS AFFECTING 41 LINES
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  265 | ERROR | [ ] Declaration of a PHP4 style class constructor is deprecated since PHP 7.0 and removed since PHP 8.0
+----------------------------------------------------------------------
+  265 | ERROR | [ ] Declaration of a PHP4 style class constructor is
+      |       |     deprecated since PHP 7.0 and removed since PHP
+      |       |     8.0
       |       |     (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
-  311 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $utf16{0}
+  311 | ERROR | [x] Curly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found: $utf16{0}
       |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
-  311 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $utf16{1}
+  311 | ERROR | [x] Curly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found: $utf16{1}
       |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
-  417 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $utf8{0}
+  417 | ERROR | [x] Curly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found: $utf8{0}
       |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
-  419 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $utf8{0}
+  419 | ERROR | [x] Curly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found: $utf8{0}
       |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
-  421 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $utf8{1}
+  421 | ERROR | [x] Curly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found: $utf8{1}
       |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
-  431 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $utf8{0}
+  431 | ERROR | [x] Curly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found: $utf8{0}
       |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
-  433 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $utf8{1}
+  433 | ERROR | [x] Curly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found: $utf8{1}
       |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
-  435 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $utf8{1}
+  435 | ERROR | [x] Curly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found: $utf8{1}
       |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
-  437 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $utf8{2}
+  437 | ERROR | [x] Curly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found: $utf8{2}
       |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
-  527 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $var{$c}
+  527 | ERROR | [x] Curly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found: $var{$c}
       |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
-  573 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $var{$c}
+  573 | ERROR | [x] Curly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found: $var{$c}
       |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
-  583 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $var{$c}
+  583 | ERROR | [x] Curly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found: $var{$c}
       |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
-  595 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $var{$c + 1}
+  595 | ERROR | [x] Curly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found: $var{$c + 1}
       |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
-  615 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $var{$c + 1}
+  615 | ERROR | [x] Curly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found: $var{$c + 1}
       |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
-  617 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $var{$c + 2}
+  617 | ERROR | [x] Curly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found: $var{$c + 2}
       |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
-  637 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $var{$c + 1}
+  637 | ERROR | [x] Curly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found: $var{$c + 1}
       |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
-  639 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $var{$c + 2}
+  639 | ERROR | [x] Curly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found: $var{$c + 2}
       |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
-  641 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $var{$c + 3}
+  641 | ERROR | [x] Curly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found: $var{$c + 3}
       |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
-  661 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $var{$c + 1}
+  661 | ERROR | [x] Curly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found: $var{$c + 1}
       |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
-  663 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $var{$c + 2}
+  663 | ERROR | [x] Curly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found: $var{$c + 2}
       |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
-  665 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $var{$c + 3}
+  665 | ERROR | [x] Curly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found: $var{$c + 3}
       |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
-  667 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $var{$c + 4}
+  667 | ERROR | [x] Curly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found: $var{$c + 4}
       |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
-  687 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $var{$c + 1}
+  687 | ERROR | [x] Curly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found: $var{$c + 1}
       |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
-  689 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $var{$c + 2}
+  689 | ERROR | [x] Curly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found: $var{$c + 2}
       |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
-  691 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $var{$c + 3}
+  691 | ERROR | [x] Curly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found: $var{$c + 3}
       |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
-  693 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $var{$c + 4}
+  693 | ERROR | [x] Curly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found: $var{$c + 4}
       |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
-  695 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $var{$c + 5}
+  695 | ERROR | [x] Curly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found: $var{$c + 5}
       |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
- 1045 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $chrs{$c}
+ 1045 | ERROR | [x] Curly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found: $chrs{$c}
       |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
- 1105 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $chrs{++$c}
+ 1105 | ERROR | [x] Curly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found: $chrs{++$c}
       |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
- 1131 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $chrs{$c}
+ 1131 | ERROR | [x] Curly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found: $chrs{$c}
       |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
- 1225 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $str{0}
+ 1225 | ERROR | [x] Curly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found: $str{0}
       |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
- 1303 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $chrs{$c}
+ 1303 | ERROR | [x] Curly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found: $chrs{$c}
       |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
- 1387 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $chrs{$c}
+ 1387 | ERROR | [x] Curly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found: $chrs{$c}
       |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
- 1387 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $chrs{$c}
+ 1387 | ERROR | [x] Curly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found: $chrs{$c}
       |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
- 1391 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $chrs{$c}
+ 1391 | ERROR | [x] Curly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found: $chrs{$c}
       |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
- 1397 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $chrs{$c}
+ 1397 | ERROR | [x] Curly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found: $chrs{$c}
       |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
- 1415 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $chrs{$c}
+ 1415 | ERROR | [x] Curly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found: $chrs{$c}
       |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
- 1427 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $chrs{$c}
+ 1427 | ERROR | [x] Curly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found: $chrs{$c}
       |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
- 1437 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $chrs{$c}
+ 1437 | ERROR | [x] Curly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found: $chrs{$c}
       |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
- 1449 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $chrs{$c}
+ 1449 | ERROR | [x] Curly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found: $chrs{$c}
       |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
- 1565 | ERROR | [ ] Declaration of a PHP4 style class constructor is deprecated since PHP 7.0 and removed since PHP 8.0
+ 1565 | ERROR | [ ] Declaration of a PHP4 style class constructor is
+      |       |     deprecated since PHP 7.0 and removed since PHP
+      |       |     8.0
       |       |     (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
- 1593 | ERROR | [ ] Declaration of a PHP4 style class constructor is deprecated since PHP 7.0 and removed since PHP 8.0
+ 1593 | ERROR | [ ] Declaration of a PHP4 style class constructor is
+      |       |     deprecated since PHP 7.0 and removed since PHP
+      |       |     8.0
       |       |     (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 PHPCBF CAN FIX THE 40 MARKED SNIFF VIOLATIONS AUTOMATICALLY
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 FILE: libs/phpQuery/phpQuery/phpQuery.php
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 FOUND 7 ERRORS AFFECTING 7 LINES
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  455 | ERROR | "$this" can no longer be used in a plain function or method since PHP 7.1. (PHPCompatibility.Variables.ForbiddenThisUseContexts.OutsideObjectContext)
-  457 | ERROR | "$this" can no longer be used in a plain function or method since PHP 7.1. (PHPCompatibility.Variables.ForbiddenThisUseContexts.OutsideObjectContext)
-  461 | ERROR | "$this" can no longer be used in a plain function or method since PHP 7.1. (PHPCompatibility.Variables.ForbiddenThisUseContexts.OutsideObjectContext)
- 1439 | ERROR | Function call_user_method() is deprecated since PHP 4.1 and removed since PHP 7.0; Use call_user_func() instead
+----------------------------------------------------------------------
+  455 | ERROR | "$this" can no longer be used in a plain function or
+      |       | method since PHP 7.1.
+      |       | (PHPCompatibility.Variables.ForbiddenThisUseContexts.OutsideObjectContext)
+  457 | ERROR | "$this" can no longer be used in a plain function or
+      |       | method since PHP 7.1.
+      |       | (PHPCompatibility.Variables.ForbiddenThisUseContexts.OutsideObjectContext)
+  461 | ERROR | "$this" can no longer be used in a plain function or
+      |       | method since PHP 7.1.
+      |       | (PHPCompatibility.Variables.ForbiddenThisUseContexts.OutsideObjectContext)
+ 1439 | ERROR | Function call_user_method() is deprecated since PHP
+      |       | 4.1 and removed since PHP 7.0; Use call_user_func()
+      |       | instead
       |       | (PHPCompatibility.FunctionUse.RemovedFunctions.call_user_methodDeprecatedRemoved)
- 3013 | ERROR | Function create_function() is deprecated since PHP 7.2 and removed since PHP 8.0; Use an anonymous function instead
+ 3013 | ERROR | Function create_function() is deprecated since PHP
+      |       | 7.2 and removed since PHP 8.0; Use an anonymous
+      |       | function instead
       |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
- 3049 | ERROR | Function create_function() is deprecated since PHP 7.2 and removed since PHP 8.0; Use an anonymous function instead
+ 3049 | ERROR | Function create_function() is deprecated since PHP
+      |       | 7.2 and removed since PHP 8.0; Use an anonymous
+      |       | function instead
       |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
- 4977 | ERROR | Function split() is deprecated since PHP 5.3 and removed since PHP 7.0; Use preg_split(), explode() or str_split() instead
+ 4977 | ERROR | Function split() is deprecated since PHP 5.3 and
+      |       | removed since PHP 7.0; Use preg_split(), explode() or
+      |       | str_split() instead
       |       | (PHPCompatibility.FunctionUse.RemovedFunctions.splitDeprecatedRemoved)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 FILE: libs/phpQuery/test-cases/xpath.php
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 FOUND 1 ERROR AFFECTING 1 LINE
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 35 | ERROR | Function split() is deprecated since PHP 5.3 and removed since PHP 7.0; Use preg_split(), explode() or str_split() instead
+----------------------------------------------------------------------
+ 35 | ERROR | Function split() is deprecated since PHP 5.3 and
+    |       | removed since PHP 7.0; Use preg_split(), explode() or
+    |       | str_split() instead
     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.splitDeprecatedRemoved)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 FILE: libs/smarty/Config_File.class.php
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 FOUND 2 ERRORS AFFECTING 2 LINES
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 143 | ERROR | Declaration of a PHP4 style class constructor is deprecated since PHP 7.0 and removed since PHP 8.0
+----------------------------------------------------------------------
+ 143 | ERROR | Declaration of a PHP4 style class constructor is
+     |       | deprecated since PHP 7.0 and removed since PHP 8.0
      |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
- 471 | ERROR | INI directive 'track_errors' is deprecated since PHP 7.2 and removed since PHP 8.0
+ 471 | ERROR | INI directive 'track_errors' is deprecated since PHP
+     |       | 7.2 and removed since PHP 8.0
      |       | (PHPCompatibility.IniDirectives.RemovedIniDirectives.track_errorsDeprecatedRemoved)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 FILE: libs/smarty/plugins/function.fetch.php
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 FOUND 2 ERRORS AFFECTING 2 LINES
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 367 | ERROR | Function split() is deprecated since PHP 5.3 and removed since PHP 7.0; Use preg_split(), explode() or str_split() instead
+----------------------------------------------------------------------
+ 367 | ERROR | Function split() is deprecated since PHP 5.3 and
+     |       | removed since PHP 7.0; Use preg_split(), explode() or
+     |       | str_split() instead
      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.splitDeprecatedRemoved)
- 377 | ERROR | Function split() is deprecated since PHP 5.3 and removed since PHP 7.0; Use preg_split(), explode() or str_split() instead
+ 377 | ERROR | Function split() is deprecated since PHP 5.3 and
+     |       | removed since PHP 7.0; Use preg_split(), explode() or
+     |       | str_split() instead
      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.splitDeprecatedRemoved)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 FILE: libs/smarty/plugins/outputfilter.trimwhitespace.php
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 FOUND 1 ERROR AFFECTING 1 LINE
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 141 | ERROR | Using 'break' outside of a loop or switch structure is invalid and will throw a fatal error since PHP 7.0
+----------------------------------------------------------------------
+ 141 | ERROR | Using 'break' outside of a loop or switch structure is
+     |       | invalid and will throw a fatal error since PHP 7.0
      |       | (PHPCompatibility.ControlStructures.ForbiddenBreakContinueOutsideLoop.FatalError)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 FILE: libs/smarty/Smarty.class.php
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 FOUND 1 ERROR AFFECTING 1 LINE
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 1135 | ERROR | Declaration of a PHP4 style class constructor is deprecated since PHP 7.0 and removed since PHP 8.0
+----------------------------------------------------------------------
+ 1135 | ERROR | Declaration of a PHP4 style class constructor is
+      |       | deprecated since PHP 7.0 and removed since PHP
+      |       | 8.0
       |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 FILE: libs/smarty/Smarty_Compiler.class.php
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 FOUND 1 ERROR AFFECTING 1 LINE
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 1117 | ERROR | Function each() is deprecated since PHP 7.2 and removed since PHP 8.0; Use a foreach loop or ArrayIterator instead
+----------------------------------------------------------------------
+ 1117 | ERROR | Function each() is deprecated since PHP 7.2 and
+      |       | removed since PHP 8.0; Use a foreach loop or
+      |       | ArrayIterator instead
       |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------

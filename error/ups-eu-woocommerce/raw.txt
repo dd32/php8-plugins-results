@@ -59,7 +59,11 @@ No syntax errors detected in ups-eu-woocommerce/ups-eu-woocommerce/src/libsystem
 No syntax errors detected in ups-eu-woocommerce/ups-eu-woocommerce/src/libsystems/ajax_json/ups-eu-woo-ajax-json-shipments.php
 No syntax errors detected in ups-eu-woocommerce/ups-eu-woocommerce/src/libsystems/ajax_json/ups-eu-woo-ajax-json-shipupdate.php
 No syntax errors detected in ups-eu-woocommerce/ups-eu-woocommerce/src/libsystems/ajax_json/ups-eu-woo-ajax-json-syncups.php
+
+Fatal error: Array and string offset access syntax with curly braces is no longer supported in ups-eu-woocommerce/ups-eu-woocommerce/src/libsystems/api_ups/ups-eu-woo-call-api-manage.php on line 289
 Errors parsing ups-eu-woocommerce/ups-eu-woocommerce/src/libsystems/api_ups/ups-eu-woo-call-api-manage.php
+
+Fatal error: Array and string offset access syntax with curly braces is no longer supported in ups-eu-woocommerce/ups-eu-woocommerce/src/libsystems/api_ups/ups-eu-woo-call-api-ups-configurations.php on line 80
 Errors parsing ups-eu-woocommerce/ups-eu-woocommerce/src/libsystems/api_ups/ups-eu-woo-call-api-ups-configurations.php
 No syntax errors detected in ups-eu-woocommerce/ups-eu-woocommerce/src/libsystems/api_ups/ups-eu-woo-call-api-ups-eshopper.php
 No syntax errors detected in ups-eu-woocommerce/ups-eu-woocommerce/src/libsystems/api_ups/ups-eu-woo-call-api-ups-global.php
@@ -359,7 +363,7 @@ No syntax errors detected in ups-eu-woocommerce/ups-eu-woocommerce/vendor/smarty
 No syntax errors detected in ups-eu-woocommerce/ups-eu-woocommerce/vendor/smarty/smarty/libs/sysplugins/smarty_template_source.php
 No syntax errors detected in ups-eu-woocommerce/ups-eu-woocommerce/vendor/smarty/smarty/libs/sysplugins/smarty_undefined_variable.php
 No syntax errors detected in ups-eu-woocommerce/ups-eu-woocommerce/vendor/smarty/smarty/libs/sysplugins/smarty_variable.php
-::error::%0Asrc/libsystems/api_ups/ups-eu-woo-call-api-manage.php%0A%0Asrc/libsystems/api_ups/ups-eu-woo-call-api-ups-configurations.php
+::error::%0Asrc/libsystems/api_ups/ups-eu-woo-call-api-manage.php%0A  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 289%0A%0Asrc/libsystems/api_ups/ups-eu-woo-call-api-ups-configurations.php%0A  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 80
 ............................................................  60 / 360 (17%)
 [32mE[0m[32mE[0m.......................................................... 120 / 360 (33%)
 ............................................................ 180 / 360 (50%)
@@ -370,25 +374,31 @@ No syntax errors detected in ups-eu-woocommerce/ups-eu-woocommerce/vendor/smarty
 
 
 [1mFILE: src/libsystems/api_ups/ups-eu-woo-call-api-manage.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 289 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found:
-     |       |     $data{$this->key_country_code}[0m (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
+ 289 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found:
+     |       |     $data{$this->key_country_code}[0m
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+----------------------------------------------------------------------
 [1mPHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
-[1mFILE: src/libsystems/api_ups/ups-eu-woo-call-api-ups-configurations.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[1mFILE: ...rc/libsystems/api_ups/ups-eu-woo-call-api-ups-configurations.php[0m
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 80 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found:
-    |       |     $data{$this->key_country_code}[0m (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
+ 80 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and
+    |       |     string offsets has been deprecated in PHP 7.4 and
+    |       |     removed in PHP 8.0. Found:
+    |       |     $data{$this->key_country_code}[0m
+    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+----------------------------------------------------------------------
 [1mPHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
-Time: 8.83 secs; Memory: 64.01MB
-::error::FILE: src/libsystems/api_ups/ups-eu-woo-call-api-manage.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 289 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found:%0A     |       |     $data{$this->key_country_code} (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0APHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: src/libsystems/api_ups/ups-eu-woo-call-api-ups-configurations.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 80 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found:%0A    |       |     $data{$this->key_country_code} (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0APHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
+Time: 8.26 secs; Memory: 64.01MB
+::error::FILE: src/libsystems/api_ups/ups-eu-woo-call-api-manage.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 289 | ERROR | [x] Curly brace syntax for accessing array elements%0A     |       |     and string offsets has been deprecated in PHP 7.4%0A     |       |     and removed in PHP 8.0. Found:%0A     |       |     $data{$this->key_country_code}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A----------------------------------------------------------------------%0APHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A----------------------------------------------------------------------%0A%0A%0AFILE: ...rc/libsystems/api_ups/ups-eu-woo-call-api-ups-configurations.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 80 | ERROR | [x] Curly brace syntax for accessing array elements and%0A    |       |     string offsets has been deprecated in PHP 7.4 and%0A    |       |     removed in PHP 8.0. Found:%0A    |       |     $data{$this->key_country_code}%0A    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A----------------------------------------------------------------------%0APHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A----------------------------------------------------------------------%0A
