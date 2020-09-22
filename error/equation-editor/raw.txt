@@ -111,6 +111,8 @@ No syntax errors detected in equation-editor/equation-editor/tiny_mce_wiris/inte
 No syntax errors detected in equation-editor/equation-editor/tiny_mce_wiris/integration/lib/IntIter.class.php
 No syntax errors detected in equation-editor/equation-editor/tiny_mce_wiris/integration/lib/Main.class.php
 No syntax errors detected in equation-editor/equation-editor/tiny_mce_wiris/integration/lib/Math.class.php
+
+Fatal error: Array and string offset access syntax with curly braces is no longer supported in equation-editor/equation-editor/tiny_mce_wiris/integration/lib/php/Boot.class.php on line 221
 Errors parsing equation-editor/equation-editor/tiny_mce_wiris/integration/lib/php/Boot.class.php
 No syntax errors detected in equation-editor/equation-editor/tiny_mce_wiris/integration/lib/php/Lib.class.php
 No syntax errors detected in equation-editor/equation-editor/tiny_mce_wiris/integration/lib/php/net/SslSocket.class.php
@@ -140,7 +142,7 @@ No syntax errors detected in equation-editor/equation-editor/tiny_mce_wiris/inte
 No syntax errors detected in equation-editor/equation-editor/tiny_mce_wiris/integration/testfilter.php
 No syntax errors detected in equation-editor/equation-editor/tiny_mce_wiris/integration/test.php
 No syntax errors detected in equation-editor/equation-editor/tiny_mce_wiris/integration/update.php
-::error::%0Atiny_mce_wiris/integration/lib/php/Boot.class.php
+::error::%0Atiny_mce_wiris/integration/lib/php/Boot.class.php%0A  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 221
 .......[31mE[0m....................................................  60 / 141 (43%)
 ........[31mE[0m...........................................[32mE[0m....... 120 / 141 (85%)
 ........[31mE[0m......[31mE[0m.....                                        141 / 141 (100%)
@@ -148,64 +150,90 @@ No syntax errors detected in equation-editor/equation-editor/tiny_mce_wiris/inte
 
 
 [1mFILE: tiny_mce_wiris/integration/createimage.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 12 | [31mERROR[0m | [1mFunction get_magic_quotes_gpc() is deprecated since PHP 7.4 and removed since PHP 8.0[0m
+----------------------------------------------------------------------
+ 12 | [31mERROR[0m | [1mFunction get_magic_quotes_gpc() is deprecated since PHP
+    |       | 7.4 and removed since PHP 8.0[0m
     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_gpcDeprecatedRemoved)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
-[1mFILE: tiny_mce_wiris/integration/lib/com/wiris/system/CallWrapper.class.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[1mFILE: ...mce_wiris/integration/lib/com/wiris/system/CallWrapper.class.php[0m
+----------------------------------------------------------------------
 [1mFOUND 2 ERRORS AFFECTING 2 LINES[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 76 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse order to join has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first parameter
-    |       | and $pieces the second[0m (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
- 77 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse order to join has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first parameter
-    |       | and $pieces the second[0m (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
+ 76 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse
+    |       | order to join has been deprecated since PHP 7.4 and is
+    |       | removed since PHP 8.0; $glue should be the first
+    |       | parameter and $pieces the second[0m
+    |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
+ 77 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse
+    |       | order to join has been deprecated since PHP 7.4 and is
+    |       | removed since PHP 8.0; $glue should be the first
+    |       | parameter and $pieces the second[0m
+    |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
+----------------------------------------------------------------------
 
 
 [1mFILE: tiny_mce_wiris/integration/lib/php/Boot.class.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 4 ERRORS AFFECTING 4 LINES[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 221 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $s{$pos}[0m
+----------------------------------------------------------------------
+ 221 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $s{$pos}[0m
      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
- 665 | [31mERROR[0m | [ ] [1mFunction each() is deprecated since PHP 7.2 and removed since PHP 8.0; Use a foreach loop or ArrayIterator instead[0m
+ 665 | [31mERROR[0m | [ ] [1mFunction each() is deprecated since PHP 7.2 and
+     |       |     removed since PHP 8.0; Use a foreach loop or
+     |       |     ArrayIterator instead[0m
      |       |     (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)
- 834 | [31mERROR[0m | [ ] [1mPassing the $glue and $pieces parameters in reverse order to join has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first
-     |       |     parameter and $pieces the second[0m (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
- 840 | [31mERROR[0m | [ ] [1mPassing the $glue and $pieces parameters in reverse order to join has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first
-     |       |     parameter and $pieces the second[0m (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 834 | [31mERROR[0m | [ ] [1mPassing the $glue and $pieces parameters in
+     |       |     reverse order to join has been deprecated since
+     |       |     PHP 7.4 and is removed since PHP 8.0; $glue should
+     |       |     be the first parameter and $pieces the second[0m
+     |       |     (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
+ 840 | [31mERROR[0m | [ ] [1mPassing the $glue and $pieces parameters in
+     |       |     reverse order to join has been deprecated since
+     |       |     PHP 7.4 and is removed since PHP 8.0; $glue should
+     |       |     be the first parameter and $pieces the second[0m
+     |       |     (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
+----------------------------------------------------------------------
 [1mPHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 [1mFILE: tiny_mce_wiris/integration/lib/Type.class.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 4 ERRORS AFFECTING 4 LINES[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 154 | [31mERROR[0m | [1mFunction each() is deprecated since PHP 7.2 and removed since PHP 8.0; Use a foreach loop or ArrayIterator instead[0m
+----------------------------------------------------------------------
+ 154 | [31mERROR[0m | [1mFunction each() is deprecated since PHP 7.2 and
+     |       | removed since PHP 8.0; Use a foreach loop or
+     |       | ArrayIterator instead[0m
      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)
- 159 | [31mERROR[0m | [1mFunction each() is deprecated since PHP 7.2 and removed since PHP 8.0; Use a foreach loop or ArrayIterator instead[0m
+ 159 | [31mERROR[0m | [1mFunction each() is deprecated since PHP 7.2 and
+     |       | removed since PHP 8.0; Use a foreach loop or
+     |       | ArrayIterator instead[0m
      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)
- 175 | [31mERROR[0m | [1mFunction each() is deprecated since PHP 7.2 and removed since PHP 8.0; Use a foreach loop or ArrayIterator instead[0m
+ 175 | [31mERROR[0m | [1mFunction each() is deprecated since PHP 7.2 and
+     |       | removed since PHP 8.0; Use a foreach loop or
+     |       | ArrayIterator instead[0m
      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)
- 178 | [31mERROR[0m | [1mFunction each() is deprecated since PHP 7.2 and removed since PHP 8.0; Use a foreach loop or ArrayIterator instead[0m
+ 178 | [31mERROR[0m | [1mFunction each() is deprecated since PHP 7.2 and
+     |       | removed since PHP 8.0; Use a foreach loop or
+     |       | ArrayIterator instead[0m
      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 [1mFILE: tiny_mce_wiris/integration/service.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 14 | [31mERROR[0m | [1mFunction get_magic_quotes_gpc() is deprecated since PHP 7.4 and removed since PHP 8.0[0m
+----------------------------------------------------------------------
+ 14 | [31mERROR[0m | [1mFunction get_magic_quotes_gpc() is deprecated since PHP
+    |       | 7.4 and removed since PHP 8.0[0m
     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_gpcDeprecatedRemoved)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
-Time: 2.25 secs; Memory: 30MB
-::error::FILE: tiny_mce_wiris/integration/createimage.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 12 | ERROR | Function get_magic_quotes_gpc() is deprecated since PHP 7.4 and removed since PHP 8.0%0A    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_gpcDeprecatedRemoved)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: tiny_mce_wiris/integration/lib/com/wiris/system/CallWrapper.class.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 76 | ERROR | Passing the $glue and $pieces parameters in reverse order to join has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first parameter%0A    |       | and $pieces the second (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A 77 | ERROR | Passing the $glue and $pieces parameters in reverse order to join has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first parameter%0A    |       | and $pieces the second (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: tiny_mce_wiris/integration/lib/php/Boot.class.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 4 ERRORS AFFECTING 4 LINES%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 221 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $s{$pos}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 665 | ERROR | [ ] Function each() is deprecated since PHP 7.2 and removed since PHP 8.0; Use a foreach loop or ArrayIterator instead%0A     |       |     (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)%0A 834 | ERROR | [ ] Passing the $glue and $pieces parameters in reverse order to join has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first%0A     |       |     parameter and $pieces the second (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A 840 | ERROR | [ ] Passing the $glue and $pieces parameters in reverse order to join has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first%0A     |       |     parameter and $pieces the second (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0APHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: tiny_mce_wiris/integration/lib/Type.class.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 4 ERRORS AFFECTING 4 LINES%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 154 | ERROR | Function each() is deprecated since PHP 7.2 and removed since PHP 8.0; Use a foreach loop or ArrayIterator instead%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)%0A 159 | ERROR | Function each() is deprecated since PHP 7.2 and removed since PHP 8.0; Use a foreach loop or ArrayIterator instead%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)%0A 175 | ERROR | Function each() is deprecated since PHP 7.2 and removed since PHP 8.0; Use a foreach loop or ArrayIterator instead%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)%0A 178 | ERROR | Function each() is deprecated since PHP 7.2 and removed since PHP 8.0; Use a foreach loop or ArrayIterator instead%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: tiny_mce_wiris/integration/service.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 14 | ERROR | Function get_magic_quotes_gpc() is deprecated since PHP 7.4 and removed since PHP 8.0%0A    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_gpcDeprecatedRemoved)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
+Time: 2.29 secs; Memory: 30MB
+::error::FILE: tiny_mce_wiris/integration/createimage.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 12 | ERROR | Function get_magic_quotes_gpc() is deprecated since PHP%0A    |       | 7.4 and removed since PHP 8.0%0A    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_gpcDeprecatedRemoved)%0A----------------------------------------------------------------------%0A%0A%0AFILE: ...mce_wiris/integration/lib/com/wiris/system/CallWrapper.class.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A----------------------------------------------------------------------%0A 76 | ERROR | Passing the $glue and $pieces parameters in reverse%0A    |       | order to join has been deprecated since PHP 7.4 and is%0A    |       | removed since PHP 8.0; $glue should be the first%0A    |       | parameter and $pieces the second%0A    |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A 77 | ERROR | Passing the $glue and $pieces parameters in reverse%0A    |       | order to join has been deprecated since PHP 7.4 and is%0A    |       | removed since PHP 8.0; $glue should be the first%0A    |       | parameter and $pieces the second%0A    |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A----------------------------------------------------------------------%0A%0A%0AFILE: tiny_mce_wiris/integration/lib/php/Boot.class.php%0A----------------------------------------------------------------------%0AFOUND 4 ERRORS AFFECTING 4 LINES%0A----------------------------------------------------------------------%0A 221 | ERROR | [x] Curly brace syntax for accessing array elements%0A     |       |     and string offsets has been deprecated in PHP 7.4%0A     |       |     and removed in PHP 8.0. Found: $s{$pos}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 665 | ERROR | [ ] Function each() is deprecated since PHP 7.2 and%0A     |       |     removed since PHP 8.0; Use a foreach loop or%0A     |       |     ArrayIterator instead%0A     |       |     (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)%0A 834 | ERROR | [ ] Passing the $glue and $pieces parameters in%0A     |       |     reverse order to join has been deprecated since%0A     |       |     PHP 7.4 and is removed since PHP 8.0; $glue should%0A     |       |     be the first parameter and $pieces the second%0A     |       |     (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A 840 | ERROR | [ ] Passing the $glue and $pieces parameters in%0A     |       |     reverse order to join has been deprecated since%0A     |       |     PHP 7.4 and is removed since PHP 8.0; $glue should%0A     |       |     be the first parameter and $pieces the second%0A     |       |     (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A----------------------------------------------------------------------%0APHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A----------------------------------------------------------------------%0A%0A%0AFILE: tiny_mce_wiris/integration/lib/Type.class.php%0A----------------------------------------------------------------------%0AFOUND 4 ERRORS AFFECTING 4 LINES%0A----------------------------------------------------------------------%0A 154 | ERROR | Function each() is deprecated since PHP 7.2 and%0A     |       | removed since PHP 8.0; Use a foreach loop or%0A     |       | ArrayIterator instead%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)%0A 159 | ERROR | Function each() is deprecated since PHP 7.2 and%0A     |       | removed since PHP 8.0; Use a foreach loop or%0A     |       | ArrayIterator instead%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)%0A 175 | ERROR | Function each() is deprecated since PHP 7.2 and%0A     |       | removed since PHP 8.0; Use a foreach loop or%0A     |       | ArrayIterator instead%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)%0A 178 | ERROR | Function each() is deprecated since PHP 7.2 and%0A     |       | removed since PHP 8.0; Use a foreach loop or%0A     |       | ArrayIterator instead%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)%0A----------------------------------------------------------------------%0A%0A%0AFILE: tiny_mce_wiris/integration/service.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 14 | ERROR | Function get_magic_quotes_gpc() is deprecated since PHP%0A    |       | 7.4 and removed since PHP 8.0%0A    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_gpcDeprecatedRemoved)%0A----------------------------------------------------------------------%0A
