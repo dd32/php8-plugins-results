@@ -1,0 +1,85 @@
+
+lib/INICls.php
+  Fatal error: Unparenthesized `a ? b : c ? d : e` is not supported.
+      Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)`
+      on line 17
+FILE: lib/functions.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 487 | ERROR | Function session_register() is deprecated since PHP
+     |       | 5.3 and removed since PHP 5.4; Use $_SESSION
+     |       | instead
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.session_registerDeprecatedRemoved)
+----------------------------------------------------------------------
+
+
+FILE: lib/INICls.php
+----------------------------------------------------------------------
+FOUND 7 ERRORS AFFECTING 7 LINES
+----------------------------------------------------------------------
+   17 | ERROR | [ ] The left-associativity of the ternary operator
+      |       |     has been deprecated in PHP 7.4 and removed in PHP
+      |       |     8.0. Multiple consecutive ternaries detected. Use
+      |       |     parenthesis to clarify the order in which the
+      |       |     operations should be executed
+      |       |     (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
+   69 | ERROR | [ ] The left-associativity of the ternary operator
+      |       |     has been deprecated in PHP 7.4 and removed in PHP
+      |       |     8.0. Multiple consecutive ternaries detected. Use
+      |       |     parenthesis to clarify the order in which the
+      |       |     operations should be executed
+      |       |     (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
+  269 | ERROR | [ ] The "result" parameter for function parse_str()
+      |       |     is missing. Passing this parameter is no longer
+      |       |     optional. The optional nature of the parameter is
+      |       |     deprecated since PHP 7.2 and removed since PHP
+      |       |     8.0
+      |       |     (PHPCompatibility.FunctionUse.OptionalToRequiredFunctionParameters.parse_str_resultSoftRequiredHardRequired)
+ 1079 | ERROR | [ ] The "result" parameter for function parse_str()
+      |       |     is missing. Passing this parameter is no longer
+      |       |     optional. The optional nature of the parameter is
+      |       |     deprecated since PHP 7.2 and removed since PHP
+      |       |     8.0
+      |       |     (PHPCompatibility.FunctionUse.OptionalToRequiredFunctionParameters.parse_str_resultSoftRequiredHardRequired)
+ 1325 | ERROR | [ ] Function mdecrypt_generic() is deprecated since
+      |       |     PHP 7.1 and removed since PHP 7.2; Use OpenSSL
+      |       |     instead
+      |       |     (PHPCompatibility.FunctionUse.RemovedFunctions.mdecrypt_genericDeprecatedRemoved)
+ 1400 | ERROR | [x] Curly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found:
+      |       |     $text{strlen($text) - 1}
+      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 1409 | ERROR | [ ] Function get_magic_quotes_gpc() is deprecated
+      |       |     since PHP 7.4 and removed since PHP 8.0
+      |       |     (PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_gpcDeprecatedRemoved)
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------
+
+
+FILE: lib/INIStdPayUtil.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 80 | ERROR | Using an unparenthesized expression containing a "."
+    |       | before a "+" or "-" has been deprecated in PHP 7.4 and
+    |       | removed in PHP 8.0
+    |       | (PHPCompatibility.Operators.ChangedConcatOperatorPrecedence.Found)
+----------------------------------------------------------------------
+
+
+FILE: lib/INIXml.php
+----------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+----------------------------------------------------------------------
+ 1415 | ERROR | Function call_user_method() is deprecated since PHP
+      |       | 4.1 and removed since PHP 7.0; Use call_user_func()
+      |       | instead
+      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.call_user_methodDeprecatedRemoved)
+ 1480 | ERROR | Function call_user_method() is deprecated since PHP
+      |       | 4.1 and removed since PHP 7.0; Use call_user_func()
+      |       | instead
+      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.call_user_methodDeprecatedRemoved)
+----------------------------------------------------------------------
