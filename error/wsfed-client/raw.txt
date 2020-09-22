@@ -1,0 +1,81 @@
+::warning::Plugin: https://wordpress.org/plugins/wsfed-client/%0ATrac: https://plugins.trac.wordpress.org/browser/wsfed-client/
+
+Fatal error: Array and string offset access syntax with curly braces is no longer supported in wsfed-client/wsfed-client/includes/lib/encryption.php on line 40
+Errors parsing wsfed-client/wsfed-client/includes/lib/encryption.php
+No syntax errors detected in wsfed-client/wsfed-client/login.php
+No syntax errors detected in wsfed-client/wsfed-client/mo_login_saml_sso_widget.php
+No syntax errors detected in wsfed-client/wsfed-client/mo-wsfed-client-class-customer.php
+No syntax errors detected in wsfed-client/wsfed-client/mo_wsfed_client_settings_page.php
+No syntax errors detected in wsfed-client/wsfed-client/uninstall.php
+No syntax errors detected in wsfed-client/wsfed-client/Utilities.php
+No syntax errors detected in wsfed-client/wsfed-client/xmlseclibs.php
+::error::%0Aincludes/lib/encryption.php%0A  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 40
+[32mE[0m.....[31mE[0m[31mE[0m 8 / 8 (100%)
+
+
+
+[1mFILE: includes/lib/encryption.php[0m
+----------------------------------------------------------------------
+[1mFOUND 2 ERRORS AFFECTING 2 LINES[0m
+----------------------------------------------------------------------
+ 40 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and
+    |       |     string offsets has been deprecated in PHP 7.4 and
+    |       |     removed in PHP 8.0. Found: $text{strlen($text) -
+    |       |     1}[0m
+    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 42 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and
+    |       |     string offsets has been deprecated in PHP 7.4 and
+    |       |     removed in PHP 8.0. Found: $text{strlen($text) -
+    |       |     1}[0m
+    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+----------------------------------------------------------------------
+[1mPHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
+----------------------------------------------------------------------
+
+
+[1mFILE: Utilities.php[0m
+----------------------------------------------------------------------
+[1mFOUND 7 ERRORS AFFECTING 7 LINES[0m
+----------------------------------------------------------------------
+  35 | [31mERROR[0m | [1mUsing a string as the assertion passed to assert() is
+     |       | deprecated since PHP 7.2 and removed since PHP 8.0.
+     |       | Found: 'is_int($length)'[0m
+     |       | (PHPCompatibility.ParameterValues.RemovedAssertStringAssertion.Found)
+  63 | [31mERROR[0m | [1mUsing a string as the assertion passed to assert() is
+     |       | deprecated since PHP 7.2 and removed since PHP 8.0.
+     |       | Found: 'is_string($query)'[0m
+     |       | (PHPCompatibility.ParameterValues.RemovedAssertStringAssertion.Found)
+ 133 | [31mERROR[0m | [1mUsing a string as the assertion passed to assert() is
+     |       | deprecated since PHP 7.2 and removed since PHP 8.0.
+     |       | Found: 'is_string($namespaceURI)'[0m
+     |       | (PHPCompatibility.ParameterValues.RemovedAssertStringAssertion.Found)
+ 134 | [31mERROR[0m | [1mUsing a string as the assertion passed to assert() is
+     |       | deprecated since PHP 7.2 and removed since PHP 8.0.
+     |       | Found: 'is_string($localName)'[0m
+     |       | (PHPCompatibility.ParameterValues.RemovedAssertStringAssertion.Found)
+ 231 | [31mERROR[0m | [1mUsing a string as the assertion passed to assert() is
+     |       | deprecated since PHP 7.2 and removed since PHP 8.0.
+     |       | Found: 'array_key_exists("Signature", $info)'[0m
+     |       | (PHPCompatibility.ParameterValues.RemovedAssertStringAssertion.Found)
+ 261 | [31mERROR[0m | [1mUsing a string as the assertion passed to assert() is
+     |       | deprecated since PHP 7.2 and removed since PHP 8.0.
+     |       | Found: 'is_string($algorithm)'[0m
+     |       | (PHPCompatibility.ParameterValues.RemovedAssertStringAssertion.Found)
+ 262 | [31mERROR[0m | [1mUsing a string as the assertion passed to assert() is
+     |       | deprecated since PHP 7.2 and removed since PHP 8.0.
+     |       | Found: '$type === "public" || $type === "private"'[0m
+     |       | (PHPCompatibility.ParameterValues.RemovedAssertStringAssertion.Found)
+----------------------------------------------------------------------
+
+
+[1mFILE: xmlseclibs.php[0m
+----------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 457 | [31mERROR[0m | [1mFunction mdecrypt_generic() is deprecated since PHP
+     |       | 7.1 and removed since PHP 7.2; Use OpenSSL instead[0m
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.mdecrypt_genericDeprecatedRemoved)
+----------------------------------------------------------------------
+
+Time: 721ms; Memory: 22MB
+::error::FILE: includes/lib/encryption.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A----------------------------------------------------------------------%0A 40 | ERROR | [x] Curly brace syntax for accessing array elements and%0A    |       |     string offsets has been deprecated in PHP 7.4 and%0A    |       |     removed in PHP 8.0. Found: $text{strlen($text) -%0A    |       |     1}%0A    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 42 | ERROR | [x] Curly brace syntax for accessing array elements and%0A    |       |     string offsets has been deprecated in PHP 7.4 and%0A    |       |     removed in PHP 8.0. Found: $text{strlen($text) -%0A    |       |     1}%0A    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A----------------------------------------------------------------------%0APHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A----------------------------------------------------------------------%0A%0A%0AFILE: Utilities.php%0A----------------------------------------------------------------------%0AFOUND 7 ERRORS AFFECTING 7 LINES%0A----------------------------------------------------------------------%0A  35 | ERROR | Using a string as the assertion passed to assert() is%0A     |       | deprecated since PHP 7.2 and removed since PHP 8.0.%0A     |       | Found: 'is_int($length)'%0A     |       | (PHPCompatibility.ParameterValues.RemovedAssertStringAssertion.Found)%0A  63 | ERROR | Using a string as the assertion passed to assert() is%0A     |       | deprecated since PHP 7.2 and removed since PHP 8.0.%0A     |       | Found: 'is_string($query)'%0A     |       | (PHPCompatibility.ParameterValues.RemovedAssertStringAssertion.Found)%0A 133 | ERROR | Using a string as the assertion passed to assert() is%0A     |       | deprecated since PHP 7.2 and removed since PHP 8.0.%0A     |       | Found: 'is_string($namespaceURI)'%0A     |       | (PHPCompatibility.ParameterValues.RemovedAssertStringAssertion.Found)%0A 134 | ERROR | Using a string as the assertion passed to assert() is%0A     |       | deprecated since PHP 7.2 and removed since PHP 8.0.%0A     |       | Found: 'is_string($localName)'%0A     |       | (PHPCompatibility.ParameterValues.RemovedAssertStringAssertion.Found)%0A 231 | ERROR | Using a string as the assertion passed to assert() is%0A     |       | deprecated since PHP 7.2 and removed since PHP 8.0.%0A     |       | Found: 'array_key_exists("Signature", $info)'%0A     |       | (PHPCompatibility.ParameterValues.RemovedAssertStringAssertion.Found)%0A 261 | ERROR | Using a string as the assertion passed to assert() is%0A     |       | deprecated since PHP 7.2 and removed since PHP 8.0.%0A     |       | Found: 'is_string($algorithm)'%0A     |       | (PHPCompatibility.ParameterValues.RemovedAssertStringAssertion.Found)%0A 262 | ERROR | Using a string as the assertion passed to assert() is%0A     |       | deprecated since PHP 7.2 and removed since PHP 8.0.%0A     |       | Found: '$type === "public" || $type === "private"'%0A     |       | (PHPCompatibility.ParameterValues.RemovedAssertStringAssertion.Found)%0A----------------------------------------------------------------------%0A%0A%0AFILE: xmlseclibs.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 457 | ERROR | Function mdecrypt_generic() is deprecated since PHP%0A     |       | 7.1 and removed since PHP 7.2; Use OpenSSL instead%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.mdecrypt_genericDeprecatedRemoved)%0A----------------------------------------------------------------------%0A

@@ -1,0 +1,91 @@
+
+src/thor_Util.php
+  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 54
+FILE: src/thor_Util.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 54 | ERROR | [x] Curly brace syntax for accessing array elements and
+    |       |     string offsets has been deprecated in PHP 7.4 and
+    |       |     removed in PHP 8.0. Found: $str{$offset}
+    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------
+
+
+FILE: src/vendor/HdHelper.php
+----------------------------------------------------------------------
+FOUND 12 ERRORS AFFECTING 12 LINES
+----------------------------------------------------------------------
+ 1120 | ERROR | The behaviour of hexadecimal numeric strings was
+      |       | inconsistent prior to PHP 7 and support has been
+      |       | removed in PHP 7. Found:
+      |       | '0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEFFFFFC2F'
+      |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
+ 1121 | ERROR | The behaviour of hexadecimal numeric strings was
+      |       | inconsistent prior to PHP 7 and support has been
+      |       | removed in PHP 7. Found:
+      |       | '0x0000000000000000000000000000000000000000000000000000000000000000'
+      |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
+ 1122 | ERROR | The behaviour of hexadecimal numeric strings was
+      |       | inconsistent prior to PHP 7 and support has been
+      |       | removed in PHP 7. Found:
+      |       | '0x0000000000000000000000000000000000000000000000000000000000000007'
+      |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
+ 1123 | ERROR | The behaviour of hexadecimal numeric strings was
+      |       | inconsistent prior to PHP 7 and support has been
+      |       | removed in PHP 7. Found:
+      |       | '0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEBAAEDCE6AF48A03BBFD25E8CD0364141'
+      |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
+ 1124 | ERROR | The behaviour of hexadecimal numeric strings was
+      |       | inconsistent prior to PHP 7 and support has been
+      |       | removed in PHP 7. Found:
+      |       | "0x79BE667EF9DCBBAC55A06295CE870B07029BFCDB2DCE28D959F2815B16F81798"
+      |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
+ 1125 | ERROR | The behaviour of hexadecimal numeric strings was
+      |       | inconsistent prior to PHP 7 and support has been
+      |       | removed in PHP 7. Found:
+      |       | "0x483ADA7726A3C4655DA4FBFC0E1108A8FD17B448A68554199C47D08FFB10D4B8"
+      |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
+ 1130 | ERROR | The behaviour of hexadecimal numeric strings was
+      |       | inconsistent prior to PHP 7 and support has been
+      |       | removed in PHP 7. Found:
+      |       | '0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEFFFFFC2F'
+      |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
+ 1131 | ERROR | The behaviour of hexadecimal numeric strings was
+      |       | inconsistent prior to PHP 7 and support has been
+      |       | removed in PHP 7. Found:
+      |       | '0x0000000000000000000000000000000000000000000000000000000000000000'
+      |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
+ 1132 | ERROR | The behaviour of hexadecimal numeric strings was
+      |       | inconsistent prior to PHP 7 and support has been
+      |       | removed in PHP 7. Found:
+      |       | '0x0000000000000000000000000000000000000000000000000000000000000007'
+      |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
+ 1133 | ERROR | The behaviour of hexadecimal numeric strings was
+      |       | inconsistent prior to PHP 7 and support has been
+      |       | removed in PHP 7. Found:
+      |       | '0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEBAAEDCE6AF48A03BBFD25E8CD0364141'
+      |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
+ 1134 | ERROR | The behaviour of hexadecimal numeric strings was
+      |       | inconsistent prior to PHP 7 and support has been
+      |       | removed in PHP 7. Found:
+      |       | "0x79BE667EF9DCBBAC55A06295CE870B07029BFCDB2DCE28D959F2815B16F81798"
+      |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
+ 1135 | ERROR | The behaviour of hexadecimal numeric strings was
+      |       | inconsistent prior to PHP 7 and support has been
+      |       | removed in PHP 7. Found:
+      |       | "0x483ADA7726A3C4655DA4FBFC0E1108A8FD17B448A68554199C47D08FFB10D4B8"
+      |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
+----------------------------------------------------------------------
+
+
+FILE: src/vendor/ReduxFramework/ReduxCore/framework.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 2821 | ERROR | Function get_magic_quotes_gpc() is deprecated since
+      |       | PHP 7.4 and removed since PHP 8.0
+      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_gpcDeprecatedRemoved)
+----------------------------------------------------------------------
