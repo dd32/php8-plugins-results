@@ -119,6 +119,8 @@ No syntax errors detected in mangopay-woocommerce/mangopay-woocommerce/sdk/Mango
 No syntax errors detected in mangopay-woocommerce/mangopay-woocommerce/sdk/MangoPay/Libraries/Page.php
 No syntax errors detected in mangopay-woocommerce/mangopay-woocommerce/sdk/MangoPay/Libraries/RequestType.php
 No syntax errors detected in mangopay-woocommerce/mangopay-woocommerce/sdk/MangoPay/Libraries/ResponseException.php
+
+Fatal error: Unparenthesized `a ? b : c ? d : e` is not supported. Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)` in mangopay-woocommerce/mangopay-woocommerce/sdk/MangoPay/Libraries/RestTool.php on line 359
 Errors parsing mangopay-woocommerce/mangopay-woocommerce/sdk/MangoPay/Libraries/RestTool.php
 No syntax errors detected in mangopay-woocommerce/mangopay-woocommerce/sdk/MangoPay/Libraries/Upload.php
 No syntax errors detected in mangopay-woocommerce/mangopay-woocommerce/sdk/MangoPay/Libraries/UrlTool.php
@@ -183,7 +185,7 @@ No syntax errors detected in mangopay-woocommerce/mangopay-woocommerce/sdk/Mango
 No syntax errors detected in mangopay-woocommerce/mangopay-woocommerce/sdk/MangoPay/UserNatural.php
 No syntax errors detected in mangopay-woocommerce/mangopay-woocommerce/sdk/MangoPay/User.php
 No syntax errors detected in mangopay-woocommerce/mangopay-woocommerce/sdk/MangoPay/Wallet.php
-::error::%0Asdk/MangoPay/Libraries/RestTool.php
+::error::%0Asdk/MangoPay/Libraries/RestTool.php%0A  Fatal error: Unparenthesized `a ? b : c ? d : e` is not supported.%0A      Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)`%0A      on line 359
 ............................................................  60 / 184 (33%)
 ............................................................ 120 / 184 (65%)
 [31mE[0m........................................................... 180 / 184 (98%)
@@ -192,12 +194,16 @@ No syntax errors detected in mangopay-woocommerce/mangopay-woocommerce/sdk/Mango
 
 
 [1mFILE: sdk/MangoPay/Libraries/RestTool.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 360 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has been deprecated in PHP 7.4 and removed in PHP 8.0. Multiple consecutive ternaries detected. Use parenthesis to
-     |       | clarify the order in which the operations should be executed[0m (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
+ 360 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has
+     |       | been deprecated in PHP 7.4 and removed in PHP 8.0.
+     |       | Multiple consecutive ternaries detected. Use
+     |       | parenthesis to clarify the order in which the
+     |       | operations should be executed[0m
+     |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
+----------------------------------------------------------------------
 
-Time: 2.27 secs; Memory: 42.01MB
-::error::FILE: sdk/MangoPay/Libraries/RestTool.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 360 | ERROR | The left-associativity of the ternary operator has been deprecated in PHP 7.4 and removed in PHP 8.0. Multiple consecutive ternaries detected. Use parenthesis to%0A     |       | clarify the order in which the operations should be executed (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
+Time: 2.19 secs; Memory: 42.01MB
+::error::FILE: sdk/MangoPay/Libraries/RestTool.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 360 | ERROR | The left-associativity of the ternary operator has%0A     |       | been deprecated in PHP 7.4 and removed in PHP 8.0.%0A     |       | Multiple consecutive ternaries detected. Use%0A     |       | parenthesis to clarify the order in which the%0A     |       | operations should be executed%0A     |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A----------------------------------------------------------------------%0A
