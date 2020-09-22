@@ -70,6 +70,8 @@ No syntax errors detected in car-demon/car-demon/images/index.php
 No syntax errors detected in car-demon/car-demon/includes/car-demon-header.php
 No syntax errors detected in car-demon/car-demon/includes/car-demon-query.php
 No syntax errors detected in car-demon/car-demon/includes/cd-gutenberg.php
+
+Fatal error: Unparenthesized `a ? b : c ? d : e` is not supported. Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)` in car-demon/car-demon/includes/cd-init.php on line 129
 Errors parsing car-demon/car-demon/includes/cd-init.php
 No syntax errors detected in car-demon/car-demon/includes/cd-page-navi.php
 No syntax errors detected in car-demon/car-demon/includes/cd-template.php
@@ -124,7 +126,7 @@ No syntax errors detected in car-demon/car-demon/widgets/random-cars.php
 No syntax errors detected in car-demon/car-demon/widgets/tag-cloud.php
 No syntax errors detected in car-demon/car-demon/widgets/vehicle-contact-widget-handler.php
 No syntax errors detected in car-demon/car-demon/widgets/vehicle-contact-widget.php
-::error::%0Aincludes/cd-init.php
+::error::%0Aincludes/cd-init.php%0A  Fatal error: Unparenthesized `a ? b : c ? d : e` is not supported.%0A      Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)`%0A      on line 129
 ............................................................  60 / 125 (48%)
 ...........[31mE[0m................................................ 120 / 125 (96%)
 .....                                                        125 / 125 (100%)
@@ -132,12 +134,16 @@ No syntax errors detected in car-demon/car-demon/widgets/vehicle-contact-widget.
 
 
 [1mFILE: includes/cd-init.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 129 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has been deprecated in PHP 7.4 and removed in PHP 8.0. Multiple consecutive ternaries detected. Use parenthesis to
-     |       | clarify the order in which the operations should be executed[0m (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
+ 129 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has
+     |       | been deprecated in PHP 7.4 and removed in PHP 8.0.
+     |       | Multiple consecutive ternaries detected. Use
+     |       | parenthesis to clarify the order in which the
+     |       | operations should be executed[0m
+     |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
+----------------------------------------------------------------------
 
-Time: 3.88 secs; Memory: 36MB
-::error::FILE: includes/cd-init.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 129 | ERROR | The left-associativity of the ternary operator has been deprecated in PHP 7.4 and removed in PHP 8.0. Multiple consecutive ternaries detected. Use parenthesis to%0A     |       | clarify the order in which the operations should be executed (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
+Time: 3.29 secs; Memory: 36MB
+::error::FILE: includes/cd-init.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 129 | ERROR | The left-associativity of the ternary operator has%0A     |       | been deprecated in PHP 7.4 and removed in PHP 8.0.%0A     |       | Multiple consecutive ternaries detected. Use%0A     |       | parenthesis to clarify the order in which the%0A     |       | operations should be executed%0A     |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A----------------------------------------------------------------------%0A
