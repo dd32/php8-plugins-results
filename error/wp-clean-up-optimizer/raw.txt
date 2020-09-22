@@ -5,6 +5,8 @@ No syntax errors detected in wp-clean-up-optimizer/wp-clean-up-optimizer/include
 No syntax errors detected in wp-clean-up-optimizer/wp-clean-up-optimizer/includes/queries.php
 No syntax errors detected in wp-clean-up-optimizer/wp-clean-up-optimizer/includes/sidebar.php
 No syntax errors detected in wp-clean-up-optimizer/wp-clean-up-optimizer/includes/translations.php
+
+Fatal error: Unparenthesized `a ? b : c ? d : e` is not supported. Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)` in wp-clean-up-optimizer/wp-clean-up-optimizer/lib/action-library.php on line 567
 Errors parsing wp-clean-up-optimizer/wp-clean-up-optimizer/lib/action-library.php
 No syntax errors detected in wp-clean-up-optimizer/wp-clean-up-optimizer/lib/admin-bar-menu.php
 No syntax errors detected in wp-clean-up-optimizer/wp-clean-up-optimizer/lib/class-dbhelper-clean-up-optimizer.php
@@ -35,44 +37,86 @@ No syntax errors detected in wp-clean-up-optimizer/wp-clean-up-optimizer/views/s
 No syntax errors detected in wp-clean-up-optimizer/wp-clean-up-optimizer/views/security-settings/block-unblock-ip-ranges.php
 No syntax errors detected in wp-clean-up-optimizer/wp-clean-up-optimizer/views/system-information/system-information.php
 No syntax errors detected in wp-clean-up-optimizer/wp-clean-up-optimizer/views/wizard/wizard.php
+
+Fatal error: Unparenthesized `a ? b : c ? d : e` is not supported. Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)` in wp-clean-up-optimizer/wp-clean-up-optimizer/wp-cleanup-optimizer.php on line 576
 Errors parsing wp-clean-up-optimizer/wp-clean-up-optimizer/wp-cleanup-optimizer.php
-::error::%0Alib/action-library.php%0A%0Awp-cleanup-optimizer.php
+::error::%0Alib/action-library.php%0A  Fatal error: Unparenthesized `a ? b : c ? d : e` is not supported.%0A      Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)`%0A      on line 567%0A%0Awp-cleanup-optimizer.php%0A  Fatal error: Unparenthesized `a ? b : c ? d : e` is not supported.%0A      Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)`%0A      on line 576
 ......[31mE[0m.............................[31mE[0m 37 / 37 (100%)
 
 
 
 [1mFILE: lib/action-library.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 4 ERRORS AFFECTING 2 LINES[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 567 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has been deprecated in PHP 7.4 and removed in PHP 8.0. Multiple consecutive ternaries detected. Use parenthesis to
-     |       | clarify the order in which the operations should be executed[0m (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
- 567 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has been deprecated in PHP 7.4 and removed in PHP 8.0. Multiple consecutive ternaries detected. Use parenthesis to
-     |       | clarify the order in which the operations should be executed[0m (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
- 669 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has been deprecated in PHP 7.4 and removed in PHP 8.0. Multiple consecutive ternaries detected. Use parenthesis to
-     |       | clarify the order in which the operations should be executed[0m (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
- 669 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has been deprecated in PHP 7.4 and removed in PHP 8.0. Multiple consecutive ternaries detected. Use parenthesis to
-     |       | clarify the order in which the operations should be executed[0m (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
+ 567 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has
+     |       | been deprecated in PHP 7.4 and removed in PHP 8.0.
+     |       | Multiple consecutive ternaries detected. Use
+     |       | parenthesis to clarify the order in which the
+     |       | operations should be executed[0m
+     |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
+ 567 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has
+     |       | been deprecated in PHP 7.4 and removed in PHP 8.0.
+     |       | Multiple consecutive ternaries detected. Use
+     |       | parenthesis to clarify the order in which the
+     |       | operations should be executed[0m
+     |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
+ 669 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has
+     |       | been deprecated in PHP 7.4 and removed in PHP 8.0.
+     |       | Multiple consecutive ternaries detected. Use
+     |       | parenthesis to clarify the order in which the
+     |       | operations should be executed[0m
+     |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
+ 669 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has
+     |       | been deprecated in PHP 7.4 and removed in PHP 8.0.
+     |       | Multiple consecutive ternaries detected. Use
+     |       | parenthesis to clarify the order in which the
+     |       | operations should be executed[0m
+     |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
+----------------------------------------------------------------------
 
 
 [1mFILE: wp-cleanup-optimizer.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 6 ERRORS AFFECTING 3 LINES[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 576 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has been deprecated in PHP 7.4 and removed in PHP 8.0. Multiple consecutive ternaries detected. Use parenthesis to
-     |       | clarify the order in which the operations should be executed[0m (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
- 576 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has been deprecated in PHP 7.4 and removed in PHP 8.0. Multiple consecutive ternaries detected. Use parenthesis to
-     |       | clarify the order in which the operations should be executed[0m (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
- 643 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has been deprecated in PHP 7.4 and removed in PHP 8.0. Multiple consecutive ternaries detected. Use parenthesis to
-     |       | clarify the order in which the operations should be executed[0m (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
- 643 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has been deprecated in PHP 7.4 and removed in PHP 8.0. Multiple consecutive ternaries detected. Use parenthesis to
-     |       | clarify the order in which the operations should be executed[0m (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
- 891 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has been deprecated in PHP 7.4 and removed in PHP 8.0. Multiple consecutive ternaries detected. Use parenthesis to
-     |       | clarify the order in which the operations should be executed[0m (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
- 891 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has been deprecated in PHP 7.4 and removed in PHP 8.0. Multiple consecutive ternaries detected. Use parenthesis to
-     |       | clarify the order in which the operations should be executed[0m (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
+ 576 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has
+     |       | been deprecated in PHP 7.4 and removed in PHP 8.0.
+     |       | Multiple consecutive ternaries detected. Use
+     |       | parenthesis to clarify the order in which the
+     |       | operations should be executed[0m
+     |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
+ 576 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has
+     |       | been deprecated in PHP 7.4 and removed in PHP 8.0.
+     |       | Multiple consecutive ternaries detected. Use
+     |       | parenthesis to clarify the order in which the
+     |       | operations should be executed[0m
+     |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
+ 643 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has
+     |       | been deprecated in PHP 7.4 and removed in PHP 8.0.
+     |       | Multiple consecutive ternaries detected. Use
+     |       | parenthesis to clarify the order in which the
+     |       | operations should be executed[0m
+     |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
+ 643 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has
+     |       | been deprecated in PHP 7.4 and removed in PHP 8.0.
+     |       | Multiple consecutive ternaries detected. Use
+     |       | parenthesis to clarify the order in which the
+     |       | operations should be executed[0m
+     |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
+ 891 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has
+     |       | been deprecated in PHP 7.4 and removed in PHP 8.0.
+     |       | Multiple consecutive ternaries detected. Use
+     |       | parenthesis to clarify the order in which the
+     |       | operations should be executed[0m
+     |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
+ 891 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has
+     |       | been deprecated in PHP 7.4 and removed in PHP 8.0.
+     |       | Multiple consecutive ternaries detected. Use
+     |       | parenthesis to clarify the order in which the
+     |       | operations should be executed[0m
+     |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
+----------------------------------------------------------------------
 
-Time: 1.36 secs; Memory: 24MB
-::error::FILE: lib/action-library.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 4 ERRORS AFFECTING 2 LINES%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 567 | ERROR | The left-associativity of the ternary operator has been deprecated in PHP 7.4 and removed in PHP 8.0. Multiple consecutive ternaries detected. Use parenthesis to%0A     |       | clarify the order in which the operations should be executed (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A 567 | ERROR | The left-associativity of the ternary operator has been deprecated in PHP 7.4 and removed in PHP 8.0. Multiple consecutive ternaries detected. Use parenthesis to%0A     |       | clarify the order in which the operations should be executed (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A 669 | ERROR | The left-associativity of the ternary operator has been deprecated in PHP 7.4 and removed in PHP 8.0. Multiple consecutive ternaries detected. Use parenthesis to%0A     |       | clarify the order in which the operations should be executed (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A 669 | ERROR | The left-associativity of the ternary operator has been deprecated in PHP 7.4 and removed in PHP 8.0. Multiple consecutive ternaries detected. Use parenthesis to%0A     |       | clarify the order in which the operations should be executed (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: wp-cleanup-optimizer.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 6 ERRORS AFFECTING 3 LINES%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 576 | ERROR | The left-associativity of the ternary operator has been deprecated in PHP 7.4 and removed in PHP 8.0. Multiple consecutive ternaries detected. Use parenthesis to%0A     |       | clarify the order in which the operations should be executed (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A 576 | ERROR | The left-associativity of the ternary operator has been deprecated in PHP 7.4 and removed in PHP 8.0. Multiple consecutive ternaries detected. Use parenthesis to%0A     |       | clarify the order in which the operations should be executed (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A 643 | ERROR | The left-associativity of the ternary operator has been deprecated in PHP 7.4 and removed in PHP 8.0. Multiple consecutive ternaries detected. Use parenthesis to%0A     |       | clarify the order in which the operations should be executed (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A 643 | ERROR | The left-associativity of the ternary operator has been deprecated in PHP 7.4 and removed in PHP 8.0. Multiple consecutive ternaries detected. Use parenthesis to%0A     |       | clarify the order in which the operations should be executed (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A 891 | ERROR | The left-associativity of the ternary operator has been deprecated in PHP 7.4 and removed in PHP 8.0. Multiple consecutive ternaries detected. Use parenthesis to%0A     |       | clarify the order in which the operations should be executed (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A 891 | ERROR | The left-associativity of the ternary operator has been deprecated in PHP 7.4 and removed in PHP 8.0. Multiple consecutive ternaries detected. Use parenthesis to%0A     |       | clarify the order in which the operations should be executed (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
+Time: 1.37 secs; Memory: 24MB
+::error::FILE: lib/action-library.php%0A----------------------------------------------------------------------%0AFOUND 4 ERRORS AFFECTING 2 LINES%0A----------------------------------------------------------------------%0A 567 | ERROR | The left-associativity of the ternary operator has%0A     |       | been deprecated in PHP 7.4 and removed in PHP 8.0.%0A     |       | Multiple consecutive ternaries detected. Use%0A     |       | parenthesis to clarify the order in which the%0A     |       | operations should be executed%0A     |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A 567 | ERROR | The left-associativity of the ternary operator has%0A     |       | been deprecated in PHP 7.4 and removed in PHP 8.0.%0A     |       | Multiple consecutive ternaries detected. Use%0A     |       | parenthesis to clarify the order in which the%0A     |       | operations should be executed%0A     |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A 669 | ERROR | The left-associativity of the ternary operator has%0A     |       | been deprecated in PHP 7.4 and removed in PHP 8.0.%0A     |       | Multiple consecutive ternaries detected. Use%0A     |       | parenthesis to clarify the order in which the%0A     |       | operations should be executed%0A     |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A 669 | ERROR | The left-associativity of the ternary operator has%0A     |       | been deprecated in PHP 7.4 and removed in PHP 8.0.%0A     |       | Multiple consecutive ternaries detected. Use%0A     |       | parenthesis to clarify the order in which the%0A     |       | operations should be executed%0A     |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A----------------------------------------------------------------------%0A%0A%0AFILE: wp-cleanup-optimizer.php%0A----------------------------------------------------------------------%0AFOUND 6 ERRORS AFFECTING 3 LINES%0A----------------------------------------------------------------------%0A 576 | ERROR | The left-associativity of the ternary operator has%0A     |       | been deprecated in PHP 7.4 and removed in PHP 8.0.%0A     |       | Multiple consecutive ternaries detected. Use%0A     |       | parenthesis to clarify the order in which the%0A     |       | operations should be executed%0A     |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A 576 | ERROR | The left-associativity of the ternary operator has%0A     |       | been deprecated in PHP 7.4 and removed in PHP 8.0.%0A     |       | Multiple consecutive ternaries detected. Use%0A     |       | parenthesis to clarify the order in which the%0A     |       | operations should be executed%0A     |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A 643 | ERROR | The left-associativity of the ternary operator has%0A     |       | been deprecated in PHP 7.4 and removed in PHP 8.0.%0A     |       | Multiple consecutive ternaries detected. Use%0A     |       | parenthesis to clarify the order in which the%0A     |       | operations should be executed%0A     |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A 643 | ERROR | The left-associativity of the ternary operator has%0A     |       | been deprecated in PHP 7.4 and removed in PHP 8.0.%0A     |       | Multiple consecutive ternaries detected. Use%0A     |       | parenthesis to clarify the order in which the%0A     |       | operations should be executed%0A     |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A 891 | ERROR | The left-associativity of the ternary operator has%0A     |       | been deprecated in PHP 7.4 and removed in PHP 8.0.%0A     |       | Multiple consecutive ternaries detected. Use%0A     |       | parenthesis to clarify the order in which the%0A     |       | operations should be executed%0A     |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A 891 | ERROR | The left-associativity of the ternary operator has%0A     |       | been deprecated in PHP 7.4 and removed in PHP 8.0.%0A     |       | Multiple consecutive ternaries detected. Use%0A     |       | parenthesis to clarify the order in which the%0A     |       | operations should be executed%0A     |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A----------------------------------------------------------------------%0A

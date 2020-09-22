@@ -1,5 +1,6 @@
 
 fresh-framework/framework/extern/less/lessc.inc-OLD.php
+  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 717
 
 fresh-framework/framework/extern/less/lib/Less/Exception/Chunk.php
   Warning: "continue" targeting switch is equivalent to "break".
@@ -33,35 +34,47 @@ fresh-framework/framework/extern/less/lib/Less/Exception/Chunk.php
       Did you mean to use "continue 2"?
       on line 155
 FILE: fresh-framework/framework/extern/less/lessc.inc-OLD.php
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 FOUND 4 ERRORS AFFECTING 4 LINES
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  717 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $subProp[1]{0}
+----------------------------------------------------------------------
+  717 | ERROR | [x] Curly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found: $subProp[1]{0}
       |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
- 1768 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $name{0}
+ 1768 | ERROR | [x] Curly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found: $name{0}
       |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
- 2424 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $tag{0}
+ 2424 | ERROR | [x] Curly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found: $tag{0}
       |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
- 2478 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $tag{0}
+ 2478 | ERROR | [x] Curly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found: $tag{0}
       |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 PHPCBF CAN FIX THE 4 MARKED SNIFF VIOLATIONS AUTOMATICALLY
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
-FILE: fresh-framework/framework/extern/less/lib/Less/Tree/Dimension.php
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+FILE: ...resh-framework/framework/extern/less/lib/Less/Tree/Dimension.php
+----------------------------------------------------------------------
 FOUND 1 ERROR AFFECTING 1 LINE
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 101 | ERROR | Using an unparenthesized expression containing a "." before a "+" or "-" has been deprecated in PHP 7.4 and removed in PHP 8.0
+----------------------------------------------------------------------
+ 101 | ERROR | Using an unparenthesized expression containing a "."
+     |       | before a "+" or "-" has been deprecated in PHP 7.4 and
+     |       | removed in PHP 8.0
      |       | (PHPCompatibility.Operators.ChangedConcatOperatorPrecedence.Found)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
-FILE: fresh-framework/framework/extern/less/lib/Less/Tree/Mixin/Call.php
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+FILE: ...esh-framework/framework/extern/less/lib/Less/Tree/Mixin/Call.php
+----------------------------------------------------------------------
 FOUND 1 ERROR AFFECTING 1 LINE
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 110 | ERROR | Using an unparenthesized expression containing a "." before a "+" or "-" has been deprecated in PHP 7.4 and removed in PHP 8.0
+----------------------------------------------------------------------
+ 110 | ERROR | Using an unparenthesized expression containing a "."
+     |       | before a "+" or "-" has been deprecated in PHP 7.4 and
+     |       | removed in PHP 8.0
      |       | (PHPCompatibility.Operators.ChangedConcatOperatorPrecedence.Found)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------

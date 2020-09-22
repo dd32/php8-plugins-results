@@ -147,6 +147,8 @@ No syntax errors detected in custom-css-editor/custom-css-editor/fresh-framework
 No syntax errors detected in custom-css-editor/custom-css-editor/fresh-framework/framework/extern/iconfonts/actualize_fonts.php
 No syntax errors detected in custom-css-editor/custom-css-editor/fresh-framework/framework/extern/iconfonts/ff-font-stateface/convertor.php
 No syntax errors detected in custom-css-editor/custom-css-editor/fresh-framework/framework/extern/iconfonts/fonts.php
+
+Fatal error: Array and string offset access syntax with curly braces is no longer supported in custom-css-editor/custom-css-editor/fresh-framework/framework/extern/less/lessc.inc-OLD.php on line 717
 Errors parsing custom-css-editor/custom-css-editor/fresh-framework/framework/extern/less/lessc.inc-OLD.php
 No syntax errors detected in custom-css-editor/custom-css-editor/fresh-framework/framework/extern/less/lessc.inc.php
 No syntax errors detected in custom-css-editor/custom-css-editor/fresh-framework/framework/extern/less/lib/Less/Autoloader.php
@@ -395,8 +397,7 @@ No syntax errors detected in custom-css-editor/custom-css-editor/fresh-framework
 No syntax errors detected in custom-css-editor/custom-css-editor/fresh-framework/info.php
 No syntax errors detected in custom-css-editor/custom-css-editor/freshplugin.php
 No syntax errors detected in custom-css-editor/custom-css-editor/info.php
-::error::%0Afresh-framework/framework/extern/less/lessc.inc-OLD.php%0A%0Afresh-framework/framework/extern/less/lib/Less/Exception/Chunk.php%0A  Warning: "continue" targeting switch is equivalent to "break".%0A      Did you mean to use "continue 2"?%0A      on line 70%0A  Warning: "continue" targeting switch is equivalent to "break".%0A      Did you mean to use "continue 2"?%0A      on line 78%0A  Warning: "continue" targeting switch is equivalent to "break".%0A      Did you mean to use "continue 2"?%0A      on line 83%0A  Warning: "continue" targeting switch is equivalent to "break".%0A      Did you mean to use "continue 2"?%0A      on line 89%0A  Warning: "continue" targeting switch is equivalent to "break".%0A      Did you mean to use "continue 2"?%0A      on line 99%0A  Warning: "continue" targeting switch is equivalent to "break".%0A      Did you mean to use "continue 2"?%0A      on line 102%0A  Warning: "continue" targeting switch is equivalent to "break".%0A      Did you mean to use "continue 2"?%0A      on line 122%0A  Warning: "continue" targeting switch is equivalent to "break".%0A      Did you mean to use "continue 2"?%0A      on line 127%0A  Warning: "continue" targeting switch is equivalent to "break".%0A      Did you mean to use "continue 2"?%0A      on line 148%0A  Warning: "continue" targeting switch is equivalent to "break".%0A      Did you mean to use "continue 2"?%0A      on line 155
-No syntax errors detected in custom-css-editor/custom-css-editor/info.php
+::error::%0Afresh-framework/framework/extern/less/lessc.inc-OLD.php%0A  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 717%0A%0Afresh-framework/framework/extern/less/lib/Less/Exception/Chunk.php%0A  Warning: "continue" targeting switch is equivalent to "break".%0A      Did you mean to use "continue 2"?%0A      on line 70%0A  Warning: "continue" targeting switch is equivalent to "break".%0A      Did you mean to use "continue 2"?%0A      on line 78%0A  Warning: "continue" targeting switch is equivalent to "break".%0A      Did you mean to use "continue 2"?%0A      on line 83%0A  Warning: "continue" targeting switch is equivalent to "break".%0A      Did you mean to use "continue 2"?%0A      on line 89%0A  Warning: "continue" targeting switch is equivalent to "break".%0A      Did you mean to use "continue 2"?%0A      on line 99%0A  Warning: "continue" targeting switch is equivalent to "break".%0A      Did you mean to use "continue 2"?%0A      on line 102%0A  Warning: "continue" targeting switch is equivalent to "break".%0A      Did you mean to use "continue 2"?%0A      on line 122%0A  Warning: "continue" targeting switch is equivalent to "break".%0A      Did you mean to use "continue 2"?%0A      on line 127%0A  Warning: "continue" targeting switch is equivalent to "break".%0A      Did you mean to use "continue 2"?%0A      on line 148%0A  Warning: "continue" targeting switch is equivalent to "break".%0A      Did you mean to use "continue 2"?%0A      on line 155
 ............................................................  60 / 376 (16%)
 ............................................................ 120 / 376 (32%)
 ............................[32mE[0m..........................[31mE[0m.... 180 / 376 (48%)
@@ -408,38 +409,50 @@ No syntax errors detected in custom-css-editor/custom-css-editor/info.php
 
 
 [1mFILE: fresh-framework/framework/extern/less/lessc.inc-OLD.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 4 ERRORS AFFECTING 4 LINES[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  717 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $subProp[1]{0}[0m
+----------------------------------------------------------------------
+  717 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found: $subProp[1]{0}[0m
       |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
- 1768 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $name{0}[0m
+ 1768 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found: $name{0}[0m
       |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
- 2424 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $tag{0}[0m
+ 2424 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found: $tag{0}[0m
       |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
- 2478 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $tag{0}[0m
+ 2478 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found: $tag{0}[0m
       |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mPHPCBF CAN FIX THE 4 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
-[1mFILE: fresh-framework/framework/extern/less/lib/Less/Tree/Dimension.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[1mFILE: ...resh-framework/framework/extern/less/lib/Less/Tree/Dimension.php[0m
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 101 | [31mERROR[0m | [1mUsing an unparenthesized expression containing a "." before a "+" or "-" has been deprecated in PHP 7.4 and removed in PHP 8.0[0m
+----------------------------------------------------------------------
+ 101 | [31mERROR[0m | [1mUsing an unparenthesized expression containing a "."
+     |       | before a "+" or "-" has been deprecated in PHP 7.4 and
+     |       | removed in PHP 8.0[0m
      |       | (PHPCompatibility.Operators.ChangedConcatOperatorPrecedence.Found)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
-[1mFILE: fresh-framework/framework/extern/less/lib/Less/Tree/Mixin/Call.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[1mFILE: ...esh-framework/framework/extern/less/lib/Less/Tree/Mixin/Call.php[0m
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 110 | [31mERROR[0m | [1mUsing an unparenthesized expression containing a "." before a "+" or "-" has been deprecated in PHP 7.4 and removed in PHP 8.0[0m
+----------------------------------------------------------------------
+ 110 | [31mERROR[0m | [1mUsing an unparenthesized expression containing a "."
+     |       | before a "+" or "-" has been deprecated in PHP 7.4 and
+     |       | removed in PHP 8.0[0m
      |       | (PHPCompatibility.Operators.ChangedConcatOperatorPrecedence.Found)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
-Time: 7.31 secs; Memory: 46.01MB
-::error::FILE: fresh-framework/framework/extern/less/lessc.inc-OLD.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 4 ERRORS AFFECTING 4 LINES%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A  717 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $subProp[1]{0}%0A      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 1768 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $name{0}%0A      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 2424 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $tag{0}%0A      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 2478 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $tag{0}%0A      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0APHPCBF CAN FIX THE 4 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: fresh-framework/framework/extern/less/lib/Less/Tree/Dimension.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 101 | ERROR | Using an unparenthesized expression containing a "." before a "+" or "-" has been deprecated in PHP 7.4 and removed in PHP 8.0%0A     |       | (PHPCompatibility.Operators.ChangedConcatOperatorPrecedence.Found)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: fresh-framework/framework/extern/less/lib/Less/Tree/Mixin/Call.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 110 | ERROR | Using an unparenthesized expression containing a "." before a "+" or "-" has been deprecated in PHP 7.4 and removed in PHP 8.0%0A     |       | (PHPCompatibility.Operators.ChangedConcatOperatorPrecedence.Found)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
+Time: 7.8 secs; Memory: 46.01MB
+::error::FILE: fresh-framework/framework/extern/less/lessc.inc-OLD.php%0A----------------------------------------------------------------------%0AFOUND 4 ERRORS AFFECTING 4 LINES%0A----------------------------------------------------------------------%0A  717 | ERROR | [x] Curly brace syntax for accessing array elements%0A      |       |     and string offsets has been deprecated in PHP 7.4%0A      |       |     and removed in PHP 8.0. Found: $subProp[1]{0}%0A      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 1768 | ERROR | [x] Curly brace syntax for accessing array elements%0A      |       |     and string offsets has been deprecated in PHP 7.4%0A      |       |     and removed in PHP 8.0. Found: $name{0}%0A      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 2424 | ERROR | [x] Curly brace syntax for accessing array elements%0A      |       |     and string offsets has been deprecated in PHP 7.4%0A      |       |     and removed in PHP 8.0. Found: $tag{0}%0A      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 2478 | ERROR | [x] Curly brace syntax for accessing array elements%0A      |       |     and string offsets has been deprecated in PHP 7.4%0A      |       |     and removed in PHP 8.0. Found: $tag{0}%0A      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A----------------------------------------------------------------------%0APHPCBF CAN FIX THE 4 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A----------------------------------------------------------------------%0A%0A%0AFILE: ...resh-framework/framework/extern/less/lib/Less/Tree/Dimension.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 101 | ERROR | Using an unparenthesized expression containing a "."%0A     |       | before a "+" or "-" has been deprecated in PHP 7.4 and%0A     |       | removed in PHP 8.0%0A     |       | (PHPCompatibility.Operators.ChangedConcatOperatorPrecedence.Found)%0A----------------------------------------------------------------------%0A%0A%0AFILE: ...esh-framework/framework/extern/less/lib/Less/Tree/Mixin/Call.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 110 | ERROR | Using an unparenthesized expression containing a "."%0A     |       | before a "+" or "-" has been deprecated in PHP 7.4 and%0A     |       | removed in PHP 8.0%0A     |       | (PHPCompatibility.Operators.ChangedConcatOperatorPrecedence.Found)%0A----------------------------------------------------------------------%0A

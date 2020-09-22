@@ -10,6 +10,8 @@ No syntax errors detected in aquila-admin-theme/aquila-admin-theme/admin/adminBa
 No syntax errors detected in aquila-admin-theme/aquila-admin-theme/admin/colour/bright.php
 No syntax errors detected in aquila-admin-theme/aquila-admin-theme/admin/colour/colourScheme.php
 No syntax errors detected in aquila-admin-theme/aquila-admin-theme/admin/colour/isDark.php
+
+Fatal error: Array and string offset access syntax with curly braces is no longer supported in aquila-admin-theme/aquila-admin-theme/admin/colour/lessc.inc.php on line 717
 Errors parsing aquila-admin-theme/aquila-admin-theme/admin/colour/lessc.inc.php
 No syntax errors detected in aquila-admin-theme/aquila-admin-theme/admin/colour/lum.php
 No syntax errors detected in aquila-admin-theme/aquila-admin-theme/admin/colour/mdColours.php
@@ -33,27 +35,34 @@ No syntax errors detected in aquila-admin-theme/aquila-admin-theme/admin/widgets
 No syntax errors detected in aquila-admin-theme/aquila-admin-theme/aquila-admin-theme.php
 No syntax errors detected in aquila-admin-theme/aquila-admin-theme/login/aquila-login-screen.php
 No syntax errors detected in aquila-admin-theme/aquila-admin-theme/scripts.php
-::error::%0Aadmin/colour/lessc.inc.php
-No syntax errors detected in aquila-admin-theme/aquila-admin-theme/scripts.php
+::error::%0Aadmin/colour/lessc.inc.php%0A  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 717
 ...........[32mE[0m...................... 34 / 34 (100%)
 
 
 
 [1mFILE: admin/colour/lessc.inc.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 4 ERRORS AFFECTING 4 LINES[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  717 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $subProp[1]{0}[0m
+----------------------------------------------------------------------
+  717 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found: $subProp[1]{0}[0m
       |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
- 1768 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $name{0}[0m
+ 1768 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found: $name{0}[0m
       |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
- 2424 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $tag{0}[0m
+ 2424 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found: $tag{0}[0m
       |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
- 2478 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $tag{0}[0m
+ 2478 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found: $tag{0}[0m
       |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mPHPCBF CAN FIX THE 4 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
-Time: 869ms; Memory: 36MB
-::error::FILE: admin/colour/lessc.inc.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 4 ERRORS AFFECTING 4 LINES%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A  717 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $subProp[1]{0}%0A      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 1768 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $name{0}%0A      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 2424 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $tag{0}%0A      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 2478 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $tag{0}%0A      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0APHPCBF CAN FIX THE 4 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
+Time: 839ms; Memory: 36MB
+::error::FILE: admin/colour/lessc.inc.php%0A----------------------------------------------------------------------%0AFOUND 4 ERRORS AFFECTING 4 LINES%0A----------------------------------------------------------------------%0A  717 | ERROR | [x] Curly brace syntax for accessing array elements%0A      |       |     and string offsets has been deprecated in PHP 7.4%0A      |       |     and removed in PHP 8.0. Found: $subProp[1]{0}%0A      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 1768 | ERROR | [x] Curly brace syntax for accessing array elements%0A      |       |     and string offsets has been deprecated in PHP 7.4%0A      |       |     and removed in PHP 8.0. Found: $name{0}%0A      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 2424 | ERROR | [x] Curly brace syntax for accessing array elements%0A      |       |     and string offsets has been deprecated in PHP 7.4%0A      |       |     and removed in PHP 8.0. Found: $tag{0}%0A      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 2478 | ERROR | [x] Curly brace syntax for accessing array elements%0A      |       |     and string offsets has been deprecated in PHP 7.4%0A      |       |     and removed in PHP 8.0. Found: $tag{0}%0A      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A----------------------------------------------------------------------%0APHPCBF CAN FIX THE 4 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A----------------------------------------------------------------------%0A
