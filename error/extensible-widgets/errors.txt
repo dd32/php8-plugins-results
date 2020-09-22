@@ -1,0 +1,65 @@
+
+includes/wpew/admin/RegistrationPage.php
+  Warning: "continue" targeting switch is equivalent to "break".
+      Did you mean to use "continue 2"?
+      on line 107
+  Warning: "continue" targeting switch is equivalent to "break".
+      Did you mean to use "continue 2"?
+      on line 119
+
+includes/xf/system/Path.php
+  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 72
+
+includes/xf/utils/DOMDocument.php
+  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 121
+FILE: includes/wpew/widgets/Context.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 64 | ERROR | Function split() is deprecated since PHP 5.3 and
+    |       | removed since PHP 7.0; Use preg_split(), explode() or
+    |       | str_split() instead
+    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.splitDeprecatedRemoved)
+----------------------------------------------------------------------
+
+
+FILE: includes/wpew/widgets/QueryPostsExtended.php
+----------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+----------------------------------------------------------------------
+ 58 | ERROR | Function split() is deprecated since PHP 5.3 and
+    |       | removed since PHP 7.0; Use preg_split(), explode() or
+    |       | str_split() instead
+    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.splitDeprecatedRemoved)
+ 59 | ERROR | Function split() is deprecated since PHP 5.3 and
+    |       | removed since PHP 7.0; Use preg_split(), explode() or
+    |       | str_split() instead
+    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.splitDeprecatedRemoved)
+----------------------------------------------------------------------
+
+
+FILE: includes/xf/system/Path.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 72 | ERROR | [x] Curly brace syntax for accessing array elements and
+    |       |     string offsets has been deprecated in PHP 7.4 and
+    |       |     removed in PHP 8.0. Found: $p{0}
+    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------
+
+
+FILE: includes/xf/utils/DOMDocument.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 121 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found:
+     |       |     $oChildNode->nodeName{0}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------
