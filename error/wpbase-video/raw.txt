@@ -6,22 +6,26 @@ No syntax errors detected in wpbase-video/wpbase-video/views/addform.php
 No syntax errors detected in wpbase-video/wpbase-video/views/editform.php
 No syntax errors detected in wpbase-video/wpbase-video/views/list_table.php
 No syntax errors detected in wpbase-video/wpbase-video/views/setting_page.php
+
+Fatal error: Declaration of wordpress::initDB() must be compatible with vsmod::initDB($config = false) in wpbase-video/wpbase-video/vsMod.php on line 1230
 Errors parsing wpbase-video/wpbase-video/vsMod.php
 No syntax errors detected in wpbase-video/wpbase-video/wpbase-video.php
-::error::%0AvsMod.php
+::error::%0AvsMod.php%0A  Fatal error: Declaration of wordpress::initDB() must be compatible with vsmod::initDB($config = false) on line 1230
 .......[31mE[0m. 9 / 9 (100%)
 
 
 
 [1mFILE: vsMod.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 2 ERRORS AFFECTING 2 LINES[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 104 | [31mERROR[0m | [1mDeclaration of a PHP4 style class constructor is deprecated since PHP 7.0 and removed since PHP 8.0[0m
+----------------------------------------------------------------------
+ 104 | [31mERROR[0m | [1mDeclaration of a PHP4 style class constructor is
+     |       | deprecated since PHP 7.0 and removed since PHP 8.0[0m
      |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
- 220 | [31mERROR[0m | [1mFunction get_magic_quotes_gpc() is deprecated since PHP 7.4 and removed since PHP 8.0[0m
+ 220 | [31mERROR[0m | [1mFunction get_magic_quotes_gpc() is deprecated since
+     |       | PHP 7.4 and removed since PHP 8.0[0m
      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_gpcDeprecatedRemoved)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
-Time: 326ms; Memory: 18MB
-::error::FILE: vsMod.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 104 | ERROR | Declaration of a PHP4 style class constructor is deprecated since PHP 7.0 and removed since PHP 8.0%0A     |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)%0A 220 | ERROR | Function get_magic_quotes_gpc() is deprecated since PHP 7.4 and removed since PHP 8.0%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_gpcDeprecatedRemoved)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
+Time: 310ms; Memory: 18MB
+::error::FILE: vsMod.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A----------------------------------------------------------------------%0A 104 | ERROR | Declaration of a PHP4 style class constructor is%0A     |       | deprecated since PHP 7.0 and removed since PHP 8.0%0A     |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)%0A 220 | ERROR | Function get_magic_quotes_gpc() is deprecated since%0A     |       | PHP 7.4 and removed since PHP 8.0%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_gpcDeprecatedRemoved)%0A----------------------------------------------------------------------%0A

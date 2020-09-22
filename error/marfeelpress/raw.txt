@@ -891,6 +891,8 @@ No syntax errors detected in marfeelpress/marfeelpress/vendor/twig/twig/lib/Twig
 No syntax errors detected in marfeelpress/marfeelpress/vendor/twig/twig/lib/Twig/NodeCaptureInterface.php
 No syntax errors detected in marfeelpress/marfeelpress/vendor/twig/twig/lib/Twig/NodeInterface.php
 No syntax errors detected in marfeelpress/marfeelpress/vendor/twig/twig/lib/Twig/NodeOutputInterface.php
+
+Fatal error: Unparenthesized `a ? b : c ? d : e` is not supported. Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)` in marfeelpress/marfeelpress/vendor/twig/twig/lib/Twig/Node.php on line 42
 Errors parsing marfeelpress/marfeelpress/vendor/twig/twig/lib/Twig/Node.php
 No syntax errors detected in marfeelpress/marfeelpress/vendor/twig/twig/lib/Twig/NodeTraverser.php
 No syntax errors detected in marfeelpress/marfeelpress/vendor/twig/twig/lib/Twig/NodeVisitor/Escaper.php
@@ -1133,7 +1135,7 @@ No syntax errors detected in marfeelpress/marfeelpress/vendor/twig/twig/src/Util
 No syntax errors detected in marfeelpress/marfeelpress/vendor/wa72/htmlpagedom/src/Helpers.php
 No syntax errors detected in marfeelpress/marfeelpress/vendor/wa72/htmlpagedom/src/HtmlPageCrawler.php
 No syntax errors detected in marfeelpress/marfeelpress/vendor/wa72/htmlpagedom/src/HtmlPage.php
-::error::%0Avendor/twig/twig/lib/Twig/Node.php
+::error::%0Avendor/twig/twig/lib/Twig/Node.php%0A  Fatal error: Unparenthesized `a ? b : c ? d : e` is not supported.%0A      Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)`%0A      on line 42
 ............................................................   60 / 1128 (5%)
 ............................................................  120 / 1128 (11%)
 ............................................................  180 / 1128 (16%)
@@ -1157,23 +1159,34 @@ No syntax errors detected in marfeelpress/marfeelpress/vendor/wa72/htmlpagedom/s
 
 
 [1mFILE: vendor/symfony/css-selector/XPath/Translator.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 90 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse order to implode has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first
-    |       | parameter and $pieces the second[0m (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
+ 90 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse
+    |       | order to implode has been deprecated since PHP 7.4 and
+    |       | is removed since PHP 8.0; $glue should be the first
+    |       | parameter and $pieces the second[0m
+    |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
+----------------------------------------------------------------------
 
 
 [1mFILE: vendor/twig/twig/lib/Twig/Node.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 2 ERRORS AFFECTING 2 LINES[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  42 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has been deprecated in PHP 7.4 and removed in PHP 8.0. Multiple consecutive ternaries detected. Use parenthesis to
-     |       | clarify the order in which the operations should be executed[0m (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
- 198 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has been deprecated in PHP 7.4 and removed in PHP 8.0. Multiple consecutive ternaries detected. Use parenthesis to
-     |       | clarify the order in which the operations should be executed[0m (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
+  42 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has
+     |       | been deprecated in PHP 7.4 and removed in PHP 8.0.
+     |       | Multiple consecutive ternaries detected. Use
+     |       | parenthesis to clarify the order in which the
+     |       | operations should be executed[0m
+     |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
+ 198 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has
+     |       | been deprecated in PHP 7.4 and removed in PHP 8.0.
+     |       | Multiple consecutive ternaries detected. Use
+     |       | parenthesis to clarify the order in which the
+     |       | operations should be executed[0m
+     |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
+----------------------------------------------------------------------
 
-Time: 11.99 secs; Memory: 36MB
-::error::FILE: vendor/symfony/css-selector/XPath/Translator.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 90 | ERROR | Passing the $glue and $pieces parameters in reverse order to implode has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first%0A    |       | parameter and $pieces the second (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: vendor/twig/twig/lib/Twig/Node.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A  42 | ERROR | The left-associativity of the ternary operator has been deprecated in PHP 7.4 and removed in PHP 8.0. Multiple consecutive ternaries detected. Use parenthesis to%0A     |       | clarify the order in which the operations should be executed (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A 198 | ERROR | The left-associativity of the ternary operator has been deprecated in PHP 7.4 and removed in PHP 8.0. Multiple consecutive ternaries detected. Use parenthesis to%0A     |       | clarify the order in which the operations should be executed (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
+Time: 10.98 secs; Memory: 36MB
+::error::FILE: vendor/symfony/css-selector/XPath/Translator.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 90 | ERROR | Passing the $glue and $pieces parameters in reverse%0A    |       | order to implode has been deprecated since PHP 7.4 and%0A    |       | is removed since PHP 8.0; $glue should be the first%0A    |       | parameter and $pieces the second%0A    |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A----------------------------------------------------------------------%0A%0A%0AFILE: vendor/twig/twig/lib/Twig/Node.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A----------------------------------------------------------------------%0A  42 | ERROR | The left-associativity of the ternary operator has%0A     |       | been deprecated in PHP 7.4 and removed in PHP 8.0.%0A     |       | Multiple consecutive ternaries detected. Use%0A     |       | parenthesis to clarify the order in which the%0A     |       | operations should be executed%0A     |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A 198 | ERROR | The left-associativity of the ternary operator has%0A     |       | been deprecated in PHP 7.4 and removed in PHP 8.0.%0A     |       | Multiple consecutive ternaries detected. Use%0A     |       | parenthesis to clarify the order in which the%0A     |       | operations should be executed%0A     |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A----------------------------------------------------------------------%0A

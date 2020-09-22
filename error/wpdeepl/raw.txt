@@ -19,21 +19,26 @@ No syntax errors detected in wpdeepl/wpdeepl/wpdeepl.php
 
 
 [1mFILE: client/deeplapi.class.php[0m
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 138 | [31mERROR[0m | [1m"$this" can no longer be used in a plain function or method since PHP 7.1.[0m
+----------------------------------------------------------------------
+ 138 | [31mERROR[0m | [1m"$this" can no longer be used in a plain function or
+     |       | method since PHP 7.1.[0m
      |       | (PHPCompatibility.Variables.ForbiddenThisUseContexts.OutsideObjectContext)
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 [1mFILE: client/deepl-data.class.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 102 | [31mERROR[0m | [1mPassing the encoding to mb_strrpos() as third parameter is soft deprecated since PHP 5.2, hard deprecated since PHP 7.4 and removed since PHP 8.0. Use an explicit 0
-     |       | as the offset in the third parameter.[0m (PHPCompatibility.ParameterValues.RemovedMbStrrposEncodingThirdParam.Removed)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
+ 102 | [31mERROR[0m | [1mPassing the encoding to mb_strrpos() as third
+     |       | parameter is soft deprecated since PHP 5.2, hard
+     |       | deprecated since PHP 7.4 and removed since PHP 8.0.
+     |       | Use an explicit 0 as the offset in the third
+     |       | parameter.[0m
+     |       | (PHPCompatibility.ParameterValues.RemovedMbStrrposEncodingThirdParam.Removed)
+----------------------------------------------------------------------
 
-Time: 438ms; Memory: 18MB
-::error::FILE: client/deeplapi.class.php%0A---------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A---------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 138 | ERROR | "$this" can no longer be used in a plain function or method since PHP 7.1.%0A     |       | (PHPCompatibility.Variables.ForbiddenThisUseContexts.OutsideObjectContext)%0A---------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: client/deepl-data.class.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 102 | ERROR | Passing the encoding to mb_strrpos() as third parameter is soft deprecated since PHP 5.2, hard deprecated since PHP 7.4 and removed since PHP 8.0. Use an explicit 0%0A     |       | as the offset in the third parameter. (PHPCompatibility.ParameterValues.RemovedMbStrrposEncodingThirdParam.Removed)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
+Time: 435ms; Memory: 18MB
+::error::FILE: client/deeplapi.class.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 138 | ERROR | "$this" can no longer be used in a plain function or%0A     |       | method since PHP 7.1.%0A     |       | (PHPCompatibility.Variables.ForbiddenThisUseContexts.OutsideObjectContext)%0A----------------------------------------------------------------------%0A%0A%0AFILE: client/deepl-data.class.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 102 | ERROR | Passing the encoding to mb_strrpos() as third%0A     |       | parameter is soft deprecated since PHP 5.2, hard%0A     |       | deprecated since PHP 7.4 and removed since PHP 8.0.%0A     |       | Use an explicit 0 as the offset in the third%0A     |       | parameter.%0A     |       | (PHPCompatibility.ParameterValues.RemovedMbStrrposEncodingThirdParam.Removed)%0A----------------------------------------------------------------------%0A
