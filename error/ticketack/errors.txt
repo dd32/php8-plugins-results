@@ -1,0 +1,30 @@
+FILE: app/templates/event/newsletter_event.tpl.php
+----------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+----------------------------------------------------------------------
+ 18 | ERROR | Self-closing XHTML tags are ignored. Only
+    |       | non-self-closing tags should be used in the
+    |       | strip_tags() $allowable_tags parameter since PHP 5.3.4.
+    |       | Found: '<br/>'
+    |       | (PHPCompatibility.ParameterValues.ForbiddenStripTagsSelfClosingXHTML.Found)
+ 32 | ERROR | Self-closing XHTML tags are ignored. Only
+    |       | non-self-closing tags should be used in the
+    |       | strip_tags() $allowable_tags parameter since PHP 5.3.4.
+    |       | Found: '<br/>'
+    |       | (PHPCompatibility.ParameterValues.ForbiddenStripTagsSelfClosingXHTML.Found)
+----------------------------------------------------------------------
+
+
+FILE: vendor/symfony/yaml/Tests/InlineTest.php
+----------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+----------------------------------------------------------------------
+ 269 | ERROR | The behaviour of hexadecimal numeric strings was
+     |       | inconsistent prior to PHP 7 and support has been
+     |       | removed in PHP 7. Found: '0x4D2'
+     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
+ 344 | ERROR | The behaviour of hexadecimal numeric strings was
+     |       | inconsistent prior to PHP 7 and support has been
+     |       | removed in PHP 7. Found: '0x4D2'
+     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
+----------------------------------------------------------------------
