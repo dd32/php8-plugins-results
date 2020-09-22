@@ -101,14 +101,18 @@ No syntax errors detected in ultimate-security-checker/ultimate-security-checker
 
 
 [1mFILE: securitycheck.class.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 2 ERRORS AFFECTING 2 LINES[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  873 | [31mERROR[0m | [1mFunction split() is deprecated since PHP 5.3 and removed since PHP 7.0; Use preg_split(), explode() or str_split() instead[0m
+----------------------------------------------------------------------
+  873 | [31mERROR[0m | [1mFunction split() is deprecated since PHP 5.3 and
+      |       | removed since PHP 7.0; Use preg_split(), explode() or
+      |       | str_split() instead[0m
       |       | (PHPCompatibility.FunctionUse.RemovedFunctions.splitDeprecatedRemoved)
- 1195 | [31mERROR[0m | [1mDeclaration of a PHP4 style class constructor is deprecated since PHP 7.0 and removed since PHP 8.0[0m
+ 1195 | [31mERROR[0m | [1mDeclaration of a PHP4 style class constructor is
+      |       | deprecated since PHP 7.0 and removed since PHP
+      |       | 8.0[0m
       |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
-Time: 4.31 secs; Memory: 40MB
-::error::FILE: securitycheck.class.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A  873 | ERROR | Function split() is deprecated since PHP 5.3 and removed since PHP 7.0; Use preg_split(), explode() or str_split() instead%0A      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.splitDeprecatedRemoved)%0A 1195 | ERROR | Declaration of a PHP4 style class constructor is deprecated since PHP 7.0 and removed since PHP 8.0%0A      |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
+Time: 4.4 secs; Memory: 40MB
+::error::FILE: securitycheck.class.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A----------------------------------------------------------------------%0A  873 | ERROR | Function split() is deprecated since PHP 5.3 and%0A      |       | removed since PHP 7.0; Use preg_split(), explode() or%0A      |       | str_split() instead%0A      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.splitDeprecatedRemoved)%0A 1195 | ERROR | Declaration of a PHP4 style class constructor is%0A      |       | deprecated since PHP 7.0 and removed since PHP%0A      |       | 8.0%0A      |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)%0A----------------------------------------------------------------------%0A
