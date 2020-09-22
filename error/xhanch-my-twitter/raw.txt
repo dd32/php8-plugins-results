@@ -29,22 +29,27 @@ No syntax errors detected in xhanch-my-twitter/xhanch-my-twitter/xhanch-my-twitt
 
 
 [1mFILE: inc/common.php[0m
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 2 ERRORS AFFECTING 1 LINE[0m
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 4 | [31mERROR[0m | [1mExtension 'ereg' is deprecated since PHP 5.3 and removed since PHP 7.0; Use pcre instead[0m (PHPCompatibility.Extensions.RemovedExtensions.eregDeprecatedRemoved)
- 4 | [31mERROR[0m | [1mFunction ereg() is deprecated since PHP 5.3 and removed since PHP 7.0; Use preg_match() instead[0m
+----------------------------------------------------------------------
+ 4 | [31mERROR[0m | [1mExtension 'ereg' is deprecated since PHP 5.3 and removed
+   |       | since PHP 7.0; Use pcre instead[0m
+   |       | (PHPCompatibility.Extensions.RemovedExtensions.eregDeprecatedRemoved)
+ 4 | [31mERROR[0m | [1mFunction ereg() is deprecated since PHP 5.3 and removed
+   |       | since PHP 7.0; Use preg_match() instead[0m
    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eregDeprecatedRemoved)
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 [1mFILE: xhanch-my-twitter.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 421 | [31mERROR[0m | [1mFunction create_function() is deprecated since PHP 7.2 and removed since PHP 8.0; Use an anonymous function instead[0m
+----------------------------------------------------------------------
+ 421 | [31mERROR[0m | [1mFunction create_function() is deprecated since PHP 7.2
+     |       | and removed since PHP 8.0; Use an anonymous function
+     |       | instead[0m
      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
-Time: 608ms; Memory: 16MB
-::error::FILE: inc/common.php%0A-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 1 LINE%0A-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 4 | ERROR | Extension 'ereg' is deprecated since PHP 5.3 and removed since PHP 7.0; Use pcre instead (PHPCompatibility.Extensions.RemovedExtensions.eregDeprecatedRemoved)%0A 4 | ERROR | Function ereg() is deprecated since PHP 5.3 and removed since PHP 7.0; Use preg_match() instead%0A   |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eregDeprecatedRemoved)%0A-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: xhanch-my-twitter.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 421 | ERROR | Function create_function() is deprecated since PHP 7.2 and removed since PHP 8.0; Use an anonymous function instead%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
+Time: 554ms; Memory: 16MB
+::error::FILE: inc/common.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 4 | ERROR | Extension 'ereg' is deprecated since PHP 5.3 and removed%0A   |       | since PHP 7.0; Use pcre instead%0A   |       | (PHPCompatibility.Extensions.RemovedExtensions.eregDeprecatedRemoved)%0A 4 | ERROR | Function ereg() is deprecated since PHP 5.3 and removed%0A   |       | since PHP 7.0; Use preg_match() instead%0A   |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eregDeprecatedRemoved)%0A----------------------------------------------------------------------%0A%0A%0AFILE: xhanch-my-twitter.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 421 | ERROR | Function create_function() is deprecated since PHP 7.2%0A     |       | and removed since PHP 8.0; Use an anonymous function%0A     |       | instead%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)%0A----------------------------------------------------------------------%0A

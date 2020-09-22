@@ -371,6 +371,8 @@ No syntax errors detected in post-status-notifier-lite/post-status-notifier-lite
 No syntax errors detected in post-status-notifier-lite/post-status-notifier-lite/lib/IfwPsn/Vendor/Zend/Filter/Compress/Lzf.php
 No syntax errors detected in post-status-notifier-lite/post-status-notifier-lite/lib/IfwPsn/Vendor/Zend/Filter/Compress/Rar.php
 No syntax errors detected in post-status-notifier-lite/post-status-notifier-lite/lib/IfwPsn/Vendor/Zend/Filter/Compress/Tar.php
+
+Fatal error: Array and string offset access syntax with curly braces is no longer supported in post-status-notifier-lite/post-status-notifier-lite/lib/IfwPsn/Vendor/Zend/Filter/Compress/Zip.php on line 240
 Errors parsing post-status-notifier-lite/post-status-notifier-lite/lib/IfwPsn/Vendor/Zend/Filter/Compress/Zip.php
 No syntax errors detected in post-status-notifier-lite/post-status-notifier-lite/lib/IfwPsn/Vendor/Zend/Filter/Compress.php
 No syntax errors detected in post-status-notifier-lite/post-status-notifier-lite/lib/IfwPsn/Vendor/Zend/Filter/Decompress.php
@@ -653,6 +655,8 @@ No syntax errors detected in post-status-notifier-lite/post-status-notifier-lite
 No syntax errors detected in post-status-notifier-lite/post-status-notifier-lite/lib/IfwPsn/Vendor/Zend/Validate/Interface.php
 No syntax errors detected in post-status-notifier-lite/post-status-notifier-lite/lib/IfwPsn/Vendor/Zend/Validate/Int.php
 No syntax errors detected in post-status-notifier-lite/post-status-notifier-lite/lib/IfwPsn/Vendor/Zend/Validate/Ip.php
+
+Fatal error: Array and string offset access syntax with curly braces is no longer supported in post-status-notifier-lite/post-status-notifier-lite/lib/IfwPsn/Vendor/Zend/Validate/Isbn.php on line 170
 Errors parsing post-status-notifier-lite/post-status-notifier-lite/lib/IfwPsn/Vendor/Zend/Validate/Isbn.php
 No syntax errors detected in post-status-notifier-lite/post-status-notifier-lite/lib/IfwPsn/Vendor/Zend/Validate/Ldap/Dn.php
 No syntax errors detected in post-status-notifier-lite/post-status-notifier-lite/lib/IfwPsn/Vendor/Zend/Validate/LessThan.php
@@ -714,6 +718,8 @@ No syntax errors detected in post-status-notifier-lite/post-status-notifier-lite
 No syntax errors detected in post-status-notifier-lite/post-status-notifier-lite/lib/IfwPsn/Vendor/Zend/View/Helper/Navigation/Helper.php
 No syntax errors detected in post-status-notifier-lite/post-status-notifier-lite/lib/IfwPsn/Vendor/Zend/View/Helper/Navigation/Links.php
 No syntax errors detected in post-status-notifier-lite/post-status-notifier-lite/lib/IfwPsn/Vendor/Zend/View/Helper/Navigation/Menu.php
+
+Fatal error: Array and string offset access syntax with curly braces is no longer supported in post-status-notifier-lite/post-status-notifier-lite/lib/IfwPsn/Vendor/Zend/View/Helper/Navigation/Sitemap.php on line 259
 Errors parsing post-status-notifier-lite/post-status-notifier-lite/lib/IfwPsn/Vendor/Zend/View/Helper/Navigation/Sitemap.php
 No syntax errors detected in post-status-notifier-lite/post-status-notifier-lite/lib/IfwPsn/Vendor/Zend/View/Helper/Navigation.php
 No syntax errors detected in post-status-notifier-lite/post-status-notifier-lite/lib/IfwPsn/Vendor/Zend/View/Helper/PaginationControl.php
@@ -1031,7 +1037,7 @@ No syntax errors detected in post-status-notifier-lite/post-status-notifier-lite
 No syntax errors detected in post-status-notifier-lite/post-status-notifier-lite/lib/Psn/Test/PostWhitelistField.php
 No syntax errors detected in post-status-notifier-lite/post-status-notifier-lite/lib/Psn/Test/RuleModel.php
 No syntax errors detected in post-status-notifier-lite/post-status-notifier-lite/post-status-notifier-lite.php
-::error::%0Alib/IfwPsn/Vendor/Zend/Filter/Compress/Zip.php%0A%0Alib/IfwPsn/Vendor/Zend/Validate/Isbn.php%0A%0Alib/IfwPsn/Vendor/Zend/View/Helper/Navigation/Sitemap.php
+::error::%0Alib/IfwPsn/Vendor/Zend/Filter/Compress/Zip.php%0A  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 240%0A%0Alib/IfwPsn/Vendor/Zend/Validate/Isbn.php%0A  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 170%0A%0Alib/IfwPsn/Vendor/Zend/View/Helper/Navigation/Sitemap.php%0A  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 259
 ........[31mE[0m...................................................   60 / 1032 (6%)
 ............................................................  120 / 1032 (12%)
 ............................................................  180 / 1032 (17%)
@@ -1054,71 +1060,91 @@ No syntax errors detected in post-status-notifier-lite/post-status-notifier-lite
 
 
 [1mFILE: admin/menu/controllers/PsnRulesController.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 2 ERRORS AFFECTING 2 LINES[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 260 | [31mERROR[0m | [1mFunction create_function() is deprecated since PHP 7.2 and removed since PHP 8.0; Use an anonymous function instead[0m
+----------------------------------------------------------------------
+ 260 | [31mERROR[0m | [1mFunction create_function() is deprecated since PHP 7.2
+     |       | and removed since PHP 8.0; Use an anonymous function
+     |       | instead[0m
      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
- 262 | [31mERROR[0m | [1mFunction create_function() is deprecated since PHP 7.2 and removed since PHP 8.0; Use an anonymous function instead[0m
+ 262 | [31mERROR[0m | [1mFunction create_function() is deprecated since PHP 7.2
+     |       | and removed since PHP 8.0; Use an anonymous function
+     |       | instead[0m
      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 [1mFILE: lib/IfwPsn/Vendor/Zend/Filter/Compress/Zip.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 240 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $currName{0}[0m
+----------------------------------------------------------------------
+ 240 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $currName{0}[0m
      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mPHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 [1mFILE: lib/IfwPsn/Vendor/Zend/Filter/Encrypt/Mcrypt.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 259 | [31mERROR[0m | [1mFunction mdecrypt_generic() is deprecated since PHP 7.1 and removed since PHP 7.2; Use OpenSSL instead[0m
+----------------------------------------------------------------------
+ 259 | [31mERROR[0m | [1mFunction mdecrypt_generic() is deprecated since PHP
+     |       | 7.1 and removed since PHP 7.2; Use OpenSSL instead[0m
      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.mdecrypt_genericDeprecatedRemoved)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 [1mFILE: lib/IfwPsn/Vendor/Zend/Validate/Isbn.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 3 ERRORS AFFECTING 3 LINES[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 170 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $isbn10{$i}[0m
+----------------------------------------------------------------------
+ 170 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $isbn10{$i}[0m
      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
- 188 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $isbn13{$i}[0m
+ 188 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $isbn13{$i}[0m
      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
- 190 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $isbn13{$i}[0m
+ 190 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $isbn13{$i}[0m
      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mPHPCBF CAN FIX THE 3 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 [1mFILE: lib/IfwPsn/Vendor/Zend/View/Helper/Navigation/Sitemap.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 2 ERRORS AFFECTING 2 LINES[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 256 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $href{0}[0m
+----------------------------------------------------------------------
+ 256 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $href{0}[0m
      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
- 259 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $href{0}[0m
+ 259 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $href{0}[0m
      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mPHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 [1mFILE: lib/IfwPsn/Wp/ORM/Idiorm.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 1077 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse order to join has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first
-      |       | parameter and $pieces the second[0m (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
+ 1077 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse
+      |       | order to join has been deprecated since PHP 7.4 and
+      |       | is removed since PHP 8.0; $glue should be the first
+      |       | parameter and $pieces the second[0m
+      |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
+----------------------------------------------------------------------
 
-Time: 23.26 secs; Memory: 50.01MB
-::error::FILE: admin/menu/controllers/PsnRulesController.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 260 | ERROR | Function create_function() is deprecated since PHP 7.2 and removed since PHP 8.0; Use an anonymous function instead%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)%0A 262 | ERROR | Function create_function() is deprecated since PHP 7.2 and removed since PHP 8.0; Use an anonymous function instead%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: lib/IfwPsn/Vendor/Zend/Filter/Compress/Zip.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 240 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $currName{0}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0APHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: lib/IfwPsn/Vendor/Zend/Filter/Encrypt/Mcrypt.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 259 | ERROR | Function mdecrypt_generic() is deprecated since PHP 7.1 and removed since PHP 7.2; Use OpenSSL instead%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.mdecrypt_genericDeprecatedRemoved)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: lib/IfwPsn/Vendor/Zend/Validate/Isbn.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 3 ERRORS AFFECTING 3 LINES%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 170 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $isbn10{$i}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 188 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $isbn13{$i}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 190 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $isbn13{$i}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0APHPCBF CAN FIX THE 3 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: lib/IfwPsn/Vendor/Zend/View/Helper/Navigation/Sitemap.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 256 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $href{0}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 259 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $href{0}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0APHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: lib/IfwPsn/Wp/ORM/Idiorm.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 1077 | ERROR | Passing the $glue and $pieces parameters in reverse order to join has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first%0A      |       | parameter and $pieces the second (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
+Time: 21.85 secs; Memory: 50.01MB
+::error::FILE: admin/menu/controllers/PsnRulesController.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A----------------------------------------------------------------------%0A 260 | ERROR | Function create_function() is deprecated since PHP 7.2%0A     |       | and removed since PHP 8.0; Use an anonymous function%0A     |       | instead%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)%0A 262 | ERROR | Function create_function() is deprecated since PHP 7.2%0A     |       | and removed since PHP 8.0; Use an anonymous function%0A     |       | instead%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)%0A----------------------------------------------------------------------%0A%0A%0AFILE: lib/IfwPsn/Vendor/Zend/Filter/Compress/Zip.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 240 | ERROR | [x] Curly brace syntax for accessing array elements%0A     |       |     and string offsets has been deprecated in PHP 7.4%0A     |       |     and removed in PHP 8.0. Found: $currName{0}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A----------------------------------------------------------------------%0APHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A----------------------------------------------------------------------%0A%0A%0AFILE: lib/IfwPsn/Vendor/Zend/Filter/Encrypt/Mcrypt.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 259 | ERROR | Function mdecrypt_generic() is deprecated since PHP%0A     |       | 7.1 and removed since PHP 7.2; Use OpenSSL instead%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.mdecrypt_genericDeprecatedRemoved)%0A----------------------------------------------------------------------%0A%0A%0AFILE: lib/IfwPsn/Vendor/Zend/Validate/Isbn.php%0A----------------------------------------------------------------------%0AFOUND 3 ERRORS AFFECTING 3 LINES%0A----------------------------------------------------------------------%0A 170 | ERROR | [x] Curly brace syntax for accessing array elements%0A     |       |     and string offsets has been deprecated in PHP 7.4%0A     |       |     and removed in PHP 8.0. Found: $isbn10{$i}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 188 | ERROR | [x] Curly brace syntax for accessing array elements%0A     |       |     and string offsets has been deprecated in PHP 7.4%0A     |       |     and removed in PHP 8.0. Found: $isbn13{$i}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 190 | ERROR | [x] Curly brace syntax for accessing array elements%0A     |       |     and string offsets has been deprecated in PHP 7.4%0A     |       |     and removed in PHP 8.0. Found: $isbn13{$i}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A----------------------------------------------------------------------%0APHPCBF CAN FIX THE 3 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A----------------------------------------------------------------------%0A%0A%0AFILE: lib/IfwPsn/Vendor/Zend/View/Helper/Navigation/Sitemap.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A----------------------------------------------------------------------%0A 256 | ERROR | [x] Curly brace syntax for accessing array elements%0A     |       |     and string offsets has been deprecated in PHP 7.4%0A     |       |     and removed in PHP 8.0. Found: $href{0}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 259 | ERROR | [x] Curly brace syntax for accessing array elements%0A     |       |     and string offsets has been deprecated in PHP 7.4%0A     |       |     and removed in PHP 8.0. Found: $href{0}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A----------------------------------------------------------------------%0APHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A----------------------------------------------------------------------%0A%0A%0AFILE: lib/IfwPsn/Wp/ORM/Idiorm.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 1077 | ERROR | Passing the $glue and $pieces parameters in reverse%0A      |       | order to join has been deprecated since PHP 7.4 and%0A      |       | is removed since PHP 8.0; $glue should be the first%0A      |       | parameter and $pieces the second%0A      |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A----------------------------------------------------------------------%0A
