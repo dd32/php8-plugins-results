@@ -1,0 +1,881 @@
+
+vendor/ZF2/library/Zend/Barcode/Object/AbstractObject.php
+  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 1154
+
+vendor/ZF2/library/Zend/Barcode/Object/Code25.php
+  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 113
+
+vendor/ZF2/library/Zend/Barcode/Object/Ean13.php
+  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 147
+
+vendor/ZF2/library/Zend/Barcode/Object/Ean5.php
+  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 105
+
+vendor/ZF2/library/Zend/Barcode/Object/Ean8.php
+  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 106
+
+vendor/ZF2/library/Zend/Barcode/Object/Identcode.php
+  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 66
+
+vendor/ZF2/library/Zend/Barcode/Object/Upca.php
+  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 121
+
+vendor/ZF2/library/Zend/Barcode/Object/Upce.php
+  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 67
+
+vendor/ZF2/library/Zend/Barcode/Renderer/AbstractRenderer.php
+  Fatal error: Cannot use Zend\Barcode\Object as Object because 'Object' is a special class name on line 16
+
+vendor/ZF2/library/Zend/Code/Generator/FileGenerator.php
+  Warning: "continue" targeting switch is equivalent to "break".
+      Did you mean to use "continue 2"?
+      on line 188
+  Warning: "continue" targeting switch is equivalent to "break".
+      Did you mean to use "continue 2"?
+      on line 191
+  Warning: "continue" targeting switch is equivalent to "break".
+      Did you mean to use "continue 2"?
+      on line 195
+
+vendor/ZF2/library/Zend/Code/NameInformation.php
+  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 89
+
+vendor/ZF2/library/Zend/Code/Scanner/Util.php
+  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 34
+
+vendor/ZF2/library/Zend/Db/Metadata/Source/AbstractSource.php
+  Fatal error: Cannot use Zend\Db\Metadata\Object as Object because 'Object' is a special class name on line 15
+
+vendor/ZF2/library/Zend/File/Transfer/Adapter/AbstractAdapter.php
+  Warning: "continue" targeting switch is equivalent to "break".
+      Did you mean to use "continue 2"?
+      on line 540
+
+vendor/ZF2/library/Zend/Filter/Int.php
+  Fatal error: Cannot use 'Int' as class name as it is reserved on line 17
+
+vendor/ZF2/library/Zend/Filter/Null.php
+  Fatal error: Cannot use 'Null' as class name as it is reserved on line 19
+
+vendor/ZF2/library/Zend/Form/Annotation/Object.php
+  Fatal error: Cannot use 'Object' as class name as it is reserved on line 36
+
+vendor/ZF2/library/Zend/I18n/Validator/Float.php
+  Fatal error: Cannot use 'Float' as class name as it is reserved on line 25
+
+vendor/ZF2/library/Zend/I18n/Validator/Int.php
+  Fatal error: Cannot use 'Int' as class name as it is reserved on line 25
+
+vendor/ZF2/library/Zend/Json/Decoder.php
+  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 310
+
+vendor/ZF2/library/Zend/Json/Encoder.php
+  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 558
+
+vendor/ZF2/library/Zend/Log/Writer/Null.php
+  Fatal error: Cannot use 'Null' as class name as it is reserved on line 18
+
+vendor/ZF2/library/Zend/Paginator/Adapter/Null.php
+  Fatal error: Cannot use 'Null' as class name as it is reserved on line 17
+
+vendor/ZF2/library/Zend/Validator/Isbn.php
+  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 113
+
+vendor/ZF2/library/Zend/View/Helper/Navigation/Sitemap.php
+  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 264
+
+vendor/ZF2/library/Zend/XmlRpc/Value/String.php
+  Fatal error: Cannot use 'String' as class name as it is reserved on line 17
+FILE: vendor/ZF2/library/Zend/Barcode/Object/AbstractObject.php
+----------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+----------------------------------------------------------------------
+   11 | ERROR | [ ] 'object' is a soft reserved keyword as of PHP
+      |       |     version 7.0 and a reserved keyword as of PHP
+      |       |     version 7.2 and should not be used to name a
+      |       |     class, interface or trait or as part of a
+      |       |     namespace (T_NAMESPACE)
+      |       |     (PHPCompatibility.Keywords.ForbiddenNamesAsDeclared.objectFound)
+ 1154 | ERROR | [x] Curly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found: $text{$i}
+      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------
+
+
+FILE: vendor/ZF2/library/Zend/Barcode/Object/Codabar.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 11 | ERROR | 'object' is a soft reserved keyword as of PHP version
+    |       | 7.0 and a reserved keyword as of PHP version 7.2 and
+    |       | should not be used to name a class, interface or trait
+    |       | or as part of a namespace (T_NAMESPACE)
+    |       | (PHPCompatibility.Keywords.ForbiddenNamesAsDeclared.objectFound)
+----------------------------------------------------------------------
+
+
+FILE: vendor/ZF2/library/Zend/Barcode/Object/Code128.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 11 | ERROR | 'object' is a soft reserved keyword as of PHP version
+    |       | 7.0 and a reserved keyword as of PHP version 7.2 and
+    |       | should not be used to name a class, interface or trait
+    |       | or as part of a namespace (T_NAMESPACE)
+    |       | (PHPCompatibility.Keywords.ForbiddenNamesAsDeclared.objectFound)
+----------------------------------------------------------------------
+
+
+FILE: vendor/ZF2/library/Zend/Barcode/Object/Code25interleaved.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 11 | ERROR | 'object' is a soft reserved keyword as of PHP version
+    |       | 7.0 and a reserved keyword as of PHP version 7.2 and
+    |       | should not be used to name a class, interface or trait
+    |       | or as part of a namespace (T_NAMESPACE)
+    |       | (PHPCompatibility.Keywords.ForbiddenNamesAsDeclared.objectFound)
+----------------------------------------------------------------------
+
+
+FILE: vendor/ZF2/library/Zend/Barcode/Object/Code25.php
+----------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+----------------------------------------------------------------------
+  11 | ERROR | [ ] 'object' is a soft reserved keyword as of PHP
+     |       |     version 7.0 and a reserved keyword as of PHP
+     |       |     version 7.2 and should not be used to name a
+     |       |     class, interface or trait or as part of a
+     |       |     namespace (T_NAMESPACE)
+     |       |     (PHPCompatibility.Keywords.ForbiddenNamesAsDeclared.objectFound)
+ 113 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $text{$i - 1}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------
+
+
+FILE: vendor/ZF2/library/Zend/Barcode/Object/Code39.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 11 | ERROR | 'object' is a soft reserved keyword as of PHP version
+    |       | 7.0 and a reserved keyword as of PHP version 7.2 and
+    |       | should not be used to name a class, interface or trait
+    |       | or as part of a namespace (T_NAMESPACE)
+    |       | (PHPCompatibility.Keywords.ForbiddenNamesAsDeclared.objectFound)
+----------------------------------------------------------------------
+
+
+FILE: vendor/ZF2/library/Zend/Barcode/Object/Ean13.php
+----------------------------------------------------------------------
+FOUND 3 ERRORS AFFECTING 3 LINES
+----------------------------------------------------------------------
+  11 | ERROR | [ ] 'object' is a soft reserved keyword as of PHP
+     |       |     version 7.0 and a reserved keyword as of PHP
+     |       |     version 7.2 and should not be used to name a
+     |       |     class, interface or trait or as part of a
+     |       |     namespace (T_NAMESPACE)
+     |       |     (PHPCompatibility.Keywords.ForbiddenNamesAsDeclared.objectFound)
+ 147 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $text{$i - 1}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 177 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $text{$i}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------
+
+
+FILE: vendor/ZF2/library/Zend/Barcode/Object/Ean2.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 11 | ERROR | 'object' is a soft reserved keyword as of PHP version
+    |       | 7.0 and a reserved keyword as of PHP version 7.2 and
+    |       | should not be used to name a class, interface or trait
+    |       | or as part of a namespace (T_NAMESPACE)
+    |       | (PHPCompatibility.Keywords.ForbiddenNamesAsDeclared.objectFound)
+----------------------------------------------------------------------
+
+
+FILE: vendor/ZF2/library/Zend/Barcode/Object/Ean5.php
+----------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+----------------------------------------------------------------------
+  11 | ERROR | [ ] 'object' is a soft reserved keyword as of PHP
+     |       |     version 7.0 and a reserved keyword as of PHP
+     |       |     version 7.2 and should not be used to name a
+     |       |     class, interface or trait or as part of a
+     |       |     namespace (T_NAMESPACE)
+     |       |     (PHPCompatibility.Keywords.ForbiddenNamesAsDeclared.objectFound)
+ 105 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $text{$i}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------
+
+
+FILE: vendor/ZF2/library/Zend/Barcode/Object/Ean8.php
+----------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+----------------------------------------------------------------------
+  11 | ERROR | [ ] 'object' is a soft reserved keyword as of PHP
+     |       |     version 7.0 and a reserved keyword as of PHP
+     |       |     version 7.2 and should not be used to name a
+     |       |     class, interface or trait or as part of a
+     |       |     namespace (T_NAMESPACE)
+     |       |     (PHPCompatibility.Keywords.ForbiddenNamesAsDeclared.objectFound)
+ 106 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $text{$i}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------
+
+
+FILE: vendor/ZF2/library/Zend/Barcode/Object/Error.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 11 | ERROR | 'object' is a soft reserved keyword as of PHP version
+    |       | 7.0 and a reserved keyword as of PHP version 7.2 and
+    |       | should not be used to name a class, interface or trait
+    |       | or as part of a namespace (T_NAMESPACE)
+    |       | (PHPCompatibility.Keywords.ForbiddenNamesAsDeclared.objectFound)
+----------------------------------------------------------------------
+
+
+FILE: ...ary/Zend/Barcode/Object/Exception/BarcodeValidationException.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 11 | ERROR | 'object' is a soft reserved keyword as of PHP version
+    |       | 7.0 and a reserved keyword as of PHP version 7.2 and
+    |       | should not be used to name a class, interface or trait
+    |       | or as part of a namespace (T_NAMESPACE)
+    |       | (PHPCompatibility.Keywords.ForbiddenNamesAsDeclared.objectFound)
+----------------------------------------------------------------------
+
+
+FILE: ...ZF2/library/Zend/Barcode/Object/Exception/ExceptionInterface.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 11 | ERROR | 'object' is a soft reserved keyword as of PHP version
+    |       | 7.0 and a reserved keyword as of PHP version 7.2 and
+    |       | should not be used to name a class, interface or trait
+    |       | or as part of a namespace (T_NAMESPACE)
+    |       | (PHPCompatibility.Keywords.ForbiddenNamesAsDeclared.objectFound)
+----------------------------------------------------------------------
+
+
+FILE: ...ry/Zend/Barcode/Object/Exception/ExtensionNotLoadedException.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 11 | ERROR | 'object' is a soft reserved keyword as of PHP version
+    |       | 7.0 and a reserved keyword as of PHP version 7.2 and
+    |       | should not be used to name a class, interface or trait
+    |       | or as part of a namespace (T_NAMESPACE)
+    |       | (PHPCompatibility.Keywords.ForbiddenNamesAsDeclared.objectFound)
+----------------------------------------------------------------------
+
+
+FILE: ...brary/Zend/Barcode/Object/Exception/InvalidArgumentException.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 11 | ERROR | 'object' is a soft reserved keyword as of PHP version
+    |       | 7.0 and a reserved keyword as of PHP version 7.2 and
+    |       | should not be used to name a class, interface or trait
+    |       | or as part of a namespace (T_NAMESPACE)
+    |       | (PHPCompatibility.Keywords.ForbiddenNamesAsDeclared.objectFound)
+----------------------------------------------------------------------
+
+
+FILE: ...F2/library/Zend/Barcode/Object/Exception/OutOfRangeException.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 11 | ERROR | 'object' is a soft reserved keyword as of PHP version
+    |       | 7.0 and a reserved keyword as of PHP version 7.2 and
+    |       | should not be used to name a class, interface or trait
+    |       | or as part of a namespace (T_NAMESPACE)
+    |       | (PHPCompatibility.Keywords.ForbiddenNamesAsDeclared.objectFound)
+----------------------------------------------------------------------
+
+
+FILE: ...r/ZF2/library/Zend/Barcode/Object/Exception/RuntimeException.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 11 | ERROR | 'object' is a soft reserved keyword as of PHP version
+    |       | 7.0 and a reserved keyword as of PHP version 7.2 and
+    |       | should not be used to name a class, interface or trait
+    |       | or as part of a namespace (T_NAMESPACE)
+    |       | (PHPCompatibility.Keywords.ForbiddenNamesAsDeclared.objectFound)
+----------------------------------------------------------------------
+
+
+FILE: vendor/ZF2/library/Zend/Barcode/Object/Identcode.php
+----------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+----------------------------------------------------------------------
+ 11 | ERROR | [ ] 'object' is a soft reserved keyword as of PHP
+    |       |     version 7.0 and a reserved keyword as of PHP
+    |       |     version 7.2 and should not be used to name a class,
+    |       |     interface or trait or as part of a namespace
+    |       |     (T_NAMESPACE)
+    |       |     (PHPCompatibility.Keywords.ForbiddenNamesAsDeclared.objectFound)
+ 66 | ERROR | [x] Curly brace syntax for accessing array elements and
+    |       |     string offsets has been deprecated in PHP 7.4 and
+    |       |     removed in PHP 8.0. Found: $text{$i - 1}
+    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------
+
+
+FILE: vendor/ZF2/library/Zend/Barcode/Object/Itf14.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 11 | ERROR | 'object' is a soft reserved keyword as of PHP version
+    |       | 7.0 and a reserved keyword as of PHP version 7.2 and
+    |       | should not be used to name a class, interface or trait
+    |       | or as part of a namespace (T_NAMESPACE)
+    |       | (PHPCompatibility.Keywords.ForbiddenNamesAsDeclared.objectFound)
+----------------------------------------------------------------------
+
+
+FILE: vendor/ZF2/library/Zend/Barcode/Object/Leitcode.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 11 | ERROR | 'object' is a soft reserved keyword as of PHP version
+    |       | 7.0 and a reserved keyword as of PHP version 7.2 and
+    |       | should not be used to name a class, interface or trait
+    |       | or as part of a namespace (T_NAMESPACE)
+    |       | (PHPCompatibility.Keywords.ForbiddenNamesAsDeclared.objectFound)
+----------------------------------------------------------------------
+
+
+FILE: vendor/ZF2/library/Zend/Barcode/Object/ObjectInterface.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 11 | ERROR | 'object' is a soft reserved keyword as of PHP version
+    |       | 7.0 and a reserved keyword as of PHP version 7.2 and
+    |       | should not be used to name a class, interface or trait
+    |       | or as part of a namespace (T_NAMESPACE)
+    |       | (PHPCompatibility.Keywords.ForbiddenNamesAsDeclared.objectFound)
+----------------------------------------------------------------------
+
+
+FILE: vendor/ZF2/library/Zend/Barcode/Object/Planet.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 11 | ERROR | 'object' is a soft reserved keyword as of PHP version
+    |       | 7.0 and a reserved keyword as of PHP version 7.2 and
+    |       | should not be used to name a class, interface or trait
+    |       | or as part of a namespace (T_NAMESPACE)
+    |       | (PHPCompatibility.Keywords.ForbiddenNamesAsDeclared.objectFound)
+----------------------------------------------------------------------
+
+
+FILE: vendor/ZF2/library/Zend/Barcode/Object/Postnet.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 11 | ERROR | 'object' is a soft reserved keyword as of PHP version
+    |       | 7.0 and a reserved keyword as of PHP version 7.2 and
+    |       | should not be used to name a class, interface or trait
+    |       | or as part of a namespace (T_NAMESPACE)
+    |       | (PHPCompatibility.Keywords.ForbiddenNamesAsDeclared.objectFound)
+----------------------------------------------------------------------
+
+
+FILE: vendor/ZF2/library/Zend/Barcode/Object/Royalmail.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 11 | ERROR | 'object' is a soft reserved keyword as of PHP version
+    |       | 7.0 and a reserved keyword as of PHP version 7.2 and
+    |       | should not be used to name a class, interface or trait
+    |       | or as part of a namespace (T_NAMESPACE)
+    |       | (PHPCompatibility.Keywords.ForbiddenNamesAsDeclared.objectFound)
+----------------------------------------------------------------------
+
+
+FILE: vendor/ZF2/library/Zend/Barcode/Object/Upca.php
+----------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+----------------------------------------------------------------------
+  11 | ERROR | [ ] 'object' is a soft reserved keyword as of PHP
+     |       |     version 7.0 and a reserved keyword as of PHP
+     |       |     version 7.2 and should not be used to name a
+     |       |     class, interface or trait or as part of a
+     |       |     namespace (T_NAMESPACE)
+     |       |     (PHPCompatibility.Keywords.ForbiddenNamesAsDeclared.objectFound)
+ 121 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $text{$i}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------
+
+
+FILE: vendor/ZF2/library/Zend/Barcode/Object/Upce.php
+----------------------------------------------------------------------
+FOUND 6 ERRORS AFFECTING 6 LINES
+----------------------------------------------------------------------
+  11 | ERROR | [ ] 'object' is a soft reserved keyword as of PHP
+     |       |     version 7.0 and a reserved keyword as of PHP
+     |       |     version 7.2 and should not be used to name a
+     |       |     class, interface or trait or as part of a
+     |       |     namespace (T_NAMESPACE)
+     |       |     (PHPCompatibility.Keywords.ForbiddenNamesAsDeclared.objectFound)
+  67 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $text{0}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+  68 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $text{0}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 141 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $text{$i}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 200 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $text{0}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 201 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $text{0}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 5 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------
+
+
+FILE: vendor/ZF2/library/Zend/Code/NameInformation.php
+----------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+----------------------------------------------------------------------
+ 89 | ERROR | [x] Curly brace syntax for accessing array elements and
+    |       |     string offsets has been deprecated in PHP 7.4 and
+    |       |     removed in PHP 8.0. Found: $name{0}
+    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 93 | ERROR | [x] Curly brace syntax for accessing array elements and
+    |       |     string offsets has been deprecated in PHP 7.4 and
+    |       |     removed in PHP 8.0. Found: $name{0}
+    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------
+
+
+FILE: vendor/ZF2/library/Zend/Code/Scanner/Util.php
+----------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+----------------------------------------------------------------------
+ 34 | ERROR | [x] Curly brace syntax for accessing array elements and
+    |       |     string offsets has been deprecated in PHP 7.4 and
+    |       |     removed in PHP 8.0. Found: $value{0}
+    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 39 | ERROR | [x] Curly brace syntax for accessing array elements and
+    |       |     string offsets has been deprecated in PHP 7.4 and
+    |       |     removed in PHP 8.0. Found: $value{0}
+    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------
+
+
+FILE: ...ndor/ZF2/library/Zend/Db/Metadata/Object/AbstractTableObject.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 11 | ERROR | 'object' is a soft reserved keyword as of PHP version
+    |       | 7.0 and a reserved keyword as of PHP version 7.2 and
+    |       | should not be used to name a class, interface or trait
+    |       | or as part of a namespace (T_NAMESPACE)
+    |       | (PHPCompatibility.Keywords.ForbiddenNamesAsDeclared.objectFound)
+----------------------------------------------------------------------
+
+
+FILE: vendor/ZF2/library/Zend/Db/Metadata/Object/ColumnObject.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 11 | ERROR | 'object' is a soft reserved keyword as of PHP version
+    |       | 7.0 and a reserved keyword as of PHP version 7.2 and
+    |       | should not be used to name a class, interface or trait
+    |       | or as part of a namespace (T_NAMESPACE)
+    |       | (PHPCompatibility.Keywords.ForbiddenNamesAsDeclared.objectFound)
+----------------------------------------------------------------------
+
+
+FILE: vendor/ZF2/library/Zend/Db/Metadata/Object/ConstraintObject.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 11 | ERROR | 'object' is a soft reserved keyword as of PHP version
+    |       | 7.0 and a reserved keyword as of PHP version 7.2 and
+    |       | should not be used to name a class, interface or trait
+    |       | or as part of a namespace (T_NAMESPACE)
+    |       | (PHPCompatibility.Keywords.ForbiddenNamesAsDeclared.objectFound)
+----------------------------------------------------------------------
+
+
+FILE: vendor/ZF2/library/Zend/Db/Metadata/Object/TableObject.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 11 | ERROR | 'object' is a soft reserved keyword as of PHP version
+    |       | 7.0 and a reserved keyword as of PHP version 7.2 and
+    |       | should not be used to name a class, interface or trait
+    |       | or as part of a namespace (T_NAMESPACE)
+    |       | (PHPCompatibility.Keywords.ForbiddenNamesAsDeclared.objectFound)
+----------------------------------------------------------------------
+
+
+FILE: vendor/ZF2/library/Zend/Db/Metadata/Object/TriggerObject.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 11 | ERROR | 'object' is a soft reserved keyword as of PHP version
+    |       | 7.0 and a reserved keyword as of PHP version 7.2 and
+    |       | should not be used to name a class, interface or trait
+    |       | or as part of a namespace (T_NAMESPACE)
+    |       | (PHPCompatibility.Keywords.ForbiddenNamesAsDeclared.objectFound)
+----------------------------------------------------------------------
+
+
+FILE: vendor/ZF2/library/Zend/Db/Metadata/Object/ViewObject.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 11 | ERROR | 'object' is a soft reserved keyword as of PHP version
+    |       | 7.0 and a reserved keyword as of PHP version 7.2 and
+    |       | should not be used to name a class, interface or trait
+    |       | or as part of a namespace (T_NAMESPACE)
+    |       | (PHPCompatibility.Keywords.ForbiddenNamesAsDeclared.objectFound)
+----------------------------------------------------------------------
+
+
+FILE: vendor/ZF2/library/Zend/Feed/Reader/Reader.php
+----------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+----------------------------------------------------------------------
+ 389 | ERROR | INI directive 'track_errors' is deprecated since PHP
+     |       | 7.2 and removed since PHP 8.0
+     |       | (PHPCompatibility.IniDirectives.RemovedIniDirectives.track_errorsDeprecatedRemoved)
+ 404 | ERROR | The variable '$php_errormsg' is deprecated since PHP
+     |       | 7.2 and removed since PHP 8.0; Use error_get_last()
+     |       | instead
+     |       | (PHPCompatibility.Variables.RemovedPredefinedGlobalVariables.php_errormsgDeprecatedRemoved)
+----------------------------------------------------------------------
+
+
+FILE: vendor/ZF2/library/Zend/Filter/Int.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 17 | ERROR | 'int' is a reserved keyword as of PHP version 7.0 and
+    |       | should not be used to name a class, interface or trait
+    |       | or as part of a namespace (T_CLASS)
+    |       | (PHPCompatibility.Keywords.ForbiddenNamesAsDeclared.intFound)
+----------------------------------------------------------------------
+
+
+FILE: vendor/ZF2/library/Zend/Filter/Null.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 19 | ERROR | 'null' is a reserved keyword as of PHP version 7.0 and
+    |       | should not be used to name a class, interface or trait
+    |       | or as part of a namespace (T_CLASS)
+    |       | (PHPCompatibility.Keywords.ForbiddenNamesAsDeclared.nullFound)
+----------------------------------------------------------------------
+
+
+FILE: vendor/ZF2/library/Zend/Form/Annotation/Object.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 36 | ERROR | 'object' is a soft reserved keyword as of PHP version
+    |       | 7.0 and a reserved keyword as of PHP version 7.2 and
+    |       | should not be used to name a class, interface or trait
+    |       | or as part of a namespace (T_CLASS)
+    |       | (PHPCompatibility.Keywords.ForbiddenNamesAsDeclared.objectFound)
+----------------------------------------------------------------------
+
+
+FILE: vendor/ZF2/library/Zend/I18n/Validator/Float.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 25 | ERROR | 'float' is a reserved keyword as of PHP version 7.0 and
+    |       | should not be used to name a class, interface or trait
+    |       | or as part of a namespace (T_CLASS)
+    |       | (PHPCompatibility.Keywords.ForbiddenNamesAsDeclared.floatFound)
+----------------------------------------------------------------------
+
+
+FILE: vendor/ZF2/library/Zend/I18n/Validator/Int.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 25 | ERROR | 'int' is a reserved keyword as of PHP version 7.0 and
+    |       | should not be used to name a class, interface or trait
+    |       | or as part of a namespace (T_CLASS)
+    |       | (PHPCompatibility.Keywords.ForbiddenNamesAsDeclared.intFound)
+----------------------------------------------------------------------
+
+
+FILE: vendor/ZF2/library/Zend/Json/Decoder.php
+----------------------------------------------------------------------
+FOUND 7 ERRORS AFFECTING 6 LINES
+----------------------------------------------------------------------
+ 310 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $str{$i}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 337 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $str{$i}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 344 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $str{$i}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 415 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $str{$i}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 482 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $chrs{$i}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 540 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $utf16{0}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 540 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $utf16{1}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 7 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------
+
+
+FILE: vendor/ZF2/library/Zend/Json/Encoder.php
+----------------------------------------------------------------------
+FOUND 7 ERRORS AFFECTING 7 LINES
+----------------------------------------------------------------------
+ 558 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $utf8{0}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 559 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $utf8{0}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 560 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $utf8{1}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 565 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $utf8{0}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 566 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $utf8{1}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 567 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $utf8{1}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 568 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $utf8{2}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 7 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------
+
+
+FILE: vendor/ZF2/library/Zend/Ldap/Collection/DefaultIterator.php
+----------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+----------------------------------------------------------------------
+ 205 | ERROR | The "ber_identifier" parameter for function
+     |       | ldap_first_attribute() is removed since PHP 5.2.4
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctionParameters.ldap_first_attribute_ber_identifierRemoved)
+ 241 | ERROR | The "ber_identifier" parameter for function
+     |       | ldap_next_attribute() is removed since PHP 5.2.4
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctionParameters.ldap_next_attribute_ber_identifierRemoved)
+----------------------------------------------------------------------
+
+
+FILE: vendor/ZF2/library/Zend/Ldap/Converter/Converter.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 67 | ERROR | preg_replace() - /e modifier is deprecated since PHP
+    |       | 5.5 and removed since PHP 7.0
+    |       | (PHPCompatibility.ParameterValues.RemovedPCREModifiers.Removed)
+----------------------------------------------------------------------
+
+
+FILE: vendor/ZF2/library/Zend/Ldap/Ldap.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 930 | ERROR | Function ldap_sort() is deprecated since PHP 7.0 and
+     |       | removed since PHP 8.0
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.ldap_sortDeprecatedRemoved)
+----------------------------------------------------------------------
+
+
+FILE: vendor/ZF2/library/Zend/Log/Writer/Null.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 18 | ERROR | 'null' is a reserved keyword as of PHP version 7.0 and
+    |       | should not be used to name a class, interface or trait
+    |       | or as part of a namespace (T_CLASS)
+    |       | (PHPCompatibility.Keywords.ForbiddenNamesAsDeclared.nullFound)
+----------------------------------------------------------------------
+
+
+FILE: vendor/ZF2/library/Zend/Paginator/Adapter/Null.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 17 | ERROR | 'null' is a reserved keyword as of PHP version 7.0 and
+    |       | should not be used to name a class, interface or trait
+    |       | or as part of a namespace (T_CLASS)
+    |       | (PHPCompatibility.Keywords.ForbiddenNamesAsDeclared.nullFound)
+----------------------------------------------------------------------
+
+
+FILE: vendor/ZF2/library/Zend/Serializer/Adapter/Wddx.php
+----------------------------------------------------------------------
+FOUND 6 ERRORS AFFECTING 3 LINES
+----------------------------------------------------------------------
+  89 | ERROR | Extension 'wddx' is removed since PHP 7.4; Use
+     |       | pecl/wddx instead
+     |       | (PHPCompatibility.Extensions.RemovedExtensions.wddxRemoved)
+  89 | ERROR | Function wddx_serialize_value() is removed since PHP
+     |       | 7.4
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.wddx_serialize_valueRemoved)
+  91 | ERROR | Extension 'wddx' is removed since PHP 7.4; Use
+     |       | pecl/wddx instead
+     |       | (PHPCompatibility.Extensions.RemovedExtensions.wddxRemoved)
+  91 | ERROR | Function wddx_serialize_value() is removed since PHP
+     |       | 7.4
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.wddx_serialize_valueRemoved)
+ 112 | ERROR | Extension 'wddx' is removed since PHP 7.4; Use
+     |       | pecl/wddx instead
+     |       | (PHPCompatibility.Extensions.RemovedExtensions.wddxRemoved)
+ 112 | ERROR | Function wddx_deserialize() is removed since PHP
+     |       | 7.4
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.wddx_deserializeRemoved)
+----------------------------------------------------------------------
+
+
+FILE: vendor/ZF2/library/Zend/Session/Config/SessionConfig.php
+----------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+----------------------------------------------------------------------
+ 208 | ERROR | INI directive 'session.hash_function' is removed since
+     |       | PHP 7.1
+     |       | (PHPCompatibility.IniDirectives.RemovedIniDirectives.session_hash_functionRemoved)
+ 229 | ERROR | INI directive 'session.hash_bits_per_character' is
+     |       | removed since PHP 7.1
+     |       | (PHPCompatibility.IniDirectives.RemovedIniDirectives.session_hash_bits_per_characterRemoved)
+----------------------------------------------------------------------
+
+
+FILE: vendor/ZF2/library/Zend/Validator/Isbn.php
+----------------------------------------------------------------------
+FOUND 3 ERRORS AFFECTING 3 LINES
+----------------------------------------------------------------------
+ 113 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $isbn10{$i}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 131 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $isbn13{$i}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 133 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $isbn13{$i}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 3 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------
+
+
+FILE: vendor/ZF2/library/Zend/View/Helper/Navigation/Sitemap.php
+----------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+----------------------------------------------------------------------
+ 261 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $href{0}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 264 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $href{0}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------
+
+
+FILE: vendor/ZF2/library/Zend/XmlRpc/AbstractValue.php
+----------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+----------------------------------------------------------------------
+ 445 | ERROR | Function each() is deprecated since PHP 7.2 and
+     |       | removed since PHP 8.0; Use a foreach loop or
+     |       | ArrayIterator instead
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)
+ 450 | ERROR | Function each() is deprecated since PHP 7.2 and
+     |       | removed since PHP 8.0; Use a foreach loop or
+     |       | ArrayIterator instead
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)
+----------------------------------------------------------------------
+
+
+FILE: vendor/ZF2/library/Zend/XmlRpc/Value/String.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 17 | ERROR | 'string' is a reserved keyword as of PHP version 7.0
+    |       | and should not be used to name a class, interface or
+    |       | trait or as part of a namespace (T_CLASS)
+    |       | (PHPCompatibility.Keywords.ForbiddenNamesAsDeclared.stringFound)
+----------------------------------------------------------------------
