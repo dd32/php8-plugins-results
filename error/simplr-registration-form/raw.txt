@@ -35,47 +35,62 @@ No syntax errors detected in simplr-registration-form/simplr-registration-form/v
 
 
 [1mFILE: lib/ajax.php[0m
---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 4 ERRORS AFFECTING 3 LINES[0m
---------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 16 | [31mERROR[0m | [1m"$this" can no longer be used in a plain function or method since PHP 7.1.[0m
+----------------------------------------------------------------------
+ 16 | [31mERROR[0m | [1m"$this" can no longer be used in a plain function or
+    |       | method since PHP 7.1.[0m
     |       | (PHPCompatibility.Variables.ForbiddenThisUseContexts.OutsideObjectContext)
- 16 | [31mERROR[0m | [1m"$this" can no longer be used in a plain function or method since PHP 7.1.[0m
+ 16 | [31mERROR[0m | [1m"$this" can no longer be used in a plain function or
+    |       | method since PHP 7.1.[0m
     |       | (PHPCompatibility.Variables.ForbiddenThisUseContexts.OutsideObjectContext)
- 18 | [31mERROR[0m | [1m"$this" can no longer be used in a plain function or method since PHP 7.1.[0m
+ 18 | [31mERROR[0m | [1m"$this" can no longer be used in a plain function or
+    |       | method since PHP 7.1.[0m
     |       | (PHPCompatibility.Variables.ForbiddenThisUseContexts.OutsideObjectContext)
- 19 | [31mERROR[0m | [1m"$this" can no longer be used in a plain function or method since PHP 7.1.[0m
+ 19 | [31mERROR[0m | [1m"$this" can no longer be used in a plain function or
+    |       | method since PHP 7.1.[0m
     |       | (PHPCompatibility.Variables.ForbiddenThisUseContexts.OutsideObjectContext)
---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 [1mFILE: lib/base_facebook.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 994 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse order to implode has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first
-     |       | parameter and $pieces the second[0m (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
+ 994 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse
+     |       | order to implode has been deprecated since PHP 7.4 and
+     |       | is removed since PHP 8.0; $glue should be the first
+     |       | parameter and $pieces the second[0m
+     |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
+----------------------------------------------------------------------
 
 
 [1mFILE: lib/profile.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 72 | [31mERROR[0m | [1mIndirect access to variables, properties and methods will be evaluated strictly in left-to-right order since PHP 7.0. Use curly braces to remove ambiguity.[0m
+----------------------------------------------------------------------
+ 72 | [31mERROR[0m | [1mIndirect access to variables, properties and methods
+    |       | will be evaluated strictly in left-to-right order since
+    |       | PHP 7.0. Use curly braces to remove ambiguity.[0m
     |       | (PHPCompatibility.Variables.NewUniformVariableSyntax.Found)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 [1mFILE: simplr_form_functions.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 2 ERRORS AFFECTING 2 LINES[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 1221 | [31mERROR[0m | [1mThe "result" parameter for function parse_str() is missing. Passing this parameter is no longer optional. The optional nature of the parameter is deprecated since
-      |       | PHP 7.2 and removed since PHP 8.0[0m (PHPCompatibility.FunctionUse.OptionalToRequiredFunctionParameters.parse_str_resultSoftRequiredHardRequired)
- 1480 | [31mERROR[0m | [1mFunction create_function() is deprecated since PHP 7.2 and removed since PHP 8.0; Use an anonymous function instead[0m
+----------------------------------------------------------------------
+ 1221 | [31mERROR[0m | [1mThe "result" parameter for function parse_str() is
+      |       | missing. Passing this parameter is no longer
+      |       | optional. The optional nature of the parameter is
+      |       | deprecated since PHP 7.2 and removed since PHP
+      |       | 8.0[0m
+      |       | (PHPCompatibility.FunctionUse.OptionalToRequiredFunctionParameters.parse_str_resultSoftRequiredHardRequired)
+ 1480 | [31mERROR[0m | [1mFunction create_function() is deprecated since PHP
+      |       | 7.2 and removed since PHP 8.0; Use an anonymous
+      |       | function instead[0m
       |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
-Time: 790ms; Memory: 22MB
-::error::FILE: lib/ajax.php%0A--------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 4 ERRORS AFFECTING 3 LINES%0A--------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 16 | ERROR | "$this" can no longer be used in a plain function or method since PHP 7.1.%0A    |       | (PHPCompatibility.Variables.ForbiddenThisUseContexts.OutsideObjectContext)%0A 16 | ERROR | "$this" can no longer be used in a plain function or method since PHP 7.1.%0A    |       | (PHPCompatibility.Variables.ForbiddenThisUseContexts.OutsideObjectContext)%0A 18 | ERROR | "$this" can no longer be used in a plain function or method since PHP 7.1.%0A    |       | (PHPCompatibility.Variables.ForbiddenThisUseContexts.OutsideObjectContext)%0A 19 | ERROR | "$this" can no longer be used in a plain function or method since PHP 7.1.%0A    |       | (PHPCompatibility.Variables.ForbiddenThisUseContexts.OutsideObjectContext)%0A--------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: lib/base_facebook.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 994 | ERROR | Passing the $glue and $pieces parameters in reverse order to implode has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first%0A     |       | parameter and $pieces the second (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: lib/profile.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 72 | ERROR | Indirect access to variables, properties and methods will be evaluated strictly in left-to-right order since PHP 7.0. Use curly braces to remove ambiguity.%0A    |       | (PHPCompatibility.Variables.NewUniformVariableSyntax.Found)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: simplr_form_functions.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 1221 | ERROR | The "result" parameter for function parse_str() is missing. Passing this parameter is no longer optional. The optional nature of the parameter is deprecated since%0A      |       | PHP 7.2 and removed since PHP 8.0 (PHPCompatibility.FunctionUse.OptionalToRequiredFunctionParameters.parse_str_resultSoftRequiredHardRequired)%0A 1480 | ERROR | Function create_function() is deprecated since PHP 7.2 and removed since PHP 8.0; Use an anonymous function instead%0A      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
+Time: 766ms; Memory: 22MB
+::error::FILE: lib/ajax.php%0A----------------------------------------------------------------------%0AFOUND 4 ERRORS AFFECTING 3 LINES%0A----------------------------------------------------------------------%0A 16 | ERROR | "$this" can no longer be used in a plain function or%0A    |       | method since PHP 7.1.%0A    |       | (PHPCompatibility.Variables.ForbiddenThisUseContexts.OutsideObjectContext)%0A 16 | ERROR | "$this" can no longer be used in a plain function or%0A    |       | method since PHP 7.1.%0A    |       | (PHPCompatibility.Variables.ForbiddenThisUseContexts.OutsideObjectContext)%0A 18 | ERROR | "$this" can no longer be used in a plain function or%0A    |       | method since PHP 7.1.%0A    |       | (PHPCompatibility.Variables.ForbiddenThisUseContexts.OutsideObjectContext)%0A 19 | ERROR | "$this" can no longer be used in a plain function or%0A    |       | method since PHP 7.1.%0A    |       | (PHPCompatibility.Variables.ForbiddenThisUseContexts.OutsideObjectContext)%0A----------------------------------------------------------------------%0A%0A%0AFILE: lib/base_facebook.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 994 | ERROR | Passing the $glue and $pieces parameters in reverse%0A     |       | order to implode has been deprecated since PHP 7.4 and%0A     |       | is removed since PHP 8.0; $glue should be the first%0A     |       | parameter and $pieces the second%0A     |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A----------------------------------------------------------------------%0A%0A%0AFILE: lib/profile.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 72 | ERROR | Indirect access to variables, properties and methods%0A    |       | will be evaluated strictly in left-to-right order since%0A    |       | PHP 7.0. Use curly braces to remove ambiguity.%0A    |       | (PHPCompatibility.Variables.NewUniformVariableSyntax.Found)%0A----------------------------------------------------------------------%0A%0A%0AFILE: simplr_form_functions.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A----------------------------------------------------------------------%0A 1221 | ERROR | The "result" parameter for function parse_str() is%0A      |       | missing. Passing this parameter is no longer%0A      |       | optional. The optional nature of the parameter is%0A      |       | deprecated since PHP 7.2 and removed since PHP%0A      |       | 8.0%0A      |       | (PHPCompatibility.FunctionUse.OptionalToRequiredFunctionParameters.parse_str_resultSoftRequiredHardRequired)%0A 1480 | ERROR | Function create_function() is deprecated since PHP%0A      |       | 7.2 and removed since PHP 8.0; Use an anonymous%0A      |       | function instead%0A      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)%0A----------------------------------------------------------------------%0A
