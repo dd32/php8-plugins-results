@@ -1,0 +1,55 @@
+::warning::Plugin: https://wordpress.org/plugins/active-directory-authentication-integration/%0ATrac: https://plugins.trac.wordpress.org/browser/active-directory-authentication-integration/
+No syntax errors detected in active-directory-authentication-integration/active-directory-authentication-integration/active-directory-authentication-integration.php
+
+Fatal error: 'continue' not in the 'loop' or 'switch' context in active-directory-authentication-integration/active-directory-authentication-integration/class-active-directory-authentication-integration.php on line 708
+Errors parsing active-directory-authentication-integration/active-directory-authentication-integration/class-active-directory-authentication-integration.php
+No syntax errors detected in active-directory-authentication-integration/active-directory-authentication-integration/class-wpmn_active-directory-authentication-integration.php
+No syntax errors detected in active-directory-authentication-integration/active-directory-authentication-integration/inc/active-directory-authentication-integration.default-options.php
+No syntax errors detected in active-directory-authentication-integration/active-directory-authentication-integration/inc/adLDAP-extended.php
+
+Fatal error: Array and string offset access syntax with curly braces is no longer supported in active-directory-authentication-integration/active-directory-authentication-integration/inc/adLDAP.php on line 2267
+Errors parsing active-directory-authentication-integration/active-directory-authentication-integration/inc/adLDAP.php
+No syntax errors detected in active-directory-authentication-integration/active-directory-authentication-integration/inc/class-adauthint_option.php
+No syntax errors detected in active-directory-authentication-integration/active-directory-authentication-integration/inc/class-adint_original_plugin.php
+No syntax errors detected in active-directory-authentication-integration/active-directory-authentication-integration/inc/constants-active-directory-authentication-integration.php
+No syntax errors detected in active-directory-authentication-integration/active-directory-authentication-integration/inc/delete-options.php
+No syntax errors detected in active-directory-authentication-integration/active-directory-authentication-integration/inc/function-is_multinetwork.php
+No syntax errors detected in active-directory-authentication-integration/active-directory-authentication-integration/inc/multi_network_activation.php
+::error::%0Aclass-active-directory-authentication-integration.php%0A  Fatal error: 'continue' not in the 'loop' or 'switch' context on line 708%0A%0Ainc/adLDAP.php%0A  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 2267
+.[31mE[0m...[31mE[0m.[31mE[0m.... 12 / 12 (100%)
+
+
+
+[1mFILE: class-active-directory-authentication-integration.php[0m
+----------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 708 | [31mERROR[0m | [1mUsing 'continue' outside of a loop or switch structure
+     |       | is invalid and will throw a fatal error since PHP
+     |       | 7.0[0m
+     |       | (PHPCompatibility.ControlStructures.ForbiddenBreakContinueOutsideLoop.FatalError)
+----------------------------------------------------------------------
+
+
+[1mFILE: inc/adLDAP.php[0m
+----------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 2282 | [31mERROR[0m | [1mpreg_replace() - /e modifier is deprecated since PHP
+      |       | 5.5 and removed since PHP 7.0[0m
+      |       | (PHPCompatibility.ParameterValues.RemovedPCREModifiers.Removed)
+----------------------------------------------------------------------
+
+
+[1mFILE: inc/class-adint_original_plugin.php[0m
+----------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 847 | [31mERROR[0m | [1mFunction split() is deprecated since PHP 5.3 and
+     |       | removed since PHP 7.0; Use preg_split(), explode() or
+     |       | str_split() instead[0m
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.splitDeprecatedRemoved)
+----------------------------------------------------------------------
+
+Time: 831ms; Memory: 26MB
+::error::FILE: class-active-directory-authentication-integration.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 708 | ERROR | Using 'continue' outside of a loop or switch structure%0A     |       | is invalid and will throw a fatal error since PHP%0A     |       | 7.0%0A     |       | (PHPCompatibility.ControlStructures.ForbiddenBreakContinueOutsideLoop.FatalError)%0A----------------------------------------------------------------------%0A%0A%0AFILE: inc/adLDAP.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 2282 | ERROR | preg_replace() - /e modifier is deprecated since PHP%0A      |       | 5.5 and removed since PHP 7.0%0A      |       | (PHPCompatibility.ParameterValues.RemovedPCREModifiers.Removed)%0A----------------------------------------------------------------------%0A%0A%0AFILE: inc/class-adint_original_plugin.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 847 | ERROR | Function split() is deprecated since PHP 5.3 and%0A     |       | removed since PHP 7.0; Use preg_split(), explode() or%0A     |       | str_split() instead%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.splitDeprecatedRemoved)%0A----------------------------------------------------------------------%0A

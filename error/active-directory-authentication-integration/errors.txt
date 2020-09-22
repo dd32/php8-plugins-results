@@ -1,0 +1,36 @@
+
+class-active-directory-authentication-integration.php
+  Fatal error: 'continue' not in the 'loop' or 'switch' context on line 708
+
+inc/adLDAP.php
+  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 2267
+FILE: class-active-directory-authentication-integration.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 708 | ERROR | Using 'continue' outside of a loop or switch structure
+     |       | is invalid and will throw a fatal error since PHP
+     |       | 7.0
+     |       | (PHPCompatibility.ControlStructures.ForbiddenBreakContinueOutsideLoop.FatalError)
+----------------------------------------------------------------------
+
+
+FILE: inc/adLDAP.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 2282 | ERROR | preg_replace() - /e modifier is deprecated since PHP
+      |       | 5.5 and removed since PHP 7.0
+      |       | (PHPCompatibility.ParameterValues.RemovedPCREModifiers.Removed)
+----------------------------------------------------------------------
+
+
+FILE: inc/class-adint_original_plugin.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 847 | ERROR | Function split() is deprecated since PHP 5.3 and
+     |       | removed since PHP 7.0; Use preg_split(), explode() or
+     |       | str_split() instead
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.splitDeprecatedRemoved)
+----------------------------------------------------------------------
