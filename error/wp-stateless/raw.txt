@@ -752,7 +752,6 @@ No syntax errors detected in wp-stateless/wp-stateless/vendor/wpmetabox/meta-box
 No syntax errors detected in wp-stateless/wp-stateless/vendor/wpmetabox/meta-box/meta-box.php
 No syntax errors detected in wp-stateless/wp-stateless/wp-stateless-media.php
 ::error::%0Alib/Google/vendor/google/cloud-core/src/Batch/InMemoryConfigStorage.php%0A  Warning: The magic method Google\Cloud\Core\Batch\InMemoryConfigStorage::__sleep() must have public visibility on line 73%0A  Warning: The magic method Google\Cloud\Core\Batch\InMemoryConfigStorage::__wakeup() must have public visibility on line 80
-No syntax errors detected in wp-stateless/wp-stateless/wp-stateless-media.php
 ............................................................  60 / 693 (9%)
 ............................................................ 120 / 693 (17%)
 ............................................................ 180 / 693 (26%)
@@ -768,22 +767,24 @@ No syntax errors detected in wp-stateless/wp-stateless/wp-stateless-media.php
 
 
 
-[1mFILE: lib/Google/vendor/google/cloud-core/src/Batch/InMemoryConfigStorage.php[0m
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[1mFILE: ...gle/vendor/google/cloud-core/src/Batch/InMemoryConfigStorage.php[0m
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 73 | [31mERROR[0m | [1mVisibility for magic method __sleep must be public. Found: private[0m
+----------------------------------------------------------------------
+ 73 | [31mERROR[0m | [1mVisibility for magic method __sleep must be public.
+    |       | Found: private[0m
     |       | (PHPCompatibility.FunctionDeclarations.NonStaticMagicMethods.__sleepMethodVisibility)
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 [1mFILE: vendor/udx/lib-utility/lib/class-utility.php[0m
-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
-------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 511 | [31mERROR[0m | [1mpreg_replace() - /e modifier is deprecated since PHP 5.5 and removed since PHP 7.0[0m
+----------------------------------------------------------------------
+ 511 | [31mERROR[0m | [1mpreg_replace() - /e modifier is deprecated since PHP
+     |       | 5.5 and removed since PHP 7.0[0m
      |       | (PHPCompatibility.ParameterValues.RemovedPCREModifiers.Removed)
-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
-Time: 10.43 secs; Memory: 34MB
-::error::FILE: lib/Google/vendor/google/cloud-core/src/Batch/InMemoryConfigStorage.php%0A-----------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-----------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 73 | ERROR | Visibility for magic method __sleep must be public. Found: private%0A    |       | (PHPCompatibility.FunctionDeclarations.NonStaticMagicMethods.__sleepMethodVisibility)%0A-----------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: vendor/udx/lib-utility/lib/class-utility.php%0A------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 511 | ERROR | preg_replace() - /e modifier is deprecated since PHP 5.5 and removed since PHP 7.0%0A     |       | (PHPCompatibility.ParameterValues.RemovedPCREModifiers.Removed)%0A------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
+Time: 10.58 secs; Memory: 34MB
+::error::FILE: ...gle/vendor/google/cloud-core/src/Batch/InMemoryConfigStorage.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 73 | ERROR | Visibility for magic method __sleep must be public.%0A    |       | Found: private%0A    |       | (PHPCompatibility.FunctionDeclarations.NonStaticMagicMethods.__sleepMethodVisibility)%0A----------------------------------------------------------------------%0A%0A%0AFILE: vendor/udx/lib-utility/lib/class-utility.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 511 | ERROR | preg_replace() - /e modifier is deprecated since PHP%0A     |       | 5.5 and removed since PHP 7.0%0A     |       | (PHPCompatibility.ParameterValues.RemovedPCREModifiers.Removed)%0A----------------------------------------------------------------------%0A

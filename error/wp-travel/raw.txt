@@ -61,6 +61,8 @@ No syntax errors detected in wp-travel/wp-travel/inc/admin/views/tabs/tab-conten
 No syntax errors detected in wp-travel/wp-travel/inc/admin/views/tabs/tab-contents/itineraries/misc-options.php
 No syntax errors detected in wp-travel/wp-travel/inc/admin/views/tabs/tab-contents/itineraries/price.php
 No syntax errors detected in wp-travel/wp-travel/inc/admin/views/tabs/tab-contents/itineraries/tabs.php
+
+Fatal error: Unparenthesized `a ? b : c ? d : e` is not supported. Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)` in wp-travel/wp-travel/inc/admin/views/tabs/tab-contents/itineraries/trip-facts.php on line 229
 Errors parsing wp-travel/wp-travel/inc/admin/views/tabs/tab-contents/itineraries/trip-facts.php
 No syntax errors detected in wp-travel/wp-travel/inc/admin/views/tabs/tab-contents/itineraries/trip-includes.php
 No syntax errors detected in wp-travel/wp-travel/inc/admin/views/tabs/tab-contents/settings/account-options-global.php
@@ -209,8 +211,7 @@ No syntax errors detected in wp-travel/wp-travel/upgrade/404.php
 No syntax errors detected in wp-travel/wp-travel/upgrade/update-121.php
 No syntax errors detected in wp-travel/wp-travel/upgrade/update-137.php
 No syntax errors detected in wp-travel/wp-travel/wp-travel.php
-::error::%0Ainc/admin/views/tabs/tab-contents/itineraries/trip-facts.php
-No syntax errors detected in wp-travel/wp-travel/wp-travel.php
+::error::%0Ainc/admin/views/tabs/tab-contents/itineraries/trip-facts.php%0A  Fatal error: Unparenthesized `a ? b : c ? d : e` is not supported.%0A      Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)`%0A      on line 229
 ............................................................  60 / 210 (29%)
 ..[31mE[0m......................................................... 120 / 210 (57%)
 .......................[31mE[0m.................................... 180 / 210 (86%)
@@ -219,21 +220,26 @@ No syntax errors detected in wp-travel/wp-travel/wp-travel.php
 
 
 [1mFILE: inc/admin/views/tabs/tab-contents/itineraries/trip-facts.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 229 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has been deprecated in PHP 7.4 and removed in PHP 8.0. Multiple consecutive ternaries detected. Use parenthesis to
-     |       | clarify the order in which the operations should be executed[0m (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
+ 229 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has
+     |       | been deprecated in PHP 7.4 and removed in PHP 8.0.
+     |       | Multiple consecutive ternaries detected. Use
+     |       | parenthesis to clarify the order in which the
+     |       | operations should be executed[0m
+     |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
+----------------------------------------------------------------------
 
 
 [1mFILE: inc/gateways/standard-paypal/php-paypal-ipn/IPNListener.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 329 | [31mERROR[0m | [1mFunction get_magic_quotes_gpc() is deprecated since PHP 7.4 and removed since PHP 8.0[0m
+----------------------------------------------------------------------
+ 329 | [31mERROR[0m | [1mFunction get_magic_quotes_gpc() is deprecated since
+     |       | PHP 7.4 and removed since PHP 8.0[0m
      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_gpcDeprecatedRemoved)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
-Time: 5.27 secs; Memory: 44.01MB
-::error::FILE: inc/admin/views/tabs/tab-contents/itineraries/trip-facts.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 229 | ERROR | The left-associativity of the ternary operator has been deprecated in PHP 7.4 and removed in PHP 8.0. Multiple consecutive ternaries detected. Use parenthesis to%0A     |       | clarify the order in which the operations should be executed (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: inc/gateways/standard-paypal/php-paypal-ipn/IPNListener.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 329 | ERROR | Function get_magic_quotes_gpc() is deprecated since PHP 7.4 and removed since PHP 8.0%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_gpcDeprecatedRemoved)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
+Time: 5.3 secs; Memory: 44.01MB
+::error::FILE: inc/admin/views/tabs/tab-contents/itineraries/trip-facts.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 229 | ERROR | The left-associativity of the ternary operator has%0A     |       | been deprecated in PHP 7.4 and removed in PHP 8.0.%0A     |       | Multiple consecutive ternaries detected. Use%0A     |       | parenthesis to clarify the order in which the%0A     |       | operations should be executed%0A     |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A----------------------------------------------------------------------%0A%0A%0AFILE: inc/gateways/standard-paypal/php-paypal-ipn/IPNListener.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 329 | ERROR | Function get_magic_quotes_gpc() is deprecated since%0A     |       | PHP 7.4 and removed since PHP 8.0%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_gpcDeprecatedRemoved)%0A----------------------------------------------------------------------%0A
