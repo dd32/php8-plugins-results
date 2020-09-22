@@ -1,0 +1,66 @@
+::warning::Plugin: https://wordpress.org/plugins/wp-meetup-activity/%0ATrac: https://plugins.trac.wordpress.org/browser/wp-meetup-activity/
+No syntax errors detected in wp-meetup-activity/wp-meetup-activity/facebook-sdk/base_facebook.php
+No syntax errors detected in wp-meetup-activity/wp-meetup-activity/facebook-sdk/class-facebook-wp.php
+No syntax errors detected in wp-meetup-activity/wp-meetup-activity/facebook-sdk/facebook.php
+No syntax errors detected in wp-meetup-activity/wp-meetup-activity/meetup_api/MeetupApiRequest.class.php
+No syntax errors detected in wp-meetup-activity/wp-meetup-activity/meetup_api/MeetupApiResponse.class.php
+No syntax errors detected in wp-meetup-activity/wp-meetup-activity/meetup_api/MeetupCheckins.class.php
+No syntax errors detected in wp-meetup-activity/wp-meetup-activity/meetup_api/MeetupConnection.class.php
+No syntax errors detected in wp-meetup-activity/wp-meetup-activity/meetup_api/MeetupEvents.class.php
+No syntax errors detected in wp-meetup-activity/wp-meetup-activity/meetup_api/MeetupExceptions.class.php
+No syntax errors detected in wp-meetup-activity/wp-meetup-activity/meetup_api/MeetupFeeds.class.php
+No syntax errors detected in wp-meetup-activity/wp-meetup-activity/meetup_api/MeetupGroups.class.php
+No syntax errors detected in wp-meetup-activity/wp-meetup-activity/meetup_api/MeetupMembers.class.php
+No syntax errors detected in wp-meetup-activity/wp-meetup-activity/meetup_api/MeetupOAuth2Helper.class.php
+No syntax errors detected in wp-meetup-activity/wp-meetup-activity/meetup_api/MeetupPhotos.class.php
+No syntax errors detected in wp-meetup-activity/wp-meetup-activity/meetup_api/Meetup.php
+No syntax errors detected in wp-meetup-activity/wp-meetup-activity/meetup_api/MeetupRsvps.class.php
+No syntax errors detected in wp-meetup-activity/wp-meetup-activity/meetup_api/MeetupTopics.class.php
+No syntax errors detected in wp-meetup-activity/wp-meetup-activity/meetup_api/MeetupVenues.class.php
+No syntax errors detected in wp-meetup-activity/wp-meetup-activity/wp-meetup-activity.php
+No syntax errors detected in wp-meetup-activity/wp-meetup-activity/wp-meetup-activity-widgets.php
+[31mE[0m.................[31mE[0m[31mE[0m 20 / 20 (100%)
+
+
+
+[1mFILE: facebook-sdk/base_facebook.php[0m
+----------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 1087 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse
+      |       | order to implode has been deprecated since PHP 7.4
+      |       | and is removed since PHP 8.0; $glue should be the
+      |       | first parameter and $pieces the second[0m
+      |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
+----------------------------------------------------------------------
+
+
+[1mFILE: wp-meetup-activity.php[0m
+----------------------------------------------------------------------
+[1mFOUND 2 ERRORS AFFECTING 2 LINES[0m
+----------------------------------------------------------------------
+ 36 | [31mERROR[0m | [1mFunction create_function() is deprecated since PHP 7.2
+    |       | and removed since PHP 8.0; Use an anonymous function
+    |       | instead[0m
+    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
+ 37 | [31mERROR[0m | [1mFunction create_function() is deprecated since PHP 7.2
+    |       | and removed since PHP 8.0; Use an anonymous function
+    |       | instead[0m
+    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
+----------------------------------------------------------------------
+
+
+[1mFILE: wp-meetup-activity-widgets.php[0m
+----------------------------------------------------------------------
+[1mFOUND 2 ERRORS AFFECTING 2 LINES[0m
+----------------------------------------------------------------------
+  22 | [31mERROR[0m | [1mDeclaration of a PHP4 style class constructor is
+     |       | deprecated since PHP 7.0 and removed since PHP 8.0[0m
+     |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+ 119 | [31mERROR[0m | [1mDeclaration of a PHP4 style class constructor is
+     |       | deprecated since PHP 7.0 and removed since PHP 8.0[0m
+     |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+----------------------------------------------------------------------
+
+Time: 371ms; Memory: 16MB
+::error::FILE: facebook-sdk/base_facebook.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 1087 | ERROR | Passing the $glue and $pieces parameters in reverse%0A      |       | order to implode has been deprecated since PHP 7.4%0A      |       | and is removed since PHP 8.0; $glue should be the%0A      |       | first parameter and $pieces the second%0A      |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A----------------------------------------------------------------------%0A%0A%0AFILE: wp-meetup-activity.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A----------------------------------------------------------------------%0A 36 | ERROR | Function create_function() is deprecated since PHP 7.2%0A    |       | and removed since PHP 8.0; Use an anonymous function%0A    |       | instead%0A    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)%0A 37 | ERROR | Function create_function() is deprecated since PHP 7.2%0A    |       | and removed since PHP 8.0; Use an anonymous function%0A    |       | instead%0A    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)%0A----------------------------------------------------------------------%0A%0A%0AFILE: wp-meetup-activity-widgets.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A----------------------------------------------------------------------%0A  22 | ERROR | Declaration of a PHP4 style class constructor is%0A     |       | deprecated since PHP 7.0 and removed since PHP 8.0%0A     |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)%0A 119 | ERROR | Declaration of a PHP4 style class constructor is%0A     |       | deprecated since PHP 7.0 and removed since PHP 8.0%0A     |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)%0A----------------------------------------------------------------------%0A
