@@ -1,0 +1,150 @@
+::warning::Plugin: https://wordpress.org/plugins/wp-dreamlists/%0ATrac: https://plugins.trac.wordpress.org/browser/wp-dreamlists/
+
+Fatal error: Cannot re-assign auto-global variable _POST in wp-dreamlists/wp-dreamlists/backend_interface.php on line 317
+Errors parsing wp-dreamlists/wp-dreamlists/backend_interface.php
+No syntax errors detected in wp-dreamlists/wp-dreamlists/dhssubs.php
+No syntax errors detected in wp-dreamlists/wp-dreamlists/dreamhost_api.class.php
+No syntax errors detected in wp-dreamlists/wp-dreamlists/dreamhost_subscribers.php
+No syntax errors detected in wp-dreamlists/wp-dreamlists/frontend_interface.php
+No syntax errors detected in wp-dreamlists/wp-dreamlists/mailer/htmlMimeMail.php
+No syntax errors detected in wp-dreamlists/wp-dreamlists/mailer/mailer.php
+No syntax errors detected in wp-dreamlists/wp-dreamlists/mailer/mimePart.php
+No syntax errors detected in wp-dreamlists/wp-dreamlists/mailer/rfc822.php
+No syntax errors detected in wp-dreamlists/wp-dreamlists/split_page_results.php
+No syntax errors detected in wp-dreamlists/wp-dreamlists/templates/frontend.tpl.php
+No syntax errors detected in wp-dreamlists/wp-dreamlists/templates/subscribers_install.tpl.php
+No syntax errors detected in wp-dreamlists/wp-dreamlists/templates/subscribers_list.tpl.php
+No syntax errors detected in wp-dreamlists/wp-dreamlists/templates/subscribers_mails_control.tpl.php
+No syntax errors detected in wp-dreamlists/wp-dreamlists/templates/subscribers_send_message.tpl.php
+::error::%0Abackend_interface.php%0A  Fatal error: Cannot re-assign auto-global variable _POST on line 317
+[31mE[0m...[31mE[0m[31mE[0m.[31mE[0m[31mE[0m[31mE[0m..... 15 / 15 (100%)
+
+
+
+[1mFILE: backend_interface.php[0m
+----------------------------------------------------------------------
+[1mFOUND 4 ERRORS AFFECTING 3 LINES[0m
+----------------------------------------------------------------------
+ 215 | [31mERROR[0m | [1mpreg_replace() - /e modifier is deprecated since PHP
+     |       | 5.5 and removed since PHP 7.0[0m
+     |       | (PHPCompatibility.ParameterValues.RemovedPCREModifiers.Removed)
+ 317 | [31mERROR[0m | [1mParameter shadowing super global ($_POST) causes a
+     |       | fatal error since PHP 5.4[0m
+     |       | (PHPCompatibility.FunctionDeclarations.ForbiddenParameterShadowSuperGlobals._postFound)
+ 322 | [31mERROR[0m | [1mExtension 'ereg' is deprecated since PHP 5.3 and
+     |       | removed since PHP 7.0; Use pcre instead[0m
+     |       | (PHPCompatibility.Extensions.RemovedExtensions.eregDeprecatedRemoved)
+ 322 | [31mERROR[0m | [1mFunction ereg() is deprecated since PHP 5.3 and
+     |       | removed since PHP 7.0; Use preg_match() instead[0m
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eregDeprecatedRemoved)
+----------------------------------------------------------------------
+
+
+[1mFILE: frontend_interface.php[0m
+----------------------------------------------------------------------
+[1mFOUND 10 ERRORS AFFECTING 5 LINES[0m
+----------------------------------------------------------------------
+ 30 | [31mERROR[0m | [1mExtension 'ereg' is deprecated since PHP 5.3 and
+    |       | removed since PHP 7.0; Use pcre instead[0m
+    |       | (PHPCompatibility.Extensions.RemovedExtensions.eregDeprecatedRemoved)
+ 30 | [31mERROR[0m | [1mFunction ereg() is deprecated since PHP 5.3 and removed
+    |       | since PHP 7.0; Use preg_match() instead[0m
+    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eregDeprecatedRemoved)
+ 50 | [31mERROR[0m | [1mExtension 'ereg' is deprecated since PHP 5.3 and
+    |       | removed since PHP 7.0; Use pcre instead[0m
+    |       | (PHPCompatibility.Extensions.RemovedExtensions.eregDeprecatedRemoved)
+ 50 | [31mERROR[0m | [1mFunction ereg() is deprecated since PHP 5.3 and removed
+    |       | since PHP 7.0; Use preg_match() instead[0m
+    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eregDeprecatedRemoved)
+ 59 | [31mERROR[0m | [1mExtension 'ereg' is deprecated since PHP 5.3 and
+    |       | removed since PHP 7.0; Use pcre instead[0m
+    |       | (PHPCompatibility.Extensions.RemovedExtensions.eregDeprecatedRemoved)
+ 59 | [31mERROR[0m | [1mFunction ereg() is deprecated since PHP 5.3 and removed
+    |       | since PHP 7.0; Use preg_match() instead[0m
+    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eregDeprecatedRemoved)
+ 61 | [31mERROR[0m | [1mExtension 'ereg' is deprecated since PHP 5.3 and
+    |       | removed since PHP 7.0; Use pcre instead[0m
+    |       | (PHPCompatibility.Extensions.RemovedExtensions.eregDeprecatedRemoved)
+ 61 | [31mERROR[0m | [1mFunction ereg() is deprecated since PHP 5.3 and removed
+    |       | since PHP 7.0; Use preg_match() instead[0m
+    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eregDeprecatedRemoved)
+ 63 | [31mERROR[0m | [1mExtension 'ereg' is deprecated since PHP 5.3 and
+    |       | removed since PHP 7.0; Use pcre instead[0m
+    |       | (PHPCompatibility.Extensions.RemovedExtensions.eregDeprecatedRemoved)
+ 63 | [31mERROR[0m | [1mFunction ereg() is deprecated since PHP 5.3 and removed
+    |       | since PHP 7.0; Use preg_match() instead[0m
+    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eregDeprecatedRemoved)
+----------------------------------------------------------------------
+
+
+[1mFILE: mailer/htmlMimeMail.php[0m
+----------------------------------------------------------------------
+[1mFOUND 6 ERRORS AFFECTING 6 LINES[0m
+----------------------------------------------------------------------
+  92 | [31mERROR[0m | [1mDeclaration of a PHP4 style class constructor is
+     |       | deprecated since PHP 7.0 and removed since PHP 8.0[0m
+     |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+ 180 | [31mERROR[0m | [1mThe "case_insensitive" parameter for function define()
+     |       | is deprecated since PHP 7.3 and removed since PHP
+     |       | 8.0[0m
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctionParameters.define_case_insensitiveDeprecatedRemoved)
+ 184 | [31mERROR[0m | [1mThe "case_insensitive" parameter for function define()
+     |       | is deprecated since PHP 7.3 and removed since PHP
+     |       | 8.0[0m
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctionParameters.define_case_insensitiveDeprecatedRemoved)
+ 335 | [31mERROR[0m | [1mFunction each() is deprecated since PHP 7.2 and
+     |       | removed since PHP 8.0; Use a foreach loop or
+     |       | ArrayIterator instead[0m
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)
+ 506 | [31mERROR[0m | [1mFunction each() is deprecated since PHP 7.2 and
+     |       | removed since PHP 8.0; Use a foreach loop or
+     |       | ArrayIterator instead[0m
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)
+ 629 | [31mERROR[0m | [1mpreg_replace() - /e modifier is deprecated since PHP
+     |       | 5.5 and removed since PHP 7.0[0m
+     |       | (PHPCompatibility.ParameterValues.RemovedPCREModifiers.Removed)
+----------------------------------------------------------------------
+
+
+[1mFILE: mailer/mimePart.php[0m
+----------------------------------------------------------------------
+[1mFOUND 3 ERRORS AFFECTING 3 LINES[0m
+----------------------------------------------------------------------
+ 126 | [31mERROR[0m | [1mDeclaration of a PHP4 style class constructor is
+     |       | deprecated since PHP 7.0 and removed since PHP 8.0[0m
+     |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+ 129 | [31mERROR[0m | [1mThe "case_insensitive" parameter for function define()
+     |       | is deprecated since PHP 7.3 and removed since PHP
+     |       | 8.0[0m
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctionParameters.define_case_insensitiveDeprecatedRemoved)
+ 303 | [31mERROR[0m | [1mFunction each() is deprecated since PHP 7.2 and
+     |       | removed since PHP 8.0; Use a foreach loop or
+     |       | ArrayIterator instead[0m
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)
+----------------------------------------------------------------------
+
+
+[1mFILE: mailer/rfc822.php[0m
+----------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 108 | [31mERROR[0m | [1mDeclaration of a PHP4 style class constructor is
+     |       | deprecated since PHP 7.0 and removed since PHP 8.0[0m
+     |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+----------------------------------------------------------------------
+
+
+[1mFILE: split_page_results.php[0m
+----------------------------------------------------------------------
+[1mFOUND 2 ERRORS AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 47 | [31mERROR[0m | [1mExtension 'ereg' is deprecated since PHP 5.3 and
+    |       | removed since PHP 7.0; Use pcre instead[0m
+    |       | (PHPCompatibility.Extensions.RemovedExtensions.eregDeprecatedRemoved)
+ 47 | [31mERROR[0m | [1mFunction ereg_replace() is deprecated since PHP 5.3 and
+    |       | removed since PHP 7.0; Use preg_replace() instead[0m
+    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.ereg_replaceDeprecatedRemoved)
+----------------------------------------------------------------------
+
+Time: 359ms; Memory: 14MB
+::error::FILE: backend_interface.php%0A----------------------------------------------------------------------%0AFOUND 4 ERRORS AFFECTING 3 LINES%0A----------------------------------------------------------------------%0A 215 | ERROR | preg_replace() - /e modifier is deprecated since PHP%0A     |       | 5.5 and removed since PHP 7.0%0A     |       | (PHPCompatibility.ParameterValues.RemovedPCREModifiers.Removed)%0A 317 | ERROR | Parameter shadowing super global ($_POST) causes a%0A     |       | fatal error since PHP 5.4%0A     |       | (PHPCompatibility.FunctionDeclarations.ForbiddenParameterShadowSuperGlobals._postFound)%0A 322 | ERROR | Extension 'ereg' is deprecated since PHP 5.3 and%0A     |       | removed since PHP 7.0; Use pcre instead%0A     |       | (PHPCompatibility.Extensions.RemovedExtensions.eregDeprecatedRemoved)%0A 322 | ERROR | Function ereg() is deprecated since PHP 5.3 and%0A     |       | removed since PHP 7.0; Use preg_match() instead%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eregDeprecatedRemoved)%0A----------------------------------------------------------------------%0A%0A%0AFILE: frontend_interface.php%0A----------------------------------------------------------------------%0AFOUND 10 ERRORS AFFECTING 5 LINES%0A----------------------------------------------------------------------%0A 30 | ERROR | Extension 'ereg' is deprecated since PHP 5.3 and%0A    |       | removed since PHP 7.0; Use pcre instead%0A    |       | (PHPCompatibility.Extensions.RemovedExtensions.eregDeprecatedRemoved)%0A 30 | ERROR | Function ereg() is deprecated since PHP 5.3 and removed%0A    |       | since PHP 7.0; Use preg_match() instead%0A    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eregDeprecatedRemoved)%0A 50 | ERROR | Extension 'ereg' is deprecated since PHP 5.3 and%0A    |       | removed since PHP 7.0; Use pcre instead%0A    |       | (PHPCompatibility.Extensions.RemovedExtensions.eregDeprecatedRemoved)%0A 50 | ERROR | Function ereg() is deprecated since PHP 5.3 and removed%0A    |       | since PHP 7.0; Use preg_match() instead%0A    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eregDeprecatedRemoved)%0A 59 | ERROR | Extension 'ereg' is deprecated since PHP 5.3 and%0A    |       | removed since PHP 7.0; Use pcre instead%0A    |       | (PHPCompatibility.Extensions.RemovedExtensions.eregDeprecatedRemoved)%0A 59 | ERROR | Function ereg() is deprecated since PHP 5.3 and removed%0A    |       | since PHP 7.0; Use preg_match() instead%0A    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eregDeprecatedRemoved)%0A 61 | ERROR | Extension 'ereg' is deprecated since PHP 5.3 and%0A    |       | removed since PHP 7.0; Use pcre instead%0A    |       | (PHPCompatibility.Extensions.RemovedExtensions.eregDeprecatedRemoved)%0A 61 | ERROR | Function ereg() is deprecated since PHP 5.3 and removed%0A    |       | since PHP 7.0; Use preg_match() instead%0A    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eregDeprecatedRemoved)%0A 63 | ERROR | Extension 'ereg' is deprecated since PHP 5.3 and%0A    |       | removed since PHP 7.0; Use pcre instead%0A    |       | (PHPCompatibility.Extensions.RemovedExtensions.eregDeprecatedRemoved)%0A 63 | ERROR | Function ereg() is deprecated since PHP 5.3 and removed%0A    |       | since PHP 7.0; Use preg_match() instead%0A    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eregDeprecatedRemoved)%0A----------------------------------------------------------------------%0A%0A%0AFILE: mailer/htmlMimeMail.php%0A----------------------------------------------------------------------%0AFOUND 6 ERRORS AFFECTING 6 LINES%0A----------------------------------------------------------------------%0A  92 | ERROR | Declaration of a PHP4 style class constructor is%0A     |       | deprecated since PHP 7.0 and removed since PHP 8.0%0A     |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)%0A 180 | ERROR | The "case_insensitive" parameter for function define()%0A     |       | is deprecated since PHP 7.3 and removed since PHP%0A     |       | 8.0%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctionParameters.define_case_insensitiveDeprecatedRemoved)%0A 184 | ERROR | The "case_insensitive" parameter for function define()%0A     |       | is deprecated since PHP 7.3 and removed since PHP%0A     |       | 8.0%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctionParameters.define_case_insensitiveDeprecatedRemoved)%0A 335 | ERROR | Function each() is deprecated since PHP 7.2 and%0A     |       | removed since PHP 8.0; Use a foreach loop or%0A     |       | ArrayIterator instead%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)%0A 506 | ERROR | Function each() is deprecated since PHP 7.2 and%0A     |       | removed since PHP 8.0; Use a foreach loop or%0A     |       | ArrayIterator instead%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)%0A 629 | ERROR | preg_replace() - /e modifier is deprecated since PHP%0A     |       | 5.5 and removed since PHP 7.0%0A     |       | (PHPCompatibility.ParameterValues.RemovedPCREModifiers.Removed)%0A----------------------------------------------------------------------%0A%0A%0AFILE: mailer/mimePart.php%0A----------------------------------------------------------------------%0AFOUND 3 ERRORS AFFECTING 3 LINES%0A----------------------------------------------------------------------%0A 126 | ERROR | Declaration of a PHP4 style class constructor is%0A     |       | deprecated since PHP 7.0 and removed since PHP 8.0%0A     |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)%0A 129 | ERROR | The "case_insensitive" parameter for function define()%0A     |       | is deprecated since PHP 7.3 and removed since PHP%0A     |       | 8.0%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctionParameters.define_case_insensitiveDeprecatedRemoved)%0A 303 | ERROR | Function each() is deprecated since PHP 7.2 and%0A     |       | removed since PHP 8.0; Use a foreach loop or%0A     |       | ArrayIterator instead%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)%0A----------------------------------------------------------------------%0A%0A%0AFILE: mailer/rfc822.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 108 | ERROR | Declaration of a PHP4 style class constructor is%0A     |       | deprecated since PHP 7.0 and removed since PHP 8.0%0A     |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)%0A----------------------------------------------------------------------%0A%0A%0AFILE: split_page_results.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 47 | ERROR | Extension 'ereg' is deprecated since PHP 5.3 and%0A    |       | removed since PHP 7.0; Use pcre instead%0A    |       | (PHPCompatibility.Extensions.RemovedExtensions.eregDeprecatedRemoved)%0A 47 | ERROR | Function ereg_replace() is deprecated since PHP 5.3 and%0A    |       | removed since PHP 7.0; Use preg_replace() instead%0A    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.ereg_replaceDeprecatedRemoved)%0A----------------------------------------------------------------------%0A
