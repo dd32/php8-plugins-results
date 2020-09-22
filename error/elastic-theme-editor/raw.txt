@@ -8,6 +8,8 @@ No syntax errors detected in elastic-theme-editor/elastic-theme-editor/engine/cl
 No syntax errors detected in elastic-theme-editor/elastic-theme-editor/engine/classes/group.php
 No syntax errors detected in elastic-theme-editor/elastic-theme-editor/engine/classes/header.php
 No syntax errors detected in elastic-theme-editor/elastic-theme-editor/engine/classes/module.php
+
+Fatal error: Cannot use 'Object' as class name as it is reserved in elastic-theme-editor/elastic-theme-editor/engine/classes/object.php on line 13
 Errors parsing elastic-theme-editor/elastic-theme-editor/engine/classes/object.php
 No syntax errors detected in elastic-theme-editor/elastic-theme-editor/engine/classes/selection.php
 No syntax errors detected in elastic-theme-editor/elastic-theme-editor/engine/classes/sidebar.php
@@ -35,34 +37,46 @@ No syntax errors detected in elastic-theme-editor/elastic-theme-editor/themes/de
 No syntax errors detected in elastic-theme-editor/elastic-theme-editor/themes/default/layout.php
 No syntax errors detected in elastic-theme-editor/elastic-theme-editor/themes/default/sidebar/index.php
 No syntax errors detected in elastic-theme-editor/elastic-theme-editor/themes/default/state.php
-::error::%0Aengine/classes/object.php
+::error::%0Aengine/classes/object.php%0A  Fatal error: Cannot use 'Object' as class name as it is reserved on line 13
 .........[31mE[0m.......[31mE[0m.................. 36 / 36 (100%)
 
 
 
 [1mFILE: engine/classes/object.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 13 | [31mERROR[0m | [1m'object' is a soft reserved keyword as of PHP version 7.0 and a reserved keyword as of PHP version 7.2 and should not be used to name a class, interface or trait or
-    |       | as part of a namespace (T_CLASS)[0m (PHPCompatibility.Keywords.ForbiddenNamesAsDeclared.objectFound)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
+ 13 | [31mERROR[0m | [1m'object' is a soft reserved keyword as of PHP version
+    |       | 7.0 and a reserved keyword as of PHP version 7.2 and
+    |       | should not be used to name a class, interface or trait
+    |       | or as part of a namespace (T_CLASS)[0m
+    |       | (PHPCompatibility.Keywords.ForbiddenNamesAsDeclared.objectFound)
+----------------------------------------------------------------------
 
 
 [1mFILE: themes/default/comments.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 6 ERRORS AFFECTING 3 LINES[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 6 | [31mERROR[0m | [1mExtension 'ereg' is deprecated since PHP 5.3 and removed since PHP 7.0; Use pcre instead[0m (PHPCompatibility.Extensions.RemovedExtensions.eregDeprecatedRemoved)
- 6 | [31mERROR[0m | [1mFunction ereg() is deprecated since PHP 5.3 and removed since PHP 7.0; Use preg_match() instead[0m
+----------------------------------------------------------------------
+ 6 | [31mERROR[0m | [1mExtension 'ereg' is deprecated since PHP 5.3 and removed
+   |       | since PHP 7.0; Use pcre instead[0m
+   |       | (PHPCompatibility.Extensions.RemovedExtensions.eregDeprecatedRemoved)
+ 6 | [31mERROR[0m | [1mFunction ereg() is deprecated since PHP 5.3 and removed
+   |       | since PHP 7.0; Use preg_match() instead[0m
    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eregDeprecatedRemoved)
- 7 | [31mERROR[0m | [1mExtension 'ereg' is deprecated since PHP 5.3 and removed since PHP 7.0; Use pcre instead[0m (PHPCompatibility.Extensions.RemovedExtensions.eregDeprecatedRemoved)
- 7 | [31mERROR[0m | [1mFunction ereg_replace() is deprecated since PHP 5.3 and removed since PHP 7.0; Use preg_replace() instead[0m
+ 7 | [31mERROR[0m | [1mExtension 'ereg' is deprecated since PHP 5.3 and removed
+   |       | since PHP 7.0; Use pcre instead[0m
+   |       | (PHPCompatibility.Extensions.RemovedExtensions.eregDeprecatedRemoved)
+ 7 | [31mERROR[0m | [1mFunction ereg_replace() is deprecated since PHP 5.3 and
+   |       | removed since PHP 7.0; Use preg_replace() instead[0m
    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.ereg_replaceDeprecatedRemoved)
- 9 | [31mERROR[0m | [1mExtension 'ereg' is deprecated since PHP 5.3 and removed since PHP 7.0; Use pcre instead[0m (PHPCompatibility.Extensions.RemovedExtensions.eregDeprecatedRemoved)
- 9 | [31mERROR[0m | [1mFunction ereg_replace() is deprecated since PHP 5.3 and removed since PHP 7.0; Use preg_replace() instead[0m
+ 9 | [31mERROR[0m | [1mExtension 'ereg' is deprecated since PHP 5.3 and removed
+   |       | since PHP 7.0; Use pcre instead[0m
+   |       | (PHPCompatibility.Extensions.RemovedExtensions.eregDeprecatedRemoved)
+ 9 | [31mERROR[0m | [1mFunction ereg_replace() is deprecated since PHP 5.3 and
+   |       | removed since PHP 7.0; Use preg_replace() instead[0m
    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.ereg_replaceDeprecatedRemoved)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
-Time: 436ms; Memory: 12MB
-::error::FILE: engine/classes/object.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 13 | ERROR | 'object' is a soft reserved keyword as of PHP version 7.0 and a reserved keyword as of PHP version 7.2 and should not be used to name a class, interface or trait or%0A    |       | as part of a namespace (T_CLASS) (PHPCompatibility.Keywords.ForbiddenNamesAsDeclared.objectFound)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: themes/default/comments.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 6 ERRORS AFFECTING 3 LINES%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 6 | ERROR | Extension 'ereg' is deprecated since PHP 5.3 and removed since PHP 7.0; Use pcre instead (PHPCompatibility.Extensions.RemovedExtensions.eregDeprecatedRemoved)%0A 6 | ERROR | Function ereg() is deprecated since PHP 5.3 and removed since PHP 7.0; Use preg_match() instead%0A   |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eregDeprecatedRemoved)%0A 7 | ERROR | Extension 'ereg' is deprecated since PHP 5.3 and removed since PHP 7.0; Use pcre instead (PHPCompatibility.Extensions.RemovedExtensions.eregDeprecatedRemoved)%0A 7 | ERROR | Function ereg_replace() is deprecated since PHP 5.3 and removed since PHP 7.0; Use preg_replace() instead%0A   |       | (PHPCompatibility.FunctionUse.RemovedFunctions.ereg_replaceDeprecatedRemoved)%0A 9 | ERROR | Extension 'ereg' is deprecated since PHP 5.3 and removed since PHP 7.0; Use pcre instead (PHPCompatibility.Extensions.RemovedExtensions.eregDeprecatedRemoved)%0A 9 | ERROR | Function ereg_replace() is deprecated since PHP 5.3 and removed since PHP 7.0; Use preg_replace() instead%0A   |       | (PHPCompatibility.FunctionUse.RemovedFunctions.ereg_replaceDeprecatedRemoved)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
+Time: 329ms; Memory: 12MB
+::error::FILE: engine/classes/object.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 13 | ERROR | 'object' is a soft reserved keyword as of PHP version%0A    |       | 7.0 and a reserved keyword as of PHP version 7.2 and%0A    |       | should not be used to name a class, interface or trait%0A    |       | or as part of a namespace (T_CLASS)%0A    |       | (PHPCompatibility.Keywords.ForbiddenNamesAsDeclared.objectFound)%0A----------------------------------------------------------------------%0A%0A%0AFILE: themes/default/comments.php%0A----------------------------------------------------------------------%0AFOUND 6 ERRORS AFFECTING 3 LINES%0A----------------------------------------------------------------------%0A 6 | ERROR | Extension 'ereg' is deprecated since PHP 5.3 and removed%0A   |       | since PHP 7.0; Use pcre instead%0A   |       | (PHPCompatibility.Extensions.RemovedExtensions.eregDeprecatedRemoved)%0A 6 | ERROR | Function ereg() is deprecated since PHP 5.3 and removed%0A   |       | since PHP 7.0; Use preg_match() instead%0A   |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eregDeprecatedRemoved)%0A 7 | ERROR | Extension 'ereg' is deprecated since PHP 5.3 and removed%0A   |       | since PHP 7.0; Use pcre instead%0A   |       | (PHPCompatibility.Extensions.RemovedExtensions.eregDeprecatedRemoved)%0A 7 | ERROR | Function ereg_replace() is deprecated since PHP 5.3 and%0A   |       | removed since PHP 7.0; Use preg_replace() instead%0A   |       | (PHPCompatibility.FunctionUse.RemovedFunctions.ereg_replaceDeprecatedRemoved)%0A 9 | ERROR | Extension 'ereg' is deprecated since PHP 5.3 and removed%0A   |       | since PHP 7.0; Use pcre instead%0A   |       | (PHPCompatibility.Extensions.RemovedExtensions.eregDeprecatedRemoved)%0A 9 | ERROR | Function ereg_replace() is deprecated since PHP 5.3 and%0A   |       | removed since PHP 7.0; Use preg_replace() instead%0A   |       | (PHPCompatibility.FunctionUse.RemovedFunctions.ereg_replaceDeprecatedRemoved)%0A----------------------------------------------------------------------%0A

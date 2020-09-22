@@ -1,21 +1,25 @@
 ::warning::Plugin: https://wordpress.org/plugins/move-site-icon-to-settings/%0ATrac: https://plugins.trac.wordpress.org/browser/move-site-icon-to-settings/
+
+Fatal error: Cannot use "parent" when current class scope has no parent in move-site-icon-to-settings/move-site-icon-to-settings/class-msits-site-icon.php on line 83
 Errors parsing move-site-icon-to-settings/move-site-icon-to-settings/class-msits-site-icon.php
 No syntax errors detected in move-site-icon-to-settings/move-site-icon-to-settings/msits-site-icon.php
 No syntax errors detected in move-site-icon-to-settings/move-site-icon-to-settings/upload-site-icon.php
-::error::%0Aclass-msits-site-icon.php
+::error::%0Aclass-msits-site-icon.php%0A  Fatal error: Cannot use "parent" when current class scope has no parent on line 83
 [31mE[0m.. 3 / 3 (100%)
 
 
 
 [1mFILE: class-msits-site-icon.php[0m
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 2 ERRORS AFFECTING 2 LINES[0m
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 83 | [31mERROR[0m | [1mUsing "parent" inside a class without parent is deprecated since PHP 7.4 and removed since PHP 8.0[0m
+----------------------------------------------------------------------
+ 83 | [31mERROR[0m | [1mUsing "parent" inside a class without parent is
+    |       | deprecated since PHP 7.4 and removed since PHP 8.0[0m
     |       | (PHPCompatibility.Classes.RemovedOrphanedParent.Removed)
- 95 | [31mERROR[0m | [1mUsing "parent" inside a class without parent is deprecated since PHP 7.4 and removed since PHP 8.0[0m
+ 95 | [31mERROR[0m | [1mUsing "parent" inside a class without parent is
+    |       | deprecated since PHP 7.4 and removed since PHP 8.0[0m
     |       | (PHPCompatibility.Classes.RemovedOrphanedParent.Removed)
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
-Time: 181ms; Memory: 16MB
-::error::FILE: class-msits-site-icon.php%0A--------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A--------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 83 | ERROR | Using "parent" inside a class without parent is deprecated since PHP 7.4 and removed since PHP 8.0%0A    |       | (PHPCompatibility.Classes.RemovedOrphanedParent.Removed)%0A 95 | ERROR | Using "parent" inside a class without parent is deprecated since PHP 7.4 and removed since PHP 8.0%0A    |       | (PHPCompatibility.Classes.RemovedOrphanedParent.Removed)%0A--------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
+Time: 179ms; Memory: 16MB
+::error::FILE: class-msits-site-icon.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A----------------------------------------------------------------------%0A 83 | ERROR | Using "parent" inside a class without parent is%0A    |       | deprecated since PHP 7.4 and removed since PHP 8.0%0A    |       | (PHPCompatibility.Classes.RemovedOrphanedParent.Removed)%0A 95 | ERROR | Using "parent" inside a class without parent is%0A    |       | deprecated since PHP 7.4 and removed since PHP 8.0%0A    |       | (PHPCompatibility.Classes.RemovedOrphanedParent.Removed)%0A----------------------------------------------------------------------%0A
