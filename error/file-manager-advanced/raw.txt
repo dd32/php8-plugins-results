@@ -10,6 +10,8 @@ No syntax errors detected in file-manager-advanced/file-manager-advanced/applica
 No syntax errors detected in file-manager-advanced/file-manager-advanced/application/library/php/editors/OnlineConvert/editor.php
 No syntax errors detected in file-manager-advanced/file-manager-advanced/application/library/php/editors/ZipArchive/editor.php
 No syntax errors detected in file-manager-advanced/file-manager-advanced/application/library/php/editors/ZohoOffice/editor.php
+
+Fatal error: Array and string offset access syntax with curly braces is no longer supported in file-manager-advanced/file-manager-advanced/application/library/php/elFinder.class.php on line 2610
 Errors parsing file-manager-advanced/file-manager-advanced/application/library/php/elFinder.class.php
 No syntax errors detected in file-manager-advanced/file-manager-advanced/application/library/php/elFinderConnector.class.php
 No syntax errors detected in file-manager-advanced/file-manager-advanced/application/library/php/elFinderFlysystemGoogleDriveNetmount.php
@@ -39,30 +41,32 @@ No syntax errors detected in file-manager-advanced/file-manager-advanced/applica
 No syntax errors detected in file-manager-advanced/file-manager-advanced/application/pages/main.php
 No syntax errors detected in file-manager-advanced/file-manager-advanced/file_manager_advanced.php
 No syntax errors detected in file-manager-advanced/file-manager-advanced/index.php
-::error::%0Aapplication/library/php/elFinder.class.php
-No syntax errors detected in file-manager-advanced/file-manager-advanced/index.php
+::error::%0Aapplication/library/php/elFinder.class.php%0A  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 2610
 ...........[32mE[0m[31mE[0m........................... 40 / 40 (100%)
 
 
 
 [1mFILE: application/library/php/elFinder.class.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 2610 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $url{0}[0m
+----------------------------------------------------------------------
+ 2610 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found: $url{0}[0m
       |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mPHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 [1mFILE: application/library/php/elFinderConnector.class.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 308 | [31mERROR[0m | [1mFunction get_magic_quotes_gpc() is deprecated since PHP 7.4 and removed since PHP 8.0[0m
+----------------------------------------------------------------------
+ 308 | [31mERROR[0m | [1mFunction get_magic_quotes_gpc() is deprecated since
+     |       | PHP 7.4 and removed since PHP 8.0[0m
      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_gpcDeprecatedRemoved)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
-Time: 5.34 secs; Memory: 64.01MB
-::error::FILE: application/library/php/elFinder.class.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 2610 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $url{0}%0A      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0APHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: application/library/php/elFinderConnector.class.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 308 | ERROR | Function get_magic_quotes_gpc() is deprecated since PHP 7.4 and removed since PHP 8.0%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_gpcDeprecatedRemoved)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
+Time: 5.48 secs; Memory: 64.01MB
+::error::FILE: application/library/php/elFinder.class.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 2610 | ERROR | [x] Curly brace syntax for accessing array elements%0A      |       |     and string offsets has been deprecated in PHP 7.4%0A      |       |     and removed in PHP 8.0. Found: $url{0}%0A      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A----------------------------------------------------------------------%0APHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A----------------------------------------------------------------------%0A%0A%0AFILE: application/library/php/elFinderConnector.class.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 308 | ERROR | Function get_magic_quotes_gpc() is deprecated since%0A     |       | PHP 7.4 and removed since PHP 8.0%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_gpcDeprecatedRemoved)%0A----------------------------------------------------------------------%0A
