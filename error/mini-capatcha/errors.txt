@@ -1,0 +1,28 @@
+
+mini-capatcha.php
+  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 72
+
+run.php
+  Parse error: syntax error, unexpected token "new" on line 68
+FILE: mini-capatcha.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 72 | ERROR | [x] Curly brace syntax for accessing array elements and
+    |       |     string offsets has been deprecated in PHP 7.4 and
+    |       |     removed in PHP 8.0. Found: $s{$i}
+    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------
+
+
+FILE: run.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 68 | ERROR | Assigning the return value of new by reference is
+    |       | deprecated in PHP 5.3 and has been removed in PHP
+    |       | 7.0
+    |       | (PHPCompatibility.Syntax.RemovedNewReference.Removed)
+----------------------------------------------------------------------

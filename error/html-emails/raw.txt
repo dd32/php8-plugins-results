@@ -1,0 +1,39 @@
+::warning::Plugin: https://wordpress.org/plugins/html-emails/%0ATrac: https://plugins.trac.wordpress.org/browser/html-emails/
+No syntax errors detected in html-emails/html-emails/html-emails.php
+No syntax errors detected in html-emails/html-emails/includes/class.html2text.php
+No syntax errors detected in html-emails/html-emails/includes/emails.php
+
+Parse error: syntax error, unexpected token "new" in html-emails/html-emails/includes/utils.php on line 4
+Errors parsing html-emails/html-emails/includes/utils.php
+No syntax errors detected in html-emails/html-emails/templates/html_email.php
+No syntax errors detected in html-emails/html-emails/templates/new_user_admin.php
+No syntax errors detected in html-emails/html-emails/templates/new_user_user.php
+No syntax errors detected in html-emails/html-emails/templates/notify_comment.php
+No syntax errors detected in html-emails/html-emails/templates/password_change_admin.php
+::error::%0Aincludes/utils.php%0A  Parse error: syntax error, unexpected token "new" on line 4
+.[31mE[0m.[31mE[0m..... 9 / 9 (100%)
+
+
+
+[1mFILE: includes/class.html2text.php[0m
+----------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 298 | [31mERROR[0m | [1mDeclaration of a PHP4 style class constructor is
+     |       | deprecated since PHP 7.0 and removed since PHP 8.0[0m
+     |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+----------------------------------------------------------------------
+
+
+[1mFILE: includes/utils.php[0m
+----------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 4 | [31mERROR[0m | [1mAssigning the return value of new by reference is
+   |       | deprecated in PHP 5.3 and has been removed in PHP
+   |       | 7.0[0m
+   |       | (PHPCompatibility.Syntax.RemovedNewReference.Removed)
+----------------------------------------------------------------------
+
+Time: 163ms; Memory: 12MB
+::error::FILE: includes/class.html2text.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 298 | ERROR | Declaration of a PHP4 style class constructor is%0A     |       | deprecated since PHP 7.0 and removed since PHP 8.0%0A     |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)%0A----------------------------------------------------------------------%0A%0A%0AFILE: includes/utils.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 4 | ERROR | Assigning the return value of new by reference is%0A   |       | deprecated in PHP 5.3 and has been removed in PHP%0A   |       | 7.0%0A   |       | (PHPCompatibility.Syntax.RemovedNewReference.Removed)%0A----------------------------------------------------------------------%0A
