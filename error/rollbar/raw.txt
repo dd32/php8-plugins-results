@@ -303,6 +303,8 @@ No syntax errors detected in rollbar/rollbar/vendor/phpdocumentor/type-resolver/
 No syntax errors detected in rollbar/rollbar/vendor/phpdocumentor/type-resolver/src/Types/Integer.php
 No syntax errors detected in rollbar/rollbar/vendor/phpdocumentor/type-resolver/src/Types/Iterable_.php
 No syntax errors detected in rollbar/rollbar/vendor/phpdocumentor/type-resolver/src/Types/Mixed_.php
+
+Fatal error: Cannot use 'Mixed' as class name as it is reserved in rollbar/rollbar/vendor/phpdocumentor/type-resolver/src/Types/Mixed.php on line 20
 Errors parsing rollbar/rollbar/vendor/phpdocumentor/type-resolver/src/Types/Mixed.php
 No syntax errors detected in rollbar/rollbar/vendor/phpdocumentor/type-resolver/src/Types/Nullable.php
 No syntax errors detected in rollbar/rollbar/vendor/phpdocumentor/type-resolver/src/Types/Null_.php
@@ -626,6 +628,8 @@ No syntax errors detected in rollbar/rollbar/vendor/phpunit/phpunit/src/TextUI/C
 No syntax errors detected in rollbar/rollbar/vendor/phpunit/phpunit/src/TextUI/ResultPrinter.php
 No syntax errors detected in rollbar/rollbar/vendor/phpunit/phpunit/src/TextUI/TestRunner.php
 No syntax errors detected in rollbar/rollbar/vendor/phpunit/phpunit/src/Util/Blacklist.php
+
+Warning: Private methods cannot be final as they are never overridden by other classes in rollbar/rollbar/vendor/phpunit/phpunit/src/Util/Configuration.php on line 165
 No syntax errors detected in rollbar/rollbar/vendor/phpunit/phpunit/src/Util/Configuration.php
 No syntax errors detected in rollbar/rollbar/vendor/phpunit/phpunit/src/Util/ErrorHandler.php
 No syntax errors detected in rollbar/rollbar/vendor/phpunit/phpunit/src/Util/Fileloader.php
@@ -753,6 +757,8 @@ No syntax errors detected in rollbar/rollbar/vendor/phpunit/phpunit/tests/_files
 No syntax errors detected in rollbar/rollbar/vendor/phpunit/phpunit/tests/_files/RequirementsTest.php
 No syntax errors detected in rollbar/rollbar/vendor/phpunit/phpunit/tests/_files/SampleArrayAccess.php
 No syntax errors detected in rollbar/rollbar/vendor/phpunit/phpunit/tests/_files/SampleClass.php
+
+Warning: Private methods cannot be final as they are never overridden by other classes in rollbar/rollbar/vendor/phpunit/phpunit/tests/_files/Singleton.php on line 10
 No syntax errors detected in rollbar/rollbar/vendor/phpunit/phpunit/tests/_files/Singleton.php
 No syntax errors detected in rollbar/rollbar/vendor/phpunit/phpunit/tests/_files/StackTest.php
 No syntax errors detected in rollbar/rollbar/vendor/phpunit/phpunit/tests/_files/StatusTest.php
@@ -886,9 +892,15 @@ No syntax errors detected in rollbar/rollbar/vendor/phpunit/phpunit-mock-objects
 No syntax errors detected in rollbar/rollbar/vendor/phpunit/phpunit-mock-objects/tests/_fixture/MockTestInterface.php
 No syntax errors detected in rollbar/rollbar/vendor/phpunit/phpunit-mock-objects/tests/_fixture/PartialMockTestClass.php
 
+Warning: Private methods cannot be final as they are never overridden by other classes in rollbar/rollbar/vendor/phpunit/phpunit-mock-objects/tests/_fixture/SingletonClass.php on line 17
+
 Warning: The magic method SingletonClass::__sleep() must have public visibility in rollbar/rollbar/vendor/phpunit/phpunit-mock-objects/tests/_fixture/SingletonClass.php on line 17
 
+Warning: Private methods cannot be final as they are never overridden by other classes in rollbar/rollbar/vendor/phpunit/phpunit-mock-objects/tests/_fixture/SingletonClass.php on line 21
+
 Warning: The magic method SingletonClass::__wakeup() must have public visibility in rollbar/rollbar/vendor/phpunit/phpunit-mock-objects/tests/_fixture/SingletonClass.php on line 21
+
+Warning: Private methods cannot be final as they are never overridden by other classes in rollbar/rollbar/vendor/phpunit/phpunit-mock-objects/tests/_fixture/SingletonClass.php on line 25
 No syntax errors detected in rollbar/rollbar/vendor/phpunit/phpunit-mock-objects/tests/_fixture/SingletonClass.php
 No syntax errors detected in rollbar/rollbar/vendor/phpunit/phpunit-mock-objects/tests/_fixture/SomeClass.php
 No syntax errors detected in rollbar/rollbar/vendor/phpunit/phpunit-mock-objects/tests/_fixture/StaticMockTestClass.php
@@ -1125,7 +1137,7 @@ No syntax errors detected in rollbar/rollbar/vendor/symfony/yaml/Unescaper.php
 No syntax errors detected in rollbar/rollbar/vendor/symfony/yaml/Yaml.php
 No syntax errors detected in rollbar/rollbar/vendor/webmozart/assert/src/Assert.php
 No syntax errors detected in rollbar/rollbar/vendor/webmozart/assert/tests/AssertTest.php
-::error::%0Avendor/phpdocumentor/type-resolver/src/Types/Mixed.php%0A%0Avendor/phpunit/phpunit-mock-objects/tests/_fixture/SingletonClass.php%0A  Warning: The magic method SingletonClass::__sleep() must have public visibility on line 17%0A  Warning: The magic method SingletonClass::__wakeup() must have public visibility on line 21%0A%0Avendor/sebastian/diff/tests/ParserTest.php%0A  Parse error: Invalid body indentation level (expecting an indentation level of at least 1) on line 78
+::error::%0Avendor/phpdocumentor/type-resolver/src/Types/Mixed.php%0A  Fatal error: Cannot use 'Mixed' as class name as it is reserved on line 20%0A%0Avendor/phpunit/phpunit/src/Util/Configuration.php%0A  Warning: Private methods cannot be final as they are never overridden by other classes on line 165%0A%0Avendor/phpunit/phpunit/tests/_files/Singleton.php%0A  Warning: Private methods cannot be final as they are never overridden by other classes on line 10%0A%0Avendor/phpunit/phpunit-mock-objects/tests/_fixture/SingletonClass.php%0A  Warning: Private methods cannot be final as they are never overridden by other classes on line 17%0A  Warning: The magic method SingletonClass::__sleep() must have public visibility on line 17%0A  Warning: Private methods cannot be final as they are never overridden by other classes on line 21%0A  Warning: The magic method SingletonClass::__wakeup() must have public visibility on line 21%0A  Warning: Private methods cannot be final as they are never overridden by other classes on line 25%0A%0Avendor/sebastian/diff/tests/ParserTest.php%0A  Parse error: Invalid body indentation level (expecting an indentation level of at least 1) on line 78
 ............................................................   60 / 1118 (5%)
 ............................................................  120 / 1118 (11%)
 ............................................................  180 / 1118 (16%)
@@ -1149,66 +1161,92 @@ No syntax errors detected in rollbar/rollbar/vendor/webmozart/assert/tests/Asser
 
 
 [1mFILE: vendor/phpunit/php-token-stream/tests/_fixture/source.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 5 | [31mERROR[0m | [1mDeclaration of a PHP4 style class constructor is deprecated since PHP 7.0 and removed since PHP 8.0[0m
+----------------------------------------------------------------------
+ 5 | [31mERROR[0m | [1mDeclaration of a PHP4 style class constructor is
+   |       | deprecated since PHP 7.0 and removed since PHP 8.0[0m
    |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 [1mFILE: vendor/phpunit/phpunit/src/Util/Getopt.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 3 ERRORS AFFECTING 3 LINES[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  38 | [31mERROR[0m | [1mFunction each() is deprecated since PHP 7.2 and removed since PHP 8.0; Use a foreach loop or ArrayIterator instead[0m
+----------------------------------------------------------------------
+  38 | [31mERROR[0m | [1mFunction each() is deprecated since PHP 7.2 and
+     |       | removed since PHP 8.0; Use a foreach loop or
+     |       | ArrayIterator instead[0m
      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)
-  97 | [31mERROR[0m | [1mFunction each() is deprecated since PHP 7.2 and removed since PHP 8.0; Use a foreach loop or ArrayIterator instead[0m
+  97 | [31mERROR[0m | [1mFunction each() is deprecated since PHP 7.2 and
+     |       | removed since PHP 8.0; Use a foreach loop or
+     |       | ArrayIterator instead[0m
      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)
- 143 | [31mERROR[0m | [1mFunction each() is deprecated since PHP 7.2 and removed since PHP 8.0; Use a foreach loop or ArrayIterator instead[0m
+ 143 | [31mERROR[0m | [1mFunction each() is deprecated since PHP 7.2 and
+     |       | removed since PHP 8.0; Use a foreach loop or
+     |       | ArrayIterator instead[0m
      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
-[1mFILE: vendor/phpunit/phpunit-mock-objects/tests/_fixture/SingletonClass.php[0m
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[1mFILE: ...r/phpunit/phpunit-mock-objects/tests/_fixture/SingletonClass.php[0m
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 17 | [31mERROR[0m | [1mVisibility for magic method __sleep must be public. Found: private[0m
+----------------------------------------------------------------------
+ 17 | [31mERROR[0m | [1mVisibility for magic method __sleep must be public.
+    |       | Found: private[0m
     |       | (PHPCompatibility.FunctionDeclarations.NonStaticMagicMethods.__sleepMethodVisibility)
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 [1mFILE: vendor/sebastian/diff/tests/ParserTest.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 5 ERRORS AFFECTING 5 LINES[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  83 | [31mERROR[0m | [1mThe body of a heredoc/nowdoc can not contain the heredoc/nowdoc closing marker as text at the start of a line since PHP 7.3.[0m
+----------------------------------------------------------------------
+  83 | [31mERROR[0m | [1mThe body of a heredoc/nowdoc can not contain the
+     |       | heredoc/nowdoc closing marker as text at the start of
+     |       | a line since PHP 7.3.[0m
      |       | (PHPCompatibility.Syntax.NewFlexibleHeredocNowdoc.ClosingMarkerNoNewLine)
- 126 | [31mERROR[0m | [1mThe body of a heredoc/nowdoc can not contain the heredoc/nowdoc closing marker as text at the start of a line since PHP 7.3.[0m
+ 126 | [31mERROR[0m | [1mThe body of a heredoc/nowdoc can not contain the
+     |       | heredoc/nowdoc closing marker as text at the start of
+     |       | a line since PHP 7.3.[0m
      |       | (PHPCompatibility.Syntax.NewFlexibleHeredocNowdoc.ClosingMarkerNoNewLine)
- 130 | [31mERROR[0m | [1mUsing an unparenthesized expression containing a "." before a "+" or "-" has been deprecated in PHP 7.4 and removed in PHP 8.0[0m
+ 130 | [31mERROR[0m | [1mUsing an unparenthesized expression containing a "."
+     |       | before a "+" or "-" has been deprecated in PHP 7.4 and
+     |       | removed in PHP 8.0[0m
      |       | (PHPCompatibility.Operators.ChangedConcatOperatorPrecedence.Found)
- 131 | [31mERROR[0m | [1mUsing an unparenthesized expression containing a "." before a "+" or "-" has been deprecated in PHP 7.4 and removed in PHP 8.0[0m
+ 131 | [31mERROR[0m | [1mUsing an unparenthesized expression containing a "."
+     |       | before a "+" or "-" has been deprecated in PHP 7.4 and
+     |       | removed in PHP 8.0[0m
      |       | (PHPCompatibility.Operators.ChangedConcatOperatorPrecedence.Found)
- 132 | [31mERROR[0m | [1mUsing an unparenthesized expression containing a "." before a "+" or "-" has been deprecated in PHP 7.4 and removed in PHP 8.0[0m
+ 132 | [31mERROR[0m | [1mUsing an unparenthesized expression containing a "."
+     |       | before a "+" or "-" has been deprecated in PHP 7.4 and
+     |       | removed in PHP 8.0[0m
      |       | (PHPCompatibility.Operators.ChangedConcatOperatorPrecedence.Found)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 [1mFILE: vendor/symfony/yaml/Tests/InlineTest.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 4 ERRORS AFFECTING 4 LINES[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 362 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x4D2'[0m
+----------------------------------------------------------------------
+ 362 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+     |       | inconsistent prior to PHP 7 and support has been
+     |       | removed in PHP 7. Found: '0x4D2'[0m
      |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
- 363 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x_4_D_2_'[0m
+ 363 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+     |       | inconsistent prior to PHP 7 and support has been
+     |       | removed in PHP 7. Found: '0x_4_D_2_'[0m
      |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
- 443 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x4D2'[0m
+ 443 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+     |       | inconsistent prior to PHP 7 and support has been
+     |       | removed in PHP 7. Found: '0x4D2'[0m
      |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
- 526 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x_4_D_2_'[0m
+ 526 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+     |       | inconsistent prior to PHP 7 and support has been
+     |       | removed in PHP 7. Found: '0x_4_D_2_'[0m
      |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
-Time: 15.85 secs; Memory: 34MB
-::error::FILE: vendor/phpunit/php-token-stream/tests/_fixture/source.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 5 | ERROR | Declaration of a PHP4 style class constructor is deprecated since PHP 7.0 and removed since PHP 8.0%0A   |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: vendor/phpunit/phpunit/src/Util/Getopt.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 3 ERRORS AFFECTING 3 LINES%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A  38 | ERROR | Function each() is deprecated since PHP 7.2 and removed since PHP 8.0; Use a foreach loop or ArrayIterator instead%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)%0A  97 | ERROR | Function each() is deprecated since PHP 7.2 and removed since PHP 8.0; Use a foreach loop or ArrayIterator instead%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)%0A 143 | ERROR | Function each() is deprecated since PHP 7.2 and removed since PHP 8.0; Use a foreach loop or ArrayIterator instead%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: vendor/phpunit/phpunit-mock-objects/tests/_fixture/SingletonClass.php%0A-----------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-----------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 17 | ERROR | Visibility for magic method __sleep must be public. Found: private%0A    |       | (PHPCompatibility.FunctionDeclarations.NonStaticMagicMethods.__sleepMethodVisibility)%0A-----------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: vendor/sebastian/diff/tests/ParserTest.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 5 ERRORS AFFECTING 5 LINES%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A  83 | ERROR | The body of a heredoc/nowdoc can not contain the heredoc/nowdoc closing marker as text at the start of a line since PHP 7.3.%0A     |       | (PHPCompatibility.Syntax.NewFlexibleHeredocNowdoc.ClosingMarkerNoNewLine)%0A 126 | ERROR | The body of a heredoc/nowdoc can not contain the heredoc/nowdoc closing marker as text at the start of a line since PHP 7.3.%0A     |       | (PHPCompatibility.Syntax.NewFlexibleHeredocNowdoc.ClosingMarkerNoNewLine)%0A 130 | ERROR | Using an unparenthesized expression containing a "." before a "+" or "-" has been deprecated in PHP 7.4 and removed in PHP 8.0%0A     |       | (PHPCompatibility.Operators.ChangedConcatOperatorPrecedence.Found)%0A 131 | ERROR | Using an unparenthesized expression containing a "." before a "+" or "-" has been deprecated in PHP 7.4 and removed in PHP 8.0%0A     |       | (PHPCompatibility.Operators.ChangedConcatOperatorPrecedence.Found)%0A 132 | ERROR | Using an unparenthesized expression containing a "." before a "+" or "-" has been deprecated in PHP 7.4 and removed in PHP 8.0%0A     |       | (PHPCompatibility.Operators.ChangedConcatOperatorPrecedence.Found)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: vendor/symfony/yaml/Tests/InlineTest.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 4 ERRORS AFFECTING 4 LINES%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 362 | ERROR | The behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x4D2'%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 363 | ERROR | The behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x_4_D_2_'%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 443 | ERROR | The behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x4D2'%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 526 | ERROR | The behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x_4_D_2_'%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
+Time: 14.33 secs; Memory: 34MB
+::error::FILE: vendor/phpunit/php-token-stream/tests/_fixture/source.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 5 | ERROR | Declaration of a PHP4 style class constructor is%0A   |       | deprecated since PHP 7.0 and removed since PHP 8.0%0A   |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)%0A----------------------------------------------------------------------%0A%0A%0AFILE: vendor/phpunit/phpunit/src/Util/Getopt.php%0A----------------------------------------------------------------------%0AFOUND 3 ERRORS AFFECTING 3 LINES%0A----------------------------------------------------------------------%0A  38 | ERROR | Function each() is deprecated since PHP 7.2 and%0A     |       | removed since PHP 8.0; Use a foreach loop or%0A     |       | ArrayIterator instead%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)%0A  97 | ERROR | Function each() is deprecated since PHP 7.2 and%0A     |       | removed since PHP 8.0; Use a foreach loop or%0A     |       | ArrayIterator instead%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)%0A 143 | ERROR | Function each() is deprecated since PHP 7.2 and%0A     |       | removed since PHP 8.0; Use a foreach loop or%0A     |       | ArrayIterator instead%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)%0A----------------------------------------------------------------------%0A%0A%0AFILE: ...r/phpunit/phpunit-mock-objects/tests/_fixture/SingletonClass.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 17 | ERROR | Visibility for magic method __sleep must be public.%0A    |       | Found: private%0A    |       | (PHPCompatibility.FunctionDeclarations.NonStaticMagicMethods.__sleepMethodVisibility)%0A----------------------------------------------------------------------%0A%0A%0AFILE: vendor/sebastian/diff/tests/ParserTest.php%0A----------------------------------------------------------------------%0AFOUND 5 ERRORS AFFECTING 5 LINES%0A----------------------------------------------------------------------%0A  83 | ERROR | The body of a heredoc/nowdoc can not contain the%0A     |       | heredoc/nowdoc closing marker as text at the start of%0A     |       | a line since PHP 7.3.%0A     |       | (PHPCompatibility.Syntax.NewFlexibleHeredocNowdoc.ClosingMarkerNoNewLine)%0A 126 | ERROR | The body of a heredoc/nowdoc can not contain the%0A     |       | heredoc/nowdoc closing marker as text at the start of%0A     |       | a line since PHP 7.3.%0A     |       | (PHPCompatibility.Syntax.NewFlexibleHeredocNowdoc.ClosingMarkerNoNewLine)%0A 130 | ERROR | Using an unparenthesized expression containing a "."%0A     |       | before a "+" or "-" has been deprecated in PHP 7.4 and%0A     |       | removed in PHP 8.0%0A     |       | (PHPCompatibility.Operators.ChangedConcatOperatorPrecedence.Found)%0A 131 | ERROR | Using an unparenthesized expression containing a "."%0A     |       | before a "+" or "-" has been deprecated in PHP 7.4 and%0A     |       | removed in PHP 8.0%0A     |       | (PHPCompatibility.Operators.ChangedConcatOperatorPrecedence.Found)%0A 132 | ERROR | Using an unparenthesized expression containing a "."%0A     |       | before a "+" or "-" has been deprecated in PHP 7.4 and%0A     |       | removed in PHP 8.0%0A     |       | (PHPCompatibility.Operators.ChangedConcatOperatorPrecedence.Found)%0A----------------------------------------------------------------------%0A%0A%0AFILE: vendor/symfony/yaml/Tests/InlineTest.php%0A----------------------------------------------------------------------%0AFOUND 4 ERRORS AFFECTING 4 LINES%0A----------------------------------------------------------------------%0A 362 | ERROR | The behaviour of hexadecimal numeric strings was%0A     |       | inconsistent prior to PHP 7 and support has been%0A     |       | removed in PHP 7. Found: '0x4D2'%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 363 | ERROR | The behaviour of hexadecimal numeric strings was%0A     |       | inconsistent prior to PHP 7 and support has been%0A     |       | removed in PHP 7. Found: '0x_4_D_2_'%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 443 | ERROR | The behaviour of hexadecimal numeric strings was%0A     |       | inconsistent prior to PHP 7 and support has been%0A     |       | removed in PHP 7. Found: '0x4D2'%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 526 | ERROR | The behaviour of hexadecimal numeric strings was%0A     |       | inconsistent prior to PHP 7 and support has been%0A     |       | removed in PHP 7. Found: '0x_4_D_2_'%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A----------------------------------------------------------------------%0A
