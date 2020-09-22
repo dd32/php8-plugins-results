@@ -1,0 +1,48 @@
+::warning::Plugin: https://wordpress.org/plugins/wp-source-control/%0ATrac: https://plugins.trac.wordpress.org/browser/wp-source-control/
+No syntax errors detected in wp-source-control/wp-source-control/downloadfiles/download.php
+No syntax errors detected in wp-source-control/wp-source-control/downloadfiles/source_control_zip.php
+No syntax errors detected in wp-source-control/wp-source-control/lib/tom-m8te.php
+No syntax errors detected in wp-source-control/wp-source-control/read_post_version.php
+No syntax errors detected in wp-source-control/wp-source-control/read_template_version.php
+No syntax errors detected in wp-source-control/wp-source-control/source_control_backup.php
+No syntax errors detected in wp-source-control/wp-source-control/source_control_clean_up.php
+No syntax errors detected in wp-source-control/wp-source-control/source_control_diff.php
+No syntax errors detected in wp-source-control/wp-source-control/source_control_list.php
+No syntax errors detected in wp-source-control/wp-source-control/source_control_path.php
+No syntax errors detected in wp-source-control/wp-source-control/source_control_post_diff.php
+No syntax errors detected in wp-source-control/wp-source-control/source_control_post_log.php
+No syntax errors detected in wp-source-control/wp-source-control/source_control_search.php
+No syntax errors detected in wp-source-control/wp-source-control/source_control_template_diff.php
+No syntax errors detected in wp-source-control/wp-source-control/source_control_template_log.php
+No syntax errors detected in wp-source-control/wp-source-control/wp-content_source_control.php
+.....[31mE[0m...[31mE[0m...... 16 / 16 (100%)
+
+
+
+[1mFILE: source_control_backup.php[0m
+----------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 201 | [31mERROR[0m | [1mFunction split() is deprecated since PHP 5.3 and
+     |       | removed since PHP 7.0; Use preg_split(), explode() or
+     |       | str_split() instead[0m
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.splitDeprecatedRemoved)
+----------------------------------------------------------------------
+
+
+[1mFILE: source_control_path.php[0m
+----------------------------------------------------------------------
+[1mFOUND 2 ERRORS AFFECTING 2 LINES[0m
+----------------------------------------------------------------------
+ 45 | [31mERROR[0m | [1mFunction create_function() is deprecated since PHP 7.2
+    |       | and removed since PHP 8.0; Use an anonymous function
+    |       | instead[0m
+    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
+ 74 | [31mERROR[0m | [1mFunction create_function() is deprecated since PHP 7.2
+    |       | and removed since PHP 8.0; Use an anonymous function
+    |       | instead[0m
+    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
+----------------------------------------------------------------------
+
+Time: 410ms; Memory: 20MB
+::error::FILE: source_control_backup.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 201 | ERROR | Function split() is deprecated since PHP 5.3 and%0A     |       | removed since PHP 7.0; Use preg_split(), explode() or%0A     |       | str_split() instead%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.splitDeprecatedRemoved)%0A----------------------------------------------------------------------%0A%0A%0AFILE: source_control_path.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A----------------------------------------------------------------------%0A 45 | ERROR | Function create_function() is deprecated since PHP 7.2%0A    |       | and removed since PHP 8.0; Use an anonymous function%0A    |       | instead%0A    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)%0A 74 | ERROR | Function create_function() is deprecated since PHP 7.2%0A    |       | and removed since PHP 8.0; Use an anonymous function%0A    |       | instead%0A    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)%0A----------------------------------------------------------------------%0A
