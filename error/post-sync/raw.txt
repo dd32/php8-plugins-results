@@ -1,0 +1,23 @@
+::warning::Plugin: https://wordpress.org/plugins/post-sync/%0ATrac: https://plugins.trac.wordpress.org/browser/post-sync/
+No syntax errors detected in post-sync/post-sync/admin/admin.php
+No syntax errors detected in post-sync/post-sync/admin/pages.php
+No syntax errors detected in post-sync/post-sync/include/RemoteHandler.php
+No syntax errors detected in post-sync/post-sync/post_sync.php
+..[31mE[0m. 4 / 4 (100%)
+
+
+
+[1mFILE: include/RemoteHandler.php[0m
+----------------------------------------------------------------------
+[1mFOUND 2 ERRORS AFFECTING 2 LINES[0m
+----------------------------------------------------------------------
+ 12 | [31mERROR[0m | [1mDeclaration of a PHP4 style class constructor is
+    |       | deprecated since PHP 7.0 and removed since PHP 8.0[0m
+    |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+ 32 | [31mERROR[0m | [1mFunction xmlrpc_encode_request() is removed since PHP
+    |       | 8.0[0m
+    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.xmlrpc_encode_requestRemoved)
+----------------------------------------------------------------------
+
+Time: 127ms; Memory: 12MB
+::error::FILE: include/RemoteHandler.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A----------------------------------------------------------------------%0A 12 | ERROR | Declaration of a PHP4 style class constructor is%0A    |       | deprecated since PHP 7.0 and removed since PHP 8.0%0A    |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)%0A 32 | ERROR | Function xmlrpc_encode_request() is removed since PHP%0A    |       | 8.0%0A    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.xmlrpc_encode_requestRemoved)%0A----------------------------------------------------------------------%0A
