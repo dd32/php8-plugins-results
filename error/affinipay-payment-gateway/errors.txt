@@ -1,0 +1,34 @@
+
+vendor/phpdocumentor/type-resolver/src/Types/Mixed.php
+  Fatal error: Cannot use 'Mixed' as class name as it is reserved on line 20
+
+vendor/phpunit/phpunit/src/Util/Configuration.php
+  Warning: Private methods cannot be final as they are never overridden by other classes on line 172
+
+vendor/phpunit/phpunit/tests/_files/Singleton.php
+  Warning: Private methods cannot be final as they are never overridden by other classes on line 10
+
+vendor/phpunit/phpunit-mock-objects/tests/_fixture/SingletonClass.php
+  Warning: Private methods cannot be final as they are never overridden by other classes on line 17
+  Warning: The magic method SingletonClass::__sleep() must have public visibility on line 17
+  Warning: Private methods cannot be final as they are never overridden by other classes on line 21
+  Warning: The magic method SingletonClass::__wakeup() must have public visibility on line 21
+  Warning: Private methods cannot be final as they are never overridden by other classes on line 25
+FILE: vendor/phpunit/php-token-stream/tests/_fixture/source.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 5 | ERROR | Declaration of a PHP4 style class constructor is
+   |       | deprecated since PHP 7.0 and removed since PHP 8.0
+   |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+----------------------------------------------------------------------
+
+
+FILE: ...r/phpunit/phpunit-mock-objects/tests/_fixture/SingletonClass.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 17 | ERROR | Visibility for magic method __sleep must be public.
+    |       | Found: private
+    |       | (PHPCompatibility.FunctionDeclarations.NonStaticMagicMethods.__sleepMethodVisibility)
+----------------------------------------------------------------------
