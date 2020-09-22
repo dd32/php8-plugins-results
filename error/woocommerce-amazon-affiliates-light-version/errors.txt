@@ -1,194 +1,327 @@
 
 composer/amazon-paapi/paapi5-php-sdk/src/com/amazon/paapi5/v1/BrowseNodeChildren.php
+  Fatal error: Cannot use "parent" when current class scope has no parent on line 174
 
 composer/amazon-paapi/paapi5-php-sdk/src/com/amazon/paapi5/v1/Properties.php
+  Fatal error: Cannot use "parent" when current class scope has no parent on line 174
 
 lib/scripts/PHPMailer_5.2.9/extras/htmlfilter.php
+  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 351
 
 lib/scripts/PHPMailer_5.2.9/PHPMailerAutoload.php
+  Fatal error: __autoload() is no longer supported, use spl_autoload_register() instead on line 45
 
 lib/scripts/php-query/phpQuery.php
+  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 2195
 FILE: aa-framework/framework.class.php
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 FOUND 2 ERRORS AFFECTING 2 LINES
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 10315 | ERROR | Self-closing XHTML tags are ignored. Only non-self-closing tags should be used in the strip_tags() $allowable_tags parameter since PHP 5.3.4. Found: '<br><br/><br
-       |       | />' (PHPCompatibility.ParameterValues.ForbiddenStripTagsSelfClosingXHTML.Found)
- 10478 | ERROR | Self-closing XHTML tags are ignored. Only non-self-closing tags should be used in the strip_tags() $allowable_tags parameter since PHP 5.3.4. Found: '<br><br/><br
-       |       | />' (PHPCompatibility.ParameterValues.ForbiddenStripTagsSelfClosingXHTML.Found)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
+ 10315 | ERROR | Self-closing XHTML tags are ignored. Only
+       |       | non-self-closing tags should be used in the
+       |       | strip_tags() $allowable_tags parameter since PHP
+       |       | 5.3.4. Found: '<br><br/><br />'
+       |       | (PHPCompatibility.ParameterValues.ForbiddenStripTagsSelfClosingXHTML.Found)
+ 10478 | ERROR | Self-closing XHTML tags are ignored. Only
+       |       | non-self-closing tags should be used in the
+       |       | strip_tags() $allowable_tags parameter since PHP
+       |       | 5.3.4. Found: '<br><br/><br />'
+       |       | (PHPCompatibility.ParameterValues.ForbiddenStripTagsSelfClosingXHTML.Found)
+----------------------------------------------------------------------
 
 
-FILE: composer/amazon-paapi/paapi5-php-sdk/src/com/amazon/paapi5/v1/BrowseNodeChildren.php
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+FILE: ...i/paapi5-php-sdk/src/com/amazon/paapi5/v1/BrowseNodeChildren.php
+----------------------------------------------------------------------
 FOUND 2 ERRORS AFFECTING 2 LINES
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 174 | ERROR | Using "parent" inside a class without parent is deprecated since PHP 7.4 and removed since PHP 8.0
+----------------------------------------------------------------------
+ 174 | ERROR | Using "parent" inside a class without parent is
+     |       | deprecated since PHP 7.4 and removed since PHP 8.0
      |       | (PHPCompatibility.Classes.RemovedOrphanedParent.Removed)
- 187 | ERROR | Using "parent" inside a class without parent is deprecated since PHP 7.4 and removed since PHP 8.0
+ 187 | ERROR | Using "parent" inside a class without parent is
+     |       | deprecated since PHP 7.4 and removed since PHP 8.0
      |       | (PHPCompatibility.Classes.RemovedOrphanedParent.Removed)
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
-FILE: composer/amazon-paapi/paapi5-php-sdk/src/com/amazon/paapi5/v1/Properties.php
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+FILE: ...zon-paapi/paapi5-php-sdk/src/com/amazon/paapi5/v1/Properties.php
+----------------------------------------------------------------------
 FOUND 2 ERRORS AFFECTING 2 LINES
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 174 | ERROR | Using "parent" inside a class without parent is deprecated since PHP 7.4 and removed since PHP 8.0
+----------------------------------------------------------------------
+ 174 | ERROR | Using "parent" inside a class without parent is
+     |       | deprecated since PHP 7.4 and removed since PHP 8.0
      |       | (PHPCompatibility.Classes.RemovedOrphanedParent.Removed)
- 187 | ERROR | Using "parent" inside a class without parent is deprecated since PHP 7.4 and removed since PHP 8.0
+ 187 | ERROR | Using "parent" inside a class without parent is
+     |       | deprecated since PHP 7.4 and removed since PHP 8.0
      |       | (PHPCompatibility.Classes.RemovedOrphanedParent.Removed)
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 FILE: lib/scripts/debugbar/debugbar.php
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 FOUND 2 ERRORS AFFECTING 2 LINES
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 337 | ERROR | Indirect access to variables, properties and methods will be evaluated strictly in left-to-right order since PHP 7.0. Use curly braces to remove ambiguity.
+----------------------------------------------------------------------
+ 337 | ERROR | Indirect access to variables, properties and methods
+     |       | will be evaluated strictly in left-to-right order
+     |       | since PHP 7.0. Use curly braces to remove
+     |       | ambiguity.
      |       | (PHPCompatibility.Variables.NewUniformVariableSyntax.Found)
- 343 | ERROR | Indirect access to variables, properties and methods will be evaluated strictly in left-to-right order since PHP 7.0. Use curly braces to remove ambiguity.
+ 343 | ERROR | Indirect access to variables, properties and methods
+     |       | will be evaluated strictly in left-to-right order
+     |       | since PHP 7.0. Use curly braces to remove
+     |       | ambiguity.
      |       | (PHPCompatibility.Variables.NewUniformVariableSyntax.Found)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 FILE: lib/scripts/PHPMailer_5.2.9/class.phpmailer.php
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 FOUND 5 ERRORS AFFECTING 5 LINES
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 2270 | ERROR | Function get_magic_quotes_runtime() is deprecated since PHP 7.4 and removed since PHP 8.0
+----------------------------------------------------------------------
+ 2270 | ERROR | Function get_magic_quotes_runtime() is deprecated
+      |       | since PHP 7.4 and removed since PHP 8.0
       |       | (PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_runtimeDeprecatedRemoved)
- 2273 | ERROR | Function set_magic_quotes_runtime() is deprecated since PHP 5.3 and removed since PHP 7.0
+ 2273 | ERROR | Function set_magic_quotes_runtime() is deprecated
+      |       | since PHP 5.3 and removed since PHP 7.0
       |       | (PHPCompatibility.FunctionUse.RemovedFunctions.set_magic_quotes_runtimeDeprecatedRemoved)
- 2278 | ERROR | INI directive 'magic_quotes_runtime' is deprecated since PHP 5.3 and removed since PHP 5.4
+ 2278 | ERROR | INI directive 'magic_quotes_runtime' is deprecated
+      |       | since PHP 5.3 and removed since PHP 5.4
       |       | (PHPCompatibility.IniDirectives.RemovedIniDirectives.magic_quotes_runtimeDeprecatedRemoved)
- 2285 | ERROR | Function set_magic_quotes_runtime() is deprecated since PHP 5.3 and removed since PHP 7.0
+ 2285 | ERROR | Function set_magic_quotes_runtime() is deprecated
+      |       | since PHP 5.3 and removed since PHP 7.0
       |       | (PHPCompatibility.FunctionUse.RemovedFunctions.set_magic_quotes_runtimeDeprecatedRemoved)
- 2287 | ERROR | INI directive 'magic_quotes_runtime' is deprecated since PHP 5.3 and removed since PHP 5.4
+ 2287 | ERROR | INI directive 'magic_quotes_runtime' is deprecated
+      |       | since PHP 5.3 and removed since PHP 5.4
       |       | (PHPCompatibility.IniDirectives.RemovedIniDirectives.magic_quotes_runtimeDeprecatedRemoved)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 FILE: lib/scripts/PHPMailer_5.2.9/extras/htmlfilter.php
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 FOUND 30 ERRORS AFFECTING 26 LINES
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-   49 | ERROR | [ ] Function each() is deprecated since PHP 7.2 and removed since PHP 8.0; Use a foreach loop or ArrayIterator instead
+----------------------------------------------------------------------
+   49 | ERROR | [ ] Function each() is deprecated since PHP 7.2 and
+      |       |     removed since PHP 8.0; Use a foreach loop or
+      |       |     ArrayIterator instead
       |       |     (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)
-  351 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $attary{$attname}
+  351 | ERROR | [x] Curly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found:
+      |       |     $attary{$attname}
       |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
-  385 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $attary{$attname}
+  385 | ERROR | [x] Curly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found:
+      |       |     $attary{$attname}
       |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
-  393 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $attary{$attname}
+  393 | ERROR | [x] Curly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found:
+      |       |     $attary{$attname}
       |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
-  407 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $attary{$attname}
+  407 | ERROR | [x] Curly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found:
+      |       |     $attary{$attname}
       |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
-  413 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $attary{$attname}
+  413 | ERROR | [x] Curly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found:
+      |       |     $attary{$attname}
       |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
-  449 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $repl{$matches[0][$i]}
+  449 | ERROR | [x] Curly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found:
+      |       |     $repl{$matches[0][$i]}
       |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
-  525 | ERROR | [ ] Function each() is deprecated since PHP 7.2 and removed since PHP 8.0; Use a foreach loop or ArrayIterator instead
+  525 | ERROR | [ ] Function each() is deprecated since PHP 7.2 and
+      |       |     removed since PHP 8.0; Use a foreach loop or
+      |       |     ArrayIterator instead
       |       |     (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)
-  533 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $attary{$attname}
+  533 | ERROR | [x] Curly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found:
+      |       |     $attary{$attname}
       |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
-  546 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $attary{$attname}
+  546 | ERROR | [x] Curly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found:
+      |       |     $attary{$attname}
       |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
-  568 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $attary{$attname}
+  568 | ERROR | [x] Curly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found:
+      |       |     $attary{$attname}
       |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
-  577 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $attary{$attname}
+  577 | ERROR | [x] Curly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found:
+      |       |     $attary{$attname}
       |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
-  584 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $attary{$attname}
+  584 | ERROR | [x] Curly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found:
+      |       |     $attary{$attname}
       |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
-  678 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $body{$i}
+  678 | ERROR | [x] Curly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found: $body{$i}
       |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
-  709 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $body{$i+2}
+  709 | ERROR | [x] Curly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found: $body{$i+2}
       |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
-  828 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $divattary{"style"}
+  828 | ERROR | [x] Curly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found:
+      |       |     $divattary{"style"}
       |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
-  924 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $open_tags{$tagname}
+  924 | ERROR | [x] Curly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found:
+      |       |     $open_tags{$tagname}
       |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
-  925 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $open_tags{$tagname}
+  925 | ERROR | [x] Curly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found:
+      |       |     $open_tags{$tagname}
       |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
-  927 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $open_tags{$tagname}
+  927 | ERROR | [x] Curly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found:
+      |       |     $open_tags{$tagname}
       |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
-  971 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $open_tags{$tagname}
+  971 | ERROR | [x] Curly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found:
+      |       |     $open_tags{$tagname}
       |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
-  972 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $open_tags{$tagname}
+  972 | ERROR | [x] Curly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found:
+      |       |     $open_tags{$tagname}
       |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
-  974 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $open_tags{$tagname}
+  974 | ERROR | [x] Curly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found:
+      |       |     $open_tags{$tagname}
       |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
- 1131 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $bad_attvals{'/.*/'}
+ 1131 | ERROR | [x] Curly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found:
+      |       |     $bad_attvals{'/.*/'}
       |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
- 1131 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found:
-      |       |     $bad_attvals{'/.*/'}{'/^src|background/i'} (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
- 1135 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $bad_attvals{'/.*/'}
+ 1131 | ERROR | [x] Curly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found:
+      |       |     $bad_attvals{'/.*/'}{'/^src|background/i'}
       |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
- 1135 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found:
-      |       |     $bad_attvals{'/.*/'}{'/^src|background/i'} (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
- 1139 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $bad_attvals{'/.*/'}
+ 1135 | ERROR | [x] Curly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found:
+      |       |     $bad_attvals{'/.*/'}
       |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
- 1139 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found:
-      |       |     $bad_attvals{'/.*/'}{'/^style/i'} (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
- 1143 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $bad_attvals{'/.*/'}
+ 1135 | ERROR | [x] Curly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found:
+      |       |     $bad_attvals{'/.*/'}{'/^src|background/i'}
       |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
- 1143 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found:
-      |       |     $bad_attvals{'/.*/'}{'/^style/i'} (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 1139 | ERROR | [x] Curly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found:
+      |       |     $bad_attvals{'/.*/'}
+      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 1139 | ERROR | [x] Curly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found:
+      |       |     $bad_attvals{'/.*/'}{'/^style/i'}
+      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 1143 | ERROR | [x] Curly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found:
+      |       |     $bad_attvals{'/.*/'}
+      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 1143 | ERROR | [x] Curly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found:
+      |       |     $bad_attvals{'/.*/'}{'/^style/i'}
+      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+----------------------------------------------------------------------
 PHPCBF CAN FIX THE 28 MARKED SNIFF VIOLATIONS AUTOMATICALLY
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 FILE: lib/scripts/PHPMailer_5.2.9/PHPMailerAutoload.php
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 FOUND 1 ERROR AFFECTING 1 LINE
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 45 | ERROR | Specifying an autoloader using an __autoload() function is deprecated since PHP 7.2 and no longer supported since PHP 8.0
+----------------------------------------------------------------------
+ 45 | ERROR | Specifying an autoloader using an __autoload() function
+    |       | is deprecated since PHP 7.2 and no longer supported
+    |       | since PHP 8.0
     |       | (PHPCompatibility.FunctionNameRestrictions.RemovedMagicAutoload.Removed)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 FILE: lib/scripts/php-query/phpQuery.php
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 FOUND 6 ERRORS AFFECTING 6 LINES
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 2195 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $param{0}
+----------------------------------------------------------------------
+ 2195 | ERROR | [x] Curly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found: $param{0}
       |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
- 2219 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $param{1}
+ 2219 | ERROR | [x] Curly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found: $param{1}
       |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
- 2261 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $param{3}
+ 2261 | ERROR | [x] Curly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found: $param{3}
       |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
- 2263 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $param{0}
+ 2263 | ERROR | [x] Curly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found: $param{0}
       |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
- 2264 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $param{2}
+ 2264 | ERROR | [x] Curly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found: $param{2}
       |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
- 3493 | ERROR | [ ] "$this" can no longer be used in a plain function or method since PHP 7.1. (PHPCompatibility.Variables.ForbiddenThisUseContexts.OutsideObjectContext)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 3493 | ERROR | [ ] "$this" can no longer be used in a plain function
+      |       |     or method since PHP 7.1.
+      |       |     (PHPCompatibility.Variables.ForbiddenThisUseContexts.OutsideObjectContext)
+----------------------------------------------------------------------
 PHPCBF CAN FIX THE 5 MARKED SNIFF VIOLATIONS AUTOMATICALLY
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 FILE: modules/amazon/amzmultikeys/init.php
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 FOUND 1 ERROR AFFECTING 1 LINE
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 389 | ERROR | Self-closing XHTML tags are ignored. Only non-self-closing tags should be used in the strip_tags() $allowable_tags parameter since PHP 5.3.4. Found: '<br><br/><br
-     |       | /><u>' (PHPCompatibility.ParameterValues.ForbiddenStripTagsSelfClosingXHTML.Found)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
+ 389 | ERROR | Self-closing XHTML tags are ignored. Only
+     |       | non-self-closing tags should be used in the
+     |       | strip_tags() $allowable_tags parameter since PHP
+     |       | 5.3.4. Found: '<br><br/><br /><u>'
+     |       | (PHPCompatibility.ParameterValues.ForbiddenStripTagsSelfClosingXHTML.Found)
+----------------------------------------------------------------------
 
 
 FILE: modules/cronjobs/cronjobs.panel.php
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 FOUND 1 ERROR AFFECTING 1 LINE
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 305 | ERROR | Self-closing XHTML tags are ignored. Only non-self-closing tags should be used in the strip_tags() $allowable_tags parameter since PHP 5.3.4. Found: '<br><br/><br
-     |       | />' (PHPCompatibility.ParameterValues.ForbiddenStripTagsSelfClosingXHTML.Found)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
+ 305 | ERROR | Self-closing XHTML tags are ignored. Only
+     |       | non-self-closing tags should be used in the
+     |       | strip_tags() $allowable_tags parameter since PHP
+     |       | 5.3.4. Found: '<br><br/><br />'
+     |       | (PHPCompatibility.ParameterValues.ForbiddenStripTagsSelfClosingXHTML.Found)
+----------------------------------------------------------------------
 
 
 FILE: modules/setup_backup/default-sql.php
----------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 FOUND 1 ERROR AFFECTING 1 LINE
----------------------------------------------------------------------------------------------------------------------------------------------------------------
- 109 | ERROR | Function fgetss() is deprecated since PHP 7.3 and removed since PHP 8.0
+----------------------------------------------------------------------
+ 109 | ERROR | Function fgetss() is deprecated since PHP 7.3 and
+     |       | removed since PHP 8.0
      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.fgetssDeprecatedRemoved)
----------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
