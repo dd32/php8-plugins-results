@@ -911,6 +911,8 @@ No syntax errors detected in lifeline-donation/lifeline-donation/webinane-commer
 No syntax errors detected in lifeline-donation/lifeline-donation/webinane-commerce/vendor/paypal/sdk-core-php/lib/PayPal/Core/PPRequest.php
 No syntax errors detected in lifeline-donation/lifeline-donation/webinane-commerce/vendor/paypal/sdk-core-php/lib/PayPal/Core/PPUtils.php
 No syntax errors detected in lifeline-donation/lifeline-donation/webinane-commerce/vendor/paypal/sdk-core-php/lib/PayPal/Core/PPXmlFaultMessage.php
+
+Fatal error: Cannot use "parent" when current class scope has no parent in lifeline-donation/lifeline-donation/webinane-commerce/vendor/paypal/sdk-core-php/lib/PayPal/Core/PPXmlMessage.php on line 124
 Errors parsing lifeline-donation/lifeline-donation/webinane-commerce/vendor/paypal/sdk-core-php/lib/PayPal/Core/PPXmlMessage.php
 No syntax errors detected in lifeline-donation/lifeline-donation/webinane-commerce/vendor/paypal/sdk-core-php/lib/PayPal/Exception/OAuthException.php
 No syntax errors detected in lifeline-donation/lifeline-donation/webinane-commerce/vendor/paypal/sdk-core-php/lib/PayPal/Exception/PPConfigurationException.php
@@ -1107,7 +1109,7 @@ No syntax errors detected in lifeline-donation/lifeline-donation/widgets/top_don
 No syntax errors detected in lifeline-donation/lifeline-donation/widgets/urgent_campaigns.php
 No syntax errors detected in lifeline-donation/lifeline-donation/widgets/urgent_cause.php
 No syntax errors detected in lifeline-donation/lifeline-donation/widgets/urgent_project.php
-::error::%0Awebinane-commerce/vendor/paypal/sdk-core-php/lib/PayPal/Core/PPXmlMessage.php
+::error::%0Awebinane-commerce/vendor/paypal/sdk-core-php/lib/PayPal/Core/PPXmlMessage.php%0A  Fatal error: Cannot use "parent" when current class scope has no parent on line 124
 ............................................................   60 / 1103 (5%)
 ............................................................  120 / 1103 (11%)
 ............................................................  180 / 1103 (16%)
@@ -1130,22 +1132,24 @@ No syntax errors detected in lifeline-donation/lifeline-donation/widgets/urgent_
 
 
 
-[1mFILE: webinane-commerce/vendor/paypal/sdk-core-php/lib/PayPal/Core/PPXmlMessage.php[0m
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[1mFILE: ...erce/vendor/paypal/sdk-core-php/lib/PayPal/Core/PPXmlMessage.php[0m
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 124 | [31mERROR[0m | [1mUsing "parent" inside a class without parent is deprecated since PHP 7.4 and removed since PHP 8.0[0m
+----------------------------------------------------------------------
+ 124 | [31mERROR[0m | [1mUsing "parent" inside a class without parent is
+     |       | deprecated since PHP 7.4 and removed since PHP 8.0[0m
      |       | (PHPCompatibility.Classes.RemovedOrphanedParent.Removed)
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
-[1mFILE: webinane-commerce/vendor/paypal/sdk-core-php/lib/PayPal/IPN/PPIPNMessage.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[1mFILE: ...merce/vendor/paypal/sdk-core-php/lib/PayPal/IPN/PPIPNMessage.php[0m
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 84 | [31mERROR[0m | [1mFunction get_magic_quotes_gpc() is deprecated since PHP 7.4 and removed since PHP 8.0[0m
+----------------------------------------------------------------------
+ 84 | [31mERROR[0m | [1mFunction get_magic_quotes_gpc() is deprecated since PHP
+    |       | 7.4 and removed since PHP 8.0[0m
     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_gpcDeprecatedRemoved)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
-Time: 15.35 secs; Memory: 48MB
-::error::FILE: webinane-commerce/vendor/paypal/sdk-core-php/lib/PayPal/Core/PPXmlMessage.php%0A---------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A---------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 124 | ERROR | Using "parent" inside a class without parent is deprecated since PHP 7.4 and removed since PHP 8.0%0A     |       | (PHPCompatibility.Classes.RemovedOrphanedParent.Removed)%0A---------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: webinane-commerce/vendor/paypal/sdk-core-php/lib/PayPal/IPN/PPIPNMessage.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 84 | ERROR | Function get_magic_quotes_gpc() is deprecated since PHP 7.4 and removed since PHP 8.0%0A    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_gpcDeprecatedRemoved)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
+Time: 14.94 secs; Memory: 48MB
+::error::FILE: ...erce/vendor/paypal/sdk-core-php/lib/PayPal/Core/PPXmlMessage.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 124 | ERROR | Using "parent" inside a class without parent is%0A     |       | deprecated since PHP 7.4 and removed since PHP 8.0%0A     |       | (PHPCompatibility.Classes.RemovedOrphanedParent.Removed)%0A----------------------------------------------------------------------%0A%0A%0AFILE: ...merce/vendor/paypal/sdk-core-php/lib/PayPal/IPN/PPIPNMessage.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 84 | ERROR | Function get_magic_quotes_gpc() is deprecated since PHP%0A    |       | 7.4 and removed since PHP 8.0%0A    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_gpcDeprecatedRemoved)%0A----------------------------------------------------------------------%0A
