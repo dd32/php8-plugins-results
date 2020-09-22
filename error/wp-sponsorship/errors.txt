@@ -1,0 +1,64 @@
+
+vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/AbstractSmtpTransport.php
+  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 399
+FILE: ...iler/swiftmailer/lib/classes/Swift/ByteStream/FileByteStream.php
+----------------------------------------------------------------------
+FOUND 3 ERRORS AFFECTING 3 LINES
+----------------------------------------------------------------------
+ 53 | ERROR | Function get_magic_quotes_runtime() is deprecated since
+    |       | PHP 7.4 and removed since PHP 8.0
+    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_runtimeDeprecatedRemoved)
+ 87 | ERROR | INI directive 'magic_quotes_runtime' is deprecated
+    |       | since PHP 5.3 and removed since PHP 5.4
+    |       | (PHPCompatibility.IniDirectives.RemovedIniDirectives.magic_quotes_runtimeDeprecatedRemoved)
+ 91 | ERROR | INI directive 'magic_quotes_runtime' is deprecated
+    |       | since PHP 5.3 and removed since PHP 5.4
+    |       | (PHPCompatibility.IniDirectives.RemovedIniDirectives.magic_quotes_runtimeDeprecatedRemoved)
+----------------------------------------------------------------------
+
+
+FILE: ...ftmailer/swiftmailer/lib/classes/Swift/KeyCache/DiskKeyCache.php
+----------------------------------------------------------------------
+FOUND 5 ERRORS AFFECTING 5 LINES
+----------------------------------------------------------------------
+  67 | ERROR | Function get_magic_quotes_runtime() is deprecated
+     |       | since PHP 7.4 and removed since PHP 8.0
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_runtimeDeprecatedRemoved)
+ 180 | ERROR | INI directive 'magic_quotes_runtime' is deprecated
+     |       | since PHP 5.3 and removed since PHP 5.4
+     |       | (PHPCompatibility.IniDirectives.RemovedIniDirectives.magic_quotes_runtimeDeprecatedRemoved)
+ 187 | ERROR | INI directive 'magic_quotes_runtime' is deprecated
+     |       | since PHP 5.3 and removed since PHP 5.4
+     |       | (PHPCompatibility.IniDirectives.RemovedIniDirectives.magic_quotes_runtimeDeprecatedRemoved)
+ 207 | ERROR | INI directive 'magic_quotes_runtime' is deprecated
+     |       | since PHP 5.3 and removed since PHP 5.4
+     |       | (PHPCompatibility.IniDirectives.RemovedIniDirectives.magic_quotes_runtimeDeprecatedRemoved)
+ 213 | ERROR | INI directive 'magic_quotes_runtime' is deprecated
+     |       | since PHP 5.3 and removed since PHP 5.4
+     |       | (PHPCompatibility.IniDirectives.RemovedIniDirectives.magic_quotes_runtimeDeprecatedRemoved)
+----------------------------------------------------------------------
+
+
+FILE: ...wiftmailer/lib/classes/Swift/Transport/AbstractSmtpTransport.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 399 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $line{3}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------
+
+
+FILE: ...wiftmailer/swiftmailer/lib/swiftmailer_generate_mimes_config.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 187 | ERROR | Passing the $glue and $pieces parameters in reverse
+     |       | order to implode has been deprecated since PHP 7.4 and
+     |       | is removed since PHP 8.0; $glue should be the first
+     |       | parameter and $pieces the second
+     |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
+----------------------------------------------------------------------
