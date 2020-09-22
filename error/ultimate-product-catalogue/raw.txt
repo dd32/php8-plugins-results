@@ -9,6 +9,8 @@ No syntax errors detected in ultimate-product-catalogue/ultimate-product-catalog
 No syntax errors detected in ultimate-product-catalogue/ultimate-product-catalogue/Functions/Process_Ajax.php
 No syntax errors detected in ultimate-product-catalogue/ultimate-product-catalogue/Functions/Public_Functions.php
 No syntax errors detected in ultimate-product-catalogue/ultimate-product-catalogue/Functions/Rewrite_Rules.php
+
+Fatal error: Unparenthesized `a ? b : c ? d : e` is not supported. Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)` in ultimate-product-catalogue/ultimate-product-catalogue/Functions/Shortcodes.php on line 2491
 Errors parsing ultimate-product-catalogue/ultimate-product-catalogue/Functions/Shortcodes.php
 No syntax errors detected in ultimate-product-catalogue/ultimate-product-catalogue/Functions/UPCP_Add_New_Catalogue_Style.php
 No syntax errors detected in ultimate-product-catalogue/ultimate-product-catalogue/Functions/UPCP_Add_SEO.php
@@ -274,8 +276,7 @@ No syntax errors detected in ultimate-product-catalogue/ultimate-product-catalog
 No syntax errors detected in ultimate-product-catalogue/ultimate-product-catalogue/PHPSpreadsheet/vendor/psr/simple-cache/src/CacheInterface.php
 No syntax errors detected in ultimate-product-catalogue/ultimate-product-catalogue/PHPSpreadsheet/vendor/psr/simple-cache/src/InvalidArgumentException.php
 No syntax errors detected in ultimate-product-catalogue/ultimate-product-catalogue/UPCP_Main.php
-::error::%0AFunctions/Shortcodes.php%0A%0APHPSpreadsheet/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Reader/Xls.php%0A  Warning: "continue" targeting switch is equivalent to "break".%0A      Did you mean to use "continue 2"?%0A      on line 1130%0A%0APHPSpreadsheet/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Shared/OLE.php%0A  Warning: "continue" targeting switch is equivalent to "break".%0A      Did you mean to use "continue 2"?%0A      on line 323
-No syntax errors detected in ultimate-product-catalogue/ultimate-product-catalogue/UPCP_Main.php
+::error::%0AFunctions/Shortcodes.php%0A  Fatal error: Unparenthesized `a ? b : c ? d : e` is not supported.%0A      Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)`%0A      on line 2491%0A%0APHPSpreadsheet/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Reader/Xls.php%0A  Warning: "continue" targeting switch is equivalent to "break".%0A      Did you mean to use "continue 2"?%0A      on line 1130%0A%0APHPSpreadsheet/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Shared/OLE.php%0A  Warning: "continue" targeting switch is equivalent to "break".%0A      Did you mean to use "continue 2"?%0A      on line 323
 ..........[31mE[0m.................................................  60 / 270 (22%)
 ............................................................ 120 / 270 (44%)
 ......[31mE[0m..................................................... 180 / 270 (67%)
@@ -285,21 +286,28 @@ No syntax errors detected in ultimate-product-catalogue/ultimate-product-catalog
 
 
 [1mFILE: Functions/Shortcodes.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 2491 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has been deprecated in PHP 7.4 and removed in PHP 8.0. Multiple consecutive ternaries detected. Use parenthesis to
-      |       | clarify the order in which the operations should be executed[0m (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
+ 2491 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has
+      |       | been deprecated in PHP 7.4 and removed in PHP 8.0.
+      |       | Multiple consecutive ternaries detected. Use
+      |       | parenthesis to clarify the order in which the
+      |       | operations should be executed[0m
+      |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
+----------------------------------------------------------------------
 
 
-[1mFILE: PHPSpreadsheet/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Reader/Ods.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[1mFILE: ...endor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Reader/Ods.php[0m
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 512 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse order to implode has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first
-     |       | parameter and $pieces the second[0m (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
+ 512 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse
+     |       | order to implode has been deprecated since PHP 7.4 and
+     |       | is removed since PHP 8.0; $glue should be the first
+     |       | parameter and $pieces the second[0m
+     |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
+----------------------------------------------------------------------
 
-Time: 23.9 secs; Memory: 58.01MB
-::error::FILE: Functions/Shortcodes.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 2491 | ERROR | The left-associativity of the ternary operator has been deprecated in PHP 7.4 and removed in PHP 8.0. Multiple consecutive ternaries detected. Use parenthesis to%0A      |       | clarify the order in which the operations should be executed (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: PHPSpreadsheet/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Reader/Ods.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 512 | ERROR | Passing the $glue and $pieces parameters in reverse order to implode has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first%0A     |       | parameter and $pieces the second (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
+Time: 24.17 secs; Memory: 58.01MB
+::error::FILE: Functions/Shortcodes.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 2491 | ERROR | The left-associativity of the ternary operator has%0A      |       | been deprecated in PHP 7.4 and removed in PHP 8.0.%0A      |       | Multiple consecutive ternaries detected. Use%0A      |       | parenthesis to clarify the order in which the%0A      |       | operations should be executed%0A      |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A----------------------------------------------------------------------%0A%0A%0AFILE: ...endor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Reader/Ods.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 512 | ERROR | Passing the $glue and $pieces parameters in reverse%0A     |       | order to implode has been deprecated since PHP 7.4 and%0A     |       | is removed since PHP 8.0; $glue should be the first%0A     |       | parameter and $pieces the second%0A     |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A----------------------------------------------------------------------%0A
