@@ -1,0 +1,55 @@
+
+functions/imc-core-taxcategory.php
+  Warning: The magic method imcplus_taxcat_image::__wakeup() must have public visibility on line 217
+
+hybridauth/Hybrid/thirdparty/LinkedIn/LinkedIn.php
+  Fatal error: Cannot unset $this on line 178
+
+hybridauth/Hybrid/thirdparty/OAuth/OAuth.php
+  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 106
+FILE: hybridauth/Hybrid/thirdparty/Facebook/base_facebook.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 1311 | ERROR | Passing the $glue and $pieces parameters in reverse
+      |       | order to implode has been deprecated since PHP 7.4
+      |       | and is removed since PHP 8.0; $glue should be the
+      |       | first parameter and $pieces the second
+      |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
+----------------------------------------------------------------------
+
+
+FILE: hybridauth/Hybrid/thirdparty/LinkedIn/LinkedIn.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 178 | ERROR | "$this" can no longer be unset since PHP 7.1.
+     |       | (PHPCompatibility.Variables.ForbiddenThisUseContexts.Unset)
+----------------------------------------------------------------------
+
+
+FILE: hybridauth/Hybrid/thirdparty/OAuth/OAuth.php
+----------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 106 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $built{$i}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 106 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $signature{$i}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------
+
+
+FILE: hybridauth/Hybrid/thirdparty/OpenID/LightOpenID.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 896 | ERROR | Function get_magic_quotes_gpc() is deprecated since
+     |       | PHP 7.4 and removed since PHP 8.0
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_gpcDeprecatedRemoved)
+----------------------------------------------------------------------
