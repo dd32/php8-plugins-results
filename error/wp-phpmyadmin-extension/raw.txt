@@ -562,6 +562,12 @@ No syntax errors detected in wp-phpmyadmin-extension/wp-phpmyadmin-extension/lib
 No syntax errors detected in wp-phpmyadmin-extension/wp-phpmyadmin-extension/lib/phpMyAdmin/vendor/composer/autoload_real.php
 No syntax errors detected in wp-phpmyadmin-extension/wp-phpmyadmin-extension/lib/phpMyAdmin/vendor/composer/autoload_static.php
 No syntax errors detected in wp-phpmyadmin-extension/wp-phpmyadmin-extension/lib/phpMyAdmin/vendor/composer/ClassLoader.php
+
+Warning: Private methods cannot be final as they are never overridden by other classes in wp-phpmyadmin-extension/wp-phpmyadmin-extension/lib/phpMyAdmin/vendor/dasprid/enum/src/AbstractEnum.php on line 88
+
+Warning: Private methods cannot be final as they are never overridden by other classes in wp-phpmyadmin-extension/wp-phpmyadmin-extension/lib/phpMyAdmin/vendor/dasprid/enum/src/AbstractEnum.php on line 128
+
+Fatal error: DASPRiD\Enum\AbstractEnum::__sleep(): Return type must be array when declared in wp-phpmyadmin-extension/wp-phpmyadmin-extension/lib/phpMyAdmin/vendor/dasprid/enum/src/AbstractEnum.php on line 217
 Errors parsing wp-phpmyadmin-extension/wp-phpmyadmin-extension/lib/phpMyAdmin/vendor/dasprid/enum/src/AbstractEnum.php
 No syntax errors detected in wp-phpmyadmin-extension/wp-phpmyadmin-extension/lib/phpMyAdmin/vendor/dasprid/enum/src/EnumMap.php
 No syntax errors detected in wp-phpmyadmin-extension/wp-phpmyadmin-extension/lib/phpMyAdmin/vendor/dasprid/enum/src/Exception/CloneNotSupportedException.php
@@ -571,6 +577,8 @@ No syntax errors detected in wp-phpmyadmin-extension/wp-phpmyadmin-extension/lib
 No syntax errors detected in wp-phpmyadmin-extension/wp-phpmyadmin-extension/lib/phpMyAdmin/vendor/dasprid/enum/src/Exception/MismatchException.php
 No syntax errors detected in wp-phpmyadmin-extension/wp-phpmyadmin-extension/lib/phpMyAdmin/vendor/dasprid/enum/src/Exception/SerializeNotSupportedException.php
 No syntax errors detected in wp-phpmyadmin-extension/wp-phpmyadmin-extension/lib/phpMyAdmin/vendor/dasprid/enum/src/Exception/UnserializeNotSupportedException.php
+
+Fatal error: DASPRiD\Enum\NullValue::__sleep(): Return type must be array when declared in wp-phpmyadmin-extension/wp-phpmyadmin-extension/lib/phpMyAdmin/vendor/dasprid/enum/src/NullValue.php on line 41
 Errors parsing wp-phpmyadmin-extension/wp-phpmyadmin-extension/lib/phpMyAdmin/vendor/dasprid/enum/src/NullValue.php
 No syntax errors detected in wp-phpmyadmin-extension/wp-phpmyadmin-extension/lib/phpMyAdmin/vendor/dasprid/enum/test/AbstractEnumTest.php
 No syntax errors detected in wp-phpmyadmin-extension/wp-phpmyadmin-extension/lib/phpMyAdmin/vendor/dasprid/enum/test/EnumMapTest.php
@@ -1501,8 +1509,7 @@ No syntax errors detected in wp-phpmyadmin-extension/wp-phpmyadmin-extension/lib
 No syntax errors detected in wp-phpmyadmin-extension/wp-phpmyadmin-extension/lib/phpMyAdmin/view_create.php
 No syntax errors detected in wp-phpmyadmin-extension/wp-phpmyadmin-extension/lib/phpMyAdmin/view_operations.php
 No syntax errors detected in wp-phpmyadmin-extension/wp-phpmyadmin-extension/library_default_puvox.php
-::error::%0Alib/phpMyAdmin/vendor/dasprid/enum/src/AbstractEnum.php%0A%0Alib/phpMyAdmin/vendor/dasprid/enum/src/NullValue.php
-No syntax errors detected in wp-phpmyadmin-extension/wp-phpmyadmin-extension/library_default_puvox.php
+::error::%0Alib/phpMyAdmin/vendor/dasprid/enum/src/AbstractEnum.php%0A  Warning: Private methods cannot be final as they are never overridden by other classes on line 88%0A  Warning: Private methods cannot be final as they are never overridden by other classes on line 128%0A  Fatal error: DASPRiD\Enum\AbstractEnum::__sleep(): Return type must be array when declared on line 217%0A%0Alib/phpMyAdmin/vendor/dasprid/enum/src/NullValue.php%0A  Fatal error: DASPRiD\Enum\NullValue::__sleep(): Return type must be array when declared on line 41
 ............................................................   60 / 1480 (4%)
 ............................................................  120 / 1480 (8%)
 ......................[31mE[0m.....................................  180 / 1480 (12%)
@@ -1532,64 +1539,104 @@ No syntax errors detected in wp-phpmyadmin-extension/wp-phpmyadmin-extension/lib
 
 
 [1mFILE: lib/phpMyAdmin/libraries/classes/Encoding.php[0m
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 2 ERRORS AFFECTING 1 LINE[0m
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 194 | [31mERROR[0m | [1mExtension 'recode' is removed since PHP 7.4; Use iconv or mbstring instead[0m (PHPCompatibility.Extensions.RemovedExtensions.recodeRemoved)
- 194 | [31mERROR[0m | [1mFunction recode_string() is removed since PHP 7.4; Use the iconv or mbstring extension instead[0m
+----------------------------------------------------------------------
+ 194 | [31mERROR[0m | [1mExtension 'recode' is removed since PHP 7.4; Use iconv
+     |       | or mbstring instead[0m
+     |       | (PHPCompatibility.Extensions.RemovedExtensions.recodeRemoved)
+ 194 | [31mERROR[0m | [1mFunction recode_string() is removed since PHP 7.4; Use
+     |       | the iconv or mbstring extension instead[0m
      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.recode_stringRemoved)
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 [1mFILE: lib/phpMyAdmin/vendor/phpmyadmin/shapefile/src/ShapeFile.php[0m
---------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 10 ERRORS AFFECTING 5 LINES[0m
---------------------------------------------------------------------------------------------------------------------------------------------------
- 307 | [31mERROR[0m | [1mExtension 'dbase' is removed since PHP 5.3[0m (PHPCompatibility.Extensions.RemovedExtensions.dbaseRemoved)
- 307 | [31mERROR[0m | [1mFunction dbase_delete_record() is removed since PHP 5.3[0m
+----------------------------------------------------------------------
+ 307 | [31mERROR[0m | [1mExtension 'dbase' is removed since PHP 5.3[0m
+     |       | (PHPCompatibility.Extensions.RemovedExtensions.dbaseRemoved)
+ 307 | [31mERROR[0m | [1mFunction dbase_delete_record() is removed since PHP
+     |       | 5.3[0m
      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.dbase_delete_recordRemoved)
- 308 | [31mERROR[0m | [1mExtension 'dbase' is removed since PHP 5.3[0m (PHPCompatibility.Extensions.RemovedExtensions.dbaseRemoved)
- 308 | [31mERROR[0m | [1mFunction dbase_pack() is removed since PHP 5.3[0m (PHPCompatibility.FunctionUse.RemovedFunctions.dbase_packRemoved)
- 543 | [31mERROR[0m | [1mExtension 'dbase' is removed since PHP 5.3[0m (PHPCompatibility.Extensions.RemovedExtensions.dbaseRemoved)
- 543 | [31mERROR[0m | [1mFunction dbase_create() is removed since PHP 5.3[0m (PHPCompatibility.FunctionUse.RemovedFunctions.dbase_createRemoved)
- 567 | [31mERROR[0m | [1mExtension 'dbase' is removed since PHP 5.3[0m (PHPCompatibility.Extensions.RemovedExtensions.dbaseRemoved)
- 567 | [31mERROR[0m | [1mFunction dbase_open() is removed since PHP 5.3[0m (PHPCompatibility.FunctionUse.RemovedFunctions.dbase_openRemoved)
- 588 | [31mERROR[0m | [1mExtension 'dbase' is removed since PHP 5.3[0m (PHPCompatibility.Extensions.RemovedExtensions.dbaseRemoved)
- 588 | [31mERROR[0m | [1mFunction dbase_close() is removed since PHP 5.3[0m (PHPCompatibility.FunctionUse.RemovedFunctions.dbase_closeRemoved)
---------------------------------------------------------------------------------------------------------------------------------------------------
+ 308 | [31mERROR[0m | [1mExtension 'dbase' is removed since PHP 5.3[0m
+     |       | (PHPCompatibility.Extensions.RemovedExtensions.dbaseRemoved)
+ 308 | [31mERROR[0m | [1mFunction dbase_pack() is removed since PHP 5.3[0m
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.dbase_packRemoved)
+ 543 | [31mERROR[0m | [1mExtension 'dbase' is removed since PHP 5.3[0m
+     |       | (PHPCompatibility.Extensions.RemovedExtensions.dbaseRemoved)
+ 543 | [31mERROR[0m | [1mFunction dbase_create() is removed since PHP 5.3[0m
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.dbase_createRemoved)
+ 567 | [31mERROR[0m | [1mExtension 'dbase' is removed since PHP 5.3[0m
+     |       | (PHPCompatibility.Extensions.RemovedExtensions.dbaseRemoved)
+ 567 | [31mERROR[0m | [1mFunction dbase_open() is removed since PHP 5.3[0m
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.dbase_openRemoved)
+ 588 | [31mERROR[0m | [1mExtension 'dbase' is removed since PHP 5.3[0m
+     |       | (PHPCompatibility.Extensions.RemovedExtensions.dbaseRemoved)
+ 588 | [31mERROR[0m | [1mFunction dbase_close() is removed since PHP 5.3[0m
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.dbase_closeRemoved)
+----------------------------------------------------------------------
 
 
 [1mFILE: lib/phpMyAdmin/vendor/phpmyadmin/shapefile/src/ShapeRecord.php[0m
-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 8 ERRORS AFFECTING 4 LINES[0m
-------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 809 | [31mERROR[0m | [1mExtension 'dbase' is removed since PHP 5.3[0m (PHPCompatibility.Extensions.RemovedExtensions.dbaseRemoved)
- 809 | [31mERROR[0m | [1mFunction dbase_get_record_with_names() is removed since PHP 5.3[0m
+----------------------------------------------------------------------
+ 809 | [31mERROR[0m | [1mExtension 'dbase' is removed since PHP 5.3[0m
+     |       | (PHPCompatibility.Extensions.RemovedExtensions.dbaseRemoved)
+ 809 | [31mERROR[0m | [1mFunction dbase_get_record_with_names() is removed
+     |       | since PHP 5.3[0m
      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.dbase_get_record_with_namesRemoved)
- 819 | [31mERROR[0m | [1mExtension 'dbase' is removed since PHP 5.3[0m (PHPCompatibility.Extensions.RemovedExtensions.dbaseRemoved)
- 819 | [31mERROR[0m | [1mFunction dbase_numrecords() is removed since PHP 5.3[0m (PHPCompatibility.FunctionUse.RemovedFunctions.dbase_numrecordsRemoved)
- 820 | [31mERROR[0m | [1mExtension 'dbase' is removed since PHP 5.3[0m (PHPCompatibility.Extensions.RemovedExtensions.dbaseRemoved)
- 820 | [31mERROR[0m | [1mFunction dbase_replace_record() is removed since PHP 5.3[0m (PHPCompatibility.FunctionUse.RemovedFunctions.dbase_replace_recordRemoved)
- 824 | [31mERROR[0m | [1mExtension 'dbase' is removed since PHP 5.3[0m (PHPCompatibility.Extensions.RemovedExtensions.dbaseRemoved)
- 824 | [31mERROR[0m | [1mFunction dbase_add_record() is removed since PHP 5.3[0m (PHPCompatibility.FunctionUse.RemovedFunctions.dbase_add_recordRemoved)
-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 819 | [31mERROR[0m | [1mExtension 'dbase' is removed since PHP 5.3[0m
+     |       | (PHPCompatibility.Extensions.RemovedExtensions.dbaseRemoved)
+ 819 | [31mERROR[0m | [1mFunction dbase_numrecords() is removed since PHP
+     |       | 5.3[0m
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.dbase_numrecordsRemoved)
+ 820 | [31mERROR[0m | [1mExtension 'dbase' is removed since PHP 5.3[0m
+     |       | (PHPCompatibility.Extensions.RemovedExtensions.dbaseRemoved)
+ 820 | [31mERROR[0m | [1mFunction dbase_replace_record() is removed since PHP
+     |       | 5.3[0m
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.dbase_replace_recordRemoved)
+ 824 | [31mERROR[0m | [1mExtension 'dbase' is removed since PHP 5.3[0m
+     |       | (PHPCompatibility.Extensions.RemovedExtensions.dbaseRemoved)
+ 824 | [31mERROR[0m | [1mFunction dbase_add_record() is removed since PHP
+     |       | 5.3[0m
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.dbase_add_recordRemoved)
+----------------------------------------------------------------------
 
 
 [1mFILE: library_default_puvox.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 5 ERRORS AFFECTING 3 LINES[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 1233 | [31mERROR[0m | [1mSelf-closing XHTML tags are ignored. Only non-self-closing tags should be used in the strip_tags() $allowable_tags parameter since PHP 5.3.4. Found:
-      |       | '<h1></h1><br><br/><br /><br/ ><br / >< br>< br/>'[0m (PHPCompatibility.ParameterValues.ForbiddenStripTagsSelfClosingXHTML.Found)
- 4897 | [31mERROR[0m | [1mIndirect access to variables, properties and methods will be evaluated strictly in left-to-right order since PHP 7.0. Use curly braces to remove ambiguity.[0m
+----------------------------------------------------------------------
+ 1233 | [31mERROR[0m | [1mSelf-closing XHTML tags are ignored. Only
+      |       | non-self-closing tags should be used in the
+      |       | strip_tags() $allowable_tags parameter since PHP
+      |       | 5.3.4. Found: '<h1></h1><br><br/><br /><br/ ><br / ><
+      |       | br>< br/>'[0m
+      |       | (PHPCompatibility.ParameterValues.ForbiddenStripTagsSelfClosingXHTML.Found)
+ 4897 | [31mERROR[0m | [1mIndirect access to variables, properties and methods
+      |       | will be evaluated strictly in left-to-right order
+      |       | since PHP 7.0. Use curly braces to remove
+      |       | ambiguity.[0m
       |       | (PHPCompatibility.Variables.NewUniformVariableSyntax.Found)
- 4897 | [31mERROR[0m | [1mIndirect access to variables, properties and methods will be evaluated strictly in left-to-right order since PHP 7.0. Use curly braces to remove ambiguity.[0m
+ 4897 | [31mERROR[0m | [1mIndirect access to variables, properties and methods
+      |       | will be evaluated strictly in left-to-right order
+      |       | since PHP 7.0. Use curly braces to remove
+      |       | ambiguity.[0m
       |       | (PHPCompatibility.Variables.NewUniformVariableSyntax.Found)
- 4897 | [31mERROR[0m | [1mIndirect access to variables, properties and methods will be evaluated strictly in left-to-right order since PHP 7.0. Use curly braces to remove ambiguity.[0m
+ 4897 | [31mERROR[0m | [1mIndirect access to variables, properties and methods
+      |       | will be evaluated strictly in left-to-right order
+      |       | since PHP 7.0. Use curly braces to remove
+      |       | ambiguity.[0m
       |       | (PHPCompatibility.Variables.NewUniformVariableSyntax.Found)
- 4898 | [31mERROR[0m | [1mIndirect access to variables, properties and methods will be evaluated strictly in left-to-right order since PHP 7.0. Use curly braces to remove ambiguity.[0m
+ 4898 | [31mERROR[0m | [1mIndirect access to variables, properties and methods
+      |       | will be evaluated strictly in left-to-right order
+      |       | since PHP 7.0. Use curly braces to remove
+      |       | ambiguity.[0m
       |       | (PHPCompatibility.Variables.NewUniformVariableSyntax.Found)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
-Time: 58.55 secs; Memory: 74.01MB
-::error::FILE: lib/phpMyAdmin/libraries/classes/Encoding.php%0A-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 1 LINE%0A-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 194 | ERROR | Extension 'recode' is removed since PHP 7.4; Use iconv or mbstring instead (PHPCompatibility.Extensions.RemovedExtensions.recodeRemoved)%0A 194 | ERROR | Function recode_string() is removed since PHP 7.4; Use the iconv or mbstring extension instead%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.recode_stringRemoved)%0A-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: lib/phpMyAdmin/vendor/phpmyadmin/shapefile/src/ShapeFile.php%0A--------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 10 ERRORS AFFECTING 5 LINES%0A--------------------------------------------------------------------------------------------------------------------------------------------------%0A 307 | ERROR | Extension 'dbase' is removed since PHP 5.3 (PHPCompatibility.Extensions.RemovedExtensions.dbaseRemoved)%0A 307 | ERROR | Function dbase_delete_record() is removed since PHP 5.3%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.dbase_delete_recordRemoved)%0A 308 | ERROR | Extension 'dbase' is removed since PHP 5.3 (PHPCompatibility.Extensions.RemovedExtensions.dbaseRemoved)%0A 308 | ERROR | Function dbase_pack() is removed since PHP 5.3 (PHPCompatibility.FunctionUse.RemovedFunctions.dbase_packRemoved)%0A 543 | ERROR | Extension 'dbase' is removed since PHP 5.3 (PHPCompatibility.Extensions.RemovedExtensions.dbaseRemoved)%0A 543 | ERROR | Function dbase_create() is removed since PHP 5.3 (PHPCompatibility.FunctionUse.RemovedFunctions.dbase_createRemoved)%0A 567 | ERROR | Extension 'dbase' is removed since PHP 5.3 (PHPCompatibility.Extensions.RemovedExtensions.dbaseRemoved)%0A 567 | ERROR | Function dbase_open() is removed since PHP 5.3 (PHPCompatibility.FunctionUse.RemovedFunctions.dbase_openRemoved)%0A 588 | ERROR | Extension 'dbase' is removed since PHP 5.3 (PHPCompatibility.Extensions.RemovedExtensions.dbaseRemoved)%0A 588 | ERROR | Function dbase_close() is removed since PHP 5.3 (PHPCompatibility.FunctionUse.RemovedFunctions.dbase_closeRemoved)%0A--------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: lib/phpMyAdmin/vendor/phpmyadmin/shapefile/src/ShapeRecord.php%0A------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 8 ERRORS AFFECTING 4 LINES%0A------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 809 | ERROR | Extension 'dbase' is removed since PHP 5.3 (PHPCompatibility.Extensions.RemovedExtensions.dbaseRemoved)%0A 809 | ERROR | Function dbase_get_record_with_names() is removed since PHP 5.3%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.dbase_get_record_with_namesRemoved)%0A 819 | ERROR | Extension 'dbase' is removed since PHP 5.3 (PHPCompatibility.Extensions.RemovedExtensions.dbaseRemoved)%0A 819 | ERROR | Function dbase_numrecords() is removed since PHP 5.3 (PHPCompatibility.FunctionUse.RemovedFunctions.dbase_numrecordsRemoved)%0A 820 | ERROR | Extension 'dbase' is removed since PHP 5.3 (PHPCompatibility.Extensions.RemovedExtensions.dbaseRemoved)%0A 820 | ERROR | Function dbase_replace_record() is removed since PHP 5.3 (PHPCompatibility.FunctionUse.RemovedFunctions.dbase_replace_recordRemoved)%0A 824 | ERROR | Extension 'dbase' is removed since PHP 5.3 (PHPCompatibility.Extensions.RemovedExtensions.dbaseRemoved)%0A 824 | ERROR | Function dbase_add_record() is removed since PHP 5.3 (PHPCompatibility.FunctionUse.RemovedFunctions.dbase_add_recordRemoved)%0A------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: library_default_puvox.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 5 ERRORS AFFECTING 3 LINES%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 1233 | ERROR | Self-closing XHTML tags are ignored. Only non-self-closing tags should be used in the strip_tags() $allowable_tags parameter since PHP 5.3.4. Found:%0A      |       | '<h1></h1><br><br/><br /><br/ ><br / >< br>< br/>' (PHPCompatibility.ParameterValues.ForbiddenStripTagsSelfClosingXHTML.Found)%0A 4897 | ERROR | Indirect access to variables, properties and methods will be evaluated strictly in left-to-right order since PHP 7.0. Use curly braces to remove ambiguity.%0A      |       | (PHPCompatibility.Variables.NewUniformVariableSyntax.Found)%0A 4897 | ERROR | Indirect access to variables, properties and methods will be evaluated strictly in left-to-right order since PHP 7.0. Use curly braces to remove ambiguity.%0A      |       | (PHPCompatibility.Variables.NewUniformVariableSyntax.Found)%0A 4897 | ERROR | Indirect access to variables, properties and methods will be evaluated strictly in left-to-right order since PHP 7.0. Use curly braces to remove ambiguity.%0A      |       | (PHPCompatibility.Variables.NewUniformVariableSyntax.Found)%0A 4898 | ERROR | Indirect access to variables, properties and methods will be evaluated strictly in left-to-right order since PHP 7.0. Use curly braces to remove ambiguity.%0A      |       | (PHPCompatibility.Variables.NewUniformVariableSyntax.Found)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
+Time: 1 mins, 0.55 secs; Memory: 74.01MB
+::error::FILE: lib/phpMyAdmin/libraries/classes/Encoding.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 194 | ERROR | Extension 'recode' is removed since PHP 7.4; Use iconv%0A     |       | or mbstring instead%0A     |       | (PHPCompatibility.Extensions.RemovedExtensions.recodeRemoved)%0A 194 | ERROR | Function recode_string() is removed since PHP 7.4; Use%0A     |       | the iconv or mbstring extension instead%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.recode_stringRemoved)%0A----------------------------------------------------------------------%0A%0A%0AFILE: lib/phpMyAdmin/vendor/phpmyadmin/shapefile/src/ShapeFile.php%0A----------------------------------------------------------------------%0AFOUND 10 ERRORS AFFECTING 5 LINES%0A----------------------------------------------------------------------%0A 307 | ERROR | Extension 'dbase' is removed since PHP 5.3%0A     |       | (PHPCompatibility.Extensions.RemovedExtensions.dbaseRemoved)%0A 307 | ERROR | Function dbase_delete_record() is removed since PHP%0A     |       | 5.3%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.dbase_delete_recordRemoved)%0A 308 | ERROR | Extension 'dbase' is removed since PHP 5.3%0A     |       | (PHPCompatibility.Extensions.RemovedExtensions.dbaseRemoved)%0A 308 | ERROR | Function dbase_pack() is removed since PHP 5.3%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.dbase_packRemoved)%0A 543 | ERROR | Extension 'dbase' is removed since PHP 5.3%0A     |       | (PHPCompatibility.Extensions.RemovedExtensions.dbaseRemoved)%0A 543 | ERROR | Function dbase_create() is removed since PHP 5.3%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.dbase_createRemoved)%0A 567 | ERROR | Extension 'dbase' is removed since PHP 5.3%0A     |       | (PHPCompatibility.Extensions.RemovedExtensions.dbaseRemoved)%0A 567 | ERROR | Function dbase_open() is removed since PHP 5.3%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.dbase_openRemoved)%0A 588 | ERROR | Extension 'dbase' is removed since PHP 5.3%0A     |       | (PHPCompatibility.Extensions.RemovedExtensions.dbaseRemoved)%0A 588 | ERROR | Function dbase_close() is removed since PHP 5.3%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.dbase_closeRemoved)%0A----------------------------------------------------------------------%0A%0A%0AFILE: lib/phpMyAdmin/vendor/phpmyadmin/shapefile/src/ShapeRecord.php%0A----------------------------------------------------------------------%0AFOUND 8 ERRORS AFFECTING 4 LINES%0A----------------------------------------------------------------------%0A 809 | ERROR | Extension 'dbase' is removed since PHP 5.3%0A     |       | (PHPCompatibility.Extensions.RemovedExtensions.dbaseRemoved)%0A 809 | ERROR | Function dbase_get_record_with_names() is removed%0A     |       | since PHP 5.3%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.dbase_get_record_with_namesRemoved)%0A 819 | ERROR | Extension 'dbase' is removed since PHP 5.3%0A     |       | (PHPCompatibility.Extensions.RemovedExtensions.dbaseRemoved)%0A 819 | ERROR | Function dbase_numrecords() is removed since PHP%0A     |       | 5.3%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.dbase_numrecordsRemoved)%0A 820 | ERROR | Extension 'dbase' is removed since PHP 5.3%0A     |       | (PHPCompatibility.Extensions.RemovedExtensions.dbaseRemoved)%0A 820 | ERROR | Function dbase_replace_record() is removed since PHP%0A     |       | 5.3%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.dbase_replace_recordRemoved)%0A 824 | ERROR | Extension 'dbase' is removed since PHP 5.3%0A     |       | (PHPCompatibility.Extensions.RemovedExtensions.dbaseRemoved)%0A 824 | ERROR | Function dbase_add_record() is removed since PHP%0A     |       | 5.3%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.dbase_add_recordRemoved)%0A----------------------------------------------------------------------%0A%0A%0AFILE: library_default_puvox.php%0A----------------------------------------------------------------------%0AFOUND 5 ERRORS AFFECTING 3 LINES%0A----------------------------------------------------------------------%0A 1233 | ERROR | Self-closing XHTML tags are ignored. Only%0A      |       | non-self-closing tags should be used in the%0A      |       | strip_tags() $allowable_tags parameter since PHP%0A      |       | 5.3.4. Found: '<h1></h1><br><br/><br /><br/ ><br / ><%0A      |       | br>< br/>'%0A      |       | (PHPCompatibility.ParameterValues.ForbiddenStripTagsSelfClosingXHTML.Found)%0A 4897 | ERROR | Indirect access to variables, properties and methods%0A      |       | will be evaluated strictly in left-to-right order%0A      |       | since PHP 7.0. Use curly braces to remove%0A      |       | ambiguity.%0A      |       | (PHPCompatibility.Variables.NewUniformVariableSyntax.Found)%0A 4897 | ERROR | Indirect access to variables, properties and methods%0A      |       | will be evaluated strictly in left-to-right order%0A      |       | since PHP 7.0. Use curly braces to remove%0A      |       | ambiguity.%0A      |       | (PHPCompatibility.Variables.NewUniformVariableSyntax.Found)%0A 4897 | ERROR | Indirect access to variables, properties and methods%0A      |       | will be evaluated strictly in left-to-right order%0A      |       | since PHP 7.0. Use curly braces to remove%0A      |       | ambiguity.%0A      |       | (PHPCompatibility.Variables.NewUniformVariableSyntax.Found)%0A 4898 | ERROR | Indirect access to variables, properties and methods%0A      |       | will be evaluated strictly in left-to-right order%0A      |       | since PHP 7.0. Use curly braces to remove%0A      |       | ambiguity.%0A      |       | (PHPCompatibility.Variables.NewUniformVariableSyntax.Found)%0A----------------------------------------------------------------------%0A

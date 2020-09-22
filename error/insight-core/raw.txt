@@ -72,6 +72,10 @@ No syntax errors detected in insight-core/insight-core/libs/kirki/controls/views
 No syntax errors detected in insight-core/insight-core/libs/kirki/controls/views/select.php
 No syntax errors detected in insight-core/insight-core/libs/kirki/controls/views/textarea.php
 No syntax errors detected in insight-core/insight-core/libs/kirki/core/class-kirki-config.php
+
+Warning: Private methods cannot be final as they are never overridden by other classes in insight-core/insight-core/libs/kirki/core/class-kirki-control.php on line 66
+
+Warning: Private methods cannot be final as they are never overridden by other classes in insight-core/insight-core/libs/kirki/core/class-kirki-control.php on line 103
 No syntax errors detected in insight-core/insight-core/libs/kirki/core/class-kirki-control.php
 No syntax errors detected in insight-core/insight-core/libs/kirki/core/class-kirki-field.php
 No syntax errors detected in insight-core/insight-core/libs/kirki/core/class-kirki-helper.php
@@ -84,6 +88,12 @@ No syntax errors detected in insight-core/insight-core/libs/kirki/core/class-kir
 No syntax errors detected in insight-core/insight-core/libs/kirki/core/class-kirki-section.php
 No syntax errors detected in insight-core/insight-core/libs/kirki/core/class-kirki-sections.php
 No syntax errors detected in insight-core/insight-core/libs/kirki/core/class-kirki-setting-site-option.php
+
+Warning: Private methods cannot be final as they are never overridden by other classes in insight-core/insight-core/libs/kirki/core/class-kirki-settings.php on line 68
+
+Warning: Private methods cannot be final as they are never overridden by other classes in insight-core/insight-core/libs/kirki/core/class-kirki-settings.php on line 111
+
+Warning: Private methods cannot be final as they are never overridden by other classes in insight-core/insight-core/libs/kirki/core/class-kirki-settings.php on line 131
 No syntax errors detected in insight-core/insight-core/libs/kirki/core/class-kirki-settings.php
 No syntax errors detected in insight-core/insight-core/libs/kirki/core/class-kirki-setting-user-meta.php
 No syntax errors detected in insight-core/insight-core/libs/kirki/core/class-kirki-toolkit.php
@@ -173,7 +183,7 @@ No syntax errors detected in insight-core/insight-core/libs/kirki/modules/webfon
 No syntax errors detected in insight-core/insight-core/libs/kirki/upgrade-notifications.php
 No syntax errors detected in insight-core/insight-core/libs/mobile-detect/mobile-detect.php
 No syntax errors detected in insight-core/insight-core/libs/mobile-detect/mobile.php
-No syntax errors detected in insight-core/insight-core/libs/mobile-detect/mobile.php
+::error::%0Alibs/kirki/core/class-kirki-control.php%0A  Warning: Private methods cannot be final as they are never overridden by other classes on line 66%0A  Warning: Private methods cannot be final as they are never overridden by other classes on line 103%0A%0Alibs/kirki/core/class-kirki-settings.php%0A  Warning: Private methods cannot be final as they are never overridden by other classes on line 68%0A  Warning: Private methods cannot be final as they are never overridden by other classes on line 111%0A  Warning: Private methods cannot be final as they are never overridden by other classes on line 131
 ...........[31mE[0m................................................  60 / 174 (34%)
 ...............................S.SS......................... 120 / 174 (69%)
 ................S.[31mE[0m...................................       174 / 174 (100%)
@@ -181,21 +191,27 @@ No syntax errors detected in insight-core/insight-core/libs/mobile-detect/mobile
 
 
 [1mFILE: includes/import/v1/class-importer.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 2058 | [31mERROR[0m | [1mIndirect access to variables, properties and methods will be evaluated strictly in left-to-right order since PHP 7.0. Use curly braces to remove ambiguity.[0m
+----------------------------------------------------------------------
+ 2058 | [31mERROR[0m | [1mIndirect access to variables, properties and methods
+      |       | will be evaluated strictly in left-to-right order
+      |       | since PHP 7.0. Use curly braces to remove
+      |       | ambiguity.[0m
       |       | (PHPCompatibility.Variables.NewUniformVariableSyntax.Found)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 [1mFILE: libs/kirki/modules/css/class-kirki-css-to-file.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 120 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse order to implode has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first
-     |       | parameter and $pieces the second[0m (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
+ 120 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse
+     |       | order to implode has been deprecated since PHP 7.4 and
+     |       | is removed since PHP 8.0; $glue should be the first
+     |       | parameter and $pieces the second[0m
+     |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
+----------------------------------------------------------------------
 
-Time: 3.22 secs; Memory: 38MB
-::error::FILE: includes/import/v1/class-importer.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 2058 | ERROR | Indirect access to variables, properties and methods will be evaluated strictly in left-to-right order since PHP 7.0. Use curly braces to remove ambiguity.%0A      |       | (PHPCompatibility.Variables.NewUniformVariableSyntax.Found)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: libs/kirki/modules/css/class-kirki-css-to-file.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 120 | ERROR | Passing the $glue and $pieces parameters in reverse order to implode has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first%0A     |       | parameter and $pieces the second (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
+Time: 3.33 secs; Memory: 40MB
+::error::FILE: includes/import/v1/class-importer.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 2058 | ERROR | Indirect access to variables, properties and methods%0A      |       | will be evaluated strictly in left-to-right order%0A      |       | since PHP 7.0. Use curly braces to remove%0A      |       | ambiguity.%0A      |       | (PHPCompatibility.Variables.NewUniformVariableSyntax.Found)%0A----------------------------------------------------------------------%0A%0A%0AFILE: libs/kirki/modules/css/class-kirki-css-to-file.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 120 | ERROR | Passing the $glue and $pieces parameters in reverse%0A     |       | order to implode has been deprecated since PHP 7.4 and%0A     |       | is removed since PHP 8.0; $glue should be the first%0A     |       | parameter and $pieces the second%0A     |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A----------------------------------------------------------------------%0A
