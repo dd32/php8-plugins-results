@@ -242,6 +242,10 @@ No syntax errors detected in jupiterx-core/jupiterx-core/includes/customizer/ven
 No syntax errors detected in jupiterx-core/jupiterx-core/includes/customizer/vendors/kirki/controls/views/select.php
 No syntax errors detected in jupiterx-core/jupiterx-core/includes/customizer/vendors/kirki/controls/views/textarea.php
 No syntax errors detected in jupiterx-core/jupiterx-core/includes/customizer/vendors/kirki/core/class-kirki-config.php
+
+Warning: Private methods cannot be final as they are never overridden by other classes in jupiterx-core/jupiterx-core/includes/customizer/vendors/kirki/core/class-kirki-control.php on line 64
+
+Warning: Private methods cannot be final as they are never overridden by other classes in jupiterx-core/jupiterx-core/includes/customizer/vendors/kirki/core/class-kirki-control.php on line 99
 No syntax errors detected in jupiterx-core/jupiterx-core/includes/customizer/vendors/kirki/core/class-kirki-control.php
 No syntax errors detected in jupiterx-core/jupiterx-core/includes/customizer/vendors/kirki/core/class-kirki-field.php
 No syntax errors detected in jupiterx-core/jupiterx-core/includes/customizer/vendors/kirki/core/class-kirki-helper.php
@@ -254,6 +258,12 @@ No syntax errors detected in jupiterx-core/jupiterx-core/includes/customizer/ven
 No syntax errors detected in jupiterx-core/jupiterx-core/includes/customizer/vendors/kirki/core/class-kirki-section.php
 No syntax errors detected in jupiterx-core/jupiterx-core/includes/customizer/vendors/kirki/core/class-kirki-sections.php
 No syntax errors detected in jupiterx-core/jupiterx-core/includes/customizer/vendors/kirki/core/class-kirki-setting-site-option.php
+
+Warning: Private methods cannot be final as they are never overridden by other classes in jupiterx-core/jupiterx-core/includes/customizer/vendors/kirki/core/class-kirki-settings.php on line 66
+
+Warning: Private methods cannot be final as they are never overridden by other classes in jupiterx-core/jupiterx-core/includes/customizer/vendors/kirki/core/class-kirki-settings.php on line 108
+
+Warning: Private methods cannot be final as they are never overridden by other classes in jupiterx-core/jupiterx-core/includes/customizer/vendors/kirki/core/class-kirki-settings.php on line 128
 No syntax errors detected in jupiterx-core/jupiterx-core/includes/customizer/vendors/kirki/core/class-kirki-settings.php
 No syntax errors detected in jupiterx-core/jupiterx-core/includes/customizer/vendors/kirki/core/class-kirki-setting-user-meta.php
 No syntax errors detected in jupiterx-core/jupiterx-core/includes/customizer/vendors/kirki/core/class-kirki-toolkit.php
@@ -435,7 +445,7 @@ No syntax errors detected in jupiterx-core/jupiterx-core/includes/widgets/widget
 No syntax errors detected in jupiterx-core/jupiterx-core/includes/widgets/widget-social.php
 No syntax errors detected in jupiterx-core/jupiterx-core/includes/woocommerce/woocommerce-load-more.php
 No syntax errors detected in jupiterx-core/jupiterx-core/jupiterx-core.php
-No syntax errors detected in jupiterx-core/jupiterx-core/jupiterx-core.php
+::error::%0Aincludes/customizer/vendors/kirki/core/class-kirki-control.php%0A  Warning: Private methods cannot be final as they are never overridden by other classes on line 64%0A  Warning: Private methods cannot be final as they are never overridden by other classes on line 99%0A%0Aincludes/customizer/vendors/kirki/core/class-kirki-settings.php%0A  Warning: Private methods cannot be final as they are never overridden by other classes on line 66%0A  Warning: Private methods cannot be final as they are never overridden by other classes on line 108%0A  Warning: Private methods cannot be final as they are never overridden by other classes on line 128
 ............................................................  60 / 436 (14%)
 ............................................................ 120 / 436 (28%)
 ............................................................ 180 / 436 (41%)
@@ -447,13 +457,16 @@ No syntax errors detected in jupiterx-core/jupiterx-core/jupiterx-core.php
 
 
 
-[1mFILE: includes/customizer/vendors/kirki/modules/css/class-kirki-css-to-file.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[1mFILE: ...customizer/vendors/kirki/modules/css/class-kirki-css-to-file.php[0m
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 115 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse order to implode has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first
-     |       | parameter and $pieces the second[0m (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
+ 115 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse
+     |       | order to implode has been deprecated since PHP 7.4 and
+     |       | is removed since PHP 8.0; $glue should be the first
+     |       | parameter and $pieces the second[0m
+     |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
+----------------------------------------------------------------------
 
-Time: 6.04 secs; Memory: 36MB
-::error::FILE: includes/customizer/vendors/kirki/modules/css/class-kirki-css-to-file.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 115 | ERROR | Passing the $glue and $pieces parameters in reverse order to implode has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first%0A     |       | parameter and $pieces the second (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
+Time: 6.51 secs; Memory: 36MB
+::error::FILE: ...customizer/vendors/kirki/modules/css/class-kirki-css-to-file.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 115 | ERROR | Passing the $glue and $pieces parameters in reverse%0A     |       | order to implode has been deprecated since PHP 7.4 and%0A     |       | is removed since PHP 8.0; $glue should be the first%0A     |       | parameter and $pieces the second%0A     |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A----------------------------------------------------------------------%0A
