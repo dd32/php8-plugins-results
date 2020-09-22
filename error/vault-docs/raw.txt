@@ -1,0 +1,31 @@
+::warning::Plugin: https://wordpress.org/plugins/vault-docs/%0ATrac: https://plugins.trac.wordpress.org/browser/vault-docs/
+No syntax errors detected in vault-docs/vault-docs/background_backup.php
+No syntax errors detected in vault-docs/vault-docs/background_restore.php
+No syntax errors detected in vault-docs/vault-docs/backup.php
+No syntax errors detected in vault-docs/vault-docs/options.php
+No syntax errors detected in vault-docs/vault-docs/restore.php
+No syntax errors detected in vault-docs/vault-docs/vaultdocs.php
+.....[31mE[0m 6 / 6 (100%)
+
+
+
+[1mFILE: vaultdocs.php[0m
+----------------------------------------------------------------------
+[1mFOUND 3 ERRORS AFFECTING 3 LINES[0m
+----------------------------------------------------------------------
+  81 | [31mERROR[0m | [1mFunction create_function() is deprecated since PHP 7.2
+     |       | and removed since PHP 8.0; Use an anonymous function
+     |       | instead[0m
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
+ 224 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse
+     |       | order to join has been deprecated since PHP 7.4 and is
+     |       | removed since PHP 8.0; $glue should be the first
+     |       | parameter and $pieces the second[0m
+     |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
+ 530 | [31mERROR[0m | [1mpreg_replace() - /e modifier is deprecated since PHP
+     |       | 5.5 and removed since PHP 7.0[0m
+     |       | (PHPCompatibility.ParameterValues.RemovedPCREModifiers.Removed)
+----------------------------------------------------------------------
+
+Time: 192ms; Memory: 16MB
+::error::FILE: vaultdocs.php%0A----------------------------------------------------------------------%0AFOUND 3 ERRORS AFFECTING 3 LINES%0A----------------------------------------------------------------------%0A  81 | ERROR | Function create_function() is deprecated since PHP 7.2%0A     |       | and removed since PHP 8.0; Use an anonymous function%0A     |       | instead%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)%0A 224 | ERROR | Passing the $glue and $pieces parameters in reverse%0A     |       | order to join has been deprecated since PHP 7.4 and is%0A     |       | removed since PHP 8.0; $glue should be the first%0A     |       | parameter and $pieces the second%0A     |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A 530 | ERROR | preg_replace() - /e modifier is deprecated since PHP%0A     |       | 5.5 and removed since PHP 7.0%0A     |       | (PHPCompatibility.ParameterValues.RemovedPCREModifiers.Removed)%0A----------------------------------------------------------------------%0A
