@@ -1,21 +1,25 @@
 ::warning::Plugin: https://wordpress.org/plugins/paytm-payments/%0ATrac: https://plugins.trac.wordpress.org/browser/paytm-payments/
+
+Fatal error: Array and string offset access syntax with curly braces is no longer supported in paytm-payments/paytm-payments/encdec_paytm.php on line 24
 Errors parsing paytm-payments/paytm-payments/encdec_paytm.php
 No syntax errors detected in paytm-payments/paytm-payments/index.php
-::error::%0Aencdec_paytm.php
-No syntax errors detected in paytm-payments/paytm-payments/index.php
+::error::%0Aencdec_paytm.php%0A  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 24
 [32mE[0m. 2 / 2 (100%)
 
 
 
 [1mFILE: encdec_paytm.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 24 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $text{strlen($text) - 1}[0m
+----------------------------------------------------------------------
+ 24 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and
+    |       |     string offsets has been deprecated in PHP 7.4 and
+    |       |     removed in PHP 8.0. Found: $text{strlen($text) -
+    |       |     1}[0m
     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mPHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
-Time: 153ms; Memory: 14MB
-::error::FILE: encdec_paytm.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 24 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $text{strlen($text) - 1}%0A    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0APHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
+Time: 149ms; Memory: 14MB
+::error::FILE: encdec_paytm.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 24 | ERROR | [x] Curly brace syntax for accessing array elements and%0A    |       |     string offsets has been deprecated in PHP 7.4 and%0A    |       |     removed in PHP 8.0. Found: $text{strlen($text) -%0A    |       |     1}%0A    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A----------------------------------------------------------------------%0APHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A----------------------------------------------------------------------%0A

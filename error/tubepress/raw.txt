@@ -87,6 +87,8 @@ No syntax errors detected in tubepress/tubepress/src/main/php/add-ons/wordpress/
 No syntax errors detected in tubepress/tubepress/src/main/php/add-ons/wordpress/classes/tubepress/addons/wordpress/spi/ContentFilter.php
 No syntax errors detected in tubepress/tubepress/src/main/php/add-ons/wordpress/classes/tubepress/addons/wordpress/spi/FrontEndCssAndJsInjector.php
 No syntax errors detected in tubepress/tubepress/src/main/php/add-ons/wordpress/classes/tubepress/addons/wordpress/spi/WidgetHandler.php
+
+Fatal error: Redefinition of parameter $path in tubepress/tubepress/src/main/php/add-ons/wordpress/classes/tubepress/addons/wordpress/spi/WordPressFunctionWrapper.php on line 213
 Errors parsing tubepress/tubepress/src/main/php/add-ons/wordpress/classes/tubepress/addons/wordpress/spi/WordPressFunctionWrapper.php
 No syntax errors detected in tubepress/tubepress/src/main/php/add-ons/wordpress/classes/tubepress/addons/wordpress/spi/WpAdminHandler.php
 No syntax errors detected in tubepress/tubepress/src/main/php/add-ons/wordpress/resources/templates/options_page.tpl.php
@@ -533,8 +535,7 @@ No syntax errors detected in tubepress/tubepress/vendor/ehough/tickertape/src/ma
 No syntax errors detected in tubepress/tubepress/vendor/ehough/tickertape/src/main/php/ehough/tickertape/EventSubscriberInterface.php
 No syntax errors detected in tubepress/tubepress/vendor/ehough/tickertape/src/main/php/ehough/tickertape/GenericEvent.php
 No syntax errors detected in tubepress/tubepress/vendor/ehough/tickertape/src/main/php/ehough/tickertape/ImmutableEventDispatcher.php
-::error::%0Asrc/main/php/add-ons/wordpress/classes/tubepress/addons/wordpress/spi/WordPressFunctionWrapper.php
-No syntax errors detected in tubepress/tubepress/vendor/ehough/tickertape/src/main/php/ehough/tickertape/ImmutableEventDispatcher.php
+::error::%0Asrc/main/php/add-ons/wordpress/classes/tubepress/addons/wordpress/spi/WordPressFunctionWrapper.php%0A  Fatal error: Redefinition of parameter $path on line 213
 ............................................................  60 / 534 (11%)
 ............................[31mE[0m............................... 120 / 534 (22%)
 ............................................................ 180 / 534 (34%)
@@ -547,22 +548,24 @@ No syntax errors detected in tubepress/tubepress/vendor/ehough/tickertape/src/ma
 
 
 
-[1mFILE: src/main/php/add-ons/wordpress/classes/tubepress/addons/wordpress/spi/WordPressFunctionWrapper.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[1mFILE: ...sses/tubepress/addons/wordpress/spi/WordPressFunctionWrapper.php[0m
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 213 | [31mERROR[0m | [1mFunctions can not have multiple parameters with the same name since PHP 7.0[0m
+----------------------------------------------------------------------
+ 213 | [31mERROR[0m | [1mFunctions can not have multiple parameters with the
+     |       | same name since PHP 7.0[0m
      |       | (PHPCompatibility.FunctionDeclarations.ForbiddenParametersWithSameName.Found)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
-[1mFILE: vendor/ehough/stash/src/main/php/ehough/stash/driver/sub/Sqlite.php[0m
-------------------------------------------------------------------------------------------------------------------------------------------
+[1mFILE: ...dor/ehough/stash/src/main/php/ehough/stash/driver/sub/Sqlite.php[0m
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
-------------------------------------------------------------------------------------------------------------------------------------------
- 183 | [31mERROR[0m | [1mThe built-in class SQLiteDatabase is removed since PHP 5.4[0m
+----------------------------------------------------------------------
+ 183 | [31mERROR[0m | [1mThe built-in class SQLiteDatabase is removed since PHP
+     |       | 5.4[0m
      |       | (PHPCompatibility.Classes.RemovedClasses.sqlitedatabaseRemoved)
-------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
-Time: 5.6 secs; Memory: 20MB
-::error::FILE: src/main/php/add-ons/wordpress/classes/tubepress/addons/wordpress/spi/WordPressFunctionWrapper.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 213 | ERROR | Functions can not have multiple parameters with the same name since PHP 7.0%0A     |       | (PHPCompatibility.FunctionDeclarations.ForbiddenParametersWithSameName.Found)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: vendor/ehough/stash/src/main/php/ehough/stash/driver/sub/Sqlite.php%0A------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A------------------------------------------------------------------------------------------------------------------------------------------%0A 183 | ERROR | The built-in class SQLiteDatabase is removed since PHP 5.4%0A     |       | (PHPCompatibility.Classes.RemovedClasses.sqlitedatabaseRemoved)%0A------------------------------------------------------------------------------------------------------------------------------------------%0A
+Time: 5.28 secs; Memory: 20MB
+::error::FILE: ...sses/tubepress/addons/wordpress/spi/WordPressFunctionWrapper.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 213 | ERROR | Functions can not have multiple parameters with the%0A     |       | same name since PHP 7.0%0A     |       | (PHPCompatibility.FunctionDeclarations.ForbiddenParametersWithSameName.Found)%0A----------------------------------------------------------------------%0A%0A%0AFILE: ...dor/ehough/stash/src/main/php/ehough/stash/driver/sub/Sqlite.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 183 | ERROR | The built-in class SQLiteDatabase is removed since PHP%0A     |       | 5.4%0A     |       | (PHPCompatibility.Classes.RemovedClasses.sqlitedatabaseRemoved)%0A----------------------------------------------------------------------%0A

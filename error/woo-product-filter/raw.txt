@@ -44,6 +44,8 @@ No syntax errors detected in woo-product-filter/woo-product-filter/modules/mail/
 No syntax errors detected in woo-product-filter/woo-product-filter/modules/mail/engines/class.pop3.php
 No syntax errors detected in woo-product-filter/woo-product-filter/modules/mail/engines/class.smtp.php
 No syntax errors detected in woo-product-filter/woo-product-filter/modules/mail/engines/get_oauth_token.php
+
+Fatal error: __autoload() is no longer supported, use spl_autoload_register() instead in woo-product-filter/woo-product-filter/modules/mail/engines/PHPMailerAutoload.php on line 47
 Errors parsing woo-product-filter/woo-product-filter/modules/mail/engines/PHPMailerAutoload.php
 No syntax errors detected in woo-product-filter/woo-product-filter/modules/mail/models/mail.php
 No syntax errors detected in woo-product-filter/woo-product-filter/modules/mail/mod.php
@@ -122,8 +124,7 @@ No syntax errors detected in woo-product-filter/woo-product-filter/modules/woofi
 No syntax errors detected in woo-product-filter/woo-product-filter/modules/woofilters_widget/views/tpl/widget.php
 No syntax errors detected in woo-product-filter/woo-product-filter/modules/woofilters_widget/views/woofilters_widget.php
 No syntax errors detected in woo-product-filter/woo-product-filter/woo-product-filter.php
-::error::%0Amodules/mail/engines/PHPMailerAutoload.php
-No syntax errors detected in woo-product-filter/woo-product-filter/woo-product-filter.php
+::error::%0Amodules/mail/engines/PHPMailerAutoload.php%0A  Fatal error: __autoload() is no longer supported, use spl_autoload_register() instead on line 47
 .........................................[31mE[0m...[31mE[0m..............  60 / 123 (49%)
 ............................................................ 120 / 123 (98%)
 ...                                                          123 / 123 (100%)
@@ -131,21 +132,24 @@ No syntax errors detected in woo-product-filter/woo-product-filter/woo-product-f
 
 
 [1mFILE: modules/mail/engines/class.phpmailer.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 1249 | [31mERROR[0m | [1mThe constant "INTL_IDNA_VARIANT_2003" is deprecated since PHP 7.2 and removed since PHP 8.0[0m
+----------------------------------------------------------------------
+ 1249 | [31mERROR[0m | [1mThe constant "INTL_IDNA_VARIANT_2003" is deprecated
+      |       | since PHP 7.2 and removed since PHP 8.0[0m
       |       | (PHPCompatibility.Constants.RemovedConstants.intl_idna_variant_2003DeprecatedRemoved)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 [1mFILE: modules/mail/engines/PHPMailerAutoload.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 47 | [31mERROR[0m | [1mSpecifying an autoloader using an __autoload() function is deprecated since PHP 7.2 and no longer supported since PHP 8.0[0m
+----------------------------------------------------------------------
+ 47 | [31mERROR[0m | [1mSpecifying an autoloader using an __autoload() function
+    |       | is deprecated since PHP 7.2 and no longer supported
+    |       | since PHP 8.0[0m
     |       | (PHPCompatibility.FunctionNameRestrictions.RemovedMagicAutoload.Removed)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
-Time: 4.38 secs; Memory: 36MB
-::error::FILE: modules/mail/engines/class.phpmailer.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 1249 | ERROR | The constant "INTL_IDNA_VARIANT_2003" is deprecated since PHP 7.2 and removed since PHP 8.0%0A      |       | (PHPCompatibility.Constants.RemovedConstants.intl_idna_variant_2003DeprecatedRemoved)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: modules/mail/engines/PHPMailerAutoload.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 47 | ERROR | Specifying an autoloader using an __autoload() function is deprecated since PHP 7.2 and no longer supported since PHP 8.0%0A    |       | (PHPCompatibility.FunctionNameRestrictions.RemovedMagicAutoload.Removed)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
+Time: 4.2 secs; Memory: 36MB
+::error::FILE: modules/mail/engines/class.phpmailer.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 1249 | ERROR | The constant "INTL_IDNA_VARIANT_2003" is deprecated%0A      |       | since PHP 7.2 and removed since PHP 8.0%0A      |       | (PHPCompatibility.Constants.RemovedConstants.intl_idna_variant_2003DeprecatedRemoved)%0A----------------------------------------------------------------------%0A%0A%0AFILE: modules/mail/engines/PHPMailerAutoload.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 47 | ERROR | Specifying an autoloader using an __autoload() function%0A    |       | is deprecated since PHP 7.2 and no longer supported%0A    |       | since PHP 8.0%0A    |       | (PHPCompatibility.FunctionNameRestrictions.RemovedMagicAutoload.Removed)%0A----------------------------------------------------------------------%0A
