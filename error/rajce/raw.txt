@@ -1,0 +1,53 @@
+::warning::Plugin: https://wordpress.org/plugins/rajce/%0ATrac: https://plugins.trac.wordpress.org/browser/rajce/
+No syntax errors detected in rajce/rajce/factory/RajceFactory.php
+No syntax errors detected in rajce/rajce/includes/rajce_widget.php
+No syntax errors detected in rajce/rajce/includes/widget.php
+No syntax errors detected in rajce/rajce/rajce.php
+No syntax errors detected in rajce/rajce/WPFW/bootstrap.php
+No syntax errors detected in rajce/rajce/WPFW/Caching/Cache.php
+No syntax errors detected in rajce/rajce/WPFW/Caching/IStorage.php
+No syntax errors detected in rajce/rajce/WPFW/Caching/Storages/FileStorage.php
+No syntax errors detected in rajce/rajce/WPFW/Forms/Container.php
+No syntax errors detected in rajce/rajce/WPFW/Forms/ControlGroup.php
+No syntax errors detected in rajce/rajce/WPFW/Forms/Controls/BaseControl.php
+No syntax errors detected in rajce/rajce/WPFW/Forms/Controls/CheckBox.php
+No syntax errors detected in rajce/rajce/WPFW/Forms/Controls/SubmitButton.php
+No syntax errors detected in rajce/rajce/WPFW/Forms/Controls/TextInput.php
+No syntax errors detected in rajce/rajce/WPFW/Forms/Form.php
+No syntax errors detected in rajce/rajce/WPFW/Forms/FormWidget.php
+No syntax errors detected in rajce/rajce/WPFW/Forms/IControl.php
+No syntax errors detected in rajce/rajce/WPFW/Utils/Image.php
+
+Fatal error: Cannot use 'Object' as class name as it is reserved in rajce/rajce/WPFW/Utils/Object.php on line 5
+Errors parsing rajce/rajce/WPFW/Utils/Object.php
+No syntax errors detected in rajce/rajce/WPFW/Utils/Strings.php
+No syntax errors detected in rajce/rajce/WPFW/Utils/Xml.php
+::error::%0AWPFW/Utils/Object.php%0A  Fatal error: Cannot use 'Object' as class name as it is reserved on line 5
+.[31mE[0m................[31mE[0m.. 21 / 21 (100%)
+
+
+
+[1mFILE: includes/rajce_widget.php[0m
+----------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 175 | [31mERROR[0m | [1mFunction create_function() is deprecated since PHP 7.2
+     |       | and removed since PHP 8.0; Use an anonymous function
+     |       | instead[0m
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
+----------------------------------------------------------------------
+
+
+[1mFILE: WPFW/Utils/Object.php[0m
+----------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 5 | [31mERROR[0m | [1m'object' is a soft reserved keyword as of PHP version
+   |       | 7.0 and a reserved keyword as of PHP version 7.2 and
+   |       | should not be used to name a class, interface or trait
+   |       | or as part of a namespace (T_CLASS)[0m
+   |       | (PHPCompatibility.Keywords.ForbiddenNamesAsDeclared.objectFound)
+----------------------------------------------------------------------
+
+Time: 214ms; Memory: 12MB
+::error::FILE: includes/rajce_widget.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 175 | ERROR | Function create_function() is deprecated since PHP 7.2%0A     |       | and removed since PHP 8.0; Use an anonymous function%0A     |       | instead%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)%0A----------------------------------------------------------------------%0A%0A%0AFILE: WPFW/Utils/Object.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 5 | ERROR | 'object' is a soft reserved keyword as of PHP version%0A   |       | 7.0 and a reserved keyword as of PHP version 7.2 and%0A   |       | should not be used to name a class, interface or trait%0A   |       | or as part of a namespace (T_CLASS)%0A   |       | (PHPCompatibility.Keywords.ForbiddenNamesAsDeclared.objectFound)%0A----------------------------------------------------------------------%0A
