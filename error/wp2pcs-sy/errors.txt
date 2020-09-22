@@ -1,0 +1,41 @@
+
+wp2pcs-setup-functions.php
+  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 287
+FILE: libs/RequestCore.class.php
+----------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 529 | ERROR | The constant "CURLOPT_CLOSEPOLICY" is removed since
+     |       | PHP 5.6
+     |       | (PHPCompatibility.Constants.RemovedConstants.curlopt_closepolicyRemoved)
+ 529 | ERROR | The constant "CURLCLOSEPOLICY_LEAST_RECENTLY_USED" is
+     |       | removed since PHP 5.6
+     |       | (PHPCompatibility.Constants.RemovedConstants.curlclosepolicy_least_recently_usedRemoved)
+----------------------------------------------------------------------
+
+
+FILE: wp2pcs-setup-functions.php
+----------------------------------------------------------------------
+FOUND 5 ERRORS AFFECTING 3 LINES
+----------------------------------------------------------------------
+ 222 | ERROR | [ ] The constant "CURLOPT_CLOSEPOLICY" is removed
+     |       |     since PHP 5.6
+     |       |     (PHPCompatibility.Constants.RemovedConstants.curlopt_closepolicyRemoved)
+ 222 | ERROR | [ ] The constant "CURLCLOSEPOLICY_LEAST_RECENTLY_USED"
+     |       |     is removed since PHP 5.6
+     |       |     (PHPCompatibility.Constants.RemovedConstants.curlclosepolicy_least_recently_usedRemoved)
+ 287 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $key{$x}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 292 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $data{$i}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 292 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $char{$i}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 3 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------

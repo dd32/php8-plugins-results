@@ -1,0 +1,66 @@
+::warning::Plugin: https://wordpress.org/plugins/wp2pcs-sy/%0ATrac: https://plugins.trac.wordpress.org/browser/wp2pcs-sy/
+No syntax errors detected in wp2pcs-sy/wp2pcs-sy/libs/BaiduPCS.class.php
+No syntax errors detected in wp2pcs-sy/wp2pcs-sy/libs/RequestCore.class.php
+No syntax errors detected in wp2pcs-sy/wp2pcs-sy/wp2pcs-debug.php
+
+Fatal error: Array and string offset access syntax with curly braces is no longer supported in wp2pcs-sy/wp2pcs-sy/wp2pcs-setup-functions.php on line 287
+Errors parsing wp2pcs-sy/wp2pcs-sy/wp2pcs-setup-functions.php
+No syntax errors detected in wp2pcs-sy/wp2pcs-sy/wp2pcs-sy.php
+No syntax errors detected in wp2pcs-sy/wp2pcs-sy/wp-backup-database-functions.php
+No syntax errors detected in wp2pcs-sy/wp2pcs-sy/wp-backup-file-functions.php
+No syntax errors detected in wp2pcs-sy/wp2pcs-sy/wp-backup-to-baidu-pcs.php
+No syntax errors detected in wp2pcs-sy/wp2pcs-sy/wp-diff-to-baidu-pcs.php
+No syntax errors detected in wp2pcs-sy/wp2pcs-sy/wp-storage-audio-online.php
+No syntax errors detected in wp2pcs-sy/wp2pcs-sy/wp-storage-download-file.php
+No syntax errors detected in wp2pcs-sy/wp2pcs-sy/wp-storage-file-manage.php
+No syntax errors detected in wp2pcs-sy/wp2pcs-sy/wp-storage-image-outlink.php
+No syntax errors detected in wp2pcs-sy/wp2pcs-sy/wp-storage-insert-to-content.php
+No syntax errors detected in wp2pcs-sy/wp2pcs-sy/wp-storage-media-online.php
+No syntax errors detected in wp2pcs-sy/wp2pcs-sy/wp-storage-to-baidu-pcs.php
+No syntax errors detected in wp2pcs-sy/wp2pcs-sy/wp-storage-video-online.php
+::error::%0Awp2pcs-setup-functions.php%0A  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 287
+.[31mE[0m.[32mE[0m............. 17 / 17 (100%)
+
+
+
+[1mFILE: libs/RequestCore.class.php[0m
+----------------------------------------------------------------------
+[1mFOUND 2 ERRORS AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 529 | [31mERROR[0m | [1mThe constant "CURLOPT_CLOSEPOLICY" is removed since
+     |       | PHP 5.6[0m
+     |       | (PHPCompatibility.Constants.RemovedConstants.curlopt_closepolicyRemoved)
+ 529 | [31mERROR[0m | [1mThe constant "CURLCLOSEPOLICY_LEAST_RECENTLY_USED" is
+     |       | removed since PHP 5.6[0m
+     |       | (PHPCompatibility.Constants.RemovedConstants.curlclosepolicy_least_recently_usedRemoved)
+----------------------------------------------------------------------
+
+
+[1mFILE: wp2pcs-setup-functions.php[0m
+----------------------------------------------------------------------
+[1mFOUND 5 ERRORS AFFECTING 3 LINES[0m
+----------------------------------------------------------------------
+ 222 | [31mERROR[0m | [ ] [1mThe constant "CURLOPT_CLOSEPOLICY" is removed
+     |       |     since PHP 5.6[0m
+     |       |     (PHPCompatibility.Constants.RemovedConstants.curlopt_closepolicyRemoved)
+ 222 | [31mERROR[0m | [ ] [1mThe constant "CURLCLOSEPOLICY_LEAST_RECENTLY_USED"
+     |       |     is removed since PHP 5.6[0m
+     |       |     (PHPCompatibility.Constants.RemovedConstants.curlclosepolicy_least_recently_usedRemoved)
+ 287 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $key{$x}[0m
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 292 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $data{$i}[0m
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 292 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $char{$i}[0m
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+----------------------------------------------------------------------
+[1mPHPCBF CAN FIX THE 3 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
+----------------------------------------------------------------------
+
+Time: 609ms; Memory: 14MB
+::error::FILE: libs/RequestCore.class.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 529 | ERROR | The constant "CURLOPT_CLOSEPOLICY" is removed since%0A     |       | PHP 5.6%0A     |       | (PHPCompatibility.Constants.RemovedConstants.curlopt_closepolicyRemoved)%0A 529 | ERROR | The constant "CURLCLOSEPOLICY_LEAST_RECENTLY_USED" is%0A     |       | removed since PHP 5.6%0A     |       | (PHPCompatibility.Constants.RemovedConstants.curlclosepolicy_least_recently_usedRemoved)%0A----------------------------------------------------------------------%0A%0A%0AFILE: wp2pcs-setup-functions.php%0A----------------------------------------------------------------------%0AFOUND 5 ERRORS AFFECTING 3 LINES%0A----------------------------------------------------------------------%0A 222 | ERROR | [ ] The constant "CURLOPT_CLOSEPOLICY" is removed%0A     |       |     since PHP 5.6%0A     |       |     (PHPCompatibility.Constants.RemovedConstants.curlopt_closepolicyRemoved)%0A 222 | ERROR | [ ] The constant "CURLCLOSEPOLICY_LEAST_RECENTLY_USED"%0A     |       |     is removed since PHP 5.6%0A     |       |     (PHPCompatibility.Constants.RemovedConstants.curlclosepolicy_least_recently_usedRemoved)%0A 287 | ERROR | [x] Curly brace syntax for accessing array elements%0A     |       |     and string offsets has been deprecated in PHP 7.4%0A     |       |     and removed in PHP 8.0. Found: $key{$x}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 292 | ERROR | [x] Curly brace syntax for accessing array elements%0A     |       |     and string offsets has been deprecated in PHP 7.4%0A     |       |     and removed in PHP 8.0. Found: $data{$i}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 292 | ERROR | [x] Curly brace syntax for accessing array elements%0A     |       |     and string offsets has been deprecated in PHP 7.4%0A     |       |     and removed in PHP 8.0. Found: $char{$i}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A----------------------------------------------------------------------%0APHPCBF CAN FIX THE 3 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A----------------------------------------------------------------------%0A
