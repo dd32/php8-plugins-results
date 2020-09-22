@@ -1,0 +1,33 @@
+::warning::Plugin: https://wordpress.org/plugins/wp-redmine-issues/%0ATrac: https://plugins.trac.wordpress.org/browser/wp-redmine-issues/
+No syntax errors detected in wp-redmine-issues/wp-redmine-issues/includes/lib/af_wp_html.class.php
+No syntax errors detected in wp-redmine-issues/wp-redmine-issues/includes/lib/wpri_redmine_api.class.php
+No syntax errors detected in wp-redmine-issues/wp-redmine-issues/includes/lib/wpri_ticket_create_page.class.php
+No syntax errors detected in wp-redmine-issues/wp-redmine-issues/includes/lib/wpri_ticket_details.class.php
+No syntax errors detected in wp-redmine-issues/wp-redmine-issues/includes/lib/wpri_ticket_journal_table.class.php
+No syntax errors detected in wp-redmine-issues/wp-redmine-issues/includes/lib/wpri_ticket_list_table.class.php
+No syntax errors detected in wp-redmine-issues/wp-redmine-issues/includes/lib/wpri_wp_list_table.class.php
+No syntax errors detected in wp-redmine-issues/wp-redmine-issues/includes/wpri_globals.class.php
+No syntax errors detected in wp-redmine-issues/wp-redmine-issues/includes/wpri_settings.php
+
+Fatal error: Unparenthesized `a ? b : c ? d : e` is not supported. Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)` in wp-redmine-issues/wp-redmine-issues/includes/wpri_start.php on line 108
+Errors parsing wp-redmine-issues/wp-redmine-issues/includes/wpri_start.php
+No syntax errors detected in wp-redmine-issues/wp-redmine-issues/wpri.php
+::error::%0Aincludes/wpri_start.php%0A  Fatal error: Unparenthesized `a ? b : c ? d : e` is not supported.%0A      Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)`%0A      on line 108
+.........[31mE[0m. 11 / 11 (100%)
+
+
+
+[1mFILE: includes/wpri_start.php[0m
+----------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 108 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has
+     |       | been deprecated in PHP 7.4 and removed in PHP 8.0.
+     |       | Multiple consecutive ternaries detected. Use
+     |       | parenthesis to clarify the order in which the
+     |       | operations should be executed[0m
+     |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
+----------------------------------------------------------------------
+
+Time: 258ms; Memory: 12MB
+::error::FILE: includes/wpri_start.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 108 | ERROR | The left-associativity of the ternary operator has%0A     |       | been deprecated in PHP 7.4 and removed in PHP 8.0.%0A     |       | Multiple consecutive ternaries detected. Use%0A     |       | parenthesis to clarify the order in which the%0A     |       | operations should be executed%0A     |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A----------------------------------------------------------------------%0A
