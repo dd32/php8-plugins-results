@@ -1,0 +1,39 @@
+::warning::Plugin: https://wordpress.org/plugins/manual-credit-card-processing-for-woocommerce/%0ATrac: https://plugins.trac.wordpress.org/browser/manual-credit-card-processing-for-woocommerce/
+No syntax errors detected in manual-credit-card-processing-for-woocommerce/manual-credit-card-processing-for-woocommerce/assets/styles.php
+No syntax errors detected in manual-credit-card-processing-for-woocommerce/manual-credit-card-processing-for-woocommerce/classes/MWC_CCP_CustomerOrders.php
+No syntax errors detected in manual-credit-card-processing-for-woocommerce/manual-credit-card-processing-for-woocommerce/classes/MWC_CC_Processing.php
+No syntax errors detected in manual-credit-card-processing-for-woocommerce/manual-credit-card-processing-for-woocommerce/moco-woocommerce-manual-cc-processing.php
+
+Fatal error: Unparenthesized `a ? b : c ? d : e` is not supported. Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)` in manual-credit-card-processing-for-woocommerce/manual-credit-card-processing-for-woocommerce/templates/html-order-manual-payment.php on line 32
+Errors parsing manual-credit-card-processing-for-woocommerce/manual-credit-card-processing-for-woocommerce/templates/html-order-manual-payment.php
+::error::%0Atemplates/html-order-manual-payment.php%0A  Fatal error: Unparenthesized `a ? b : c ? d : e` is not supported.%0A      Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)`%0A      on line 32
+..[31mE[0m.[31mE[0m 5 / 5 (100%)
+
+
+
+[1mFILE: classes/MWC_CC_Processing.php[0m
+----------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 244 | [31mERROR[0m | [1mThe "result" parameter for function parse_str() is
+     |       | missing. Passing this parameter is no longer optional.
+     |       | The optional nature of the parameter is deprecated
+     |       | since PHP 7.2 and removed since PHP 8.0[0m
+     |       | (PHPCompatibility.FunctionUse.OptionalToRequiredFunctionParameters.parse_str_resultSoftRequiredHardRequired)
+----------------------------------------------------------------------
+
+
+[1mFILE: templates/html-order-manual-payment.php[0m
+----------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 32 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has been
+    |       | deprecated in PHP 7.4 and removed in PHP 8.0. Multiple
+    |       | consecutive ternaries detected. Use parenthesis to
+    |       | clarify the order in which the operations should be
+    |       | executed[0m
+    |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
+----------------------------------------------------------------------
+
+Time: 160ms; Memory: 12MB
+::error::FILE: classes/MWC_CC_Processing.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 244 | ERROR | The "result" parameter for function parse_str() is%0A     |       | missing. Passing this parameter is no longer optional.%0A     |       | The optional nature of the parameter is deprecated%0A     |       | since PHP 7.2 and removed since PHP 8.0%0A     |       | (PHPCompatibility.FunctionUse.OptionalToRequiredFunctionParameters.parse_str_resultSoftRequiredHardRequired)%0A----------------------------------------------------------------------%0A%0A%0AFILE: templates/html-order-manual-payment.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 32 | ERROR | The left-associativity of the ternary operator has been%0A    |       | deprecated in PHP 7.4 and removed in PHP 8.0. Multiple%0A    |       | consecutive ternaries detected. Use parenthesis to%0A    |       | clarify the order in which the operations should be%0A    |       | executed%0A    |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A----------------------------------------------------------------------%0A
