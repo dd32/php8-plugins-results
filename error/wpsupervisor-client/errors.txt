@@ -1,0 +1,42 @@
+FILE: core.class.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 206 | ERROR | Function create_function() is deprecated since PHP 7.2
+     |       | and removed since PHP 8.0; Use an anonymous function
+     |       | instead
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
+----------------------------------------------------------------------
+
+
+FILE: lib/amazon_s3/lib/requestcore/requestcore.class.php
+----------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 626 | ERROR | The constant "CURLOPT_CLOSEPOLICY" is removed since
+     |       | PHP 5.6
+     |       | (PHPCompatibility.Constants.RemovedConstants.curlopt_closepolicyRemoved)
+ 626 | ERROR | The constant "CURLCLOSEPOLICY_LEAST_RECENTLY_USED" is
+     |       | removed since PHP 5.6
+     |       | (PHPCompatibility.Constants.RemovedConstants.curlclosepolicy_least_recently_usedRemoved)
+----------------------------------------------------------------------
+
+
+FILE: pclzip.class.php
+----------------------------------------------------------------------
+FOUND 4 ERRORS AFFECTING 4 LINES
+----------------------------------------------------------------------
+  217 | ERROR | Declaration of a PHP4 style class constructor is
+      |       | deprecated since PHP 7.0 and removed since PHP
+      |       | 8.0
+      |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+ 5366 | ERROR | Function get_magic_quotes_runtime() is deprecated
+      |       | since PHP 7.4 and removed since PHP 8.0
+      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_runtimeDeprecatedRemoved)
+ 5370 | ERROR | Function set_magic_quotes_runtime() is deprecated
+      |       | since PHP 5.3 and removed since PHP 7.0
+      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.set_magic_quotes_runtimeDeprecatedRemoved)
+ 5401 | ERROR | Function set_magic_quotes_runtime() is deprecated
+      |       | since PHP 5.3 and removed since PHP 7.0
+      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.set_magic_quotes_runtimeDeprecatedRemoved)
+----------------------------------------------------------------------
