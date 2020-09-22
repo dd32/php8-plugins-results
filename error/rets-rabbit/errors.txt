@@ -1,0 +1,45 @@
+
+vendor/guzzlehttp/guzzle/src/Event/Emitter.php
+  Fatal error: Cannot use lexical variable $eventName as a parameter name on line 49
+FILE: template/detail.example.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 13 | ERROR | Function money_format() is deprecated since PHP 7.4 and
+    |       | removed since PHP 8.0; Use
+    |       | NumberFormatter::formatCurrency() instead
+    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.money_formatDeprecatedRemoved)
+----------------------------------------------------------------------
+
+
+FILE: template/listings.example.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 22 | ERROR | Function money_format() is deprecated since PHP 7.4 and
+    |       | removed since PHP 8.0; Use
+    |       | NumberFormatter::formatCurrency() instead
+    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.money_formatDeprecatedRemoved)
+----------------------------------------------------------------------
+
+
+FILE: template/results.example.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 22 | ERROR | Function money_format() is deprecated since PHP 7.4 and
+    |       | removed since PHP 8.0; Use
+    |       | NumberFormatter::formatCurrency() instead
+    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.money_formatDeprecatedRemoved)
+----------------------------------------------------------------------
+
+
+FILE: vendor/guzzlehttp/guzzle/src/Event/Emitter.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 49 | ERROR | Variables bound to a closure via the use construct
+    |       | cannot use the same name as superglobals, $this, or a
+    |       | declared parameter since PHP 7.1. Found: $eventName
+    |       | (PHPCompatibility.FunctionDeclarations.ForbiddenVariableNamesInClosureUse.FoundShadowParam)
+----------------------------------------------------------------------
