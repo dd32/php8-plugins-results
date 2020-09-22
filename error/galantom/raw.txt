@@ -1,0 +1,83 @@
+::warning::Plugin: https://wordpress.org/plugins/galantom/%0ATrac: https://plugins.trac.wordpress.org/browser/galantom/
+No syntax errors detected in galantom/galantom/classes/admin/admin.php
+No syntax errors detected in galantom/galantom/classes/admin/metabox.php
+No syntax errors detected in galantom/galantom/classes/admin/settings.php
+No syntax errors detected in galantom/galantom/classes/front/donations/form.php
+No syntax errors detected in galantom/galantom/classes/front/donations/list.php
+
+Fatal error: Switch statements may only contain one default clause in galantom/galantom/classes/front/donations/page.php on line 46
+Errors parsing galantom/galantom/classes/front/donations/page.php
+No syntax errors detected in galantom/galantom/classes/front/front.php
+No syntax errors detected in galantom/galantom/classes/galantom/api.php
+No syntax errors detected in galantom/galantom/classes/plugin.php
+No syntax errors detected in galantom/galantom/classes/view.php
+No syntax errors detected in galantom/galantom/classes/widgets/abstract.php
+No syntax errors detected in galantom/galantom/classes/widgets/FPage_Stats.php
+No syntax errors detected in galantom/galantom/classes/widgets/Group_Pages_Stats.php
+No syntax errors detected in galantom/galantom/functions/common.php
+No syntax errors detected in galantom/galantom/galantom.php
+No syntax errors detected in galantom/galantom/views/admin/metabox.php
+No syntax errors detected in galantom/galantom/views/admin/settings/form.php
+No syntax errors detected in galantom/galantom/views/front/donations/form.php
+No syntax errors detected in galantom/galantom/views/front/donations/list.php
+No syntax errors detected in galantom/galantom/views/front/donations/redirect.php
+No syntax errors detected in galantom/galantom/views/widgets/fpage_stats/form.php
+No syntax errors detected in galantom/galantom/views/widgets/fpage_stats/widget.php
+No syntax errors detected in galantom/galantom/views/widgets/page_groups_stats/form.php
+No syntax errors detected in galantom/galantom/views/widgets/page_groups_stats/widget.php
+::error::%0Aclasses/front/donations/page.php%0A  Fatal error: Switch statements may only contain one default clause on line 46
+.....[31mE[0m.....[31mE[0m[31mE[0m....[31mE[0m...... 24 / 24 (100%)
+
+
+
+[1mFILE: classes/front/donations/page.php[0m
+----------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 38 | [31mERROR[0m | [1mSwitch statements can not have multiple default blocks
+    |       | since PHP 7.0[0m
+    |       | (PHPCompatibility.ControlStructures.ForbiddenSwitchWithMultipleDefaultBlocks.Found)
+----------------------------------------------------------------------
+
+
+[1mFILE: classes/widgets/FPage_Stats.php[0m
+----------------------------------------------------------------------
+[1mFOUND 2 ERRORS AFFECTING 2 LINES[0m
+----------------------------------------------------------------------
+  7 | [31mERROR[0m | [1mDeclaration of a PHP4 style class constructor is
+    |       | deprecated since PHP 7.0 and removed since PHP 8.0[0m
+    |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+ 65 | [31mERROR[0m | [1mFunction create_function() is deprecated since PHP 7.2
+    |       | and removed since PHP 8.0; Use an anonymous function
+    |       | instead[0m
+    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
+----------------------------------------------------------------------
+
+
+[1mFILE: classes/widgets/Group_Pages_Stats.php[0m
+----------------------------------------------------------------------
+[1mFOUND 2 ERRORS AFFECTING 2 LINES[0m
+----------------------------------------------------------------------
+  7 | [31mERROR[0m | [1mDeclaration of a PHP4 style class constructor is
+    |       | deprecated since PHP 7.0 and removed since PHP 8.0[0m
+    |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+ 65 | [31mERROR[0m | [1mFunction create_function() is deprecated since PHP 7.2
+    |       | and removed since PHP 8.0; Use an anonymous function
+    |       | instead[0m
+    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
+----------------------------------------------------------------------
+
+
+[1mFILE: views/front/donations/form.php[0m
+----------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 8 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse
+   |       | order to implode has been deprecated since PHP 7.4 and
+   |       | is removed since PHP 8.0; $glue should be the first
+   |       | parameter and $pieces the second[0m
+   |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
+----------------------------------------------------------------------
+
+Time: 204ms; Memory: 12MB
+::error::FILE: classes/front/donations/page.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 38 | ERROR | Switch statements can not have multiple default blocks%0A    |       | since PHP 7.0%0A    |       | (PHPCompatibility.ControlStructures.ForbiddenSwitchWithMultipleDefaultBlocks.Found)%0A----------------------------------------------------------------------%0A%0A%0AFILE: classes/widgets/FPage_Stats.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A----------------------------------------------------------------------%0A  7 | ERROR | Declaration of a PHP4 style class constructor is%0A    |       | deprecated since PHP 7.0 and removed since PHP 8.0%0A    |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)%0A 65 | ERROR | Function create_function() is deprecated since PHP 7.2%0A    |       | and removed since PHP 8.0; Use an anonymous function%0A    |       | instead%0A    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)%0A----------------------------------------------------------------------%0A%0A%0AFILE: classes/widgets/Group_Pages_Stats.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A----------------------------------------------------------------------%0A  7 | ERROR | Declaration of a PHP4 style class constructor is%0A    |       | deprecated since PHP 7.0 and removed since PHP 8.0%0A    |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)%0A 65 | ERROR | Function create_function() is deprecated since PHP 7.2%0A    |       | and removed since PHP 8.0; Use an anonymous function%0A    |       | instead%0A    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)%0A----------------------------------------------------------------------%0A%0A%0AFILE: views/front/donations/form.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 8 | ERROR | Passing the $glue and $pieces parameters in reverse%0A   |       | order to implode has been deprecated since PHP 7.4 and%0A   |       | is removed since PHP 8.0; $glue should be the first%0A   |       | parameter and $pieces the second%0A   |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A----------------------------------------------------------------------%0A

@@ -1,0 +1,58 @@
+::warning::Plugin: https://wordpress.org/plugins/d-login/%0ATrac: https://plugins.trac.wordpress.org/browser/d-login/
+No syntax errors detected in d-login/d-login/d-login.php
+No syntax errors detected in d-login/d-login/includes/admin/widgets/DWidgetUserDisplay.php
+No syntax errors detected in d-login/d-login/includes/admin/widgets/DWidgetUserForm.php
+No syntax errors detected in d-login/d-login/includes/site/SiteDLoginUser.php
+No syntax errors detected in d-login/d-login/includes/site/SiteDRegUser.php
+No syntax errors detected in d-login/d-login/lib/cool-php-captcha/captcha.php
+No syntax errors detected in d-login/d-login/lib/cool-php-captcha/example-form.php
+No syntax errors detected in d-login/d-login/lib/cool-php-captcha/resources/tools/dictionary-import/importwords.php
+No syntax errors detected in d-login/d-login/lib/cool-php-captcha/resources/words/en.php
+No syntax errors detected in d-login/d-login/lib/cool-php-captcha/resources/words/es.php
+.[31mE[0m[31mE[0m.[31mE[0m..... 10 / 10 (100%)
+
+
+
+[1mFILE: includes/admin/widgets/DWidgetUserDisplay.php[0m
+----------------------------------------------------------------------
+[1mFOUND 2 ERRORS AFFECTING 2 LINES[0m
+----------------------------------------------------------------------
+  19 | [31mERROR[0m | [1mDeclaration of a PHP4 style class constructor is
+     |       | deprecated since PHP 7.0 and removed since PHP 8.0[0m
+     |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+ 117 | [31mERROR[0m | [1mFunction create_function() is deprecated since PHP 7.2
+     |       | and removed since PHP 8.0; Use an anonymous function
+     |       | instead[0m
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
+----------------------------------------------------------------------
+
+
+[1mFILE: includes/admin/widgets/DWidgetUserForm.php[0m
+----------------------------------------------------------------------
+[1mFOUND 2 ERRORS AFFECTING 2 LINES[0m
+----------------------------------------------------------------------
+  19 | [31mERROR[0m | [1mDeclaration of a PHP4 style class constructor is
+     |       | deprecated since PHP 7.0 and removed since PHP 8.0[0m
+     |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+ 132 | [31mERROR[0m | [1mFunction create_function() is deprecated since PHP 7.2
+     |       | and removed since PHP 8.0; Use an anonymous function
+     |       | instead[0m
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
+----------------------------------------------------------------------
+
+
+[1mFILE: includes/site/SiteDRegUser.php[0m
+----------------------------------------------------------------------
+[1mFOUND 2 ERRORS AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 101 | [31mERROR[0m | [1mExtension 'ereg' is deprecated since PHP 5.3 and
+     |       | removed since PHP 7.0; Use pcre instead[0m
+     |       | (PHPCompatibility.Extensions.RemovedExtensions.eregDeprecatedRemoved)
+ 101 | [31mERROR[0m | [1mFunction eregi() is deprecated since PHP 5.3 and
+     |       | removed since PHP 7.0; Use preg_match() (with the i
+     |       | modifier) instead[0m
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eregiDeprecatedRemoved)
+----------------------------------------------------------------------
+
+Time: 587ms; Memory: 50.01MB
+::error::FILE: includes/admin/widgets/DWidgetUserDisplay.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A----------------------------------------------------------------------%0A  19 | ERROR | Declaration of a PHP4 style class constructor is%0A     |       | deprecated since PHP 7.0 and removed since PHP 8.0%0A     |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)%0A 117 | ERROR | Function create_function() is deprecated since PHP 7.2%0A     |       | and removed since PHP 8.0; Use an anonymous function%0A     |       | instead%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)%0A----------------------------------------------------------------------%0A%0A%0AFILE: includes/admin/widgets/DWidgetUserForm.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A----------------------------------------------------------------------%0A  19 | ERROR | Declaration of a PHP4 style class constructor is%0A     |       | deprecated since PHP 7.0 and removed since PHP 8.0%0A     |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)%0A 132 | ERROR | Function create_function() is deprecated since PHP 7.2%0A     |       | and removed since PHP 8.0; Use an anonymous function%0A     |       | instead%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)%0A----------------------------------------------------------------------%0A%0A%0AFILE: includes/site/SiteDRegUser.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 101 | ERROR | Extension 'ereg' is deprecated since PHP 5.3 and%0A     |       | removed since PHP 7.0; Use pcre instead%0A     |       | (PHPCompatibility.Extensions.RemovedExtensions.eregDeprecatedRemoved)%0A 101 | ERROR | Function eregi() is deprecated since PHP 5.3 and%0A     |       | removed since PHP 7.0; Use preg_match() (with the i%0A     |       | modifier) instead%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eregiDeprecatedRemoved)%0A----------------------------------------------------------------------%0A
