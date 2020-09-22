@@ -1,0 +1,58 @@
+::warning::Plugin: https://wordpress.org/plugins/v-voting/%0ATrac: https://plugins.trac.wordpress.org/browser/v-voting/
+No syntax errors detected in v-voting/v-voting/includes/bp-voting-actions.php
+No syntax errors detected in v-voting/v-voting/includes/bp-voting-activity.php
+No syntax errors detected in v-voting/v-voting/includes/bp-voting-admin.php
+No syntax errors detected in v-voting/v-voting/includes/bp-voting-ajax.php
+No syntax errors detected in v-voting/v-voting/includes/bp-voting-classes.php
+No syntax errors detected in v-voting/v-voting/includes/bp-voting-cssjs.php
+No syntax errors detected in v-voting/v-voting/includes/bp-voting-filters.php
+
+Fatal error: 'continue' not in the 'loop' or 'switch' context in v-voting/v-voting/includes/bp-voting-functions.php on line 217
+Errors parsing v-voting/v-voting/includes/bp-voting-functions.php
+No syntax errors detected in v-voting/v-voting/includes/bp-voting-install.php
+No syntax errors detected in v-voting/v-voting/includes/bp-voting-loader.php
+No syntax errors detected in v-voting/v-voting/includes/bp-voting-screens.php
+No syntax errors detected in v-voting/v-voting/includes/bp-voting-template.php
+No syntax errors detected in v-voting/v-voting/includes/bp-voting-widgets.php
+No syntax errors detected in v-voting/v-voting/loader.php
+No syntax errors detected in v-voting/v-voting/templates/default/add.php
+No syntax errors detected in v-voting/v-voting/templates/default/index.php
+No syntax errors detected in v-voting/v-voting/templates/default/invited.php
+No syntax errors detected in v-voting/v-voting/templates/default/join.php
+No syntax errors detected in v-voting/v-voting/templates/default/personal.php
+No syntax errors detected in v-voting/v-voting/templates/default/projects-loop.php
+No syntax errors detected in v-voting/v-voting/templates/default/search.php
+No syntax errors detected in v-voting/v-voting/templates/default/widgets/last-projects-widget.php
+::error::%0Aincludes/bp-voting-functions.php%0A  Fatal error: 'continue' not in the 'loop' or 'switch' context on line 217
+.......[31mE[0m....[31mE[0m......... 22 / 22 (100%)
+
+
+
+[1mFILE: includes/bp-voting-functions.php[0m
+----------------------------------------------------------------------
+[1mFOUND 3 ERRORS AFFECTING 3 LINES[0m
+----------------------------------------------------------------------
+ 208 | [31mERROR[0m | [1m"$this" can no longer be used in a plain function or
+     |       | method since PHP 7.1.[0m
+     |       | (PHPCompatibility.Variables.ForbiddenThisUseContexts.OutsideObjectContext)
+ 216 | [31mERROR[0m | [1m"$this" can no longer be used in a plain function or
+     |       | method since PHP 7.1.[0m
+     |       | (PHPCompatibility.Variables.ForbiddenThisUseContexts.OutsideObjectContext)
+ 217 | [31mERROR[0m | [1mUsing 'continue' outside of a loop or switch structure
+     |       | is invalid and will throw a fatal error since PHP
+     |       | 7.0[0m
+     |       | (PHPCompatibility.ControlStructures.ForbiddenBreakContinueOutsideLoop.FatalError)
+----------------------------------------------------------------------
+
+
+[1mFILE: includes/bp-voting-widgets.php[0m
+----------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 4 | [31mERROR[0m | [1mDeclaration of a PHP4 style class constructor is
+   |       | deprecated since PHP 7.0 and removed since PHP 8.0[0m
+   |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+----------------------------------------------------------------------
+
+Time: 309ms; Memory: 12MB
+::error::FILE: includes/bp-voting-functions.php%0A----------------------------------------------------------------------%0AFOUND 3 ERRORS AFFECTING 3 LINES%0A----------------------------------------------------------------------%0A 208 | ERROR | "$this" can no longer be used in a plain function or%0A     |       | method since PHP 7.1.%0A     |       | (PHPCompatibility.Variables.ForbiddenThisUseContexts.OutsideObjectContext)%0A 216 | ERROR | "$this" can no longer be used in a plain function or%0A     |       | method since PHP 7.1.%0A     |       | (PHPCompatibility.Variables.ForbiddenThisUseContexts.OutsideObjectContext)%0A 217 | ERROR | Using 'continue' outside of a loop or switch structure%0A     |       | is invalid and will throw a fatal error since PHP%0A     |       | 7.0%0A     |       | (PHPCompatibility.ControlStructures.ForbiddenBreakContinueOutsideLoop.FatalError)%0A----------------------------------------------------------------------%0A%0A%0AFILE: includes/bp-voting-widgets.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 4 | ERROR | Declaration of a PHP4 style class constructor is%0A   |       | deprecated since PHP 7.0 and removed since PHP 8.0%0A   |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)%0A----------------------------------------------------------------------%0A
