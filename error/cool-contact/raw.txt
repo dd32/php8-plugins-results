@@ -1,0 +1,57 @@
+::warning::Plugin: https://wordpress.org/plugins/cool-contact/%0ATrac: https://plugins.trac.wordpress.org/browser/cool-contact/
+No syntax errors detected in cool-contact/cool-contact/contact_admin.php
+No syntax errors detected in cool-contact/cool-contact/form.php
+No syntax errors detected in cool-contact/cool-contact/includes/functions.php
+No syntax errors detected in cool-contact/cool-contact/includes/options.php
+No syntax errors detected in cool-contact/cool-contact/index.php
+No syntax errors detected in cool-contact/cool-contact/process.php
+No syntax errors detected in cool-contact/cool-contact/securimage/example_form.ajax.php
+No syntax errors detected in cool-contact/cool-contact/securimage/example_form.php
+
+Fatal error: Array and string offset access syntax with curly braces is no longer supported in cool-contact/cool-contact/securimage/securimage.php on line 1915
+Errors parsing cool-contact/cool-contact/securimage/securimage.php
+No syntax errors detected in cool-contact/cool-contact/securimage/securimage_play.php
+No syntax errors detected in cool-contact/cool-contact/securimage/securimage_show.php
+
+Fatal error: Array and string offset access syntax with curly braces is no longer supported in cool-contact/cool-contact/securimage/WavFile.php on line 1555
+Errors parsing cool-contact/cool-contact/securimage/WavFile.php
+No syntax errors detected in cool-contact/cool-contact/uninstall.php
+::error::%0Asecurimage/securimage.php%0A  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 1915%0A%0Asecurimage/WavFile.php%0A  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 1555
+........[32mE[0m..[32mE[0m. 13 / 13 (100%)
+
+
+
+[1mFILE: securimage/securimage.php[0m
+----------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 1915 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found:
+      |       |     $code['display']{$i}[0m
+      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+----------------------------------------------------------------------
+[1mPHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
+----------------------------------------------------------------------
+
+
+[1mFILE: securimage/WavFile.php[0m
+----------------------------------------------------------------------
+[1mFOUND 2 ERRORS AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 1555 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found:
+      |       |     $this->_samples{$offset + $i}[0m
+      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 1555 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found:
+      |       |     $sampleBinary{$i}[0m
+      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+----------------------------------------------------------------------
+[1mPHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
+----------------------------------------------------------------------
+
+Time: 854ms; Memory: 26MB
+::error::FILE: securimage/securimage.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 1915 | ERROR | [x] Curly brace syntax for accessing array elements%0A      |       |     and string offsets has been deprecated in PHP 7.4%0A      |       |     and removed in PHP 8.0. Found:%0A      |       |     $code['display']{$i}%0A      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A----------------------------------------------------------------------%0APHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A----------------------------------------------------------------------%0A%0A%0AFILE: securimage/WavFile.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 1555 | ERROR | [x] Curly brace syntax for accessing array elements%0A      |       |     and string offsets has been deprecated in PHP 7.4%0A      |       |     and removed in PHP 8.0. Found:%0A      |       |     $this->_samples{$offset + $i}%0A      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 1555 | ERROR | [x] Curly brace syntax for accessing array elements%0A      |       |     and string offsets has been deprecated in PHP 7.4%0A      |       |     and removed in PHP 8.0. Found:%0A      |       |     $sampleBinary{$i}%0A      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A----------------------------------------------------------------------%0APHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A----------------------------------------------------------------------%0A
