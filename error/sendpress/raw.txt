@@ -236,7 +236,6 @@ No syntax errors detected in sendpress/sendpress/tests/test_sendpress_data.php
 No syntax errors detected in sendpress/sendpress/tests/test_sendpress_security.php
 No syntax errors detected in sendpress/sendpress/tests/test_wordpress_plugin_tests.php
 No syntax errors detected in sendpress/sendpress/uninstall.php
-No syntax errors detected in sendpress/sendpress/uninstall.php
 ...................................................[31mE[0m........  60 / 237 (25%)
 ............................................................ 120 / 237 (51%)
 ............................................................ 180 / 237 (76%)
@@ -245,14 +244,18 @@ No syntax errors detected in sendpress/sendpress/uninstall.php
 
 
 [1mFILE: classes/class-sendpress-security.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 2 ERRORS AFFECTING 2 LINES[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 222 | [31mERROR[0m | [1mThe constant "FILTER_SANITIZE_MAGIC_QUOTES" is deprecated since PHP 7.4 and removed since PHP 8.0; Use FILTER_SANITIZE_ADD_SLASHES instead[0m
+----------------------------------------------------------------------
+ 222 | [31mERROR[0m | [1mThe constant "FILTER_SANITIZE_MAGIC_QUOTES" is
+     |       | deprecated since PHP 7.4 and removed since PHP 8.0;
+     |       | Use FILTER_SANITIZE_ADD_SLASHES instead[0m
      |       | (PHPCompatibility.Constants.RemovedConstants.filter_sanitize_magic_quotesDeprecatedRemoved)
- 251 | [31mERROR[0m | [1mThe constant "FILTER_SANITIZE_MAGIC_QUOTES" is deprecated since PHP 7.4 and removed since PHP 8.0; Use FILTER_SANITIZE_ADD_SLASHES instead[0m
+ 251 | [31mERROR[0m | [1mThe constant "FILTER_SANITIZE_MAGIC_QUOTES" is
+     |       | deprecated since PHP 7.4 and removed since PHP 8.0;
+     |       | Use FILTER_SANITIZE_ADD_SLASHES instead[0m
      |       | (PHPCompatibility.Constants.RemovedConstants.filter_sanitize_magic_quotesDeprecatedRemoved)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
-Time: 4.71 secs; Memory: 30MB
-::error::FILE: classes/class-sendpress-security.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 222 | ERROR | The constant "FILTER_SANITIZE_MAGIC_QUOTES" is deprecated since PHP 7.4 and removed since PHP 8.0; Use FILTER_SANITIZE_ADD_SLASHES instead%0A     |       | (PHPCompatibility.Constants.RemovedConstants.filter_sanitize_magic_quotesDeprecatedRemoved)%0A 251 | ERROR | The constant "FILTER_SANITIZE_MAGIC_QUOTES" is deprecated since PHP 7.4 and removed since PHP 8.0; Use FILTER_SANITIZE_ADD_SLASHES instead%0A     |       | (PHPCompatibility.Constants.RemovedConstants.filter_sanitize_magic_quotesDeprecatedRemoved)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
+Time: 4.72 secs; Memory: 30MB
+::error::FILE: classes/class-sendpress-security.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A----------------------------------------------------------------------%0A 222 | ERROR | The constant "FILTER_SANITIZE_MAGIC_QUOTES" is%0A     |       | deprecated since PHP 7.4 and removed since PHP 8.0;%0A     |       | Use FILTER_SANITIZE_ADD_SLASHES instead%0A     |       | (PHPCompatibility.Constants.RemovedConstants.filter_sanitize_magic_quotesDeprecatedRemoved)%0A 251 | ERROR | The constant "FILTER_SANITIZE_MAGIC_QUOTES" is%0A     |       | deprecated since PHP 7.4 and removed since PHP 8.0;%0A     |       | Use FILTER_SANITIZE_ADD_SLASHES instead%0A     |       | (PHPCompatibility.Constants.RemovedConstants.filter_sanitize_magic_quotesDeprecatedRemoved)%0A----------------------------------------------------------------------%0A
