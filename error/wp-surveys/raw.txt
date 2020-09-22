@@ -1,0 +1,46 @@
+::warning::Plugin: https://wordpress.org/plugins/wp-surveys/%0ATrac: https://plugins.trac.wordpress.org/browser/wp-surveys/
+
+Parse error: syntax error, unexpected token "&" in wp-surveys/wp-surveys/functions.php on line 171
+Errors parsing wp-surveys/wp-surveys/functions.php
+No syntax errors detected in wp-surveys/wp-surveys/wp-surveys-out.php
+No syntax errors detected in wp-surveys/wp-surveys/wp-surveys.php
+::error::%0Afunctions.php%0A  Parse error: syntax error, unexpected token "&" on line 171
+[31mE[0m.[31mE[0m 3 / 3 (100%)
+
+
+
+[1mFILE: functions.php[0m
+----------------------------------------------------------------------
+[1mFOUND 5 ERRORS AFFECTING 4 LINES[0m
+----------------------------------------------------------------------
+ 171 | [31mERROR[0m | [1mUsing a call-time pass-by-reference is deprecated
+     |       | since PHP 5.3 and prohibited since PHP 5.4[0m
+     |       | (PHPCompatibility.Syntax.ForbiddenCallTimePassByReference.NotAllowed)
+ 172 | [31mERROR[0m | [1mUsing a call-time pass-by-reference is deprecated
+     |       | since PHP 5.3 and prohibited since PHP 5.4[0m
+     |       | (PHPCompatibility.Syntax.ForbiddenCallTimePassByReference.NotAllowed)
+ 179 | [31mERROR[0m | [1mUsing a call-time pass-by-reference is deprecated
+     |       | since PHP 5.3 and prohibited since PHP 5.4[0m
+     |       | (PHPCompatibility.Syntax.ForbiddenCallTimePassByReference.NotAllowed)
+ 193 | [31mERROR[0m | [1mUsing a call-time pass-by-reference is deprecated
+     |       | since PHP 5.3 and prohibited since PHP 5.4[0m
+     |       | (PHPCompatibility.Syntax.ForbiddenCallTimePassByReference.NotAllowed)
+ 193 | [31mERROR[0m | [1mUsing a call-time pass-by-reference is deprecated
+     |       | since PHP 5.3 and prohibited since PHP 5.4[0m
+     |       | (PHPCompatibility.Syntax.ForbiddenCallTimePassByReference.NotAllowed)
+----------------------------------------------------------------------
+
+
+[1mFILE: wp-surveys.php[0m
+----------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 132 | [31mERROR[0m | [1mThe "hour" parameter for function gmmktime() is
+     |       | missing. Passing this parameter is no longer optional.
+     |       | The optional nature of the parameter is removed since
+     |       | PHP 8.0[0m
+     |       | (PHPCompatibility.FunctionUse.OptionalToRequiredFunctionParameters.gmmktime_hourHardRequired)
+----------------------------------------------------------------------
+
+Time: 199ms; Memory: 14MB
+::error::FILE: functions.php%0A----------------------------------------------------------------------%0AFOUND 5 ERRORS AFFECTING 4 LINES%0A----------------------------------------------------------------------%0A 171 | ERROR | Using a call-time pass-by-reference is deprecated%0A     |       | since PHP 5.3 and prohibited since PHP 5.4%0A     |       | (PHPCompatibility.Syntax.ForbiddenCallTimePassByReference.NotAllowed)%0A 172 | ERROR | Using a call-time pass-by-reference is deprecated%0A     |       | since PHP 5.3 and prohibited since PHP 5.4%0A     |       | (PHPCompatibility.Syntax.ForbiddenCallTimePassByReference.NotAllowed)%0A 179 | ERROR | Using a call-time pass-by-reference is deprecated%0A     |       | since PHP 5.3 and prohibited since PHP 5.4%0A     |       | (PHPCompatibility.Syntax.ForbiddenCallTimePassByReference.NotAllowed)%0A 193 | ERROR | Using a call-time pass-by-reference is deprecated%0A     |       | since PHP 5.3 and prohibited since PHP 5.4%0A     |       | (PHPCompatibility.Syntax.ForbiddenCallTimePassByReference.NotAllowed)%0A 193 | ERROR | Using a call-time pass-by-reference is deprecated%0A     |       | since PHP 5.3 and prohibited since PHP 5.4%0A     |       | (PHPCompatibility.Syntax.ForbiddenCallTimePassByReference.NotAllowed)%0A----------------------------------------------------------------------%0A%0A%0AFILE: wp-surveys.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 132 | ERROR | The "hour" parameter for function gmmktime() is%0A     |       | missing. Passing this parameter is no longer optional.%0A     |       | The optional nature of the parameter is removed since%0A     |       | PHP 8.0%0A     |       | (PHPCompatibility.FunctionUse.OptionalToRequiredFunctionParameters.gmmktime_hourHardRequired)%0A----------------------------------------------------------------------%0A
