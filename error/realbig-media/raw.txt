@@ -1,6 +1,8 @@
 ::warning::Plugin: https://wordpress.org/plugins/realbig-media/%0ATrac: https://plugins.trac.wordpress.org/browser/realbig-media/
 No syntax errors detected in realbig-media/realbig-media/adminMenuAdd.php
 No syntax errors detected in realbig-media/realbig-media/adminPage.php
+
+Fatal error: Array and string offset access syntax with curly braces is no longer supported in realbig-media/realbig-media/class-Kama_Contents.php on line 175
 Errors parsing realbig-media/realbig-media/class-Kama_Contents.php
 No syntax errors detected in realbig-media/realbig-media/connectTestFile.php
 No syntax errors detected in realbig-media/realbig-media/index.php
@@ -11,21 +13,22 @@ No syntax errors detected in realbig-media/realbig-media/synchronising.php
 No syntax errors detected in realbig-media/realbig-media/textEditing.php
 No syntax errors detected in realbig-media/realbig-media/uninstall.php
 No syntax errors detected in realbig-media/realbig-media/update.php
-::error::%0Aclass-Kama_Contents.php
-No syntax errors detected in realbig-media/realbig-media/update.php
+::error::%0Aclass-Kama_Contents.php%0A  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 175
 ..[32mE[0m......... 12 / 12 (100%)
 
 
 
 [1mFILE: class-Kama_Contents.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 175 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $tag{0}[0m
+----------------------------------------------------------------------
+ 175 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $tag{0}[0m
      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mPHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
-Time: 1.05 secs; Memory: 22MB
-::error::FILE: class-Kama_Contents.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 175 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $tag{0}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0APHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
+Time: 988ms; Memory: 22MB
+::error::FILE: class-Kama_Contents.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 175 | ERROR | [x] Curly brace syntax for accessing array elements%0A     |       |     and string offsets has been deprecated in PHP 7.4%0A     |       |     and removed in PHP 8.0. Found: $tag{0}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A----------------------------------------------------------------------%0APHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A----------------------------------------------------------------------%0A

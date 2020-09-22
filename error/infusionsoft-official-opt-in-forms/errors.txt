@@ -1,194 +1,270 @@
 
 subscription/infusionsoft/xmlrpc/debugger/action.php
+  Fatal error: Unparenthesized `a ? b : c ? d : e` is not supported.
+      Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)`
+      on line 439
 FILE: subscription/infusionsoft/class.infusion_infusionsoft.php
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 FOUND 2 ERRORS AFFECTING 2 LINES
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 168 | ERROR | "$this" can no longer be used in a plain function or method since PHP 7.1.
+----------------------------------------------------------------------
+ 168 | ERROR | "$this" can no longer be used in a plain function or
+     |       | method since PHP 7.1.
      |       | (PHPCompatibility.Variables.ForbiddenThisUseContexts.OutsideObjectContext)
- 171 | ERROR | "$this" can no longer be used in a plain function or method since PHP 7.1.
+ 171 | ERROR | "$this" can no longer be used in a plain function or
+     |       | method since PHP 7.1.
      |       | (PHPCompatibility.Variables.ForbiddenThisUseContexts.OutsideObjectContext)
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 FILE: subscription/infusionsoft/xmlrpc/debugger/action.php
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 FOUND 1 ERROR AFFECTING 1 LINE
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 439 | ERROR | The left-associativity of the ternary operator has been deprecated in PHP 7.4 and removed in PHP 8.0. Multiple consecutive ternaries detected. Use parenthesis to
-     |       | clarify the order in which the operations should be executed (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
+ 439 | ERROR | The left-associativity of the ternary operator has
+     |       | been deprecated in PHP 7.4 and removed in PHP 8.0.
+     |       | Multiple consecutive ternaries detected. Use
+     |       | parenthesis to clarify the order in which the
+     |       | operations should be executed
+     |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
+----------------------------------------------------------------------
 
 
 FILE: subscription/infusionsoft/xmlrpc/debugger/common.php
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 FOUND 1 ERROR AFFECTING 1 LINE
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 12 | ERROR | Function get_magic_quotes_gpc() is deprecated since PHP 7.4 and removed since PHP 8.0
+----------------------------------------------------------------------
+ 12 | ERROR | Function get_magic_quotes_gpc() is deprecated since PHP
+    |       | 7.4 and removed since PHP 8.0
     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_gpcDeprecatedRemoved)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 FILE: subscription/infusionsoft/xmlrpc/demo/client/agesort.php
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 FOUND 1 ERROR AFFECTING 1 LINE
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 14 | ERROR | Function each() is deprecated since PHP 7.2 and removed since PHP 8.0; Use a foreach loop or ArrayIterator instead
+----------------------------------------------------------------------
+ 14 | ERROR | Function each() is deprecated since PHP 7.2 and removed
+    |       | since PHP 8.0; Use a foreach loop or ArrayIterator
+    |       | instead
     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 FILE: subscription/infusionsoft/xmlrpc/demo/client/client.php
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 FOUND 5 ERRORS AFFECTING 4 LINES
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 11 | ERROR | Global variable '$HTTP_POST_VARS' is deprecated since PHP 5.3 and removed since PHP 5.4; Use $_POST instead
+----------------------------------------------------------------------
+ 11 | ERROR | Global variable '$HTTP_POST_VARS' is deprecated since
+    |       | PHP 5.3 and removed since PHP 5.4; Use $_POST
+    |       | instead
     |       | (PHPCompatibility.Variables.RemovedPredefinedGlobalVariables.http_post_varsDeprecatedRemoved)
- 13 | ERROR | Global variable '$HTTP_POST_VARS' is deprecated since PHP 5.3 and removed since PHP 5.4; Use $_POST instead
+ 13 | ERROR | Global variable '$HTTP_POST_VARS' is deprecated since
+    |       | PHP 5.3 and removed since PHP 5.4; Use $_POST
+    |       | instead
     |       | (PHPCompatibility.Variables.RemovedPredefinedGlobalVariables.http_post_varsDeprecatedRemoved)
- 16 | ERROR | Global variable '$HTTP_POST_VARS' is deprecated since PHP 5.3 and removed since PHP 5.4; Use $_POST instead
+ 16 | ERROR | Global variable '$HTTP_POST_VARS' is deprecated since
+    |       | PHP 5.3 and removed since PHP 5.4; Use $_POST
+    |       | instead
     |       | (PHPCompatibility.Variables.RemovedPredefinedGlobalVariables.http_post_varsDeprecatedRemoved)
- 16 | ERROR | Global variable '$HTTP_POST_VARS' is deprecated since PHP 5.3 and removed since PHP 5.4; Use $_POST instead
+ 16 | ERROR | Global variable '$HTTP_POST_VARS' is deprecated since
+    |       | PHP 5.3 and removed since PHP 5.4; Use $_POST
+    |       | instead
     |       | (PHPCompatibility.Variables.RemovedPredefinedGlobalVariables.http_post_varsDeprecatedRemoved)
- 18 | ERROR | Global variable '$HTTP_POST_VARS' is deprecated since PHP 5.3 and removed since PHP 5.4; Use $_POST instead
+ 18 | ERROR | Global variable '$HTTP_POST_VARS' is deprecated since
+    |       | PHP 5.3 and removed since PHP 5.4; Use $_POST
+    |       | instead
     |       | (PHPCompatibility.Variables.RemovedPredefinedGlobalVariables.http_post_varsDeprecatedRemoved)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 FILE: subscription/infusionsoft/xmlrpc/demo/client/comment.php
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 FOUND 3 ERRORS AFFECTING 3 LINES
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 105 | ERROR | Function each() is deprecated since PHP 7.2 and removed since PHP 8.0; Use a foreach loop or ArrayIterator instead
+----------------------------------------------------------------------
+ 105 | ERROR | Function each() is deprecated since PHP 7.2 and
+     |       | removed since PHP 8.0; Use a foreach loop or
+     |       | ArrayIterator instead
      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)
- 120 | ERROR | Function each() is deprecated since PHP 7.2 and removed since PHP 8.0; Use a foreach loop or ArrayIterator instead
+ 120 | ERROR | Function each() is deprecated since PHP 7.2 and
+     |       | removed since PHP 8.0; Use a foreach loop or
+     |       | ArrayIterator instead
      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)
- 144 | ERROR | Function each() is deprecated since PHP 7.2 and removed since PHP 8.0; Use a foreach loop or ArrayIterator instead
+ 144 | ERROR | Function each() is deprecated since PHP 7.2 and
+     |       | removed since PHP 8.0; Use a foreach loop or
+     |       | ArrayIterator instead
      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 FILE: subscription/infusionsoft/xmlrpc/demo/client/mail.php
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 FOUND 13 ERRORS AFFECTING 11 LINES
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  3 | ERROR | Global variable '$HTTP_GET_VARS' is deprecated since PHP 5.3 and removed since PHP 5.4; Use $_GET instead
+----------------------------------------------------------------------
+  3 | ERROR | Global variable '$HTTP_GET_VARS' is deprecated since
+    |       | PHP 5.3 and removed since PHP 5.4; Use $_GET
+    |       | instead
     |       | (PHPCompatibility.Variables.RemovedPredefinedGlobalVariables.http_get_varsDeprecatedRemoved)
-  3 | ERROR | Global variable '$HTTP_GET_VARS' is deprecated since PHP 5.3 and removed since PHP 5.4; Use $_GET instead
+  3 | ERROR | Global variable '$HTTP_GET_VARS' is deprecated since
+    |       | PHP 5.3 and removed since PHP 5.4; Use $_GET
+    |       | instead
     |       | (PHPCompatibility.Variables.RemovedPredefinedGlobalVariables.http_get_varsDeprecatedRemoved)
- 20 | ERROR | Global variable '$HTTP_POST_VARS' is deprecated since PHP 5.3 and removed since PHP 5.4; Use $_POST instead
+ 20 | ERROR | Global variable '$HTTP_POST_VARS' is deprecated since
+    |       | PHP 5.3 and removed since PHP 5.4; Use $_POST
+    |       | instead
     |       | (PHPCompatibility.Variables.RemovedPredefinedGlobalVariables.http_post_varsDeprecatedRemoved)
- 21 | ERROR | Global variable '$HTTP_POST_VARS' is deprecated since PHP 5.3 and removed since PHP 5.4; Use $_POST instead
+ 21 | ERROR | Global variable '$HTTP_POST_VARS' is deprecated since
+    |       | PHP 5.3 and removed since PHP 5.4; Use $_POST
+    |       | instead
     |       | (PHPCompatibility.Variables.RemovedPredefinedGlobalVariables.http_post_varsDeprecatedRemoved)
- 23 | ERROR | Global variable '$HTTP_POST_VARS' is deprecated since PHP 5.3 and removed since PHP 5.4; Use $_POST instead
+ 23 | ERROR | Global variable '$HTTP_POST_VARS' is deprecated since
+    |       | PHP 5.3 and removed since PHP 5.4; Use $_POST
+    |       | instead
     |       | (PHPCompatibility.Variables.RemovedPredefinedGlobalVariables.http_post_varsDeprecatedRemoved)
- 23 | ERROR | Global variable '$HTTP_POST_VARS' is deprecated since PHP 5.3 and removed since PHP 5.4; Use $_POST instead
+ 23 | ERROR | Global variable '$HTTP_POST_VARS' is deprecated since
+    |       | PHP 5.3 and removed since PHP 5.4; Use $_POST
+    |       | instead
     |       | (PHPCompatibility.Variables.RemovedPredefinedGlobalVariables.http_post_varsDeprecatedRemoved)
- 24 | ERROR | Global variable '$HTTP_POST_VARS' is deprecated since PHP 5.3 and removed since PHP 5.4; Use $_POST instead
+ 24 | ERROR | Global variable '$HTTP_POST_VARS' is deprecated since
+    |       | PHP 5.3 and removed since PHP 5.4; Use $_POST
+    |       | instead
     |       | (PHPCompatibility.Variables.RemovedPredefinedGlobalVariables.http_post_varsDeprecatedRemoved)
- 30 | ERROR | Global variable '$HTTP_POST_VARS' is deprecated since PHP 5.3 and removed since PHP 5.4; Use $_POST instead
+ 30 | ERROR | Global variable '$HTTP_POST_VARS' is deprecated since
+    |       | PHP 5.3 and removed since PHP 5.4; Use $_POST
+    |       | instead
     |       | (PHPCompatibility.Variables.RemovedPredefinedGlobalVariables.http_post_varsDeprecatedRemoved)
- 31 | ERROR | Global variable '$HTTP_POST_VARS' is deprecated since PHP 5.3 and removed since PHP 5.4; Use $_POST instead
+ 31 | ERROR | Global variable '$HTTP_POST_VARS' is deprecated since
+    |       | PHP 5.3 and removed since PHP 5.4; Use $_POST
+    |       | instead
     |       | (PHPCompatibility.Variables.RemovedPredefinedGlobalVariables.http_post_varsDeprecatedRemoved)
- 32 | ERROR | Global variable '$HTTP_POST_VARS' is deprecated since PHP 5.3 and removed since PHP 5.4; Use $_POST instead
+ 32 | ERROR | Global variable '$HTTP_POST_VARS' is deprecated since
+    |       | PHP 5.3 and removed since PHP 5.4; Use $_POST
+    |       | instead
     |       | (PHPCompatibility.Variables.RemovedPredefinedGlobalVariables.http_post_varsDeprecatedRemoved)
- 33 | ERROR | Global variable '$HTTP_POST_VARS' is deprecated since PHP 5.3 and removed since PHP 5.4; Use $_POST instead
+ 33 | ERROR | Global variable '$HTTP_POST_VARS' is deprecated since
+    |       | PHP 5.3 and removed since PHP 5.4; Use $_POST
+    |       | instead
     |       | (PHPCompatibility.Variables.RemovedPredefinedGlobalVariables.http_post_varsDeprecatedRemoved)
- 34 | ERROR | Global variable '$HTTP_POST_VARS' is deprecated since PHP 5.3 and removed since PHP 5.4; Use $_POST instead
+ 34 | ERROR | Global variable '$HTTP_POST_VARS' is deprecated since
+    |       | PHP 5.3 and removed since PHP 5.4; Use $_POST
+    |       | instead
     |       | (PHPCompatibility.Variables.RemovedPredefinedGlobalVariables.http_post_varsDeprecatedRemoved)
- 35 | ERROR | Global variable '$HTTP_POST_VARS' is deprecated since PHP 5.3 and removed since PHP 5.4; Use $_POST instead
+ 35 | ERROR | Global variable '$HTTP_POST_VARS' is deprecated since
+    |       | PHP 5.3 and removed since PHP 5.4; Use $_POST
+    |       | instead
     |       | (PHPCompatibility.Variables.RemovedPredefinedGlobalVariables.http_post_varsDeprecatedRemoved)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 FILE: subscription/infusionsoft/xmlrpc/demo/server/discuss.php
--------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 FOUND 1 ERROR AFFECTING 1 LINE
--------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
  74 | ERROR | Function xmlrpc_decode() is removed since PHP 8.0
     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.xmlrpc_decodeRemoved)
--------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 FILE: subscription/infusionsoft/xmlrpc/demo/server/server.php
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 FOUND 1 ERROR AFFECTING 1 LINE
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 297 | ERROR | Function each() is deprecated since PHP 7.2 and removed since PHP 8.0; Use a foreach loop or ArrayIterator instead
+----------------------------------------------------------------------
+ 297 | ERROR | Function each() is deprecated since PHP 7.2 and
+     |       | removed since PHP 8.0; Use a foreach loop or
+     |       | ArrayIterator instead
      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 FILE: subscription/infusionsoft/xmlrpc/test/benchmark.php
-------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 FOUND 4 ERRORS AFFECTING 4 LINES
-------------------------------------------------------------------------------------------------------------------------------------------
-  98 | ERROR | Function xmlrpc_set_type() is removed since PHP 8.0
+----------------------------------------------------------------------
+  98 | ERROR | Function xmlrpc_set_type() is removed since PHP
+     |       | 8.0
      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.xmlrpc_set_typeRemoved)
-  99 | ERROR | Function xmlrpc_set_type() is removed since PHP 8.0
+  99 | ERROR | Function xmlrpc_set_type() is removed since PHP
+     |       | 8.0
      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.xmlrpc_set_typeRemoved)
- 101 | ERROR | Function xmlrpc_encode() is removed since PHP 8.0 (PHPCompatibility.FunctionUse.RemovedFunctions.xmlrpc_encodeRemoved)
- 149 | ERROR | Function xmlrpc_decode() is removed since PHP 8.0 (PHPCompatibility.FunctionUse.RemovedFunctions.xmlrpc_decodeRemoved)
-------------------------------------------------------------------------------------------------------------------------------------------
+ 101 | ERROR | Function xmlrpc_encode() is removed since PHP 8.0
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.xmlrpc_encodeRemoved)
+ 149 | ERROR | Function xmlrpc_decode() is removed since PHP 8.0
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.xmlrpc_decodeRemoved)
+----------------------------------------------------------------------
 
 
 FILE: subscription/infusionsoft/xmlrpc/test/parse_args.php
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 FOUND 5 ERRORS AFFECTING 3 LINES
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 23 | ERROR | Global variable '$HTTP_GET_VARS' is deprecated since PHP 5.3 and removed since PHP 5.4; Use $_GET instead
+----------------------------------------------------------------------
+ 23 | ERROR | Global variable '$HTTP_GET_VARS' is deprecated since
+    |       | PHP 5.3 and removed since PHP 5.4; Use $_GET
+    |       | instead
     |       | (PHPCompatibility.Variables.RemovedPredefinedGlobalVariables.http_get_varsDeprecatedRemoved)
- 23 | ERROR | Global variable '$HTTP_GET_VARS' is deprecated since PHP 5.3 and removed since PHP 5.4; Use $_GET instead
+ 23 | ERROR | Global variable '$HTTP_GET_VARS' is deprecated since
+    |       | PHP 5.3 and removed since PHP 5.4; Use $_GET
+    |       | instead
     |       | (PHPCompatibility.Variables.RemovedPredefinedGlobalVariables.http_get_varsDeprecatedRemoved)
- 24 | ERROR | Global variable '$HTTP_POST_VARS' is deprecated since PHP 5.3 and removed since PHP 5.4; Use $_POST instead
+ 24 | ERROR | Global variable '$HTTP_POST_VARS' is deprecated since
+    |       | PHP 5.3 and removed since PHP 5.4; Use $_POST
+    |       | instead
     |       | (PHPCompatibility.Variables.RemovedPredefinedGlobalVariables.http_post_varsDeprecatedRemoved)
- 24 | ERROR | Global variable '$HTTP_POST_VARS' is deprecated since PHP 5.3 and removed since PHP 5.4; Use $_POST instead
+ 24 | ERROR | Global variable '$HTTP_POST_VARS' is deprecated since
+    |       | PHP 5.3 and removed since PHP 5.4; Use $_POST
+    |       | instead
     |       | (PHPCompatibility.Variables.RemovedPredefinedGlobalVariables.http_post_varsDeprecatedRemoved)
- 37 | ERROR | Indirect access to variables, properties and methods will be evaluated strictly in left-to-right order since PHP 7.0. Use curly braces to remove ambiguity.
+ 37 | ERROR | Indirect access to variables, properties and methods
+    |       | will be evaluated strictly in left-to-right order since
+    |       | PHP 7.0. Use curly braces to remove ambiguity.
     |       | (PHPCompatibility.Variables.NewUniformVariableSyntax.Found)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 FILE: subscription/infusionsoft/xmlrpc/test/PHPUnit/TestCase.php
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 FOUND 1 ERROR AFFECTING 1 LINE
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 109 | ERROR | Declaration of a PHP4 style class constructor is deprecated since PHP 7.0 and removed since PHP 8.0
+----------------------------------------------------------------------
+ 109 | ERROR | Declaration of a PHP4 style class constructor is
+     |       | deprecated since PHP 7.0 and removed since PHP 8.0
      |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 FILE: subscription/infusionsoft/xmlrpc/test/PHPUnit/TestDecorator.php
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 FOUND 1 ERROR AFFECTING 1 LINE
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 61 | ERROR | Declaration of a PHP4 style class constructor is deprecated since PHP 7.0 and removed since PHP 8.0
+----------------------------------------------------------------------
+ 61 | ERROR | Declaration of a PHP4 style class constructor is
+    |       | deprecated since PHP 7.0 and removed since PHP 8.0
     |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 FILE: subscription/infusionsoft/xmlrpc/test/PHPUnit/TestFailure.php
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 FOUND 1 ERROR AFFECTING 1 LINE
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 55 | ERROR | Declaration of a PHP4 style class constructor is deprecated since PHP 7.0 and removed since PHP 8.0
+----------------------------------------------------------------------
+ 55 | ERROR | Declaration of a PHP4 style class constructor is
+    |       | deprecated since PHP 7.0 and removed since PHP 8.0
     |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 FILE: subscription/infusionsoft/xmlrpc/test/PHPUnit/TestSuite.php
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 FOUND 1 ERROR AFFECTING 1 LINE
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 82 | ERROR | Declaration of a PHP4 style class constructor is deprecated since PHP 7.0 and removed since PHP 8.0
+----------------------------------------------------------------------
+ 82 | ERROR | Declaration of a PHP4 style class constructor is
+    |       | deprecated since PHP 7.0 and removed since PHP 8.0
     |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 FILE: subscription/infusionsoft/xmlrpc/test/testsuite.php
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 FOUND 1 ERROR AFFECTING 1 LINE
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 252 | ERROR | Function each() is deprecated since PHP 7.2 and removed since PHP 8.0; Use a foreach loop or ArrayIterator instead
+----------------------------------------------------------------------
+ 252 | ERROR | Function each() is deprecated since PHP 7.2 and
+     |       | removed since PHP 8.0; Use a foreach loop or
+     |       | ArrayIterator instead
      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------

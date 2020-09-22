@@ -266,7 +266,6 @@ No syntax errors detected in codecolorer/codecolorer/tests/LanguagesTest.php
 No syntax errors detected in codecolorer/codecolorer/tests/test_helper.php
 No syntax errors detected in codecolorer/codecolorer/tests/ThemesTest.php
 No syntax errors detected in codecolorer/codecolorer/tests/WrapperDivTest.php
-No syntax errors detected in codecolorer/codecolorer/tests/WrapperDivTest.php
 ............................................................  60 / 267 (22%)
 ............................................................ 120 / 267 (45%)
 ............................................................ 180 / 267 (67%)
@@ -276,12 +275,14 @@ No syntax errors detected in codecolorer/codecolorer/tests/WrapperDivTest.php
 
 
 [1mFILE: lib/geshi.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 4698 | [31mERROR[0m | [1mFunction create_function() is deprecated since PHP 7.2 and removed since PHP 8.0; Use an anonymous function instead[0m
+----------------------------------------------------------------------
+ 4698 | [31mERROR[0m | [1mFunction create_function() is deprecated since PHP
+      |       | 7.2 and removed since PHP 8.0; Use an anonymous
+      |       | function instead[0m
       |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
-Time: 6.03 secs; Memory: 70.01MB
-::error::FILE: lib/geshi.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 4698 | ERROR | Function create_function() is deprecated since PHP 7.2 and removed since PHP 8.0; Use an anonymous function instead%0A      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
+Time: 6.08 secs; Memory: 70.01MB
+::error::FILE: lib/geshi.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 4698 | ERROR | Function create_function() is deprecated since PHP%0A      |       | 7.2 and removed since PHP 8.0; Use an anonymous%0A      |       | function instead%0A      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)%0A----------------------------------------------------------------------%0A
