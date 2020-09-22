@@ -233,6 +233,8 @@ No syntax errors detected in codeswholesale-for-woocommerce/codeswholesale-for-w
 No syntax errors detected in codeswholesale-for-woocommerce/codeswholesale-for-woocommerce/vendor/codeswholesale/sdk/src/CodesWholesale/Util/HashingUtil.php
 No syntax errors detected in codeswholesale-for-woocommerce/codeswholesale-for-woocommerce/vendor/codeswholesale/sdk/src/CodesWholesale/Util/Magic.php
 No syntax errors detected in codeswholesale-for-woocommerce/codeswholesale-for-woocommerce/vendor/codeswholesale/sdk/src/CodesWholesale/Util/OAuthError.php
+
+Fatal error: Unparenthesized `a ? b : c ? d : e` is not supported. Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)` in codeswholesale-for-woocommerce/codeswholesale-for-woocommerce/vendor/codeswholesale/sdk/src/CodesWholesale/Util/RequestUtils.php on line 20
 Errors parsing codeswholesale-for-woocommerce/codeswholesale-for-woocommerce/vendor/codeswholesale/sdk/src/CodesWholesale/Util/RequestUtils.php
 No syntax errors detected in codeswholesale-for-woocommerce/codeswholesale-for-woocommerce/vendor/codeswholesale/sdk/src/CodesWholesale/Util/Version.php
 No syntax errors detected in codeswholesale-for-woocommerce/codeswholesale-for-woocommerce/vendor/codeswholesale/sdk/tests/Bootstrap.php
@@ -414,7 +416,7 @@ No syntax errors detected in codeswholesale-for-woocommerce/codeswholesale-for-w
 No syntax errors detected in codeswholesale-for-woocommerce/codeswholesale-for-woocommerce/vendor/sainsburys/guzzle-oauth2-plugin/tests/MockOAuth2Server.php
 No syntax errors detected in codeswholesale-for-woocommerce/codeswholesale-for-woocommerce/vendor/sainsburys/guzzle-oauth2-plugin/tests/MockOAuthMiddleware.php
 No syntax errors detected in codeswholesale-for-woocommerce/codeswholesale-for-woocommerce/vendor/sainsburys/guzzle-oauth2-plugin/tests/TestBase.php
-::error::%0Avendor/codeswholesale/sdk/src/CodesWholesale/Util/RequestUtils.php
+::error::%0Avendor/codeswholesale/sdk/src/CodesWholesale/Util/RequestUtils.php%0A  Fatal error: Unparenthesized `a ? b : c ? d : e` is not supported.%0A      Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)`%0A      on line 20
 ............................................................  60 / 415 (14%)
 ............................................................ 120 / 415 (29%)
 ............................................................ 180 / 415 (43%)
@@ -425,13 +427,17 @@ No syntax errors detected in codeswholesale-for-woocommerce/codeswholesale-for-w
 
 
 
-[1mFILE: vendor/codeswholesale/sdk/src/CodesWholesale/Util/RequestUtils.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[1mFILE: ...ndor/codeswholesale/sdk/src/CodesWholesale/Util/RequestUtils.php[0m
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 20 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has been deprecated in PHP 7.4 and removed in PHP 8.0. Multiple consecutive ternaries detected. Use parenthesis to
-    |       | clarify the order in which the operations should be executed[0m (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
+ 20 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has been
+    |       | deprecated in PHP 7.4 and removed in PHP 8.0. Multiple
+    |       | consecutive ternaries detected. Use parenthesis to
+    |       | clarify the order in which the operations should be
+    |       | executed[0m
+    |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
+----------------------------------------------------------------------
 
-Time: 6.22 secs; Memory: 18MB
-::error::FILE: vendor/codeswholesale/sdk/src/CodesWholesale/Util/RequestUtils.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 20 | ERROR | The left-associativity of the ternary operator has been deprecated in PHP 7.4 and removed in PHP 8.0. Multiple consecutive ternaries detected. Use parenthesis to%0A    |       | clarify the order in which the operations should be executed (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
+Time: 5.77 secs; Memory: 18MB
+::error::FILE: ...ndor/codeswholesale/sdk/src/CodesWholesale/Util/RequestUtils.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 20 | ERROR | The left-associativity of the ternary operator has been%0A    |       | deprecated in PHP 7.4 and removed in PHP 8.0. Multiple%0A    |       | consecutive ternaries detected. Use parenthesis to%0A    |       | clarify the order in which the operations should be%0A    |       | executed%0A    |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A----------------------------------------------------------------------%0A
