@@ -1,0 +1,54 @@
+
+vendor/dasprid/enum/src/AbstractEnum.php
+  Warning: Private methods cannot be final as they are never overridden by other classes on line 88
+  Warning: Private methods cannot be final as they are never overridden by other classes on line 128
+  Fatal error: DASPRiD\Enum\AbstractEnum::__sleep(): Return type must be array when declared on line 217
+
+vendor/dasprid/enum/src/NullValue.php
+  Fatal error: DASPRiD\Enum\NullValue::__sleep(): Return type must be array when declared on line 41
+
+vendor/khanamiryan/qrcode-detector-decoder/lib/Common/BitMatrix.php
+  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 42
+
+vendor/khanamiryan/qrcode-detector-decoder/lib/Qrcode/Decoder/DecodedBitStreamParser.php
+  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 269
+FILE: ...dor/khanamiryan/qrcode-detector-decoder/lib/Common/BitMatrix.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 42 | ERROR | [x] Curly brace syntax for accessing array elements and
+    |       |     string offsets has been deprecated in PHP 7.4 and
+    |       |     removed in PHP 8.0. Found:
+    |       |     $stringRepresentation{$pos}
+    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------
+
+
+FILE: ...e-detector-decoder/lib/Qrcode/Decoder/DecodedBitStreamParser.php
+----------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+----------------------------------------------------------------------
+ 269 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $result{$i}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 270 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $result{$i + 1}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------
+
+
+FILE: vendor/symfony/http-foundation/Tests/ParameterBagTest.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 135 | ERROR | The behaviour of hexadecimal numeric strings was
+     |       | inconsistent prior to PHP 7 and support has been
+     |       | removed in PHP 7. Found: '0x100'
+     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
+----------------------------------------------------------------------
