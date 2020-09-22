@@ -1,0 +1,55 @@
+::warning::Plugin: https://wordpress.org/plugins/factlink/%0ATrac: https://plugins.trac.wordpress.org/browser/factlink/
+No syntax errors detected in factlink/factlink/app/capability/admin_page.php
+No syntax errors detected in factlink/factlink/app/capability/configuration_notice.php
+No syntax errors detected in factlink/factlink/app/capability/disable_comments.php
+No syntax errors detected in factlink/factlink/app/capability/include_factlink.php
+No syntax errors detected in factlink/factlink/app/capability/meta_box.php
+No syntax errors detected in factlink/factlink/app/model/settings.php
+No syntax errors detected in factlink/factlink/app/view/admin_page.php
+No syntax errors detected in factlink/factlink/app/view/configuration_notice.php
+No syntax errors detected in factlink/factlink/app/view/include_factlink.php
+No syntax errors detected in factlink/factlink/app/view/meta_box.php
+No syntax errors detected in factlink/factlink/factlink.php
+No syntax errors detected in factlink/factlink/lib/capability/capability.php
+No syntax errors detected in factlink/factlink/lib/model/meta/meta.php
+No syntax errors detected in factlink/factlink/lib/model/meta/option.php
+No syntax errors detected in factlink/factlink/lib/model/meta/post.php
+No syntax errors detected in factlink/factlink/lib/model/model.php
+No syntax errors detected in factlink/factlink/lib/util/util.php
+
+Fatal error: Cannot use 'Int' as class name as it is reserved in factlink/factlink/lib/validator/int.php on line 5
+Errors parsing factlink/factlink/lib/validator/int.php
+No syntax errors detected in factlink/factlink/lib/validator/validator.php
+No syntax errors detected in factlink/factlink/lib/wordpress_plugin_controller.php
+::error::%0Alib/validator/int.php%0A  Fatal error: Cannot use 'Int' as class name as it is reserved on line 5
+................[31mE[0m[31mE[0m.. 20 / 20 (100%)
+
+
+
+[1mFILE: lib/util/util.php[0m
+----------------------------------------------------------------------
+[1mFOUND 2 ERRORS AFFECTING 2 LINES[0m
+----------------------------------------------------------------------
+ 17 | [31mERROR[0m | [1mFunction create_function() is deprecated since PHP 7.2
+    |       | and removed since PHP 8.0; Use an anonymous function
+    |       | instead[0m
+    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
+ 34 | [31mERROR[0m | [1mFunction create_function() is deprecated since PHP 7.2
+    |       | and removed since PHP 8.0; Use an anonymous function
+    |       | instead[0m
+    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
+----------------------------------------------------------------------
+
+
+[1mFILE: lib/validator/int.php[0m
+----------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 5 | [31mERROR[0m | [1m'int' is a reserved keyword as of PHP version 7.0 and
+   |       | should not be used to name a class, interface or trait
+   |       | or as part of a namespace (T_CLASS)[0m
+   |       | (PHPCompatibility.Keywords.ForbiddenNamesAsDeclared.intFound)
+----------------------------------------------------------------------
+
+Time: 156ms; Memory: 12MB
+::error::FILE: lib/util/util.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A----------------------------------------------------------------------%0A 17 | ERROR | Function create_function() is deprecated since PHP 7.2%0A    |       | and removed since PHP 8.0; Use an anonymous function%0A    |       | instead%0A    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)%0A 34 | ERROR | Function create_function() is deprecated since PHP 7.2%0A    |       | and removed since PHP 8.0; Use an anonymous function%0A    |       | instead%0A    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)%0A----------------------------------------------------------------------%0A%0A%0AFILE: lib/validator/int.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 5 | ERROR | 'int' is a reserved keyword as of PHP version 7.0 and%0A   |       | should not be used to name a class, interface or trait%0A   |       | or as part of a namespace (T_CLASS)%0A   |       | (PHPCompatibility.Keywords.ForbiddenNamesAsDeclared.intFound)%0A----------------------------------------------------------------------%0A
