@@ -35,6 +35,8 @@ No syntax errors detected in skautis-integration/skautis-integration/src/reposit
 No syntax errors detected in skautis-integration/skautis-integration/src/rules/admin/Admin.php
 No syntax errors detected in skautis-integration/skautis-integration/src/rules/admin/Columns.php
 No syntax errors detected in skautis-integration/skautis-integration/src/rules/IRule.php
+
+Fatal error: Array and string offset access syntax with curly braces is no longer supported in skautis-integration/skautis-integration/src/rules/Revisions.php on line 25
 Errors parsing skautis-integration/skautis-integration/src/rules/Revisions.php
 No syntax errors detected in skautis-integration/skautis-integration/src/rules/Rule/All.php
 No syntax errors detected in skautis-integration/skautis-integration/src/rules/Rule/Func.php
@@ -102,21 +104,23 @@ No syntax errors detected in skautis-integration/skautis-integration/vendor/skau
 No syntax errors detected in skautis-integration/skautis-integration/vendor/skautis/skautis/src/Wsdl/WebService.php
 No syntax errors detected in skautis-integration/skautis-integration/vendor/skautis/skautis/src/Wsdl/WsdlException.php
 No syntax errors detected in skautis-integration/skautis-integration/vendor/skautis/skautis/src/Wsdl/WsdlManager.php
-::error::%0Asrc/rules/Revisions.php
+::error::%0Asrc/rules/Revisions.php%0A  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 25
 ....................................[32mE[0m.......................  60 / 103 (58%)
 ...........................................                  103 / 103 (100%)
 
 
 
 [1mFILE: src/rules/Revisions.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 25 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $key{0}[0m
+----------------------------------------------------------------------
+ 25 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and
+    |       |     string offsets has been deprecated in PHP 7.4 and
+    |       |     removed in PHP 8.0. Found: $key{0}[0m
     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mPHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
-Time: 1.36 secs; Memory: 14MB
-::error::FILE: src/rules/Revisions.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 25 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $key{0}%0A    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0APHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
+Time: 1.24 secs; Memory: 14MB
+::error::FILE: src/rules/Revisions.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 25 | ERROR | [x] Curly brace syntax for accessing array elements and%0A    |       |     string offsets has been deprecated in PHP 7.4 and%0A    |       |     removed in PHP 8.0. Found: $key{0}%0A    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A----------------------------------------------------------------------%0APHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A----------------------------------------------------------------------%0A
