@@ -285,7 +285,6 @@ No syntax errors detected in popup-by-supsystic/popup-by-supsystic/modules/tgm_p
 No syntax errors detected in popup-by-supsystic/popup-by-supsystic/modules/tgm_promo/mod.php
 No syntax errors detected in popup-by-supsystic/popup-by-supsystic/modules/user/mod.php
 No syntax errors detected in popup-by-supsystic/popup-by-supsystic/pps.php
-No syntax errors detected in popup-by-supsystic/popup-by-supsystic/pps.php
 ................[31mE[0m...........................................  60 / 286 (21%)
 ............................................................ 120 / 286 (42%)
 ............................................................ 180 / 286 (63%)
@@ -295,12 +294,15 @@ No syntax errors detected in popup-by-supsystic/popup-by-supsystic/pps.php
 
 
 [1mFILE: classes/html.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 365 | [31mERROR[0m | [1mIndirect access to variables, properties and methods will be evaluated strictly in left-to-right order since PHP 7.0. Use curly braces to remove ambiguity.[0m
+----------------------------------------------------------------------
+ 365 | [31mERROR[0m | [1mIndirect access to variables, properties and methods
+     |       | will be evaluated strictly in left-to-right order
+     |       | since PHP 7.0. Use curly braces to remove
+     |       | ambiguity.[0m
      |       | (PHPCompatibility.Variables.NewUniformVariableSyntax.Found)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
-Time: 6.33 secs; Memory: 36MB
-::error::FILE: classes/html.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 365 | ERROR | Indirect access to variables, properties and methods will be evaluated strictly in left-to-right order since PHP 7.0. Use curly braces to remove ambiguity.%0A     |       | (PHPCompatibility.Variables.NewUniformVariableSyntax.Found)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
+Time: 6.39 secs; Memory: 36MB
+::error::FILE: classes/html.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 365 | ERROR | Indirect access to variables, properties and methods%0A     |       | will be evaluated strictly in left-to-right order%0A     |       | since PHP 7.0. Use curly braces to remove%0A     |       | ambiguity.%0A     |       | (PHPCompatibility.Variables.NewUniformVariableSyntax.Found)%0A----------------------------------------------------------------------%0A
