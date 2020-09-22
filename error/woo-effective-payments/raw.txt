@@ -1,0 +1,33 @@
+::warning::Plugin: https://wordpress.org/plugins/woo-effective-payments/%0ATrac: https://plugins.trac.wordpress.org/browser/woo-effective-payments/
+No syntax errors detected in woo-effective-payments/woo-effective-payments/admin/admin.php
+No syntax errors detected in woo-effective-payments/woo-effective-payments/admin/cashfree/class-cashfree-payments.php
+No syntax errors detected in woo-effective-payments/woo-effective-payments/admin/instamojo/class-instamojo-payments.php
+No syntax errors detected in woo-effective-payments/woo-effective-payments/admin/instamojo/payment-confirm.php
+No syntax errors detected in woo-effective-payments/woo-effective-payments/admin/paytm/class-paytm-payments.php
+
+Fatal error: Array and string offset access syntax with curly braces is no longer supported in woo-effective-payments/woo-effective-payments/admin/paytm/lib/encdec_paytm.php on line 26
+Errors parsing woo-effective-payments/woo-effective-payments/admin/paytm/lib/encdec_paytm.php
+No syntax errors detected in woo-effective-payments/woo-effective-payments/admin/pro_dashboard.php
+No syntax errors detected in woo-effective-payments/woo-effective-payments/admin/pro_menu.php
+No syntax errors detected in woo-effective-payments/woo-effective-payments/effective-payment-solutions-by-rajthemes.php
+No syntax errors detected in woo-effective-payments/woo-effective-payments/uninstall.php
+::error::%0Aadmin/paytm/lib/encdec_paytm.php%0A  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 26
+.....[32mE[0m.... 10 / 10 (100%)
+
+
+
+[1mFILE: admin/paytm/lib/encdec_paytm.php[0m
+----------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 26 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and
+    |       |     string offsets has been deprecated in PHP 7.4 and
+    |       |     removed in PHP 8.0. Found: $text{strlen($text) -
+    |       |     1}[0m
+    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+----------------------------------------------------------------------
+[1mPHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
+----------------------------------------------------------------------
+
+Time: 280ms; Memory: 16MB
+::error::FILE: admin/paytm/lib/encdec_paytm.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 26 | ERROR | [x] Curly brace syntax for accessing array elements and%0A    |       |     string offsets has been deprecated in PHP 7.4 and%0A    |       |     removed in PHP 8.0. Found: $text{strlen($text) -%0A    |       |     1}%0A    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A----------------------------------------------------------------------%0APHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A----------------------------------------------------------------------%0A
