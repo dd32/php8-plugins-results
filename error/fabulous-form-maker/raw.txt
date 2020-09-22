@@ -1,0 +1,43 @@
+::warning::Plugin: https://wordpress.org/plugins/fabulous-form-maker/%0ATrac: https://plugins.trac.wordpress.org/browser/fabulous-form-maker/
+No syntax errors detected in fabulous-form-maker/fabulous-form-maker/FabulousFormMaker.php
+No syntax errors detected in fabulous-form-maker/fabulous-form-maker/FM/Editor.php
+No syntax errors detected in fabulous-form-maker/fabulous-form-maker/FM/Field.php
+No syntax errors detected in fabulous-form-maker/fabulous-form-maker/FM/FieldTest.php
+No syntax errors detected in fabulous-form-maker/fabulous-form-maker/FM/FrontEnd.php
+No syntax errors detected in fabulous-form-maker/fabulous-form-maker/FM/FrontEndTest.php
+No syntax errors detected in fabulous-form-maker/fabulous-form-maker/FM/I_Adapter.php
+No syntax errors detected in fabulous-form-maker/fabulous-form-maker/FM/I_Editor.php
+No syntax errors detected in fabulous-form-maker/fabulous-form-maker/FM/I_Field.php
+No syntax errors detected in fabulous-form-maker/fabulous-form-maker/FM/I_FrontEnd.php
+No syntax errors detected in fabulous-form-maker/fabulous-form-maker/FM/templates/editor.php
+No syntax errors detected in fabulous-form-maker/fabulous-form-maker/FM/templates/editor-settings.php
+No syntax errors detected in fabulous-form-maker/fabulous-form-maker/FM/templates/editor-workspace.php
+No syntax errors detected in fabulous-form-maker/fabulous-form-maker/FM/WordPress/Adapter.php
+No syntax errors detected in fabulous-form-maker/fabulous-form-maker/FM/WordPress/support.php
+............[31mE[0m[31mE[0m. 15 / 15 (100%)
+
+
+
+[1mFILE: FM/templates/editor-workspace.php[0m
+----------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 35 | [31mERROR[0m | [1mUsing an unparenthesized expression containing a "."
+    |       | before a "+" or "-" has been deprecated in PHP 7.4 and
+    |       | removed in PHP 8.0[0m
+    |       | (PHPCompatibility.Operators.ChangedConcatOperatorPrecedence.Found)
+----------------------------------------------------------------------
+
+
+[1mFILE: FM/WordPress/Adapter.php[0m
+----------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 155 | [31mERROR[0m | [1mFunction create_function() is deprecated since PHP 7.2
+     |       | and removed since PHP 8.0; Use an anonymous function
+     |       | instead[0m
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
+----------------------------------------------------------------------
+
+Time: 192ms; Memory: 12MB
+::error::FILE: FM/templates/editor-workspace.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 35 | ERROR | Using an unparenthesized expression containing a "."%0A    |       | before a "+" or "-" has been deprecated in PHP 7.4 and%0A    |       | removed in PHP 8.0%0A    |       | (PHPCompatibility.Operators.ChangedConcatOperatorPrecedence.Found)%0A----------------------------------------------------------------------%0A%0A%0AFILE: FM/WordPress/Adapter.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 155 | ERROR | Function create_function() is deprecated since PHP 7.2%0A     |       | and removed since PHP 8.0; Use an anonymous function%0A     |       | instead%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)%0A----------------------------------------------------------------------%0A
