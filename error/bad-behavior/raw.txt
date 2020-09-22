@@ -18,18 +18,19 @@ No syntax errors detected in bad-behavior/bad-behavior/bad-behavior-mediawiki.ph
 No syntax errors detected in bad-behavior/bad-behavior/bad-behavior-mysql.php
 No syntax errors detected in bad-behavior/bad-behavior/bad-behavior-wordpress-admin.php
 No syntax errors detected in bad-behavior/bad-behavior/bad-behavior-wordpress.php
-No syntax errors detected in bad-behavior/bad-behavior/bad-behavior-wordpress.php
 ..[31mE[0m................ 19 / 19 (100%)
 
 
 
 [1mFILE: bad-behavior/blacklist.inc.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 145 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: "0x31303235343830303536"[0m
+----------------------------------------------------------------------
+ 145 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+     |       | inconsistent prior to PHP 7 and support has been
+     |       | removed in PHP 7. Found: "0x31303235343830303536"[0m
      |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
-Time: 360ms; Memory: 14MB
-::error::FILE: bad-behavior/blacklist.inc.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 145 | ERROR | The behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: "0x31303235343830303536"%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
+Time: 281ms; Memory: 14MB
+::error::FILE: bad-behavior/blacklist.inc.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 145 | ERROR | The behaviour of hexadecimal numeric strings was%0A     |       | inconsistent prior to PHP 7 and support has been%0A     |       | removed in PHP 7. Found: "0x31303235343830303536"%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A----------------------------------------------------------------------%0A
