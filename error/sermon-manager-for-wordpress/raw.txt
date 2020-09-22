@@ -111,20 +111,26 @@ No syntax errors detected in sermon-manager-for-wordpress/sermon-manager-for-wor
 No syntax errors detected in sermon-manager-for-wordpress/sermon-manager-for-wordpress/views/taxonomy-wpfc_sermon_series.php
 No syntax errors detected in sermon-manager-for-wordpress/sermon-manager-for-wordpress/views/taxonomy-wpfc_sermon_topics.php
 No syntax errors detected in sermon-manager-for-wordpress/sermon-manager-for-wordpress/views/taxonomy-wpfc_service_type.php
+
+Fatal error: Unparenthesized `a ? b : c ? d : e` is not supported. Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)` in sermon-manager-for-wordpress/sermon-manager-for-wordpress/views/wpfc-podcast-feed.php on line 165
 Errors parsing sermon-manager-for-wordpress/sermon-manager-for-wordpress/views/wpfc-podcast-feed.php
-::error::%0Aviews/wpfc-podcast-feed.php
+::error::%0Aviews/wpfc-podcast-feed.php%0A  Fatal error: Unparenthesized `a ? b : c ? d : e` is not supported.%0A      Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)`%0A      on line 165
 ............................................................  60 / 113 (53%)
 ....................................................[31mE[0m        113 / 113 (100%)
 
 
 
 [1mFILE: views/wpfc-podcast-feed.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 165 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has been deprecated in PHP 7.4 and removed in PHP 8.0. Multiple consecutive ternaries detected. Use parenthesis to
-     |       | clarify the order in which the operations should be executed[0m (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
+ 165 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has
+     |       | been deprecated in PHP 7.4 and removed in PHP 8.0.
+     |       | Multiple consecutive ternaries detected. Use
+     |       | parenthesis to clarify the order in which the
+     |       | operations should be executed[0m
+     |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
+----------------------------------------------------------------------
 
-Time: 3.06 secs; Memory: 20MB
-::error::FILE: views/wpfc-podcast-feed.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 165 | ERROR | The left-associativity of the ternary operator has been deprecated in PHP 7.4 and removed in PHP 8.0. Multiple consecutive ternaries detected. Use parenthesis to%0A     |       | clarify the order in which the operations should be executed (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
+Time: 3.15 secs; Memory: 20MB
+::error::FILE: views/wpfc-podcast-feed.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 165 | ERROR | The left-associativity of the ternary operator has%0A     |       | been deprecated in PHP 7.4 and removed in PHP 8.0.%0A     |       | Multiple consecutive ternaries detected. Use%0A     |       | parenthesis to clarify the order in which the%0A     |       | operations should be executed%0A     |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A----------------------------------------------------------------------%0A
