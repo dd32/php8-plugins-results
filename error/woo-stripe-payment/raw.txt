@@ -347,7 +347,6 @@ No syntax errors detected in woo-stripe-payment/woo-stripe-payment/vendor/stripe
 No syntax errors detected in woo-stripe-payment/woo-stripe-payment/vendor/stripe/stripe-php/lib/Webhook.php
 No syntax errors detected in woo-stripe-payment/woo-stripe-payment/vendor/stripe/stripe-php/lib/WebhookSignature.php
 No syntax errors detected in woo-stripe-payment/woo-stripe-payment/vendor/stripe/stripe-php/update_certs.php
-No syntax errors detected in woo-stripe-payment/woo-stripe-payment/vendor/stripe/stripe-php/update_certs.php
 ............................................................  60 / 348 (17%)
 ..........[31mE[0m................................................. 120 / 348 (34%)
 ............................................................ 180 / 348 (52%)
@@ -358,12 +357,15 @@ No syntax errors detected in woo-stripe-payment/woo-stripe-payment/vendor/stripe
 
 
 [1mFILE: includes/gateways/class-wc-payment-gateway-stripe-klarna.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 239 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse order to implode has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first
-     |       | parameter and $pieces the second[0m (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
+ 239 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse
+     |       | order to implode has been deprecated since PHP 7.4 and
+     |       | is removed since PHP 8.0; $glue should be the first
+     |       | parameter and $pieces the second[0m
+     |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
+----------------------------------------------------------------------
 
-Time: 3.26 secs; Memory: 22MB
-::error::FILE: includes/gateways/class-wc-payment-gateway-stripe-klarna.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 239 | ERROR | Passing the $glue and $pieces parameters in reverse order to implode has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first%0A     |       | parameter and $pieces the second (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
+Time: 3.16 secs; Memory: 22MB
+::error::FILE: includes/gateways/class-wc-payment-gateway-stripe-klarna.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 239 | ERROR | Passing the $glue and $pieces parameters in reverse%0A     |       | order to implode has been deprecated since PHP 7.4 and%0A     |       | is removed since PHP 8.0; $glue should be the first%0A     |       | parameter and $pieces the second%0A     |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A----------------------------------------------------------------------%0A
