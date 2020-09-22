@@ -1,0 +1,84 @@
+::warning::Plugin: https://wordpress.org/plugins/google-identity-toolkit/%0ATrac: https://plugins.trac.wordpress.org/browser/google-identity-toolkit/
+No syntax errors detected in google-identity-toolkit/google-identity-toolkit/git/callback.php
+No syntax errors detected in google-identity-toolkit/google-identity-toolkit/git/config/config.php
+No syntax errors detected in google-identity-toolkit/google-identity-toolkit/git/data/gitAccount.php
+No syntax errors detected in google-identity-toolkit/google-identity-toolkit/git/data/gitAccountService.php
+No syntax errors detected in google-identity-toolkit/google-identity-toolkit/git/data/gitAssertion.php
+
+Fatal error: __autoload() is no longer supported, use spl_autoload_register() instead in google-identity-toolkit/google-identity-toolkit/git/handler/autoload.php on line 3
+Errors parsing google-identity-toolkit/google-identity-toolkit/git/handler/autoload.php
+No syntax errors detected in google-identity-toolkit/google-identity-toolkit/git/handler/gitCallbackHandler.php
+No syntax errors detected in google-identity-toolkit/google-identity-toolkit/git/handler/gitLoginHandler.php
+No syntax errors detected in google-identity-toolkit/google-identity-toolkit/git/logic/gitAbstractResponse.php
+No syntax errors detected in google-identity-toolkit/google-identity-toolkit/git/logic/gitAccountStatusAction.php
+No syntax errors detected in google-identity-toolkit/google-identity-toolkit/git/logic/gitAccountStatusLogic.php
+No syntax errors detected in google-identity-toolkit/google-identity-toolkit/git/logic/gitAccountStatusResponse.php
+No syntax errors detected in google-identity-toolkit/google-identity-toolkit/git/logic/gitCallbackAction.php
+No syntax errors detected in google-identity-toolkit/google-identity-toolkit/git/logic/gitCallbackLogic.php
+No syntax errors detected in google-identity-toolkit/google-identity-toolkit/git/logic/gitCallbackRequest.php
+No syntax errors detected in google-identity-toolkit/google-identity-toolkit/git/logic/gitCallbackResponse.php
+No syntax errors detected in google-identity-toolkit/google-identity-toolkit/git/logic/gitLoginRequest.php
+No syntax errors detected in google-identity-toolkit/google-identity-toolkit/git/logic/gitPasswordAction.php
+No syntax errors detected in google-identity-toolkit/google-identity-toolkit/git/logic/gitPasswordLogic.php
+No syntax errors detected in google-identity-toolkit/google-identity-toolkit/git/logic/gitPasswordResponse.php
+No syntax errors detected in google-identity-toolkit/google-identity-toolkit/git/login.php
+No syntax errors detected in google-identity-toolkit/google-identity-toolkit/git/session/gitSessionBasedSessionManager.php
+No syntax errors detected in google-identity-toolkit/google-identity-toolkit/git/session/gitSessionManager.php
+
+Fatal error: __autoload() is no longer supported, use spl_autoload_register() instead in google-identity-toolkit/google-identity-toolkit/git/test/logic/autoload.php on line 2
+Errors parsing google-identity-toolkit/google-identity-toolkit/git/test/logic/autoload.php
+No syntax errors detected in google-identity-toolkit/google-identity-toolkit/git/test/logic/gitCallbackLogicTest.php
+No syntax errors detected in google-identity-toolkit/google-identity-toolkit/git/util/gitApiClient.php
+No syntax errors detected in google-identity-toolkit/google-identity-toolkit/git/util/gitConfig.php
+No syntax errors detected in google-identity-toolkit/google-identity-toolkit/git/util/gitContext.php
+No syntax errors detected in google-identity-toolkit/google-identity-toolkit/git/util/gitDasherDomainChecker.php
+No syntax errors detected in google-identity-toolkit/google-identity-toolkit/git/util/gitUtil.php
+No syntax errors detected in google-identity-toolkit/google-identity-toolkit/git/WPAccountService.php
+No syntax errors detected in google-identity-toolkit/google-identity-toolkit/git/WPContextLoader.php
+No syntax errors detected in google-identity-toolkit/google-identity-toolkit/git/WPSessionManager.php
+No syntax errors detected in google-identity-toolkit/google-identity-toolkit/git_client.php
+No syntax errors detected in google-identity-toolkit/google-identity-toolkit/git_setting.php
+No syntax errors detected in google-identity-toolkit/google-identity-toolkit/google-identity-toolkit.php
+::error::%0Agit/handler/autoload.php%0A  Fatal error: __autoload() is no longer supported, use spl_autoload_register() instead on line 3%0A%0Agit/test/logic/autoload.php%0A  Fatal error: __autoload() is no longer supported, use spl_autoload_register() instead on line 2
+.....[31mE[0m.................[31mE[0m...........[31mE[0m 36 / 36 (100%)
+
+
+
+[1mFILE: git/handler/autoload.php[0m
+----------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 3 | [31mERROR[0m | [1mSpecifying an autoloader using an __autoload() function
+   |       | is deprecated since PHP 7.2 and no longer supported
+   |       | since PHP 8.0[0m
+   |       | (PHPCompatibility.FunctionNameRestrictions.RemovedMagicAutoload.Removed)
+----------------------------------------------------------------------
+
+
+[1mFILE: git/test/logic/autoload.php[0m
+----------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 2 | [31mERROR[0m | [1mSpecifying an autoloader using an __autoload() function
+   |       | is deprecated since PHP 7.2 and no longer supported
+   |       | since PHP 8.0[0m
+   |       | (PHPCompatibility.FunctionNameRestrictions.RemovedMagicAutoload.Removed)
+----------------------------------------------------------------------
+
+
+[1mFILE: google-identity-toolkit.php[0m
+----------------------------------------------------------------------
+[1mFOUND 2 ERRORS AFFECTING 2 LINES[0m
+----------------------------------------------------------------------
+  59 | [31mERROR[0m | [1mFunction split() is deprecated since PHP 5.3 and
+     |       | removed since PHP 7.0; Use preg_split(), explode() or
+     |       | str_split() instead[0m
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.splitDeprecatedRemoved)
+ 137 | [31mERROR[0m | [1mFunction split() is deprecated since PHP 5.3 and
+     |       | removed since PHP 7.0; Use preg_split(), explode() or
+     |       | str_split() instead[0m
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.splitDeprecatedRemoved)
+----------------------------------------------------------------------
+
+Time: 327ms; Memory: 12MB
+::error::FILE: git/handler/autoload.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 3 | ERROR | Specifying an autoloader using an __autoload() function%0A   |       | is deprecated since PHP 7.2 and no longer supported%0A   |       | since PHP 8.0%0A   |       | (PHPCompatibility.FunctionNameRestrictions.RemovedMagicAutoload.Removed)%0A----------------------------------------------------------------------%0A%0A%0AFILE: git/test/logic/autoload.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 2 | ERROR | Specifying an autoloader using an __autoload() function%0A   |       | is deprecated since PHP 7.2 and no longer supported%0A   |       | since PHP 8.0%0A   |       | (PHPCompatibility.FunctionNameRestrictions.RemovedMagicAutoload.Removed)%0A----------------------------------------------------------------------%0A%0A%0AFILE: google-identity-toolkit.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A----------------------------------------------------------------------%0A  59 | ERROR | Function split() is deprecated since PHP 5.3 and%0A     |       | removed since PHP 7.0; Use preg_split(), explode() or%0A     |       | str_split() instead%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.splitDeprecatedRemoved)%0A 137 | ERROR | Function split() is deprecated since PHP 5.3 and%0A     |       | removed since PHP 7.0; Use preg_split(), explode() or%0A     |       | str_split() instead%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.splitDeprecatedRemoved)%0A----------------------------------------------------------------------%0A

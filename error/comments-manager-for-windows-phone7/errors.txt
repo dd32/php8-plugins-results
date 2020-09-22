@@ -1,0 +1,23 @@
+
+wp-comments-push.php
+  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 565
+FILE: wp-comments-push.php
+----------------------------------------------------------------------
+FOUND 3 ERRORS AFFECTING 3 LINES
+----------------------------------------------------------------------
+ 561 | ERROR | [ ] Function mdecrypt_generic() is deprecated since
+     |       |     PHP 7.1 and removed since PHP 7.2; Use OpenSSL
+     |       |     instead
+     |       |     (PHPCompatibility.FunctionUse.RemovedFunctions.mdecrypt_genericDeprecatedRemoved)
+ 565 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $text{strlen($text)
+     |       |     - 1}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 570 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $text{$P}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------
