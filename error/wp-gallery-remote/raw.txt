@@ -1,0 +1,51 @@
+::warning::Plugin: https://wordpress.org/plugins/wp-gallery-remote/%0ATrac: https://plugins.trac.wordpress.org/browser/wp-gallery-remote/
+No syntax errors detected in wp-gallery-remote/wp-gallery-remote/lib/libcurlemu/class_HTTPRetriever.php
+No syntax errors detected in wp-gallery-remote/wp-gallery-remote/lib/libcurlemu/libcurlemu.inc.php
+No syntax errors detected in wp-gallery-remote/wp-gallery-remote/lib/libcurlemu/libcurlexternal.inc.php
+
+Parse error: syntax error, unexpected token "new" in wp-gallery-remote/wp-gallery-remote/lib/libcurlemu/libcurlnative.inc.php on line 205
+Errors parsing wp-gallery-remote/wp-gallery-remote/lib/libcurlemu/libcurlnative.inc.php
+No syntax errors detected in wp-gallery-remote/wp-gallery-remote/mce_plugin/wp-gallery-remote-mce-plugin.php
+
+Fatal error: Array and string offset access syntax with curly braces is no longer supported in wp-gallery-remote/wp-gallery-remote/wp-gallery-remote.php on line 1150
+Errors parsing wp-gallery-remote/wp-gallery-remote/wp-gallery-remote.php
+::error::%0Alib/libcurlemu/libcurlnative.inc.php%0A  Parse error: syntax error, unexpected token "new" on line 205%0A%0Awp-gallery-remote.php%0A  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 1150
+[31mE[0m..[31mE[0m.[32mE[0m 6 / 6 (100%)
+
+
+
+[1mFILE: lib/libcurlemu/class_HTTPRetriever.php[0m
+----------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 168 | [31mERROR[0m | [1mDeclaration of a PHP4 style class constructor is
+     |       | deprecated since PHP 7.0 and removed since PHP 8.0[0m
+     |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+----------------------------------------------------------------------
+
+
+[1mFILE: lib/libcurlemu/libcurlnative.inc.php[0m
+----------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 205 | [31mERROR[0m | [1mAssigning the return value of new by reference is
+     |       | deprecated in PHP 5.3 and has been removed in PHP
+     |       | 7.0[0m
+     |       | (PHPCompatibility.Syntax.RemovedNewReference.Removed)
+----------------------------------------------------------------------
+
+
+[1mFILE: wp-gallery-remote.php[0m
+----------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 1150 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found: $line{0}[0m
+      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+----------------------------------------------------------------------
+[1mPHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
+----------------------------------------------------------------------
+
+Time: 541ms; Memory: 20MB
+::error::FILE: lib/libcurlemu/class_HTTPRetriever.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 168 | ERROR | Declaration of a PHP4 style class constructor is%0A     |       | deprecated since PHP 7.0 and removed since PHP 8.0%0A     |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)%0A----------------------------------------------------------------------%0A%0A%0AFILE: lib/libcurlemu/libcurlnative.inc.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 205 | ERROR | Assigning the return value of new by reference is%0A     |       | deprecated in PHP 5.3 and has been removed in PHP%0A     |       | 7.0%0A     |       | (PHPCompatibility.Syntax.RemovedNewReference.Removed)%0A----------------------------------------------------------------------%0A%0A%0AFILE: wp-gallery-remote.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 1150 | ERROR | [x] Curly brace syntax for accessing array elements%0A      |       |     and string offsets has been deprecated in PHP 7.4%0A      |       |     and removed in PHP 8.0. Found: $line{0}%0A      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A----------------------------------------------------------------------%0APHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A----------------------------------------------------------------------%0A
