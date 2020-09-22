@@ -1,32 +1,48 @@
 
 lib/WavFile.php
+  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 1555
 
 phpziputils/PhpZipUtils.php
+  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 812
 FILE: lib/WavFile.php
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 FOUND 2 ERRORS AFFECTING 1 LINE
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 1555 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $this->_samples{$offset +
-      |       |     $i} (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
- 1555 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $sampleBinary{$i}
+----------------------------------------------------------------------
+ 1555 | ERROR | [x] Curly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found:
+      |       |     $this->_samples{$offset + $i}
       |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 1555 | ERROR | [x] Curly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found:
+      |       |     $sampleBinary{$i}
+      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+----------------------------------------------------------------------
 PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 FILE: phpziputils/PhpZipUtils.php
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 FOUND 4 ERRORS AFFECTING 2 LINES
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 812 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $localname{0}
+----------------------------------------------------------------------
+ 812 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $localname{0}
      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
- 812 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $localname{0}
+ 812 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $localname{0}
      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
- 854 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $localname{0}
+ 854 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $localname{0}
      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
- 854 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $localname{0}
+ 854 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $localname{0}
      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 PHPCBF CAN FIX THE 4 MARKED SNIFF VIOLATIONS AUTOMATICALLY
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
