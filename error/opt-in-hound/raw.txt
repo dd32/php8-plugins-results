@@ -8,6 +8,8 @@ No syntax errors detected in opt-in-hound/opt-in-hound/includes/extensions-promo
 No syntax errors detected in opt-in-hound/opt-in-hound/includes/extensions-promo/views/view-promo-pop-up-opt-in-types.php
 No syntax errors detected in opt-in-hound/opt-in-hound/includes/extensions-promo/views/view-submenu-page-extensions.php
 No syntax errors detected in opt-in-hound/opt-in-hound/includes/functions-admin.php
+
+Fatal error: Unparenthesized `a ? b : c ? d : e` is not supported. Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)` in opt-in-hound/opt-in-hound/includes/functions-admin-settings-fields.php on line 644
 Errors parsing opt-in-hound/opt-in-hound/includes/functions-admin-settings-fields.php
 No syntax errors detected in opt-in-hound/opt-in-hound/includes/functions.php
 No syntax errors detected in opt-in-hound/opt-in-hound/includes/functions-utils.php
@@ -81,19 +83,23 @@ No syntax errors detected in opt-in-hound/opt-in-hound/includes/uninstaller/func
 No syntax errors detected in opt-in-hound/opt-in-hound/includes/uninstaller/views/view-submenu-page-uninstall.php
 No syntax errors detected in opt-in-hound/opt-in-hound/includes/version-compatibility/functions-version-compatibility.php
 No syntax errors detected in opt-in-hound/opt-in-hound/index.php
-::error::%0Aincludes/functions-admin-settings-fields.php
+::error::%0Aincludes/functions-admin-settings-fields.php%0A  Fatal error: Unparenthesized `a ? b : c ? d : e` is not supported.%0A      Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)`%0A      on line 644
 .........[31mE[0m.................................................. 60 / 82 (73%)
 ......................                                       82 / 82 (100%)
 
 
 
 [1mFILE: includes/functions-admin-settings-fields.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 644 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has been deprecated in PHP 7.4 and removed in PHP 8.0. Multiple consecutive ternaries detected. Use parenthesis to
-     |       | clarify the order in which the operations should be executed[0m (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
+ 644 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has
+     |       | been deprecated in PHP 7.4 and removed in PHP 8.0.
+     |       | Multiple consecutive ternaries detected. Use
+     |       | parenthesis to clarify the order in which the
+     |       | operations should be executed[0m
+     |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
+----------------------------------------------------------------------
 
-Time: 1.38 secs; Memory: 20MB
-::error::FILE: includes/functions-admin-settings-fields.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 644 | ERROR | The left-associativity of the ternary operator has been deprecated in PHP 7.4 and removed in PHP 8.0. Multiple consecutive ternaries detected. Use parenthesis to%0A     |       | clarify the order in which the operations should be executed (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
+Time: 1.21 secs; Memory: 20MB
+::error::FILE: includes/functions-admin-settings-fields.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 644 | ERROR | The left-associativity of the ternary operator has%0A     |       | been deprecated in PHP 7.4 and removed in PHP 8.0.%0A     |       | Multiple consecutive ternaries detected. Use%0A     |       | parenthesis to clarify the order in which the%0A     |       | operations should be executed%0A     |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A----------------------------------------------------------------------%0A

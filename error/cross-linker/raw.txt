@@ -37,23 +37,33 @@ No syntax errors detected in cross-linker/cross-linker/assets/process/truncate_s
 No syntax errors detected in cross-linker/cross-linker/assets/process/update_language.php
 No syntax errors detected in cross-linker/cross-linker/assets/process/update_settings.php
 No syntax errors detected in cross-linker/cross-linker/assets/process/update_term.php
+
+Fatal error: Unparenthesized `a ? b : c ? d : e` is not supported. Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)` in cross-linker/cross-linker/crosslink.php on line 682
 Errors parsing cross-linker/cross-linker/crosslink.php
-::error::%0Acrosslink.php
+::error::%0Acrosslink.php%0A  Fatal error: Unparenthesized `a ? b : c ? d : e` is not supported.%0A      Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)`%0A      on line 682
 ......................................[31mE[0m 39 / 39 (100%)
 
 
 
 [1mFILE: crosslink.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 3 ERRORS AFFECTING 3 LINES[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  682 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has been deprecated in PHP 7.4 and removed in PHP 8.0. Multiple consecutive ternaries detected. Use parenthesis to
-      |       | clarify the order in which the operations should be executed[0m (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
- 1850 | [31mERROR[0m | [1mUsing 'break' outside of a loop or switch structure is invalid and will throw a fatal error since PHP 7.0[0m
+----------------------------------------------------------------------
+  682 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has
+      |       | been deprecated in PHP 7.4 and removed in PHP 8.0.
+      |       | Multiple consecutive ternaries detected. Use
+      |       | parenthesis to clarify the order in which the
+      |       | operations should be executed[0m
+      |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
+ 1850 | [31mERROR[0m | [1mUsing 'break' outside of a loop or switch structure
+      |       | is invalid and will throw a fatal error since PHP
+      |       | 7.0[0m
       |       | (PHPCompatibility.ControlStructures.ForbiddenBreakContinueOutsideLoop.FatalError)
- 2073 | [31mERROR[0m | [1mFunction each() is deprecated since PHP 7.2 and removed since PHP 8.0; Use a foreach loop or ArrayIterator instead[0m
+ 2073 | [31mERROR[0m | [1mFunction each() is deprecated since PHP 7.2 and
+      |       | removed since PHP 8.0; Use a foreach loop or
+      |       | ArrayIterator instead[0m
       |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
-Time: 810ms; Memory: 26MB
-::error::FILE: crosslink.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 3 ERRORS AFFECTING 3 LINES%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A  682 | ERROR | The left-associativity of the ternary operator has been deprecated in PHP 7.4 and removed in PHP 8.0. Multiple consecutive ternaries detected. Use parenthesis to%0A      |       | clarify the order in which the operations should be executed (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A 1850 | ERROR | Using 'break' outside of a loop or switch structure is invalid and will throw a fatal error since PHP 7.0%0A      |       | (PHPCompatibility.ControlStructures.ForbiddenBreakContinueOutsideLoop.FatalError)%0A 2073 | ERROR | Function each() is deprecated since PHP 7.2 and removed since PHP 8.0; Use a foreach loop or ArrayIterator instead%0A      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
+Time: 698ms; Memory: 26MB
+::error::FILE: crosslink.php%0A----------------------------------------------------------------------%0AFOUND 3 ERRORS AFFECTING 3 LINES%0A----------------------------------------------------------------------%0A  682 | ERROR | The left-associativity of the ternary operator has%0A      |       | been deprecated in PHP 7.4 and removed in PHP 8.0.%0A      |       | Multiple consecutive ternaries detected. Use%0A      |       | parenthesis to clarify the order in which the%0A      |       | operations should be executed%0A      |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A 1850 | ERROR | Using 'break' outside of a loop or switch structure%0A      |       | is invalid and will throw a fatal error since PHP%0A      |       | 7.0%0A      |       | (PHPCompatibility.ControlStructures.ForbiddenBreakContinueOutsideLoop.FatalError)%0A 2073 | ERROR | Function each() is deprecated since PHP 7.2 and%0A      |       | removed since PHP 8.0; Use a foreach loop or%0A      |       | ArrayIterator instead%0A      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)%0A----------------------------------------------------------------------%0A
