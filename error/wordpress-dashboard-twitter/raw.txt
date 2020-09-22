@@ -11,6 +11,8 @@ No syntax errors detected in wordpress-dashboard-twitter/wordpress-dashboard-twi
 No syntax errors detected in wordpress-dashboard-twitter/wordpress-dashboard-twitter/inc/src/HmacSha1.php
 No syntax errors detected in wordpress-dashboard-twitter/wordpress-dashboard-twitter/inc/src/Request.php
 No syntax errors detected in wordpress-dashboard-twitter/wordpress-dashboard-twitter/inc/src/Response.php
+
+Fatal error: Array and string offset access syntax with curly braces is no longer supported in wordpress-dashboard-twitter/wordpress-dashboard-twitter/inc/src/SignatureMethod.php on line 61
 Errors parsing wordpress-dashboard-twitter/wordpress-dashboard-twitter/inc/src/SignatureMethod.php
 No syntax errors detected in wordpress-dashboard-twitter/wordpress-dashboard-twitter/inc/src/Token.php
 No syntax errors detected in wordpress-dashboard-twitter/wordpress-dashboard-twitter/inc/src/TwitterOAuthException.php
@@ -21,22 +23,26 @@ No syntax errors detected in wordpress-dashboard-twitter/wordpress-dashboard-twi
 No syntax errors detected in wordpress-dashboard-twitter/wordpress-dashboard-twitter/inc/wpdt-helper.class.php
 No syntax errors detected in wordpress-dashboard-twitter/wordpress-dashboard-twitter/wp-dashboard-twitter.php
 No syntax errors detected in wordpress-dashboard-twitter/wordpress-dashboard-twitter/wpdt.class.php
-::error::%0Ainc/src/SignatureMethod.php
+::error::%0Ainc/src/SignatureMethod.php%0A  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 61
 ............[32mE[0m......... 22 / 22 (100%)
 
 
 
 [1mFILE: inc/src/SignatureMethod.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 2 ERRORS AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 61 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $built{$i}[0m
+----------------------------------------------------------------------
+ 61 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and
+    |       |     string offsets has been deprecated in PHP 7.4 and
+    |       |     removed in PHP 8.0. Found: $built{$i}[0m
     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
- 61 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $signature{$i}[0m
+ 61 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and
+    |       |     string offsets has been deprecated in PHP 7.4 and
+    |       |     removed in PHP 8.0. Found: $signature{$i}[0m
     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mPHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
-Time: 537ms; Memory: 14MB
-::error::FILE: inc/src/SignatureMethod.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 61 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $built{$i}%0A    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 61 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $signature{$i}%0A    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0APHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
+Time: 502ms; Memory: 14MB
+::error::FILE: inc/src/SignatureMethod.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 61 | ERROR | [x] Curly brace syntax for accessing array elements and%0A    |       |     string offsets has been deprecated in PHP 7.4 and%0A    |       |     removed in PHP 8.0. Found: $built{$i}%0A    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 61 | ERROR | [x] Curly brace syntax for accessing array elements and%0A    |       |     string offsets has been deprecated in PHP 7.4 and%0A    |       |     removed in PHP 8.0. Found: $signature{$i}%0A    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A----------------------------------------------------------------------%0APHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A----------------------------------------------------------------------%0A

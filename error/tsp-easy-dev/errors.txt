@@ -1,61 +1,104 @@
 
 vendor/letaprodoit/helpers/src/LAPDI/Helper.php
+  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 1083
 FILE: vendor/letaprodoit/helpers/src/LAPDI/Config.php
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 FOUND 1 ERROR AFFECTING 1 LINE
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 52 | ERROR | list() will assign variable from left-to-right since PHP 7.0. Ensure all variables in list() are unique to prevent unexpected results.
+----------------------------------------------------------------------
+ 52 | ERROR | list() will assign variable from left-to-right since
+    |       | PHP 7.0. Ensure all variables in list() are unique to
+    |       | prevent unexpected results.
     |       | (PHPCompatibility.Lists.AssignmentOrder.Affected)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 FILE: vendor/letaprodoit/helpers/src/LAPDI/Database.php
---------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 FOUND 32 ERRORS AFFECTING 16 LINES
---------------------------------------------------------------------------------------------------------------------------------------------------
- 129 | ERROR | Extension 'mssql' is removed since PHP 7.0 (PHPCompatibility.Extensions.RemovedExtensions.mssqlRemoved)
- 129 | ERROR | Function mssql_connect() is removed since PHP 7.0 (PHPCompatibility.FunctionUse.RemovedFunctions.mssql_connectRemoved)
- 135 | ERROR | Extension 'mssql' is removed since PHP 7.0 (PHPCompatibility.Extensions.RemovedExtensions.mssqlRemoved)
- 135 | ERROR | Function mssql_select_db() is removed since PHP 7.0 (PHPCompatibility.FunctionUse.RemovedFunctions.mssql_select_dbRemoved)
- 181 | ERROR | Extension 'mssql' is removed since PHP 7.0 (PHPCompatibility.Extensions.RemovedExtensions.mssqlRemoved)
- 181 | ERROR | Function mssql_fetch_array() is removed since PHP 7.0 (PHPCompatibility.FunctionUse.RemovedFunctions.mssql_fetch_arrayRemoved)
- 220 | ERROR | Extension 'mssql' is removed since PHP 7.0 (PHPCompatibility.Extensions.RemovedExtensions.mssqlRemoved)
- 220 | ERROR | Function mssql_fetch_assoc() is removed since PHP 7.0 (PHPCompatibility.FunctionUse.RemovedFunctions.mssql_fetch_assocRemoved)
- 258 | ERROR | Extension 'mssql' is removed since PHP 7.0 (PHPCompatibility.Extensions.RemovedExtensions.mssqlRemoved)
- 258 | ERROR | Function mssql_fetch_object() is removed since PHP 7.0
+----------------------------------------------------------------------
+ 129 | ERROR | Extension 'mssql' is removed since PHP 7.0
+     |       | (PHPCompatibility.Extensions.RemovedExtensions.mssqlRemoved)
+ 129 | ERROR | Function mssql_connect() is removed since PHP 7.0
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.mssql_connectRemoved)
+ 135 | ERROR | Extension 'mssql' is removed since PHP 7.0
+     |       | (PHPCompatibility.Extensions.RemovedExtensions.mssqlRemoved)
+ 135 | ERROR | Function mssql_select_db() is removed since PHP
+     |       | 7.0
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.mssql_select_dbRemoved)
+ 181 | ERROR | Extension 'mssql' is removed since PHP 7.0
+     |       | (PHPCompatibility.Extensions.RemovedExtensions.mssqlRemoved)
+ 181 | ERROR | Function mssql_fetch_array() is removed since PHP
+     |       | 7.0
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.mssql_fetch_arrayRemoved)
+ 220 | ERROR | Extension 'mssql' is removed since PHP 7.0
+     |       | (PHPCompatibility.Extensions.RemovedExtensions.mssqlRemoved)
+ 220 | ERROR | Function mssql_fetch_assoc() is removed since PHP
+     |       | 7.0
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.mssql_fetch_assocRemoved)
+ 258 | ERROR | Extension 'mssql' is removed since PHP 7.0
+     |       | (PHPCompatibility.Extensions.RemovedExtensions.mssqlRemoved)
+ 258 | ERROR | Function mssql_fetch_object() is removed since PHP
+     |       | 7.0
      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.mssql_fetch_objectRemoved)
- 298 | ERROR | Extension 'mssql' is removed since PHP 7.0 (PHPCompatibility.Extensions.RemovedExtensions.mssqlRemoved)
- 298 | ERROR | Function mssql_query() is removed since PHP 7.0 (PHPCompatibility.FunctionUse.RemovedFunctions.mssql_queryRemoved)
- 371 | ERROR | Extension 'mssql' is removed since PHP 7.0 (PHPCompatibility.Extensions.RemovedExtensions.mssqlRemoved)
- 371 | ERROR | Function mssql_query() is removed since PHP 7.0 (PHPCompatibility.FunctionUse.RemovedFunctions.mssql_queryRemoved)
- 372 | ERROR | Extension 'mssql' is removed since PHP 7.0 (PHPCompatibility.Extensions.RemovedExtensions.mssqlRemoved)
- 372 | ERROR | Function mssql_fetch_array() is removed since PHP 7.0 (PHPCompatibility.FunctionUse.RemovedFunctions.mssql_fetch_arrayRemoved)
- 407 | ERROR | Extension 'mssql' is removed since PHP 7.0 (PHPCompatibility.Extensions.RemovedExtensions.mssqlRemoved)
- 407 | ERROR | Function mssql_fetch_assoc() is removed since PHP 7.0 (PHPCompatibility.FunctionUse.RemovedFunctions.mssql_fetch_assocRemoved)
- 442 | ERROR | Extension 'mssql' is removed since PHP 7.0 (PHPCompatibility.Extensions.RemovedExtensions.mssqlRemoved)
- 442 | ERROR | Function mssql_query() is removed since PHP 7.0 (PHPCompatibility.FunctionUse.RemovedFunctions.mssql_queryRemoved)
- 476 | ERROR | Extension 'mssql' is removed since PHP 7.0 (PHPCompatibility.Extensions.RemovedExtensions.mssqlRemoved)
- 476 | ERROR | Function mssql_query() is removed since PHP 7.0 (PHPCompatibility.FunctionUse.RemovedFunctions.mssql_queryRemoved)
- 516 | ERROR | Extension 'mssql' is removed since PHP 7.0 (PHPCompatibility.Extensions.RemovedExtensions.mssqlRemoved)
- 516 | ERROR | Function mssql_query() is removed since PHP 7.0 (PHPCompatibility.FunctionUse.RemovedFunctions.mssql_queryRemoved)
- 517 | ERROR | Extension 'mssql' is removed since PHP 7.0 (PHPCompatibility.Extensions.RemovedExtensions.mssqlRemoved)
- 517 | ERROR | Function mssql_rows_affected() is removed since PHP 7.0
+ 298 | ERROR | Extension 'mssql' is removed since PHP 7.0
+     |       | (PHPCompatibility.Extensions.RemovedExtensions.mssqlRemoved)
+ 298 | ERROR | Function mssql_query() is removed since PHP 7.0
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.mssql_queryRemoved)
+ 371 | ERROR | Extension 'mssql' is removed since PHP 7.0
+     |       | (PHPCompatibility.Extensions.RemovedExtensions.mssqlRemoved)
+ 371 | ERROR | Function mssql_query() is removed since PHP 7.0
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.mssql_queryRemoved)
+ 372 | ERROR | Extension 'mssql' is removed since PHP 7.0
+     |       | (PHPCompatibility.Extensions.RemovedExtensions.mssqlRemoved)
+ 372 | ERROR | Function mssql_fetch_array() is removed since PHP
+     |       | 7.0
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.mssql_fetch_arrayRemoved)
+ 407 | ERROR | Extension 'mssql' is removed since PHP 7.0
+     |       | (PHPCompatibility.Extensions.RemovedExtensions.mssqlRemoved)
+ 407 | ERROR | Function mssql_fetch_assoc() is removed since PHP
+     |       | 7.0
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.mssql_fetch_assocRemoved)
+ 442 | ERROR | Extension 'mssql' is removed since PHP 7.0
+     |       | (PHPCompatibility.Extensions.RemovedExtensions.mssqlRemoved)
+ 442 | ERROR | Function mssql_query() is removed since PHP 7.0
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.mssql_queryRemoved)
+ 476 | ERROR | Extension 'mssql' is removed since PHP 7.0
+     |       | (PHPCompatibility.Extensions.RemovedExtensions.mssqlRemoved)
+ 476 | ERROR | Function mssql_query() is removed since PHP 7.0
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.mssql_queryRemoved)
+ 516 | ERROR | Extension 'mssql' is removed since PHP 7.0
+     |       | (PHPCompatibility.Extensions.RemovedExtensions.mssqlRemoved)
+ 516 | ERROR | Function mssql_query() is removed since PHP 7.0
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.mssql_queryRemoved)
+ 517 | ERROR | Extension 'mssql' is removed since PHP 7.0
+     |       | (PHPCompatibility.Extensions.RemovedExtensions.mssqlRemoved)
+ 517 | ERROR | Function mssql_rows_affected() is removed since PHP
+     |       | 7.0
      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.mssql_rows_affectedRemoved)
- 558 | ERROR | Extension 'mssql' is removed since PHP 7.0 (PHPCompatibility.Extensions.RemovedExtensions.mssqlRemoved)
- 558 | ERROR | Function mssql_query() is removed since PHP 7.0 (PHPCompatibility.FunctionUse.RemovedFunctions.mssql_queryRemoved)
- 559 | ERROR | Extension 'mssql' is removed since PHP 7.0 (PHPCompatibility.Extensions.RemovedExtensions.mssqlRemoved)
- 559 | ERROR | Function mssql_num_rows() is removed since PHP 7.0 (PHPCompatibility.FunctionUse.RemovedFunctions.mssql_num_rowsRemoved)
- 594 | ERROR | Extension 'mssql' is removed since PHP 7.0 (PHPCompatibility.Extensions.RemovedExtensions.mssqlRemoved)
- 594 | ERROR | Function mssql_query() is removed since PHP 7.0 (PHPCompatibility.FunctionUse.RemovedFunctions.mssql_queryRemoved)
---------------------------------------------------------------------------------------------------------------------------------------------------
+ 558 | ERROR | Extension 'mssql' is removed since PHP 7.0
+     |       | (PHPCompatibility.Extensions.RemovedExtensions.mssqlRemoved)
+ 558 | ERROR | Function mssql_query() is removed since PHP 7.0
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.mssql_queryRemoved)
+ 559 | ERROR | Extension 'mssql' is removed since PHP 7.0
+     |       | (PHPCompatibility.Extensions.RemovedExtensions.mssqlRemoved)
+ 559 | ERROR | Function mssql_num_rows() is removed since PHP 7.0
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.mssql_num_rowsRemoved)
+ 594 | ERROR | Extension 'mssql' is removed since PHP 7.0
+     |       | (PHPCompatibility.Extensions.RemovedExtensions.mssqlRemoved)
+ 594 | ERROR | Function mssql_query() is removed since PHP 7.0
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.mssql_queryRemoved)
+----------------------------------------------------------------------
 
 
 FILE: vendor/letaprodoit/helpers/src/LAPDI/Helper.php
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 FOUND 1 ERROR AFFECTING 1 LINE
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 1083 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $array{count($array) - 1}
+----------------------------------------------------------------------
+ 1083 | ERROR | [x] Curly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found:
+      |       |     $array{count($array) - 1}
       |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
