@@ -1,0 +1,35 @@
+::warning::Plugin: https://wordpress.org/plugins/plainmail/%0ATrac: https://plugins.trac.wordpress.org/browser/plainmail/
+No syntax errors detected in plainmail/plainmail/plainmailAdmin.php
+No syntax errors detected in plainmail/plainmail/plainmailCsrfguard.php
+No syntax errors detected in plainmail/plainmail/plainmailErrorhandler.php
+No syntax errors detected in plainmail/plainmail/PlainmailInstall.php
+No syntax errors detected in plainmail/plainmail/plainmail.php
+No syntax errors detected in plainmail/plainmail/plainmailSession.php
+...[31mE[0m.[31mE[0m 6 / 6 (100%)
+
+
+
+[1mFILE: PlainmailInstall.php[0m
+----------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 39 | [31mERROR[0m | [1mDeclaration of a PHP4 style class constructor is
+    |       | deprecated since PHP 7.0 and removed since PHP 8.0[0m
+    |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+----------------------------------------------------------------------
+
+
+[1mFILE: plainmailSession.php[0m
+----------------------------------------------------------------------
+[1mFOUND 2 ERRORS AFFECTING 2 LINES[0m
+----------------------------------------------------------------------
+ 16 | [31mERROR[0m | [1mINI directive 'session.hash_function' is removed since
+    |       | PHP 7.1[0m
+    |       | (PHPCompatibility.IniDirectives.RemovedIniDirectives.session_hash_functionRemoved)
+ 19 | [31mERROR[0m | [1mINI directive 'session.hash_bits_per_character' is
+    |       | removed since PHP 7.1[0m
+    |       | (PHPCompatibility.IniDirectives.RemovedIniDirectives.session_hash_bits_per_characterRemoved)
+----------------------------------------------------------------------
+
+Time: 139ms; Memory: 12MB
+::error::FILE: PlainmailInstall.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 39 | ERROR | Declaration of a PHP4 style class constructor is%0A    |       | deprecated since PHP 7.0 and removed since PHP 8.0%0A    |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)%0A----------------------------------------------------------------------%0A%0A%0AFILE: plainmailSession.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A----------------------------------------------------------------------%0A 16 | ERROR | INI directive 'session.hash_function' is removed since%0A    |       | PHP 7.1%0A    |       | (PHPCompatibility.IniDirectives.RemovedIniDirectives.session_hash_functionRemoved)%0A 19 | ERROR | INI directive 'session.hash_bits_per_character' is%0A    |       | removed since PHP 7.1%0A    |       | (PHPCompatibility.IniDirectives.RemovedIniDirectives.session_hash_bits_per_characterRemoved)%0A----------------------------------------------------------------------%0A
