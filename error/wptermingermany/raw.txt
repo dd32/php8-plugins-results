@@ -1,0 +1,49 @@
+::warning::Plugin: https://wordpress.org/plugins/wptermingermany/%0ATrac: https://plugins.trac.wordpress.org/browser/wptermingermany/
+No syntax errors detected in wptermingermany/wptermingermany/controller/wptg_AdminController.class.php
+No syntax errors detected in wptermingermany/wptermingermany/controller/wptg_EventController.class.php
+No syntax errors detected in wptermingermany/wptermingermany/controller/wptg_PluginController.class.php
+No syntax errors detected in wptermingermany/wptermingermany/lib/fullcalendar-1.6.4/demos/json-events.php
+No syntax errors detected in wptermingermany/wptermingermany/lib/functions.inc.php
+No syntax errors detected in wptermingermany/wptermingermany/lib/helper_functions.inc.php
+No syntax errors detected in wptermingermany/wptermingermany/lib/wptg_db.class.php
+No syntax errors detected in wptermingermany/wptermingermany/model/wptg_event.class.php
+No syntax errors detected in wptermingermany/wptermingermany/model/wptg_monthwidget.class.php
+No syntax errors detected in wptermingermany/wptermingermany/wptermingermany.php
+.[31mE[0m..[31mE[0m...[31mE[0m. 10 / 10 (100%)
+
+
+
+[1mFILE: controller/wptg_EventController.class.php[0m
+----------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 238 | [31mERROR[0m | [1mThe "is_dst" parameter for function mktime() is
+     |       | deprecated since PHP 5.1 and removed since PHP 7.0[0m
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctionParameters.mktime_is_dstDeprecatedRemoved)
+----------------------------------------------------------------------
+
+
+[1mFILE: lib/functions.inc.php[0m
+----------------------------------------------------------------------
+[1mFOUND 2 ERRORS AFFECTING 2 LINES[0m
+----------------------------------------------------------------------
+ 164 | [31mERROR[0m | [1mThe "is_dst" parameter for function mktime() is
+     |       | deprecated since PHP 5.1 and removed since PHP 7.0[0m
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctionParameters.mktime_is_dstDeprecatedRemoved)
+ 180 | [31mERROR[0m | [1mThe "is_dst" parameter for function mktime() is
+     |       | deprecated since PHP 5.1 and removed since PHP 7.0[0m
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctionParameters.mktime_is_dstDeprecatedRemoved)
+----------------------------------------------------------------------
+
+
+[1mFILE: model/wptg_monthwidget.class.php[0m
+----------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 8 | [31mERROR[0m | [1mDeclaration of a PHP4 style class constructor is
+   |       | deprecated since PHP 7.0 and removed since PHP 8.0[0m
+   |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+----------------------------------------------------------------------
+
+Time: 243ms; Memory: 12MB
+::error::FILE: controller/wptg_EventController.class.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 238 | ERROR | The "is_dst" parameter for function mktime() is%0A     |       | deprecated since PHP 5.1 and removed since PHP 7.0%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctionParameters.mktime_is_dstDeprecatedRemoved)%0A----------------------------------------------------------------------%0A%0A%0AFILE: lib/functions.inc.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A----------------------------------------------------------------------%0A 164 | ERROR | The "is_dst" parameter for function mktime() is%0A     |       | deprecated since PHP 5.1 and removed since PHP 7.0%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctionParameters.mktime_is_dstDeprecatedRemoved)%0A 180 | ERROR | The "is_dst" parameter for function mktime() is%0A     |       | deprecated since PHP 5.1 and removed since PHP 7.0%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctionParameters.mktime_is_dstDeprecatedRemoved)%0A----------------------------------------------------------------------%0A%0A%0AFILE: model/wptg_monthwidget.class.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 8 | ERROR | Declaration of a PHP4 style class constructor is%0A   |       | deprecated since PHP 7.0 and removed since PHP 8.0%0A   |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)%0A----------------------------------------------------------------------%0A
