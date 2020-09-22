@@ -443,7 +443,6 @@ No syntax errors detected in tweet-old-post/tweet-old-post/vendor/symfony/polyfi
 No syntax errors detected in tweet-old-post/tweet-old-post/vendor/symfony/polyfill-mbstring/Resources/unidata/upperCase.php
 No syntax errors detected in tweet-old-post/tweet-old-post/vendor/symfony/polyfill-php72/bootstrap.php
 No syntax errors detected in tweet-old-post/tweet-old-post/vendor/symfony/polyfill-php72/Php72.php
-No syntax errors detected in tweet-old-post/tweet-old-post/vendor/symfony/polyfill-php72/Php72.php
 ............................................................  60 / 410 (15%)
 ....S....................................................... 120 / 410 (29%)
 ............................................................ 180 / 410 (44%)
@@ -455,12 +454,15 @@ No syntax errors detected in tweet-old-post/tweet-old-post/vendor/symfony/polyfi
 
 
 [1mFILE: vendor/google/apiclient/src/Google/Service/Resource.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 291 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse order to implode has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first
-     |       | parameter and $pieces the second[0m (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
+ 291 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse
+     |       | order to implode has been deprecated since PHP 7.4 and
+     |       | is removed since PHP 8.0; $glue should be the first
+     |       | parameter and $pieces the second[0m
+     |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
+----------------------------------------------------------------------
 
-Time: 7.97 secs; Memory: 50.01MB
-::error::FILE: vendor/google/apiclient/src/Google/Service/Resource.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 291 | ERROR | Passing the $glue and $pieces parameters in reverse order to implode has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first%0A     |       | parameter and $pieces the second (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
+Time: 9.14 secs; Memory: 50.01MB
+::error::FILE: vendor/google/apiclient/src/Google/Service/Resource.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 291 | ERROR | Passing the $glue and $pieces parameters in reverse%0A     |       | order to implode has been deprecated since PHP 7.4 and%0A     |       | is removed since PHP 8.0; $glue should be the first%0A     |       | parameter and $pieces the second%0A     |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A----------------------------------------------------------------------%0A
