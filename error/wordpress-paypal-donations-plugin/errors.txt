@@ -1,0 +1,26 @@
+FILE: paypal.class.php
+----------------------------------------------------------------------
+FOUND 3 ERRORS AFFECTING 2 LINES
+----------------------------------------------------------------------
+  16 | ERROR | Declaration of a PHP4 style class constructor is
+     |       | deprecated since PHP 7.0 and removed since PHP 8.0
+     |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+ 124 | ERROR | Extension 'ereg' is deprecated since PHP 5.3 and
+     |       | removed since PHP 7.0; Use pcre instead
+     |       | (PHPCompatibility.Extensions.RemovedExtensions.eregDeprecatedRemoved)
+ 124 | ERROR | Function eregi() is deprecated since PHP 5.3 and
+     |       | removed since PHP 7.0; Use preg_match() (with the i
+     |       | modifier) instead
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eregiDeprecatedRemoved)
+----------------------------------------------------------------------
+
+
+FILE: wpppd.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 267 | ERROR | Function money_format() is deprecated since PHP 7.4
+     |       | and removed since PHP 8.0; Use
+     |       | NumberFormatter::formatCurrency() instead
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.money_formatDeprecatedRemoved)
+----------------------------------------------------------------------
