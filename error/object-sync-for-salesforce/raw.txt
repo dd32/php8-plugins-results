@@ -132,6 +132,8 @@ No syntax errors detected in object-sync-for-salesforce/object-sync-for-salesfor
 No syntax errors detected in object-sync-for-salesforce/object-sync-for-salesforce/vendor/developerforce/force.com-toolkit-for-php/unit_test/Lib/Test/TestAbstract.php
 No syntax errors detected in object-sync-for-salesforce/object-sync-for-salesforce/vendor/developerforce/force.com-toolkit-for-php/unit_test/Lib/Test/TestFactory.php
 No syntax errors detected in object-sync-for-salesforce/object-sync-for-salesforce/vendor/developerforce/force.com-toolkit-for-php/unit_test/Lib/Utils/FileLogger.php
+
+Fatal error: __autoload() is no longer supported, use spl_autoload_register() instead in object-sync-for-salesforce/object-sync-for-salesforce/vendor/developerforce/force.com-toolkit-for-php/unit_test/runTest.php on line 21
 Errors parsing object-sync-for-salesforce/object-sync-for-salesforce/vendor/developerforce/force.com-toolkit-for-php/unit_test/runTest.php
 No syntax errors detected in object-sync-for-salesforce/object-sync-for-salesforce/vendor/pippinsplugins/wp-logging/WP_Logging.php
 No syntax errors detected in object-sync-for-salesforce/object-sync-for-salesforce/vendor/prospress/action-scheduler/action-scheduler.php
@@ -204,7 +206,7 @@ No syntax errors detected in object-sync-for-salesforce/object-sync-for-salesfor
 No syntax errors detected in object-sync-for-salesforce/object-sync-for-salesforce/vendor/prospress/action-scheduler/tests/phpunit/schedules/ActionScheduler_SimpleSchedule_Test.php
 No syntax errors detected in object-sync-for-salesforce/object-sync-for-salesforce/vendor/prospress/action-scheduler/tests/phpunit/versioning/ActionScheduler_Versions_Test.php
 No syntax errors detected in object-sync-for-salesforce/object-sync-for-salesforce/vendor/prospress/action-scheduler/tests/travis/wp-tests-config.php
-::error::%0Avendor/developerforce/force.com-toolkit-for-php/unit_test/runTest.php
+::error::%0Avendor/developerforce/force.com-toolkit-for-php/unit_test/runTest.php%0A  Fatal error: __autoload() is no longer supported, use spl_autoload_register() instead on line 21
 .....................................................[31mE[0m......  60 / 205 (29%)
 .........[31mE[0m.[31mE[0m...............................[31mE[0m.[31mE[0m.............. 120 / 205 (59%)
 .............[31mE[0m.............................................. 180 / 205 (88%)
@@ -212,60 +214,80 @@ No syntax errors detected in object-sync-for-salesforce/object-sync-for-salesfor
 
 
 
-[1mFILE: vendor/developerforce/force.com-toolkit-for-php/test/SforcePartnerClientTest.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[1mFILE: ...force/force.com-toolkit-for-php/test/SforcePartnerClientTest.php[0m
+----------------------------------------------------------------------
 [1mFOUND 2 ERRORS AFFECTING 2 LINES[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 256 | [31mERROR[0m | [1mThe "hour" parameter for function mktime() is missing. Passing this parameter is no longer optional. The optional nature of the parameter is deprecated since PHP 5.1
-     |       | and removed since PHP 8.0[0m (PHPCompatibility.FunctionUse.OptionalToRequiredFunctionParameters.mktime_hourSoftRequiredHardRequired)
- 285 | [31mERROR[0m | [1mThe "hour" parameter for function mktime() is missing. Passing this parameter is no longer optional. The optional nature of the parameter is deprecated since PHP 5.1
-     |       | and removed since PHP 8.0[0m (PHPCompatibility.FunctionUse.OptionalToRequiredFunctionParameters.mktime_hourSoftRequiredHardRequired)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
+ 256 | [31mERROR[0m | [1mThe "hour" parameter for function mktime() is missing.
+     |       | Passing this parameter is no longer optional. The
+     |       | optional nature of the parameter is deprecated since
+     |       | PHP 5.1 and removed since PHP 8.0[0m
+     |       | (PHPCompatibility.FunctionUse.OptionalToRequiredFunctionParameters.mktime_hourSoftRequiredHardRequired)
+ 285 | [31mERROR[0m | [1mThe "hour" parameter for function mktime() is missing.
+     |       | Passing this parameter is no longer optional. The
+     |       | optional nature of the parameter is deprecated since
+     |       | PHP 5.1 and removed since PHP 8.0[0m
+     |       | (PHPCompatibility.FunctionUse.OptionalToRequiredFunctionParameters.mktime_hourSoftRequiredHardRequired)
+----------------------------------------------------------------------
 
 
-[1mFILE: vendor/developerforce/force.com-toolkit-for-php/unit_test/Lib/Test/Enterprise/GetDeletedTest.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[1mFILE: ...toolkit-for-php/unit_test/Lib/Test/Enterprise/GetDeletedTest.php[0m
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 29 | [31mERROR[0m | [1mThe "hour" parameter for function mktime() is missing. Passing this parameter is no longer optional. The optional nature of the parameter is deprecated since PHP 5.1
-    |       | and removed since PHP 8.0[0m (PHPCompatibility.FunctionUse.OptionalToRequiredFunctionParameters.mktime_hourSoftRequiredHardRequired)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
+ 29 | [31mERROR[0m | [1mThe "hour" parameter for function mktime() is missing.
+    |       | Passing this parameter is no longer optional. The
+    |       | optional nature of the parameter is deprecated since
+    |       | PHP 5.1 and removed since PHP 8.0[0m
+    |       | (PHPCompatibility.FunctionUse.OptionalToRequiredFunctionParameters.mktime_hourSoftRequiredHardRequired)
+----------------------------------------------------------------------
 
 
-[1mFILE: vendor/developerforce/force.com-toolkit-for-php/unit_test/Lib/Test/Enterprise/GetUpdatedTest.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[1mFILE: ...toolkit-for-php/unit_test/Lib/Test/Enterprise/GetUpdatedTest.php[0m
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 31 | [31mERROR[0m | [1mThe "hour" parameter for function mktime() is missing. Passing this parameter is no longer optional. The optional nature of the parameter is deprecated since PHP 5.1
-    |       | and removed since PHP 8.0[0m (PHPCompatibility.FunctionUse.OptionalToRequiredFunctionParameters.mktime_hourSoftRequiredHardRequired)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
+ 31 | [31mERROR[0m | [1mThe "hour" parameter for function mktime() is missing.
+    |       | Passing this parameter is no longer optional. The
+    |       | optional nature of the parameter is deprecated since
+    |       | PHP 5.1 and removed since PHP 8.0[0m
+    |       | (PHPCompatibility.FunctionUse.OptionalToRequiredFunctionParameters.mktime_hourSoftRequiredHardRequired)
+----------------------------------------------------------------------
 
 
-[1mFILE: vendor/developerforce/force.com-toolkit-for-php/unit_test/Lib/Test/Partner/GetDeletedTest.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[1mFILE: ...om-toolkit-for-php/unit_test/Lib/Test/Partner/GetDeletedTest.php[0m
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 35 | [31mERROR[0m | [1mThe "hour" parameter for function mktime() is missing. Passing this parameter is no longer optional. The optional nature of the parameter is deprecated since PHP 5.1
-    |       | and removed since PHP 8.0[0m (PHPCompatibility.FunctionUse.OptionalToRequiredFunctionParameters.mktime_hourSoftRequiredHardRequired)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
+ 35 | [31mERROR[0m | [1mThe "hour" parameter for function mktime() is missing.
+    |       | Passing this parameter is no longer optional. The
+    |       | optional nature of the parameter is deprecated since
+    |       | PHP 5.1 and removed since PHP 8.0[0m
+    |       | (PHPCompatibility.FunctionUse.OptionalToRequiredFunctionParameters.mktime_hourSoftRequiredHardRequired)
+----------------------------------------------------------------------
 
 
-[1mFILE: vendor/developerforce/force.com-toolkit-for-php/unit_test/Lib/Test/Partner/GetUpdatedTest.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[1mFILE: ...om-toolkit-for-php/unit_test/Lib/Test/Partner/GetUpdatedTest.php[0m
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 37 | [31mERROR[0m | [1mThe "hour" parameter for function mktime() is missing. Passing this parameter is no longer optional. The optional nature of the parameter is deprecated since PHP 5.1
-    |       | and removed since PHP 8.0[0m (PHPCompatibility.FunctionUse.OptionalToRequiredFunctionParameters.mktime_hourSoftRequiredHardRequired)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
+ 37 | [31mERROR[0m | [1mThe "hour" parameter for function mktime() is missing.
+    |       | Passing this parameter is no longer optional. The
+    |       | optional nature of the parameter is deprecated since
+    |       | PHP 5.1 and removed since PHP 8.0[0m
+    |       | (PHPCompatibility.FunctionUse.OptionalToRequiredFunctionParameters.mktime_hourSoftRequiredHardRequired)
+----------------------------------------------------------------------
 
 
-[1mFILE: vendor/developerforce/force.com-toolkit-for-php/unit_test/runTest.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[1mFILE: ...r/developerforce/force.com-toolkit-for-php/unit_test/runTest.php[0m
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 21 | [31mERROR[0m | [1mSpecifying an autoloader using an __autoload() function is deprecated since PHP 7.2 and no longer supported since PHP 8.0[0m
+----------------------------------------------------------------------
+ 21 | [31mERROR[0m | [1mSpecifying an autoloader using an __autoload() function
+    |       | is deprecated since PHP 7.2 and no longer supported
+    |       | since PHP 8.0[0m
     |       | (PHPCompatibility.FunctionNameRestrictions.RemovedMagicAutoload.Removed)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
-Time: 3.55 secs; Memory: 34MB
-::error::FILE: vendor/developerforce/force.com-toolkit-for-php/test/SforcePartnerClientTest.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 256 | ERROR | The "hour" parameter for function mktime() is missing. Passing this parameter is no longer optional. The optional nature of the parameter is deprecated since PHP 5.1%0A     |       | and removed since PHP 8.0 (PHPCompatibility.FunctionUse.OptionalToRequiredFunctionParameters.mktime_hourSoftRequiredHardRequired)%0A 285 | ERROR | The "hour" parameter for function mktime() is missing. Passing this parameter is no longer optional. The optional nature of the parameter is deprecated since PHP 5.1%0A     |       | and removed since PHP 8.0 (PHPCompatibility.FunctionUse.OptionalToRequiredFunctionParameters.mktime_hourSoftRequiredHardRequired)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: vendor/developerforce/force.com-toolkit-for-php/unit_test/Lib/Test/Enterprise/GetDeletedTest.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 29 | ERROR | The "hour" parameter for function mktime() is missing. Passing this parameter is no longer optional. The optional nature of the parameter is deprecated since PHP 5.1%0A    |       | and removed since PHP 8.0 (PHPCompatibility.FunctionUse.OptionalToRequiredFunctionParameters.mktime_hourSoftRequiredHardRequired)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: vendor/developerforce/force.com-toolkit-for-php/unit_test/Lib/Test/Enterprise/GetUpdatedTest.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 31 | ERROR | The "hour" parameter for function mktime() is missing. Passing this parameter is no longer optional. The optional nature of the parameter is deprecated since PHP 5.1%0A    |       | and removed since PHP 8.0 (PHPCompatibility.FunctionUse.OptionalToRequiredFunctionParameters.mktime_hourSoftRequiredHardRequired)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: vendor/developerforce/force.com-toolkit-for-php/unit_test/Lib/Test/Partner/GetDeletedTest.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 35 | ERROR | The "hour" parameter for function mktime() is missing. Passing this parameter is no longer optional. The optional nature of the parameter is deprecated since PHP 5.1%0A    |       | and removed since PHP 8.0 (PHPCompatibility.FunctionUse.OptionalToRequiredFunctionParameters.mktime_hourSoftRequiredHardRequired)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: vendor/developerforce/force.com-toolkit-for-php/unit_test/Lib/Test/Partner/GetUpdatedTest.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 37 | ERROR | The "hour" parameter for function mktime() is missing. Passing this parameter is no longer optional. The optional nature of the parameter is deprecated since PHP 5.1%0A    |       | and removed since PHP 8.0 (PHPCompatibility.FunctionUse.OptionalToRequiredFunctionParameters.mktime_hourSoftRequiredHardRequired)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: vendor/developerforce/force.com-toolkit-for-php/unit_test/runTest.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 21 | ERROR | Specifying an autoloader using an __autoload() function is deprecated since PHP 7.2 and no longer supported since PHP 8.0%0A    |       | (PHPCompatibility.FunctionNameRestrictions.RemovedMagicAutoload.Removed)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
+Time: 3.4 secs; Memory: 34MB
+::error::FILE: ...force/force.com-toolkit-for-php/test/SforcePartnerClientTest.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A----------------------------------------------------------------------%0A 256 | ERROR | The "hour" parameter for function mktime() is missing.%0A     |       | Passing this parameter is no longer optional. The%0A     |       | optional nature of the parameter is deprecated since%0A     |       | PHP 5.1 and removed since PHP 8.0%0A     |       | (PHPCompatibility.FunctionUse.OptionalToRequiredFunctionParameters.mktime_hourSoftRequiredHardRequired)%0A 285 | ERROR | The "hour" parameter for function mktime() is missing.%0A     |       | Passing this parameter is no longer optional. The%0A     |       | optional nature of the parameter is deprecated since%0A     |       | PHP 5.1 and removed since PHP 8.0%0A     |       | (PHPCompatibility.FunctionUse.OptionalToRequiredFunctionParameters.mktime_hourSoftRequiredHardRequired)%0A----------------------------------------------------------------------%0A%0A%0AFILE: ...toolkit-for-php/unit_test/Lib/Test/Enterprise/GetDeletedTest.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 29 | ERROR | The "hour" parameter for function mktime() is missing.%0A    |       | Passing this parameter is no longer optional. The%0A    |       | optional nature of the parameter is deprecated since%0A    |       | PHP 5.1 and removed since PHP 8.0%0A    |       | (PHPCompatibility.FunctionUse.OptionalToRequiredFunctionParameters.mktime_hourSoftRequiredHardRequired)%0A----------------------------------------------------------------------%0A%0A%0AFILE: ...toolkit-for-php/unit_test/Lib/Test/Enterprise/GetUpdatedTest.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 31 | ERROR | The "hour" parameter for function mktime() is missing.%0A    |       | Passing this parameter is no longer optional. The%0A    |       | optional nature of the parameter is deprecated since%0A    |       | PHP 5.1 and removed since PHP 8.0%0A    |       | (PHPCompatibility.FunctionUse.OptionalToRequiredFunctionParameters.mktime_hourSoftRequiredHardRequired)%0A----------------------------------------------------------------------%0A%0A%0AFILE: ...om-toolkit-for-php/unit_test/Lib/Test/Partner/GetDeletedTest.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 35 | ERROR | The "hour" parameter for function mktime() is missing.%0A    |       | Passing this parameter is no longer optional. The%0A    |       | optional nature of the parameter is deprecated since%0A    |       | PHP 5.1 and removed since PHP 8.0%0A    |       | (PHPCompatibility.FunctionUse.OptionalToRequiredFunctionParameters.mktime_hourSoftRequiredHardRequired)%0A----------------------------------------------------------------------%0A%0A%0AFILE: ...om-toolkit-for-php/unit_test/Lib/Test/Partner/GetUpdatedTest.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 37 | ERROR | The "hour" parameter for function mktime() is missing.%0A    |       | Passing this parameter is no longer optional. The%0A    |       | optional nature of the parameter is deprecated since%0A    |       | PHP 5.1 and removed since PHP 8.0%0A    |       | (PHPCompatibility.FunctionUse.OptionalToRequiredFunctionParameters.mktime_hourSoftRequiredHardRequired)%0A----------------------------------------------------------------------%0A%0A%0AFILE: ...r/developerforce/force.com-toolkit-for-php/unit_test/runTest.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 21 | ERROR | Specifying an autoloader using an __autoload() function%0A    |       | is deprecated since PHP 7.2 and no longer supported%0A    |       | since PHP 8.0%0A    |       | (PHPCompatibility.FunctionNameRestrictions.RemovedMagicAutoload.Removed)%0A----------------------------------------------------------------------%0A
