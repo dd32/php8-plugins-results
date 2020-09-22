@@ -38,6 +38,8 @@ No syntax errors detected in igotweb-wp-mp-links/igotweb-wp-mp-links/src/igotweb
 No syntax errors detected in igotweb-wp-mp-links/igotweb-wp-mp-links/src/igotweb/fwk/model/bean/SiteContext.class.php
 No syntax errors detected in igotweb-wp-mp-links/igotweb-wp-mp-links/src/igotweb/fwk/model/bean/User.class.php
 No syntax errors detected in igotweb-wp-mp-links/igotweb-wp-mp-links/src/igotweb/fwk/model/bean/Webapp.class.php
+
+Warning: "boolean" will be interpreted as a class name. Did you mean "bool"? Write "\igotweb_wp_mp_links\igotweb\fwk\model\manager\boolean" or import the class with "use" to suppress this warning in igotweb-wp-mp-links/igotweb-wp-mp-links/src/igotweb/fwk/model/manager/ConfigurationManager.class.php on line 191
 No syntax errors detected in igotweb-wp-mp-links/igotweb-wp-mp-links/src/igotweb/fwk/model/manager/ConfigurationManager.class.php
 No syntax errors detected in igotweb-wp-mp-links/igotweb-wp-mp-links/src/igotweb/fwk/model/manager/CookieManager.class.php
 No syntax errors detected in igotweb-wp-mp-links/igotweb-wp-mp-links/src/igotweb/fwk/model/manager/DBManager.class.php
@@ -91,6 +93,8 @@ No syntax errors detected in igotweb-wp-mp-links/igotweb-wp-mp-links/src/igotweb
 No syntax errors detected in igotweb-wp-mp-links/igotweb-wp-mp-links/src/igotweb/fwk/utilities/SiteUtils.class.php
 No syntax errors detected in igotweb-wp-mp-links/igotweb-wp-mp-links/src/igotweb/fwk/utilities/UrlUtils.class.php
 No syntax errors detected in igotweb-wp-mp-links/igotweb-wp-mp-links/src/igotweb/fwk/utilities/UserUtils.class.php
+
+Fatal error: Array and string offset access syntax with curly braces is no longer supported in igotweb-wp-mp-links/igotweb-wp-mp-links/src/igotweb/fwk/utilities/Utils.class.php on line 343
 Errors parsing igotweb-wp-mp-links/igotweb-wp-mp-links/src/igotweb/fwk/utilities/Utils.class.php
 No syntax errors detected in igotweb-wp-mp-links/igotweb-wp-mp-links/src/igotweb/fwk/utilities/WebappUtils.class.php
 No syntax errors detected in igotweb-wp-mp-links/igotweb-wp-mp-links/src/igotweb/index.php
@@ -123,7 +127,7 @@ No syntax errors detected in igotweb-wp-mp-links/igotweb-wp-mp-links/views/admin
 No syntax errors detected in igotweb-wp-mp-links/igotweb-wp-mp-links/views/admin/options-list-pages/view.php
 No syntax errors detected in igotweb-wp-mp-links/igotweb-wp-mp-links/views/admin/options-page/data.php
 No syntax errors detected in igotweb-wp-mp-links/igotweb-wp-mp-links/views/admin/options-page/view.php
-::error::%0Asrc/igotweb/fwk/utilities/Utils.class.php
+::error::%0Asrc/igotweb/fwk/model/manager/ConfigurationManager.class.php%0A  Warning: "boolean" will be interpreted as a class name.%0A      Did you mean "bool"? Write "\igotweb_wp_mp_links\igotweb\fwk\model\manager\boolean" or import the class with "use" to suppress this warning%0A      on line 191%0A%0Asrc/igotweb/fwk/utilities/Utils.class.php%0A  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 343
 .......................................[31mE[0m....................  60 / 124 (48%)
 ................[31mE[0m...............[32mE[0m........................... 120 / 124 (97%)
 ....                                                         124 / 124 (100%)
@@ -131,34 +135,44 @@ No syntax errors detected in igotweb-wp-mp-links/igotweb-wp-mp-links/views/admin
 
 
 [1mFILE: src/igotweb/fwk/model/manager/ConfigurationManager.class.php[0m
---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
---------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 191 | [31mERROR[0m | [1m'boolean' is not a valid type declaration. Did you mean bool ?[0m
+----------------------------------------------------------------------
+ 191 | [31mERROR[0m | [1m'boolean' is not a valid type declaration. Did you
+     |       | mean bool ?[0m
      |       | (PHPCompatibility.FunctionDeclarations.NewParamTypeDeclarations.InvalidTypeHintFound)
---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 [1mFILE: src/igotweb/fwk/utilities/ImgUtils.class.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 2 ERRORS AFFECTING 2 LINES[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 226 | [31mERROR[0m | [1mThe "hour" parameter for function mktime() is missing. Passing this parameter is no longer optional. The optional nature of the parameter is deprecated since PHP 5.1
-     |       | and removed since PHP 8.0[0m (PHPCompatibility.FunctionUse.OptionalToRequiredFunctionParameters.mktime_hourSoftRequiredHardRequired)
- 232 | [31mERROR[0m | [1mThe "hour" parameter for function mktime() is missing. Passing this parameter is no longer optional. The optional nature of the parameter is deprecated since PHP 5.1
-     |       | and removed since PHP 8.0[0m (PHPCompatibility.FunctionUse.OptionalToRequiredFunctionParameters.mktime_hourSoftRequiredHardRequired)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
+ 226 | [31mERROR[0m | [1mThe "hour" parameter for function mktime() is missing.
+     |       | Passing this parameter is no longer optional. The
+     |       | optional nature of the parameter is deprecated since
+     |       | PHP 5.1 and removed since PHP 8.0[0m
+     |       | (PHPCompatibility.FunctionUse.OptionalToRequiredFunctionParameters.mktime_hourSoftRequiredHardRequired)
+ 232 | [31mERROR[0m | [1mThe "hour" parameter for function mktime() is missing.
+     |       | Passing this parameter is no longer optional. The
+     |       | optional nature of the parameter is deprecated since
+     |       | PHP 5.1 and removed since PHP 8.0[0m
+     |       | (PHPCompatibility.FunctionUse.OptionalToRequiredFunctionParameters.mktime_hourSoftRequiredHardRequired)
+----------------------------------------------------------------------
 
 
 [1mFILE: src/igotweb/fwk/utilities/Utils.class.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 343 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $c{rand(0,strlen($c))}[0m
+----------------------------------------------------------------------
+ 343 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found:
+     |       |     $c{rand(0,strlen($c))}[0m
      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mPHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
-Time: 2.26 secs; Memory: 18MB
-::error::FILE: src/igotweb/fwk/model/manager/ConfigurationManager.class.php%0A--------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A--------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 191 | ERROR | 'boolean' is not a valid type declaration. Did you mean bool ?%0A     |       | (PHPCompatibility.FunctionDeclarations.NewParamTypeDeclarations.InvalidTypeHintFound)%0A--------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: src/igotweb/fwk/utilities/ImgUtils.class.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 226 | ERROR | The "hour" parameter for function mktime() is missing. Passing this parameter is no longer optional. The optional nature of the parameter is deprecated since PHP 5.1%0A     |       | and removed since PHP 8.0 (PHPCompatibility.FunctionUse.OptionalToRequiredFunctionParameters.mktime_hourSoftRequiredHardRequired)%0A 232 | ERROR | The "hour" parameter for function mktime() is missing. Passing this parameter is no longer optional. The optional nature of the parameter is deprecated since PHP 5.1%0A     |       | and removed since PHP 8.0 (PHPCompatibility.FunctionUse.OptionalToRequiredFunctionParameters.mktime_hourSoftRequiredHardRequired)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: src/igotweb/fwk/utilities/Utils.class.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 343 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $c{rand(0,strlen($c))}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0APHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
+Time: 2.25 secs; Memory: 18MB
+::error::FILE: src/igotweb/fwk/model/manager/ConfigurationManager.class.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 191 | ERROR | 'boolean' is not a valid type declaration. Did you%0A     |       | mean bool ?%0A     |       | (PHPCompatibility.FunctionDeclarations.NewParamTypeDeclarations.InvalidTypeHintFound)%0A----------------------------------------------------------------------%0A%0A%0AFILE: src/igotweb/fwk/utilities/ImgUtils.class.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A----------------------------------------------------------------------%0A 226 | ERROR | The "hour" parameter for function mktime() is missing.%0A     |       | Passing this parameter is no longer optional. The%0A     |       | optional nature of the parameter is deprecated since%0A     |       | PHP 5.1 and removed since PHP 8.0%0A     |       | (PHPCompatibility.FunctionUse.OptionalToRequiredFunctionParameters.mktime_hourSoftRequiredHardRequired)%0A 232 | ERROR | The "hour" parameter for function mktime() is missing.%0A     |       | Passing this parameter is no longer optional. The%0A     |       | optional nature of the parameter is deprecated since%0A     |       | PHP 5.1 and removed since PHP 8.0%0A     |       | (PHPCompatibility.FunctionUse.OptionalToRequiredFunctionParameters.mktime_hourSoftRequiredHardRequired)%0A----------------------------------------------------------------------%0A%0A%0AFILE: src/igotweb/fwk/utilities/Utils.class.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 343 | ERROR | [x] Curly brace syntax for accessing array elements%0A     |       |     and string offsets has been deprecated in PHP 7.4%0A     |       |     and removed in PHP 8.0. Found:%0A     |       |     $c{rand(0,strlen($c))}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A----------------------------------------------------------------------%0APHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A----------------------------------------------------------------------%0A
