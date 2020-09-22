@@ -1,0 +1,19 @@
+
+updater.php
+  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 270
+FILE: updater.php
+----------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+----------------------------------------------------------------------
+ 256 | ERROR | [ ] Function mdecrypt_generic() is deprecated since
+     |       |     PHP 7.1 and removed since PHP 7.2; Use OpenSSL
+     |       |     instead
+     |       |     (PHPCompatibility.FunctionUse.RemovedFunctions.mdecrypt_genericDeprecatedRemoved)
+ 270 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found:
+     |       |     $text{strlen($text)-1}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------
