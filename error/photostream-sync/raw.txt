@@ -1,0 +1,40 @@
+::warning::Plugin: https://wordpress.org/plugins/photostream-sync/%0ATrac: https://plugins.trac.wordpress.org/browser/photostream-sync/
+
+Fatal error: Array and string offset access syntax with curly braces is no longer supported in photostream-sync/photostream-sync/class-photostream-client.php on line 86
+Errors parsing photostream-sync/photostream-sync/class-photostream-client.php
+No syntax errors detected in photostream-sync/photostream-sync/class-photostream-list-table.php
+
+Fatal error: Array and string offset access syntax with curly braces is no longer supported in photostream-sync/photostream-sync/photostream-sync.php on line 1756
+Errors parsing photostream-sync/photostream-sync/photostream-sync.php
+::error::%0Aclass-photostream-client.php%0A  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 86%0A%0Aphotostream-sync.php%0A  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 1756
+[32mE[0m.[32mE[0m 3 / 3 (100%)
+
+
+
+[1mFILE: class-photostream-client.php[0m
+----------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 86 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and
+    |       |     string offsets has been deprecated in PHP 7.4 and
+    |       |     removed in PHP 8.0. Found: $response['body']{0}[0m
+    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+----------------------------------------------------------------------
+[1mPHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
+----------------------------------------------------------------------
+
+
+[1mFILE: photostream-sync.php[0m
+----------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 1756 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found: $stream{1}[0m
+      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+----------------------------------------------------------------------
+[1mPHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
+----------------------------------------------------------------------
+
+Time: 328ms; Memory: 24MB
+::error::FILE: class-photostream-client.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 86 | ERROR | [x] Curly brace syntax for accessing array elements and%0A    |       |     string offsets has been deprecated in PHP 7.4 and%0A    |       |     removed in PHP 8.0. Found: $response['body']{0}%0A    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A----------------------------------------------------------------------%0APHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A----------------------------------------------------------------------%0A%0A%0AFILE: photostream-sync.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 1756 | ERROR | [x] Curly brace syntax for accessing array elements%0A      |       |     and string offsets has been deprecated in PHP 7.4%0A      |       |     and removed in PHP 8.0. Found: $stream{1}%0A      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A----------------------------------------------------------------------%0APHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A----------------------------------------------------------------------%0A
