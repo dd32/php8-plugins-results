@@ -1,64 +1,104 @@
 
 handler/saml/Response.php
+  Fatal error: Cannot use "parent" when current class scope has no parent on line 111
 
 includes/lib/encryption.php
+  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 40
 FILE: handler/saml/Assertion.php
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 FOUND 12 ERRORS AFFECTING 12 LINES
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  449 | ERROR | Using a string as the assertion passed to assert() is deprecated since PHP 7.2 and removed since PHP 8.0. Found: '$key->type === XMLSecurityKey::RSA_SHA1'
+----------------------------------------------------------------------
+  449 | ERROR | Using a string as the assertion passed to assert() is
+      |       | deprecated since PHP 7.2 and removed since PHP 8.0.
+      |       | Found: '$key->type === XMLSecurityKey::RSA_SHA1'
       |       | (PHPCompatibility.ParameterValues.RemovedAssertStringAssertion.Found)
-  477 | ERROR | Using a string as the assertion passed to assert() is deprecated since PHP 7.2 and removed since PHP 8.0. Found: 'is_string($id)'
+  477 | ERROR | Using a string as the assertion passed to assert() is
+      |       | deprecated since PHP 7.2 and removed since PHP 8.0.
+      |       | Found: 'is_string($id)'
       |       | (PHPCompatibility.ParameterValues.RemovedAssertStringAssertion.Found)
-  499 | ERROR | Using a string as the assertion passed to assert() is deprecated since PHP 7.2 and removed since PHP 8.0. Found: 'is_int($issueInstant)'
+  499 | ERROR | Using a string as the assertion passed to assert() is
+      |       | deprecated since PHP 7.2 and removed since PHP 8.0.
+      |       | Found: 'is_int($issueInstant)'
       |       | (PHPCompatibility.ParameterValues.RemovedAssertStringAssertion.Found)
-  521 | ERROR | Using a string as the assertion passed to assert() is deprecated since PHP 7.2 and removed since PHP 8.0. Found: 'is_string($issuer)'
+  521 | ERROR | Using a string as the assertion passed to assert() is
+      |       | deprecated since PHP 7.2 and removed since PHP 8.0.
+      |       | Found: 'is_string($issuer)'
       |       | (PHPCompatibility.ParameterValues.RemovedAssertStringAssertion.Found)
-  554 | ERROR | Using a string as the assertion passed to assert() is deprecated since PHP 7.2 and removed since PHP 8.0. Found: 'is_array($nameId) || is_null($nameId)'
+  554 | ERROR | Using a string as the assertion passed to assert() is
+      |       | deprecated since PHP 7.2 and removed since PHP 8.0.
+      |       | Found: 'is_array($nameId) || is_null($nameId)'
       |       | (PHPCompatibility.ParameterValues.RemovedAssertStringAssertion.Found)
-  700 | ERROR | Using a string as the assertion passed to assert() is deprecated since PHP 7.2 and removed since PHP 8.0. Found: 'is_int($notBefore) || is_null($notBefore)'
+  700 | ERROR | Using a string as the assertion passed to assert() is
+      |       | deprecated since PHP 7.2 and removed since PHP 8.0.
+      |       | Found: 'is_int($notBefore) ||
+      |       | is_null($notBefore)'
       |       | (PHPCompatibility.ParameterValues.RemovedAssertStringAssertion.Found)
-  727 | ERROR | Using a string as the assertion passed to assert() is deprecated since PHP 7.2 and removed since PHP 8.0. Found: 'is_int($notOnOrAfter) ||
-      |       | is_null($notOnOrAfter)' (PHPCompatibility.ParameterValues.RemovedAssertStringAssertion.Found)
-  784 | ERROR | Using a string as the assertion passed to assert() is deprecated since PHP 7.2 and removed since PHP 8.0. Found: 'is_int($authnInstant) ||
-      |       | is_null($authnInstant)' (PHPCompatibility.ParameterValues.RemovedAssertStringAssertion.Found)
-  811 | ERROR | Using a string as the assertion passed to assert() is deprecated since PHP 7.2 and removed since PHP 8.0. Found: 'is_int($sessionNotOnOrAfter) ||
-      |       | is_null($sessionNotOnOrAfter)' (PHPCompatibility.ParameterValues.RemovedAssertStringAssertion.Found)
-  836 | ERROR | Using a string as the assertion passed to assert() is deprecated since PHP 7.2 and removed since PHP 8.0. Found: 'is_string($sessionIndex) ||
-      |       | is_null($sessionIndex)' (PHPCompatibility.ParameterValues.RemovedAssertStringAssertion.Found)
-  903 | ERROR | Using a string as the assertion passed to assert() is deprecated since PHP 7.2 and removed since PHP 8.0. Found: 'is_string($authnContextClassRef) ||
-      |       | is_null($authnContextClassRef)' (PHPCompatibility.ParameterValues.RemovedAssertStringAssertion.Found)
- 1030 | ERROR | Using a string as the assertion passed to assert() is deprecated since PHP 7.2 and removed since PHP 8.0. Found: 'is_string($nameFormat)'
+  727 | ERROR | Using a string as the assertion passed to assert() is
+      |       | deprecated since PHP 7.2 and removed since PHP 8.0.
+      |       | Found: 'is_int($notOnOrAfter) ||
+      |       | is_null($notOnOrAfter)'
       |       | (PHPCompatibility.ParameterValues.RemovedAssertStringAssertion.Found)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  784 | ERROR | Using a string as the assertion passed to assert() is
+      |       | deprecated since PHP 7.2 and removed since PHP 8.0.
+      |       | Found: 'is_int($authnInstant) ||
+      |       | is_null($authnInstant)'
+      |       | (PHPCompatibility.ParameterValues.RemovedAssertStringAssertion.Found)
+  811 | ERROR | Using a string as the assertion passed to assert() is
+      |       | deprecated since PHP 7.2 and removed since PHP 8.0.
+      |       | Found: 'is_int($sessionNotOnOrAfter) ||
+      |       | is_null($sessionNotOnOrAfter)'
+      |       | (PHPCompatibility.ParameterValues.RemovedAssertStringAssertion.Found)
+  836 | ERROR | Using a string as the assertion passed to assert() is
+      |       | deprecated since PHP 7.2 and removed since PHP 8.0.
+      |       | Found: 'is_string($sessionIndex) ||
+      |       | is_null($sessionIndex)'
+      |       | (PHPCompatibility.ParameterValues.RemovedAssertStringAssertion.Found)
+  903 | ERROR | Using a string as the assertion passed to assert() is
+      |       | deprecated since PHP 7.2 and removed since PHP 8.0.
+      |       | Found: 'is_string($authnContextClassRef) ||
+      |       | is_null($authnContextClassRef)'
+      |       | (PHPCompatibility.ParameterValues.RemovedAssertStringAssertion.Found)
+ 1030 | ERROR | Using a string as the assertion passed to assert() is
+      |       | deprecated since PHP 7.2 and removed since PHP 8.0.
+      |       | Found: 'is_string($nameFormat)'
+      |       | (PHPCompatibility.ParameterValues.RemovedAssertStringAssertion.Found)
+----------------------------------------------------------------------
 
 
 FILE: handler/saml/Response.php
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 FOUND 1 ERROR AFFECTING 1 LINE
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 111 | ERROR | Using "parent" inside a class without parent is deprecated since PHP 7.4 and removed since PHP 8.0
+----------------------------------------------------------------------
+ 111 | ERROR | Using "parent" inside a class without parent is
+     |       | deprecated since PHP 7.4 and removed since PHP 8.0
      |       | (PHPCompatibility.Classes.RemovedOrphanedParent.Removed)
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 FILE: helper/SAML/xmlseclibs.php
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 FOUND 1 ERROR AFFECTING 1 LINE
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 457 | ERROR | Function mdecrypt_generic() is deprecated since PHP 7.1 and removed since PHP 7.2; Use OpenSSL instead
+----------------------------------------------------------------------
+ 457 | ERROR | Function mdecrypt_generic() is deprecated since PHP
+     |       | 7.1 and removed since PHP 7.2; Use OpenSSL instead
      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.mdecrypt_genericDeprecatedRemoved)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 FILE: includes/lib/encryption.php
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 FOUND 2 ERRORS AFFECTING 2 LINES
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 40 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $text{strlen($text) - 1}
+----------------------------------------------------------------------
+ 40 | ERROR | [x] Curly brace syntax for accessing array elements and
+    |       |     string offsets has been deprecated in PHP 7.4 and
+    |       |     removed in PHP 8.0. Found: $text{strlen($text) -
+    |       |     1}
     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
- 42 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $text{strlen($text) - 1}
+ 42 | ERROR | [x] Curly brace syntax for accessing array elements and
+    |       |     string offsets has been deprecated in PHP 7.4 and
+    |       |     removed in PHP 8.0. Found: $text{strlen($text) -
+    |       |     1}
     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
