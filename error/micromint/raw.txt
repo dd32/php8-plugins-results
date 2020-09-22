@@ -1,0 +1,52 @@
+::warning::Plugin: https://wordpress.org/plugins/micromint/%0ATrac: https://plugins.trac.wordpress.org/browser/micromint/
+No syntax errors detected in micromint/micromint/exposures/micro.php
+No syntax errors detected in micromint/micromint/jquery.corner.js.php
+No syntax errors detected in micromint/micromint/microMint.admin.php
+No syntax errors detected in micromint/micromint/microMint.dashboardNew.php
+No syntax errors detected in micromint/micromint/microMint.dashboard.php
+No syntax errors detected in micromint/micromint/microMint.php
+No syntax errors detected in micromint/micromint/microMint.widgetControl.php
+No syntax errors detected in micromint/micromint/microMint.widget.php
+No syntax errors detected in micromint/micromint/pepper/chrisoconnell/microapi/api.php
+No syntax errors detected in micromint/micromint/pepper/chrisoconnell/microapi/classes/exposure.php
+
+Fatal error: Unparenthesized `a ? b : c ? d : e` is not supported. Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)` in micromint/micromint/pepper/chrisoconnell/microapi/classes/serialiser.php on line 104
+Errors parsing micromint/micromint/pepper/chrisoconnell/microapi/classes/serialiser.php
+No syntax errors detected in micromint/micromint/pepper/chrisoconnell/microapi/class.php
+No syntax errors detected in micromint/micromint/pepper/chrisoconnell/microapi/exposures/micro.php
+::error::%0Apepper/chrisoconnell/microapi/classes/serialiser.php%0A  Fatal error: Unparenthesized `a ? b : c ? d : e` is not supported.%0A      Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)`%0A      on line 104
+........[31mE[0m.[31mE[0m.. 13 / 13 (100%)
+
+
+
+[1mFILE: pepper/chrisoconnell/microapi/api.php[0m
+----------------------------------------------------------------------
+[1mFOUND 2 ERRORS AFFECTING 2 LINES[0m
+----------------------------------------------------------------------
+ 37 | [31mERROR[0m | [1mDeclaration of a PHP4 style class constructor is
+    |       | deprecated since PHP 7.0 and removed since PHP 8.0[0m
+    |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+ 93 | [31mERROR[0m | [1mFunction split() is deprecated since PHP 5.3 and
+    |       | removed since PHP 7.0; Use preg_split(), explode() or
+    |       | str_split() instead[0m
+    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.splitDeprecatedRemoved)
+----------------------------------------------------------------------
+
+
+[1mFILE: pepper/chrisoconnell/microapi/classes/serialiser.php[0m
+----------------------------------------------------------------------
+[1mFOUND 2 ERRORS AFFECTING 2 LINES[0m
+----------------------------------------------------------------------
+  25 | [31mERROR[0m | [1mDeclaration of a PHP4 style class constructor is
+     |       | deprecated since PHP 7.0 and removed since PHP 8.0[0m
+     |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+ 104 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has
+     |       | been deprecated in PHP 7.4 and removed in PHP 8.0.
+     |       | Multiple consecutive ternaries detected. Use
+     |       | parenthesis to clarify the order in which the
+     |       | operations should be executed[0m
+     |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
+----------------------------------------------------------------------
+
+Time: 175ms; Memory: 12MB
+::error::FILE: pepper/chrisoconnell/microapi/api.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A----------------------------------------------------------------------%0A 37 | ERROR | Declaration of a PHP4 style class constructor is%0A    |       | deprecated since PHP 7.0 and removed since PHP 8.0%0A    |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)%0A 93 | ERROR | Function split() is deprecated since PHP 5.3 and%0A    |       | removed since PHP 7.0; Use preg_split(), explode() or%0A    |       | str_split() instead%0A    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.splitDeprecatedRemoved)%0A----------------------------------------------------------------------%0A%0A%0AFILE: pepper/chrisoconnell/microapi/classes/serialiser.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A----------------------------------------------------------------------%0A  25 | ERROR | Declaration of a PHP4 style class constructor is%0A     |       | deprecated since PHP 7.0 and removed since PHP 8.0%0A     |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)%0A 104 | ERROR | The left-associativity of the ternary operator has%0A     |       | been deprecated in PHP 7.4 and removed in PHP 8.0.%0A     |       | Multiple consecutive ternaries detected. Use%0A     |       | parenthesis to clarify the order in which the%0A     |       | operations should be executed%0A     |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A----------------------------------------------------------------------%0A
