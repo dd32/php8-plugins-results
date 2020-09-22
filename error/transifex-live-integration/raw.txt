@@ -1,0 +1,63 @@
+::warning::Plugin: https://wordpress.org/plugins/transifex-live-integration/%0ATrac: https://plugins.trac.wordpress.org/browser/transifex-live-integration/
+No syntax errors detected in transifex-live-integration/transifex-live-integration/includes/admin/transifex-live-integration-admin.php
+No syntax errors detected in transifex-live-integration/transifex-live-integration/includes/admin/transifex-live-integration-admin-template.php
+No syntax errors detected in transifex-live-integration/transifex-live-integration/includes/admin/transifex-live-integration-admin-util.php
+No syntax errors detected in transifex-live-integration/transifex-live-integration/includes/common/plugin-debug.php
+No syntax errors detected in transifex-live-integration/transifex-live-integration/includes/common/transifex-live-integration-common.php
+No syntax errors detected in transifex-live-integration/transifex-live-integration/includes/common/transifex-live-integration-static-files-handler.php
+No syntax errors detected in transifex-live-integration/transifex-live-integration/includes/common/transifex-live-integration-validators.php
+No syntax errors detected in transifex-live-integration/transifex-live-integration/includes/index.php
+No syntax errors detected in transifex-live-integration/transifex-live-integration/includes/lib/transifex-live-integration-hreflang.php
+No syntax errors detected in transifex-live-integration/transifex-live-integration/includes/lib/transifex-live-integration-javascript.php
+No syntax errors detected in transifex-live-integration/transifex-live-integration/includes/lib/transifex-live-integration-picker.php
+No syntax errors detected in transifex-live-integration/transifex-live-integration/includes/lib/transifex-live-integration-prerender.php
+No syntax errors detected in transifex-live-integration/transifex-live-integration/includes/lib/transifex-live-integration-rewrite.php
+No syntax errors detected in transifex-live-integration/transifex-live-integration/includes/lib/transifex-live-integration-subdirectory.php
+No syntax errors detected in transifex-live-integration/transifex-live-integration/includes/lib/transifex-live-integration-subdomain.php
+No syntax errors detected in transifex-live-integration/transifex-live-integration/includes/lib/transifex-live-integration-wp-services.php
+No syntax errors detected in transifex-live-integration/transifex-live-integration/includes/override/transifex-live-integration-generate-rewrite-rules.php
+No syntax errors detected in transifex-live-integration/transifex-live-integration/includes/transifex-live-integration-defaults.php
+No syntax errors detected in transifex-live-integration/transifex-live-integration/includes/transifex-live-integration-static-factory.php
+
+Fatal error: Unparenthesized `a ? b : c ? d : e` is not supported. Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)` in transifex-live-integration/transifex-live-integration/includes/transifex-live-integration-util.php on line 94
+Errors parsing transifex-live-integration/transifex-live-integration/includes/transifex-live-integration-util.php
+No syntax errors detected in transifex-live-integration/transifex-live-integration/index.php
+No syntax errors detected in transifex-live-integration/transifex-live-integration/transifex-live-integration-main.php
+No syntax errors detected in transifex-live-integration/transifex-live-integration/transifex-live-integration.php
+No syntax errors detected in transifex-live-integration/transifex-live-integration/uninstall.php
+::error::%0Aincludes/transifex-live-integration-util.php%0A  Fatal error: Unparenthesized `a ? b : c ? d : e` is not supported.%0A      Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)`%0A      on line 94
+........[31mE[0m..........[31mE[0m.... 24 / 24 (100%)
+
+
+
+[1mFILE: includes/lib/transifex-live-integration-hreflang.php[0m
+----------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 108 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse
+     |       | order to implode has been deprecated since PHP 7.4 and
+     |       | is removed since PHP 8.0; $glue should be the first
+     |       | parameter and $pieces the second[0m
+     |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
+----------------------------------------------------------------------
+
+
+[1mFILE: includes/transifex-live-integration-util.php[0m
+----------------------------------------------------------------------
+[1mFOUND 2 ERRORS AFFECTING 2 LINES[0m
+----------------------------------------------------------------------
+  94 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has
+     |       | been deprecated in PHP 7.4 and removed in PHP 8.0.
+     |       | Multiple consecutive ternaries detected. Use
+     |       | parenthesis to clarify the order in which the
+     |       | operations should be executed[0m
+     |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
+ 120 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse
+     |       | order to implode has been deprecated since PHP 7.4 and
+     |       | is removed since PHP 8.0; $glue should be the first
+     |       | parameter and $pieces the second[0m
+     |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
+----------------------------------------------------------------------
+
+Time: 493ms; Memory: 12MB
+::error::FILE: includes/lib/transifex-live-integration-hreflang.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 108 | ERROR | Passing the $glue and $pieces parameters in reverse%0A     |       | order to implode has been deprecated since PHP 7.4 and%0A     |       | is removed since PHP 8.0; $glue should be the first%0A     |       | parameter and $pieces the second%0A     |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A----------------------------------------------------------------------%0A%0A%0AFILE: includes/transifex-live-integration-util.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A----------------------------------------------------------------------%0A  94 | ERROR | The left-associativity of the ternary operator has%0A     |       | been deprecated in PHP 7.4 and removed in PHP 8.0.%0A     |       | Multiple consecutive ternaries detected. Use%0A     |       | parenthesis to clarify the order in which the%0A     |       | operations should be executed%0A     |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A 120 | ERROR | Passing the $glue and $pieces parameters in reverse%0A     |       | order to implode has been deprecated since PHP 7.4 and%0A     |       | is removed since PHP 8.0; $glue should be the first%0A     |       | parameter and $pieces the second%0A     |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A----------------------------------------------------------------------%0A
