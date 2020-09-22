@@ -1,0 +1,40 @@
+
+hercules-framework/helpers/handlebars/src/Handlebars/Loader/FilesystemLoader.php
+  Fatal error: Cannot use Handlebars\String as String because 'String' is a special class name on line 27
+
+hercules-framework/helpers/handlebars/src/Handlebars/Loader/StringLoader.php
+  Fatal error: Cannot use Handlebars\String as String because 'String' is a special class name on line 22
+
+hercules-framework/helpers/handlebars/src/Handlebars/String.php
+  Fatal error: Cannot use 'String' as class name as it is reserved on line 32
+
+hercules-framework/helpers/handlebars/src/Handlebars/Tokenizer.php
+  Warning: "continue" targeting switch is equivalent to "break".
+      Did you mean to use "continue 2"?
+      on line 167
+  Warning: "continue" targeting switch is equivalent to "break".
+      Did you mean to use "continue 2"?
+      on line 213
+
+hercules-framework/helpers/string/string.php
+  Fatal error: Cannot use 'String' as class name as it is reserved on line 5
+FILE: hercules-framework/helpers/handlebars/src/Handlebars/String.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 32 | ERROR | 'string' is a reserved keyword as of PHP version 7.0
+    |       | and should not be used to name a class, interface or
+    |       | trait or as part of a namespace (T_CLASS)
+    |       | (PHPCompatibility.Keywords.ForbiddenNamesAsDeclared.stringFound)
+----------------------------------------------------------------------
+
+
+FILE: hercules-framework/helpers/string/string.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 5 | ERROR | 'string' is a reserved keyword as of PHP version 7.0 and
+   |       | should not be used to name a class, interface or trait
+   |       | or as part of a namespace (T_CLASS)
+   |       | (PHPCompatibility.Keywords.ForbiddenNamesAsDeclared.stringFound)
+----------------------------------------------------------------------
