@@ -1,0 +1,47 @@
+
+vendor/phpxmlrpc/phpxmlrpc/debugger/action.php
+  Fatal error: Unparenthesized `a ? b : c ? d : e` is not supported.
+      Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)`
+      on line 478
+FILE: vendor/phpxmlrpc/phpxmlrpc/debugger/action.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 478 | ERROR | The left-associativity of the ternary operator has
+     |       | been deprecated in PHP 7.4 and removed in PHP 8.0.
+     |       | Multiple consecutive ternaries detected. Use
+     |       | parenthesis to clarify the order in which the
+     |       | operations should be executed
+     |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
+----------------------------------------------------------------------
+
+
+FILE: vendor/phpxmlrpc/phpxmlrpc/debugger/common.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 14 | ERROR | Function get_magic_quotes_gpc() is deprecated since PHP
+    |       | 7.4 and removed since PHP 8.0
+    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_gpcDeprecatedRemoved)
+----------------------------------------------------------------------
+
+
+FILE: vendor/phpxmlrpc/phpxmlrpc/pakefile.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 125 | ERROR | INI directive 'xsl.security_prefs' is removed since
+     |       | PHP 7.0
+     |       | (PHPCompatibility.IniDirectives.RemovedIniDirectives.xsl_security_prefsRemoved)
+----------------------------------------------------------------------
+
+
+FILE: vendor/phpxmlrpc/phpxmlrpc/src/Value.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 397 | ERROR | Function each() is deprecated since PHP 7.2 and
+     |       | removed since PHP 8.0; Use a foreach loop or
+     |       | ArrayIterator instead
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)
+----------------------------------------------------------------------
