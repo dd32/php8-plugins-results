@@ -3,34 +3,44 @@ No syntax errors detected in mj-contact-us/mj-contact-us/files/captcha_code_file
 No syntax errors detected in mj-contact-us/mj-contact-us/files/db.php
 No syntax errors detected in mj-contact-us/mj-contact-us/files/file.php
 No syntax errors detected in mj-contact-us/mj-contact-us/files/includes.php
+
+Fatal error: Unparenthesized `a ? b : c ? d : e` is not supported. Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)` in mj-contact-us/mj-contact-us/files/mj-class-functions.php on line 633
 Errors parsing mj-contact-us/mj-contact-us/files/mj-class-functions.php
 No syntax errors detected in mj-contact-us/mj-contact-us/files/mj-class-html.php
 No syntax errors detected in mj-contact-us/mj-contact-us/files/mj-class-process.php
 No syntax errors detected in mj-contact-us/mj-contact-us/files/simple-php-captcha.php
 No syntax errors detected in mj-contact-us/mj-contact-us/index.php
-::error::%0Afiles/mj-class-functions.php
+::error::%0Afiles/mj-class-functions.php%0A  Fatal error: Unparenthesized `a ? b : c ? d : e` is not supported.%0A      Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)`%0A      on line 633
 [31mE[0m...[31mE[0m.... 9 / 9 (100%)
 
 
 
 [1mFILE: files/captcha_code_file.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 2 ERRORS AFFECTING 2 LINES[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 103 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: "0x142864"[0m
+----------------------------------------------------------------------
+ 103 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+     |       | inconsistent prior to PHP 7 and support has been
+     |       | removed in PHP 7. Found: "0x142864"[0m
      |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
- 105 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: "0x142864"[0m
+ 105 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+     |       | inconsistent prior to PHP 7 and support has been
+     |       | removed in PHP 7. Found: "0x142864"[0m
      |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 [1mFILE: files/mj-class-functions.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 633 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has been deprecated in PHP 7.4 and removed in PHP 8.0. Multiple consecutive ternaries detected. Use parenthesis to
-     |       | clarify the order in which the operations should be executed[0m (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
+ 633 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has
+     |       | been deprecated in PHP 7.4 and removed in PHP 8.0.
+     |       | Multiple consecutive ternaries detected. Use
+     |       | parenthesis to clarify the order in which the
+     |       | operations should be executed[0m
+     |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
+----------------------------------------------------------------------
 
-Time: 357ms; Memory: 16MB
-::error::FILE: files/captcha_code_file.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 103 | ERROR | The behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: "0x142864"%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 105 | ERROR | The behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: "0x142864"%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: files/mj-class-functions.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 633 | ERROR | The left-associativity of the ternary operator has been deprecated in PHP 7.4 and removed in PHP 8.0. Multiple consecutive ternaries detected. Use parenthesis to%0A     |       | clarify the order in which the operations should be executed (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
+Time: 325ms; Memory: 16MB
+::error::FILE: files/captcha_code_file.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A----------------------------------------------------------------------%0A 103 | ERROR | The behaviour of hexadecimal numeric strings was%0A     |       | inconsistent prior to PHP 7 and support has been%0A     |       | removed in PHP 7. Found: "0x142864"%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 105 | ERROR | The behaviour of hexadecimal numeric strings was%0A     |       | inconsistent prior to PHP 7 and support has been%0A     |       | removed in PHP 7. Found: "0x142864"%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A----------------------------------------------------------------------%0A%0A%0AFILE: files/mj-class-functions.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 633 | ERROR | The left-associativity of the ternary operator has%0A     |       | been deprecated in PHP 7.4 and removed in PHP 8.0.%0A     |       | Multiple consecutive ternaries detected. Use%0A     |       | parenthesis to clarify the order in which the%0A     |       | operations should be executed%0A     |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A----------------------------------------------------------------------%0A
