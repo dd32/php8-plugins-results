@@ -350,6 +350,8 @@ No syntax errors detected in defender-security/defender-security/vendor/php_code
 No syntax errors detected in defender-security/defender-security/vendor/php_codesniffer-3.4.0/src/Exceptions/RuntimeException.php
 No syntax errors detected in defender-security/defender-security/vendor/php_codesniffer-3.4.0/src/Exceptions/TokenizerException.php
 No syntax errors detected in defender-security/defender-security/vendor/php_codesniffer-3.4.0/src/Tokenizers/Comment.php
+
+Fatal error: Array and string offset access syntax with curly braces is no longer supported in defender-security/defender-security/vendor/php_codesniffer-3.4.0/src/Tokenizers/CSS.php on line 180
 Errors parsing defender-security/defender-security/vendor/php_codesniffer-3.4.0/src/Tokenizers/CSS.php
 No syntax errors detected in defender-security/defender-security/vendor/php_codesniffer-3.4.0/src/Tokenizers/JS.php
 No syntax errors detected in defender-security/defender-security/vendor/php_codesniffer-3.4.0/src/Tokenizers/PHP.php
@@ -358,8 +360,7 @@ No syntax errors detected in defender-security/defender-security/vendor/php_code
 No syntax errors detected in defender-security/defender-security/vendor/php_codesniffer-3.4.0/src/Util/Tokens.php
 No syntax errors detected in defender-security/defender-security/vendor/phpqrcode/phpqrcode.php
 No syntax errors detected in defender-security/defender-security/wp-defender.php
-::error::%0Avendor/php_codesniffer-3.4.0/src/Tokenizers/CSS.php
-No syntax errors detected in defender-security/defender-security/wp-defender.php
+::error::%0Avendor/php_codesniffer-3.4.0/src/Tokenizers/CSS.php%0A  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 180
 ...[31mE[0m........................................................  60 / 359 (17%)
 ............................................................ 120 / 359 (33%)
 ............................................................ 180 / 359 (50%)
@@ -370,36 +371,48 @@ No syntax errors detected in defender-security/defender-security/wp-defender.php
 
 
 [1mFILE: app/behavior/utils.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 1226 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse order to implode has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first
-      |       | parameter and $pieces the second[0m (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
+ 1226 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse
+      |       | order to implode has been deprecated since PHP 7.4
+      |       | and is removed since PHP 8.0; $glue should be the
+      |       | first parameter and $pieces the second[0m
+      |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
+----------------------------------------------------------------------
 
 
 [1mFILE: vendor/hammer/vendor/wixel/gump/gump.class.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 316 | [31mERROR[0m | [1mFunction get_magic_quotes_gpc() is deprecated since PHP 7.4 and removed since PHP 8.0[0m
+----------------------------------------------------------------------
+ 316 | [31mERROR[0m | [1mFunction get_magic_quotes_gpc() is deprecated since
+     |       | PHP 7.4 and removed since PHP 8.0[0m
      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_gpcDeprecatedRemoved)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 [1mFILE: vendor/php_codesniffer-3.4.0/src/Tokenizers/CSS.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 3 ERRORS AFFECTING 3 LINES[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 180 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $token['content']{0}[0m
+----------------------------------------------------------------------
+ 180 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found:
+     |       |     $token['content']{0}[0m
      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
- 187 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $content{0}[0m
+ 187 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $content{0}[0m
      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
- 203 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $token['content']{0}[0m
+ 203 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found:
+     |       |     $token['content']{0}[0m
      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mPHPCBF CAN FIX THE 3 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
-Time: 7.89 secs; Memory: 106.01MB
-::error::FILE: app/behavior/utils.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 1226 | ERROR | Passing the $glue and $pieces parameters in reverse order to implode has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first%0A      |       | parameter and $pieces the second (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: vendor/hammer/vendor/wixel/gump/gump.class.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 316 | ERROR | Function get_magic_quotes_gpc() is deprecated since PHP 7.4 and removed since PHP 8.0%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_gpcDeprecatedRemoved)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: vendor/php_codesniffer-3.4.0/src/Tokenizers/CSS.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 3 ERRORS AFFECTING 3 LINES%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 180 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $token['content']{0}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 187 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $content{0}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 203 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $token['content']{0}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0APHPCBF CAN FIX THE 3 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
+Time: 8.38 secs; Memory: 106.01MB
+::error::FILE: app/behavior/utils.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 1226 | ERROR | Passing the $glue and $pieces parameters in reverse%0A      |       | order to implode has been deprecated since PHP 7.4%0A      |       | and is removed since PHP 8.0; $glue should be the%0A      |       | first parameter and $pieces the second%0A      |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A----------------------------------------------------------------------%0A%0A%0AFILE: vendor/hammer/vendor/wixel/gump/gump.class.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 316 | ERROR | Function get_magic_quotes_gpc() is deprecated since%0A     |       | PHP 7.4 and removed since PHP 8.0%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_gpcDeprecatedRemoved)%0A----------------------------------------------------------------------%0A%0A%0AFILE: vendor/php_codesniffer-3.4.0/src/Tokenizers/CSS.php%0A----------------------------------------------------------------------%0AFOUND 3 ERRORS AFFECTING 3 LINES%0A----------------------------------------------------------------------%0A 180 | ERROR | [x] Curly brace syntax for accessing array elements%0A     |       |     and string offsets has been deprecated in PHP 7.4%0A     |       |     and removed in PHP 8.0. Found:%0A     |       |     $token['content']{0}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 187 | ERROR | [x] Curly brace syntax for accessing array elements%0A     |       |     and string offsets has been deprecated in PHP 7.4%0A     |       |     and removed in PHP 8.0. Found: $content{0}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 203 | ERROR | [x] Curly brace syntax for accessing array elements%0A     |       |     and string offsets has been deprecated in PHP 7.4%0A     |       |     and removed in PHP 8.0. Found:%0A     |       |     $token['content']{0}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A----------------------------------------------------------------------%0APHPCBF CAN FIX THE 3 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A----------------------------------------------------------------------%0A
