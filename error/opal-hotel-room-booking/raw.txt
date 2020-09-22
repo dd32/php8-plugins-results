@@ -69,6 +69,8 @@ No syntax errors detected in opal-hotel-room-booking/opal-hotel-room-booking/inc
 No syntax errors detected in opal-hotel-room-booking/opal-hotel-room-booking/includes/gateways/paypal/inc/class-opalhotel-paypal-request.php
 No syntax errors detected in opal-hotel-room-booking/opal-hotel-room-booking/includes/gateways/paypal/inc/class-opalhotel-paypal-response.php
 No syntax errors detected in opal-hotel-room-booking/opal-hotel-room-booking/includes/gateways/stripe/class-opalhotel-gateway-stripe.php
+
+Fatal error: Array and string offset access syntax with curly braces is no longer supported in opal-hotel-room-booking/opal-hotel-room-booking/includes/gateways/stripe/CreditCard.php on line 209
 Errors parsing opal-hotel-room-booking/opal-hotel-room-booking/includes/gateways/stripe/CreditCard.php
 No syntax errors detected in opal-hotel-room-booking/opal-hotel-room-booking/includes/hotel/class-opalhotel-hotel.php
 No syntax errors detected in opal-hotel-room-booking/opal-hotel-room-booking/includes/hotel/opalhotel-hotel-functions.php
@@ -182,6 +184,8 @@ No syntax errors detected in opal-hotel-room-booking/opal-hotel-room-booking/inc
 No syntax errors detected in opal-hotel-room-booking/opal-hotel-room-booking/includes/vendors/cmb2/index.php
 No syntax errors detected in opal-hotel-room-booking/opal-hotel-room-booking/includes/vendors/cmb2/init.php
 No syntax errors detected in opal-hotel-room-booking/opal-hotel-room-booking/includes/vendors/cmb2/js/index.php
+
+Fatal error: Array and string offset access syntax with curly braces is no longer supported in opal-hotel-room-booking/opal-hotel-room-booking/includes/vendors/CreditCard.php on line 209
 Errors parsing opal-hotel-room-booking/opal-hotel-room-booking/includes/vendors/CreditCard.php
 No syntax errors detected in opal-hotel-room-booking/opal-hotel-room-booking/includes/widgets/class-opalhotel-widget-check-available.php
 No syntax errors detected in opal-hotel-room-booking/opal-hotel-room-booking/includes/widgets/class-opalhotel-widget-form-hotel-available.php
@@ -362,7 +366,7 @@ No syntax errors detected in opal-hotel-room-booking/opal-hotel-room-booking/tem
 No syntax errors detected in opal-hotel-room-booking/opal-hotel-room-booking/templates/taxonomy-hotel_inc.php
 No syntax errors detected in opal-hotel-room-booking/opal-hotel-room-booking/templates/taxonomy-room_cat.php
 No syntax errors detected in opal-hotel-room-booking/opal-hotel-room-booking/templates/taxonomy-room_tag.php
-::error::%0Aincludes/gateways/stripe/CreditCard.php%0A%0Aincludes/vendors/CreditCard.php
+::error::%0Aincludes/gateways/stripe/CreditCard.php%0A  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 209%0A%0Aincludes/vendors/CreditCard.php%0A  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 209
 ............................................................  60 / 363 (17%)
 ..........[32mE[0m................................................. 120 / 363 (33%)
 ............................................................ 180 / 363 (50%)
@@ -374,29 +378,37 @@ No syntax errors detected in opal-hotel-room-booking/opal-hotel-room-booking/tem
 
 
 [1mFILE: includes/gateways/stripe/CreditCard.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 2 ERRORS AFFECTING 2 LINES[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 209 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $number{$i-1}[0m
+----------------------------------------------------------------------
+ 209 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $number{$i-1}[0m
      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
- 214 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $number{$i-1}[0m
+ 214 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $number{$i-1}[0m
      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mPHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 [1mFILE: includes/vendors/CreditCard.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 2 ERRORS AFFECTING 2 LINES[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 209 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $number{$i-1}[0m
+----------------------------------------------------------------------
+ 209 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $number{$i-1}[0m
      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
- 214 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $number{$i-1}[0m
+ 214 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $number{$i-1}[0m
      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mPHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
-Time: 5.76 secs; Memory: 24MB
-::error::FILE: includes/gateways/stripe/CreditCard.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 209 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $number{$i-1}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 214 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $number{$i-1}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0APHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: includes/vendors/CreditCard.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 209 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $number{$i-1}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 214 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $number{$i-1}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0APHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
+Time: 5.19 secs; Memory: 24MB
+::error::FILE: includes/gateways/stripe/CreditCard.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A----------------------------------------------------------------------%0A 209 | ERROR | [x] Curly brace syntax for accessing array elements%0A     |       |     and string offsets has been deprecated in PHP 7.4%0A     |       |     and removed in PHP 8.0. Found: $number{$i-1}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 214 | ERROR | [x] Curly brace syntax for accessing array elements%0A     |       |     and string offsets has been deprecated in PHP 7.4%0A     |       |     and removed in PHP 8.0. Found: $number{$i-1}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A----------------------------------------------------------------------%0APHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A----------------------------------------------------------------------%0A%0A%0AFILE: includes/vendors/CreditCard.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A----------------------------------------------------------------------%0A 209 | ERROR | [x] Curly brace syntax for accessing array elements%0A     |       |     and string offsets has been deprecated in PHP 7.4%0A     |       |     and removed in PHP 8.0. Found: $number{$i-1}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 214 | ERROR | [x] Curly brace syntax for accessing array elements%0A     |       |     and string offsets has been deprecated in PHP 7.4%0A     |       |     and removed in PHP 8.0. Found: $number{$i-1}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A----------------------------------------------------------------------%0APHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A----------------------------------------------------------------------%0A

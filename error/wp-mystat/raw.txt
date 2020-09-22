@@ -46,14 +46,19 @@ No syntax errors detected in wp-mystat/wp-mystat/report/fb_settings_a0e1c952-eff
 
 
 [1mFILE: driver/wordpress.class.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 2 ERRORS AFFECTING 2 LINES[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 542 | [31mERROR[0m | [1m"$this" can no longer be used in a plain function or method since PHP 7.1.[0m (PHPCompatibility.Variables.ForbiddenThisUseContexts.OutsideObjectContext)
- 969 | [31mERROR[0m | [1mSelf-closing XHTML tags are ignored. Only non-self-closing tags should be used in the strip_tags() $allowable_tags parameter since PHP 5.3.4. Found:
+----------------------------------------------------------------------
+ 542 | [31mERROR[0m | [1m"$this" can no longer be used in a plain function or
+     |       | method since PHP 7.1.[0m
+     |       | (PHPCompatibility.Variables.ForbiddenThisUseContexts.OutsideObjectContext)
+ 969 | [31mERROR[0m | [1mSelf-closing XHTML tags are ignored. Only
+     |       | non-self-closing tags should be used in the
+     |       | strip_tags() $allowable_tags parameter since PHP
+     |       | 5.3.4. Found:
      |       | '<br/><b><i><a><div><p><img><span><strong><em><table><td><th><tr><h1><h2><h3><h4><button>'[0m
      |       | (PHPCompatibility.ParameterValues.ForbiddenStripTagsSelfClosingXHTML.Found)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
-Time: 2.61 secs; Memory: 22MB
-::error::FILE: driver/wordpress.class.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 542 | ERROR | "$this" can no longer be used in a plain function or method since PHP 7.1. (PHPCompatibility.Variables.ForbiddenThisUseContexts.OutsideObjectContext)%0A 969 | ERROR | Self-closing XHTML tags are ignored. Only non-self-closing tags should be used in the strip_tags() $allowable_tags parameter since PHP 5.3.4. Found:%0A     |       | '<br/><b><i><a><div><p><img><span><strong><em><table><td><th><tr><h1><h2><h3><h4><button>'%0A     |       | (PHPCompatibility.ParameterValues.ForbiddenStripTagsSelfClosingXHTML.Found)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
+Time: 2.5 secs; Memory: 22MB
+::error::FILE: driver/wordpress.class.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A----------------------------------------------------------------------%0A 542 | ERROR | "$this" can no longer be used in a plain function or%0A     |       | method since PHP 7.1.%0A     |       | (PHPCompatibility.Variables.ForbiddenThisUseContexts.OutsideObjectContext)%0A 969 | ERROR | Self-closing XHTML tags are ignored. Only%0A     |       | non-self-closing tags should be used in the%0A     |       | strip_tags() $allowable_tags parameter since PHP%0A     |       | 5.3.4. Found:%0A     |       | '<br/><b><i><a><div><p><img><span><strong><em><table><td><th><tr><h1><h2><h3><h4><button>'%0A     |       | (PHPCompatibility.ParameterValues.ForbiddenStripTagsSelfClosingXHTML.Found)%0A----------------------------------------------------------------------%0A
