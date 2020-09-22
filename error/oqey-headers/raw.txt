@@ -1,0 +1,36 @@
+::warning::Plugin: https://wordpress.org/plugins/oqey-headers/%0ATrac: https://plugins.trac.wordpress.org/browser/oqey-headers/
+
+Fatal error: Array and string offset access syntax with curly braces is no longer supported in oqey-headers/oqey-headers/bcupload.php on line 64
+Errors parsing oqey-headers/oqey-headers/bcupload.php
+No syntax errors detected in oqey-headers/oqey-headers/getheaderimages.php
+No syntax errors detected in oqey-headers/oqey-headers/oqey_header_functions.php
+No syntax errors detected in oqey-headers/oqey-headers/oqey_headers.php
+::error::%0Abcupload.php%0A  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 64
+[32mE[0m... 4 / 4 (100%)
+
+
+
+[1mFILE: bcupload.php[0m
+----------------------------------------------------------------------
+[1mFOUND 3 ERRORS AFFECTING 3 LINES[0m
+----------------------------------------------------------------------
+ 64 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and
+    |       |     string offsets has been deprecated in PHP 7.4 and
+    |       |     removed in PHP 8.0. Found: $chars{rand(0,
+    |       |     $chars_length)}[0m
+    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 66 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and
+    |       |     string offsets has been deprecated in PHP 7.4 and
+    |       |     removed in PHP 8.0. Found: $chars{rand(0,
+    |       |     $chars_length)}[0m
+    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 67 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and
+    |       |     string offsets has been deprecated in PHP 7.4 and
+    |       |     removed in PHP 8.0. Found: $string{$i - 1}[0m
+    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+----------------------------------------------------------------------
+[1mPHPCBF CAN FIX THE 3 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
+----------------------------------------------------------------------
+
+Time: 91ms; Memory: 10MB
+::error::FILE: bcupload.php%0A----------------------------------------------------------------------%0AFOUND 3 ERRORS AFFECTING 3 LINES%0A----------------------------------------------------------------------%0A 64 | ERROR | [x] Curly brace syntax for accessing array elements and%0A    |       |     string offsets has been deprecated in PHP 7.4 and%0A    |       |     removed in PHP 8.0. Found: $chars{rand(0,%0A    |       |     $chars_length)}%0A    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 66 | ERROR | [x] Curly brace syntax for accessing array elements and%0A    |       |     string offsets has been deprecated in PHP 7.4 and%0A    |       |     removed in PHP 8.0. Found: $chars{rand(0,%0A    |       |     $chars_length)}%0A    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 67 | ERROR | [x] Curly brace syntax for accessing array elements and%0A    |       |     string offsets has been deprecated in PHP 7.4 and%0A    |       |     removed in PHP 8.0. Found: $string{$i - 1}%0A    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A----------------------------------------------------------------------%0APHPCBF CAN FIX THE 3 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A----------------------------------------------------------------------%0A
