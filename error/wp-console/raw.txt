@@ -477,6 +477,8 @@ No syntax errors detected in wp-console/wp-console/vendor/psy/psysh/src/Executio
 No syntax errors detected in wp-console/wp-console/vendor/psy/psysh/src/Formatter/CodeFormatter.php
 No syntax errors detected in wp-console/wp-console/vendor/psy/psysh/src/Formatter/DocblockFormatter.php
 No syntax errors detected in wp-console/wp-console/vendor/psy/psysh/src/Formatter/Formatter.php
+
+Fatal error: Unparenthesized `a ? b : c ? d : e` is not supported. Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)` in wp-console/wp-console/vendor/psy/psysh/src/Formatter/SignatureFormatter.php on line 290
 Errors parsing wp-console/wp-console/vendor/psy/psysh/src/Formatter/SignatureFormatter.php
 No syntax errors detected in wp-console/wp-console/vendor/psy/psysh/src/functions.php
 No syntax errors detected in wp-console/wp-console/vendor/psy/psysh/src/Input/CodeArgument.php
@@ -825,7 +827,7 @@ No syntax errors detected in wp-console/wp-console/vendor/symfony/var-dumper/Tes
 No syntax errors detected in wp-console/wp-console/vendor/symfony/var-dumper/Tests/Test/VarDumperTestTraitTest.php
 No syntax errors detected in wp-console/wp-console/vendor/symfony/var-dumper/VarDumper.php
 No syntax errors detected in wp-console/wp-console/wp-console.php
-::error::%0Avendor/psy/psysh/src/Formatter/SignatureFormatter.php
+::error::%0Avendor/psy/psysh/src/Formatter/SignatureFormatter.php%0A  Fatal error: Unparenthesized `a ? b : c ? d : e` is not supported.%0A      Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)`%0A      on line 290
 ............................................................  60 / 821 (7%)
 ............................................................ 120 / 821 (15%)
 ............................................................ 180 / 821 (22%)
@@ -844,23 +846,31 @@ No syntax errors detected in wp-console/wp-console/wp-console.php
 
 
 [1mFILE: vendor/nikic/php-parser/test/PhpParser/ParserTest.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 2 ERRORS AFFECTING 2 LINES[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 138 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0xf'[0m
+----------------------------------------------------------------------
+ 138 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+     |       | inconsistent prior to PHP 7 and support has been
+     |       | removed in PHP 7. Found: '0xf'[0m
      |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
- 139 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0XF'[0m
+ 139 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+     |       | inconsistent prior to PHP 7 and support has been
+     |       | removed in PHP 7. Found: '0XF'[0m
      |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 [1mFILE: vendor/psy/psysh/src/Formatter/SignatureFormatter.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 290 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has been deprecated in PHP 7.4 and removed in PHP 8.0. Multiple consecutive ternaries detected. Use parenthesis to
-     |       | clarify the order in which the operations should be executed[0m (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
+ 290 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has
+     |       | been deprecated in PHP 7.4 and removed in PHP 8.0.
+     |       | Multiple consecutive ternaries detected. Use
+     |       | parenthesis to clarify the order in which the
+     |       | operations should be executed[0m
+     |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
+----------------------------------------------------------------------
 
-Time: 11.43 secs; Memory: 68.01MB
-::error::FILE: vendor/nikic/php-parser/test/PhpParser/ParserTest.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 138 | ERROR | The behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0xf'%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 139 | ERROR | The behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0XF'%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: vendor/psy/psysh/src/Formatter/SignatureFormatter.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 290 | ERROR | The left-associativity of the ternary operator has been deprecated in PHP 7.4 and removed in PHP 8.0. Multiple consecutive ternaries detected. Use parenthesis to%0A     |       | clarify the order in which the operations should be executed (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
+Time: 11.05 secs; Memory: 68.01MB
+::error::FILE: vendor/nikic/php-parser/test/PhpParser/ParserTest.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A----------------------------------------------------------------------%0A 138 | ERROR | The behaviour of hexadecimal numeric strings was%0A     |       | inconsistent prior to PHP 7 and support has been%0A     |       | removed in PHP 7. Found: '0xf'%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 139 | ERROR | The behaviour of hexadecimal numeric strings was%0A     |       | inconsistent prior to PHP 7 and support has been%0A     |       | removed in PHP 7. Found: '0XF'%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A----------------------------------------------------------------------%0A%0A%0AFILE: vendor/psy/psysh/src/Formatter/SignatureFormatter.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 290 | ERROR | The left-associativity of the ternary operator has%0A     |       | been deprecated in PHP 7.4 and removed in PHP 8.0.%0A     |       | Multiple consecutive ternaries detected. Use%0A     |       | parenthesis to clarify the order in which the%0A     |       | operations should be executed%0A     |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A----------------------------------------------------------------------%0A
