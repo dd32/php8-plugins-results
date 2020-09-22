@@ -1,0 +1,567 @@
+
+vendor/ruflin/elastica/lib/Elastica/Filter/Bool.php
+  Fatal error: Cannot use 'Bool' as class name as it is reserved on line 17
+
+vendor/ruflin/elastica/lib/Elastica/Query/Bool.php
+  Fatal error: Cannot use 'Bool' as class name as it is reserved on line 17
+
+vendor/ruflin/elastica/lib/Elastica/Query/Match.php
+  Parse error: syntax error, unexpected token "match", expecting identifier on line 13
+
+vendor/ruflin/elastica/lib/Elastica/Query/MatchPhrase.php
+  Parse error: syntax error, unexpected token "match" on line 12
+
+vendor/ruflin/elastica/lib/Elastica/Query/MatchPhrasePrefix.php
+  Parse error: syntax error, unexpected token "match" on line 12
+
+vendor/ruflin/elastica/lib/Elastica/QueryBuilder/DSL/Query.php
+  Parse error: syntax error, unexpected token "match" on line 67
+
+vendor/ruflin/elastica/lib/Elastica/Transport/Null.php
+  Fatal error: Cannot use 'Null' as class name as it is reserved on line 12
+
+vendor/ruflin/elastica/test/lib/Elastica/Test/Query/HasChildTest.php
+  Parse error: syntax error, unexpected token "match" on line 68
+
+vendor/ruflin/elastica/test/lib/Elastica/Test/Query/HasParentTest.php
+  Parse error: syntax error, unexpected token "match" on line 98
+
+vendor/ruflin/elastica/test/lib/Elastica/Test/Query/MatchTest.php
+  Parse error: syntax error, unexpected token "match" on line 30
+
+vendor/ruflin/elastica/test/lib/Elastica/Test/Query/PostFilterTest.php
+  Parse error: syntax error, unexpected token "match" on line 117
+
+vendor/ruflin/elastica/test/lib/Elastica/Test/Query/RescoreTest.php
+  Parse error: syntax error, unexpected token "match" on line 19
+
+vendor/ruflin/elastica/test/lib/Elastica/Test/QueryBuilder/DSL/FilterTest.php
+  Parse error: syntax error, unexpected token "match" on line 42
+
+vendor/ruflin/elastica/test/lib/Elastica/Test/QueryBuilder/DSL/QueryTest.php
+  Parse error: syntax error, unexpected token "match" on line 98
+
+vendor/squizlabs/php_codesniffer/CodeSniffer/CLI.php
+  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 435
+
+vendor/squizlabs/php_codesniffer/CodeSniffer/File.php
+  Warning: "continue" targeting switch is equivalent to "break".
+      Did you mean to use "continue 2"?
+      on line 1760
+  Warning: "continue" targeting switch is equivalent to "break".
+      Did you mean to use "continue 2"?
+      on line 2843
+
+vendor/squizlabs/php_codesniffer/CodeSniffer/Standards/MySource/Sniffs/Channels/DisallowSelfActionsSniff.php
+  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 104
+
+vendor/squizlabs/php_codesniffer/CodeSniffer/Standards/MySource/Sniffs/CSS/BrowserSpecificStylesSniff.php
+  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 92
+
+vendor/squizlabs/php_codesniffer/CodeSniffer/Standards/PEAR/Sniffs/Commenting/FileCommentSniff.php
+  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 390
+
+vendor/squizlabs/php_codesniffer/CodeSniffer/Standards/PEAR/Sniffs/Commenting/InlineCommentSniff.php
+  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 59
+
+vendor/squizlabs/php_codesniffer/CodeSniffer/Standards/PEAR/Sniffs/NamingConventions/ValidClassNameSniff.php
+  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 79
+
+vendor/squizlabs/php_codesniffer/CodeSniffer/Standards/PEAR/Sniffs/NamingConventions/ValidFunctionNameSniff.php
+  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 133
+
+vendor/squizlabs/php_codesniffer/CodeSniffer/Standards/PEAR/Sniffs/NamingConventions/ValidVariableNameSniff.php
+  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 66
+
+vendor/squizlabs/php_codesniffer/CodeSniffer/Standards/Squiz/Sniffs/Commenting/FunctionCommentSniff.php
+  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 212
+
+vendor/squizlabs/php_codesniffer/CodeSniffer/Standards/Squiz/Sniffs/Commenting/InlineCommentSniff.php
+  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 141
+
+vendor/squizlabs/php_codesniffer/CodeSniffer/Standards/Squiz/Sniffs/CSS/ColourDefinitionSniff.php
+  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 84
+
+vendor/squizlabs/php_codesniffer/CodeSniffer/Standards/Squiz/Sniffs/CSS/OpacitySniff.php
+  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 89
+
+vendor/squizlabs/php_codesniffer/CodeSniffer/Tokenizers/CSS.php
+  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 177
+
+vendor/squizlabs/php_codesniffer/CodeSniffer.php
+  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 1995
+
+vendor/wp-coding-standards/wpcs/WordPress/Sniffs/NamingConventions/ValidFunctionNameSniff.php
+  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 122
+FILE: vendor/ruflin/elastica/lib/Elastica/Filter/Bool.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 17 | ERROR | 'bool' is a reserved keyword as of PHP version 7.0 and
+    |       | should not be used to name a class, interface or trait
+    |       | or as part of a namespace (T_CLASS)
+    |       | (PHPCompatibility.Keywords.ForbiddenNamesAsDeclared.boolFound)
+----------------------------------------------------------------------
+
+
+FILE: vendor/ruflin/elastica/lib/Elastica/Multi/MultiBuilder.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 49 | ERROR | Function each() is deprecated since PHP 7.2 and removed
+    |       | since PHP 8.0; Use a foreach loop or ArrayIterator
+    |       | instead
+    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)
+----------------------------------------------------------------------
+
+
+FILE: vendor/ruflin/elastica/lib/Elastica/Query/Bool.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 17 | ERROR | 'bool' is a reserved keyword as of PHP version 7.0 and
+    |       | should not be used to name a class, interface or trait
+    |       | or as part of a namespace (T_CLASS)
+    |       | (PHPCompatibility.Keywords.ForbiddenNamesAsDeclared.boolFound)
+----------------------------------------------------------------------
+
+
+FILE: vendor/ruflin/elastica/lib/Elastica/Transport/Http.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 109 | ERROR | Function each() is deprecated since PHP 7.2 and
+     |       | removed since PHP 8.0; Use a foreach loop or
+     |       | ArrayIterator instead
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)
+----------------------------------------------------------------------
+
+
+FILE: vendor/ruflin/elastica/lib/Elastica/Transport/Null.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 12 | ERROR | 'null' is a reserved keyword as of PHP version 7.0 and
+    |       | should not be used to name a class, interface or trait
+    |       | or as part of a namespace (T_CLASS)
+    |       | (PHPCompatibility.Keywords.ForbiddenNamesAsDeclared.nullFound)
+----------------------------------------------------------------------
+
+
+FILE: vendor/squizlabs/php_codesniffer/CodeSniffer/CLI.php
+----------------------------------------------------------------------
+FOUND 3 ERRORS AFFECTING 3 LINES
+----------------------------------------------------------------------
+ 435 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $arg{0}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 441 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $arg{1}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 788 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $arg{0}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 3 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------
+
+
+FILE: ...endor/squizlabs/php_codesniffer/CodeSniffer/Reports/Gitblame.php
+----------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+----------------------------------------------------------------------
+ 69 | ERROR | Passing the $glue and $pieces parameters in reverse
+    |       | order to implode has been deprecated since PHP 7.4 and
+    |       | is removed since PHP 8.0; $glue should be the first
+    |       | parameter and $pieces the second
+    |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
+ 95 | ERROR | Passing the $glue and $pieces parameters in reverse
+    |       | order to implode has been deprecated since PHP 7.4 and
+    |       | is removed since PHP 8.0; $glue should be the first
+    |       | parameter and $pieces the second
+    |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
+----------------------------------------------------------------------
+
+
+FILE: vendor/squizlabs/php_codesniffer/CodeSniffer/Reports/Hgblame.php
+----------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+----------------------------------------------------------------------
+ 71 | ERROR | Passing the $glue and $pieces parameters in reverse
+    |       | order to implode has been deprecated since PHP 7.4 and
+    |       | is removed since PHP 8.0; $glue should be the first
+    |       | parameter and $pieces the second
+    |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
+ 96 | ERROR | Passing the $glue and $pieces parameters in reverse
+    |       | order to implode has been deprecated since PHP 7.4 and
+    |       | is removed since PHP 8.0; $glue should be the first
+    |       | parameter and $pieces the second
+    |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
+----------------------------------------------------------------------
+
+
+FILE: .../Standards/MySource/Sniffs/Channels/DisallowSelfActionsSniff.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 104 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $funcName{0}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------
+
+
+FILE: ...fer/Standards/MySource/Sniffs/CSS/BrowserSpecificStylesSniff.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 92 | ERROR | [x] Curly brace syntax for accessing array elements and
+    |       |     string offsets has been deprecated in PHP 7.4 and
+    |       |     removed in PHP 8.0. Found: $content{0}
+    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------
+
+
+FILE: ...odeSniffer/Standards/PEAR/Sniffs/Commenting/FileCommentSniff.php
+----------------------------------------------------------------------
+FOUND 4 ERRORS AFFECTING 4 LINES
+----------------------------------------------------------------------
+ 390 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $firstBit{0}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 393 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $bit{0}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 435 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $firstBit{0}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 438 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $bit{0}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 4 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------
+
+
+FILE: ...eSniffer/Standards/PEAR/Sniffs/Commenting/InlineCommentSniff.php
+----------------------------------------------------------------------
+FOUND 5 ERRORS AFFECTING 5 LINES
+----------------------------------------------------------------------
+ 59 | ERROR | [x] Curly brace syntax for accessing array elements and
+    |       |     string offsets has been deprecated in PHP 7.4 and
+    |       |     removed in PHP 8.0. Found:
+    |       |     $tokens[$stackPtr]['content']{0}
+    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 70 | ERROR | [x] Curly brace syntax for accessing array elements and
+    |       |     string offsets has been deprecated in PHP 7.4 and
+    |       |     removed in PHP 8.0. Found:
+    |       |     $tokens[$stackPtr]['content']{0}
+    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 71 | ERROR | [x] Curly brace syntax for accessing array elements and
+    |       |     string offsets has been deprecated in PHP 7.4 and
+    |       |     removed in PHP 8.0. Found:
+    |       |     $tokens[$stackPtr]['content']{1}
+    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 74 | ERROR | [x] Curly brace syntax for accessing array elements and
+    |       |     string offsets has been deprecated in PHP 7.4 and
+    |       |     removed in PHP 8.0. Found:
+    |       |     $tokens[$stackPtr]['content']{0}
+    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 75 | ERROR | [x] Curly brace syntax for accessing array elements and
+    |       |     string offsets has been deprecated in PHP 7.4 and
+    |       |     removed in PHP 8.0. Found:
+    |       |     $tokens[$stackPtr]['content']{1}
+    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 5 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------
+
+
+FILE: .../Standards/PEAR/Sniffs/NamingConventions/ValidClassNameSniff.php
+----------------------------------------------------------------------
+FOUND 4 ERRORS AFFECTING 3 LINES
+----------------------------------------------------------------------
+ 79 | ERROR | [x] Curly brace syntax for accessing array elements and
+    |       |     string offsets has been deprecated in PHP 7.4 and
+    |       |     removed in PHP 8.0. Found: $bit{0}
+    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 79 | ERROR | [x] Curly brace syntax for accessing array elements and
+    |       |     string offsets has been deprecated in PHP 7.4 and
+    |       |     removed in PHP 8.0. Found: $bit{0}
+    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 94 | ERROR | [x] Curly brace syntax for accessing array elements and
+    |       |     string offsets has been deprecated in PHP 7.4 and
+    |       |     removed in PHP 8.0. Found: $firstBit{0}
+    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 97 | ERROR | [x] Curly brace syntax for accessing array elements and
+    |       |     string offsets has been deprecated in PHP 7.4 and
+    |       |     removed in PHP 8.0. Found: $bit{0}
+    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 4 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------
+
+
+FILE: ...andards/PEAR/Sniffs/NamingConventions/ValidFunctionNameSniff.php
+----------------------------------------------------------------------
+FOUND 10 ERRORS AFFECTING 8 LINES
+----------------------------------------------------------------------
+ 133 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $methodName{0}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 144 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $methodName{0}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 160 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $methodName{0}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 235 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found:
+     |       |     $functionName{0}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 241 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found:
+     |       |     $functionName{0}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 241 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found:
+     |       |     $functionName{0}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 262 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found:
+     |       |     $camelCapsPart{0}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 269 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $bit{0}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 269 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $bit{0}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 272 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $bit{0}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 10 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------
+
+
+FILE: ...andards/PEAR/Sniffs/NamingConventions/ValidVariableNameSniff.php
+----------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+----------------------------------------------------------------------
+ 66 | ERROR | [x] Curly brace syntax for accessing array elements and
+    |       |     string offsets has been deprecated in PHP 7.4 and
+    |       |     removed in PHP 8.0. Found: $memberName{0}
+    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 74 | ERROR | [x] Curly brace syntax for accessing array elements and
+    |       |     string offsets has been deprecated in PHP 7.4 and
+    |       |     removed in PHP 8.0. Found: $memberName{0}
+    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------
+
+
+FILE: ...iffer/Standards/Squiz/Sniffs/Commenting/FunctionCommentSniff.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 212 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $comment{0}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------
+
+
+FILE: ...Sniffer/Standards/Squiz/Sniffs/Commenting/InlineCommentSniff.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 141 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found:
+     |       |     $tokens[$stackPtr]['content']{0}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------
+
+
+FILE: ...CodeSniffer/Standards/Squiz/Sniffs/CSS/ColourDefinitionSniff.php
+----------------------------------------------------------------------
+FOUND 9 ERRORS AFFECTING 2 LINES
+----------------------------------------------------------------------
+ 84 | ERROR | [x] Curly brace syntax for accessing array elements and
+    |       |     string offsets has been deprecated in PHP 7.4 and
+    |       |     removed in PHP 8.0. Found: $colour{1}
+    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 84 | ERROR | [x] Curly brace syntax for accessing array elements and
+    |       |     string offsets has been deprecated in PHP 7.4 and
+    |       |     removed in PHP 8.0. Found: $colour{2}
+    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 84 | ERROR | [x] Curly brace syntax for accessing array elements and
+    |       |     string offsets has been deprecated in PHP 7.4 and
+    |       |     removed in PHP 8.0. Found: $colour{3}
+    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 84 | ERROR | [x] Curly brace syntax for accessing array elements and
+    |       |     string offsets has been deprecated in PHP 7.4 and
+    |       |     removed in PHP 8.0. Found: $colour{4}
+    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 84 | ERROR | [x] Curly brace syntax for accessing array elements and
+    |       |     string offsets has been deprecated in PHP 7.4 and
+    |       |     removed in PHP 8.0. Found: $colour{5}
+    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 84 | ERROR | [x] Curly brace syntax for accessing array elements and
+    |       |     string offsets has been deprecated in PHP 7.4 and
+    |       |     removed in PHP 8.0. Found: $colour{6}
+    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 85 | ERROR | [x] Curly brace syntax for accessing array elements and
+    |       |     string offsets has been deprecated in PHP 7.4 and
+    |       |     removed in PHP 8.0. Found: $colour{1}
+    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 85 | ERROR | [x] Curly brace syntax for accessing array elements and
+    |       |     string offsets has been deprecated in PHP 7.4 and
+    |       |     removed in PHP 8.0. Found: $colour{3}
+    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 85 | ERROR | [x] Curly brace syntax for accessing array elements and
+    |       |     string offsets has been deprecated in PHP 7.4 and
+    |       |     removed in PHP 8.0. Found: $colour{5}
+    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 9 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------
+
+
+FILE: ...esniffer/CodeSniffer/Standards/Squiz/Sniffs/CSS/OpacitySniff.php
+----------------------------------------------------------------------
+FOUND 4 ERRORS AFFECTING 4 LINES
+----------------------------------------------------------------------
+  89 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $value{0}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+  92 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $value{0}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+  94 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $value{0}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 101 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $value{0}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 4 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------
+
+
+FILE: vendor/squizlabs/php_codesniffer/CodeSniffer/Tokenizers/CSS.php
+----------------------------------------------------------------------
+FOUND 3 ERRORS AFFECTING 3 LINES
+----------------------------------------------------------------------
+ 177 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found:
+     |       |     $token['content']{0}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 184 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $content{0}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 200 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found:
+     |       |     $token['content']{0}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 3 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------
+
+
+FILE: vendor/squizlabs/php_codesniffer/CodeSniffer.php
+----------------------------------------------------------------------
+FOUND 5 ERRORS AFFECTING 3 LINES
+----------------------------------------------------------------------
+ 1995 | ERROR | [x] Curly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found: $string{$i}
+      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 2000 | ERROR | [x] Curly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found: $string{$i}
+      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 2000 | ERROR | [x] Curly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found: $string{$i}
+      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 2046 | ERROR | [x] Curly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found: $bit{0}
+      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 2046 | ERROR | [x] Curly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found: $bit{0}
+      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 5 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------
+
+
+FILE: ...cs/WordPress/Sniffs/NamingConventions/ValidFunctionNameSniff.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 122 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $methodName{0}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------
+
+
+FILE: ...dards/wpcs/WordPress/Sniffs/VIP/ValidatedSanitizedInputSniff.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 94 | ERROR | Function create_function() is deprecated since PHP 7.2
+    |       | and removed since PHP 8.0; Use an anonymous function
+    |       | instead
+    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
+----------------------------------------------------------------------
+
+
+FILE: ...p-coding-standards/wpcs/WordPress/Sniffs/WP/PreparedSQLSniff.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 123 | ERROR | Function create_function() is deprecated since PHP 7.2
+     |       | and removed since PHP 8.0; Use an anonymous function
+     |       | instead
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
+----------------------------------------------------------------------
