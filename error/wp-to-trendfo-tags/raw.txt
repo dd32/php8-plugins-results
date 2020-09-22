@@ -1,0 +1,29 @@
+::warning::Plugin: https://wordpress.org/plugins/wp-to-trendfo-tags/%0ATrac: https://plugins.trac.wordpress.org/browser/wp-to-trendfo-tags/
+
+Fatal error: Array and string offset access syntax with curly braces is no longer supported in wp-to-trendfo-tags/wp-to-trendfo-tags/wp-tags-to-trendfo.php on line 288
+Errors parsing wp-to-trendfo-tags/wp-to-trendfo-tags/wp-tags-to-trendfo.php
+::error::%0Awp-tags-to-trendfo.php%0A  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 288
+[32mE[0m 1 / 1 (100%)
+
+
+
+[1mFILE: wp-tags-to-trendfo.php[0m
+----------------------------------------------------------------------
+[1mFOUND 3 ERRORS AFFECTING 3 LINES[0m
+----------------------------------------------------------------------
+  42 | [31mERROR[0m | [ ] [1mFunction set_magic_quotes_runtime() is deprecated
+     |       |     since PHP 5.3 and removed since PHP 7.0[0m
+     |       |     (PHPCompatibility.FunctionUse.RemovedFunctions.set_magic_quotes_runtimeDeprecatedRemoved)
+ 211 | [31mERROR[0m | [ ] [1mpreg_replace() - /e modifier is deprecated since
+     |       |     PHP 5.5 and removed since PHP 7.0[0m
+     |       |     (PHPCompatibility.ParameterValues.RemovedPCREModifiers.Removed)
+ 288 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $val{0}[0m
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+----------------------------------------------------------------------
+[1mPHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
+----------------------------------------------------------------------
+
+Time: 76ms; Memory: 10MB
+::error::FILE: wp-tags-to-trendfo.php%0A----------------------------------------------------------------------%0AFOUND 3 ERRORS AFFECTING 3 LINES%0A----------------------------------------------------------------------%0A  42 | ERROR | [ ] Function set_magic_quotes_runtime() is deprecated%0A     |       |     since PHP 5.3 and removed since PHP 7.0%0A     |       |     (PHPCompatibility.FunctionUse.RemovedFunctions.set_magic_quotes_runtimeDeprecatedRemoved)%0A 211 | ERROR | [ ] preg_replace() - /e modifier is deprecated since%0A     |       |     PHP 5.5 and removed since PHP 7.0%0A     |       |     (PHPCompatibility.ParameterValues.RemovedPCREModifiers.Removed)%0A 288 | ERROR | [x] Curly brace syntax for accessing array elements%0A     |       |     and string offsets has been deprecated in PHP 7.4%0A     |       |     and removed in PHP 8.0. Found: $val{0}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A----------------------------------------------------------------------%0APHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A----------------------------------------------------------------------%0A
