@@ -128,6 +128,8 @@ No syntax errors detected in upstream/upstream/includes/libraries/cmb2-grid/Cmb2
 No syntax errors detected in upstream/upstream/includes/libraries/cmb2-grid/Cmb2GridPluginLoad.php
 No syntax errors detected in upstream/upstream/includes/libraries/cmb2-grid/Cmb2GridPlugin.php
 No syntax errors detected in upstream/upstream/includes/libraries/cmb2-grid/DesignPatterns/index.php
+
+Warning: Private methods cannot be final as they are never overridden by other classes in upstream/upstream/includes/libraries/cmb2-grid/DesignPatterns/Singleton.php on line 32
 No syntax errors detected in upstream/upstream/includes/libraries/cmb2-grid/DesignPatterns/Singleton.php
 No syntax errors detected in upstream/upstream/includes/libraries/cmb2-grid/Grid/Cmb2Grid.php
 No syntax errors detected in upstream/upstream/includes/libraries/cmb2-grid/Grid/Column.php
@@ -610,6 +612,7 @@ No syntax errors detected in upstream/upstream/vendor/twig/twig/src/TwigFunction
 No syntax errors detected in upstream/upstream/vendor/twig/twig/src/TwigTest.php
 No syntax errors detected in upstream/upstream/vendor/twig/twig/src/Util/DeprecationCollector.php
 No syntax errors detected in upstream/upstream/vendor/twig/twig/src/Util/TemplateDirIterator.php
+::error::%0Aincludes/libraries/cmb2-grid/DesignPatterns/Singleton.php%0A  Warning: Private methods cannot be final as they are never overridden by other classes on line 32
 ............................................................  60 / 609 (10%)
 ............................................................ 120 / 609 (20%)
 .......[31mE[0m.....................................[31mE[0m.............. 180 / 609 (30%)
@@ -625,21 +628,24 @@ No syntax errors detected in upstream/upstream/vendor/twig/twig/src/Util/Templat
 
 
 [1mFILE: includes/libraries/cmb2-grid/Cmb2GridPlugin.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 29 | [31mERROR[0m | [1mFunction create_function() is deprecated since PHP 7.2 and removed since PHP 8.0; Use an anonymous function instead[0m
+----------------------------------------------------------------------
+ 29 | [31mERROR[0m | [1mFunction create_function() is deprecated since PHP 7.2
+    |       | and removed since PHP 8.0; Use an anonymous function
+    |       | instead[0m
     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 [1mFILE: includes/up-install.php[0m
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 690 | [31mERROR[0m | [1m"$this" can no longer be used in a plain function or method since PHP 7.1.[0m
+----------------------------------------------------------------------
+ 690 | [31mERROR[0m | [1m"$this" can no longer be used in a plain function or
+     |       | method since PHP 7.1.[0m
      |       | (PHPCompatibility.Variables.ForbiddenThisUseContexts.OutsideObjectContext)
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
-Time: 8.79 secs; Memory: 26MB
-::error::FILE: includes/libraries/cmb2-grid/Cmb2GridPlugin.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 29 | ERROR | Function create_function() is deprecated since PHP 7.2 and removed since PHP 8.0; Use an anonymous function instead%0A    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: includes/up-install.php%0A---------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A---------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 690 | ERROR | "$this" can no longer be used in a plain function or method since PHP 7.1.%0A     |       | (PHPCompatibility.Variables.ForbiddenThisUseContexts.OutsideObjectContext)%0A---------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
+Time: 7.96 secs; Memory: 26MB
+::error::FILE: includes/libraries/cmb2-grid/Cmb2GridPlugin.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 29 | ERROR | Function create_function() is deprecated since PHP 7.2%0A    |       | and removed since PHP 8.0; Use an anonymous function%0A    |       | instead%0A    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)%0A----------------------------------------------------------------------%0A%0A%0AFILE: includes/up-install.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 690 | ERROR | "$this" can no longer be used in a plain function or%0A     |       | method since PHP 7.1.%0A     |       | (PHPCompatibility.Variables.ForbiddenThisUseContexts.OutsideObjectContext)%0A----------------------------------------------------------------------%0A
