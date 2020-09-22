@@ -1,0 +1,65 @@
+::warning::Plugin: https://wordpress.org/plugins/security-audit/%0ATrac: https://plugins.trac.wordpress.org/browser/security-audit/
+No syntax errors detected in security-audit/security-audit/inc/class-securityaudit.php
+No syntax errors detected in security-audit/security-audit/inc/server-phpsecinfo.php
+No syntax errors detected in security-audit/security-audit/index.php
+No syntax errors detected in security-audit/security-audit/PhpSecInfo/PhpSecInfo.php
+No syntax errors detected in security-audit/security-audit/PhpSecInfo/Test/CGI/force_redirect.php
+No syntax errors detected in security-audit/security-audit/PhpSecInfo/Test/Core/allow_url_fopen.php
+No syntax errors detected in security-audit/security-audit/PhpSecInfo/Test/Core/allow_url_include.php
+No syntax errors detected in security-audit/security-audit/PhpSecInfo/Test/Core/display_errors.php
+No syntax errors detected in security-audit/security-audit/PhpSecInfo/Test/Core/expose_php.php
+No syntax errors detected in security-audit/security-audit/PhpSecInfo/Test/Core/file_uploads.php
+No syntax errors detected in security-audit/security-audit/PhpSecInfo/Test/Core/gid.php
+No syntax errors detected in security-audit/security-audit/PhpSecInfo/Test/Core/magic_quotes_gpc.php
+No syntax errors detected in security-audit/security-audit/PhpSecInfo/Test/Core/memory_limit.php
+No syntax errors detected in security-audit/security-audit/PhpSecInfo/Test/Core/open_basedir.php
+No syntax errors detected in security-audit/security-audit/PhpSecInfo/Test/Core/post_max_size.php
+No syntax errors detected in security-audit/security-audit/PhpSecInfo/Test/Core/register_globals.php
+No syntax errors detected in security-audit/security-audit/PhpSecInfo/Test/Core/uid.php
+No syntax errors detected in security-audit/security-audit/PhpSecInfo/Test/Core/upload_max_filesize.php
+No syntax errors detected in security-audit/security-audit/PhpSecInfo/Test/Core/upload_tmp_dir.php
+No syntax errors detected in security-audit/security-audit/PhpSecInfo/Test/Curl/file_support.php
+No syntax errors detected in security-audit/security-audit/PhpSecInfo/Test/Session/save_path.php
+No syntax errors detected in security-audit/security-audit/PhpSecInfo/Test/Session/use_trans_sid.php
+No syntax errors detected in security-audit/security-audit/PhpSecInfo/Test/Test_Cgi.php
+No syntax errors detected in security-audit/security-audit/PhpSecInfo/Test/Test_Core.php
+No syntax errors detected in security-audit/security-audit/PhpSecInfo/Test/Test_Curl.php
+
+Fatal error: Array and string offset access syntax with curly braces is no longer supported in security-audit/security-audit/PhpSecInfo/Test/Test.php on line 379
+Errors parsing security-audit/security-audit/PhpSecInfo/Test/Test.php
+No syntax errors detected in security-audit/security-audit/PhpSecInfo/Test/Test_Session.php
+No syntax errors detected in security-audit/security-audit/security-audit.php
+::error::%0APhpSecInfo/Test/Test.php%0A  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 379
+...[31mE[0m.....................[32mE[0m.. 28 / 28 (100%)
+
+
+
+[1mFILE: PhpSecInfo/PhpSecInfo.php[0m
+----------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 144 | [31mERROR[0m | [1mDeclaration of a PHP4 style class constructor is
+     |       | deprecated since PHP 7.0 and removed since PHP 8.0[0m
+     |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+----------------------------------------------------------------------
+
+
+[1mFILE: PhpSecInfo/Test/Test.php[0m
+----------------------------------------------------------------------
+[1mFOUND 2 ERRORS AFFECTING 2 LINES[0m
+----------------------------------------------------------------------
+ 114 | [31mERROR[0m | [ ] [1mDeclaration of a PHP4 style class constructor is
+     |       |     deprecated since PHP 7.0 and removed since PHP
+     |       |     8.0[0m
+     |       |     (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+ 379 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found:
+     |       |     $val{strlen($val)-1}[0m
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+----------------------------------------------------------------------
+[1mPHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
+----------------------------------------------------------------------
+
+Time: 253ms; Memory: 12MB
+::error::FILE: PhpSecInfo/PhpSecInfo.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 144 | ERROR | Declaration of a PHP4 style class constructor is%0A     |       | deprecated since PHP 7.0 and removed since PHP 8.0%0A     |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)%0A----------------------------------------------------------------------%0A%0A%0AFILE: PhpSecInfo/Test/Test.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A----------------------------------------------------------------------%0A 114 | ERROR | [ ] Declaration of a PHP4 style class constructor is%0A     |       |     deprecated since PHP 7.0 and removed since PHP%0A     |       |     8.0%0A     |       |     (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)%0A 379 | ERROR | [x] Curly brace syntax for accessing array elements%0A     |       |     and string offsets has been deprecated in PHP 7.4%0A     |       |     and removed in PHP 8.0. Found:%0A     |       |     $val{strlen($val)-1}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A----------------------------------------------------------------------%0APHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A----------------------------------------------------------------------%0A
