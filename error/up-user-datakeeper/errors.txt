@@ -1,0 +1,29 @@
+
+vendor/respect/validation/library/Rules/NfeAccessKey.php
+  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 42
+FILE: vendor/respect/validation/library/Rules/NfeAccessKey.php
+----------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+----------------------------------------------------------------------
+ 42 | ERROR | [x] Curly brace syntax for accessing array elements and
+    |       |     string offsets has been deprecated in PHP 7.4 and
+    |       |     removed in PHP 8.0. Found: $aK{ $i }
+    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 49 | ERROR | [x] Curly brace syntax for accessing array elements and
+    |       |     string offsets has been deprecated in PHP 7.4 and
+    |       |     removed in PHP 8.0. Found: $aK{ 43 }
+    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------
+
+
+FILE: vendor/respect/validation/tests/unit/Rules/PeselTest.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 44 | ERROR | The behaviour of hexadecimal numeric strings was
+    |       | inconsistent prior to PHP 7 and support has been
+    |       | removed in PHP 7. Found: '0x4EADCD168'
+    |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
+----------------------------------------------------------------------
