@@ -285,6 +285,8 @@ No syntax errors detected in download-monitor/download-monitor/src/Logs/LogItem.
 No syntax errors detected in download-monitor/download-monitor/src/Logs/LogItemRepository.php
 No syntax errors detected in download-monitor/download-monitor/src/Logs/LogPage.php
 No syntax errors detected in download-monitor/download-monitor/src/Logs/WordPressLogItemRepository.php
+
+Fatal error: Method DateTimeImmutable::__set_state() must take exactly 1 argument in download-monitor/download-monitor/src/Polyfill/DateTimeImmutable/DateTimeImmutable.php on line 17
 Errors parsing download-monitor/download-monitor/src/Polyfill/DateTimeImmutable/DateTimeImmutable.php
 No syntax errors detected in download-monitor/download-monitor/src/Polyfill/DateTimeImmutable/DateTimeInterface.php
 No syntax errors detected in download-monitor/download-monitor/src/PostTypeManager.php
@@ -421,8 +423,7 @@ No syntax errors detected in download-monitor/download-monitor/vendor/composer/a
 No syntax errors detected in download-monitor/download-monitor/vendor/composer/autoload_real.php
 No syntax errors detected in download-monitor/download-monitor/vendor/composer/autoload_static.php
 No syntax errors detected in download-monitor/download-monitor/vendor/composer/ClassLoader.php
-::error::%0Asrc/Polyfill/DateTimeImmutable/DateTimeImmutable.php
-No syntax errors detected in download-monitor/download-monitor/vendor/composer/ClassLoader.php
+::error::%0Asrc/Polyfill/DateTimeImmutable/DateTimeImmutable.php%0A  Fatal error: Method DateTimeImmutable::__set_state() must take exactly 1 argument on line 17
 ............................................................  60 / 420 (14%)
 ............................................................ 120 / 420 (29%)
 ............................................................ 180 / 420 (43%)
@@ -434,14 +435,16 @@ No syntax errors detected in download-monitor/download-monitor/vendor/composer/C
 
 
 [1mFILE: src/DownloadHandler.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 2 ERRORS AFFECTING 2 LINES[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 612 | [31mERROR[0m | [1mFunction get_magic_quotes_runtime() is deprecated since PHP 7.4 and removed since PHP 8.0[0m
+----------------------------------------------------------------------
+ 612 | [31mERROR[0m | [1mFunction get_magic_quotes_runtime() is deprecated
+     |       | since PHP 7.4 and removed since PHP 8.0[0m
      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_runtimeDeprecatedRemoved)
- 613 | [31mERROR[0m | [1mFunction set_magic_quotes_runtime() is deprecated since PHP 5.3 and removed since PHP 7.0[0m
+ 613 | [31mERROR[0m | [1mFunction set_magic_quotes_runtime() is deprecated
+     |       | since PHP 5.3 and removed since PHP 7.0[0m
      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.set_magic_quotes_runtimeDeprecatedRemoved)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
-Time: 5.1 secs; Memory: 20MB
-::error::FILE: src/DownloadHandler.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 612 | ERROR | Function get_magic_quotes_runtime() is deprecated since PHP 7.4 and removed since PHP 8.0%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_runtimeDeprecatedRemoved)%0A 613 | ERROR | Function set_magic_quotes_runtime() is deprecated since PHP 5.3 and removed since PHP 7.0%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.set_magic_quotes_runtimeDeprecatedRemoved)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
+Time: 5.26 secs; Memory: 20MB
+::error::FILE: src/DownloadHandler.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A----------------------------------------------------------------------%0A 612 | ERROR | Function get_magic_quotes_runtime() is deprecated%0A     |       | since PHP 7.4 and removed since PHP 8.0%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_runtimeDeprecatedRemoved)%0A 613 | ERROR | Function set_magic_quotes_runtime() is deprecated%0A     |       | since PHP 5.3 and removed since PHP 7.0%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.set_magic_quotes_runtimeDeprecatedRemoved)%0A----------------------------------------------------------------------%0A

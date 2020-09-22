@@ -151,6 +151,8 @@ No syntax errors detected in wp-social-bookmarking-light/wp-social-bookmarking-l
 No syntax errors detected in wp-social-bookmarking-light/wp-social-bookmarking-light/vendor/twig/twig/lib/Twig/NodeCaptureInterface.php
 No syntax errors detected in wp-social-bookmarking-light/wp-social-bookmarking-light/vendor/twig/twig/lib/Twig/NodeInterface.php
 No syntax errors detected in wp-social-bookmarking-light/wp-social-bookmarking-light/vendor/twig/twig/lib/Twig/NodeOutputInterface.php
+
+Fatal error: Unparenthesized `a ? b : c ? d : e` is not supported. Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)` in wp-social-bookmarking-light/wp-social-bookmarking-light/vendor/twig/twig/lib/Twig/Node.php on line 42
 Errors parsing wp-social-bookmarking-light/wp-social-bookmarking-light/vendor/twig/twig/lib/Twig/Node.php
 No syntax errors detected in wp-social-bookmarking-light/wp-social-bookmarking-light/vendor/twig/twig/lib/Twig/NodeTraverser.php
 No syntax errors detected in wp-social-bookmarking-light/wp-social-bookmarking-light/vendor/twig/twig/lib/Twig/NodeVisitor/Escaper.php
@@ -296,8 +298,7 @@ No syntax errors detected in wp-social-bookmarking-light/wp-social-bookmarking-l
 No syntax errors detected in wp-social-bookmarking-light/wp-social-bookmarking-light/vendor/twig/twig/test/Twig/Tests/TokenStreamTest.php
 No syntax errors detected in wp-social-bookmarking-light/wp-social-bookmarking-light/vendor/twig/twig/test/Twig/Tests/Util/DeprecationCollectorTest.php
 No syntax errors detected in wp-social-bookmarking-light/wp-social-bookmarking-light/wp-social-bookmarking-light.php
-::error::%0Avendor/twig/twig/lib/Twig/Node.php
-No syntax errors detected in wp-social-bookmarking-light/wp-social-bookmarking-light/wp-social-bookmarking-light.php
+::error::%0Avendor/twig/twig/lib/Twig/Node.php%0A  Fatal error: Unparenthesized `a ? b : c ? d : e` is not supported.%0A      Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)`%0A      on line 42
 ............................................................  60 / 297 (20%)
 ............................................................ 120 / 297 (40%)
 ................................[31mE[0m........................... 180 / 297 (61%)
@@ -307,14 +308,22 @@ No syntax errors detected in wp-social-bookmarking-light/wp-social-bookmarking-l
 
 
 [1mFILE: vendor/twig/twig/lib/Twig/Node.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 2 ERRORS AFFECTING 2 LINES[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  42 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has been deprecated in PHP 7.4 and removed in PHP 8.0. Multiple consecutive ternaries detected. Use parenthesis to
-     |       | clarify the order in which the operations should be executed[0m (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
- 198 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has been deprecated in PHP 7.4 and removed in PHP 8.0. Multiple consecutive ternaries detected. Use parenthesis to
-     |       | clarify the order in which the operations should be executed[0m (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
+  42 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has
+     |       | been deprecated in PHP 7.4 and removed in PHP 8.0.
+     |       | Multiple consecutive ternaries detected. Use
+     |       | parenthesis to clarify the order in which the
+     |       | operations should be executed[0m
+     |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
+ 198 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has
+     |       | been deprecated in PHP 7.4 and removed in PHP 8.0.
+     |       | Multiple consecutive ternaries detected. Use
+     |       | parenthesis to clarify the order in which the
+     |       | operations should be executed[0m
+     |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
+----------------------------------------------------------------------
 
-Time: 3.41 secs; Memory: 22MB
-::error::FILE: vendor/twig/twig/lib/Twig/Node.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A  42 | ERROR | The left-associativity of the ternary operator has been deprecated in PHP 7.4 and removed in PHP 8.0. Multiple consecutive ternaries detected. Use parenthesis to%0A     |       | clarify the order in which the operations should be executed (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A 198 | ERROR | The left-associativity of the ternary operator has been deprecated in PHP 7.4 and removed in PHP 8.0. Multiple consecutive ternaries detected. Use parenthesis to%0A     |       | clarify the order in which the operations should be executed (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
+Time: 3.56 secs; Memory: 22MB
+::error::FILE: vendor/twig/twig/lib/Twig/Node.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A----------------------------------------------------------------------%0A  42 | ERROR | The left-associativity of the ternary operator has%0A     |       | been deprecated in PHP 7.4 and removed in PHP 8.0.%0A     |       | Multiple consecutive ternaries detected. Use%0A     |       | parenthesis to clarify the order in which the%0A     |       | operations should be executed%0A     |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A 198 | ERROR | The left-associativity of the ternary operator has%0A     |       | been deprecated in PHP 7.4 and removed in PHP 8.0.%0A     |       | Multiple consecutive ternaries detected. Use%0A     |       | parenthesis to clarify the order in which the%0A     |       | operations should be executed%0A     |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A----------------------------------------------------------------------%0A

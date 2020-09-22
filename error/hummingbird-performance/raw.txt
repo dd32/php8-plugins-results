@@ -518,7 +518,6 @@ No syntax errors detected in hummingbird-performance/hummingbird-performance/ven
 No syntax errors detected in hummingbird-performance/hummingbird-performance/vendor/predis/predis/src/Transaction/MultiExec.php
 No syntax errors detected in hummingbird-performance/hummingbird-performance/vendor/predis/predis/src/Transaction/MultiExecState.php
 No syntax errors detected in hummingbird-performance/hummingbird-performance/wp-hummingbird.php
-No syntax errors detected in hummingbird-performance/hummingbird-performance/wp-hummingbird.php
 ............................................................  60 / 519 (12%)
 ............................................................ 120 / 519 (23%)
 ............................................................ 180 / 519 (35%)
@@ -532,21 +531,25 @@ No syntax errors detected in hummingbird-performance/hummingbird-performance/wp-
 
 
 [1mFILE: vendor/predis/predis/src/Collection/Iterator/HashKey.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 53 | [31mERROR[0m | [1mFunction each() is deprecated since PHP 7.2 and removed since PHP 8.0; Use a foreach loop or ArrayIterator instead[0m
+----------------------------------------------------------------------
+ 53 | [31mERROR[0m | [1mFunction each() is deprecated since PHP 7.2 and removed
+    |       | since PHP 8.0; Use a foreach loop or ArrayIterator
+    |       | instead[0m
     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 [1mFILE: vendor/predis/predis/src/Collection/Iterator/SortedSetKey.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 53 | [31mERROR[0m | [1mFunction each() is deprecated since PHP 7.2 and removed since PHP 8.0; Use a foreach loop or ArrayIterator instead[0m
+----------------------------------------------------------------------
+ 53 | [31mERROR[0m | [1mFunction each() is deprecated since PHP 7.2 and removed
+    |       | since PHP 8.0; Use a foreach loop or ArrayIterator
+    |       | instead[0m
     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
-Time: 6.26 secs; Memory: 24MB
-::error::FILE: vendor/predis/predis/src/Collection/Iterator/HashKey.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 53 | ERROR | Function each() is deprecated since PHP 7.2 and removed since PHP 8.0; Use a foreach loop or ArrayIterator instead%0A    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: vendor/predis/predis/src/Collection/Iterator/SortedSetKey.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 53 | ERROR | Function each() is deprecated since PHP 7.2 and removed since PHP 8.0; Use a foreach loop or ArrayIterator instead%0A    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
+Time: 6.61 secs; Memory: 24MB
+::error::FILE: vendor/predis/predis/src/Collection/Iterator/HashKey.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 53 | ERROR | Function each() is deprecated since PHP 7.2 and removed%0A    |       | since PHP 8.0; Use a foreach loop or ArrayIterator%0A    |       | instead%0A    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)%0A----------------------------------------------------------------------%0A%0A%0AFILE: vendor/predis/predis/src/Collection/Iterator/SortedSetKey.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 53 | ERROR | Function each() is deprecated since PHP 7.2 and removed%0A    |       | since PHP 8.0; Use a foreach loop or ArrayIterator%0A    |       | instead%0A    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)%0A----------------------------------------------------------------------%0A
