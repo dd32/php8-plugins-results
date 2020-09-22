@@ -1,0 +1,27 @@
+
+class/Object.class.php
+  Fatal error: Cannot use 'Object' as class name as it is reserved on line 4
+FILE: class/CountComments.class.php
+----------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 299 | ERROR | Extension 'ereg' is deprecated since PHP 5.3 and
+     |       | removed since PHP 7.0; Use pcre instead
+     |       | (PHPCompatibility.Extensions.RemovedExtensions.eregDeprecatedRemoved)
+ 299 | ERROR | Function ereg_replace() is deprecated since PHP 5.3
+     |       | and removed since PHP 7.0; Use preg_replace()
+     |       | instead
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.ereg_replaceDeprecatedRemoved)
+----------------------------------------------------------------------
+
+
+FILE: class/Object.class.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 4 | ERROR | 'object' is a soft reserved keyword as of PHP version
+   |       | 7.0 and a reserved keyword as of PHP version 7.2 and
+   |       | should not be used to name a class, interface or trait
+   |       | or as part of a namespace (T_CLASS)
+   |       | (PHPCompatibility.Keywords.ForbiddenNamesAsDeclared.objectFound)
+----------------------------------------------------------------------

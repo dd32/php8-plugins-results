@@ -1,0 +1,67 @@
+::warning::Plugin: https://wordpress.org/plugins/easyshipper/%0ATrac: https://plugins.trac.wordpress.org/browser/easyshipper/
+
+Parse error: syntax error, unexpected token "new" in easyshipper/easyshipper/easypost_shipping.php on line 250
+Errors parsing easyshipper/easyshipper/easypost_shipping.php
+No syntax errors detected in easyshipper/easyshipper/easyshipper.php
+No syntax errors detected in easyshipper/easyshipper/lib/easypost-php/examples/addresses.php
+No syntax errors detected in easyshipper/easyshipper/lib/easypost-php/examples/batches.php
+No syntax errors detected in easyshipper/easyshipper/lib/easypost-php/examples/customsinfos.php
+No syntax errors detected in easyshipper/easyshipper/lib/easypost-php/examples/intl_shipments.php
+No syntax errors detected in easyshipper/easyshipper/lib/easypost-php/examples/parcels.php
+No syntax errors detected in easyshipper/easyshipper/lib/easypost-php/examples/readme.php
+No syntax errors detected in easyshipper/easyshipper/lib/easypost-php/examples/refunds.php
+No syntax errors detected in easyshipper/easyshipper/lib/easypost-php/examples/scanforms.php
+No syntax errors detected in easyshipper/easyshipper/lib/easypost-php/examples/shipment_from_tracking_codes.php
+No syntax errors detected in easyshipper/easyshipper/lib/easypost-php/examples/shipments_rates.php
+No syntax errors detected in easyshipper/easyshipper/lib/easypost-php/examples/trackers.php
+No syntax errors detected in easyshipper/easyshipper/lib/easypost-php/lib/EasyPost/Address.php
+No syntax errors detected in easyshipper/easyshipper/lib/easypost-php/lib/EasyPost/Batch.php
+No syntax errors detected in easyshipper/easyshipper/lib/easypost-php/lib/EasyPost/CustomsInfo.php
+No syntax errors detected in easyshipper/easyshipper/lib/easypost-php/lib/EasyPost/CustomsItem.php
+No syntax errors detected in easyshipper/easyshipper/lib/easypost-php/lib/EasyPost/EasyPost.php
+No syntax errors detected in easyshipper/easyshipper/lib/easypost-php/lib/EasyPost/Error.php
+No syntax errors detected in easyshipper/easyshipper/lib/easypost-php/lib/EasyPost/Event.php
+
+Fatal error: Cannot use 'Object' as class name as it is reserved in easyshipper/easyshipper/lib/easypost-php/lib/EasyPost/Object.php on line 5
+Errors parsing easyshipper/easyshipper/lib/easypost-php/lib/EasyPost/Object.php
+No syntax errors detected in easyshipper/easyshipper/lib/easypost-php/lib/EasyPost/Parcel.php
+No syntax errors detected in easyshipper/easyshipper/lib/easypost-php/lib/EasyPost/PostageLabel.php
+No syntax errors detected in easyshipper/easyshipper/lib/easypost-php/lib/EasyPost/Rate.php
+No syntax errors detected in easyshipper/easyshipper/lib/easypost-php/lib/EasyPost/Refund.php
+No syntax errors detected in easyshipper/easyshipper/lib/easypost-php/lib/EasyPost/Requestor.php
+No syntax errors detected in easyshipper/easyshipper/lib/easypost-php/lib/EasyPost/Resource.php
+No syntax errors detected in easyshipper/easyshipper/lib/easypost-php/lib/EasyPost/ScanForm.php
+No syntax errors detected in easyshipper/easyshipper/lib/easypost-php/lib/EasyPost/Shipment.php
+No syntax errors detected in easyshipper/easyshipper/lib/easypost-php/lib/EasyPost/Tracker.php
+No syntax errors detected in easyshipper/easyshipper/lib/easypost-php/lib/EasyPost/Util.php
+No syntax errors detected in easyshipper/easyshipper/lib/easypost-php/lib/easypost.php
+No syntax errors detected in easyshipper/easyshipper/lib/easypost-php/test/EasyPost/Test/AddressTest.php
+::error::%0Aeasypost_shipping.php%0A  Parse error: syntax error, unexpected token "new" on line 250%0A%0Alib/easypost-php/lib/EasyPost/Object.php%0A  Fatal error: Cannot use 'Object' as class name as it is reserved on line 5
+[31mE[0m...................[31mE[0m............ 33 / 33 (100%)
+
+
+
+[1mFILE: easypost_shipping.php[0m
+----------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 250 | [31mERROR[0m | [1mAssigning the return value of new by reference is
+     |       | deprecated in PHP 5.3 and has been removed in PHP
+     |       | 7.0[0m
+     |       | (PHPCompatibility.Syntax.RemovedNewReference.Removed)
+----------------------------------------------------------------------
+
+
+[1mFILE: lib/easypost-php/lib/EasyPost/Object.php[0m
+----------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 5 | [31mERROR[0m | [1m'object' is a soft reserved keyword as of PHP version
+   |       | 7.0 and a reserved keyword as of PHP version 7.2 and
+   |       | should not be used to name a class, interface or trait
+   |       | or as part of a namespace (T_CLASS)[0m
+   |       | (PHPCompatibility.Keywords.ForbiddenNamesAsDeclared.objectFound)
+----------------------------------------------------------------------
+
+Time: 359ms; Memory: 12MB
+::error::FILE: easypost_shipping.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 250 | ERROR | Assigning the return value of new by reference is%0A     |       | deprecated in PHP 5.3 and has been removed in PHP%0A     |       | 7.0%0A     |       | (PHPCompatibility.Syntax.RemovedNewReference.Removed)%0A----------------------------------------------------------------------%0A%0A%0AFILE: lib/easypost-php/lib/EasyPost/Object.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 5 | ERROR | 'object' is a soft reserved keyword as of PHP version%0A   |       | 7.0 and a reserved keyword as of PHP version 7.2 and%0A   |       | should not be used to name a class, interface or trait%0A   |       | or as part of a namespace (T_CLASS)%0A   |       | (PHPCompatibility.Keywords.ForbiddenNamesAsDeclared.objectFound)%0A----------------------------------------------------------------------%0A

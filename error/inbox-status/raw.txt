@@ -1,0 +1,71 @@
+::warning::Plugin: https://wordpress.org/plugins/inbox-status/%0ATrac: https://plugins.trac.wordpress.org/browser/inbox-status/
+No syntax errors detected in inbox-status/inbox-status/classes/class-admin.php
+No syntax errors detected in inbox-status/inbox-status/classes/class-email-widget.php
+No syntax errors detected in inbox-status/inbox-status/classes/class-imap.php
+No syntax errors detected in inbox-status/inbox-status/classes/class-inbox-status.php
+No syntax errors detected in inbox-status/inbox-status/classes/class-nav-menus.php
+No syntax errors detected in inbox-status/inbox-status/classes/class-shortcodes.php
+No syntax errors detected in inbox-status/inbox-status/classes/PEAR/Net/IMAP.php
+No syntax errors detected in inbox-status/inbox-status/classes/PEAR/Net/IMAPProtocol.php
+No syntax errors detected in inbox-status/inbox-status/classes/PEAR/Net/Socket.php
+No syntax errors detected in inbox-status/inbox-status/plugin.php
+No syntax errors detected in inbox-status/inbox-status/templates/admin/admin-options.php
+No syntax errors detected in inbox-status/inbox-status/templates/admin/nav-menu-meta-box.php
+No syntax errors detected in inbox-status/inbox-status/templates/admin/setting-heading.php
+No syntax errors detected in inbox-status/inbox-status/templates/admin/setting-hidden.php
+No syntax errors detected in inbox-status/inbox-status/templates/admin/setting-input.php
+No syntax errors detected in inbox-status/inbox-status/templates/admin/setting-password.php
+No syntax errors detected in inbox-status/inbox-status/templates/admin/setting-radio.php
+No syntax errors detected in inbox-status/inbox-status/templates/admin/setting-select.php
+No syntax errors detected in inbox-status/inbox-status/templates/admin/setting-textarea.php
+No syntax errors detected in inbox-status/inbox-status/templates/admin/widget-email-count-form.php
+No syntax errors detected in inbox-status/inbox-status/templates/inbox-status-theme/widget-email-count.php
+......[31mE[0m[31mE[0m[31mE[0m............ 21 / 21 (100%)
+
+
+
+[1mFILE: classes/PEAR/Net/IMAP.php[0m
+----------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 46 | [31mERROR[0m | [1mDeclaration of a PHP4 style class constructor is
+    |       | deprecated since PHP 7.0 and removed since PHP 8.0[0m
+    |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+----------------------------------------------------------------------
+
+
+[1mFILE: classes/PEAR/Net/IMAPProtocol.php[0m
+----------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 168 | [31mERROR[0m | [1mDeclaration of a PHP4 style class constructor is
+     |       | deprecated since PHP 7.0 and removed since PHP 8.0[0m
+     |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+----------------------------------------------------------------------
+
+
+[1mFILE: classes/PEAR/Net/Socket.php[0m
+----------------------------------------------------------------------
+[1mFOUND 5 ERRORS AFFECTING 5 LINES[0m
+----------------------------------------------------------------------
+ 140 | [31mERROR[0m | [1mINI directive 'track_errors' is deprecated since PHP
+     |       | 7.2 and removed since PHP 8.0[0m
+     |       | (PHPCompatibility.IniDirectives.RemovedIniDirectives.track_errorsDeprecatedRemoved)
+ 169 | [31mERROR[0m | [1mThe variable '$php_errormsg' is deprecated since PHP
+     |       | 7.2 and removed since PHP 8.0; Use error_get_last()
+     |       | instead[0m
+     |       | (PHPCompatibility.Variables.RemovedPredefinedGlobalVariables.php_errormsgDeprecatedRemoved)
+ 170 | [31mERROR[0m | [1mThe variable '$php_errormsg' is deprecated since PHP
+     |       | 7.2 and removed since PHP 8.0; Use error_get_last()
+     |       | instead[0m
+     |       | (PHPCompatibility.Variables.RemovedPredefinedGlobalVariables.php_errormsgDeprecatedRemoved)
+ 172 | [31mERROR[0m | [1mINI directive 'track_errors' is deprecated since PHP
+     |       | 7.2 and removed since PHP 8.0[0m
+     |       | (PHPCompatibility.IniDirectives.RemovedIniDirectives.track_errorsDeprecatedRemoved)
+ 176 | [31mERROR[0m | [1mINI directive 'track_errors' is deprecated since PHP
+     |       | 7.2 and removed since PHP 8.0[0m
+     |       | (PHPCompatibility.IniDirectives.RemovedIniDirectives.track_errorsDeprecatedRemoved)
+----------------------------------------------------------------------
+
+Time: 779ms; Memory: 30MB
+::error::FILE: classes/PEAR/Net/IMAP.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 46 | ERROR | Declaration of a PHP4 style class constructor is%0A    |       | deprecated since PHP 7.0 and removed since PHP 8.0%0A    |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)%0A----------------------------------------------------------------------%0A%0A%0AFILE: classes/PEAR/Net/IMAPProtocol.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 168 | ERROR | Declaration of a PHP4 style class constructor is%0A     |       | deprecated since PHP 7.0 and removed since PHP 8.0%0A     |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)%0A----------------------------------------------------------------------%0A%0A%0AFILE: classes/PEAR/Net/Socket.php%0A----------------------------------------------------------------------%0AFOUND 5 ERRORS AFFECTING 5 LINES%0A----------------------------------------------------------------------%0A 140 | ERROR | INI directive 'track_errors' is deprecated since PHP%0A     |       | 7.2 and removed since PHP 8.0%0A     |       | (PHPCompatibility.IniDirectives.RemovedIniDirectives.track_errorsDeprecatedRemoved)%0A 169 | ERROR | The variable '$php_errormsg' is deprecated since PHP%0A     |       | 7.2 and removed since PHP 8.0; Use error_get_last()%0A     |       | instead%0A     |       | (PHPCompatibility.Variables.RemovedPredefinedGlobalVariables.php_errormsgDeprecatedRemoved)%0A 170 | ERROR | The variable '$php_errormsg' is deprecated since PHP%0A     |       | 7.2 and removed since PHP 8.0; Use error_get_last()%0A     |       | instead%0A     |       | (PHPCompatibility.Variables.RemovedPredefinedGlobalVariables.php_errormsgDeprecatedRemoved)%0A 172 | ERROR | INI directive 'track_errors' is deprecated since PHP%0A     |       | 7.2 and removed since PHP 8.0%0A     |       | (PHPCompatibility.IniDirectives.RemovedIniDirectives.track_errorsDeprecatedRemoved)%0A 176 | ERROR | INI directive 'track_errors' is deprecated since PHP%0A     |       | 7.2 and removed since PHP 8.0%0A     |       | (PHPCompatibility.IniDirectives.RemovedIniDirectives.track_errorsDeprecatedRemoved)%0A----------------------------------------------------------------------%0A
