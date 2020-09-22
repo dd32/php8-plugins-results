@@ -1,0 +1,82 @@
+::warning::Plugin: https://wordpress.org/plugins/texy/%0ATrac: https://plugins.trac.wordpress.org/browser/texy/
+No syntax errors detected in texy/texy/admin-settings.php
+No syntax errors detected in texy/texy/editor-buttons.php
+
+Parse error: syntax error, unexpected end of file in texy/texy/quicktags-strings.php on line 9
+Errors parsing texy/texy/quicktags-strings.php
+
+Fatal error: Array and string offset access syntax with curly braces is no longer supported in texy/texy/texy.compact.php on line 210
+Errors parsing texy/texy/texy.compact.php
+No syntax errors detected in texy/texy/texy-plugin.php
+::error::%0Aquicktags-strings.php%0A  Parse error: syntax error, unexpected end of file on line 9%0A%0Atexy.compact.php%0A  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 210
+...[32mE[0m. 5 / 5 (100%)
+
+
+
+[1mFILE: texy.compact.php[0m
+----------------------------------------------------------------------
+[1mFOUND 14 ERRORS AFFECTING 9 LINES[0m
+----------------------------------------------------------------------
+ 210 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $value{0}[0m
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 238 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found:
+     |       |     $this->text{$this->offset-1}[0m
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 238 | [31mERROR[0m | [ ] [1mUsing 'break' outside of a loop or switch
+     |       |     structure is invalid and will throw a fatal error
+     |       |     since PHP 7.0[0m
+     |       |     (PHPCompatibility.ControlStructures.ForbiddenBreakContinueOutsideLoop.FatalError)
+ 404 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $value{0}[0m
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 404 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $value{0}[0m
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 491 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $dest{0}[0m
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 491 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $dest{1}[0m
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 491 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $dest{0}[0m
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 491 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $dest{1}[0m
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 527 | [31mERROR[0m | [ ] [1mUsing 'break' outside of a loop or switch
+     |       |     structure is invalid and will throw a fatal error
+     |       |     since PHP 7.0[0m
+     |       |     (PHPCompatibility.ControlStructures.ForbiddenBreakContinueOutsideLoop.FatalError)
+ 532 | [31mERROR[0m | [ ] [1mUsing 'break' outside of a loop or switch
+     |       |     structure is invalid and will throw a fatal error
+     |       |     since PHP 7.0[0m
+     |       |     (PHPCompatibility.ControlStructures.ForbiddenBreakContinueOutsideLoop.FatalError)
+ 552 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $char{0}[0m
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 585 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $link{0}[0m
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 667 | [31mERROR[0m | [ ] [1mUsing 'break' outside of a loop or switch
+     |       |     structure is invalid and will throw a fatal error
+     |       |     since PHP 7.0[0m
+     |       |     (PHPCompatibility.ControlStructures.ForbiddenBreakContinueOutsideLoop.FatalError)
+----------------------------------------------------------------------
+[1mPHPCBF CAN FIX THE 10 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
+----------------------------------------------------------------------
+
+Time: 735ms; Memory: 34MB
+::error::FILE: texy.compact.php%0A----------------------------------------------------------------------%0AFOUND 14 ERRORS AFFECTING 9 LINES%0A----------------------------------------------------------------------%0A 210 | ERROR | [x] Curly brace syntax for accessing array elements%0A     |       |     and string offsets has been deprecated in PHP 7.4%0A     |       |     and removed in PHP 8.0. Found: $value{0}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 238 | ERROR | [x] Curly brace syntax for accessing array elements%0A     |       |     and string offsets has been deprecated in PHP 7.4%0A     |       |     and removed in PHP 8.0. Found:%0A     |       |     $this->text{$this->offset-1}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 238 | ERROR | [ ] Using 'break' outside of a loop or switch%0A     |       |     structure is invalid and will throw a fatal error%0A     |       |     since PHP 7.0%0A     |       |     (PHPCompatibility.ControlStructures.ForbiddenBreakContinueOutsideLoop.FatalError)%0A 404 | ERROR | [x] Curly brace syntax for accessing array elements%0A     |       |     and string offsets has been deprecated in PHP 7.4%0A     |       |     and removed in PHP 8.0. Found: $value{0}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 404 | ERROR | [x] Curly brace syntax for accessing array elements%0A     |       |     and string offsets has been deprecated in PHP 7.4%0A     |       |     and removed in PHP 8.0. Found: $value{0}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 491 | ERROR | [x] Curly brace syntax for accessing array elements%0A     |       |     and string offsets has been deprecated in PHP 7.4%0A     |       |     and removed in PHP 8.0. Found: $dest{0}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 491 | ERROR | [x] Curly brace syntax for accessing array elements%0A     |       |     and string offsets has been deprecated in PHP 7.4%0A     |       |     and removed in PHP 8.0. Found: $dest{1}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 491 | ERROR | [x] Curly brace syntax for accessing array elements%0A     |       |     and string offsets has been deprecated in PHP 7.4%0A     |       |     and removed in PHP 8.0. Found: $dest{0}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 491 | ERROR | [x] Curly brace syntax for accessing array elements%0A     |       |     and string offsets has been deprecated in PHP 7.4%0A     |       |     and removed in PHP 8.0. Found: $dest{1}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 527 | ERROR | [ ] Using 'break' outside of a loop or switch%0A     |       |     structure is invalid and will throw a fatal error%0A     |       |     since PHP 7.0%0A     |       |     (PHPCompatibility.ControlStructures.ForbiddenBreakContinueOutsideLoop.FatalError)%0A 532 | ERROR | [ ] Using 'break' outside of a loop or switch%0A     |       |     structure is invalid and will throw a fatal error%0A     |       |     since PHP 7.0%0A     |       |     (PHPCompatibility.ControlStructures.ForbiddenBreakContinueOutsideLoop.FatalError)%0A 552 | ERROR | [x] Curly brace syntax for accessing array elements%0A     |       |     and string offsets has been deprecated in PHP 7.4%0A     |       |     and removed in PHP 8.0. Found: $char{0}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 585 | ERROR | [x] Curly brace syntax for accessing array elements%0A     |       |     and string offsets has been deprecated in PHP 7.4%0A     |       |     and removed in PHP 8.0. Found: $link{0}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 667 | ERROR | [ ] Using 'break' outside of a loop or switch%0A     |       |     structure is invalid and will throw a fatal error%0A     |       |     since PHP 7.0%0A     |       |     (PHPCompatibility.ControlStructures.ForbiddenBreakContinueOutsideLoop.FatalError)%0A----------------------------------------------------------------------%0APHPCBF CAN FIX THE 10 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A----------------------------------------------------------------------%0A
