@@ -54,6 +54,8 @@ No syntax errors detected in premmerce-dev-tools/premmerce-dev-tools/vendor/comp
 No syntax errors detected in premmerce-dev-tools/premmerce-dev-tools/vendor/fzaninotto/faker/src/autoload.php
 No syntax errors detected in premmerce-dev-tools/premmerce-dev-tools/vendor/fzaninotto/faker/src/Faker/Calculator/Iban.php
 No syntax errors detected in premmerce-dev-tools/premmerce-dev-tools/vendor/fzaninotto/faker/src/Faker/Calculator/Inn.php
+
+Fatal error: Array and string offset access syntax with curly braces is no longer supported in premmerce-dev-tools/premmerce-dev-tools/vendor/fzaninotto/faker/src/Faker/Calculator/Luhn.php on line 27
 Errors parsing premmerce-dev-tools/premmerce-dev-tools/vendor/fzaninotto/faker/src/Faker/Calculator/Luhn.php
 No syntax errors detected in premmerce-dev-tools/premmerce-dev-tools/vendor/fzaninotto/faker/src/Faker/DefaultGenerator.php
 No syntax errors detected in premmerce-dev-tools/premmerce-dev-tools/vendor/fzaninotto/faker/src/Faker/Documentor.php
@@ -538,6 +540,8 @@ No syntax errors detected in premmerce-dev-tools/premmerce-dev-tools/vendor/fzan
 No syntax errors detected in premmerce-dev-tools/premmerce-dev-tools/vendor/fzaninotto/faker/test/Faker/Provider/es_ES/TextTest.php
 No syntax errors detected in premmerce-dev-tools/premmerce-dev-tools/vendor/fzaninotto/faker/test/Faker/Provider/es_PE/PersonTest.php
 No syntax errors detected in premmerce-dev-tools/premmerce-dev-tools/vendor/fzaninotto/faker/test/Faker/Provider/fi_FI/InternetTest.php
+
+Fatal error: Array and string offset access syntax with curly braces is no longer supported in premmerce-dev-tools/premmerce-dev-tools/vendor/fzaninotto/faker/test/Faker/Provider/fi_FI/PersonTest.php on line 66
 Errors parsing premmerce-dev-tools/premmerce-dev-tools/vendor/fzaninotto/faker/test/Faker/Provider/fi_FI/PersonTest.php
 No syntax errors detected in premmerce-dev-tools/premmerce-dev-tools/vendor/fzaninotto/faker/test/Faker/Provider/fr_BE/PaymentTest.php
 No syntax errors detected in premmerce-dev-tools/premmerce-dev-tools/vendor/fzaninotto/faker/test/Faker/Provider/fr_CH/AddressTest.php
@@ -578,6 +582,8 @@ No syntax errors detected in premmerce-dev-tools/premmerce-dev-tools/vendor/fzan
 No syntax errors detected in premmerce-dev-tools/premmerce-dev-tools/vendor/fzaninotto/faker/test/Faker/Provider/ro_RO/PersonTest.php
 No syntax errors detected in premmerce-dev-tools/premmerce-dev-tools/vendor/fzaninotto/faker/test/Faker/Provider/ro_RO/PhoneNumberTest.php
 No syntax errors detected in premmerce-dev-tools/premmerce-dev-tools/vendor/fzaninotto/faker/test/Faker/Provider/ru_RU/CompanyTest.php
+
+Fatal error: Array and string offset access syntax with curly braces is no longer supported in premmerce-dev-tools/premmerce-dev-tools/vendor/fzaninotto/faker/test/Faker/Provider/sv_SE/PersonTest.php on line 52
 Errors parsing premmerce-dev-tools/premmerce-dev-tools/vendor/fzaninotto/faker/test/Faker/Provider/sv_SE/PersonTest.php
 No syntax errors detected in premmerce-dev-tools/premmerce-dev-tools/vendor/fzaninotto/faker/test/Faker/Provider/TextTest.php
 No syntax errors detected in premmerce-dev-tools/premmerce-dev-tools/vendor/fzaninotto/faker/test/Faker/Provider/uk_UA/AddressTest.php
@@ -666,7 +672,7 @@ No syntax errors detected in premmerce-dev-tools/premmerce-dev-tools/vendor/symf
 No syntax errors detected in premmerce-dev-tools/premmerce-dev-tools/views/admin/clean-up.php
 No syntax errors detected in premmerce-dev-tools/premmerce-dev-tools/views/admin/create-plugin.php
 No syntax errors detected in premmerce-dev-tools/premmerce-dev-tools/views/admin/generate-data.php
-::error::%0Avendor/fzaninotto/faker/src/Faker/Calculator/Luhn.php%0A%0Avendor/fzaninotto/faker/test/Faker/Provider/fi_FI/PersonTest.php%0A%0Avendor/fzaninotto/faker/test/Faker/Provider/sv_SE/PersonTest.php
+::error::%0Avendor/fzaninotto/faker/src/Faker/Calculator/Luhn.php%0A  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 27%0A%0Avendor/fzaninotto/faker/test/Faker/Provider/fi_FI/PersonTest.php%0A  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 66%0A%0Avendor/fzaninotto/faker/test/Faker/Provider/sv_SE/PersonTest.php%0A  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 52
 .......................................................[32mE[0m....  60 / 663 (9%)
 .....................[31mE[0m.....[31mE[0m......[31mE[0m......................... 120 / 663 (18%)
 ............................................................ 180 / 663 (27%)
@@ -683,183 +689,270 @@ No syntax errors detected in premmerce-dev-tools/premmerce-dev-tools/views/admin
 
 
 [1mFILE: vendor/fzaninotto/faker/src/Faker/Calculator/Luhn.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 2 ERRORS AFFECTING 2 LINES[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 27 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $number{$i}[0m
+----------------------------------------------------------------------
+ 27 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and
+    |       |     string offsets has been deprecated in PHP 7.4 and
+    |       |     removed in PHP 8.0. Found: $number{$i}[0m
     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
- 30 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $number{$i}[0m
+ 30 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and
+    |       |     string offsets has been deprecated in PHP 7.4 and
+    |       |     removed in PHP 8.0. Found: $number{$i}[0m
     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mPHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 [1mFILE: vendor/fzaninotto/faker/src/Faker/Provider/ar_JO/Company.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 2 ERRORS AFFECTING 2 LINES[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 48 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse order to join has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first parameter
-    |       | and $pieces the second[0m (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
- 61 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse order to join has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first parameter
-    |       | and $pieces the second[0m (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
+ 48 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse
+    |       | order to join has been deprecated since PHP 7.4 and is
+    |       | removed since PHP 8.0; $glue should be the first
+    |       | parameter and $pieces the second[0m
+    |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
+ 61 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse
+    |       | order to join has been deprecated since PHP 7.4 and is
+    |       | removed since PHP 8.0; $glue should be the first
+    |       | parameter and $pieces the second[0m
+    |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
+----------------------------------------------------------------------
 
 
 [1mFILE: vendor/fzaninotto/faker/src/Faker/Provider/ar_SA/Company.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 2 ERRORS AFFECTING 2 LINES[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 50 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse order to join has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first parameter
-    |       | and $pieces the second[0m (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
- 63 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse order to join has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first parameter
-    |       | and $pieces the second[0m (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
+ 50 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse
+    |       | order to join has been deprecated since PHP 7.4 and is
+    |       | removed since PHP 8.0; $glue should be the first
+    |       | parameter and $pieces the second[0m
+    |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
+ 63 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse
+    |       | order to join has been deprecated since PHP 7.4 and is
+    |       | removed since PHP 8.0; $glue should be the first
+    |       | parameter and $pieces the second[0m
+    |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
+----------------------------------------------------------------------
 
 
 [1mFILE: vendor/fzaninotto/faker/src/Faker/Provider/Base.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 473 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse order to implode has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first
-     |       | parameter and $pieces the second[0m (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
+ 473 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse
+     |       | order to implode has been deprecated since PHP 7.4 and
+     |       | is removed since PHP 8.0; $glue should be the first
+     |       | parameter and $pieces the second[0m
+     |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
+----------------------------------------------------------------------
 
 
 [1mFILE: vendor/fzaninotto/faker/src/Faker/Provider/en_US/Company.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 2 ERRORS AFFECTING 2 LINES[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 78 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse order to join has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first parameter
-    |       | and $pieces the second[0m (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
- 91 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse order to join has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first parameter
-    |       | and $pieces the second[0m (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
+ 78 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse
+    |       | order to join has been deprecated since PHP 7.4 and is
+    |       | removed since PHP 8.0; $glue should be the first
+    |       | parameter and $pieces the second[0m
+    |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
+ 91 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse
+    |       | order to join has been deprecated since PHP 7.4 and is
+    |       | removed since PHP 8.0; $glue should be the first
+    |       | parameter and $pieces the second[0m
+    |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
+----------------------------------------------------------------------
 
 
 [1mFILE: vendor/fzaninotto/faker/src/Faker/Provider/es_AR/Company.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 2 ERRORS AFFECTING 2 LINES[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 51 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse order to join has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first parameter
-    |       | and $pieces the second[0m (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
- 64 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse order to join has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first parameter
-    |       | and $pieces the second[0m (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
+ 51 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse
+    |       | order to join has been deprecated since PHP 7.4 and is
+    |       | removed since PHP 8.0; $glue should be the first
+    |       | parameter and $pieces the second[0m
+    |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
+ 64 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse
+    |       | order to join has been deprecated since PHP 7.4 and is
+    |       | removed since PHP 8.0; $glue should be the first
+    |       | parameter and $pieces the second[0m
+    |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
+----------------------------------------------------------------------
 
 
 [1mFILE: vendor/fzaninotto/faker/src/Faker/Provider/es_ES/Company.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 2 ERRORS AFFECTING 2 LINES[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 65 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse order to join has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first parameter
-    |       | and $pieces the second[0m (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
- 78 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse order to join has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first parameter
-    |       | and $pieces the second[0m (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
+ 65 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse
+    |       | order to join has been deprecated since PHP 7.4 and is
+    |       | removed since PHP 8.0; $glue should be the first
+    |       | parameter and $pieces the second[0m
+    |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
+ 78 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse
+    |       | order to join has been deprecated since PHP 7.4 and is
+    |       | removed since PHP 8.0; $glue should be the first
+    |       | parameter and $pieces the second[0m
+    |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
+----------------------------------------------------------------------
 
 
 [1mFILE: vendor/fzaninotto/faker/src/Faker/Provider/es_PE/Company.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 2 ERRORS AFFECTING 2 LINES[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 51 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse order to join has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first parameter
-    |       | and $pieces the second[0m (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
- 64 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse order to join has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first parameter
-    |       | and $pieces the second[0m (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
+ 51 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse
+    |       | order to join has been deprecated since PHP 7.4 and is
+    |       | removed since PHP 8.0; $glue should be the first
+    |       | parameter and $pieces the second[0m
+    |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
+ 64 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse
+    |       | order to join has been deprecated since PHP 7.4 and is
+    |       | removed since PHP 8.0; $glue should be the first
+    |       | parameter and $pieces the second[0m
+    |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
+----------------------------------------------------------------------
 
 
 [1mFILE: vendor/fzaninotto/faker/src/Faker/Provider/fi_FI/Company.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 2 ERRORS AFFECTING 2 LINES[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 49 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse order to join has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first parameter
-    |       | and $pieces the second[0m (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
- 62 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse order to join has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first parameter
-    |       | and $pieces the second[0m (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
+ 49 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse
+    |       | order to join has been deprecated since PHP 7.4 and is
+    |       | removed since PHP 8.0; $glue should be the first
+    |       | parameter and $pieces the second[0m
+    |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
+ 62 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse
+    |       | order to join has been deprecated since PHP 7.4 and is
+    |       | removed since PHP 8.0; $glue should be the first
+    |       | parameter and $pieces the second[0m
+    |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
+----------------------------------------------------------------------
 
 
 [1mFILE: vendor/fzaninotto/faker/src/Faker/Provider/hy_AM/Company.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 2 ERRORS AFFECTING 2 LINES[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 39 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse order to join has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first parameter
-    |       | and $pieces the second[0m (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
- 52 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse order to join has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first parameter
-    |       | and $pieces the second[0m (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
+ 39 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse
+    |       | order to join has been deprecated since PHP 7.4 and is
+    |       | removed since PHP 8.0; $glue should be the first
+    |       | parameter and $pieces the second[0m
+    |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
+ 52 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse
+    |       | order to join has been deprecated since PHP 7.4 and is
+    |       | removed since PHP 8.0; $glue should be the first
+    |       | parameter and $pieces the second[0m
+    |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
+----------------------------------------------------------------------
 
 
 [1mFILE: vendor/fzaninotto/faker/src/Faker/Provider/Internet.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 178 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse order to join has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first parameter
-     |       | and $pieces the second[0m (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
+ 178 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse
+     |       | order to join has been deprecated since PHP 7.4 and is
+     |       | removed since PHP 8.0; $glue should be the first
+     |       | parameter and $pieces the second[0m
+     |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
+----------------------------------------------------------------------
 
 
 [1mFILE: vendor/fzaninotto/faker/src/Faker/Provider/it_IT/Company.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 2 ERRORS AFFECTING 2 LINES[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 49 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse order to join has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first parameter
-    |       | and $pieces the second[0m (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
- 62 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse order to join has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first parameter
-    |       | and $pieces the second[0m (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
+ 49 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse
+    |       | order to join has been deprecated since PHP 7.4 and is
+    |       | removed since PHP 8.0; $glue should be the first
+    |       | parameter and $pieces the second[0m
+    |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
+ 62 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse
+    |       | order to join has been deprecated since PHP 7.4 and is
+    |       | removed since PHP 8.0; $glue should be the first
+    |       | parameter and $pieces the second[0m
+    |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
+----------------------------------------------------------------------
 
 
 [1mFILE: vendor/fzaninotto/faker/src/Faker/Provider/Lorem.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 3 ERRORS AFFECTING 3 LINES[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  95 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse order to implode has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first
-     |       | parameter and $pieces the second[0m (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
- 134 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse order to implode has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first
-     |       | parameter and $pieces the second[0m (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
- 196 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse order to implode has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first
-     |       | parameter and $pieces the second[0m (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
+  95 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse
+     |       | order to implode has been deprecated since PHP 7.4 and
+     |       | is removed since PHP 8.0; $glue should be the first
+     |       | parameter and $pieces the second[0m
+     |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
+ 134 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse
+     |       | order to implode has been deprecated since PHP 7.4 and
+     |       | is removed since PHP 8.0; $glue should be the first
+     |       | parameter and $pieces the second[0m
+     |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
+ 196 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse
+     |       | order to implode has been deprecated since PHP 7.4 and
+     |       | is removed since PHP 8.0; $glue should be the first
+     |       | parameter and $pieces the second[0m
+     |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
+----------------------------------------------------------------------
 
 
 [1mFILE: vendor/fzaninotto/faker/src/Faker/Provider/sk_SK/Company.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 2 ERRORS AFFECTING 2 LINES[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 49 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse order to join has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first parameter
-    |       | and $pieces the second[0m (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
- 62 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse order to join has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first parameter
-    |       | and $pieces the second[0m (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
+ 49 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse
+    |       | order to join has been deprecated since PHP 7.4 and is
+    |       | removed since PHP 8.0; $glue should be the first
+    |       | parameter and $pieces the second[0m
+    |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
+ 62 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse
+    |       | order to join has been deprecated since PHP 7.4 and is
+    |       | removed since PHP 8.0; $glue should be the first
+    |       | parameter and $pieces the second[0m
+    |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
+----------------------------------------------------------------------
 
 
 [1mFILE: vendor/fzaninotto/faker/test/Faker/Provider/fi_FI/PersonTest.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 2 ERRORS AFFECTING 2 LINES[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 66 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $pin{9}[0m
+----------------------------------------------------------------------
+ 66 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and
+    |       |     string offsets has been deprecated in PHP 7.4 and
+    |       |     removed in PHP 8.0. Found: $pin{9}[0m
     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
- 72 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $pin{9}[0m
+ 72 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and
+    |       |     string offsets has been deprecated in PHP 7.4 and
+    |       |     removed in PHP 8.0. Found: $pin{9}[0m
     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mPHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 [1mFILE: vendor/fzaninotto/faker/test/Faker/Provider/sv_SE/PersonTest.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 2 ERRORS AFFECTING 2 LINES[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 52 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $pin{9}[0m
+----------------------------------------------------------------------
+ 52 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and
+    |       |     string offsets has been deprecated in PHP 7.4 and
+    |       |     removed in PHP 8.0. Found: $pin{9}[0m
     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
- 58 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $pin{9}[0m
+ 58 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and
+    |       |     string offsets has been deprecated in PHP 7.4 and
+    |       |     removed in PHP 8.0. Found: $pin{9}[0m
     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mPHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
-Time: 8.59 secs; Memory: 34MB
-::error::FILE: vendor/fzaninotto/faker/src/Faker/Calculator/Luhn.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 27 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $number{$i}%0A    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 30 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $number{$i}%0A    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0APHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: vendor/fzaninotto/faker/src/Faker/Provider/ar_JO/Company.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 48 | ERROR | Passing the $glue and $pieces parameters in reverse order to join has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first parameter%0A    |       | and $pieces the second (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A 61 | ERROR | Passing the $glue and $pieces parameters in reverse order to join has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first parameter%0A    |       | and $pieces the second (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: vendor/fzaninotto/faker/src/Faker/Provider/ar_SA/Company.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 50 | ERROR | Passing the $glue and $pieces parameters in reverse order to join has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first parameter%0A    |       | and $pieces the second (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A 63 | ERROR | Passing the $glue and $pieces parameters in reverse order to join has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first parameter%0A    |       | and $pieces the second (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: vendor/fzaninotto/faker/src/Faker/Provider/Base.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 473 | ERROR | Passing the $glue and $pieces parameters in reverse order to implode has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first%0A     |       | parameter and $pieces the second (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: vendor/fzaninotto/faker/src/Faker/Provider/en_US/Company.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 78 | ERROR | Passing the $glue and $pieces parameters in reverse order to join has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first parameter%0A    |       | and $pieces the second (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A 91 | ERROR | Passing the $glue and $pieces parameters in reverse order to join has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first parameter%0A    |       | and $pieces the second (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: vendor/fzaninotto/faker/src/Faker/Provider/es_AR/Company.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 51 | ERROR | Passing the $glue and $pieces parameters in reverse order to join has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first parameter%0A    |       | and $pieces the second (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A 64 | ERROR | Passing the $glue and $pieces parameters in reverse order to join has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first parameter%0A    |       | and $pieces the second (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: vendor/fzaninotto/faker/src/Faker/Provider/es_ES/Company.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 65 | ERROR | Passing the $glue and $pieces parameters in reverse order to join has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first parameter%0A    |       | and $pieces the second (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A 78 | ERROR | Passing the $glue and $pieces parameters in reverse order to join has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first parameter%0A    |       | and $pieces the second (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: vendor/fzaninotto/faker/src/Faker/Provider/es_PE/Company.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 51 | ERROR | Passing the $glue and $pieces parameters in reverse order to join has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first parameter%0A    |       | and $pieces the second (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A 64 | ERROR | Passing the $glue and $pieces parameters in reverse order to join has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first parameter%0A    |       | and $pieces the second (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: vendor/fzaninotto/faker/src/Faker/Provider/fi_FI/Company.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 49 | ERROR | Passing the $glue and $pieces parameters in reverse order to join has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first parameter%0A    |       | and $pieces the second (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A 62 | ERROR | Passing the $glue and $pieces parameters in reverse order to join has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first parameter%0A    |       | and $pieces the second (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: vendor/fzaninotto/faker/src/Faker/Provider/hy_AM/Company.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 39 | ERROR | Passing the $glue and $pieces parameters in reverse order to join has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first parameter%0A    |       | and $pieces the second (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A 52 | ERROR | Passing the $glue and $pieces parameters in reverse order to join has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first parameter%0A    |       | and $pieces the second (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: vendor/fzaninotto/faker/src/Faker/Provider/Internet.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 178 | ERROR | Passing the $glue and $pieces parameters in reverse order to join has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first parameter%0A     |       | and $pieces the second (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: vendor/fzaninotto/faker/src/Faker/Provider/it_IT/Company.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 49 | ERROR | Passing the $glue and $pieces parameters in reverse order to join has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first parameter%0A    |       | and $pieces the second (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A 62 | ERROR | Passing the $glue and $pieces parameters in reverse order to join has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first parameter%0A    |       | and $pieces the second (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: vendor/fzaninotto/faker/src/Faker/Provider/Lorem.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 3 ERRORS AFFECTING 3 LINES%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A  95 | ERROR | Passing the $glue and $pieces parameters in reverse order to implode has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first%0A     |       | parameter and $pieces the second (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A 134 | ERROR | Passing the $glue and $pieces parameters in reverse order to implode has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first%0A     |       | parameter and $pieces the second (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A 196 | ERROR | Passing the $glue and $pieces parameters in reverse order to implode has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first%0A     |       | parameter and $pieces the second (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: vendor/fzaninotto/faker/src/Faker/Provider/sk_SK/Company.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 49 | ERROR | Passing the $glue and $pieces parameters in reverse order to join has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first parameter%0A    |       | and $pieces the second (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A 62 | ERROR | Passing the $glue and $pieces parameters in reverse order to join has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first parameter%0A    |       | and $pieces the second (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: vendor/fzaninotto/faker/test/Faker/Provider/fi_FI/PersonTest.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 66 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $pin{9}%0A    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 72 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $pin{9}%0A    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0APHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: vendor/fzaninotto/faker/test/Faker/Provider/sv_SE/PersonTest.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 52 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $pin{9}%0A    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 58 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $pin{9}%0A    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0APHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
+Time: 8.37 secs; Memory: 34MB
+::error::FILE: vendor/fzaninotto/faker/src/Faker/Calculator/Luhn.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A----------------------------------------------------------------------%0A 27 | ERROR | [x] Curly brace syntax for accessing array elements and%0A    |       |     string offsets has been deprecated in PHP 7.4 and%0A    |       |     removed in PHP 8.0. Found: $number{$i}%0A    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 30 | ERROR | [x] Curly brace syntax for accessing array elements and%0A    |       |     string offsets has been deprecated in PHP 7.4 and%0A    |       |     removed in PHP 8.0. Found: $number{$i}%0A    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A----------------------------------------------------------------------%0APHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A----------------------------------------------------------------------%0A%0A%0AFILE: vendor/fzaninotto/faker/src/Faker/Provider/ar_JO/Company.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A----------------------------------------------------------------------%0A 48 | ERROR | Passing the $glue and $pieces parameters in reverse%0A    |       | order to join has been deprecated since PHP 7.4 and is%0A    |       | removed since PHP 8.0; $glue should be the first%0A    |       | parameter and $pieces the second%0A    |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A 61 | ERROR | Passing the $glue and $pieces parameters in reverse%0A    |       | order to join has been deprecated since PHP 7.4 and is%0A    |       | removed since PHP 8.0; $glue should be the first%0A    |       | parameter and $pieces the second%0A    |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A----------------------------------------------------------------------%0A%0A%0AFILE: vendor/fzaninotto/faker/src/Faker/Provider/ar_SA/Company.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A----------------------------------------------------------------------%0A 50 | ERROR | Passing the $glue and $pieces parameters in reverse%0A    |       | order to join has been deprecated since PHP 7.4 and is%0A    |       | removed since PHP 8.0; $glue should be the first%0A    |       | parameter and $pieces the second%0A    |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A 63 | ERROR | Passing the $glue and $pieces parameters in reverse%0A    |       | order to join has been deprecated since PHP 7.4 and is%0A    |       | removed since PHP 8.0; $glue should be the first%0A    |       | parameter and $pieces the second%0A    |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A----------------------------------------------------------------------%0A%0A%0AFILE: vendor/fzaninotto/faker/src/Faker/Provider/Base.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 473 | ERROR | Passing the $glue and $pieces parameters in reverse%0A     |       | order to implode has been deprecated since PHP 7.4 and%0A     |       | is removed since PHP 8.0; $glue should be the first%0A     |       | parameter and $pieces the second%0A     |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A----------------------------------------------------------------------%0A%0A%0AFILE: vendor/fzaninotto/faker/src/Faker/Provider/en_US/Company.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A----------------------------------------------------------------------%0A 78 | ERROR | Passing the $glue and $pieces parameters in reverse%0A    |       | order to join has been deprecated since PHP 7.4 and is%0A    |       | removed since PHP 8.0; $glue should be the first%0A    |       | parameter and $pieces the second%0A    |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A 91 | ERROR | Passing the $glue and $pieces parameters in reverse%0A    |       | order to join has been deprecated since PHP 7.4 and is%0A    |       | removed since PHP 8.0; $glue should be the first%0A    |       | parameter and $pieces the second%0A    |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A----------------------------------------------------------------------%0A%0A%0AFILE: vendor/fzaninotto/faker/src/Faker/Provider/es_AR/Company.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A----------------------------------------------------------------------%0A 51 | ERROR | Passing the $glue and $pieces parameters in reverse%0A    |       | order to join has been deprecated since PHP 7.4 and is%0A    |       | removed since PHP 8.0; $glue should be the first%0A    |       | parameter and $pieces the second%0A    |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A 64 | ERROR | Passing the $glue and $pieces parameters in reverse%0A    |       | order to join has been deprecated since PHP 7.4 and is%0A    |       | removed since PHP 8.0; $glue should be the first%0A    |       | parameter and $pieces the second%0A    |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A----------------------------------------------------------------------%0A%0A%0AFILE: vendor/fzaninotto/faker/src/Faker/Provider/es_ES/Company.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A----------------------------------------------------------------------%0A 65 | ERROR | Passing the $glue and $pieces parameters in reverse%0A    |       | order to join has been deprecated since PHP 7.4 and is%0A    |       | removed since PHP 8.0; $glue should be the first%0A    |       | parameter and $pieces the second%0A    |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A 78 | ERROR | Passing the $glue and $pieces parameters in reverse%0A    |       | order to join has been deprecated since PHP 7.4 and is%0A    |       | removed since PHP 8.0; $glue should be the first%0A    |       | parameter and $pieces the second%0A    |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A----------------------------------------------------------------------%0A%0A%0AFILE: vendor/fzaninotto/faker/src/Faker/Provider/es_PE/Company.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A----------------------------------------------------------------------%0A 51 | ERROR | Passing the $glue and $pieces parameters in reverse%0A    |       | order to join has been deprecated since PHP 7.4 and is%0A    |       | removed since PHP 8.0; $glue should be the first%0A    |       | parameter and $pieces the second%0A    |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A 64 | ERROR | Passing the $glue and $pieces parameters in reverse%0A    |       | order to join has been deprecated since PHP 7.4 and is%0A    |       | removed since PHP 8.0; $glue should be the first%0A    |       | parameter and $pieces the second%0A    |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A----------------------------------------------------------------------%0A%0A%0AFILE: vendor/fzaninotto/faker/src/Faker/Provider/fi_FI/Company.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A----------------------------------------------------------------------%0A 49 | ERROR | Passing the $glue and $pieces parameters in reverse%0A    |       | order to join has been deprecated since PHP 7.4 and is%0A    |       | removed since PHP 8.0; $glue should be the first%0A    |       | parameter and $pieces the second%0A    |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A 62 | ERROR | Passing the $glue and $pieces parameters in reverse%0A    |       | order to join has been deprecated since PHP 7.4 and is%0A    |       | removed since PHP 8.0; $glue should be the first%0A    |       | parameter and $pieces the second%0A    |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A----------------------------------------------------------------------%0A%0A%0AFILE: vendor/fzaninotto/faker/src/Faker/Provider/hy_AM/Company.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A----------------------------------------------------------------------%0A 39 | ERROR | Passing the $glue and $pieces parameters in reverse%0A    |       | order to join has been deprecated since PHP 7.4 and is%0A    |       | removed since PHP 8.0; $glue should be the first%0A    |       | parameter and $pieces the second%0A    |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A 52 | ERROR | Passing the $glue and $pieces parameters in reverse%0A    |       | order to join has been deprecated since PHP 7.4 and is%0A    |       | removed since PHP 8.0; $glue should be the first%0A    |       | parameter and $pieces the second%0A    |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A----------------------------------------------------------------------%0A%0A%0AFILE: vendor/fzaninotto/faker/src/Faker/Provider/Internet.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 178 | ERROR | Passing the $glue and $pieces parameters in reverse%0A     |       | order to join has been deprecated since PHP 7.4 and is%0A     |       | removed since PHP 8.0; $glue should be the first%0A     |       | parameter and $pieces the second%0A     |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A----------------------------------------------------------------------%0A%0A%0AFILE: vendor/fzaninotto/faker/src/Faker/Provider/it_IT/Company.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A----------------------------------------------------------------------%0A 49 | ERROR | Passing the $glue and $pieces parameters in reverse%0A    |       | order to join has been deprecated since PHP 7.4 and is%0A    |       | removed since PHP 8.0; $glue should be the first%0A    |       | parameter and $pieces the second%0A    |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A 62 | ERROR | Passing the $glue and $pieces parameters in reverse%0A    |       | order to join has been deprecated since PHP 7.4 and is%0A    |       | removed since PHP 8.0; $glue should be the first%0A    |       | parameter and $pieces the second%0A    |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A----------------------------------------------------------------------%0A%0A%0AFILE: vendor/fzaninotto/faker/src/Faker/Provider/Lorem.php%0A----------------------------------------------------------------------%0AFOUND 3 ERRORS AFFECTING 3 LINES%0A----------------------------------------------------------------------%0A  95 | ERROR | Passing the $glue and $pieces parameters in reverse%0A     |       | order to implode has been deprecated since PHP 7.4 and%0A     |       | is removed since PHP 8.0; $glue should be the first%0A     |       | parameter and $pieces the second%0A     |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A 134 | ERROR | Passing the $glue and $pieces parameters in reverse%0A     |       | order to implode has been deprecated since PHP 7.4 and%0A     |       | is removed since PHP 8.0; $glue should be the first%0A     |       | parameter and $pieces the second%0A     |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A 196 | ERROR | Passing the $glue and $pieces parameters in reverse%0A     |       | order to implode has been deprecated since PHP 7.4 and%0A     |       | is removed since PHP 8.0; $glue should be the first%0A     |       | parameter and $pieces the second%0A     |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A----------------------------------------------------------------------%0A%0A%0AFILE: vendor/fzaninotto/faker/src/Faker/Provider/sk_SK/Company.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A----------------------------------------------------------------------%0A 49 | ERROR | Passing the $glue and $pieces parameters in reverse%0A    |       | order to join has been deprecated since PHP 7.4 and is%0A    |       | removed since PHP 8.0; $glue should be the first%0A    |       | parameter and $pieces the second%0A    |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A 62 | ERROR | Passing the $glue and $pieces parameters in reverse%0A    |       | order to join has been deprecated since PHP 7.4 and is%0A    |       | removed since PHP 8.0; $glue should be the first%0A    |       | parameter and $pieces the second%0A    |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A----------------------------------------------------------------------%0A%0A%0AFILE: vendor/fzaninotto/faker/test/Faker/Provider/fi_FI/PersonTest.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A----------------------------------------------------------------------%0A 66 | ERROR | [x] Curly brace syntax for accessing array elements and%0A    |       |     string offsets has been deprecated in PHP 7.4 and%0A    |       |     removed in PHP 8.0. Found: $pin{9}%0A    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 72 | ERROR | [x] Curly brace syntax for accessing array elements and%0A    |       |     string offsets has been deprecated in PHP 7.4 and%0A    |       |     removed in PHP 8.0. Found: $pin{9}%0A    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A----------------------------------------------------------------------%0APHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A----------------------------------------------------------------------%0A%0A%0AFILE: vendor/fzaninotto/faker/test/Faker/Provider/sv_SE/PersonTest.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A----------------------------------------------------------------------%0A 52 | ERROR | [x] Curly brace syntax for accessing array elements and%0A    |       |     string offsets has been deprecated in PHP 7.4 and%0A    |       |     removed in PHP 8.0. Found: $pin{9}%0A    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 58 | ERROR | [x] Curly brace syntax for accessing array elements and%0A    |       |     string offsets has been deprecated in PHP 7.4 and%0A    |       |     removed in PHP 8.0. Found: $pin{9}%0A    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A----------------------------------------------------------------------%0APHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A----------------------------------------------------------------------%0A
