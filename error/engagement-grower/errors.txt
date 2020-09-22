@@ -1,0 +1,41 @@
+
+admin/vendor/patchwork/utf8/src/Patchwork/Utf8/Bootup/mbstring.php
+  Fatal error: Cannot redeclare mb_convert_encoding() on line 23
+FILE: ...min/vendor/patchwork/utf8/src/Patchwork/Utf8/Bootup/mbstring.php
+----------------------------------------------------------------------
+FOUND 3 ERRORS AFFECTING 3 LINES
+----------------------------------------------------------------------
+ 14 | ERROR | The constant "MB_OVERLOAD_MAIL" is removed since PHP
+    |       | 8.0
+    |       | (PHPCompatibility.Constants.RemovedConstants.mb_overload_mailRemoved)
+ 15 | ERROR | The constant "MB_OVERLOAD_STRING" is removed since PHP
+    |       | 8.0
+    |       | (PHPCompatibility.Constants.RemovedConstants.mb_overload_stringRemoved)
+ 16 | ERROR | The constant "MB_OVERLOAD_REGEX" is removed since PHP
+    |       | 8.0
+    |       | (PHPCompatibility.Constants.RemovedConstants.mb_overload_regexRemoved)
+----------------------------------------------------------------------
+
+
+FILE: admin/vendor/patchwork/utf8/src/Patchwork/Utf8/Bootup.php
+----------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+----------------------------------------------------------------------
+ 45 | ERROR | The constant "MB_OVERLOAD_STRING" is removed since PHP
+    |       | 8.0
+    |       | (PHPCompatibility.Constants.RemovedConstants.mb_overload_stringRemoved)
+ 52 | ERROR | INI directive 'mbstring.script_encoding' is removed
+    |       | since PHP 5.4; Use 'zend.script_encoding' instead
+    |       | (PHPCompatibility.IniDirectives.RemovedIniDirectives.mbstring_script_encodingRemoved)
+----------------------------------------------------------------------
+
+
+FILE: ...endor/patchwork/utf8/src/Patchwork/Utf8/WindowsStreamWrapper.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 109 | ERROR | Function each() is deprecated since PHP 7.2 and
+     |       | removed since PHP 8.0; Use a foreach loop or
+     |       | ArrayIterator instead
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)
+----------------------------------------------------------------------
