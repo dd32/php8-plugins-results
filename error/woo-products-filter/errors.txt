@@ -1,0 +1,52 @@
+
+public/woopf-product-filter.php
+  Warning: "continue" targeting switch is equivalent to "break".
+      Did you mean to use "continue 2"?
+      on line 280
+  Fatal error: Unparenthesized `a ? b : c ? d : e` is not supported.
+      Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)`
+      on line 316
+
+public/woopf-public.php
+  Fatal error: Unparenthesized `a ? b : c ? d : e` is not supported.
+      Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)`
+      on line 323
+FILE: public/woopf-product-filter.php
+----------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+----------------------------------------------------------------------
+ 243 | ERROR | Passing the $glue and $pieces parameters in reverse
+     |       | order to implode has been deprecated since PHP 7.4 and
+     |       | is removed since PHP 8.0; $glue should be the first
+     |       | parameter and $pieces the second
+     |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
+ 316 | ERROR | The left-associativity of the ternary operator has
+     |       | been deprecated in PHP 7.4 and removed in PHP 8.0.
+     |       | Multiple consecutive ternaries detected. Use
+     |       | parenthesis to clarify the order in which the
+     |       | operations should be executed
+     |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
+----------------------------------------------------------------------
+
+
+FILE: public/woopf-public.php
+----------------------------------------------------------------------
+FOUND 3 ERRORS AFFECTING 3 LINES
+----------------------------------------------------------------------
+ 281 | ERROR | Passing the $glue and $pieces parameters in reverse
+     |       | order to implode has been deprecated since PHP 7.4 and
+     |       | is removed since PHP 8.0; $glue should be the first
+     |       | parameter and $pieces the second
+     |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
+ 289 | ERROR | Passing the $glue and $pieces parameters in reverse
+     |       | order to implode has been deprecated since PHP 7.4 and
+     |       | is removed since PHP 8.0; $glue should be the first
+     |       | parameter and $pieces the second
+     |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
+ 323 | ERROR | The left-associativity of the ternary operator has
+     |       | been deprecated in PHP 7.4 and removed in PHP 8.0.
+     |       | Multiple consecutive ternaries detected. Use
+     |       | parenthesis to clarify the order in which the
+     |       | operations should be executed
+     |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
+----------------------------------------------------------------------

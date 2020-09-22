@@ -1,0 +1,71 @@
+::warning::Plugin: https://wordpress.org/plugins/woo-products-filter/%0ATrac: https://plugins.trac.wordpress.org/browser/woo-products-filter/
+No syntax errors detected in woo-products-filter/woo-products-filter/admin/index.php
+No syntax errors detected in woo-products-filter/woo-products-filter/admin/search/option/advance-option.php
+No syntax errors detected in woo-products-filter/woo-products-filter/admin/search/option/presets-option.php
+No syntax errors detected in woo-products-filter/woo-products-filter/admin/search/woopf-search-settings.php
+No syntax errors detected in woo-products-filter/woo-products-filter/admin/woopf-widgets.php
+No syntax errors detected in woo-products-filter/woo-products-filter/includes/class-woopf-activator.php
+No syntax errors detected in woo-products-filter/woo-products-filter/includes/class-woopf-deactivator.php
+No syntax errors detected in woo-products-filter/woo-products-filter/includes/setup.php
+No syntax errors detected in woo-products-filter/woo-products-filter/includes/woopf.php
+No syntax errors detected in woo-products-filter/woo-products-filter/index.php
+No syntax errors detected in woo-products-filter/woo-products-filter/public/index.php
+No syntax errors detected in woo-products-filter/woo-products-filter/public/woopf-orderby.php
+
+Warning: "continue" targeting switch is equivalent to "break". Did you mean to use "continue 2"? in woo-products-filter/woo-products-filter/public/woopf-product-filter.php on line 280
+
+Fatal error: Unparenthesized `a ? b : c ? d : e` is not supported. Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)` in woo-products-filter/woo-products-filter/public/woopf-product-filter.php on line 316
+Errors parsing woo-products-filter/woo-products-filter/public/woopf-product-filter.php
+
+Fatal error: Unparenthesized `a ? b : c ? d : e` is not supported. Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)` in woo-products-filter/woo-products-filter/public/woopf-public.php on line 323
+Errors parsing woo-products-filter/woo-products-filter/public/woopf-public.php
+No syntax errors detected in woo-products-filter/woo-products-filter/public/woopf-shortcode.php
+No syntax errors detected in woo-products-filter/woo-products-filter/uninstall.php
+No syntax errors detected in woo-products-filter/woo-products-filter/woo-products-filter.php
+::error::%0Apublic/woopf-product-filter.php%0A  Warning: "continue" targeting switch is equivalent to "break".%0A      Did you mean to use "continue 2"?%0A      on line 280%0A  Fatal error: Unparenthesized `a ? b : c ? d : e` is not supported.%0A      Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)`%0A      on line 316%0A%0Apublic/woopf-public.php%0A  Fatal error: Unparenthesized `a ? b : c ? d : e` is not supported.%0A      Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)`%0A      on line 323
+............[31mE[0m[31mE[0m... 17 / 17 (100%)
+
+
+
+[1mFILE: public/woopf-product-filter.php[0m
+----------------------------------------------------------------------
+[1mFOUND 2 ERRORS AFFECTING 2 LINES[0m
+----------------------------------------------------------------------
+ 243 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse
+     |       | order to implode has been deprecated since PHP 7.4 and
+     |       | is removed since PHP 8.0; $glue should be the first
+     |       | parameter and $pieces the second[0m
+     |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
+ 316 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has
+     |       | been deprecated in PHP 7.4 and removed in PHP 8.0.
+     |       | Multiple consecutive ternaries detected. Use
+     |       | parenthesis to clarify the order in which the
+     |       | operations should be executed[0m
+     |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
+----------------------------------------------------------------------
+
+
+[1mFILE: public/woopf-public.php[0m
+----------------------------------------------------------------------
+[1mFOUND 3 ERRORS AFFECTING 3 LINES[0m
+----------------------------------------------------------------------
+ 281 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse
+     |       | order to implode has been deprecated since PHP 7.4 and
+     |       | is removed since PHP 8.0; $glue should be the first
+     |       | parameter and $pieces the second[0m
+     |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
+ 289 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse
+     |       | order to implode has been deprecated since PHP 7.4 and
+     |       | is removed since PHP 8.0; $glue should be the first
+     |       | parameter and $pieces the second[0m
+     |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
+ 323 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has
+     |       | been deprecated in PHP 7.4 and removed in PHP 8.0.
+     |       | Multiple consecutive ternaries detected. Use
+     |       | parenthesis to clarify the order in which the
+     |       | operations should be executed[0m
+     |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
+----------------------------------------------------------------------
+
+Time: 922ms; Memory: 32MB
+::error::FILE: public/woopf-product-filter.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A----------------------------------------------------------------------%0A 243 | ERROR | Passing the $glue and $pieces parameters in reverse%0A     |       | order to implode has been deprecated since PHP 7.4 and%0A     |       | is removed since PHP 8.0; $glue should be the first%0A     |       | parameter and $pieces the second%0A     |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A 316 | ERROR | The left-associativity of the ternary operator has%0A     |       | been deprecated in PHP 7.4 and removed in PHP 8.0.%0A     |       | Multiple consecutive ternaries detected. Use%0A     |       | parenthesis to clarify the order in which the%0A     |       | operations should be executed%0A     |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A----------------------------------------------------------------------%0A%0A%0AFILE: public/woopf-public.php%0A----------------------------------------------------------------------%0AFOUND 3 ERRORS AFFECTING 3 LINES%0A----------------------------------------------------------------------%0A 281 | ERROR | Passing the $glue and $pieces parameters in reverse%0A     |       | order to implode has been deprecated since PHP 7.4 and%0A     |       | is removed since PHP 8.0; $glue should be the first%0A     |       | parameter and $pieces the second%0A     |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A 289 | ERROR | Passing the $glue and $pieces parameters in reverse%0A     |       | order to implode has been deprecated since PHP 7.4 and%0A     |       | is removed since PHP 8.0; $glue should be the first%0A     |       | parameter and $pieces the second%0A     |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A 323 | ERROR | The left-associativity of the ternary operator has%0A     |       | been deprecated in PHP 7.4 and removed in PHP 8.0.%0A     |       | Multiple consecutive ternaries detected. Use%0A     |       | parenthesis to clarify the order in which the%0A     |       | operations should be executed%0A     |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A----------------------------------------------------------------------%0A

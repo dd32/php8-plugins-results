@@ -1,0 +1,96 @@
+
+captcha.php
+  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 41
+
+link-directory.php
+  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 2410
+
+securimage.php
+  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 657
+FILE: captcha.php
+----------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+----------------------------------------------------------------------
+ 11 | ERROR | [ ] Declaration of a PHP4 style class constructor is
+    |       |     deprecated since PHP 7.0 and removed since PHP
+    |       |     8.0
+    |       |     (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+ 41 | ERROR | [x] Curly brace syntax for accessing array elements and
+    |       |     string offsets has been deprecated in PHP 7.4 and
+    |       |     removed in PHP 8.0. Found: $letters{rand (0, strlen
+    |       |     ($letters) - 1)}
+    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------
+
+
+FILE: link-directory.php
+----------------------------------------------------------------------
+FOUND 5 ERRORS AFFECTING 4 LINES
+----------------------------------------------------------------------
+   25 | ERROR | [ ] Declaration of a PHP4 style class constructor is
+      |       |     deprecated since PHP 7.0 and removed since PHP
+      |       |     8.0
+      |       |     (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+ 1690 | ERROR | [ ] Extension 'ereg' is deprecated since PHP 5.3 and
+      |       |     removed since PHP 7.0; Use pcre instead
+      |       |     (PHPCompatibility.Extensions.RemovedExtensions.eregDeprecatedRemoved)
+ 1690 | ERROR | [ ] Function eregi() is deprecated since PHP 5.3 and
+      |       |     removed since PHP 7.0; Use preg_match() (with the
+      |       |     i modifier) instead
+      |       |     (PHPCompatibility.FunctionUse.RemovedFunctions.eregiDeprecatedRemoved)
+ 2410 | ERROR | [x] Curly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found: $Str{$i}
+      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 2442 | ERROR | [x] Curly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found: $HashStr{$i}
+      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------
+
+
+FILE: paypal.class.php
+----------------------------------------------------------------------
+FOUND 3 ERRORS AFFECTING 2 LINES
+----------------------------------------------------------------------
+  16 | ERROR | Declaration of a PHP4 style class constructor is
+     |       | deprecated since PHP 7.0 and removed since PHP 8.0
+     |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+ 124 | ERROR | Extension 'ereg' is deprecated since PHP 5.3 and
+     |       | removed since PHP 7.0; Use pcre instead
+     |       | (PHPCompatibility.Extensions.RemovedExtensions.eregDeprecatedRemoved)
+ 124 | ERROR | Function eregi() is deprecated since PHP 5.3 and
+     |       | removed since PHP 7.0; Use preg_match() (with the i
+     |       | modifier) instead
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eregiDeprecatedRemoved)
+----------------------------------------------------------------------
+
+
+FILE: securimage.php
+----------------------------------------------------------------------
+FOUND 4 ERRORS AFFECTING 4 LINES
+----------------------------------------------------------------------
+ 419 | ERROR | [ ] Declaration of a PHP4 style class constructor is
+     |       |     deprecated since PHP 7.0 and removed since PHP
+     |       |     8.0
+     |       |     (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+ 657 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $this->code{$i}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 697 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found:
+     |       |     $this->charset{rand(0, $cslen - 1)}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 788 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $code{$i}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 3 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------

@@ -1,0 +1,45 @@
+::warning::Plugin: https://wordpress.org/plugins/rootsrated-content-cloud/%0ATrac: https://plugins.trac.wordpress.org/browser/rootsrated-content-cloud/
+No syntax errors detected in rootsrated-content-cloud/rootsrated-content-cloud/includes/RootsratedInit.php
+No syntax errors detected in rootsrated-content-cloud/rootsrated-content-cloud/includes/SDK/RootsratedError.php
+No syntax errors detected in rootsrated-content-cloud/rootsrated-content-cloud/includes/SDK/RootsratedPosts.php
+No syntax errors detected in rootsrated-content-cloud/rootsrated-content-cloud/includes/SDK/RootsratedSDK.php
+No syntax errors detected in rootsrated-content-cloud/rootsrated-content-cloud/includes/SDK/RootsratedWebhook.php
+No syntax errors detected in rootsrated-content-cloud/rootsrated-content-cloud/includes/wp-admin/RootsratedAdmin.php
+No syntax errors detected in rootsrated-content-cloud/rootsrated-content-cloud/includes/wp-posts/RootsratedWPPosts.php
+No syntax errors detected in rootsrated-content-cloud/rootsrated-content-cloud/includes/wp-user/RootsratedUsers.php
+No syntax errors detected in rootsrated-content-cloud/rootsrated-content-cloud/index.php
+No syntax errors detected in rootsrated-content-cloud/rootsrated-content-cloud/rest.php
+....[31mE[0m[31mE[0m.... 10 / 10 (100%)
+
+
+
+[1mFILE: includes/SDK/RootsratedWebhook.php[0m
+----------------------------------------------------------------------
+[1mFOUND 2 ERRORS AFFECTING 2 LINES[0m
+----------------------------------------------------------------------
+ 251 | [31mERROR[0m | [1mFunction xmlrpc_encode_request() is removed since PHP
+     |       | 8.0[0m
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.xmlrpc_encode_requestRemoved)
+ 265 | [31mERROR[0m | [1mFunction xmlrpc_decode() is removed since PHP 8.0[0m
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.xmlrpc_decodeRemoved)
+----------------------------------------------------------------------
+
+
+[1mFILE: includes/wp-admin/RootsratedAdmin.php[0m
+----------------------------------------------------------------------
+[1mFOUND 2 ERRORS AFFECTING 2 LINES[0m
+----------------------------------------------------------------------
+ 247 | [31mERROR[0m | [1mIndirect access to variables, properties and methods
+     |       | will be evaluated strictly in left-to-right order
+     |       | since PHP 7.0. Use curly braces to remove
+     |       | ambiguity.[0m
+     |       | (PHPCompatibility.Variables.NewUniformVariableSyntax.Found)
+ 248 | [31mERROR[0m | [1mIndirect access to variables, properties and methods
+     |       | will be evaluated strictly in left-to-right order
+     |       | since PHP 7.0. Use curly braces to remove
+     |       | ambiguity.[0m
+     |       | (PHPCompatibility.Variables.NewUniformVariableSyntax.Found)
+----------------------------------------------------------------------
+
+Time: 232ms; Memory: 14MB
+::error::FILE: includes/SDK/RootsratedWebhook.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A----------------------------------------------------------------------%0A 251 | ERROR | Function xmlrpc_encode_request() is removed since PHP%0A     |       | 8.0%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.xmlrpc_encode_requestRemoved)%0A 265 | ERROR | Function xmlrpc_decode() is removed since PHP 8.0%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.xmlrpc_decodeRemoved)%0A----------------------------------------------------------------------%0A%0A%0AFILE: includes/wp-admin/RootsratedAdmin.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A----------------------------------------------------------------------%0A 247 | ERROR | Indirect access to variables, properties and methods%0A     |       | will be evaluated strictly in left-to-right order%0A     |       | since PHP 7.0. Use curly braces to remove%0A     |       | ambiguity.%0A     |       | (PHPCompatibility.Variables.NewUniformVariableSyntax.Found)%0A 248 | ERROR | Indirect access to variables, properties and methods%0A     |       | will be evaluated strictly in left-to-right order%0A     |       | since PHP 7.0. Use curly braces to remove%0A     |       | ambiguity.%0A     |       | (PHPCompatibility.Variables.NewUniformVariableSyntax.Found)%0A----------------------------------------------------------------------%0A

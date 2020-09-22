@@ -1,0 +1,118 @@
+
+lib/freecap/freecap.php
+  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 178
+FILE: controller/admin_ajax.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 7 | ERROR | Declaration of a PHP4 style class constructor is
+   |       | deprecated since PHP 7.0 and removed since PHP 8.0
+   |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+----------------------------------------------------------------------
+
+
+FILE: lib/freecap/freecap.php
+----------------------------------------------------------------------
+FOUND 9 ERRORS AFFECTING 5 LINES
+----------------------------------------------------------------------
+ 178 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $c_wid{8}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 178 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $c_wid{9}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 178 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $c_wid{10}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 178 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $c_wid{11}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 340 | ERROR | [ ] Extension 'ereg' is deprecated since PHP 5.3 and
+     |       |     removed since PHP 7.0; Use pcre instead
+     |       |     (PHPCompatibility.Extensions.RemovedExtensions.eregDeprecatedRemoved)
+ 340 | ERROR | [ ] Function ereg_replace() is deprecated since PHP
+     |       |     5.3 and removed since PHP 7.0; Use preg_replace()
+     |       |     instead
+     |       |     (PHPCompatibility.FunctionUse.RemovedFunctions.ereg_replaceDeprecatedRemoved)
+ 363 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found:
+     |       |     $vowels{$rand_func(0,strlen($vowels)-1)}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 365 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found:
+     |       |     $consonants{$rand_func(0,strlen($consonants)-1)}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 606 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $word{$i}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 7 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------
+
+
+FILE: models/data.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 61 | ERROR | Using a string as the assertion passed to assert() is
+    |       | deprecated since PHP 7.2 and removed since PHP 8.0.
+    |       | Found: 'intval ($formid) > 0'
+    |       | (PHPCompatibility.ParameterValues.RemovedAssertStringAssertion.Found)
+----------------------------------------------------------------------
+
+
+FILE: models/email_attachment.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 9 | ERROR | Using a string as the assertion passed to assert() is
+   |       | deprecated since PHP 7.2 and removed since PHP 8.0.
+   |       | Found: 'strlen ($template) > 0'
+   |       | (PHPCompatibility.ParameterValues.RemovedAssertStringAssertion.Found)
+----------------------------------------------------------------------
+
+
+FILE: models/errors.php
+----------------------------------------------------------------------
+FOUND 3 ERRORS AFFECTING 3 LINES
+----------------------------------------------------------------------
+ 45 | ERROR | Using a string as the assertion passed to assert() is
+    |       | deprecated since PHP 7.2 and removed since PHP 8.0.
+    |       | Found: 'intval ($form_id) > 0'
+    |       | (PHPCompatibility.ParameterValues.RemovedAssertStringAssertion.Found)
+ 46 | ERROR | Using a string as the assertion passed to assert() is
+    |       | deprecated since PHP 7.2 and removed since PHP 8.0.
+    |       | Found: 'intval ($data_id) > 0'
+    |       | (PHPCompatibility.ParameterValues.RemovedAssertStringAssertion.Found)
+ 60 | ERROR | Passing the $glue and $pieces parameters in reverse
+    |       | order to implode has been deprecated since PHP 7.4 and
+    |       | is removed since PHP 8.0; $glue should be the first
+    |       | parameter and $pieces the second
+    |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
+----------------------------------------------------------------------
+
+
+FILE: models/extensions.php
+----------------------------------------------------------------------
+FOUND 3 ERRORS AFFECTING 3 LINES
+----------------------------------------------------------------------
+ 34 | ERROR | Using a string as the assertion passed to assert() is
+    |       | deprecated since PHP 7.2 and removed since PHP 8.0.
+    |       | Found: 'intval ($formid) > 0'
+    |       | (PHPCompatibility.ParameterValues.RemovedAssertStringAssertion.Found)
+ 57 | ERROR | Using a string as the assertion passed to assert() is
+    |       | deprecated since PHP 7.2 and removed since PHP 8.0.
+    |       | Found: 'intval ($id) > 0'
+    |       | (PHPCompatibility.ParameterValues.RemovedAssertStringAssertion.Found)
+ 88 | ERROR | Using a string as the assertion passed to assert() is
+    |       | deprecated since PHP 7.2 and removed since PHP 8.0.
+    |       | Found: 'intval ($formid) > 0'
+    |       | (PHPCompatibility.ParameterValues.RemovedAssertStringAssertion.Found)
+----------------------------------------------------------------------
