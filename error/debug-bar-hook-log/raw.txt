@@ -1,0 +1,22 @@
+::warning::Plugin: https://wordpress.org/plugins/debug-bar-hook-log/%0ATrac: https://plugins.trac.wordpress.org/browser/debug-bar-hook-log/
+No syntax errors detected in debug-bar-hook-log/debug-bar-hook-log/debug-bar-hook-log.php
+No syntax errors detected in debug-bar-hook-log/debug-bar-hook-log/includes/hook-log.php
+No syntax errors detected in debug-bar-hook-log/debug-bar-hook-log/includes/hook-panel.php
+No syntax errors detected in debug-bar-hook-log/debug-bar-hook-log/views/render-hooks.php
+...[31mE[0m 4 / 4 (100%)
+
+
+
+[1mFILE: views/render-hooks.php[0m
+----------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 18 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse
+    |       | order to implode has been deprecated since PHP 7.4 and
+    |       | is removed since PHP 8.0; $glue should be the first
+    |       | parameter and $pieces the second[0m
+    |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
+----------------------------------------------------------------------
+
+Time: 75ms; Memory: 10MB
+::error::FILE: views/render-hooks.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 18 | ERROR | Passing the $glue and $pieces parameters in reverse%0A    |       | order to implode has been deprecated since PHP 7.4 and%0A    |       | is removed since PHP 8.0; $glue should be the first%0A    |       | parameter and $pieces the second%0A    |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A----------------------------------------------------------------------%0A
