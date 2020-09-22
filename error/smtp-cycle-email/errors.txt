@@ -1,0 +1,24 @@
+
+cron.php
+  Fatal error: Redefinition of parameter $p on line 35
+
+smtp-cycle-email.php
+  Fatal error: Redefinition of parameter $p on line 832
+FILE: cron.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 35 | ERROR | Functions can not have multiple parameters with the
+    |       | same name since PHP 7.0
+    |       | (PHPCompatibility.FunctionDeclarations.ForbiddenParametersWithSameName.Found)
+----------------------------------------------------------------------
+
+
+FILE: smtp-cycle-email.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 832 | ERROR | Functions can not have multiple parameters with the
+     |       | same name since PHP 7.0
+     |       | (PHPCompatibility.FunctionDeclarations.ForbiddenParametersWithSameName.Found)
+----------------------------------------------------------------------

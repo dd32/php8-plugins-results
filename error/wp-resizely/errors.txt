@@ -1,0 +1,59 @@
+
+vendor/justinrainbow/json-schema/src/JsonSchema/Constraints/Object.php
+  Fatal error: Cannot use 'Object' as class name as it is reserved on line 11
+
+vendor/justinrainbow/json-schema/src/JsonSchema/Constraints/String.php
+  Fatal error: Cannot use 'String' as class name as it is reserved on line 11
+
+vendor/usabilitydynamics/lib-utility/lib/loader.php
+  Fatal error: Redefinition of parameter $prepend on line 294
+FILE: .../justinrainbow/json-schema/src/JsonSchema/Constraints/Object.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 11 | ERROR | 'object' is a soft reserved keyword as of PHP version
+    |       | 7.0 and a reserved keyword as of PHP version 7.2 and
+    |       | should not be used to name a class, interface or trait
+    |       | or as part of a namespace (T_CLASS)
+    |       | (PHPCompatibility.Keywords.ForbiddenNamesAsDeclared.objectFound)
+----------------------------------------------------------------------
+
+
+FILE: .../justinrainbow/json-schema/src/JsonSchema/Constraints/String.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 11 | ERROR | 'string' is a reserved keyword as of PHP version 7.0
+    |       | and should not be used to name a class, interface or
+    |       | trait or as part of a namespace (T_CLASS)
+    |       | (PHPCompatibility.Keywords.ForbiddenNamesAsDeclared.stringFound)
+----------------------------------------------------------------------
+
+
+FILE: vendor/usabilitydynamics/lib-utility/lib/loader.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 294 | ERROR | Functions can not have multiple parameters with the
+     |       | same name since PHP 7.0
+     |       | (PHPCompatibility.FunctionDeclarations.ForbiddenParametersWithSameName.Found)
+----------------------------------------------------------------------
+
+
+FILE: vendor/usabilitydynamics/lib-utility/lib/utility.php
+----------------------------------------------------------------------
+FOUND 3 ERRORS AFFECTING 3 LINES
+----------------------------------------------------------------------
+ 1589 | ERROR | Function create_function() is deprecated since PHP
+      |       | 7.2 and removed since PHP 8.0; Use an anonymous
+      |       | function instead
+      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
+ 1659 | ERROR | Function create_function() is deprecated since PHP
+      |       | 7.2 and removed since PHP 8.0; Use an anonymous
+      |       | function instead
+      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
+ 1961 | ERROR | Function create_function() is deprecated since PHP
+      |       | 7.2 and removed since PHP 8.0; Use an anonymous
+      |       | function instead
+      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
+----------------------------------------------------------------------

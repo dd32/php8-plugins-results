@@ -1,0 +1,95 @@
+
+config/overloading.php
+  Fatal error: Cannot use "parent" when current class scope has no parent on line 14
+
+controller/db_action.php
+  Fatal error: Cannot use "parent" when current class scope has no parent on line 8
+
+model/db.php
+  Fatal error: Cannot use "parent" when current class scope has no parent on line 8
+
+system/html.php
+  Fatal error: Unparenthesized `a ? b : c ? d : e` is not supported.
+      Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)`
+      on line 142
+
+system/validator.php
+  Fatal error: Unparenthesized `a ? b : c ? d : e` is not supported.
+      Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)`
+      on line 217
+FILE: config/overloading.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 14 | ERROR | Using "parent" inside a class without parent is
+    |       | deprecated since PHP 7.4 and removed since PHP 8.0
+    |       | (PHPCompatibility.Classes.RemovedOrphanedParent.Removed)
+----------------------------------------------------------------------
+
+
+FILE: controller/db_action.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 8 | ERROR | Using "parent" inside a class without parent is
+   |       | deprecated since PHP 7.4 and removed since PHP 8.0
+   |       | (PHPCompatibility.Classes.RemovedOrphanedParent.Removed)
+----------------------------------------------------------------------
+
+
+FILE: helper/money_format.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 17 | ERROR | Function money_format() is deprecated since PHP 7.4 and
+    |       | removed since PHP 8.0; Use
+    |       | NumberFormatter::formatCurrency() instead
+    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.money_formatDeprecatedRemoved)
+----------------------------------------------------------------------
+
+
+FILE: model/db.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 8 | ERROR | Using "parent" inside a class without parent is
+   |       | deprecated since PHP 7.4 and removed since PHP 8.0
+   |       | (PHPCompatibility.Classes.RemovedOrphanedParent.Removed)
+----------------------------------------------------------------------
+
+
+FILE: model/tickets.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 249 | ERROR | Function money_format() is deprecated since PHP 7.4
+     |       | and removed since PHP 8.0; Use
+     |       | NumberFormatter::formatCurrency() instead
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.money_formatDeprecatedRemoved)
+----------------------------------------------------------------------
+
+
+FILE: system/html.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 142 | ERROR | The left-associativity of the ternary operator has
+     |       | been deprecated in PHP 7.4 and removed in PHP 8.0.
+     |       | Multiple consecutive ternaries detected. Use
+     |       | parenthesis to clarify the order in which the
+     |       | operations should be executed
+     |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
+----------------------------------------------------------------------
+
+
+FILE: system/validator.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 217 | ERROR | The left-associativity of the ternary operator has
+     |       | been deprecated in PHP 7.4 and removed in PHP 8.0.
+     |       | Multiple consecutive ternaries detected. Use
+     |       | parenthesis to clarify the order in which the
+     |       | operations should be executed
+     |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
+----------------------------------------------------------------------
