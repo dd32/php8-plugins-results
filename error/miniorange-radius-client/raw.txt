@@ -1,0 +1,40 @@
+::warning::Plugin: https://wordpress.org/plugins/miniorange-radius-client/%0ATrac: https://plugins.trac.wordpress.org/browser/miniorange-radius-client/
+No syntax errors detected in miniorange-radius-client/miniorange-radius-client/class-customer.php
+No syntax errors detected in miniorange-radius-client/miniorange-radius-client/includes/autoload.php
+No syntax errors detected in miniorange-radius-client/miniorange-radius-client/includes/lib/Crypt/CHAP/MD5.php
+No syntax errors detected in miniorange-radius-client/miniorange-radius-client/includes/lib/Crypt/CHAP/MSv1.php
+No syntax errors detected in miniorange-radius-client/miniorange-radius-client/includes/lib/Crypt/CHAP/MSv2.php
+No syntax errors detected in miniorange-radius-client/miniorange-radius-client/includes/lib/Crypt/CHAP.php
+
+Fatal error: Array and string offset access syntax with curly braces is no longer supported in miniorange-radius-client/miniorange-radius-client/includes/lib/Pear_CHAP.php on line 244
+Errors parsing miniorange-radius-client/miniorange-radius-client/includes/lib/Pear_CHAP.php
+No syntax errors detected in miniorange-radius-client/miniorange-radius-client/includes/src/EAPPacket.php
+No syntax errors detected in miniorange-radius-client/miniorange-radius-client/includes/src/MsChapV2Packet.php
+No syntax errors detected in miniorange-radius-client/miniorange-radius-client/includes/src/Radius.php
+No syntax errors detected in miniorange-radius-client/miniorange-radius-client/includes/src/VendorId.php
+No syntax errors detected in miniorange-radius-client/miniorange-radius-client/mo_rad_settings_page.php
+No syntax errors detected in miniorange-radius-client/miniorange-radius-client/mo_rad_settings.php
+No syntax errors detected in miniorange-radius-client/miniorange-radius-client/uninstall.php
+::error::%0Aincludes/lib/Pear_CHAP.php%0A  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 244
+......[32mE[0m....... 14 / 14 (100%)
+
+
+
+[1mFILE: includes/lib/Pear_CHAP.php[0m
+----------------------------------------------------------------------
+[1mFOUND 2 ERRORS AFFECTING 2 LINES[0m
+----------------------------------------------------------------------
+ 244 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $str{$i}[0m
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 416 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $key{$i}[0m
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+----------------------------------------------------------------------
+[1mPHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
+----------------------------------------------------------------------
+
+Time: 522ms; Memory: 20MB
+::error::FILE: includes/lib/Pear_CHAP.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A----------------------------------------------------------------------%0A 244 | ERROR | [x] Curly brace syntax for accessing array elements%0A     |       |     and string offsets has been deprecated in PHP 7.4%0A     |       |     and removed in PHP 8.0. Found: $str{$i}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 416 | ERROR | [x] Curly brace syntax for accessing array elements%0A     |       |     and string offsets has been deprecated in PHP 7.4%0A     |       |     and removed in PHP 8.0. Found: $key{$i}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A----------------------------------------------------------------------%0APHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A----------------------------------------------------------------------%0A
