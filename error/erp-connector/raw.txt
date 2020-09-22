@@ -1,0 +1,50 @@
+::warning::Plugin: https://wordpress.org/plugins/erp-connector/%0ATrac: https://plugins.trac.wordpress.org/browser/erp-connector/
+No syntax errors detected in erp-connector/erp-connector/erp-connector.php
+No syntax errors detected in erp-connector/erp-connector/includes/class-erpc-ajax.php
+No syntax errors detected in erp-connector/erp-connector/includes/class-erpc-install.php
+No syntax errors detected in erp-connector/erp-connector/includes/class-erpc-invoice.php
+No syntax errors detected in erp-connector/erp-connector/includes/erpc-admin.php
+No syntax errors detected in erp-connector/erp-connector/includes/erpc-db.php
+No syntax errors detected in erp-connector/erp-connector/includes/erpc-functions.php
+No syntax errors detected in erp-connector/erp-connector/includes/erpc-hooks.php
+No syntax errors detected in erp-connector/erp-connector/includes/erpc-invoice-template.php
+No syntax errors detected in erp-connector/erp-connector/includes/erpc-ra-helper.php
+No syntax errors detected in erp-connector/erp-connector/includes/erpc-remoteaction.php
+No syntax errors detected in erp-connector/erp-connector/includes/erpc-user.php
+No syntax errors detected in erp-connector/erp-connector/includes/erpc-woocommerce-extensions.php
+...[31mE[0m......[31mE[0m.. 13 / 13 (100%)
+
+
+
+[1mFILE: includes/class-erpc-invoice.php[0m
+----------------------------------------------------------------------
+[1mFOUND 2 ERRORS AFFECTING 2 LINES[0m
+----------------------------------------------------------------------
+ 116 | [31mERROR[0m | [1mFunction money_format() is deprecated since PHP 7.4
+     |       | and removed since PHP 8.0; Use
+     |       | NumberFormatter::formatCurrency() instead[0m
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.money_formatDeprecatedRemoved)
+ 117 | [31mERROR[0m | [1mFunction money_format() is deprecated since PHP 7.4
+     |       | and removed since PHP 8.0; Use
+     |       | NumberFormatter::formatCurrency() instead[0m
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.money_formatDeprecatedRemoved)
+----------------------------------------------------------------------
+
+
+[1mFILE: includes/erpc-remoteaction.php[0m
+----------------------------------------------------------------------
+[1mFOUND 3 ERRORS AFFECTING 3 LINES[0m
+----------------------------------------------------------------------
+ 429 | [31mERROR[0m | [1mUsing 'break' outside of a loop or switch structure is
+     |       | invalid and will throw a fatal error since PHP 7.0[0m
+     |       | (PHPCompatibility.ControlStructures.ForbiddenBreakContinueOutsideLoop.FatalError)
+ 437 | [31mERROR[0m | [1mUsing 'break' outside of a loop or switch structure is
+     |       | invalid and will throw a fatal error since PHP 7.0[0m
+     |       | (PHPCompatibility.ControlStructures.ForbiddenBreakContinueOutsideLoop.FatalError)
+ 452 | [31mERROR[0m | [1mUsing 'break' outside of a loop or switch structure is
+     |       | invalid and will throw a fatal error since PHP 7.0[0m
+     |       | (PHPCompatibility.ControlStructures.ForbiddenBreakContinueOutsideLoop.FatalError)
+----------------------------------------------------------------------
+
+Time: 295ms; Memory: 16MB
+::error::FILE: includes/class-erpc-invoice.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A----------------------------------------------------------------------%0A 116 | ERROR | Function money_format() is deprecated since PHP 7.4%0A     |       | and removed since PHP 8.0; Use%0A     |       | NumberFormatter::formatCurrency() instead%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.money_formatDeprecatedRemoved)%0A 117 | ERROR | Function money_format() is deprecated since PHP 7.4%0A     |       | and removed since PHP 8.0; Use%0A     |       | NumberFormatter::formatCurrency() instead%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.money_formatDeprecatedRemoved)%0A----------------------------------------------------------------------%0A%0A%0AFILE: includes/erpc-remoteaction.php%0A----------------------------------------------------------------------%0AFOUND 3 ERRORS AFFECTING 3 LINES%0A----------------------------------------------------------------------%0A 429 | ERROR | Using 'break' outside of a loop or switch structure is%0A     |       | invalid and will throw a fatal error since PHP 7.0%0A     |       | (PHPCompatibility.ControlStructures.ForbiddenBreakContinueOutsideLoop.FatalError)%0A 437 | ERROR | Using 'break' outside of a loop or switch structure is%0A     |       | invalid and will throw a fatal error since PHP 7.0%0A     |       | (PHPCompatibility.ControlStructures.ForbiddenBreakContinueOutsideLoop.FatalError)%0A 452 | ERROR | Using 'break' outside of a loop or switch structure is%0A     |       | invalid and will throw a fatal error since PHP 7.0%0A     |       | (PHPCompatibility.ControlStructures.ForbiddenBreakContinueOutsideLoop.FatalError)%0A----------------------------------------------------------------------%0A

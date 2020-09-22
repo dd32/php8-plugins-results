@@ -1,0 +1,80 @@
+::warning::Plugin: https://wordpress.org/plugins/ar-php/%0ATrac: https://plugins.trac.wordpress.org/browser/ar-php/
+No syntax errors detected in ar-php/ar-php/Arabic.php
+No syntax errors detected in ar-php/ar-php/ar-php.php
+No syntax errors detected in ar-php/ar-php/rpc.php
+No syntax errors detected in ar-php/ar-php/sub/ArAutoSummarize.class.php
+No syntax errors detected in ar-php/ar-php/sub/ArCharsetC.class.php
+No syntax errors detected in ar-php/ar-php/sub/ArCharsetD.class.php
+No syntax errors detected in ar-php/ar-php/sub/ArCompressStr.class.php
+No syntax errors detected in ar-php/ar-php/sub/ArDate.class.php
+No syntax errors detected in ar-php/ar-php/sub/ArGender.class.php
+No syntax errors detected in ar-php/ar-php/sub/ArGlyphs.class.php
+No syntax errors detected in ar-php/ar-php/sub/ArIdentifier.class.php
+No syntax errors detected in ar-php/ar-php/sub/ArKeySwap.class.php
+No syntax errors detected in ar-php/ar-php/sub/ArMktime.class.php
+No syntax errors detected in ar-php/ar-php/sub/ArNormalise.class.php
+No syntax errors detected in ar-php/ar-php/sub/ArNumbers.class.php
+No syntax errors detected in ar-php/ar-php/sub/ArQuery.class.php
+No syntax errors detected in ar-php/ar-php/sub/ArSoundex.class.php
+No syntax errors detected in ar-php/ar-php/sub/ArStandard.class.php
+No syntax errors detected in ar-php/ar-php/sub/ArStemmer.class.php
+No syntax errors detected in ar-php/ar-php/sub/ArStrToTime.class.php
+No syntax errors detected in ar-php/ar-php/sub/ArTransliteration.class.php
+No syntax errors detected in ar-php/ar-php/sub/ArWordTag.class.php
+No syntax errors detected in ar-php/ar-php/sub/charset/ArUnicode.constants.php
+No syntax errors detected in ar-php/ar-php/sub/charset/_bug.php
+No syntax errors detected in ar-php/ar-php/sub/charset/_html.php
+No syntax errors detected in ar-php/ar-php/sub/charset/_iso88596.php
+No syntax errors detected in ar-php/ar-php/sub/charset/_utf8.php
+No syntax errors detected in ar-php/ar-php/sub/charset/_windows1256.php
+No syntax errors detected in ar-php/ar-php/sub/EnTransliteration.class.php
+No syntax errors detected in ar-php/ar-php/sub/Hiero.class.php
+No syntax errors detected in ar-php/ar-php/sub/Salat.class.php
+No syntax errors detected in ar-php/ar-php/sub/Transliteration.class.php
+.[31mE[0m....[31mE[0m.............[31mE[0m.......[31mE[0m... 32 / 32 (100%)
+
+
+
+[1mFILE: ar-php.php[0m
+----------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 14 | [31mERROR[0m | [1mDeclaration of a PHP4 style class constructor is
+    |       | deprecated since PHP 7.0 and removed since PHP 8.0[0m
+    |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+----------------------------------------------------------------------
+
+
+[1mFILE: sub/ArCompressStr.class.php[0m
+----------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 208 | [31mERROR[0m | [1m"$this" can no longer be used in a plain function or
+     |       | method since PHP 7.1.[0m
+     |       | (PHPCompatibility.Variables.ForbiddenThisUseContexts.OutsideObjectContext)
+----------------------------------------------------------------------
+
+
+[1mFILE: sub/ArTransliteration.class.php[0m
+----------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 133 | [31mERROR[0m | [1mFunction split() is deprecated since PHP 5.3 and
+     |       | removed since PHP 7.0; Use preg_split(), explode() or
+     |       | str_split() instead[0m
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.splitDeprecatedRemoved)
+----------------------------------------------------------------------
+
+
+[1mFILE: sub/EnTransliteration.class.php[0m
+----------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 141 | [31mERROR[0m | [1mFunction split() is deprecated since PHP 5.3 and
+     |       | removed since PHP 7.0; Use preg_split(), explode() or
+     |       | str_split() instead[0m
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.splitDeprecatedRemoved)
+----------------------------------------------------------------------
+
+Time: 786ms; Memory: 14MB
+::error::FILE: ar-php.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 14 | ERROR | Declaration of a PHP4 style class constructor is%0A    |       | deprecated since PHP 7.0 and removed since PHP 8.0%0A    |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)%0A----------------------------------------------------------------------%0A%0A%0AFILE: sub/ArCompressStr.class.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 208 | ERROR | "$this" can no longer be used in a plain function or%0A     |       | method since PHP 7.1.%0A     |       | (PHPCompatibility.Variables.ForbiddenThisUseContexts.OutsideObjectContext)%0A----------------------------------------------------------------------%0A%0A%0AFILE: sub/ArTransliteration.class.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 133 | ERROR | Function split() is deprecated since PHP 5.3 and%0A     |       | removed since PHP 7.0; Use preg_split(), explode() or%0A     |       | str_split() instead%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.splitDeprecatedRemoved)%0A----------------------------------------------------------------------%0A%0A%0AFILE: sub/EnTransliteration.class.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 141 | ERROR | Function split() is deprecated since PHP 5.3 and%0A     |       | removed since PHP 7.0; Use preg_split(), explode() or%0A     |       | str_split() instead%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.splitDeprecatedRemoved)%0A----------------------------------------------------------------------%0A

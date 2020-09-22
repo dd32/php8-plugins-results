@@ -1,0 +1,33 @@
+::warning::Plugin: https://wordpress.org/plugins/propel/%0ATrac: https://plugins.trac.wordpress.org/browser/propel/
+No syntax errors detected in propel/propel/deprecated.php
+No syntax errors detected in propel/propel/functions.php
+No syntax errors detected in propel/propel/metaboxes/add-task.php
+No syntax errors detected in propel/propel/metaboxes/list-authors.php
+No syntax errors detected in propel/propel/metaboxes/project-meta.php
+No syntax errors detected in propel/propel/metaboxes/task-meta.php
+No syntax errors detected in propel/propel/metaboxes/tasks.php
+No syntax errors detected in propel/propel/metaboxes/time-entity-select.php
+No syntax errors detected in propel/propel/migrate.php
+No syntax errors detected in propel/propel/plugins/users.php
+No syntax errors detected in propel/propel/post-types/project.php
+No syntax errors detected in propel/propel/post-types/task.php
+No syntax errors detected in propel/propel/post-types/time.php
+No syntax errors detected in propel/propel/propel.php
+No syntax errors detected in propel/propel/uninstall.php
+...........[31mE[0m... 15 / 15 (100%)
+
+
+
+[1mFILE: post-types/task.php[0m
+----------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 376 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse
+     |       | order to implode has been deprecated since PHP 7.4 and
+     |       | is removed since PHP 8.0; $glue should be the first
+     |       | parameter and $pieces the second[0m
+     |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
+----------------------------------------------------------------------
+
+Time: 343ms; Memory: 14MB
+::error::FILE: post-types/task.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 376 | ERROR | Passing the $glue and $pieces parameters in reverse%0A     |       | order to implode has been deprecated since PHP 7.4 and%0A     |       | is removed since PHP 8.0; $glue should be the first%0A     |       | parameter and $pieces the second%0A     |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A----------------------------------------------------------------------%0A
