@@ -27,6 +27,8 @@ No syntax errors detected in impact-template-editor/impact-template-editor/lib/f
 No syntax errors detected in impact-template-editor/impact-template-editor/lib/index.php
 No syntax errors detected in impact-template-editor/impact-template-editor/lib/kcfinder/browse.php
 No syntax errors detected in impact-template-editor/impact-template-editor/lib/kcfinder/config.php
+
+Fatal error: __autoload() is no longer supported, use spl_autoload_register() instead in impact-template-editor/impact-template-editor/lib/kcfinder/core/autoload.php on line 48
 Errors parsing impact-template-editor/impact-template-editor/lib/kcfinder/core/autoload.php
 No syntax errors detected in impact-template-editor/impact-template-editor/lib/kcfinder/core/browser.php
 No syntax errors detected in impact-template-editor/impact-template-editor/lib/kcfinder/core/types/type_img.php
@@ -78,72 +80,87 @@ No syntax errors detected in impact-template-editor/impact-template-editor/lib/t
 No syntax errors detected in impact-template-editor/impact-template-editor/lib/templates/impact-template.css.php
 No syntax errors detected in impact-template-editor/impact-template-editor/lib/templates/impact-template.php
 No syntax errors detected in impact-template-editor/impact-template-editor/lib/templates/index.php
-::error::%0Alib/kcfinder/core/autoload.php
+::error::%0Alib/kcfinder/core/autoload.php%0A  Fatal error: __autoload() is no longer supported, use spl_autoload_register() instead on line 48
 ................[31mE[0m...........[31mE[0m...[31mE[0m...[31mE[0m....................... 60 / 79 (76%)
 .[31mE[0m[31mE[0m................                                          79 / 79 (100%)
 
 
 
 [1mFILE: lib/functions/impact-css-parser.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 10 | [31mERROR[0m | [1mDeclaration of a PHP4 style class constructor is deprecated since PHP 7.0 and removed since PHP 8.0[0m
+----------------------------------------------------------------------
+ 10 | [31mERROR[0m | [1mDeclaration of a PHP4 style class constructor is
+    |       | deprecated since PHP 7.0 and removed since PHP 8.0[0m
     |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 [1mFILE: lib/kcfinder/core/autoload.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 48 | [31mERROR[0m | [1mSpecifying an autoloader using an __autoload() function is deprecated since PHP 7.2 and no longer supported since PHP 8.0[0m
+----------------------------------------------------------------------
+ 48 | [31mERROR[0m | [1mSpecifying an autoloader using an __autoload() function
+    |       | is deprecated since PHP 7.2 and no longer supported
+    |       | since PHP 8.0[0m
     |       | (PHPCompatibility.FunctionNameRestrictions.RemovedMagicAutoload.Removed)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 [1mFILE: lib/kcfinder/core/uploader.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 4 ERRORS AFFECTING 4 LINES[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 110 | [31mERROR[0m | [1mFunction set_magic_quotes_runtime() is deprecated since PHP 5.3 and removed since PHP 7.0[0m
+----------------------------------------------------------------------
+ 110 | [31mERROR[0m | [1mFunction set_magic_quotes_runtime() is deprecated
+     |       | since PHP 5.3 and removed since PHP 7.0[0m
      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.set_magic_quotes_runtimeDeprecatedRemoved)
- 197 | [31mERROR[0m | [1mlist() will assign variable from left-to-right since PHP 7.0. Ensure all variables in list() are unique to prevent unexpected results.[0m
+ 197 | [31mERROR[0m | [1mlist() will assign variable from left-to-right since
+     |       | PHP 7.0. Ensure all variables in list() are unique to
+     |       | prevent unexpected results.[0m
      |       | (PHPCompatibility.Lists.AssignmentOrder.Affected)
- 245 | [31mERROR[0m | [1mUsing 'break' outside of a loop or switch structure is invalid and will throw a fatal error since PHP 7.0[0m
+ 245 | [31mERROR[0m | [1mUsing 'break' outside of a loop or switch structure is
+     |       | invalid and will throw a fatal error since PHP 7.0[0m
      |       | (PHPCompatibility.ControlStructures.ForbiddenBreakContinueOutsideLoop.FatalError)
- 319 | [31mERROR[0m | [1mlist() will assign variable from left-to-right since PHP 7.0. Ensure all variables in list() are unique to prevent unexpected results.[0m
+ 319 | [31mERROR[0m | [1mlist() will assign variable from left-to-right since
+     |       | PHP 7.0. Ensure all variables in list() are unique to
+     |       | prevent unexpected results.[0m
      |       | (PHPCompatibility.Lists.AssignmentOrder.Affected)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 [1mFILE: lib/kcfinder/js_localize.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 17 | [31mERROR[0m | [1mFunction set_magic_quotes_runtime() is deprecated since PHP 5.3 and removed since PHP 7.0[0m
+----------------------------------------------------------------------
+ 17 | [31mERROR[0m | [1mFunction set_magic_quotes_runtime() is deprecated since
+    |       | PHP 5.3 and removed since PHP 7.0[0m
     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.set_magic_quotes_runtimeDeprecatedRemoved)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 [1mFILE: lib/kcfinder/lib/class_gd.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 2 ERRORS AFFECTING 2 LINES[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 55 | [31mERROR[0m | [1mFunction each() is deprecated since PHP 7.2 and removed since PHP 8.0; Use a foreach loop or ArrayIterator instead[0m
+----------------------------------------------------------------------
+ 55 | [31mERROR[0m | [1mFunction each() is deprecated since PHP 7.2 and removed
+    |       | since PHP 8.0; Use a foreach loop or ArrayIterator
+    |       | instead[0m
     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)
- 56 | [31mERROR[0m | [1mFunction each() is deprecated since PHP 7.2 and removed since PHP 8.0; Use a foreach loop or ArrayIterator instead[0m
+ 56 | [31mERROR[0m | [1mFunction each() is deprecated since PHP 7.2 and removed
+    |       | since PHP 8.0; Use a foreach loop or ArrayIterator
+    |       | instead[0m
     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 [1mFILE: lib/kcfinder/lib/class_input.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 38 | [31mERROR[0m | [1mFunction get_magic_quotes_gpc() is deprecated since PHP 7.4 and removed since PHP 8.0[0m
+----------------------------------------------------------------------
+ 38 | [31mERROR[0m | [1mFunction get_magic_quotes_gpc() is deprecated since PHP
+    |       | 7.4 and removed since PHP 8.0[0m
     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_gpcDeprecatedRemoved)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
-Time: 1.17 secs; Memory: 18MB
-::error::FILE: lib/functions/impact-css-parser.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 10 | ERROR | Declaration of a PHP4 style class constructor is deprecated since PHP 7.0 and removed since PHP 8.0%0A    |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: lib/kcfinder/core/autoload.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 48 | ERROR | Specifying an autoloader using an __autoload() function is deprecated since PHP 7.2 and no longer supported since PHP 8.0%0A    |       | (PHPCompatibility.FunctionNameRestrictions.RemovedMagicAutoload.Removed)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: lib/kcfinder/core/uploader.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 4 ERRORS AFFECTING 4 LINES%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 110 | ERROR | Function set_magic_quotes_runtime() is deprecated since PHP 5.3 and removed since PHP 7.0%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.set_magic_quotes_runtimeDeprecatedRemoved)%0A 197 | ERROR | list() will assign variable from left-to-right since PHP 7.0. Ensure all variables in list() are unique to prevent unexpected results.%0A     |       | (PHPCompatibility.Lists.AssignmentOrder.Affected)%0A 245 | ERROR | Using 'break' outside of a loop or switch structure is invalid and will throw a fatal error since PHP 7.0%0A     |       | (PHPCompatibility.ControlStructures.ForbiddenBreakContinueOutsideLoop.FatalError)%0A 319 | ERROR | list() will assign variable from left-to-right since PHP 7.0. Ensure all variables in list() are unique to prevent unexpected results.%0A     |       | (PHPCompatibility.Lists.AssignmentOrder.Affected)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: lib/kcfinder/js_localize.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 17 | ERROR | Function set_magic_quotes_runtime() is deprecated since PHP 5.3 and removed since PHP 7.0%0A    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.set_magic_quotes_runtimeDeprecatedRemoved)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: lib/kcfinder/lib/class_gd.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 55 | ERROR | Function each() is deprecated since PHP 7.2 and removed since PHP 8.0; Use a foreach loop or ArrayIterator instead%0A    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)%0A 56 | ERROR | Function each() is deprecated since PHP 7.2 and removed since PHP 8.0; Use a foreach loop or ArrayIterator instead%0A    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: lib/kcfinder/lib/class_input.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 38 | ERROR | Function get_magic_quotes_gpc() is deprecated since PHP 7.4 and removed since PHP 8.0%0A    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_gpcDeprecatedRemoved)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
+Time: 1.13 secs; Memory: 18MB
+::error::FILE: lib/functions/impact-css-parser.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 10 | ERROR | Declaration of a PHP4 style class constructor is%0A    |       | deprecated since PHP 7.0 and removed since PHP 8.0%0A    |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)%0A----------------------------------------------------------------------%0A%0A%0AFILE: lib/kcfinder/core/autoload.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 48 | ERROR | Specifying an autoloader using an __autoload() function%0A    |       | is deprecated since PHP 7.2 and no longer supported%0A    |       | since PHP 8.0%0A    |       | (PHPCompatibility.FunctionNameRestrictions.RemovedMagicAutoload.Removed)%0A----------------------------------------------------------------------%0A%0A%0AFILE: lib/kcfinder/core/uploader.php%0A----------------------------------------------------------------------%0AFOUND 4 ERRORS AFFECTING 4 LINES%0A----------------------------------------------------------------------%0A 110 | ERROR | Function set_magic_quotes_runtime() is deprecated%0A     |       | since PHP 5.3 and removed since PHP 7.0%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.set_magic_quotes_runtimeDeprecatedRemoved)%0A 197 | ERROR | list() will assign variable from left-to-right since%0A     |       | PHP 7.0. Ensure all variables in list() are unique to%0A     |       | prevent unexpected results.%0A     |       | (PHPCompatibility.Lists.AssignmentOrder.Affected)%0A 245 | ERROR | Using 'break' outside of a loop or switch structure is%0A     |       | invalid and will throw a fatal error since PHP 7.0%0A     |       | (PHPCompatibility.ControlStructures.ForbiddenBreakContinueOutsideLoop.FatalError)%0A 319 | ERROR | list() will assign variable from left-to-right since%0A     |       | PHP 7.0. Ensure all variables in list() are unique to%0A     |       | prevent unexpected results.%0A     |       | (PHPCompatibility.Lists.AssignmentOrder.Affected)%0A----------------------------------------------------------------------%0A%0A%0AFILE: lib/kcfinder/js_localize.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 17 | ERROR | Function set_magic_quotes_runtime() is deprecated since%0A    |       | PHP 5.3 and removed since PHP 7.0%0A    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.set_magic_quotes_runtimeDeprecatedRemoved)%0A----------------------------------------------------------------------%0A%0A%0AFILE: lib/kcfinder/lib/class_gd.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A----------------------------------------------------------------------%0A 55 | ERROR | Function each() is deprecated since PHP 7.2 and removed%0A    |       | since PHP 8.0; Use a foreach loop or ArrayIterator%0A    |       | instead%0A    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)%0A 56 | ERROR | Function each() is deprecated since PHP 7.2 and removed%0A    |       | since PHP 8.0; Use a foreach loop or ArrayIterator%0A    |       | instead%0A    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)%0A----------------------------------------------------------------------%0A%0A%0AFILE: lib/kcfinder/lib/class_input.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 38 | ERROR | Function get_magic_quotes_gpc() is deprecated since PHP%0A    |       | 7.4 and removed since PHP 8.0%0A    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_gpcDeprecatedRemoved)%0A----------------------------------------------------------------------%0A
