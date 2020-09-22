@@ -1,0 +1,67 @@
+::warning::Plugin: https://wordpress.org/plugins/post-miner/%0ATrac: https://plugins.trac.wordpress.org/browser/post-miner/
+
+Fatal error: Array and string offset access syntax with curly braces is no longer supported in post-miner/post-miner/lib/PorterStemmer.php on line 388
+Errors parsing post-miner/post-miner/lib/PorterStemmer.php
+No syntax errors detected in post-miner/post-miner/PostMiner/Engine.php
+No syntax errors detected in post-miner/post-miner/PostMiner/Hooks.php
+No syntax errors detected in post-miner/post-miner/PostMiner/Indexer.php
+No syntax errors detected in post-miner/post-miner/PostMiner/Installer.php
+No syntax errors detected in post-miner/post-miner/PostMiner/Plugin.php
+No syntax errors detected in post-miner/post-miner/PostMiner/Profile.php
+No syntax errors detected in post-miner/post-miner/PostMiner/Templates/filterTheContent.php
+No syntax errors detected in post-miner/post-miner/PostMiner/Templates/pageSettings.php
+No syntax errors detected in post-miner/post-miner/PostMiner/TermMapper.php
+No syntax errors detected in post-miner/post-miner/PostMiner/TermVector.php
+No syntax errors detected in post-miner/post-miner/PostMiner/View.php
+No syntax errors detected in post-miner/post-miner/PostMiner/VisitsMapper.php
+No syntax errors detected in post-miner/post-miner/post-miner.php
+No syntax errors detected in post-miner/post-miner/post-miner-test.php
+No syntax errors detected in post-miner/post-miner/Test/EngineTest.php
+No syntax errors detected in post-miner/post-miner/Test/TermVectorTest.php
+No syntax errors detected in post-miner/post-miner/uninstall.php
+::error::%0Alib/PorterStemmer.php%0A  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 388
+[32mE[0m....[31mE[0m............ 18 / 18 (100%)
+
+
+
+[1mFILE: lib/PorterStemmer.php[0m
+----------------------------------------------------------------------
+[1mFOUND 5 ERRORS AFFECTING 4 LINES[0m
+----------------------------------------------------------------------
+ 388 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $matches[0]{0}[0m
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 388 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $matches[0]{1}[0m
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 405 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $matches[1]{2}[0m
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 406 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $matches[1]{2}[0m
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 407 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $matches[1]{2}[0m
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+----------------------------------------------------------------------
+[1mPHPCBF CAN FIX THE 5 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
+----------------------------------------------------------------------
+
+
+[1mFILE: PostMiner/Plugin.php[0m
+----------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 80 | [31mERROR[0m | [1mFunction call_user_method_array() is deprecated since
+    |       | PHP 4.1 and removed since PHP 7.0; Use
+    |       | call_user_func_array() instead[0m
+    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.call_user_method_arrayDeprecatedRemoved)
+----------------------------------------------------------------------
+
+Time: 266ms; Memory: 12MB
+::error::FILE: lib/PorterStemmer.php%0A----------------------------------------------------------------------%0AFOUND 5 ERRORS AFFECTING 4 LINES%0A----------------------------------------------------------------------%0A 388 | ERROR | [x] Curly brace syntax for accessing array elements%0A     |       |     and string offsets has been deprecated in PHP 7.4%0A     |       |     and removed in PHP 8.0. Found: $matches[0]{0}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 388 | ERROR | [x] Curly brace syntax for accessing array elements%0A     |       |     and string offsets has been deprecated in PHP 7.4%0A     |       |     and removed in PHP 8.0. Found: $matches[0]{1}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 405 | ERROR | [x] Curly brace syntax for accessing array elements%0A     |       |     and string offsets has been deprecated in PHP 7.4%0A     |       |     and removed in PHP 8.0. Found: $matches[1]{2}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 406 | ERROR | [x] Curly brace syntax for accessing array elements%0A     |       |     and string offsets has been deprecated in PHP 7.4%0A     |       |     and removed in PHP 8.0. Found: $matches[1]{2}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 407 | ERROR | [x] Curly brace syntax for accessing array elements%0A     |       |     and string offsets has been deprecated in PHP 7.4%0A     |       |     and removed in PHP 8.0. Found: $matches[1]{2}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A----------------------------------------------------------------------%0APHPCBF CAN FIX THE 5 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A----------------------------------------------------------------------%0A%0A%0AFILE: PostMiner/Plugin.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 80 | ERROR | Function call_user_method_array() is deprecated since%0A    |       | PHP 4.1 and removed since PHP 7.0; Use%0A    |       | call_user_func_array() instead%0A    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.call_user_method_arrayDeprecatedRemoved)%0A----------------------------------------------------------------------%0A
