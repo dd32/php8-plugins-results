@@ -149,6 +149,8 @@ No syntax errors detected in simple-social-login/simple-social-login/vendor/hybr
 No syntax errors detected in simple-social-login/simple-social-login/vendor/hybridauth/hybridauth/additional-providers/hybridauth-rdio/Providers/Rdio.php
 No syntax errors detected in simple-social-login/simple-social-login/vendor/hybridauth/hybridauth/additional-providers/hybridauth-rhapsody/Providers/Rhapsody.php
 No syntax errors detected in simple-social-login/simple-social-login/vendor/hybridauth/hybridauth/additional-providers/hybridauth-sina/Providers/Sina.php
+
+Fatal error: Array and string offset access syntax with curly braces is no longer supported in simple-social-login/simple-social-login/vendor/hybridauth/hybridauth/additional-providers/hybridauth-sina/thirdparty/Sina/saetv2.ex.class.php on line 437
 Errors parsing simple-social-login/simple-social-login/vendor/hybridauth/hybridauth/additional-providers/hybridauth-sina/thirdparty/Sina/saetv2.ex.class.php
 No syntax errors detected in simple-social-login/simple-social-login/vendor/hybridauth/hybridauth/additional-providers/hybridauth-sina/thirdparty/Sina/Sina.php
 No syntax errors detected in simple-social-login/simple-social-login/vendor/hybridauth/hybridauth/additional-providers/hybridauth-skyrock/Providers/Skyrock.php
@@ -200,6 +202,8 @@ No syntax errors detected in simple-social-login/simple-social-login/vendor/hybr
 No syntax errors detected in simple-social-login/simple-social-login/vendor/hybridauth/hybridauth/hybridauth/Hybrid/Storage.php
 No syntax errors detected in simple-social-login/simple-social-login/vendor/hybridauth/hybridauth/hybridauth/Hybrid/thirdparty/OAuth/OAuth1Client.php
 No syntax errors detected in simple-social-login/simple-social-login/vendor/hybridauth/hybridauth/hybridauth/Hybrid/thirdparty/OAuth/OAuth2Client.php
+
+Fatal error: Array and string offset access syntax with curly braces is no longer supported in simple-social-login/simple-social-login/vendor/hybridauth/hybridauth/hybridauth/Hybrid/thirdparty/OAuth/OAuth.php on line 106
 Errors parsing simple-social-login/simple-social-login/vendor/hybridauth/hybridauth/hybridauth/Hybrid/thirdparty/OAuth/OAuth.php
 No syntax errors detected in simple-social-login/simple-social-login/vendor/hybridauth/hybridauth/hybridauth/Hybrid/thirdparty/OpenID/LightOpenID.php
 No syntax errors detected in simple-social-login/simple-social-login/vendor/hybridauth/hybridauth/hybridauth/Hybrid/User_Activity.php
@@ -384,7 +388,7 @@ No syntax errors detected in simple-social-login/simple-social-login/vendor/psr/
 No syntax errors detected in simple-social-login/simple-social-login/vendor/psr/log/Psr/Log/LogLevel.php
 No syntax errors detected in simple-social-login/simple-social-login/vendor/psr/log/Psr/Log/NullLogger.php
 No syntax errors detected in simple-social-login/simple-social-login/vendor/psr/log/Psr/Log/Test/LoggerInterfaceTest.php
-::error::%0Avendor/hybridauth/hybridauth/additional-providers/hybridauth-sina/thirdparty/Sina/saetv2.ex.class.php%0A%0Avendor/hybridauth/hybridauth/hybridauth/Hybrid/thirdparty/OAuth/OAuth.php
+::error::%0Avendor/hybridauth/hybridauth/additional-providers/hybridauth-sina/thirdparty/Sina/saetv2.ex.class.php%0A  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 437%0A%0Avendor/hybridauth/hybridauth/hybridauth/Hybrid/thirdparty/OAuth/OAuth.php%0A  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 106
 ............................................................  60 / 385 (16%)
 ............................................................ 120 / 385 (31%)
 ..............................[32mE[0m............................. 180 / 385 (47%)
@@ -395,37 +399,44 @@ No syntax errors detected in simple-social-login/simple-social-login/vendor/psr/
 
 
 
-[1mFILE: vendor/hybridauth/hybridauth/additional-providers/hybridauth-sina/thirdparty/Sina/saetv2.ex.class.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[1mFILE: ...al-providers/hybridauth-sina/thirdparty/Sina/saetv2.ex.class.php[0m
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 437 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $value{0}[0m
+----------------------------------------------------------------------
+ 437 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $value{0}[0m
      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mPHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
-[1mFILE: vendor/hybridauth/hybridauth/hybridauth/Hybrid/thirdparty/OAuth/OAuth.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[1mFILE: ...bridauth/hybridauth/hybridauth/Hybrid/thirdparty/OAuth/OAuth.php[0m
+----------------------------------------------------------------------
 [1mFOUND 2 ERRORS AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 106 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $built{$i}[0m
+----------------------------------------------------------------------
+ 106 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $built{$i}[0m
      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
- 106 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $signature{$i}[0m
+ 106 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $signature{$i}[0m
      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mPHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
-[1mFILE: vendor/hybridauth/hybridauth/hybridauth/Hybrid/thirdparty/OpenID/LightOpenID.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[1mFILE: ...h/hybridauth/hybridauth/Hybrid/thirdparty/OpenID/LightOpenID.php[0m
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 896 | [31mERROR[0m | [1mFunction get_magic_quotes_gpc() is deprecated since PHP 7.4 and removed since PHP 8.0[0m
+----------------------------------------------------------------------
+ 896 | [31mERROR[0m | [1mFunction get_magic_quotes_gpc() is deprecated since
+     |       | PHP 7.4 and removed since PHP 8.0[0m
      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_gpcDeprecatedRemoved)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
-Time: 5.93 secs; Memory: 28MB
-::error::FILE: vendor/hybridauth/hybridauth/additional-providers/hybridauth-sina/thirdparty/Sina/saetv2.ex.class.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 437 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $value{0}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0APHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: vendor/hybridauth/hybridauth/hybridauth/Hybrid/thirdparty/OAuth/OAuth.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 106 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $built{$i}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 106 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $signature{$i}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0APHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: vendor/hybridauth/hybridauth/hybridauth/Hybrid/thirdparty/OpenID/LightOpenID.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 896 | ERROR | Function get_magic_quotes_gpc() is deprecated since PHP 7.4 and removed since PHP 8.0%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_gpcDeprecatedRemoved)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
+Time: 5.77 secs; Memory: 28MB
+::error::FILE: ...al-providers/hybridauth-sina/thirdparty/Sina/saetv2.ex.class.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 437 | ERROR | [x] Curly brace syntax for accessing array elements%0A     |       |     and string offsets has been deprecated in PHP 7.4%0A     |       |     and removed in PHP 8.0. Found: $value{0}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A----------------------------------------------------------------------%0APHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A----------------------------------------------------------------------%0A%0A%0AFILE: ...bridauth/hybridauth/hybridauth/Hybrid/thirdparty/OAuth/OAuth.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 106 | ERROR | [x] Curly brace syntax for accessing array elements%0A     |       |     and string offsets has been deprecated in PHP 7.4%0A     |       |     and removed in PHP 8.0. Found: $built{$i}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 106 | ERROR | [x] Curly brace syntax for accessing array elements%0A     |       |     and string offsets has been deprecated in PHP 7.4%0A     |       |     and removed in PHP 8.0. Found: $signature{$i}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A----------------------------------------------------------------------%0APHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A----------------------------------------------------------------------%0A%0A%0AFILE: ...h/hybridauth/hybridauth/Hybrid/thirdparty/OpenID/LightOpenID.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 896 | ERROR | Function get_magic_quotes_gpc() is deprecated since%0A     |       | PHP 7.4 and removed since PHP 8.0%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_gpcDeprecatedRemoved)%0A----------------------------------------------------------------------%0A
