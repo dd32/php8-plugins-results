@@ -1,0 +1,39 @@
+::warning::Plugin: https://wordpress.org/plugins/smf2wp/%0ATrac: https://plugins.trac.wordpress.org/browser/smf2wp/
+No syntax errors detected in smf2wp/smf2wp/bridge.php
+
+Fatal error: Array and string offset access syntax with curly braces is no longer supported in smf2wp/smf2wp/smf2api.php on line 738
+Errors parsing smf2wp/smf2wp/smf2api.php
+::error::%0Asmf2api.php%0A  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 738
+.[32mE[0m 2 / 2 (100%)
+
+
+
+[1mFILE: smf2api.php[0m
+----------------------------------------------------------------------
+[1mFOUND 5 ERRORS AFFECTING 5 LINES[0m
+----------------------------------------------------------------------
+   3 | [31mERROR[0m | [ ] [1mFunction set_magic_quotes_runtime() is deprecated
+     |       |     since PHP 5.3 and removed since PHP 7.0[0m
+     |       |     (PHPCompatibility.FunctionUse.RemovedFunctions.set_magic_quotes_runtimeDeprecatedRemoved)
+ 604 | [31mERROR[0m | [ ] [1mGlobal variable '$HTTP_SESSION_VARS' is deprecated
+     |       |     since PHP 5.3 and removed since PHP 5.4; Use
+     |       |     $_SESSION instead[0m
+     |       |     (PHPCompatibility.Variables.RemovedPredefinedGlobalVariables.http_session_varsDeprecatedRemoved)
+ 633 | [31mERROR[0m | [ ] [1mGlobal variable '$HTTP_SESSION_VARS' is deprecated
+     |       |     since PHP 5.3 and removed since PHP 5.4; Use
+     |       |     $_SESSION instead[0m
+     |       |     (PHPCompatibility.Variables.RemovedPredefinedGlobalVariables.http_session_varsDeprecatedRemoved)
+ 738 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $str{$i}[0m
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 875 | [31mERROR[0m | [ ] [1mGlobal variable '$HTTP_COOKIE_VARS' is deprecated
+     |       |     since PHP 5.3 and removed since PHP 5.4; Use
+     |       |     $_COOKIE instead[0m
+     |       |     (PHPCompatibility.Variables.RemovedPredefinedGlobalVariables.http_cookie_varsDeprecatedRemoved)
+----------------------------------------------------------------------
+[1mPHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
+----------------------------------------------------------------------
+
+Time: 182ms; Memory: 16MB
+::error::FILE: smf2api.php%0A----------------------------------------------------------------------%0AFOUND 5 ERRORS AFFECTING 5 LINES%0A----------------------------------------------------------------------%0A   3 | ERROR | [ ] Function set_magic_quotes_runtime() is deprecated%0A     |       |     since PHP 5.3 and removed since PHP 7.0%0A     |       |     (PHPCompatibility.FunctionUse.RemovedFunctions.set_magic_quotes_runtimeDeprecatedRemoved)%0A 604 | ERROR | [ ] Global variable '$HTTP_SESSION_VARS' is deprecated%0A     |       |     since PHP 5.3 and removed since PHP 5.4; Use%0A     |       |     $_SESSION instead%0A     |       |     (PHPCompatibility.Variables.RemovedPredefinedGlobalVariables.http_session_varsDeprecatedRemoved)%0A 633 | ERROR | [ ] Global variable '$HTTP_SESSION_VARS' is deprecated%0A     |       |     since PHP 5.3 and removed since PHP 5.4; Use%0A     |       |     $_SESSION instead%0A     |       |     (PHPCompatibility.Variables.RemovedPredefinedGlobalVariables.http_session_varsDeprecatedRemoved)%0A 738 | ERROR | [x] Curly brace syntax for accessing array elements%0A     |       |     and string offsets has been deprecated in PHP 7.4%0A     |       |     and removed in PHP 8.0. Found: $str{$i}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 875 | ERROR | [ ] Global variable '$HTTP_COOKIE_VARS' is deprecated%0A     |       |     since PHP 5.3 and removed since PHP 5.4; Use%0A     |       |     $_COOKIE instead%0A     |       |     (PHPCompatibility.Variables.RemovedPredefinedGlobalVariables.http_cookie_varsDeprecatedRemoved)%0A----------------------------------------------------------------------%0APHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A----------------------------------------------------------------------%0A
