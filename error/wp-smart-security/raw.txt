@@ -14,6 +14,8 @@ No syntax errors detected in wp-smart-security/wp-smart-security/captcha/cache/m
 No syntax errors detected in wp-smart-security/wp-smart-security/captcha/gdfonts/index.php
 No syntax errors detected in wp-smart-security/wp-smart-security/captcha/images/index.php
 No syntax errors detected in wp-smart-security/wp-smart-security/captcha/index.php
+
+Fatal error: Array and string offset access syntax with curly braces is no longer supported in wp-smart-security/wp-smart-security/captcha/securimage.php on line 727
 Errors parsing wp-smart-security/wp-smart-security/captcha/securimage.php
 No syntax errors detected in wp-smart-security/wp-smart-security/captcha/securimage_show.php
 No syntax errors detected in wp-smart-security/wp-smart-security/captcha/ttffonts/index.php
@@ -29,48 +31,65 @@ No syntax errors detected in wp-smart-security/wp-smart-security/index.php
 No syntax errors detected in wp-smart-security/wp-smart-security/lib/bitset.php
 No syntax errors detected in wp-smart-security/wp-smart-security/lib/index.php
 No syntax errors detected in wp-smart-security/wp-smart-security/wp-smart-security.php
-::error::%0Acaptcha/securimage.php
+::error::%0Acaptcha/securimage.php%0A  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 727
 ...............[32mE[0m......[31mE[0m.[31mE[0m..... 30 / 30 (100%)
 
 
 
 [1mFILE: captcha/securimage.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 3 ERRORS AFFECTING 3 LINES[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  376 | [31mERROR[0m | [ ] [1mDeclaration of a PHP4 style class constructor is deprecated since PHP 7.0 and removed since PHP 8.0[0m
+----------------------------------------------------------------------
+  376 | [31mERROR[0m | [ ] [1mDeclaration of a PHP4 style class constructor is
+      |       |     deprecated since PHP 7.0 and removed since PHP
+      |       |     8.0[0m
       |       |     (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
-  727 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $this->code{$i}[0m
+  727 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found:
+      |       |     $this->code{$i}[0m
       |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
- 1126 | [31mERROR[0m | [ ] [1mDeclaration of a PHP4 style class constructor is deprecated since PHP 7.0 and removed since PHP 8.0[0m
+ 1126 | [31mERROR[0m | [ ] [1mDeclaration of a PHP4 style class constructor is
+      |       |     deprecated since PHP 7.0 and removed since PHP
+      |       |     8.0[0m
       |       |     (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mPHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 [1mFILE: inc/filecheck.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 335 | [31mERROR[0m | [1mFunction create_function() is deprecated since PHP 7.2 and removed since PHP 8.0; Use an anonymous function instead[0m
+----------------------------------------------------------------------
+ 335 | [31mERROR[0m | [1mFunction create_function() is deprecated since PHP 7.2
+     |       | and removed since PHP 8.0; Use an anonymous function
+     |       | instead[0m
      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 [1mFILE: inc/secure.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 4 ERRORS AFFECTING 4 LINES[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-   55 | [31mERROR[0m | [1mFunction create_function() is deprecated since PHP 7.2 and removed since PHP 8.0; Use an anonymous function instead[0m
+----------------------------------------------------------------------
+   55 | [31mERROR[0m | [1mFunction create_function() is deprecated since PHP
+      |       | 7.2 and removed since PHP 8.0; Use an anonymous
+      |       | function instead[0m
       |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
-  443 | [31mERROR[0m | [1mFunction create_function() is deprecated since PHP 7.2 and removed since PHP 8.0; Use an anonymous function instead[0m
+  443 | [31mERROR[0m | [1mFunction create_function() is deprecated since PHP
+      |       | 7.2 and removed since PHP 8.0; Use an anonymous
+      |       | function instead[0m
       |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
-  814 | [31mERROR[0m | [1mFunction create_function() is deprecated since PHP 7.2 and removed since PHP 8.0; Use an anonymous function instead[0m
+  814 | [31mERROR[0m | [1mFunction create_function() is deprecated since PHP
+      |       | 7.2 and removed since PHP 8.0; Use an anonymous
+      |       | function instead[0m
       |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
- 1199 | [31mERROR[0m | [1mFunction create_function() is deprecated since PHP 7.2 and removed since PHP 8.0; Use an anonymous function instead[0m
+ 1199 | [31mERROR[0m | [1mFunction create_function() is deprecated since PHP
+      |       | 7.2 and removed since PHP 8.0; Use an anonymous
+      |       | function instead[0m
       |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
-Time: 1.59 secs; Memory: 36MB
-::error::FILE: captcha/securimage.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 3 ERRORS AFFECTING 3 LINES%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A  376 | ERROR | [ ] Declaration of a PHP4 style class constructor is deprecated since PHP 7.0 and removed since PHP 8.0%0A      |       |     (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)%0A  727 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $this->code{$i}%0A      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 1126 | ERROR | [ ] Declaration of a PHP4 style class constructor is deprecated since PHP 7.0 and removed since PHP 8.0%0A      |       |     (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0APHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: inc/filecheck.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 335 | ERROR | Function create_function() is deprecated since PHP 7.2 and removed since PHP 8.0; Use an anonymous function instead%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: inc/secure.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 4 ERRORS AFFECTING 4 LINES%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A   55 | ERROR | Function create_function() is deprecated since PHP 7.2 and removed since PHP 8.0; Use an anonymous function instead%0A      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)%0A  443 | ERROR | Function create_function() is deprecated since PHP 7.2 and removed since PHP 8.0; Use an anonymous function instead%0A      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)%0A  814 | ERROR | Function create_function() is deprecated since PHP 7.2 and removed since PHP 8.0; Use an anonymous function instead%0A      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)%0A 1199 | ERROR | Function create_function() is deprecated since PHP 7.2 and removed since PHP 8.0; Use an anonymous function instead%0A      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
+Time: 1.53 secs; Memory: 36MB
+::error::FILE: captcha/securimage.php%0A----------------------------------------------------------------------%0AFOUND 3 ERRORS AFFECTING 3 LINES%0A----------------------------------------------------------------------%0A  376 | ERROR | [ ] Declaration of a PHP4 style class constructor is%0A      |       |     deprecated since PHP 7.0 and removed since PHP%0A      |       |     8.0%0A      |       |     (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)%0A  727 | ERROR | [x] Curly brace syntax for accessing array elements%0A      |       |     and string offsets has been deprecated in PHP 7.4%0A      |       |     and removed in PHP 8.0. Found:%0A      |       |     $this->code{$i}%0A      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 1126 | ERROR | [ ] Declaration of a PHP4 style class constructor is%0A      |       |     deprecated since PHP 7.0 and removed since PHP%0A      |       |     8.0%0A      |       |     (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)%0A----------------------------------------------------------------------%0APHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A----------------------------------------------------------------------%0A%0A%0AFILE: inc/filecheck.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 335 | ERROR | Function create_function() is deprecated since PHP 7.2%0A     |       | and removed since PHP 8.0; Use an anonymous function%0A     |       | instead%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)%0A----------------------------------------------------------------------%0A%0A%0AFILE: inc/secure.php%0A----------------------------------------------------------------------%0AFOUND 4 ERRORS AFFECTING 4 LINES%0A----------------------------------------------------------------------%0A   55 | ERROR | Function create_function() is deprecated since PHP%0A      |       | 7.2 and removed since PHP 8.0; Use an anonymous%0A      |       | function instead%0A      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)%0A  443 | ERROR | Function create_function() is deprecated since PHP%0A      |       | 7.2 and removed since PHP 8.0; Use an anonymous%0A      |       | function instead%0A      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)%0A  814 | ERROR | Function create_function() is deprecated since PHP%0A      |       | 7.2 and removed since PHP 8.0; Use an anonymous%0A      |       | function instead%0A      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)%0A 1199 | ERROR | Function create_function() is deprecated since PHP%0A      |       | 7.2 and removed since PHP 8.0; Use an anonymous%0A      |       | function instead%0A      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)%0A----------------------------------------------------------------------%0A
