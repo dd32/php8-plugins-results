@@ -1,0 +1,38 @@
+::warning::Plugin: https://wordpress.org/plugins/latest-chrome/%0ATrac: https://plugins.trac.wordpress.org/browser/latest-chrome/
+No syntax errors detected in latest-chrome/latest-chrome/chromiumbranch.php
+No syntax errors detected in latest-chrome/latest-chrome/cron.php
+No syntax errors detected in latest-chrome/latest-chrome/latestchrome.php
+No syntax errors detected in latest-chrome/latest-chrome/versioncheck.php
+..[31mE[0m[31mE[0m 4 / 4 (100%)
+
+
+
+[1mFILE: latestchrome.php[0m
+----------------------------------------------------------------------
+[1mFOUND 2 ERRORS AFFECTING 2 LINES[0m
+----------------------------------------------------------------------
+ 39 | [31mERROR[0m | [1mDeclaration of a PHP4 style class constructor is
+    |       | deprecated since PHP 7.0 and removed since PHP 8.0[0m
+    |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+ 79 | [31mERROR[0m | [1mFunction create_function() is deprecated since PHP 7.2
+    |       | and removed since PHP 8.0; Use an anonymous function
+    |       | instead[0m
+    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
+----------------------------------------------------------------------
+
+
+[1mFILE: versioncheck.php[0m
+----------------------------------------------------------------------
+[1mFOUND 2 ERRORS AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 10 | [31mERROR[0m | [1mExtension 'ereg' is deprecated since PHP 5.3 and
+    |       | removed since PHP 7.0; Use pcre instead[0m
+    |       | (PHPCompatibility.Extensions.RemovedExtensions.eregDeprecatedRemoved)
+ 10 | [31mERROR[0m | [1mFunction eregi() is deprecated since PHP 5.3 and
+    |       | removed since PHP 7.0; Use preg_match() (with the i
+    |       | modifier) instead[0m
+    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eregiDeprecatedRemoved)
+----------------------------------------------------------------------
+
+Time: 80ms; Memory: 10MB
+::error::FILE: latestchrome.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A----------------------------------------------------------------------%0A 39 | ERROR | Declaration of a PHP4 style class constructor is%0A    |       | deprecated since PHP 7.0 and removed since PHP 8.0%0A    |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)%0A 79 | ERROR | Function create_function() is deprecated since PHP 7.2%0A    |       | and removed since PHP 8.0; Use an anonymous function%0A    |       | instead%0A    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)%0A----------------------------------------------------------------------%0A%0A%0AFILE: versioncheck.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 10 | ERROR | Extension 'ereg' is deprecated since PHP 5.3 and%0A    |       | removed since PHP 7.0; Use pcre instead%0A    |       | (PHPCompatibility.Extensions.RemovedExtensions.eregDeprecatedRemoved)%0A 10 | ERROR | Function eregi() is deprecated since PHP 5.3 and%0A    |       | removed since PHP 7.0; Use preg_match() (with the i%0A    |       | modifier) instead%0A    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eregiDeprecatedRemoved)%0A----------------------------------------------------------------------%0A
