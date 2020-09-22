@@ -1,0 +1,48 @@
+::warning::Plugin: https://wordpress.org/plugins/frontaccounting-connect/%0ATrac: https://plugins.trac.wordpress.org/browser/frontaccounting-connect/
+No syntax errors detected in frontaccounting-connect/frontaccounting-connect/FACAdminMenu.php
+No syntax errors detected in frontaccounting-connect/frontaccounting-connect/FACAdminMeta.php
+No syntax errors detected in frontaccounting-connect/frontaccounting-connect/FACimage.php
+No syntax errors detected in frontaccounting-connect/frontaccounting-connect/FACImportPost.php
+No syntax errors detected in frontaccounting-connect/frontaccounting-connect/FAConnectAdmin.php
+No syntax errors detected in frontaccounting-connect/frontaccounting-connect/FAConnectdb.php
+No syntax errors detected in frontaccounting-connect/frontaccounting-connect/FAConnectItemHtml.php
+No syntax errors detected in frontaccounting-connect/frontaccounting-connect/FAConnectItems.php
+No syntax errors detected in frontaccounting-connect/frontaccounting-connect/fac.php
+No syntax errors detected in frontaccounting-connect/frontaccounting-connect/FACWidget.php
+No syntax errors detected in frontaccounting-connect/frontaccounting-connect/templates/fac-shortcode-content.php
+No syntax errors detected in frontaccounting-connect/frontaccounting-connect/templates/fac-the-content.php
+No syntax errors detected in frontaccounting-connect/frontaccounting-connect/templates/fac-widget-content.php
+...[31mE[0m.....[31mE[0m... 13 / 13 (100%)
+
+
+
+[1mFILE: FACImportPost.php[0m
+----------------------------------------------------------------------
+[1mFOUND 2 ERRORS AFFECTING 2 LINES[0m
+----------------------------------------------------------------------
+ 206 | [31mERROR[0m | [1mFunction money_format() is deprecated since PHP 7.4
+     |       | and removed since PHP 8.0; Use
+     |       | NumberFormatter::formatCurrency() instead[0m
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.money_formatDeprecatedRemoved)
+ 208 | [31mERROR[0m | [1mFunction money_format() is deprecated since PHP 7.4
+     |       | and removed since PHP 8.0; Use
+     |       | NumberFormatter::formatCurrency() instead[0m
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.money_formatDeprecatedRemoved)
+----------------------------------------------------------------------
+
+
+[1mFILE: FACWidget.php[0m
+----------------------------------------------------------------------
+[1mFOUND 2 ERRORS AFFECTING 2 LINES[0m
+----------------------------------------------------------------------
+  17 | [31mERROR[0m | [1mDeclaration of a PHP4 style class constructor is
+     |       | deprecated since PHP 7.0 and removed since PHP 8.0[0m
+     |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+ 145 | [31mERROR[0m | [1mFunction create_function() is deprecated since PHP 7.2
+     |       | and removed since PHP 8.0; Use an anonymous function
+     |       | instead[0m
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
+----------------------------------------------------------------------
+
+Time: 245ms; Memory: 12MB
+::error::FILE: FACImportPost.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A----------------------------------------------------------------------%0A 206 | ERROR | Function money_format() is deprecated since PHP 7.4%0A     |       | and removed since PHP 8.0; Use%0A     |       | NumberFormatter::formatCurrency() instead%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.money_formatDeprecatedRemoved)%0A 208 | ERROR | Function money_format() is deprecated since PHP 7.4%0A     |       | and removed since PHP 8.0; Use%0A     |       | NumberFormatter::formatCurrency() instead%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.money_formatDeprecatedRemoved)%0A----------------------------------------------------------------------%0A%0A%0AFILE: FACWidget.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A----------------------------------------------------------------------%0A  17 | ERROR | Declaration of a PHP4 style class constructor is%0A     |       | deprecated since PHP 7.0 and removed since PHP 8.0%0A     |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)%0A 145 | ERROR | Function create_function() is deprecated since PHP 7.2%0A     |       | and removed since PHP 8.0; Use an anonymous function%0A     |       | instead%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)%0A----------------------------------------------------------------------%0A
