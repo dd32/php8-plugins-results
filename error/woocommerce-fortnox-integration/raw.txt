@@ -36,6 +36,22 @@ No syntax errors detected in woocommerce-fortnox-integration/woocommerce-fortnox
 Warning: The magic method src\prototypes\WF_Singleton::__wakeup() must have public visibility in woocommerce-fortnox-integration/woocommerce-fortnox-integration/src/prototypes/class-wf-singleton.php on line 19
 No syntax errors detected in woocommerce-fortnox-integration/woocommerce-fortnox-integration/src/prototypes/class-wf-singleton.php
 No syntax errors detected in woocommerce-fortnox-integration/woocommerce-fortnox-integration/src/wetail/admin/class-wf-admin-settings.php
+
+Warning: Private methods cannot be final as they are never overridden by other classes in woocommerce-fortnox-integration/woocommerce-fortnox-integration/src/wetail/class-wf-credentials.php on line 145
+
+Warning: Private methods cannot be final as they are never overridden by other classes in woocommerce-fortnox-integration/woocommerce-fortnox-integration/src/wetail/class-wf-credentials.php on line 183
+
+Warning: Private methods cannot be final as they are never overridden by other classes in woocommerce-fortnox-integration/woocommerce-fortnox-integration/src/wetail/class-wf-credentials.php on line 195
+
+Warning: Private methods cannot be final as they are never overridden by other classes in woocommerce-fortnox-integration/woocommerce-fortnox-integration/src/wetail/class-wf-credentials.php on line 216
+
+Warning: Private methods cannot be final as they are never overridden by other classes in woocommerce-fortnox-integration/woocommerce-fortnox-integration/src/wetail/class-wf-credentials.php on line 229
+
+Warning: Private methods cannot be final as they are never overridden by other classes in woocommerce-fortnox-integration/woocommerce-fortnox-integration/src/wetail/class-wf-credentials.php on line 248
+
+Warning: Private methods cannot be final as they are never overridden by other classes in woocommerce-fortnox-integration/woocommerce-fortnox-integration/src/wetail/class-wf-credentials.php on line 260
+
+Warning: Private methods cannot be final as they are never overridden by other classes in woocommerce-fortnox-integration/woocommerce-fortnox-integration/src/wetail/class-wf-credentials.php on line 305
 No syntax errors detected in woocommerce-fortnox-integration/woocommerce-fortnox-integration/src/wetail/class-wf-credentials.php
 No syntax errors detected in woocommerce-fortnox-integration/woocommerce-fortnox-integration/src/wetail/class-wf-view.php
 No syntax errors detected in woocommerce-fortnox-integration/woocommerce-fortnox-integration/vendor/autoload.php
@@ -148,7 +164,7 @@ No syntax errors detected in woocommerce-fortnox-integration/woocommerce-fortnox
 No syntax errors detected in woocommerce-fortnox-integration/woocommerce-fortnox-integration/vendor/mustache-php/test/Mustache/Test/SpecTestCase.php
 No syntax errors detected in woocommerce-fortnox-integration/woocommerce-fortnox-integration/vendor/mustache-php/test/Mustache/Test/TemplateTest.php
 No syntax errors detected in woocommerce-fortnox-integration/woocommerce-fortnox-integration/vendor/mustache-php/test/Mustache/Test/TokenizerTest.php
-::error::%0Asrc/prototypes/class-wf-singleton.php%0A  Warning: The magic method src\prototypes\WF_Singleton::__wakeup() must have public visibility on line 19
+::error::%0Asrc/prototypes/class-wf-singleton.php%0A  Warning: The magic method src\prototypes\WF_Singleton::__wakeup() must have public visibility on line 19%0A%0Asrc/wetail/class-wf-credentials.php%0A  Warning: Private methods cannot be final as they are never overridden by other classes on line 145%0A  Warning: Private methods cannot be final as they are never overridden by other classes on line 183%0A  Warning: Private methods cannot be final as they are never overridden by other classes on line 195%0A  Warning: Private methods cannot be final as they are never overridden by other classes on line 216%0A  Warning: Private methods cannot be final as they are never overridden by other classes on line 229%0A  Warning: Private methods cannot be final as they are never overridden by other classes on line 248%0A  Warning: Private methods cannot be final as they are never overridden by other classes on line 260%0A  Warning: Private methods cannot be final as they are never overridden by other classes on line 305
 ..............................[31mE[0m.............................  60 / 147 (41%)
 ............................................................ 120 / 147 (82%)
 ...........................                                  147 / 147 (100%)
@@ -156,12 +172,15 @@ No syntax errors detected in woocommerce-fortnox-integration/woocommerce-fortnox
 
 
 [1mFILE: src/fortnox/class-wf-sku-generator.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 29 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse order to implode has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first
-    |       | parameter and $pieces the second[0m (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
+ 29 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse
+    |       | order to implode has been deprecated since PHP 7.4 and
+    |       | is removed since PHP 8.0; $glue should be the first
+    |       | parameter and $pieces the second[0m
+    |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
+----------------------------------------------------------------------
 
-Time: 1.81 secs; Memory: 16MB
-::error::FILE: src/fortnox/class-wf-sku-generator.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 29 | ERROR | Passing the $glue and $pieces parameters in reverse order to implode has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first%0A    |       | parameter and $pieces the second (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
+Time: 1.76 secs; Memory: 16MB
+::error::FILE: src/fortnox/class-wf-sku-generator.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 29 | ERROR | Passing the $glue and $pieces parameters in reverse%0A    |       | order to implode has been deprecated since PHP 7.4 and%0A    |       | is removed since PHP 8.0; $glue should be the first%0A    |       | parameter and $pieces the second%0A    |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A----------------------------------------------------------------------%0A
