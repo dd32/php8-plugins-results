@@ -7,20 +7,26 @@ No syntax errors detected in vc-addons-by-bit14/vc-addons-by-bit14/classes/class
 No syntax errors detected in vc-addons-by-bit14/vc-addons-by-bit14/classes/class-bit-info-banner.php
 No syntax errors detected in vc-addons-by-bit14/vc-addons-by-bit14/classes/class-bit-pricing-table.php
 No syntax errors detected in vc-addons-by-bit14/vc-addons-by-bit14/classes/class-bit-progress-bar.php
+
+Fatal error: Unparenthesized `a ? b : c ? d : e` is not supported. Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)` in vc-addons-by-bit14/vc-addons-by-bit14/classes/class-bit-testimonial-lists.php on line 361
 Errors parsing vc-addons-by-bit14/vc-addons-by-bit14/classes/class-bit-testimonial-lists.php
 No syntax errors detected in vc-addons-by-bit14/vc-addons-by-bit14/classes/class-bit-theme-font.php
-::error::%0Aclasses/class-bit-testimonial-lists.php
+::error::%0Aclasses/class-bit-testimonial-lists.php%0A  Fatal error: Unparenthesized `a ? b : c ? d : e` is not supported.%0A      Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)`%0A      on line 361
 ........[31mE[0m. 10 / 10 (100%)
 
 
 
 [1mFILE: classes/class-bit-testimonial-lists.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 361 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has been deprecated in PHP 7.4 and removed in PHP 8.0. Multiple consecutive ternaries detected. Use parenthesis to
-     |       | clarify the order in which the operations should be executed[0m (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
+ 361 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has
+     |       | been deprecated in PHP 7.4 and removed in PHP 8.0.
+     |       | Multiple consecutive ternaries detected. Use
+     |       | parenthesis to clarify the order in which the
+     |       | operations should be executed[0m
+     |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
+----------------------------------------------------------------------
 
-Time: 333ms; Memory: 14MB
-::error::FILE: classes/class-bit-testimonial-lists.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 361 | ERROR | The left-associativity of the ternary operator has been deprecated in PHP 7.4 and removed in PHP 8.0. Multiple consecutive ternaries detected. Use parenthesis to%0A     |       | clarify the order in which the operations should be executed (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
+Time: 332ms; Memory: 14MB
+::error::FILE: classes/class-bit-testimonial-lists.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 361 | ERROR | The left-associativity of the ternary operator has%0A     |       | been deprecated in PHP 7.4 and removed in PHP 8.0.%0A     |       | Multiple consecutive ternaries detected. Use%0A     |       | parenthesis to clarify the order in which the%0A     |       | operations should be executed%0A     |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A----------------------------------------------------------------------%0A
