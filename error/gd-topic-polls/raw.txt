@@ -36,6 +36,8 @@ No syntax errors detected in gd-topic-polls/gd-topic-polls/d4plib/core/d4p.cache
 No syntax errors detected in gd-topic-polls/gd-topic-polls/d4plib/core/d4p.datetime.php
 No syntax errors detected in gd-topic-polls/gd-topic-polls/d4plib/core/d4p.scope.php
 No syntax errors detected in gd-topic-polls/gd-topic-polls/d4plib/core/d4p.wpdb.php
+
+Fatal error: Unparenthesized `a ? b : c ? d : e` is not supported. Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)` in gd-topic-polls/gd-topic-polls/d4plib/d4p.access.php on line 116
 Errors parsing gd-topic-polls/gd-topic-polls/d4plib/d4p.access.php
 No syntax errors detected in gd-topic-polls/gd-topic-polls/d4plib/d4p.core.php
 No syntax errors detected in gd-topic-polls/gd-topic-polls/d4plib/d4p.debug.php
@@ -44,6 +46,8 @@ No syntax errors detected in gd-topic-polls/gd-topic-polls/d4plib/d4p.geo.php
 No syntax errors detected in gd-topic-polls/gd-topic-polls/d4plib/d4p.sanitize.php
 No syntax errors detected in gd-topic-polls/gd-topic-polls/d4plib/d4p.wp.php
 No syntax errors detected in gd-topic-polls/gd-topic-polls/d4plib/functions/d4p.cache-wordpress.php
+
+Fatal error: Array and string offset access syntax with curly braces is no longer supported in gd-topic-polls/gd-topic-polls/d4plib/functions/d4p.file-download.php on line 117
 Errors parsing gd-topic-polls/gd-topic-polls/d4plib/functions/d4p.file-download.php
 No syntax errors detected in gd-topic-polls/gd-topic-polls/d4plib/functions/d4p.transient-dbquery.php
 No syntax errors detected in gd-topic-polls/gd-topic-polls/d4plib/functions/d4p.transient-usermeta.php
@@ -81,30 +85,36 @@ No syntax errors detected in gd-topic-polls/gd-topic-polls/templates/default/bbp
 No syntax errors detected in gd-topic-polls/gd-topic-polls/templates/default/bbpress/gdpol-poll-form.php
 No syntax errors detected in gd-topic-polls/gd-topic-polls/templates/default/bbpress/gdpol-poll-new.php
 No syntax errors detected in gd-topic-polls/gd-topic-polls/templates/default/bbpress/gdpol-poll-respond.php
-::error::%0Ad4plib/d4p.access.php%0A%0Ad4plib/functions/d4p.file-download.php
+::error::%0Ad4plib/d4p.access.php%0A  Fatal error: Unparenthesized `a ? b : c ? d : e` is not supported.%0A      Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)`%0A      on line 116%0A%0Ad4plib/functions/d4p.file-download.php%0A  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 117
 .....................................[31mE[0m.......[32mE[0m.............. 60 / 82 (73%)
 ......................                                       82 / 82 (100%)
 
 
 
 [1mFILE: d4plib/d4p.access.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 116 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has been deprecated in PHP 7.4 and removed in PHP 8.0. Multiple consecutive ternaries detected. Use parenthesis to
-     |       | clarify the order in which the operations should be executed[0m (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
+ 116 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has
+     |       | been deprecated in PHP 7.4 and removed in PHP 8.0.
+     |       | Multiple consecutive ternaries detected. Use
+     |       | parenthesis to clarify the order in which the
+     |       | operations should be executed[0m
+     |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
+----------------------------------------------------------------------
 
 
 [1mFILE: d4plib/functions/d4p.file-download.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 117 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $range{0}[0m
+----------------------------------------------------------------------
+ 117 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $range{0}[0m
      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mPHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 Time: 1.32 secs; Memory: 16MB
-::error::FILE: d4plib/d4p.access.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 116 | ERROR | The left-associativity of the ternary operator has been deprecated in PHP 7.4 and removed in PHP 8.0. Multiple consecutive ternaries detected. Use parenthesis to%0A     |       | clarify the order in which the operations should be executed (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: d4plib/functions/d4p.file-download.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 117 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $range{0}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0APHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
+::error::FILE: d4plib/d4p.access.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 116 | ERROR | The left-associativity of the ternary operator has%0A     |       | been deprecated in PHP 7.4 and removed in PHP 8.0.%0A     |       | Multiple consecutive ternaries detected. Use%0A     |       | parenthesis to clarify the order in which the%0A     |       | operations should be executed%0A     |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A----------------------------------------------------------------------%0A%0A%0AFILE: d4plib/functions/d4p.file-download.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 117 | ERROR | [x] Curly brace syntax for accessing array elements%0A     |       |     and string offsets has been deprecated in PHP 7.4%0A     |       |     and removed in PHP 8.0. Found: $range{0}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A----------------------------------------------------------------------%0APHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A----------------------------------------------------------------------%0A

@@ -3,6 +3,8 @@ No syntax errors detected in magic-post-listing/magic-post-listing/app/controlle
 No syntax errors detected in magic-post-listing/magic-post-listing/app/libraries/base.php
 No syntax errors detected in magic-post-listing/magic-post-listing/app/libraries/db.php
 No syntax errors detected in magic-post-listing/magic-post-listing/app/libraries/factory.php
+
+Fatal error: Array and string offset access syntax with curly braces is no longer supported in magic-post-listing/magic-post-listing/app/libraries/filesystem.php on line 783
 Errors parsing magic-post-listing/magic-post-listing/app/libraries/filesystem.php
 No syntax errors detected in magic-post-listing/magic-post-listing/app/libraries/main.php
 No syntax errors detected in magic-post-listing/magic-post-listing/app/libraries/posts.php
@@ -23,24 +25,30 @@ No syntax errors detected in magic-post-listing/magic-post-listing/MPL.php
 
 Warning: The magic method WBMPL::__wakeup() must have public visibility in magic-post-listing/magic-post-listing/WB.php on line 39
 No syntax errors detected in magic-post-listing/magic-post-listing/WB.php
-::error::%0Aapp/libraries/filesystem.php%0A%0AWB.php%0A  Warning: The magic method WBMPL::__wakeup() must have public visibility on line 39
+::error::%0Aapp/libraries/filesystem.php%0A  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 783%0A%0AWB.php%0A  Warning: The magic method WBMPL::__wakeup() must have public visibility on line 39
 ....[32mE[0m................. 22 / 22 (100%)
 
 
 
 [1mFILE: app/libraries/filesystem.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 3 ERRORS AFFECTING 3 LINES[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 783 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $mode{$i}[0m
+----------------------------------------------------------------------
+ 783 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $mode{$i}[0m
      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
- 785 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $mode{$i}[0m
+ 785 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $mode{$i}[0m
      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
- 787 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $mode{$i}[0m
+ 787 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $mode{$i}[0m
      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mPHPCBF CAN FIX THE 3 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
-Time: 678ms; Memory: 16MB
-::error::FILE: app/libraries/filesystem.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 3 ERRORS AFFECTING 3 LINES%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 783 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $mode{$i}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 785 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $mode{$i}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 787 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $mode{$i}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0APHPCBF CAN FIX THE 3 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
+Time: 559ms; Memory: 16MB
+::error::FILE: app/libraries/filesystem.php%0A----------------------------------------------------------------------%0AFOUND 3 ERRORS AFFECTING 3 LINES%0A----------------------------------------------------------------------%0A 783 | ERROR | [x] Curly brace syntax for accessing array elements%0A     |       |     and string offsets has been deprecated in PHP 7.4%0A     |       |     and removed in PHP 8.0. Found: $mode{$i}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 785 | ERROR | [x] Curly brace syntax for accessing array elements%0A     |       |     and string offsets has been deprecated in PHP 7.4%0A     |       |     and removed in PHP 8.0. Found: $mode{$i}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 787 | ERROR | [x] Curly brace syntax for accessing array elements%0A     |       |     and string offsets has been deprecated in PHP 7.4%0A     |       |     and removed in PHP 8.0. Found: $mode{$i}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A----------------------------------------------------------------------%0APHPCBF CAN FIX THE 3 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A----------------------------------------------------------------------%0A
