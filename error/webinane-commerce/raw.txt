@@ -796,6 +796,8 @@ No syntax errors detected in webinane-commerce/webinane-commerce/vendor/paypal/s
 No syntax errors detected in webinane-commerce/webinane-commerce/vendor/paypal/sdk-core-php/lib/PayPal/Core/PPRequest.php
 No syntax errors detected in webinane-commerce/webinane-commerce/vendor/paypal/sdk-core-php/lib/PayPal/Core/PPUtils.php
 No syntax errors detected in webinane-commerce/webinane-commerce/vendor/paypal/sdk-core-php/lib/PayPal/Core/PPXmlFaultMessage.php
+
+Fatal error: Cannot use "parent" when current class scope has no parent in webinane-commerce/webinane-commerce/vendor/paypal/sdk-core-php/lib/PayPal/Core/PPXmlMessage.php on line 124
 Errors parsing webinane-commerce/webinane-commerce/vendor/paypal/sdk-core-php/lib/PayPal/Core/PPXmlMessage.php
 No syntax errors detected in webinane-commerce/webinane-commerce/vendor/paypal/sdk-core-php/lib/PayPal/Exception/OAuthException.php
 No syntax errors detected in webinane-commerce/webinane-commerce/vendor/paypal/sdk-core-php/lib/PayPal/Exception/PPConfigurationException.php
@@ -985,7 +987,7 @@ No syntax errors detected in webinane-commerce/webinane-commerce/vendor/tareq198
 No syntax errors detected in webinane-commerce/webinane-commerce/vendor/tareq1988/wp-eloquent/src/WP/UserMeta.php
 No syntax errors detected in webinane-commerce/webinane-commerce/vendor/tareq1988/wp-eloquent/src/WP/User.php
 No syntax errors detected in webinane-commerce/webinane-commerce/webinane-commerce.php
-::error::%0Avendor/paypal/sdk-core-php/lib/PayPal/Core/PPXmlMessage.php
+::error::%0Avendor/paypal/sdk-core-php/lib/PayPal/Core/PPXmlMessage.php%0A  Fatal error: Cannot use "parent" when current class scope has no parent on line 124
 ............................................................  60 / 981 (6%)
 ............................................................ 120 / 981 (12%)
 ............................................................ 180 / 981 (18%)
@@ -1007,21 +1009,23 @@ No syntax errors detected in webinane-commerce/webinane-commerce/webinane-commer
 
 
 [1mFILE: vendor/paypal/sdk-core-php/lib/PayPal/Core/PPXmlMessage.php[0m
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 124 | [31mERROR[0m | [1mUsing "parent" inside a class without parent is deprecated since PHP 7.4 and removed since PHP 8.0[0m
+----------------------------------------------------------------------
+ 124 | [31mERROR[0m | [1mUsing "parent" inside a class without parent is
+     |       | deprecated since PHP 7.4 and removed since PHP 8.0[0m
      |       | (PHPCompatibility.Classes.RemovedOrphanedParent.Removed)
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 [1mFILE: vendor/paypal/sdk-core-php/lib/PayPal/IPN/PPIPNMessage.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 84 | [31mERROR[0m | [1mFunction get_magic_quotes_gpc() is deprecated since PHP 7.4 and removed since PHP 8.0[0m
+----------------------------------------------------------------------
+ 84 | [31mERROR[0m | [1mFunction get_magic_quotes_gpc() is deprecated since PHP
+    |       | 7.4 and removed since PHP 8.0[0m
     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_gpcDeprecatedRemoved)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
-Time: 13.39 secs; Memory: 44MB
-::error::FILE: vendor/paypal/sdk-core-php/lib/PayPal/Core/PPXmlMessage.php%0A---------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A---------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 124 | ERROR | Using "parent" inside a class without parent is deprecated since PHP 7.4 and removed since PHP 8.0%0A     |       | (PHPCompatibility.Classes.RemovedOrphanedParent.Removed)%0A---------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: vendor/paypal/sdk-core-php/lib/PayPal/IPN/PPIPNMessage.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 84 | ERROR | Function get_magic_quotes_gpc() is deprecated since PHP 7.4 and removed since PHP 8.0%0A    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_gpcDeprecatedRemoved)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
+Time: 12.86 secs; Memory: 44MB
+::error::FILE: vendor/paypal/sdk-core-php/lib/PayPal/Core/PPXmlMessage.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 124 | ERROR | Using "parent" inside a class without parent is%0A     |       | deprecated since PHP 7.4 and removed since PHP 8.0%0A     |       | (PHPCompatibility.Classes.RemovedOrphanedParent.Removed)%0A----------------------------------------------------------------------%0A%0A%0AFILE: vendor/paypal/sdk-core-php/lib/PayPal/IPN/PPIPNMessage.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 84 | ERROR | Function get_magic_quotes_gpc() is deprecated since PHP%0A    |       | 7.4 and removed since PHP 8.0%0A    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_gpcDeprecatedRemoved)%0A----------------------------------------------------------------------%0A

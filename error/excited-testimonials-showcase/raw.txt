@@ -64,6 +64,8 @@ No syntax errors detected in excited-testimonials-showcase/excited-testimonials-
 No syntax errors detected in excited-testimonials-showcase/excited-testimonials-showcase/includes/vendor/composer/ClassLoader.php
 No syntax errors detected in excited-testimonials-showcase/excited-testimonials-showcase/includes/vendor/looks_awesome/common/src/Activator.php
 No syntax errors detected in excited-testimonials-showcase/excited-testimonials-showcase/includes/vendor/looks_awesome/common/src/ArrayUtil.php
+
+Fatal error: Array and string offset access syntax with curly braces is no longer supported in excited-testimonials-showcase/excited-testimonials-showcase/includes/vendor/looks_awesome/common/src/Editor.php on line 89
 Errors parsing excited-testimonials-showcase/excited-testimonials-showcase/includes/vendor/looks_awesome/common/src/Editor.php
 No syntax errors detected in excited-testimonials-showcase/excited-testimonials-showcase/includes/vendor/looks_awesome/common/src/FieldsFactory.php
 No syntax errors detected in excited-testimonials-showcase/excited-testimonials-showcase/includes/vendor/looks_awesome/common/src/Post.php
@@ -124,7 +126,7 @@ No syntax errors detected in excited-testimonials-showcase/excited-testimonials-
 No syntax errors detected in excited-testimonials-showcase/excited-testimonials-showcase/public/partials/single_showcase.php
 No syntax errors detected in excited-testimonials-showcase/excited-testimonials-showcase/public/partials/widget.php
 No syntax errors detected in excited-testimonials-showcase/excited-testimonials-showcase/uninstall.php
-::error::%0Aincludes/vendor/looks_awesome/common/src/Editor.php
+::error::%0Aincludes/vendor/looks_awesome/common/src/Editor.php%0A  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 89
 ............................................................  60 / 125 (48%)
 .....[32mE[0m...................................................... 120 / 125 (96%)
 .....                                                        125 / 125 (100%)
@@ -132,20 +134,28 @@ No syntax errors detected in excited-testimonials-showcase/excited-testimonials-
 
 
 [1mFILE: includes/vendor/looks_awesome/common/src/Editor.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 4 ERRORS AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 89 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $v{0}[0m
+----------------------------------------------------------------------
+ 89 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and
+    |       |     string offsets has been deprecated in PHP 7.4 and
+    |       |     removed in PHP 8.0. Found: $v{0}[0m
     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
- 89 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $v{strlen($v) - 1}[0m
+ 89 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and
+    |       |     string offsets has been deprecated in PHP 7.4 and
+    |       |     removed in PHP 8.0. Found: $v{strlen($v) - 1}[0m
     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
- 89 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $v{0}[0m
+ 89 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and
+    |       |     string offsets has been deprecated in PHP 7.4 and
+    |       |     removed in PHP 8.0. Found: $v{0}[0m
     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
- 89 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $v{strlen($v) - 1}[0m
+ 89 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and
+    |       |     string offsets has been deprecated in PHP 7.4 and
+    |       |     removed in PHP 8.0. Found: $v{strlen($v) - 1}[0m
     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mPHPCBF CAN FIX THE 4 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 Time: 1 secs; Memory: 14MB
-::error::FILE: includes/vendor/looks_awesome/common/src/Editor.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 4 ERRORS AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 89 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $v{0}%0A    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 89 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $v{strlen($v) - 1}%0A    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 89 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $v{0}%0A    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 89 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $v{strlen($v) - 1}%0A    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0APHPCBF CAN FIX THE 4 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
+::error::FILE: includes/vendor/looks_awesome/common/src/Editor.php%0A----------------------------------------------------------------------%0AFOUND 4 ERRORS AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 89 | ERROR | [x] Curly brace syntax for accessing array elements and%0A    |       |     string offsets has been deprecated in PHP 7.4 and%0A    |       |     removed in PHP 8.0. Found: $v{0}%0A    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 89 | ERROR | [x] Curly brace syntax for accessing array elements and%0A    |       |     string offsets has been deprecated in PHP 7.4 and%0A    |       |     removed in PHP 8.0. Found: $v{strlen($v) - 1}%0A    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 89 | ERROR | [x] Curly brace syntax for accessing array elements and%0A    |       |     string offsets has been deprecated in PHP 7.4 and%0A    |       |     removed in PHP 8.0. Found: $v{0}%0A    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 89 | ERROR | [x] Curly brace syntax for accessing array elements and%0A    |       |     string offsets has been deprecated in PHP 7.4 and%0A    |       |     removed in PHP 8.0. Found: $v{strlen($v) - 1}%0A    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A----------------------------------------------------------------------%0APHPCBF CAN FIX THE 4 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A----------------------------------------------------------------------%0A
