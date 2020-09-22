@@ -1,0 +1,56 @@
+::warning::Plugin: https://wordpress.org/plugins/wp-sns-share/%0ATrac: https://plugins.trac.wordpress.org/browser/wp-sns-share/
+No syntax errors detected in wp-sns-share/wp-sns-share/functions.php
+No syntax errors detected in wp-sns-share/wp-sns-share/open/func.php
+No syntax errors detected in wp-sns-share/wp-sns-share/open/functions.php
+
+Fatal error: Array and string offset access syntax with curly braces is no longer supported in wp-sns-share/wp-sns-share/open/OAuth.php on line 101
+Errors parsing wp-sns-share/wp-sns-share/open/OAuth.php
+No syntax errors detected in wp-sns-share/wp-sns-share/open/param.php
+No syntax errors detected in wp-sns-share/wp-sns-share/open/renren/app.php
+No syntax errors detected in wp-sns-share/wp-sns-share/open/renren/login.php
+No syntax errors detected in wp-sns-share/wp-sns-share/open/renren/sync.php
+No syntax errors detected in wp-sns-share/wp-sns-share/open/sina2/app.php
+No syntax errors detected in wp-sns-share/wp-sns-share/open/sina2/login.php
+No syntax errors detected in wp-sns-share/wp-sns-share/open/tqq/app.php
+No syntax errors detected in wp-sns-share/wp-sns-share/open/tqq/login.php
+No syntax errors detected in wp-sns-share/wp-sns-share/open/twitter/app.php
+No syntax errors detected in wp-sns-share/wp-sns-share/open/twitter/login.php
+No syntax errors detected in wp-sns-share/wp-sns-share/page/delete.php
+No syntax errors detected in wp-sns-share/wp-sns-share/page/home.php
+No syntax errors detected in wp-sns-share/wp-sns-share/sharebar_functions.php
+No syntax errors detected in wp-sns-share/wp-sns-share/sync_functions.php
+No syntax errors detected in wp-sns-share/wp-sns-share/WPShareSNS.php
+No syntax errors detected in wp-sns-share/wp-sns-share/wp-sns-share.php
+::error::%0Aopen/OAuth.php%0A  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 101
+...[32mE[0m..............[31mE[0m. 20 / 20 (100%)
+
+
+
+[1mFILE: open/OAuth.php[0m
+----------------------------------------------------------------------
+[1mFOUND 2 ERRORS AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 101 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $built{$i}[0m
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 101 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $signature{$i}[0m
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+----------------------------------------------------------------------
+[1mPHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
+----------------------------------------------------------------------
+
+
+[1mFILE: WPShareSNS.php[0m
+----------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 46 | [31mERROR[0m | [1mDeclaration of a PHP4 style class constructor is
+    |       | deprecated since PHP 7.0 and removed since PHP 8.0[0m
+    |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+----------------------------------------------------------------------
+
+Time: 384ms; Memory: 14MB
+::error::FILE: open/OAuth.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 101 | ERROR | [x] Curly brace syntax for accessing array elements%0A     |       |     and string offsets has been deprecated in PHP 7.4%0A     |       |     and removed in PHP 8.0. Found: $built{$i}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 101 | ERROR | [x] Curly brace syntax for accessing array elements%0A     |       |     and string offsets has been deprecated in PHP 7.4%0A     |       |     and removed in PHP 8.0. Found: $signature{$i}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A----------------------------------------------------------------------%0APHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A----------------------------------------------------------------------%0A%0A%0AFILE: WPShareSNS.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 46 | ERROR | Declaration of a PHP4 style class constructor is%0A    |       | deprecated since PHP 7.0 and removed since PHP 8.0%0A    |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)%0A----------------------------------------------------------------------%0A
