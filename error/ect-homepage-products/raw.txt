@@ -1,0 +1,26 @@
+::warning::Plugin: https://wordpress.org/plugins/ect-homepage-products/%0ATrac: https://plugins.trac.wordpress.org/browser/ect-homepage-products/
+No syntax errors detected in ect-homepage-products/ect-homepage-products/add_hprod.php
+No syntax errors detected in ect-homepage-products/ect-homepage-products/ect_list.php
+
+Fatal error: Unparenthesized `a ? b : c ? d : e` is not supported. Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)` in ect-homepage-products/ect-homepage-products/edit_hprod.php on line 53
+Errors parsing ect-homepage-products/ect-homepage-products/edit_hprod.php
+No syntax errors detected in ect-homepage-products/ect-homepage-products/index.php
+::error::%0Aedit_hprod.php%0A  Fatal error: Unparenthesized `a ? b : c ? d : e` is not supported.%0A      Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)`%0A      on line 53
+..[31mE[0m. 4 / 4 (100%)
+
+
+
+[1mFILE: edit_hprod.php[0m
+----------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 53 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has been
+    |       | deprecated in PHP 7.4 and removed in PHP 8.0. Multiple
+    |       | consecutive ternaries detected. Use parenthesis to
+    |       | clarify the order in which the operations should be
+    |       | executed[0m
+    |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
+----------------------------------------------------------------------
+
+Time: 110ms; Memory: 12MB
+::error::FILE: edit_hprod.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 53 | ERROR | The left-associativity of the ternary operator has been%0A    |       | deprecated in PHP 7.4 and removed in PHP 8.0. Multiple%0A    |       | consecutive ternaries detected. Use parenthesis to%0A    |       | clarify the order in which the operations should be%0A    |       | executed%0A    |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A----------------------------------------------------------------------%0A
