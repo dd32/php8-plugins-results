@@ -134,7 +134,6 @@ No syntax errors detected in simple-google-analytics/simple-google-analytics/mig
 No syntax errors detected in simple-google-analytics/simple-google-analytics/migrations/index.php
 No syntax errors detected in simple-google-analytics/simple-google-analytics/simple_google_analytics.php
 No syntax errors detected in simple-google-analytics/simple-google-analytics/uninstall.php
-No syntax errors detected in simple-google-analytics/simple-google-analytics/uninstall.php
 .........................................................[31mE[0m..  60 / 135 (44%)
 .[31mE[0m.......................................................... 120 / 135 (89%)
 ...............                                              135 / 135 (100%)
@@ -142,21 +141,26 @@ No syntax errors detected in simple-google-analytics/simple-google-analytics/uni
 
 
 [1mFILE: libs/factory/core/includes/premium/class-factory-manager.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 76 | [31mERROR[0m | [1mIndirect access to variables, properties and methods will be evaluated strictly in left-to-right order since PHP 7.0. Use curly braces to remove ambiguity.[0m
+----------------------------------------------------------------------
+ 76 | [31mERROR[0m | [1mIndirect access to variables, properties and methods
+    |       | will be evaluated strictly in left-to-right order since
+    |       | PHP 7.0. Use curly braces to remove ambiguity.[0m
     |       | (PHPCompatibility.Variables.NewUniformVariableSyntax.Found)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 [1mFILE: libs/factory/core/includes/updates/class-factory-upgrader.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 293 | [31mERROR[0m | [1mIndirect access to variables, properties and methods will be evaluated strictly in left-to-right order since PHP 7.0. Use curly braces to remove ambiguity.[0m
+----------------------------------------------------------------------
+ 293 | [31mERROR[0m | [1mIndirect access to variables, properties and methods
+     |       | will be evaluated strictly in left-to-right order
+     |       | since PHP 7.0. Use curly braces to remove
+     |       | ambiguity.[0m
      |       | (PHPCompatibility.Variables.NewUniformVariableSyntax.Found)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
-Time: 1.73 secs; Memory: 16MB
-::error::FILE: libs/factory/core/includes/premium/class-factory-manager.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 76 | ERROR | Indirect access to variables, properties and methods will be evaluated strictly in left-to-right order since PHP 7.0. Use curly braces to remove ambiguity.%0A    |       | (PHPCompatibility.Variables.NewUniformVariableSyntax.Found)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: libs/factory/core/includes/updates/class-factory-upgrader.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 293 | ERROR | Indirect access to variables, properties and methods will be evaluated strictly in left-to-right order since PHP 7.0. Use curly braces to remove ambiguity.%0A     |       | (PHPCompatibility.Variables.NewUniformVariableSyntax.Found)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
+Time: 1.69 secs; Memory: 16MB
+::error::FILE: libs/factory/core/includes/premium/class-factory-manager.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 76 | ERROR | Indirect access to variables, properties and methods%0A    |       | will be evaluated strictly in left-to-right order since%0A    |       | PHP 7.0. Use curly braces to remove ambiguity.%0A    |       | (PHPCompatibility.Variables.NewUniformVariableSyntax.Found)%0A----------------------------------------------------------------------%0A%0A%0AFILE: libs/factory/core/includes/updates/class-factory-upgrader.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 293 | ERROR | Indirect access to variables, properties and methods%0A     |       | will be evaluated strictly in left-to-right order%0A     |       | since PHP 7.0. Use curly braces to remove%0A     |       | ambiguity.%0A     |       | (PHPCompatibility.Variables.NewUniformVariableSyntax.Found)%0A----------------------------------------------------------------------%0A
