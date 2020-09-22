@@ -19,6 +19,8 @@ No syntax errors detected in wp-socializer/wp-socializer/core/metadata.php
 No syntax errors detected in wp-socializer/wp-socializer/core/options.php
 No syntax errors detected in wp-socializer/wp-socializer/core/share-counter.php
 No syntax errors detected in wp-socializer/wp-socializer/core/shortcodes.php
+
+Fatal error: Unparenthesized `a ? b : c ? d : e` is not supported. Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)` in wp-socializer/wp-socializer/core/templates/floating-sharebar.php on line 180
 Errors parsing wp-socializer/wp-socializer/core/templates/floating-sharebar.php
 No syntax errors detected in wp-socializer/wp-socializer/core/templates/follow-icons.php
 No syntax errors detected in wp-socializer/wp-socializer/core/templates/share-icons.php
@@ -28,19 +30,22 @@ No syntax errors detected in wp-socializer/wp-socializer/core/widgets/follow-ico
 No syntax errors detected in wp-socializer/wp-socializer/core/widgets/twitter.php
 No syntax errors detected in wp-socializer/wp-socializer/core/widgets.php
 No syntax errors detected in wp-socializer/wp-socializer/wpsr.php
-::error::%0Acore/templates/floating-sharebar.php
-No syntax errors detected in wp-socializer/wp-socializer/wpsr.php
+::error::%0Acore/templates/floating-sharebar.php%0A  Fatal error: Unparenthesized `a ? b : c ? d : e` is not supported.%0A      Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)`%0A      on line 180
 ....................[31mE[0m........ 29 / 29 (100%)
 
 
 
 [1mFILE: core/templates/floating-sharebar.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 180 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has been deprecated in PHP 7.4 and removed in PHP 8.0. Multiple consecutive ternaries detected. Use parenthesis to
-     |       | clarify the order in which the operations should be executed[0m (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
+ 180 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has
+     |       | been deprecated in PHP 7.4 and removed in PHP 8.0.
+     |       | Multiple consecutive ternaries detected. Use
+     |       | parenthesis to clarify the order in which the
+     |       | operations should be executed[0m
+     |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
+----------------------------------------------------------------------
 
-Time: 952ms; Memory: 20MB
-::error::FILE: core/templates/floating-sharebar.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 180 | ERROR | The left-associativity of the ternary operator has been deprecated in PHP 7.4 and removed in PHP 8.0. Multiple consecutive ternaries detected. Use parenthesis to%0A     |       | clarify the order in which the operations should be executed (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
+Time: 1.03 secs; Memory: 20MB
+::error::FILE: core/templates/floating-sharebar.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 180 | ERROR | The left-associativity of the ternary operator has%0A     |       | been deprecated in PHP 7.4 and removed in PHP 8.0.%0A     |       | Multiple consecutive ternaries detected. Use%0A     |       | parenthesis to clarify the order in which the%0A     |       | operations should be executed%0A     |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A----------------------------------------------------------------------%0A
