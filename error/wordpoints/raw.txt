@@ -288,6 +288,8 @@ No syntax errors detected in wordpoints/wordpoints/components/points/classes/wid
 No syntax errors detected in wordpoints/wordpoints/components/points/classes/widget.php
 No syntax errors detected in wordpoints/wordpoints/components/points/includes/apps.php
 No syntax errors detected in wordpoints/wordpoints/components/points/includes/class-un-installer.php
+
+Warning: Private methods cannot be final as they are never overridden by other classes in wordpoints/wordpoints/components/points/includes/class-wordpoints-points-hook.php on line 792
 No syntax errors detected in wordpoints/wordpoints/components/points/includes/class-wordpoints-points-hook.php
 No syntax errors detected in wordpoints/wordpoints/components/points/includes/class-wordpoints-points-hooks.php
 No syntax errors detected in wordpoints/wordpoints/components/points/includes/class-wordpoints-points-logs-query.php
@@ -369,6 +371,7 @@ No syntax errors detected in wordpoints/wordpoints/includes/maintenance.php
 No syntax errors detected in wordpoints/wordpoints/includes/modules.php
 No syntax errors detected in wordpoints/wordpoints/uninstall.php
 No syntax errors detected in wordpoints/wordpoints/wordpoints.php
+::error::%0Acomponents/points/includes/class-wordpoints-points-hook.php%0A  Warning: Private methods cannot be final as they are never overridden by other classes on line 792
 ............................................................  60 / 370 (16%)
 ............................................................ 120 / 370 (32%)
 ............................................................ 180 / 370 (49%)
@@ -380,43 +383,58 @@ No syntax errors detected in wordpoints/wordpoints/wordpoints.php
 
 
 [1mFILE: classes/installables.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 237 | [31mERROR[0m | [1mIndirect access to variables, properties and methods will be evaluated strictly in left-to-right order since PHP 7.0. Use curly braces to remove ambiguity.[0m
+----------------------------------------------------------------------
+ 237 | [31mERROR[0m | [1mIndirect access to variables, properties and methods
+     |       | will be evaluated strictly in left-to-right order
+     |       | since PHP 7.0. Use curly braces to remove
+     |       | ambiguity.[0m
      |       | (PHPCompatibility.Variables.NewUniformVariableSyntax.Found)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 [1mFILE: classes/shortcodes.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 2 ERRORS AFFECTING 2 LINES[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  79 | [31mERROR[0m | [1mIndirect access to variables, properties and methods will be evaluated strictly in left-to-right order since PHP 7.0. Use curly braces to remove ambiguity.[0m
+----------------------------------------------------------------------
+  79 | [31mERROR[0m | [1mIndirect access to variables, properties and methods
+     |       | will be evaluated strictly in left-to-right order
+     |       | since PHP 7.0. Use curly braces to remove
+     |       | ambiguity.[0m
      |       | (PHPCompatibility.Variables.NewUniformVariableSyntax.Found)
- 119 | [31mERROR[0m | [1mIndirect access to variables, properties and methods will be evaluated strictly in left-to-right order since PHP 7.0. Use curly braces to remove ambiguity.[0m
+ 119 | [31mERROR[0m | [1mIndirect access to variables, properties and methods
+     |       | will be evaluated strictly in left-to-right order
+     |       | since PHP 7.0. Use curly braces to remove
+     |       | ambiguity.[0m
      |       | (PHPCompatibility.Variables.NewUniformVariableSyntax.Found)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 [1mFILE: components/points/includes/class-wordpoints-points-hook.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 764 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $this->option_name{191}[0m
+----------------------------------------------------------------------
+ 764 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found:
+     |       |     $this->option_name{191}[0m
      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mPHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 [1mFILE: components/ranks/includes/ranks.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 650 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse order to implode has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first
-     |       | parameter and $pieces the second[0m (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
+ 650 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse
+     |       | order to implode has been deprecated since PHP 7.4 and
+     |       | is removed since PHP 8.0; $glue should be the first
+     |       | parameter and $pieces the second[0m
+     |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
+----------------------------------------------------------------------
 
-Time: 4.54 secs; Memory: 28MB
-::error::FILE: classes/installables.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 237 | ERROR | Indirect access to variables, properties and methods will be evaluated strictly in left-to-right order since PHP 7.0. Use curly braces to remove ambiguity.%0A     |       | (PHPCompatibility.Variables.NewUniformVariableSyntax.Found)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: classes/shortcodes.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A  79 | ERROR | Indirect access to variables, properties and methods will be evaluated strictly in left-to-right order since PHP 7.0. Use curly braces to remove ambiguity.%0A     |       | (PHPCompatibility.Variables.NewUniformVariableSyntax.Found)%0A 119 | ERROR | Indirect access to variables, properties and methods will be evaluated strictly in left-to-right order since PHP 7.0. Use curly braces to remove ambiguity.%0A     |       | (PHPCompatibility.Variables.NewUniformVariableSyntax.Found)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: components/points/includes/class-wordpoints-points-hook.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 764 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $this->option_name{191}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0APHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: components/ranks/includes/ranks.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 650 | ERROR | Passing the $glue and $pieces parameters in reverse order to implode has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first%0A     |       | parameter and $pieces the second (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
+Time: 4.13 secs; Memory: 28MB
+::error::FILE: classes/installables.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 237 | ERROR | Indirect access to variables, properties and methods%0A     |       | will be evaluated strictly in left-to-right order%0A     |       | since PHP 7.0. Use curly braces to remove%0A     |       | ambiguity.%0A     |       | (PHPCompatibility.Variables.NewUniformVariableSyntax.Found)%0A----------------------------------------------------------------------%0A%0A%0AFILE: classes/shortcodes.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A----------------------------------------------------------------------%0A  79 | ERROR | Indirect access to variables, properties and methods%0A     |       | will be evaluated strictly in left-to-right order%0A     |       | since PHP 7.0. Use curly braces to remove%0A     |       | ambiguity.%0A     |       | (PHPCompatibility.Variables.NewUniformVariableSyntax.Found)%0A 119 | ERROR | Indirect access to variables, properties and methods%0A     |       | will be evaluated strictly in left-to-right order%0A     |       | since PHP 7.0. Use curly braces to remove%0A     |       | ambiguity.%0A     |       | (PHPCompatibility.Variables.NewUniformVariableSyntax.Found)%0A----------------------------------------------------------------------%0A%0A%0AFILE: components/points/includes/class-wordpoints-points-hook.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 764 | ERROR | [x] Curly brace syntax for accessing array elements%0A     |       |     and string offsets has been deprecated in PHP 7.4%0A     |       |     and removed in PHP 8.0. Found:%0A     |       |     $this->option_name{191}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A----------------------------------------------------------------------%0APHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A----------------------------------------------------------------------%0A%0A%0AFILE: components/ranks/includes/ranks.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 650 | ERROR | Passing the $glue and $pieces parameters in reverse%0A     |       | order to implode has been deprecated since PHP 7.4 and%0A     |       | is removed since PHP 8.0; $glue should be the first%0A     |       | parameter and $pieces the second%0A     |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A----------------------------------------------------------------------%0A

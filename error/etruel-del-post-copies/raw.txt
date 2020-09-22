@@ -11,6 +11,8 @@ No syntax errors detected in etruel-del-post-copies/etruel-del-post-copies/inclu
 No syntax errors detected in etruel-del-post-copies/etruel-del-post-copies/includes/plugins.php
 No syntax errors detected in etruel-del-post-copies/etruel-del-post-copies/includes/Plugin_Updater.php
 No syntax errors detected in etruel-del-post-copies/etruel-del-post-copies/includes/post-types.php
+
+Fatal error: Array and string offset access syntax with curly braces is no longer supported in etruel-del-post-copies/etruel-del-post-copies/includes/run-campaign.php on line 271
 Errors parsing etruel-del-post-copies/etruel-del-post-copies/includes/run-campaign.php
 No syntax errors detected in etruel-del-post-copies/etruel-del-post-copies/includes/settings/contextual-help.php
 No syntax errors detected in etruel-del-post-copies/etruel-del-post-copies/includes/settings/display-settings.php
@@ -18,49 +20,55 @@ No syntax errors detected in etruel-del-post-copies/etruel-del-post-copies/inclu
 No syntax errors detected in etruel-del-post-copies/etruel-del-post-copies/includes/settings/myplugins.php
 No syntax errors detected in etruel-del-post-copies/etruel-del-post-copies/includes/settings/wpedpc_settings.php
 No syntax errors detected in etruel-del-post-copies/etruel-del-post-copies/index.php
-::error::%0Aincludes/run-campaign.php
+::error::%0Aincludes/run-campaign.php%0A  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 271
 [31mE[0m..[31mE[0m........[32mE[0m....[31mE[0m. 19 / 19 (100%)
 
 
 
 [1mFILE: edel-post-copies.php[0m
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 345 | [31mERROR[0m | [1m"$this" can no longer be used in a plain function or method since PHP 7.1.[0m
+----------------------------------------------------------------------
+ 345 | [31mERROR[0m | [1m"$this" can no longer be used in a plain function or
+     |       | method since PHP 7.1.[0m
      |       | (PHPCompatibility.Variables.ForbiddenThisUseContexts.OutsideObjectContext)
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 [1mFILE: includes/ajax-actions.php[0m
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 2 ERRORS AFFECTING 1 LINE[0m
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 215 | [31mERROR[0m | [1m"$this" can no longer be used in a plain function or method since PHP 7.1.[0m
+----------------------------------------------------------------------
+ 215 | [31mERROR[0m | [1m"$this" can no longer be used in a plain function or
+     |       | method since PHP 7.1.[0m
      |       | (PHPCompatibility.Variables.ForbiddenThisUseContexts.OutsideObjectContext)
- 215 | [31mERROR[0m | [1m"$this" can no longer be used in a plain function or method since PHP 7.1.[0m
+ 215 | [31mERROR[0m | [1m"$this" can no longer be used in a plain function or
+     |       | method since PHP 7.1.[0m
      |       | (PHPCompatibility.Variables.ForbiddenThisUseContexts.OutsideObjectContext)
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 [1mFILE: includes/run-campaign.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 271 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $valuet{0}[0m
+----------------------------------------------------------------------
+ 271 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $valuet{0}[0m
      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mPHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 [1mFILE: includes/settings/wpedpc_settings.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 78 | [31mERROR[0m | [1mFunction get_magic_quotes_gpc() is deprecated since PHP 7.4 and removed since PHP 8.0[0m
+----------------------------------------------------------------------
+ 78 | [31mERROR[0m | [1mFunction get_magic_quotes_gpc() is deprecated since PHP
+    |       | 7.4 and removed since PHP 8.0[0m
     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_gpcDeprecatedRemoved)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
-Time: 636ms; Memory: 16MB
-::error::FILE: edel-post-copies.php%0A---------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A---------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 345 | ERROR | "$this" can no longer be used in a plain function or method since PHP 7.1.%0A     |       | (PHPCompatibility.Variables.ForbiddenThisUseContexts.OutsideObjectContext)%0A---------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: includes/ajax-actions.php%0A---------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 1 LINE%0A---------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 215 | ERROR | "$this" can no longer be used in a plain function or method since PHP 7.1.%0A     |       | (PHPCompatibility.Variables.ForbiddenThisUseContexts.OutsideObjectContext)%0A 215 | ERROR | "$this" can no longer be used in a plain function or method since PHP 7.1.%0A     |       | (PHPCompatibility.Variables.ForbiddenThisUseContexts.OutsideObjectContext)%0A---------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: includes/run-campaign.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 271 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $valuet{0}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0APHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: includes/settings/wpedpc_settings.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 78 | ERROR | Function get_magic_quotes_gpc() is deprecated since PHP 7.4 and removed since PHP 8.0%0A    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_gpcDeprecatedRemoved)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
+Time: 564ms; Memory: 16MB
+::error::FILE: edel-post-copies.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 345 | ERROR | "$this" can no longer be used in a plain function or%0A     |       | method since PHP 7.1.%0A     |       | (PHPCompatibility.Variables.ForbiddenThisUseContexts.OutsideObjectContext)%0A----------------------------------------------------------------------%0A%0A%0AFILE: includes/ajax-actions.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 215 | ERROR | "$this" can no longer be used in a plain function or%0A     |       | method since PHP 7.1.%0A     |       | (PHPCompatibility.Variables.ForbiddenThisUseContexts.OutsideObjectContext)%0A 215 | ERROR | "$this" can no longer be used in a plain function or%0A     |       | method since PHP 7.1.%0A     |       | (PHPCompatibility.Variables.ForbiddenThisUseContexts.OutsideObjectContext)%0A----------------------------------------------------------------------%0A%0A%0AFILE: includes/run-campaign.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 271 | ERROR | [x] Curly brace syntax for accessing array elements%0A     |       |     and string offsets has been deprecated in PHP 7.4%0A     |       |     and removed in PHP 8.0. Found: $valuet{0}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A----------------------------------------------------------------------%0APHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A----------------------------------------------------------------------%0A%0A%0AFILE: includes/settings/wpedpc_settings.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 78 | ERROR | Function get_magic_quotes_gpc() is deprecated since PHP%0A    |       | 7.4 and removed since PHP 8.0%0A    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_gpcDeprecatedRemoved)%0A----------------------------------------------------------------------%0A
