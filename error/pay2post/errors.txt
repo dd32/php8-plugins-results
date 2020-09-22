@@ -1,0 +1,23 @@
+
+lib/framework/admin/importer.php
+  Fatal error: 'continue' not in the 'loop' or 'switch' context on line 380
+FILE: lib/framework/admin/importer.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 380 | ERROR | Using 'continue' outside of a loop or switch structure
+     |       | is invalid and will throw a fatal error since PHP
+     |       | 7.0
+     |       | (PHPCompatibility.ControlStructures.ForbiddenBreakContinueOutsideLoop.FatalError)
+----------------------------------------------------------------------
+
+
+FILE: lib/framework/kernel/functions.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 1151 | ERROR | Function split() is deprecated since PHP 5.3 and
+      |       | removed since PHP 7.0; Use preg_split(), explode() or
+      |       | str_split() instead
+      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.splitDeprecatedRemoved)
+----------------------------------------------------------------------

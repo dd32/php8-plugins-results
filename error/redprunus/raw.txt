@@ -1,0 +1,90 @@
+::warning::Plugin: https://wordpress.org/plugins/redprunus/%0ATrac: https://plugins.trac.wordpress.org/browser/redprunus/
+
+Fatal error: Array and string offset access syntax with curly braces is no longer supported in redprunus/redprunus/functions.php on line 40
+Errors parsing redprunus/redprunus/functions.php
+No syntax errors detected in redprunus/redprunus/proxy.php
+
+Fatal error: Array and string offset access syntax with curly braces is no longer supported in redprunus/redprunus/redprunus.php on line 68
+Errors parsing redprunus/redprunus/redprunus.php
+::error::%0Afunctions.php%0A  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 40%0A%0Aredprunus.php%0A  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 68
+[32mE[0m.[32mE[0m 3 / 3 (100%)
+
+
+
+[1mFILE: functions.php[0m
+----------------------------------------------------------------------
+[1mFOUND 9 ERRORS AFFECTING 6 LINES[0m
+----------------------------------------------------------------------
+ 40 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and
+    |       |     string offsets has been deprecated in PHP 7.4 and
+    |       |     removed in PHP 8.0. Found: $c{0}[0m
+    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 48 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and
+    |       |     string offsets has been deprecated in PHP 7.4 and
+    |       |     removed in PHP 8.0. Found: $c{1}[0m
+    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 52 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and
+    |       |     string offsets has been deprecated in PHP 7.4 and
+    |       |     removed in PHP 8.0. Found: $c{1}[0m
+    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 52 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and
+    |       |     string offsets has been deprecated in PHP 7.4 and
+    |       |     removed in PHP 8.0. Found: $c{2}[0m
+    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 56 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and
+    |       |     string offsets has been deprecated in PHP 7.4 and
+    |       |     removed in PHP 8.0. Found: $c{1}[0m
+    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 56 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and
+    |       |     string offsets has been deprecated in PHP 7.4 and
+    |       |     removed in PHP 8.0. Found: $c{2}[0m
+    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 56 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and
+    |       |     string offsets has been deprecated in PHP 7.4 and
+    |       |     removed in PHP 8.0. Found: $c{3}[0m
+    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 69 | [31mERROR[0m | [ ] [1mpreg_replace() - /e modifier is deprecated since
+    |       |     PHP 5.5 and removed since PHP 7.0[0m
+    |       |     (PHPCompatibility.ParameterValues.RemovedPCREModifiers.Removed)
+ 70 | [31mERROR[0m | [ ] [1mpreg_replace() - /e modifier is deprecated since
+    |       |     PHP 5.5 and removed since PHP 7.0[0m
+    |       |     (PHPCompatibility.ParameterValues.RemovedPCREModifiers.Removed)
+----------------------------------------------------------------------
+[1mPHPCBF CAN FIX THE 7 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
+----------------------------------------------------------------------
+
+
+[1mFILE: redprunus.php[0m
+----------------------------------------------------------------------
+[1mFOUND 6 ERRORS AFFECTING 6 LINES[0m
+----------------------------------------------------------------------
+ 38 | [31mERROR[0m | [ ] [1mFunction create_function() is deprecated since PHP
+    |       |     7.2 and removed since PHP 8.0; Use an anonymous
+    |       |     function instead[0m
+    |       |     (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
+ 49 | [31mERROR[0m | [ ] [1mFunction create_function() is deprecated since PHP
+    |       |     7.2 and removed since PHP 8.0; Use an anonymous
+    |       |     function instead[0m
+    |       |     (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
+ 60 | [31mERROR[0m | [ ] [1mFunction create_function() is deprecated since PHP
+    |       |     7.2 and removed since PHP 8.0; Use an anonymous
+    |       |     function instead[0m
+    |       |     (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
+ 68 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and
+    |       |     string offsets has been deprecated in PHP 7.4 and
+    |       |     removed in PHP 8.0. Found: $m{0}[0m
+    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 72 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and
+    |       |     string offsets has been deprecated in PHP 7.4 and
+    |       |     removed in PHP 8.0. Found: $m{$lastC}[0m
+    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 74 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and
+    |       |     string offsets has been deprecated in PHP 7.4 and
+    |       |     removed in PHP 8.0. Found: $m{$lastC}[0m
+    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+----------------------------------------------------------------------
+[1mPHPCBF CAN FIX THE 3 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
+----------------------------------------------------------------------
+
+Time: 89ms; Memory: 10MB
+::error::FILE: functions.php%0A----------------------------------------------------------------------%0AFOUND 9 ERRORS AFFECTING 6 LINES%0A----------------------------------------------------------------------%0A 40 | ERROR | [x] Curly brace syntax for accessing array elements and%0A    |       |     string offsets has been deprecated in PHP 7.4 and%0A    |       |     removed in PHP 8.0. Found: $c{0}%0A    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 48 | ERROR | [x] Curly brace syntax for accessing array elements and%0A    |       |     string offsets has been deprecated in PHP 7.4 and%0A    |       |     removed in PHP 8.0. Found: $c{1}%0A    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 52 | ERROR | [x] Curly brace syntax for accessing array elements and%0A    |       |     string offsets has been deprecated in PHP 7.4 and%0A    |       |     removed in PHP 8.0. Found: $c{1}%0A    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 52 | ERROR | [x] Curly brace syntax for accessing array elements and%0A    |       |     string offsets has been deprecated in PHP 7.4 and%0A    |       |     removed in PHP 8.0. Found: $c{2}%0A    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 56 | ERROR | [x] Curly brace syntax for accessing array elements and%0A    |       |     string offsets has been deprecated in PHP 7.4 and%0A    |       |     removed in PHP 8.0. Found: $c{1}%0A    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 56 | ERROR | [x] Curly brace syntax for accessing array elements and%0A    |       |     string offsets has been deprecated in PHP 7.4 and%0A    |       |     removed in PHP 8.0. Found: $c{2}%0A    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 56 | ERROR | [x] Curly brace syntax for accessing array elements and%0A    |       |     string offsets has been deprecated in PHP 7.4 and%0A    |       |     removed in PHP 8.0. Found: $c{3}%0A    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 69 | ERROR | [ ] preg_replace() - /e modifier is deprecated since%0A    |       |     PHP 5.5 and removed since PHP 7.0%0A    |       |     (PHPCompatibility.ParameterValues.RemovedPCREModifiers.Removed)%0A 70 | ERROR | [ ] preg_replace() - /e modifier is deprecated since%0A    |       |     PHP 5.5 and removed since PHP 7.0%0A    |       |     (PHPCompatibility.ParameterValues.RemovedPCREModifiers.Removed)%0A----------------------------------------------------------------------%0APHPCBF CAN FIX THE 7 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A----------------------------------------------------------------------%0A%0A%0AFILE: redprunus.php%0A----------------------------------------------------------------------%0AFOUND 6 ERRORS AFFECTING 6 LINES%0A----------------------------------------------------------------------%0A 38 | ERROR | [ ] Function create_function() is deprecated since PHP%0A    |       |     7.2 and removed since PHP 8.0; Use an anonymous%0A    |       |     function instead%0A    |       |     (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)%0A 49 | ERROR | [ ] Function create_function() is deprecated since PHP%0A    |       |     7.2 and removed since PHP 8.0; Use an anonymous%0A    |       |     function instead%0A    |       |     (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)%0A 60 | ERROR | [ ] Function create_function() is deprecated since PHP%0A    |       |     7.2 and removed since PHP 8.0; Use an anonymous%0A    |       |     function instead%0A    |       |     (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)%0A 68 | ERROR | [x] Curly brace syntax for accessing array elements and%0A    |       |     string offsets has been deprecated in PHP 7.4 and%0A    |       |     removed in PHP 8.0. Found: $m{0}%0A    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 72 | ERROR | [x] Curly brace syntax for accessing array elements and%0A    |       |     string offsets has been deprecated in PHP 7.4 and%0A    |       |     removed in PHP 8.0. Found: $m{$lastC}%0A    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 74 | ERROR | [x] Curly brace syntax for accessing array elements and%0A    |       |     string offsets has been deprecated in PHP 7.4 and%0A    |       |     removed in PHP 8.0. Found: $m{$lastC}%0A    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A----------------------------------------------------------------------%0APHPCBF CAN FIX THE 3 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A----------------------------------------------------------------------%0A

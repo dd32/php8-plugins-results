@@ -1,0 +1,53 @@
+::warning::Plugin: https://wordpress.org/plugins/cursorial/%0ATrac: https://plugins.trac.wordpress.org/browser/cursorial/
+No syntax errors detected in cursorial/cursorial/admin.php
+No syntax errors detected in cursorial/cursorial/cursorial_admin.class.php
+
+Parse error: syntax error, unexpected token "&" in cursorial/cursorial/cursorial_block.class.php on line 108
+Errors parsing cursorial/cursorial/cursorial_block.class.php
+No syntax errors detected in cursorial/cursorial/cursorial.class.php
+No syntax errors detected in cursorial/cursorial/cursorial.php
+
+Parse error: syntax error, unexpected token "&" in cursorial/cursorial/cursorial_query.class.php on line 55
+Errors parsing cursorial/cursorial/cursorial_query.class.php
+No syntax errors detected in cursorial/cursorial/json.php
+No syntax errors detected in cursorial/cursorial/templates/cursorial-admin-blocks.php
+No syntax errors detected in cursorial/cursorial/templates/cursorial-admin-index.php
+No syntax errors detected in cursorial/cursorial/templates/cursorial-admin-widget.php
+No syntax errors detected in cursorial/cursorial/templates/cursorial-widget.php
+No syntax errors detected in cursorial/cursorial/widgets/cursorial_widget.php
+::error::%0Acursorial_block.class.php%0A  Parse error: syntax error, unexpected token "&" on line 108%0A%0Acursorial_query.class.php%0A  Parse error: syntax error, unexpected token "&" on line 55
+..[31mE[0m..[31mE[0m.....[31mE[0m 12 / 12 (100%)
+
+
+
+[1mFILE: cursorial_block.class.php[0m
+----------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 108 | [31mERROR[0m | [1mUsing a call-time pass-by-reference is deprecated
+     |       | since PHP 5.3 and prohibited since PHP 5.4[0m
+     |       | (PHPCompatibility.Syntax.ForbiddenCallTimePassByReference.NotAllowed)
+----------------------------------------------------------------------
+
+
+[1mFILE: cursorial_query.class.php[0m
+----------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 55 | [31mERROR[0m | [1mUsing a call-time pass-by-reference is deprecated since
+    |       | PHP 5.3 and prohibited since PHP 5.4[0m
+    |       | (PHPCompatibility.Syntax.ForbiddenCallTimePassByReference.NotAllowed)
+----------------------------------------------------------------------
+
+
+[1mFILE: widgets/cursorial_widget.php[0m
+----------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 38 | [31mERROR[0m | [1mDeclaration of a PHP4 style class constructor is
+    |       | deprecated since PHP 7.0 and removed since PHP 8.0[0m
+    |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+----------------------------------------------------------------------
+
+Time: 254ms; Memory: 14MB
+::error::FILE: cursorial_block.class.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 108 | ERROR | Using a call-time pass-by-reference is deprecated%0A     |       | since PHP 5.3 and prohibited since PHP 5.4%0A     |       | (PHPCompatibility.Syntax.ForbiddenCallTimePassByReference.NotAllowed)%0A----------------------------------------------------------------------%0A%0A%0AFILE: cursorial_query.class.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 55 | ERROR | Using a call-time pass-by-reference is deprecated since%0A    |       | PHP 5.3 and prohibited since PHP 5.4%0A    |       | (PHPCompatibility.Syntax.ForbiddenCallTimePassByReference.NotAllowed)%0A----------------------------------------------------------------------%0A%0A%0AFILE: widgets/cursorial_widget.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 38 | ERROR | Declaration of a PHP4 style class constructor is%0A    |       | deprecated since PHP 7.0 and removed since PHP 8.0%0A    |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)%0A----------------------------------------------------------------------%0A
