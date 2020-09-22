@@ -1,0 +1,31 @@
+
+translate-with-google-and-bing-pro.php
+  Parse error: syntax error, unexpected token "-", expecting "(" on line 12
+FILE: translate-with-google-and-bing-pro.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 12 | ERROR | [x] Curly brace syntax for accessing array elements and
+    |       |     string offsets has been deprecated in PHP 7.4 and
+    |       |     removed in PHP 8.0. Found: pro_plugin_empty() {
+    |       |     	?>
+    |       |     	<div class="error">
+    |       |     		<h3><?php printf( 'Warning: The plugin has been
+    |       |     removed from your site.',
+    |       |     'translate-with-google-and-bing-pro' ); ?></h3>
+    |       |     		<p><?php echo 'WordPress.org has identified this
+    |       |     plugin to be <strong>spam</strong>.';
+    |       |     			printf( '
+    |       |                     <p><?php printf( 'If you need a
+    |       |     facebook plugin, try one of these. <a
+    |       |     href="http://wordpress.org/extend/plugins/search.php?q=translate">http://wordpress.org/extend/plugins/search.php?q=translate</a>'
+    |       |     ); ?></p>
+    |       |     	</div>
+    |       |     	<?php
+    |       |             unset( $_GET['activate'] );
+    |       |             deactivate_plugins( __FILE__ );
+    |       |     }
+    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------
