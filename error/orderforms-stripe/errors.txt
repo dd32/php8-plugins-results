@@ -1,0 +1,33 @@
+
+lib/infusionsoft/vendor/infusionsoft/php-sdk/src/Infusionsoft/Http/CurlClient.php
+  Fatal error: Cannot use "parent" when current class scope has no parent on line 35
+FILE: ...vendor/infusionsoft/php-sdk/src/Infusionsoft/Http/CurlClient.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 35 | ERROR | Using "parent" inside a class without parent is
+    |       | deprecated since PHP 7.4 and removed since PHP 8.0
+    |       | (PHPCompatibility.Classes.RemovedOrphanedParent.Removed)
+----------------------------------------------------------------------
+
+
+FILE: ...soft/vendor/lstrojny/fxmlrpc/src/fXmlRpc/Parser/NativeParser.php
+----------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+----------------------------------------------------------------------
+  66 | ERROR | Function xmlrpc_decode() is removed since PHP 8.0
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.xmlrpc_decodeRemoved)
+ 104 | ERROR | Function xmlrpc_is_fault() is removed since PHP
+     |       | 8.0
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.xmlrpc_is_faultRemoved)
+----------------------------------------------------------------------
+
+
+FILE: ...dor/lstrojny/fxmlrpc/src/fXmlRpc/Serializer/NativeSerializer.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 43 | ERROR | Function xmlrpc_encode_request() is removed since PHP
+    |       | 8.0
+    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.xmlrpc_encode_requestRemoved)
+----------------------------------------------------------------------
