@@ -3,25 +3,30 @@
 Warning: "continue" targeting switch is equivalent to "break". Did you mean to use "continue 2"? in social-counter/social-counter/classes/admin.class.php on line 377
 No syntax errors detected in social-counter/social-counter/classes/admin.class.php
 No syntax errors detected in social-counter/social-counter/classes/base.class.php
+
+Warning: Private methods cannot be final as they are never overridden by other classes in social-counter/social-counter/classes/common.class.php on line 196
 No syntax errors detected in social-counter/social-counter/classes/common.class.php
 No syntax errors detected in social-counter/social-counter/classes/config.class.php
 No syntax errors detected in social-counter/social-counter/classes/main.class.php
 No syntax errors detected in social-counter/social-counter/social-counter.php
 No syntax errors detected in social-counter/social-counter/uninstall.php
-::error::%0Aclasses/admin.class.php%0A  Warning: "continue" targeting switch is equivalent to "break".%0A      Did you mean to use "continue 2"?%0A      on line 377
+::error::%0Aclasses/admin.class.php%0A  Warning: "continue" targeting switch is equivalent to "break".%0A      Did you mean to use "continue 2"?%0A      on line 377%0A%0Aclasses/common.class.php%0A  Warning: Private methods cannot be final as they are never overridden by other classes on line 196
 ..[31mE[0m.... 7 / 7 (100%)
 
 
 
 [1mFILE: classes/common.class.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 2 ERRORS AFFECTING 2 LINES[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 201 | [31mERROR[0m | [1mFunction get_magic_quotes_gpc() is deprecated since PHP 7.4 and removed since PHP 8.0[0m
+----------------------------------------------------------------------
+ 201 | [31mERROR[0m | [1mFunction get_magic_quotes_gpc() is deprecated since
+     |       | PHP 7.4 and removed since PHP 8.0[0m
      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_gpcDeprecatedRemoved)
- 203 | [31mERROR[0m | [1mFunction each() is deprecated since PHP 7.2 and removed since PHP 8.0; Use a foreach loop or ArrayIterator instead[0m
+ 203 | [31mERROR[0m | [1mFunction each() is deprecated since PHP 7.2 and
+     |       | removed since PHP 8.0; Use a foreach loop or
+     |       | ArrayIterator instead[0m
      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
-Time: 495ms; Memory: 16MB
-::error::FILE: classes/common.class.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 201 | ERROR | Function get_magic_quotes_gpc() is deprecated since PHP 7.4 and removed since PHP 8.0%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_gpcDeprecatedRemoved)%0A 203 | ERROR | Function each() is deprecated since PHP 7.2 and removed since PHP 8.0; Use a foreach loop or ArrayIterator instead%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
+Time: 478ms; Memory: 16MB
+::error::FILE: classes/common.class.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A----------------------------------------------------------------------%0A 201 | ERROR | Function get_magic_quotes_gpc() is deprecated since%0A     |       | PHP 7.4 and removed since PHP 8.0%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_gpcDeprecatedRemoved)%0A 203 | ERROR | Function each() is deprecated since PHP 7.2 and%0A     |       | removed since PHP 8.0; Use a foreach loop or%0A     |       | ArrayIterator instead%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)%0A----------------------------------------------------------------------%0A

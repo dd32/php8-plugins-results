@@ -12,6 +12,8 @@ No syntax errors detected in wp-mini-program/wp-mini-program/admin/page/subscrib
 No syntax errors detected in wp-mini-program/wp-mini-program/include/auth.php
 No syntax errors detected in wp-mini-program/wp-mini-program/include/custom.php
 No syntax errors detected in wp-mini-program/wp-mini-program/include/dashboard.php
+
+Fatal error: Unparenthesized `a ? b : c ? d : e` is not supported. Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)` in wp-mini-program/wp-mini-program/include/filter.php on line 103
 Errors parsing wp-mini-program/wp-mini-program/include/filter.php
 No syntax errors detected in wp-mini-program/wp-mini-program/include/function.php
 No syntax errors detected in wp-mini-program/wp-mini-program/include/hooks.php
@@ -30,27 +32,32 @@ No syntax errors detected in wp-mini-program/wp-mini-program/router/setting.php
 No syntax errors detected in wp-mini-program/wp-mini-program/router/subscribe.php
 No syntax errors detected in wp-mini-program/wp-mini-program/router/users.php
 No syntax errors detected in wp-mini-program/wp-mini-program/wp-mini-program.php
-::error::%0Ainclude/filter.php
+::error::%0Ainclude/filter.php%0A  Fatal error: Unparenthesized `a ? b : c ? d : e` is not supported.%0A      Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)`%0A      on line 103
 ..........[31mE[0m..[31mE[0m................. 31 / 31 (100%)
 
 
 
 [1mFILE: include/auth.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 71 | [31mERROR[0m | [1mFunction mdecrypt_generic() is deprecated since PHP 7.1 and removed since PHP 7.2; Use OpenSSL instead[0m
+----------------------------------------------------------------------
+ 71 | [31mERROR[0m | [1mFunction mdecrypt_generic() is deprecated since PHP 7.1
+    |       | and removed since PHP 7.2; Use OpenSSL instead[0m
     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.mdecrypt_genericDeprecatedRemoved)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 [1mFILE: include/filter.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 103 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has been deprecated in PHP 7.4 and removed in PHP 8.0. Multiple consecutive ternaries detected. Use parenthesis to
-     |       | clarify the order in which the operations should be executed[0m (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
+ 103 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has
+     |       | been deprecated in PHP 7.4 and removed in PHP 8.0.
+     |       | Multiple consecutive ternaries detected. Use
+     |       | parenthesis to clarify the order in which the
+     |       | operations should be executed[0m
+     |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
+----------------------------------------------------------------------
 
-Time: 878ms; Memory: 16MB
-::error::FILE: include/auth.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 71 | ERROR | Function mdecrypt_generic() is deprecated since PHP 7.1 and removed since PHP 7.2; Use OpenSSL instead%0A    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.mdecrypt_genericDeprecatedRemoved)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: include/filter.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 103 | ERROR | The left-associativity of the ternary operator has been deprecated in PHP 7.4 and removed in PHP 8.0. Multiple consecutive ternaries detected. Use parenthesis to%0A     |       | clarify the order in which the operations should be executed (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
+Time: 844ms; Memory: 16MB
+::error::FILE: include/auth.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 71 | ERROR | Function mdecrypt_generic() is deprecated since PHP 7.1%0A    |       | and removed since PHP 7.2; Use OpenSSL instead%0A    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.mdecrypt_genericDeprecatedRemoved)%0A----------------------------------------------------------------------%0A%0A%0AFILE: include/filter.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 103 | ERROR | The left-associativity of the ternary operator has%0A     |       | been deprecated in PHP 7.4 and removed in PHP 8.0.%0A     |       | Multiple consecutive ternaries detected. Use%0A     |       | parenthesis to clarify the order in which the%0A     |       | operations should be executed%0A     |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A----------------------------------------------------------------------%0A
