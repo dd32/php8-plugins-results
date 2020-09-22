@@ -15,7 +15,11 @@ No syntax errors detected in rsvp/rsvp/external-libs/spout/src/Spout/Common/Help
 No syntax errors detected in rsvp/rsvp/external-libs/spout/src/Spout/Common/Helper/GlobalFunctionsHelper.php
 No syntax errors detected in rsvp/rsvp/external-libs/spout/src/Spout/Common/Helper/StringHelper.php
 
+Warning: Private methods cannot be final as they are never overridden by other classes in rsvp/rsvp/external-libs/spout/src/Spout/Common/Singleton.php on line 39
+
 Warning: The magic method Box\Spout\Common\Singleton::__wakeup() must have public visibility in rsvp/rsvp/external-libs/spout/src/Spout/Common/Singleton.php on line 39
+
+Warning: Private methods cannot be final as they are never overridden by other classes in rsvp/rsvp/external-libs/spout/src/Spout/Common/Singleton.php on line 40
 No syntax errors detected in rsvp/rsvp/external-libs/spout/src/Spout/Common/Singleton.php
 No syntax errors detected in rsvp/rsvp/external-libs/spout/src/Spout/Common/Type.php
 No syntax errors detected in rsvp/rsvp/external-libs/spout/src/Spout/Reader/AbstractReader.php
@@ -106,20 +110,20 @@ No syntax errors detected in rsvp/rsvp/rsvp_db_setup.inc.php
 No syntax errors detected in rsvp/rsvp/rsvp_frontend.inc.php
 No syntax errors detected in rsvp/rsvp/uninstall.php
 No syntax errors detected in rsvp/rsvp/wp-rsvp.php
-::error::%0Aexternal-libs/spout/src/Spout/Common/Singleton.php%0A  Warning: The magic method Box\Spout\Common\Singleton::__wakeup() must have public visibility on line 39
-No syntax errors detected in rsvp/rsvp/wp-rsvp.php
+::error::%0Aexternal-libs/spout/src/Spout/Common/Singleton.php%0A  Warning: Private methods cannot be final as they are never overridden by other classes on line 39%0A  Warning: The magic method Box\Spout\Common\Singleton::__wakeup() must have public visibility on line 39%0A  Warning: Private methods cannot be final as they are never overridden by other classes on line 40
 ............................................................  60 / 105 (57%)
 ............................................[31mE[0m                105 / 105 (100%)
 
 
 
 [1mFILE: wp-rsvp.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 2046 | [31mERROR[0m | [1mFunction get_magic_quotes_gpc() is deprecated since PHP 7.4 and removed since PHP 8.0[0m
+----------------------------------------------------------------------
+ 2046 | [31mERROR[0m | [1mFunction get_magic_quotes_gpc() is deprecated since
+      |       | PHP 7.4 and removed since PHP 8.0[0m
       |       | (PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_gpcDeprecatedRemoved)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
-Time: 1.63 secs; Memory: 30MB
-::error::FILE: wp-rsvp.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 2046 | ERROR | Function get_magic_quotes_gpc() is deprecated since PHP 7.4 and removed since PHP 8.0%0A      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_gpcDeprecatedRemoved)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
+Time: 1.69 secs; Memory: 30MB
+::error::FILE: wp-rsvp.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 2046 | ERROR | Function get_magic_quotes_gpc() is deprecated since%0A      |       | PHP 7.4 and removed since PHP 8.0%0A      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_gpcDeprecatedRemoved)%0A----------------------------------------------------------------------%0A
