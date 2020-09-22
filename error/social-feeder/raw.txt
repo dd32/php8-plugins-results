@@ -44,6 +44,8 @@ No syntax errors detected in social-feeder/social-feeder/vendor/10quality/wpmvc-
 No syntax errors detected in social-feeder/social-feeder/vendor/10quality/wpmvc-core/src/psr4/Resolver.php
 No syntax errors detected in social-feeder/social-feeder/vendor/10quality/wpmvc-core/src/psr4/Response.php
 No syntax errors detected in social-feeder/social-feeder/vendor/10quality/wpmvc-logger/src/Logger.php
+
+Fatal error: Unparenthesized `a ? b : c ? d : e` is not supported. Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)` in social-feeder/social-feeder/vendor/10quality/wpmvc-mvc/src/Collection.php on line 81
 Errors parsing social-feeder/social-feeder/vendor/10quality/wpmvc-mvc/src/Collection.php
 No syntax errors detected in social-feeder/social-feeder/vendor/10quality/wpmvc-mvc/src/Contracts/Arrayable.php
 No syntax errors detected in social-feeder/social-feeder/vendor/10quality/wpmvc-mvc/src/Contracts/Findable.php
@@ -566,7 +568,7 @@ No syntax errors detected in social-feeder/social-feeder/vendor/psr/log/Psr/Log/
 No syntax errors detected in social-feeder/social-feeder/vendor/psr/log/Psr/Log/LogLevel.php
 No syntax errors detected in social-feeder/social-feeder/vendor/psr/log/Psr/Log/NullLogger.php
 No syntax errors detected in social-feeder/social-feeder/vendor/psr/log/Psr/Log/Test/LoggerInterfaceTest.php
-::error::%0Avendor/10quality/wpmvc-mvc/src/Collection.php
+::error::%0Avendor/10quality/wpmvc-mvc/src/Collection.php%0A  Fatal error: Unparenthesized `a ? b : c ? d : e` is not supported.%0A      Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)`%0A      on line 81
 .............................................[31mE[0m..............  60 / 567 (11%)
 ..........[31mE[0m............................................[31mE[0m.... 120 / 567 (21%)
 ............................................................ 180 / 567 (32%)
@@ -581,30 +583,37 @@ No syntax errors detected in social-feeder/social-feeder/vendor/psr/log/Psr/Log/
 
 
 [1mFILE: vendor/10quality/wpmvc-mvc/src/Collection.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 82 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has been deprecated in PHP 7.4 and removed in PHP 8.0. Multiple consecutive ternaries detected. Use parenthesis to
-    |       | clarify the order in which the operations should be executed[0m (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
+ 82 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has been
+    |       | deprecated in PHP 7.4 and removed in PHP 8.0. Multiple
+    |       | consecutive ternaries detected. Use parenthesis to
+    |       | clarify the order in which the operations should be
+    |       | executed[0m
+    |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
+----------------------------------------------------------------------
 
 
 [1mFILE: vendor/10quality/wpmvc-mvc/src/Traits/FindTermTrait.php[0m
---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
---------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 59 | [31mERROR[0m | [1m"$this" can no longer be used in a plain function or method since PHP 7.1.[0m
+----------------------------------------------------------------------
+ 59 | [31mERROR[0m | [1m"$this" can no longer be used in a plain function or
+    |       | method since PHP 7.1.[0m
     |       | (PHPCompatibility.Variables.ForbiddenThisUseContexts.OutsideObjectContext)
---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
-[1mFILE: vendor/10quality/wpmvc-phpfastcache/src/_extensions/predis-1.0/src/Collection/Iterator/SortedSetKey.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[1mFILE: .../_extensions/predis-1.0/src/Collection/Iterator/SortedSetKey.php[0m
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 52 | [31mERROR[0m | [1mFunction each() is deprecated since PHP 7.2 and removed since PHP 8.0; Use a foreach loop or ArrayIterator instead[0m
+----------------------------------------------------------------------
+ 52 | [31mERROR[0m | [1mFunction each() is deprecated since PHP 7.2 and removed
+    |       | since PHP 8.0; Use a foreach loop or ArrayIterator
+    |       | instead[0m
     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
-Time: 4.89 secs; Memory: 18MB
-::error::FILE: vendor/10quality/wpmvc-mvc/src/Collection.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 82 | ERROR | The left-associativity of the ternary operator has been deprecated in PHP 7.4 and removed in PHP 8.0. Multiple consecutive ternaries detected. Use parenthesis to%0A    |       | clarify the order in which the operations should be executed (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: vendor/10quality/wpmvc-mvc/src/Traits/FindTermTrait.php%0A--------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A--------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 59 | ERROR | "$this" can no longer be used in a plain function or method since PHP 7.1.%0A    |       | (PHPCompatibility.Variables.ForbiddenThisUseContexts.OutsideObjectContext)%0A--------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: vendor/10quality/wpmvc-phpfastcache/src/_extensions/predis-1.0/src/Collection/Iterator/SortedSetKey.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 52 | ERROR | Function each() is deprecated since PHP 7.2 and removed since PHP 8.0; Use a foreach loop or ArrayIterator instead%0A    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
+Time: 4.64 secs; Memory: 18MB
+::error::FILE: vendor/10quality/wpmvc-mvc/src/Collection.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 82 | ERROR | The left-associativity of the ternary operator has been%0A    |       | deprecated in PHP 7.4 and removed in PHP 8.0. Multiple%0A    |       | consecutive ternaries detected. Use parenthesis to%0A    |       | clarify the order in which the operations should be%0A    |       | executed%0A    |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A----------------------------------------------------------------------%0A%0A%0AFILE: vendor/10quality/wpmvc-mvc/src/Traits/FindTermTrait.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 59 | ERROR | "$this" can no longer be used in a plain function or%0A    |       | method since PHP 7.1.%0A    |       | (PHPCompatibility.Variables.ForbiddenThisUseContexts.OutsideObjectContext)%0A----------------------------------------------------------------------%0A%0A%0AFILE: .../_extensions/predis-1.0/src/Collection/Iterator/SortedSetKey.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 52 | ERROR | Function each() is deprecated since PHP 7.2 and removed%0A    |       | since PHP 8.0; Use a foreach loop or ArrayIterator%0A    |       | instead%0A    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)%0A----------------------------------------------------------------------%0A
