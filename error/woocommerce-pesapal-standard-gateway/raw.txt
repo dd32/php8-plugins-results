@@ -1,0 +1,41 @@
+::warning::Plugin: https://wordpress.org/plugins/woocommerce-pesapal-standard-gateway/%0ATrac: https://plugins.trac.wordpress.org/browser/woocommerce-pesapal-standard-gateway/
+
+Fatal error: Array and string offset access syntax with curly braces is no longer supported in woocommerce-pesapal-standard-gateway/woocommerce-pesapal-standard-gateway/libs/OAuth.php on line 101
+Errors parsing woocommerce-pesapal-standard-gateway/woocommerce-pesapal-standard-gateway/libs/OAuth.php
+
+Parse error: syntax error, unexpected token "new" in woocommerce-pesapal-standard-gateway/woocommerce-pesapal-standard-gateway/woocomerce-pesapal-standard.php on line 205
+Errors parsing woocommerce-pesapal-standard-gateway/woocommerce-pesapal-standard-gateway/woocomerce-pesapal-standard.php
+::error::%0Alibs/OAuth.php%0A  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 101%0A%0Awoocomerce-pesapal-standard.php%0A  Parse error: syntax error, unexpected token "new" on line 205
+[32mE[0m[31mE[0m 2 / 2 (100%)
+
+
+
+[1mFILE: libs/OAuth.php[0m
+----------------------------------------------------------------------
+[1mFOUND 2 ERRORS AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 101 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $built{$i}[0m
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 101 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $signature{$i}[0m
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+----------------------------------------------------------------------
+[1mPHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
+----------------------------------------------------------------------
+
+
+[1mFILE: woocomerce-pesapal-standard.php[0m
+----------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 205 | [31mERROR[0m | [1mAssigning the return value of new by reference is
+     |       | deprecated in PHP 5.3 and has been removed in PHP
+     |       | 7.0[0m
+     |       | (PHPCompatibility.Syntax.RemovedNewReference.Removed)
+----------------------------------------------------------------------
+
+Time: 191ms; Memory: 14MB
+::error::FILE: libs/OAuth.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 101 | ERROR | [x] Curly brace syntax for accessing array elements%0A     |       |     and string offsets has been deprecated in PHP 7.4%0A     |       |     and removed in PHP 8.0. Found: $built{$i}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 101 | ERROR | [x] Curly brace syntax for accessing array elements%0A     |       |     and string offsets has been deprecated in PHP 7.4%0A     |       |     and removed in PHP 8.0. Found: $signature{$i}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A----------------------------------------------------------------------%0APHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A----------------------------------------------------------------------%0A%0A%0AFILE: woocomerce-pesapal-standard.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 205 | ERROR | Assigning the return value of new by reference is%0A     |       | deprecated in PHP 5.3 and has been removed in PHP%0A     |       | 7.0%0A     |       | (PHPCompatibility.Syntax.RemovedNewReference.Removed)%0A----------------------------------------------------------------------%0A
