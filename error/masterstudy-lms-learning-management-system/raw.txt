@@ -658,7 +658,6 @@ No syntax errors detected in masterstudy-lms-learning-management-system/masterst
 No syntax errors detected in masterstudy-lms-learning-management-system/masterstudy-lms-learning-management-system/wp-custom-fields-theme-options/taxonomy_meta/fields/image.php
 No syntax errors detected in masterstudy-lms-learning-management-system/masterstudy-lms-learning-management-system/wp-custom-fields-theme-options/taxonomy_meta/metaboxes.php
 No syntax errors detected in masterstudy-lms-learning-management-system/masterstudy-lms-learning-management-system/wp-custom-fields-theme-options/WPCFTO.php
-No syntax errors detected in masterstudy-lms-learning-management-system/masterstudy-lms-learning-management-system/wp-custom-fields-theme-options/WPCFTO.php
 ............................................................  60 / 659 (9%)
 ............................................................ 120 / 659 (18%)
 ............................................................ 180 / 659 (27%)
@@ -674,32 +673,36 @@ No syntax errors detected in masterstudy-lms-learning-management-system/masterst
 
 
 [1mFILE: libraries/tfpdf/tfpdf.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 2 ERRORS AFFECTING 2 LINES[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 1260 | [31mERROR[0m | [1mFunction get_magic_quotes_runtime() is deprecated since PHP 7.4 and removed since PHP 8.0[0m
+----------------------------------------------------------------------
+ 1260 | [31mERROR[0m | [1mFunction get_magic_quotes_runtime() is deprecated
+      |       | since PHP 7.4 and removed since PHP 8.0[0m
       |       | (PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_runtimeDeprecatedRemoved)
- 1261 | [31mERROR[0m | [1mFunction set_magic_quotes_runtime() is deprecated since PHP 5.3 and removed since PHP 7.0[0m
+ 1261 | [31mERROR[0m | [1mFunction set_magic_quotes_runtime() is deprecated
+      |       | since PHP 5.3 and removed since PHP 7.0[0m
       |       | (PHPCompatibility.FunctionUse.RemovedFunctions.set_magic_quotes_runtimeDeprecatedRemoved)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 [1mFILE: lms/classes/Validation.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 265 | [31mERROR[0m | [1mFunction get_magic_quotes_gpc() is deprecated since PHP 7.4 and removed since PHP 8.0[0m
+----------------------------------------------------------------------
+ 265 | [31mERROR[0m | [1mFunction get_magic_quotes_gpc() is deprecated since
+     |       | PHP 7.4 and removed since PHP 8.0[0m
      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_gpcDeprecatedRemoved)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 [1mFILE: lms/classes/WP_Route.php[0m
---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
---------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 90 | [31mERROR[0m | [1m"$this" can no longer be used in a plain function or method since PHP 7.1.[0m
+----------------------------------------------------------------------
+ 90 | [31mERROR[0m | [1m"$this" can no longer be used in a plain function or
+    |       | method since PHP 7.1.[0m
     |       | (PHPCompatibility.Variables.ForbiddenThisUseContexts.OutsideObjectContext)
---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
-Time: 7.26 secs; Memory: 36MB
-::error::FILE: libraries/tfpdf/tfpdf.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 1260 | ERROR | Function get_magic_quotes_runtime() is deprecated since PHP 7.4 and removed since PHP 8.0%0A      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_runtimeDeprecatedRemoved)%0A 1261 | ERROR | Function set_magic_quotes_runtime() is deprecated since PHP 5.3 and removed since PHP 7.0%0A      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.set_magic_quotes_runtimeDeprecatedRemoved)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: lms/classes/Validation.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 265 | ERROR | Function get_magic_quotes_gpc() is deprecated since PHP 7.4 and removed since PHP 8.0%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_gpcDeprecatedRemoved)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: lms/classes/WP_Route.php%0A--------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A--------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 90 | ERROR | "$this" can no longer be used in a plain function or method since PHP 7.1.%0A    |       | (PHPCompatibility.Variables.ForbiddenThisUseContexts.OutsideObjectContext)%0A--------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
+Time: 7.5 secs; Memory: 36MB
+::error::FILE: libraries/tfpdf/tfpdf.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A----------------------------------------------------------------------%0A 1260 | ERROR | Function get_magic_quotes_runtime() is deprecated%0A      |       | since PHP 7.4 and removed since PHP 8.0%0A      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_runtimeDeprecatedRemoved)%0A 1261 | ERROR | Function set_magic_quotes_runtime() is deprecated%0A      |       | since PHP 5.3 and removed since PHP 7.0%0A      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.set_magic_quotes_runtimeDeprecatedRemoved)%0A----------------------------------------------------------------------%0A%0A%0AFILE: lms/classes/Validation.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 265 | ERROR | Function get_magic_quotes_gpc() is deprecated since%0A     |       | PHP 7.4 and removed since PHP 8.0%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_gpcDeprecatedRemoved)%0A----------------------------------------------------------------------%0A%0A%0AFILE: lms/classes/WP_Route.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 90 | ERROR | "$this" can no longer be used in a plain function or%0A    |       | method since PHP 7.1.%0A    |       | (PHPCompatibility.Variables.ForbiddenThisUseContexts.OutsideObjectContext)%0A----------------------------------------------------------------------%0A
