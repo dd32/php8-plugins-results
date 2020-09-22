@@ -8,6 +8,8 @@ No syntax errors detected in cybersyn/cybersyn/fivefilters-full-text-rss/admin/r
 No syntax errors detected in cybersyn/cybersyn/fivefilters-full-text-rss/admin/template.php
 No syntax errors detected in cybersyn/cybersyn/fivefilters-full-text-rss/admin/update.php
 No syntax errors detected in cybersyn/cybersyn/fivefilters-full-text-rss/cache/index.php
+
+Fatal error: __autoload() is no longer supported, use spl_autoload_register() instead in cybersyn/cybersyn/fivefilters-full-text-rss/cleancache.php on line 41
 Errors parsing cybersyn/cybersyn/fivefilters-full-text-rss/cleancache.php
 No syntax errors detected in cybersyn/cybersyn/fivefilters-full-text-rss/config.php
 No syntax errors detected in cybersyn/cybersyn/fivefilters-full-text-rss/extract.php
@@ -48,6 +50,8 @@ No syntax errors detected in cybersyn/cybersyn/fivefilters-full-text-rss/librari
 No syntax errors detected in cybersyn/cybersyn/fivefilters-full-text-rss/libraries/language-detect/LanguageDetect/Exception.php
 No syntax errors detected in cybersyn/cybersyn/fivefilters-full-text-rss/libraries/language-detect/LanguageDetect/ISO639.php
 No syntax errors detected in cybersyn/cybersyn/fivefilters-full-text-rss/libraries/language-detect/LanguageDetect/Parser.php
+
+Fatal error: Array and string offset access syntax with curly braces is no longer supported in cybersyn/cybersyn/fivefilters-full-text-rss/libraries/language-detect/LanguageDetect.php on line 1463
 Errors parsing cybersyn/cybersyn/fivefilters-full-text-rss/libraries/language-detect/LanguageDetect.php
 No syntax errors detected in cybersyn/cybersyn/fivefilters-full-text-rss/libraries/readability/JSLikeHTMLElement.php
 No syntax errors detected in cybersyn/cybersyn/fivefilters-full-text-rss/libraries/readability/Readability.php
@@ -101,93 +105,151 @@ No syntax errors detected in cybersyn/cybersyn/fivefilters-full-text-rss/tests/A
 No syntax errors detected in cybersyn/cybersyn/fivefilters-full-text-rss/tests/_support/ApiTester.php
 No syntax errors detected in cybersyn/cybersyn/fivefilters-full-text-rss/tests/_support/_generated/ApiTesterActions.php
 No syntax errors detected in cybersyn/cybersyn/fivefilters-full-text-rss/tests/_support/Helper/Api.php
-::error::%0Afivefilters-full-text-rss/cleancache.php%0A%0Afivefilters-full-text-rss/libraries/language-detect/LanguageDetect.php
-No syntax errors detected in cybersyn/cybersyn/fivefilters-full-text-rss/tests/_support/Helper/Api.php
+::error::%0Afivefilters-full-text-rss/cleancache.php%0A  Fatal error: __autoload() is no longer supported, use spl_autoload_register() instead on line 41%0A%0Afivefilters-full-text-rss/libraries/language-detect/LanguageDetect.php%0A  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 1463
 .........[31mE[0m..............................[31mE[0m........[32mE[0m..........  60 / 102 (59%)
 .................[31mE[0m........................                   102 / 102 (100%)
 
 
 
 [1mFILE: fivefilters-full-text-rss/cleancache.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 41 | [31mERROR[0m | [1mSpecifying an autoloader using an __autoload() function is deprecated since PHP 7.2 and no longer supported since PHP 8.0[0m
+----------------------------------------------------------------------
+ 41 | [31mERROR[0m | [1mSpecifying an autoloader using an __autoload() function
+    |       | is deprecated since PHP 7.2 and no longer supported
+    |       | since PHP 8.0[0m
     |       | (PHPCompatibility.FunctionNameRestrictions.RemovedMagicAutoload.Removed)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 [1mFILE: fivefilters-full-text-rss/libraries/htmLawed/htmLawed.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 6 ERRORS AFFECTING 5 LINES[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 374 | [31mERROR[0m | [1mThe variable '$php_errormsg' is deprecated since PHP 7.2 and removed since PHP 8.0; Use error_get_last() instead[0m
+----------------------------------------------------------------------
+ 374 | [31mERROR[0m | [1mThe variable '$php_errormsg' is deprecated since PHP
+     |       | 7.2 and removed since PHP 8.0; Use error_get_last()
+     |       | instead[0m
      |       | (PHPCompatibility.Variables.RemovedPredefinedGlobalVariables.php_errormsgDeprecatedRemoved)
- 374 | [31mERROR[0m | [1mThe variable '$php_errormsg' is deprecated since PHP 7.2 and removed since PHP 8.0; Use error_get_last() instead[0m
+ 374 | [31mERROR[0m | [1mThe variable '$php_errormsg' is deprecated since PHP
+     |       | 7.2 and removed since PHP 8.0; Use error_get_last()
+     |       | instead[0m
      |       | (PHPCompatibility.Variables.RemovedPredefinedGlobalVariables.php_errormsgDeprecatedRemoved)
- 375 | [31mERROR[0m | [1mINI directive 'track_errors' is deprecated since PHP 7.2 and removed since PHP 8.0[0m
+ 375 | [31mERROR[0m | [1mINI directive 'track_errors' is deprecated since PHP
+     |       | 7.2 and removed since PHP 8.0[0m
      |       | (PHPCompatibility.IniDirectives.RemovedIniDirectives.track_errorsDeprecatedRemoved)
- 376 | [31mERROR[0m | [1mThe variable '$php_errormsg' is deprecated since PHP 7.2 and removed since PHP 8.0; Use error_get_last() instead[0m
+ 376 | [31mERROR[0m | [1mThe variable '$php_errormsg' is deprecated since PHP
+     |       | 7.2 and removed since PHP 8.0; Use error_get_last()
+     |       | instead[0m
      |       | (PHPCompatibility.Variables.RemovedPredefinedGlobalVariables.php_errormsgDeprecatedRemoved)
- 382 | [31mERROR[0m | [1mThe variable '$php_errormsg' is deprecated since PHP 7.2 and removed since PHP 8.0; Use error_get_last() instead[0m
+ 382 | [31mERROR[0m | [1mThe variable '$php_errormsg' is deprecated since PHP
+     |       | 7.2 and removed since PHP 8.0; Use error_get_last()
+     |       | instead[0m
      |       | (PHPCompatibility.Variables.RemovedPredefinedGlobalVariables.php_errormsgDeprecatedRemoved)
- 384 | [31mERROR[0m | [1mINI directive 'track_errors' is deprecated since PHP 7.2 and removed since PHP 8.0[0m
+ 384 | [31mERROR[0m | [1mINI directive 'track_errors' is deprecated since PHP
+     |       | 7.2 and removed since PHP 8.0[0m
      |       | (PHPCompatibility.IniDirectives.RemovedIniDirectives.track_errorsDeprecatedRemoved)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
-[1mFILE: fivefilters-full-text-rss/libraries/language-detect/LanguageDetect.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[1mFILE: ...lters-full-text-rss/libraries/language-detect/LanguageDetect.php[0m
+----------------------------------------------------------------------
 [1mFOUND 17 ERRORS AFFECTING 14 LINES[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 1463 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $char{0}[0m
+----------------------------------------------------------------------
+ 1463 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found: $char{0}[0m
       |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
- 1468 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $char{0}[0m
+ 1468 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found: $char{0}[0m
       |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
- 1469 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $char{1}[0m
+ 1469 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found: $char{1}[0m
       |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
- 1475 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $char{0}[0m
+ 1475 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found: $char{0}[0m
       |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
- 1476 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $char{1}[0m
+ 1476 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found: $char{1}[0m
       |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
- 1477 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $char{2}[0m
+ 1477 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found: $char{2}[0m
       |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
- 1484 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $char{0}[0m
+ 1484 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found: $char{0}[0m
       |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
- 1485 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $char{1}[0m
+ 1485 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found: $char{1}[0m
       |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
- 1486 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $char{2}[0m
+ 1486 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found: $char{2}[0m
       |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
- 1487 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $char{3}[0m
+ 1487 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found: $char{3}[0m
       |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
- 1507 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $str{$counter++}[0m
+ 1507 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found:
+      |       |     $str{$counter++}[0m
       |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
- 1531 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $str{$counter++}[0m
+ 1531 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found:
+      |       |     $str{$counter++}[0m
       |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
- 1573 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $str{$counter++}[0m
+ 1573 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found:
+      |       |     $str{$counter++}[0m
       |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
- 1573 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $str{$counter++}[0m
+ 1573 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found:
+      |       |     $str{$counter++}[0m
       |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
- 1578 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $str{$counter++}[0m
+ 1578 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found:
+      |       |     $str{$counter++}[0m
       |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
- 1578 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $str{$counter++}[0m
+ 1578 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found:
+      |       |     $str{$counter++}[0m
       |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
- 1578 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $str{$counter++}[0m
+ 1578 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found:
+      |       |     $str{$counter++}[0m
       |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mPHPCBF CAN FIX THE 17 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
-[1mFILE: fivefilters-full-text-rss/libraries/simplepie/library/SimplePie/Parse/Date.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[1mFILE: ...ll-text-rss/libraries/simplepie/library/SimplePie/Parse/Date.php[0m
+----------------------------------------------------------------------
 [1mFOUND 2 ERRORS AFFECTING 2 LINES[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 544 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse order to implode has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first
-     |       | parameter and $pieces the second[0m (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
- 545 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse order to implode has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first
-     |       | parameter and $pieces the second[0m (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
+ 544 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse
+     |       | order to implode has been deprecated since PHP 7.4 and
+     |       | is removed since PHP 8.0; $glue should be the first
+     |       | parameter and $pieces the second[0m
+     |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
+ 545 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse
+     |       | order to implode has been deprecated since PHP 7.4 and
+     |       | is removed since PHP 8.0; $glue should be the first
+     |       | parameter and $pieces the second[0m
+     |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
+----------------------------------------------------------------------
 
-Time: 5.11 secs; Memory: 40MB
-::error::FILE: fivefilters-full-text-rss/cleancache.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 41 | ERROR | Specifying an autoloader using an __autoload() function is deprecated since PHP 7.2 and no longer supported since PHP 8.0%0A    |       | (PHPCompatibility.FunctionNameRestrictions.RemovedMagicAutoload.Removed)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: fivefilters-full-text-rss/libraries/htmLawed/htmLawed.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 6 ERRORS AFFECTING 5 LINES%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 374 | ERROR | The variable '$php_errormsg' is deprecated since PHP 7.2 and removed since PHP 8.0; Use error_get_last() instead%0A     |       | (PHPCompatibility.Variables.RemovedPredefinedGlobalVariables.php_errormsgDeprecatedRemoved)%0A 374 | ERROR | The variable '$php_errormsg' is deprecated since PHP 7.2 and removed since PHP 8.0; Use error_get_last() instead%0A     |       | (PHPCompatibility.Variables.RemovedPredefinedGlobalVariables.php_errormsgDeprecatedRemoved)%0A 375 | ERROR | INI directive 'track_errors' is deprecated since PHP 7.2 and removed since PHP 8.0%0A     |       | (PHPCompatibility.IniDirectives.RemovedIniDirectives.track_errorsDeprecatedRemoved)%0A 376 | ERROR | The variable '$php_errormsg' is deprecated since PHP 7.2 and removed since PHP 8.0; Use error_get_last() instead%0A     |       | (PHPCompatibility.Variables.RemovedPredefinedGlobalVariables.php_errormsgDeprecatedRemoved)%0A 382 | ERROR | The variable '$php_errormsg' is deprecated since PHP 7.2 and removed since PHP 8.0; Use error_get_last() instead%0A     |       | (PHPCompatibility.Variables.RemovedPredefinedGlobalVariables.php_errormsgDeprecatedRemoved)%0A 384 | ERROR | INI directive 'track_errors' is deprecated since PHP 7.2 and removed since PHP 8.0%0A     |       | (PHPCompatibility.IniDirectives.RemovedIniDirectives.track_errorsDeprecatedRemoved)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: fivefilters-full-text-rss/libraries/language-detect/LanguageDetect.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 17 ERRORS AFFECTING 14 LINES%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 1463 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $char{0}%0A      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 1468 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $char{0}%0A      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 1469 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $char{1}%0A      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 1475 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $char{0}%0A      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 1476 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $char{1}%0A      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 1477 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $char{2}%0A      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 1484 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $char{0}%0A      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 1485 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $char{1}%0A      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 1486 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $char{2}%0A      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 1487 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $char{3}%0A      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 1507 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $str{$counter++}%0A      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 1531 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $str{$counter++}%0A      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 1573 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $str{$counter++}%0A      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 1573 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $str{$counter++}%0A      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 1578 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $str{$counter++}%0A      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 1578 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $str{$counter++}%0A      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 1578 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $str{$counter++}%0A      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0APHPCBF CAN FIX THE 17 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: fivefilters-full-text-rss/libraries/simplepie/library/SimplePie/Parse/Date.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 544 | ERROR | Passing the $glue and $pieces parameters in reverse order to implode has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first%0A     |       | parameter and $pieces the second (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A 545 | ERROR | Passing the $glue and $pieces parameters in reverse order to implode has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first%0A     |       | parameter and $pieces the second (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
+Time: 5.18 secs; Memory: 40MB
+::error::FILE: fivefilters-full-text-rss/cleancache.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 41 | ERROR | Specifying an autoloader using an __autoload() function%0A    |       | is deprecated since PHP 7.2 and no longer supported%0A    |       | since PHP 8.0%0A    |       | (PHPCompatibility.FunctionNameRestrictions.RemovedMagicAutoload.Removed)%0A----------------------------------------------------------------------%0A%0A%0AFILE: fivefilters-full-text-rss/libraries/htmLawed/htmLawed.php%0A----------------------------------------------------------------------%0AFOUND 6 ERRORS AFFECTING 5 LINES%0A----------------------------------------------------------------------%0A 374 | ERROR | The variable '$php_errormsg' is deprecated since PHP%0A     |       | 7.2 and removed since PHP 8.0; Use error_get_last()%0A     |       | instead%0A     |       | (PHPCompatibility.Variables.RemovedPredefinedGlobalVariables.php_errormsgDeprecatedRemoved)%0A 374 | ERROR | The variable '$php_errormsg' is deprecated since PHP%0A     |       | 7.2 and removed since PHP 8.0; Use error_get_last()%0A     |       | instead%0A     |       | (PHPCompatibility.Variables.RemovedPredefinedGlobalVariables.php_errormsgDeprecatedRemoved)%0A 375 | ERROR | INI directive 'track_errors' is deprecated since PHP%0A     |       | 7.2 and removed since PHP 8.0%0A     |       | (PHPCompatibility.IniDirectives.RemovedIniDirectives.track_errorsDeprecatedRemoved)%0A 376 | ERROR | The variable '$php_errormsg' is deprecated since PHP%0A     |       | 7.2 and removed since PHP 8.0; Use error_get_last()%0A     |       | instead%0A     |       | (PHPCompatibility.Variables.RemovedPredefinedGlobalVariables.php_errormsgDeprecatedRemoved)%0A 382 | ERROR | The variable '$php_errormsg' is deprecated since PHP%0A     |       | 7.2 and removed since PHP 8.0; Use error_get_last()%0A     |       | instead%0A     |       | (PHPCompatibility.Variables.RemovedPredefinedGlobalVariables.php_errormsgDeprecatedRemoved)%0A 384 | ERROR | INI directive 'track_errors' is deprecated since PHP%0A     |       | 7.2 and removed since PHP 8.0%0A     |       | (PHPCompatibility.IniDirectives.RemovedIniDirectives.track_errorsDeprecatedRemoved)%0A----------------------------------------------------------------------%0A%0A%0AFILE: ...lters-full-text-rss/libraries/language-detect/LanguageDetect.php%0A----------------------------------------------------------------------%0AFOUND 17 ERRORS AFFECTING 14 LINES%0A----------------------------------------------------------------------%0A 1463 | ERROR | [x] Curly brace syntax for accessing array elements%0A      |       |     and string offsets has been deprecated in PHP 7.4%0A      |       |     and removed in PHP 8.0. Found: $char{0}%0A      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 1468 | ERROR | [x] Curly brace syntax for accessing array elements%0A      |       |     and string offsets has been deprecated in PHP 7.4%0A      |       |     and removed in PHP 8.0. Found: $char{0}%0A      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 1469 | ERROR | [x] Curly brace syntax for accessing array elements%0A      |       |     and string offsets has been deprecated in PHP 7.4%0A      |       |     and removed in PHP 8.0. Found: $char{1}%0A      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 1475 | ERROR | [x] Curly brace syntax for accessing array elements%0A      |       |     and string offsets has been deprecated in PHP 7.4%0A      |       |     and removed in PHP 8.0. Found: $char{0}%0A      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 1476 | ERROR | [x] Curly brace syntax for accessing array elements%0A      |       |     and string offsets has been deprecated in PHP 7.4%0A      |       |     and removed in PHP 8.0. Found: $char{1}%0A      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 1477 | ERROR | [x] Curly brace syntax for accessing array elements%0A      |       |     and string offsets has been deprecated in PHP 7.4%0A      |       |     and removed in PHP 8.0. Found: $char{2}%0A      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 1484 | ERROR | [x] Curly brace syntax for accessing array elements%0A      |       |     and string offsets has been deprecated in PHP 7.4%0A      |       |     and removed in PHP 8.0. Found: $char{0}%0A      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 1485 | ERROR | [x] Curly brace syntax for accessing array elements%0A      |       |     and string offsets has been deprecated in PHP 7.4%0A      |       |     and removed in PHP 8.0. Found: $char{1}%0A      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 1486 | ERROR | [x] Curly brace syntax for accessing array elements%0A      |       |     and string offsets has been deprecated in PHP 7.4%0A      |       |     and removed in PHP 8.0. Found: $char{2}%0A      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 1487 | ERROR | [x] Curly brace syntax for accessing array elements%0A      |       |     and string offsets has been deprecated in PHP 7.4%0A      |       |     and removed in PHP 8.0. Found: $char{3}%0A      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 1507 | ERROR | [x] Curly brace syntax for accessing array elements%0A      |       |     and string offsets has been deprecated in PHP 7.4%0A      |       |     and removed in PHP 8.0. Found:%0A      |       |     $str{$counter++}%0A      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 1531 | ERROR | [x] Curly brace syntax for accessing array elements%0A      |       |     and string offsets has been deprecated in PHP 7.4%0A      |       |     and removed in PHP 8.0. Found:%0A      |       |     $str{$counter++}%0A      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 1573 | ERROR | [x] Curly brace syntax for accessing array elements%0A      |       |     and string offsets has been deprecated in PHP 7.4%0A      |       |     and removed in PHP 8.0. Found:%0A      |       |     $str{$counter++}%0A      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 1573 | ERROR | [x] Curly brace syntax for accessing array elements%0A      |       |     and string offsets has been deprecated in PHP 7.4%0A      |       |     and removed in PHP 8.0. Found:%0A      |       |     $str{$counter++}%0A      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 1578 | ERROR | [x] Curly brace syntax for accessing array elements%0A      |       |     and string offsets has been deprecated in PHP 7.4%0A      |       |     and removed in PHP 8.0. Found:%0A      |       |     $str{$counter++}%0A      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 1578 | ERROR | [x] Curly brace syntax for accessing array elements%0A      |       |     and string offsets has been deprecated in PHP 7.4%0A      |       |     and removed in PHP 8.0. Found:%0A      |       |     $str{$counter++}%0A      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 1578 | ERROR | [x] Curly brace syntax for accessing array elements%0A      |       |     and string offsets has been deprecated in PHP 7.4%0A      |       |     and removed in PHP 8.0. Found:%0A      |       |     $str{$counter++}%0A      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A----------------------------------------------------------------------%0APHPCBF CAN FIX THE 17 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A----------------------------------------------------------------------%0A%0A%0AFILE: ...ll-text-rss/libraries/simplepie/library/SimplePie/Parse/Date.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A----------------------------------------------------------------------%0A 544 | ERROR | Passing the $glue and $pieces parameters in reverse%0A     |       | order to implode has been deprecated since PHP 7.4 and%0A     |       | is removed since PHP 8.0; $glue should be the first%0A     |       | parameter and $pieces the second%0A     |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A 545 | ERROR | Passing the $glue and $pieces parameters in reverse%0A     |       | order to implode has been deprecated since PHP 7.4 and%0A     |       | is removed since PHP 8.0; $glue should be the first%0A     |       | parameter and $pieces the second%0A     |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A----------------------------------------------------------------------%0A
