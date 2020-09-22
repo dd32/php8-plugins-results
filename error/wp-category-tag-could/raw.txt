@@ -3,26 +3,35 @@ No syntax errors detected in wp-category-tag-could/wp-category-tag-could/bootstr
 No syntax errors detected in wp-category-tag-could/wp-category-tag-could/classes/wp-category-tag-cloud.php
 No syntax errors detected in wp-category-tag-could/wp-category-tag-could/classes/wpctc-module.php
 No syntax errors detected in wp-category-tag-could/wp-category-tag-could/classes/wpctc-settings.php
+
+Fatal error: Unparenthesized `a ? b : c ? d : e` is not supported. Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)` in wp-category-tag-could/wp-category-tag-could/classes/wpctc-widget.php on line 224
 Errors parsing wp-category-tag-could/wp-category-tag-could/classes/wpctc-widget.php
 No syntax errors detected in wp-category-tag-could/wp-category-tag-could/views/requirements-error.php
 No syntax errors detected in wp-category-tag-could/wp-category-tag-could/views/wpctc-settings/page-settings-fields.php
 No syntax errors detected in wp-category-tag-could/wp-category-tag-could/views/wpctc-settings/page-settings.php
 No syntax errors detected in wp-category-tag-could/wp-category-tag-could/views/wpctc-settings/page-settings-section-headers.php
-::error::%0Aclasses/wpctc-widget.php
-No syntax errors detected in wp-category-tag-could/wp-category-tag-could/views/wpctc-settings/page-settings-section-headers.php
+::error::%0Aclasses/wpctc-widget.php%0A  Fatal error: Unparenthesized `a ? b : c ? d : e` is not supported.%0A      Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)`%0A      on line 224
 ....[31mE[0m.... 9 / 9 (100%)
 
 
 
 [1mFILE: classes/wpctc-widget.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 2 ERRORS AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 224 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has been deprecated in PHP 7.4 and removed in PHP 8.0. Multiple consecutive ternaries detected. Use parenthesis to
-     |       | clarify the order in which the operations should be executed[0m (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
- 224 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has been deprecated in PHP 7.4 and removed in PHP 8.0. Multiple consecutive ternaries detected. Use parenthesis to
-     |       | clarify the order in which the operations should be executed[0m (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
+ 224 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has
+     |       | been deprecated in PHP 7.4 and removed in PHP 8.0.
+     |       | Multiple consecutive ternaries detected. Use
+     |       | parenthesis to clarify the order in which the
+     |       | operations should be executed[0m
+     |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
+ 224 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has
+     |       | been deprecated in PHP 7.4 and removed in PHP 8.0.
+     |       | Multiple consecutive ternaries detected. Use
+     |       | parenthesis to clarify the order in which the
+     |       | operations should be executed[0m
+     |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
+----------------------------------------------------------------------
 
-Time: 269ms; Memory: 18MB
-::error::FILE: classes/wpctc-widget.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 224 | ERROR | The left-associativity of the ternary operator has been deprecated in PHP 7.4 and removed in PHP 8.0. Multiple consecutive ternaries detected. Use parenthesis to%0A     |       | clarify the order in which the operations should be executed (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A 224 | ERROR | The left-associativity of the ternary operator has been deprecated in PHP 7.4 and removed in PHP 8.0. Multiple consecutive ternaries detected. Use parenthesis to%0A     |       | clarify the order in which the operations should be executed (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
+Time: 280ms; Memory: 18MB
+::error::FILE: classes/wpctc-widget.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 224 | ERROR | The left-associativity of the ternary operator has%0A     |       | been deprecated in PHP 7.4 and removed in PHP 8.0.%0A     |       | Multiple consecutive ternaries detected. Use%0A     |       | parenthesis to clarify the order in which the%0A     |       | operations should be executed%0A     |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A 224 | ERROR | The left-associativity of the ternary operator has%0A     |       | been deprecated in PHP 7.4 and removed in PHP 8.0.%0A     |       | Multiple consecutive ternaries detected. Use%0A     |       | parenthesis to clarify the order in which the%0A     |       | operations should be executed%0A     |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A----------------------------------------------------------------------%0A
