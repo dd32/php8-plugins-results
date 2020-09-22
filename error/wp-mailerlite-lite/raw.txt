@@ -173,14 +173,18 @@ No syntax errors detected in wp-mailerlite-lite/wp-mailerlite-lite/wp-mailerlite
 
 
 [1mFILE: includes/vendor/php-http/curl-client/src/PromiseCore.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 2 ERRORS AFFECTING 2 LINES[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 79 | [31mERROR[0m | [1mUsing a string as the assertion passed to assert() is deprecated since PHP 7.2 and removed since PHP 8.0. Found: 'is_resource($handle)'[0m
+----------------------------------------------------------------------
+ 79 | [31mERROR[0m | [1mUsing a string as the assertion passed to assert() is
+    |       | deprecated since PHP 7.2 and removed since PHP 8.0.
+    |       | Found: 'is_resource($handle)'[0m
     |       | (PHPCompatibility.ParameterValues.RemovedAssertStringAssertion.Found)
- 80 | [31mERROR[0m | [1mUsing a string as the assertion passed to assert() is deprecated since PHP 7.2 and removed since PHP 8.0. Found: 'get_resource_type($handle) === "curl"'[0m
+ 80 | [31mERROR[0m | [1mUsing a string as the assertion passed to assert() is
+    |       | deprecated since PHP 7.2 and removed since PHP 8.0.
+    |       | Found: 'get_resource_type($handle) === "curl"'[0m
     |       | (PHPCompatibility.ParameterValues.RemovedAssertStringAssertion.Found)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
-Time: 2.06 secs; Memory: 16MB
-::error::FILE: includes/vendor/php-http/curl-client/src/PromiseCore.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 79 | ERROR | Using a string as the assertion passed to assert() is deprecated since PHP 7.2 and removed since PHP 8.0. Found: 'is_resource($handle)'%0A    |       | (PHPCompatibility.ParameterValues.RemovedAssertStringAssertion.Found)%0A 80 | ERROR | Using a string as the assertion passed to assert() is deprecated since PHP 7.2 and removed since PHP 8.0. Found: 'get_resource_type($handle) === "curl"'%0A    |       | (PHPCompatibility.ParameterValues.RemovedAssertStringAssertion.Found)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
+Time: 1.92 secs; Memory: 16MB
+::error::FILE: includes/vendor/php-http/curl-client/src/PromiseCore.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A----------------------------------------------------------------------%0A 79 | ERROR | Using a string as the assertion passed to assert() is%0A    |       | deprecated since PHP 7.2 and removed since PHP 8.0.%0A    |       | Found: 'is_resource($handle)'%0A    |       | (PHPCompatibility.ParameterValues.RemovedAssertStringAssertion.Found)%0A 80 | ERROR | Using a string as the assertion passed to assert() is%0A    |       | deprecated since PHP 7.2 and removed since PHP 8.0.%0A    |       | Found: 'get_resource_type($handle) === "curl"'%0A    |       | (PHPCompatibility.ParameterValues.RemovedAssertStringAssertion.Found)%0A----------------------------------------------------------------------%0A
