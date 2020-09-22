@@ -1,0 +1,24 @@
+FILE: classes/html.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 431 | ERROR | Indirect access to variables, properties and methods
+     |       | will be evaluated strictly in left-to-right order
+     |       | since PHP 7.0. Use curly braces to remove
+     |       | ambiguity.
+     |       | (PHPCompatibility.Variables.NewUniformVariableSyntax.Found)
+----------------------------------------------------------------------
+
+
+FILE: functions.php
+----------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 246 | ERROR | Extension 'ereg' is deprecated since PHP 5.3 and
+     |       | removed since PHP 7.0; Use pcre instead
+     |       | (PHPCompatibility.Extensions.RemovedExtensions.eregDeprecatedRemoved)
+ 246 | ERROR | Function ereg_replace() is deprecated since PHP 5.3
+     |       | and removed since PHP 7.0; Use preg_replace()
+     |       | instead
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.ereg_replaceDeprecatedRemoved)
+----------------------------------------------------------------------
