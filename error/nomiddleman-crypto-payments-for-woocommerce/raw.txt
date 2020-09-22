@@ -17,6 +17,8 @@ No syntax errors detected in nomiddleman-crypto-payments-for-woocommerce/nomiddl
 No syntax errors detected in nomiddleman-crypto-payments-for-woocommerce/nomiddleman-crypto-payments-for-woocommerce/src/NMM_Payment_Repo.php
 No syntax errors detected in nomiddleman-crypto-payments-for-woocommerce/nomiddleman-crypto-payments-for-woocommerce/src/NMM_Settings.php
 No syntax errors detected in nomiddleman-crypto-payments-for-woocommerce/nomiddleman-crypto-payments-for-woocommerce/src/NMM_Transaction.php
+
+Fatal error: Array and string offset access syntax with curly braces is no longer supported in nomiddleman-crypto-payments-for-woocommerce/nomiddleman-crypto-payments-for-woocommerce/src/NMM_Util.php on line 54
 Errors parsing nomiddleman-crypto-payments-for-woocommerce/nomiddleman-crypto-payments-for-woocommerce/src/NMM_Util.php
 No syntax errors detected in nomiddleman-crypto-payments-for-woocommerce/nomiddleman-crypto-payments-for-woocommerce/src/NMM_Validation.php
 No syntax errors detected in nomiddleman-crypto-payments-for-woocommerce/nomiddleman-crypto-payments-for-woocommerce/src/vendor/bcmath_Utils.php
@@ -137,7 +139,7 @@ No syntax errors detected in nomiddleman-crypto-payments-for-woocommerce/nomiddl
 No syntax errors detected in nomiddleman-crypto-payments-for-woocommerce/nomiddleman-crypto-payments-for-woocommerce/src/vendor/ReduxFramework/ReduxCore/templates/panel/menu_container.tpl.php
 No syntax errors detected in nomiddleman-crypto-payments-for-woocommerce/nomiddleman-crypto-payments-for-woocommerce/src/vendor/ReduxFramework/redux-framework.php
 No syntax errors detected in nomiddleman-crypto-payments-for-woocommerce/nomiddleman-crypto-payments-for-woocommerce/src/vendor/ReduxFramework/uninstall.php
-::error::%0Asrc/NMM_Util.php
+::error::%0Asrc/NMM_Util.php%0A  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 54
 .......[31mE[0m..........[32mE[0m.....[31mE[0m...........[31mE[0m.......................  60 / 138 (43%)
 ............................................................ 120 / 138 (87%)
 ..................                                           138 / 138 (100%)
@@ -145,83 +147,155 @@ No syntax errors detected in nomiddleman-crypto-payments-for-woocommerce/nomiddl
 
 
 [1mFILE: src/NMM_Cryptocurrencies.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 11 ERRORS AFFECTING 11 LINES[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 42 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found:
-    |       | '0x6c6ee5e31d828de241282b9606c8e98ea48526e2'[0m (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
- 43 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found:
-    |       | '0x514910771af9ca656af840dff83e8264ecf986ca'[0m (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
- 44 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found:
-    |       | '0x0d8775f648430679a709e98d2b0cb6250d2887ef'[0m (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
- 45 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found:
-    |       | '0x9f8f72aa9304c8b593d555f12ef6589cc3a579a2'[0m (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
- 46 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found:
-    |       | '0xd26114cd6EE289AccF82350c8d8487fedB8A0C07'[0m (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
- 47 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found:
-    |       | '0x1985365e9f78359a9B6AD760e32412f4a445E862'[0m (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
- 48 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found:
-    |       | '0x6810e776880c02933d47db1b9fc05908e5386b96'[0m (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
- 49 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found:
-    |       | '0xbeb9ef514a379b997e0798fdcc901ee474b6d9a1'[0m (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
- 50 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found:
-    |       | '0xe41d2489571d322189246dafa5ebde1f4699f498'[0m (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
- 51 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found:
-    |       | '0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48'[0m (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
- 61 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found:
-    |       | '0x056Fd409E1d7A124BD7017459dFEa2F387b6d5Cd'[0m (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
+ 42 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+    |       | inconsistent prior to PHP 7 and support has been
+    |       | removed in PHP 7. Found:
+    |       | '0x6c6ee5e31d828de241282b9606c8e98ea48526e2'[0m
+    |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
+ 43 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+    |       | inconsistent prior to PHP 7 and support has been
+    |       | removed in PHP 7. Found:
+    |       | '0x514910771af9ca656af840dff83e8264ecf986ca'[0m
+    |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
+ 44 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+    |       | inconsistent prior to PHP 7 and support has been
+    |       | removed in PHP 7. Found:
+    |       | '0x0d8775f648430679a709e98d2b0cb6250d2887ef'[0m
+    |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
+ 45 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+    |       | inconsistent prior to PHP 7 and support has been
+    |       | removed in PHP 7. Found:
+    |       | '0x9f8f72aa9304c8b593d555f12ef6589cc3a579a2'[0m
+    |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
+ 46 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+    |       | inconsistent prior to PHP 7 and support has been
+    |       | removed in PHP 7. Found:
+    |       | '0xd26114cd6EE289AccF82350c8d8487fedB8A0C07'[0m
+    |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
+ 47 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+    |       | inconsistent prior to PHP 7 and support has been
+    |       | removed in PHP 7. Found:
+    |       | '0x1985365e9f78359a9B6AD760e32412f4a445E862'[0m
+    |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
+ 48 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+    |       | inconsistent prior to PHP 7 and support has been
+    |       | removed in PHP 7. Found:
+    |       | '0x6810e776880c02933d47db1b9fc05908e5386b96'[0m
+    |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
+ 49 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+    |       | inconsistent prior to PHP 7 and support has been
+    |       | removed in PHP 7. Found:
+    |       | '0xbeb9ef514a379b997e0798fdcc901ee474b6d9a1'[0m
+    |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
+ 50 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+    |       | inconsistent prior to PHP 7 and support has been
+    |       | removed in PHP 7. Found:
+    |       | '0xe41d2489571d322189246dafa5ebde1f4699f498'[0m
+    |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
+ 51 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+    |       | inconsistent prior to PHP 7 and support has been
+    |       | removed in PHP 7. Found:
+    |       | '0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48'[0m
+    |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
+ 61 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+    |       | inconsistent prior to PHP 7 and support has been
+    |       | removed in PHP 7. Found:
+    |       | '0x056Fd409E1d7A124BD7017459dFEa2F387b6d5Cd'[0m
+    |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
+----------------------------------------------------------------------
 
 
 [1mFILE: src/NMM_Util.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 54 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $str{$offset}[0m
+----------------------------------------------------------------------
+ 54 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and
+    |       |     string offsets has been deprecated in PHP 7.4 and
+    |       |     removed in PHP 8.0. Found: $str{$offset}[0m
     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mPHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 [1mFILE: src/vendor/HdHelper.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 12 ERRORS AFFECTING 12 LINES[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 1120 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found:
-      |       | '0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEFFFFFC2F'[0m (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
- 1121 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found:
-      |       | '0x0000000000000000000000000000000000000000000000000000000000000000'[0m (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
- 1122 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found:
-      |       | '0x0000000000000000000000000000000000000000000000000000000000000007'[0m (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
- 1123 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found:
-      |       | '0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEBAAEDCE6AF48A03BBFD25E8CD0364141'[0m (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
- 1124 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found:
-      |       | "0x79BE667EF9DCBBAC55A06295CE870B07029BFCDB2DCE28D959F2815B16F81798"[0m (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
- 1125 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found:
-      |       | "0x483ADA7726A3C4655DA4FBFC0E1108A8FD17B448A68554199C47D08FFB10D4B8"[0m (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
- 1130 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found:
-      |       | '0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEFFFFFC2F'[0m (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
- 1131 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found:
-      |       | '0x0000000000000000000000000000000000000000000000000000000000000000'[0m (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
- 1132 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found:
-      |       | '0x0000000000000000000000000000000000000000000000000000000000000007'[0m (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
- 1133 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found:
-      |       | '0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEBAAEDCE6AF48A03BBFD25E8CD0364141'[0m (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
- 1134 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found:
-      |       | "0x79BE667EF9DCBBAC55A06295CE870B07029BFCDB2DCE28D959F2815B16F81798"[0m (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
- 1135 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found:
-      |       | "0x483ADA7726A3C4655DA4FBFC0E1108A8FD17B448A68554199C47D08FFB10D4B8"[0m (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
+ 1120 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+      |       | inconsistent prior to PHP 7 and support has been
+      |       | removed in PHP 7. Found:
+      |       | '0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEFFFFFC2F'[0m
+      |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
+ 1121 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+      |       | inconsistent prior to PHP 7 and support has been
+      |       | removed in PHP 7. Found:
+      |       | '0x0000000000000000000000000000000000000000000000000000000000000000'[0m
+      |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
+ 1122 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+      |       | inconsistent prior to PHP 7 and support has been
+      |       | removed in PHP 7. Found:
+      |       | '0x0000000000000000000000000000000000000000000000000000000000000007'[0m
+      |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
+ 1123 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+      |       | inconsistent prior to PHP 7 and support has been
+      |       | removed in PHP 7. Found:
+      |       | '0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEBAAEDCE6AF48A03BBFD25E8CD0364141'[0m
+      |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
+ 1124 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+      |       | inconsistent prior to PHP 7 and support has been
+      |       | removed in PHP 7. Found:
+      |       | "0x79BE667EF9DCBBAC55A06295CE870B07029BFCDB2DCE28D959F2815B16F81798"[0m
+      |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
+ 1125 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+      |       | inconsistent prior to PHP 7 and support has been
+      |       | removed in PHP 7. Found:
+      |       | "0x483ADA7726A3C4655DA4FBFC0E1108A8FD17B448A68554199C47D08FFB10D4B8"[0m
+      |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
+ 1130 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+      |       | inconsistent prior to PHP 7 and support has been
+      |       | removed in PHP 7. Found:
+      |       | '0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEFFFFFC2F'[0m
+      |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
+ 1131 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+      |       | inconsistent prior to PHP 7 and support has been
+      |       | removed in PHP 7. Found:
+      |       | '0x0000000000000000000000000000000000000000000000000000000000000000'[0m
+      |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
+ 1132 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+      |       | inconsistent prior to PHP 7 and support has been
+      |       | removed in PHP 7. Found:
+      |       | '0x0000000000000000000000000000000000000000000000000000000000000007'[0m
+      |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
+ 1133 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+      |       | inconsistent prior to PHP 7 and support has been
+      |       | removed in PHP 7. Found:
+      |       | '0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEBAAEDCE6AF48A03BBFD25E8CD0364141'[0m
+      |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
+ 1134 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+      |       | inconsistent prior to PHP 7 and support has been
+      |       | removed in PHP 7. Found:
+      |       | "0x79BE667EF9DCBBAC55A06295CE870B07029BFCDB2DCE28D959F2815B16F81798"[0m
+      |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
+ 1135 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+      |       | inconsistent prior to PHP 7 and support has been
+      |       | removed in PHP 7. Found:
+      |       | "0x483ADA7726A3C4655DA4FBFC0E1108A8FD17B448A68554199C47D08FFB10D4B8"[0m
+      |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
+----------------------------------------------------------------------
 
 
 [1mFILE: src/vendor/ReduxFramework/ReduxCore/framework.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 2821 | [31mERROR[0m | [1mFunction get_magic_quotes_gpc() is deprecated since PHP 7.4 and removed since PHP 8.0[0m
+----------------------------------------------------------------------
+ 2821 | [31mERROR[0m | [1mFunction get_magic_quotes_gpc() is deprecated since
+      |       | PHP 7.4 and removed since PHP 8.0[0m
       |       | (PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_gpcDeprecatedRemoved)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
-Time: 5.53 secs; Memory: 50.01MB
-::error::FILE: src/NMM_Cryptocurrencies.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 11 ERRORS AFFECTING 11 LINES%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 42 | ERROR | The behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found:%0A    |       | '0x6c6ee5e31d828de241282b9606c8e98ea48526e2' (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 43 | ERROR | The behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found:%0A    |       | '0x514910771af9ca656af840dff83e8264ecf986ca' (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 44 | ERROR | The behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found:%0A    |       | '0x0d8775f648430679a709e98d2b0cb6250d2887ef' (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 45 | ERROR | The behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found:%0A    |       | '0x9f8f72aa9304c8b593d555f12ef6589cc3a579a2' (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 46 | ERROR | The behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found:%0A    |       | '0xd26114cd6EE289AccF82350c8d8487fedB8A0C07' (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 47 | ERROR | The behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found:%0A    |       | '0x1985365e9f78359a9B6AD760e32412f4a445E862' (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 48 | ERROR | The behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found:%0A    |       | '0x6810e776880c02933d47db1b9fc05908e5386b96' (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 49 | ERROR | The behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found:%0A    |       | '0xbeb9ef514a379b997e0798fdcc901ee474b6d9a1' (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 50 | ERROR | The behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found:%0A    |       | '0xe41d2489571d322189246dafa5ebde1f4699f498' (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 51 | ERROR | The behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found:%0A    |       | '0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48' (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 61 | ERROR | The behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found:%0A    |       | '0x056Fd409E1d7A124BD7017459dFEa2F387b6d5Cd' (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: src/NMM_Util.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 54 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $str{$offset}%0A    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0APHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: src/vendor/HdHelper.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 12 ERRORS AFFECTING 12 LINES%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 1120 | ERROR | The behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found:%0A      |       | '0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEFFFFFC2F' (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 1121 | ERROR | The behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found:%0A      |       | '0x0000000000000000000000000000000000000000000000000000000000000000' (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 1122 | ERROR | The behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found:%0A      |       | '0x0000000000000000000000000000000000000000000000000000000000000007' (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 1123 | ERROR | The behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found:%0A      |       | '0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEBAAEDCE6AF48A03BBFD25E8CD0364141' (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 1124 | ERROR | The behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found:%0A      |       | "0x79BE667EF9DCBBAC55A06295CE870B07029BFCDB2DCE28D959F2815B16F81798" (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 1125 | ERROR | The behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found:%0A      |       | "0x483ADA7726A3C4655DA4FBFC0E1108A8FD17B448A68554199C47D08FFB10D4B8" (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 1130 | ERROR | The behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found:%0A      |       | '0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEFFFFFC2F' (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 1131 | ERROR | The behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found:%0A      |       | '0x0000000000000000000000000000000000000000000000000000000000000000' (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 1132 | ERROR | The behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found:%0A      |       | '0x0000000000000000000000000000000000000000000000000000000000000007' (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 1133 | ERROR | The behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found:%0A      |       | '0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEBAAEDCE6AF48A03BBFD25E8CD0364141' (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 1134 | ERROR | The behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found:%0A      |       | "0x79BE667EF9DCBBAC55A06295CE870B07029BFCDB2DCE28D959F2815B16F81798" (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 1135 | ERROR | The behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found:%0A      |       | "0x483ADA7726A3C4655DA4FBFC0E1108A8FD17B448A68554199C47D08FFB10D4B8" (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: src/vendor/ReduxFramework/ReduxCore/framework.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 2821 | ERROR | Function get_magic_quotes_gpc() is deprecated since PHP 7.4 and removed since PHP 8.0%0A      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_gpcDeprecatedRemoved)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
+Time: 5.23 secs; Memory: 50.01MB
+::error::FILE: src/NMM_Cryptocurrencies.php%0A----------------------------------------------------------------------%0AFOUND 11 ERRORS AFFECTING 11 LINES%0A----------------------------------------------------------------------%0A 42 | ERROR | The behaviour of hexadecimal numeric strings was%0A    |       | inconsistent prior to PHP 7 and support has been%0A    |       | removed in PHP 7. Found:%0A    |       | '0x6c6ee5e31d828de241282b9606c8e98ea48526e2'%0A    |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 43 | ERROR | The behaviour of hexadecimal numeric strings was%0A    |       | inconsistent prior to PHP 7 and support has been%0A    |       | removed in PHP 7. Found:%0A    |       | '0x514910771af9ca656af840dff83e8264ecf986ca'%0A    |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 44 | ERROR | The behaviour of hexadecimal numeric strings was%0A    |       | inconsistent prior to PHP 7 and support has been%0A    |       | removed in PHP 7. Found:%0A    |       | '0x0d8775f648430679a709e98d2b0cb6250d2887ef'%0A    |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 45 | ERROR | The behaviour of hexadecimal numeric strings was%0A    |       | inconsistent prior to PHP 7 and support has been%0A    |       | removed in PHP 7. Found:%0A    |       | '0x9f8f72aa9304c8b593d555f12ef6589cc3a579a2'%0A    |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 46 | ERROR | The behaviour of hexadecimal numeric strings was%0A    |       | inconsistent prior to PHP 7 and support has been%0A    |       | removed in PHP 7. Found:%0A    |       | '0xd26114cd6EE289AccF82350c8d8487fedB8A0C07'%0A    |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 47 | ERROR | The behaviour of hexadecimal numeric strings was%0A    |       | inconsistent prior to PHP 7 and support has been%0A    |       | removed in PHP 7. Found:%0A    |       | '0x1985365e9f78359a9B6AD760e32412f4a445E862'%0A    |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 48 | ERROR | The behaviour of hexadecimal numeric strings was%0A    |       | inconsistent prior to PHP 7 and support has been%0A    |       | removed in PHP 7. Found:%0A    |       | '0x6810e776880c02933d47db1b9fc05908e5386b96'%0A    |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 49 | ERROR | The behaviour of hexadecimal numeric strings was%0A    |       | inconsistent prior to PHP 7 and support has been%0A    |       | removed in PHP 7. Found:%0A    |       | '0xbeb9ef514a379b997e0798fdcc901ee474b6d9a1'%0A    |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 50 | ERROR | The behaviour of hexadecimal numeric strings was%0A    |       | inconsistent prior to PHP 7 and support has been%0A    |       | removed in PHP 7. Found:%0A    |       | '0xe41d2489571d322189246dafa5ebde1f4699f498'%0A    |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 51 | ERROR | The behaviour of hexadecimal numeric strings was%0A    |       | inconsistent prior to PHP 7 and support has been%0A    |       | removed in PHP 7. Found:%0A    |       | '0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48'%0A    |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 61 | ERROR | The behaviour of hexadecimal numeric strings was%0A    |       | inconsistent prior to PHP 7 and support has been%0A    |       | removed in PHP 7. Found:%0A    |       | '0x056Fd409E1d7A124BD7017459dFEa2F387b6d5Cd'%0A    |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A----------------------------------------------------------------------%0A%0A%0AFILE: src/NMM_Util.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 54 | ERROR | [x] Curly brace syntax for accessing array elements and%0A    |       |     string offsets has been deprecated in PHP 7.4 and%0A    |       |     removed in PHP 8.0. Found: $str{$offset}%0A    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A----------------------------------------------------------------------%0APHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A----------------------------------------------------------------------%0A%0A%0AFILE: src/vendor/HdHelper.php%0A----------------------------------------------------------------------%0AFOUND 12 ERRORS AFFECTING 12 LINES%0A----------------------------------------------------------------------%0A 1120 | ERROR | The behaviour of hexadecimal numeric strings was%0A      |       | inconsistent prior to PHP 7 and support has been%0A      |       | removed in PHP 7. Found:%0A      |       | '0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEFFFFFC2F'%0A      |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 1121 | ERROR | The behaviour of hexadecimal numeric strings was%0A      |       | inconsistent prior to PHP 7 and support has been%0A      |       | removed in PHP 7. Found:%0A      |       | '0x0000000000000000000000000000000000000000000000000000000000000000'%0A      |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 1122 | ERROR | The behaviour of hexadecimal numeric strings was%0A      |       | inconsistent prior to PHP 7 and support has been%0A      |       | removed in PHP 7. Found:%0A      |       | '0x0000000000000000000000000000000000000000000000000000000000000007'%0A      |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 1123 | ERROR | The behaviour of hexadecimal numeric strings was%0A      |       | inconsistent prior to PHP 7 and support has been%0A      |       | removed in PHP 7. Found:%0A      |       | '0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEBAAEDCE6AF48A03BBFD25E8CD0364141'%0A      |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 1124 | ERROR | The behaviour of hexadecimal numeric strings was%0A      |       | inconsistent prior to PHP 7 and support has been%0A      |       | removed in PHP 7. Found:%0A      |       | "0x79BE667EF9DCBBAC55A06295CE870B07029BFCDB2DCE28D959F2815B16F81798"%0A      |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 1125 | ERROR | The behaviour of hexadecimal numeric strings was%0A      |       | inconsistent prior to PHP 7 and support has been%0A      |       | removed in PHP 7. Found:%0A      |       | "0x483ADA7726A3C4655DA4FBFC0E1108A8FD17B448A68554199C47D08FFB10D4B8"%0A      |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 1130 | ERROR | The behaviour of hexadecimal numeric strings was%0A      |       | inconsistent prior to PHP 7 and support has been%0A      |       | removed in PHP 7. Found:%0A      |       | '0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEFFFFFC2F'%0A      |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 1131 | ERROR | The behaviour of hexadecimal numeric strings was%0A      |       | inconsistent prior to PHP 7 and support has been%0A      |       | removed in PHP 7. Found:%0A      |       | '0x0000000000000000000000000000000000000000000000000000000000000000'%0A      |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 1132 | ERROR | The behaviour of hexadecimal numeric strings was%0A      |       | inconsistent prior to PHP 7 and support has been%0A      |       | removed in PHP 7. Found:%0A      |       | '0x0000000000000000000000000000000000000000000000000000000000000007'%0A      |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 1133 | ERROR | The behaviour of hexadecimal numeric strings was%0A      |       | inconsistent prior to PHP 7 and support has been%0A      |       | removed in PHP 7. Found:%0A      |       | '0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEBAAEDCE6AF48A03BBFD25E8CD0364141'%0A      |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 1134 | ERROR | The behaviour of hexadecimal numeric strings was%0A      |       | inconsistent prior to PHP 7 and support has been%0A      |       | removed in PHP 7. Found:%0A      |       | "0x79BE667EF9DCBBAC55A06295CE870B07029BFCDB2DCE28D959F2815B16F81798"%0A      |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 1135 | ERROR | The behaviour of hexadecimal numeric strings was%0A      |       | inconsistent prior to PHP 7 and support has been%0A      |       | removed in PHP 7. Found:%0A      |       | "0x483ADA7726A3C4655DA4FBFC0E1108A8FD17B448A68554199C47D08FFB10D4B8"%0A      |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A----------------------------------------------------------------------%0A%0A%0AFILE: src/vendor/ReduxFramework/ReduxCore/framework.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 2821 | ERROR | Function get_magic_quotes_gpc() is deprecated since%0A      |       | PHP 7.4 and removed since PHP 8.0%0A      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_gpcDeprecatedRemoved)%0A----------------------------------------------------------------------%0A
