@@ -1,0 +1,53 @@
+::warning::Plugin: https://wordpress.org/plugins/selective-importers/%0ATrac: https://plugins.trac.wordpress.org/browser/selective-importers/
+No syntax errors detected in selective-importers/selective-importers/blogger-importer.php
+No syntax errors detected in selective-importers/selective-importers/class-wp-importer-cron.php
+No syntax errors detected in selective-importers/selective-importers/selective-importers.php
+No syntax errors detected in selective-importers/selective-importers/tumblr-importer.php
+No syntax errors detected in selective-importers/selective-importers/wordpress-importer.php
+[31mE[0m...[31mE[0m 5 / 5 (100%)
+
+
+
+[1mFILE: blogger-importer.php[0m
+----------------------------------------------------------------------
+[1mFOUND 5 ERRORS AFFECTING 5 LINES[0m
+----------------------------------------------------------------------
+  897 | [31mERROR[0m | [1mDeclaration of a PHP4 style class constructor is
+      |       | deprecated since PHP 7.0 and removed since PHP
+      |       | 8.0[0m
+      |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+  934 | [31mERROR[0m | [1mDeclaration of a PHP4 style class constructor is
+      |       | deprecated since PHP 7.0 and removed since PHP
+      |       | 8.0[0m
+      |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+  976 | [31mERROR[0m | [1mFunction split() is deprecated since PHP 5.3 and
+      |       | removed since PHP 7.0; Use preg_split(), explode() or
+      |       | str_split() instead[0m
+      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.splitDeprecatedRemoved)
+ 1020 | [31mERROR[0m | [1mFunction split() is deprecated since PHP 5.3 and
+      |       | removed since PHP 7.0; Use preg_split(), explode() or
+      |       | str_split() instead[0m
+      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.splitDeprecatedRemoved)
+ 1074 | [31mERROR[0m | [1mFunction split() is deprecated since PHP 5.3 and
+      |       | removed since PHP 7.0; Use preg_split(), explode() or
+      |       | str_split() instead[0m
+      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.splitDeprecatedRemoved)
+----------------------------------------------------------------------
+
+
+[1mFILE: wordpress-importer.php[0m
+----------------------------------------------------------------------
+[1mFOUND 2 ERRORS AFFECTING 2 LINES[0m
+----------------------------------------------------------------------
+  55 | [31mERROR[0m | [1mDeclaration of a PHP4 style class constructor is
+     |       | deprecated since PHP 7.0 and removed since PHP 8.0[0m
+     |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+ 760 | [31mERROR[0m | [1mIndirect access to variables, properties and methods
+     |       | will be evaluated strictly in left-to-right order
+     |       | since PHP 7.0. Use curly braces to remove
+     |       | ambiguity.[0m
+     |       | (PHPCompatibility.Variables.NewUniformVariableSyntax.Found)
+----------------------------------------------------------------------
+
+Time: 473ms; Memory: 20MB
+::error::FILE: blogger-importer.php%0A----------------------------------------------------------------------%0AFOUND 5 ERRORS AFFECTING 5 LINES%0A----------------------------------------------------------------------%0A  897 | ERROR | Declaration of a PHP4 style class constructor is%0A      |       | deprecated since PHP 7.0 and removed since PHP%0A      |       | 8.0%0A      |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)%0A  934 | ERROR | Declaration of a PHP4 style class constructor is%0A      |       | deprecated since PHP 7.0 and removed since PHP%0A      |       | 8.0%0A      |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)%0A  976 | ERROR | Function split() is deprecated since PHP 5.3 and%0A      |       | removed since PHP 7.0; Use preg_split(), explode() or%0A      |       | str_split() instead%0A      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.splitDeprecatedRemoved)%0A 1020 | ERROR | Function split() is deprecated since PHP 5.3 and%0A      |       | removed since PHP 7.0; Use preg_split(), explode() or%0A      |       | str_split() instead%0A      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.splitDeprecatedRemoved)%0A 1074 | ERROR | Function split() is deprecated since PHP 5.3 and%0A      |       | removed since PHP 7.0; Use preg_split(), explode() or%0A      |       | str_split() instead%0A      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.splitDeprecatedRemoved)%0A----------------------------------------------------------------------%0A%0A%0AFILE: wordpress-importer.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A----------------------------------------------------------------------%0A  55 | ERROR | Declaration of a PHP4 style class constructor is%0A     |       | deprecated since PHP 7.0 and removed since PHP 8.0%0A     |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)%0A 760 | ERROR | Indirect access to variables, properties and methods%0A     |       | will be evaluated strictly in left-to-right order%0A     |       | since PHP 7.0. Use curly braces to remove%0A     |       | ambiguity.%0A     |       | (PHPCompatibility.Variables.NewUniformVariableSyntax.Found)%0A----------------------------------------------------------------------%0A
