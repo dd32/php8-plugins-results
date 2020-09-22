@@ -1,0 +1,108 @@
+
+lib/rt-mailbox/vendor/google-api-php-client/service/Google_Utils.php
+  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 58
+
+lib/rt-mailbox/vendor/MailLib/Zend/Stdlib/ArrayObject.php
+  Warning: "continue" targeting switch is equivalent to "break".
+      Did you mean to use "continue 2"?
+      on line 424
+
+lib/rt-products/class-rt-products.php
+  Fatal error: Unparenthesized `a ? b : c ? d : e` is not supported.
+      Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)`
+      on line 63
+FILE: lib/rt-mailbox/class-rt-zend-mail.php
+----------------------------------------------------------------------
+FOUND 4 ERRORS AFFECTING 4 LINES
+----------------------------------------------------------------------
+ 767 | ERROR | Self-closing XHTML tags are ignored. Only
+     |       | non-self-closing tags should be used in the
+     |       | strip_tags() $allowable_tags parameter since PHP
+     |       | 5.3.4. Found: '<br><br/>'
+     |       | (PHPCompatibility.ParameterValues.ForbiddenStripTagsSelfClosingXHTML.Found)
+ 777 | ERROR | Self-closing XHTML tags are ignored. Only
+     |       | non-self-closing tags should be used in the
+     |       | strip_tags() $allowable_tags parameter since PHP
+     |       | 5.3.4. Found: '<br><br/>'
+     |       | (PHPCompatibility.ParameterValues.ForbiddenStripTagsSelfClosingXHTML.Found)
+ 781 | ERROR | Self-closing XHTML tags are ignored. Only
+     |       | non-self-closing tags should be used in the
+     |       | strip_tags() $allowable_tags parameter since PHP
+     |       | 5.3.4. Found: '<br><br/>'
+     |       | (PHPCompatibility.ParameterValues.ForbiddenStripTagsSelfClosingXHTML.Found)
+ 786 | ERROR | Self-closing XHTML tags are ignored. Only
+     |       | non-self-closing tags should be used in the
+     |       | strip_tags() $allowable_tags parameter since PHP
+     |       | 5.3.4. Found: '<br><br/>'
+     |       | (PHPCompatibility.ParameterValues.ForbiddenStripTagsSelfClosingXHTML.Found)
+----------------------------------------------------------------------
+
+
+FILE: lib/rt-mailbox/vendor/google-api-php-client/io/Google_REST.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 123 | ERROR | Passing the $glue and $pieces parameters in reverse
+     |       | order to implode has been deprecated since PHP 7.4 and
+     |       | is removed since PHP 8.0; $glue should be the first
+     |       | parameter and $pieces the second
+     |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
+----------------------------------------------------------------------
+
+
+FILE: ...rt-mailbox/vendor/google-api-php-client/service/Google_Utils.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 58 | ERROR | [x] Curly brace syntax for accessing array elements and
+    |       |     string offsets has been deprecated in PHP 7.4 and
+    |       |     removed in PHP 8.0. Found: $str{$ret}
+    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------
+
+
+FILE: lib/rt-products/class-rt-products.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 63 | ERROR | The left-associativity of the ternary operator has been
+    |       | deprecated in PHP 7.4 and removed in PHP 8.0. Multiple
+    |       | consecutive ternaries detected. Use parenthesis to
+    |       | clarify the order in which the operations should be
+    |       | executed
+    |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
+----------------------------------------------------------------------
+
+
+FILE: vendor/redux/ReduxCore/framework.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 2806 | ERROR | Function get_magic_quotes_gpc() is deprecated since
+      |       | PHP 7.4 and removed since PHP 8.0
+      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_gpcDeprecatedRemoved)
+----------------------------------------------------------------------
+
+
+FILE: vendor/redux/ReduxCore/inc/browser.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 191 | ERROR | Declaration of a PHP4 style class constructor is
+     |       | deprecated since PHP 7.0 and removed since PHP 8.0
+     |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+----------------------------------------------------------------------
+
+
+FILE: vendor/redux/ReduxCore/inc/fields/raw/parsedown.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 797 | ERROR | Indirect access to variables, properties and methods
+     |       | will be evaluated strictly in left-to-right order
+     |       | since PHP 7.0. Use curly braces to remove
+     |       | ambiguity.
+     |       | (PHPCompatibility.Variables.NewUniformVariableSyntax.Found)
+----------------------------------------------------------------------

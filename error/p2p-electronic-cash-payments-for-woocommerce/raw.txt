@@ -1,0 +1,116 @@
+::warning::Plugin: https://wordpress.org/plugins/p2p-electronic-cash-payments-for-woocommerce/%0ATrac: https://plugins.trac.wordpress.org/browser/p2p-electronic-cash-payments-for-woocommerce/
+No syntax errors detected in p2p-electronic-cash-payments-for-woocommerce/p2p-electronic-cash-payments-for-woocommerce/classes/class-table.php
+No syntax errors detected in p2p-electronic-cash-payments-for-woocommerce/p2p-electronic-cash-payments-for-woocommerce/ecp-admin.php
+No syntax errors detected in p2p-electronic-cash-payments-for-woocommerce/p2p-electronic-cash-payments-for-woocommerce/ecp-bitcoin-blockchain-apis.php
+No syntax errors detected in p2p-electronic-cash-payments-for-woocommerce/p2p-electronic-cash-payments-for-woocommerce/ecp-bitcoin-exchange-rate-apis.php
+No syntax errors detected in p2p-electronic-cash-payments-for-woocommerce/p2p-electronic-cash-payments-for-woocommerce/ecp-bitcoin-gateway-bch.php
+No syntax errors detected in p2p-electronic-cash-payments-for-woocommerce/p2p-electronic-cash-payments-for-woocommerce/ecp-bitcoin-gateway-bsv.php
+No syntax errors detected in p2p-electronic-cash-payments-for-woocommerce/p2p-electronic-cash-payments-for-woocommerce/ecp-bitcoin-gateway.php
+No syntax errors detected in p2p-electronic-cash-payments-for-woocommerce/p2p-electronic-cash-payments-for-woocommerce/ecp-cron.php
+No syntax errors detected in p2p-electronic-cash-payments-for-woocommerce/p2p-electronic-cash-payments-for-woocommerce/ecp-include-all.php
+No syntax errors detected in p2p-electronic-cash-payments-for-woocommerce/p2p-electronic-cash-payments-for-woocommerce/ecp-mpkgen.php
+No syntax errors detected in p2p-electronic-cash-payments-for-woocommerce/p2p-electronic-cash-payments-for-woocommerce/ecp-render-settings.php
+
+Fatal error: Array and string offset access syntax with curly braces is no longer supported in p2p-electronic-cash-payments-for-woocommerce/p2p-electronic-cash-payments-for-woocommerce/ecp-utils.php on line 687
+Errors parsing p2p-electronic-cash-payments-for-woocommerce/p2p-electronic-cash-payments-for-woocommerce/ecp-utils.php
+No syntax errors detected in p2p-electronic-cash-payments-for-woocommerce/p2p-electronic-cash-payments-for-woocommerce/libs/cashaddr/Base32.php
+No syntax errors detected in p2p-electronic-cash-payments-for-woocommerce/p2p-electronic-cash-payments-for-woocommerce/libs/cashaddr/CashAddress.php
+No syntax errors detected in p2p-electronic-cash-payments-for-woocommerce/p2p-electronic-cash-payments-for-woocommerce/libs/cashaddr/Exception/Base32Exception.php
+No syntax errors detected in p2p-electronic-cash-payments-for-woocommerce/p2p-electronic-cash-payments-for-woocommerce/libs/cashaddr/Exception/CashAddressException.php
+No syntax errors detected in p2p-electronic-cash-payments-for-woocommerce/p2p-electronic-cash-payments-for-woocommerce/libs/cashaddr/Exception/InvalidChecksumException.php
+No syntax errors detected in p2p-electronic-cash-payments-for-woocommerce/p2p-electronic-cash-payments-for-woocommerce/libs/CurveFp.php
+No syntax errors detected in p2p-electronic-cash-payments-for-woocommerce/p2p-electronic-cash-payments-for-woocommerce/libs/ElectrumHelper.php
+No syntax errors detected in p2p-electronic-cash-payments-for-woocommerce/p2p-electronic-cash-payments-for-woocommerce/libs/NumberTheory.php
+No syntax errors detected in p2p-electronic-cash-payments-for-woocommerce/p2p-electronic-cash-payments-for-woocommerce/libs/Point.php
+No syntax errors detected in p2p-electronic-cash-payments-for-woocommerce/p2p-electronic-cash-payments-for-woocommerce/libs/util/bcmath_Utils.php
+No syntax errors detected in p2p-electronic-cash-payments-for-woocommerce/p2p-electronic-cash-payments-for-woocommerce/libs/util/gmp_Utils.php
+No syntax errors detected in p2p-electronic-cash-payments-for-woocommerce/p2p-electronic-cash-payments-for-woocommerce/p2pecp-woocommerce.php
+::error::%0Aecp-utils.php%0A  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 687
+...........[32mE[0m......[31mE[0m..... 24 / 24 (100%)
+
+
+
+[1mFILE: ecp-utils.php[0m
+----------------------------------------------------------------------
+[1mFOUND 2 ERRORS AFFECTING 2 LINES[0m
+----------------------------------------------------------------------
+ 619 | [31mERROR[0m | [ ] [1m"$this" can no longer be used in a plain function
+     |       |     or method since PHP 7.1.[0m
+     |       |     (PHPCompatibility.Variables.ForbiddenThisUseContexts.OutsideObjectContext)
+ 687 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $str{$offset}[0m
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+----------------------------------------------------------------------
+[1mPHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
+----------------------------------------------------------------------
+
+
+[1mFILE: libs/ElectrumHelper.php[0m
+----------------------------------------------------------------------
+[1mFOUND 12 ERRORS AFFECTING 12 LINES[0m
+----------------------------------------------------------------------
+ 395 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+     |       | inconsistent prior to PHP 7 and support has been
+     |       | removed in PHP 7. Found:
+     |       | '0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEFFFFFC2F'[0m
+     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
+ 396 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+     |       | inconsistent prior to PHP 7 and support has been
+     |       | removed in PHP 7. Found:
+     |       | '0x0000000000000000000000000000000000000000000000000000000000000000'[0m
+     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
+ 397 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+     |       | inconsistent prior to PHP 7 and support has been
+     |       | removed in PHP 7. Found:
+     |       | '0x0000000000000000000000000000000000000000000000000000000000000007'[0m
+     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
+ 398 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+     |       | inconsistent prior to PHP 7 and support has been
+     |       | removed in PHP 7. Found:
+     |       | '0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEBAAEDCE6AF48A03BBFD25E8CD0364141'[0m
+     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
+ 399 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+     |       | inconsistent prior to PHP 7 and support has been
+     |       | removed in PHP 7. Found:
+     |       | "0x79BE667EF9DCBBAC55A06295CE870B07029BFCDB2DCE28D959F2815B16F81798"[0m
+     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
+ 400 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+     |       | inconsistent prior to PHP 7 and support has been
+     |       | removed in PHP 7. Found:
+     |       | "0x483ADA7726A3C4655DA4FBFC0E1108A8FD17B448A68554199C47D08FFB10D4B8"[0m
+     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
+ 404 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+     |       | inconsistent prior to PHP 7 and support has been
+     |       | removed in PHP 7. Found:
+     |       | '0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEFFFFFC2F'[0m
+     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
+ 405 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+     |       | inconsistent prior to PHP 7 and support has been
+     |       | removed in PHP 7. Found:
+     |       | '0x0000000000000000000000000000000000000000000000000000000000000000'[0m
+     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
+ 406 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+     |       | inconsistent prior to PHP 7 and support has been
+     |       | removed in PHP 7. Found:
+     |       | '0x0000000000000000000000000000000000000000000000000000000000000007'[0m
+     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
+ 407 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+     |       | inconsistent prior to PHP 7 and support has been
+     |       | removed in PHP 7. Found:
+     |       | '0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEBAAEDCE6AF48A03BBFD25E8CD0364141'[0m
+     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
+ 408 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+     |       | inconsistent prior to PHP 7 and support has been
+     |       | removed in PHP 7. Found:
+     |       | "0x79BE667EF9DCBBAC55A06295CE870B07029BFCDB2DCE28D959F2815B16F81798"[0m
+     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
+ 409 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+     |       | inconsistent prior to PHP 7 and support has been
+     |       | removed in PHP 7. Found:
+     |       | "0x483ADA7726A3C4655DA4FBFC0E1108A8FD17B448A68554199C47D08FFB10D4B8"[0m
+     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
+----------------------------------------------------------------------
+
+Time: 901ms; Memory: 18MB
+::error::FILE: ecp-utils.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A----------------------------------------------------------------------%0A 619 | ERROR | [ ] "$this" can no longer be used in a plain function%0A     |       |     or method since PHP 7.1.%0A     |       |     (PHPCompatibility.Variables.ForbiddenThisUseContexts.OutsideObjectContext)%0A 687 | ERROR | [x] Curly brace syntax for accessing array elements%0A     |       |     and string offsets has been deprecated in PHP 7.4%0A     |       |     and removed in PHP 8.0. Found: $str{$offset}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A----------------------------------------------------------------------%0APHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A----------------------------------------------------------------------%0A%0A%0AFILE: libs/ElectrumHelper.php%0A----------------------------------------------------------------------%0AFOUND 12 ERRORS AFFECTING 12 LINES%0A----------------------------------------------------------------------%0A 395 | ERROR | The behaviour of hexadecimal numeric strings was%0A     |       | inconsistent prior to PHP 7 and support has been%0A     |       | removed in PHP 7. Found:%0A     |       | '0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEFFFFFC2F'%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 396 | ERROR | The behaviour of hexadecimal numeric strings was%0A     |       | inconsistent prior to PHP 7 and support has been%0A     |       | removed in PHP 7. Found:%0A     |       | '0x0000000000000000000000000000000000000000000000000000000000000000'%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 397 | ERROR | The behaviour of hexadecimal numeric strings was%0A     |       | inconsistent prior to PHP 7 and support has been%0A     |       | removed in PHP 7. Found:%0A     |       | '0x0000000000000000000000000000000000000000000000000000000000000007'%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 398 | ERROR | The behaviour of hexadecimal numeric strings was%0A     |       | inconsistent prior to PHP 7 and support has been%0A     |       | removed in PHP 7. Found:%0A     |       | '0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEBAAEDCE6AF48A03BBFD25E8CD0364141'%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 399 | ERROR | The behaviour of hexadecimal numeric strings was%0A     |       | inconsistent prior to PHP 7 and support has been%0A     |       | removed in PHP 7. Found:%0A     |       | "0x79BE667EF9DCBBAC55A06295CE870B07029BFCDB2DCE28D959F2815B16F81798"%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 400 | ERROR | The behaviour of hexadecimal numeric strings was%0A     |       | inconsistent prior to PHP 7 and support has been%0A     |       | removed in PHP 7. Found:%0A     |       | "0x483ADA7726A3C4655DA4FBFC0E1108A8FD17B448A68554199C47D08FFB10D4B8"%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 404 | ERROR | The behaviour of hexadecimal numeric strings was%0A     |       | inconsistent prior to PHP 7 and support has been%0A     |       | removed in PHP 7. Found:%0A     |       | '0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEFFFFFC2F'%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 405 | ERROR | The behaviour of hexadecimal numeric strings was%0A     |       | inconsistent prior to PHP 7 and support has been%0A     |       | removed in PHP 7. Found:%0A     |       | '0x0000000000000000000000000000000000000000000000000000000000000000'%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 406 | ERROR | The behaviour of hexadecimal numeric strings was%0A     |       | inconsistent prior to PHP 7 and support has been%0A     |       | removed in PHP 7. Found:%0A     |       | '0x0000000000000000000000000000000000000000000000000000000000000007'%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 407 | ERROR | The behaviour of hexadecimal numeric strings was%0A     |       | inconsistent prior to PHP 7 and support has been%0A     |       | removed in PHP 7. Found:%0A     |       | '0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEBAAEDCE6AF48A03BBFD25E8CD0364141'%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 408 | ERROR | The behaviour of hexadecimal numeric strings was%0A     |       | inconsistent prior to PHP 7 and support has been%0A     |       | removed in PHP 7. Found:%0A     |       | "0x79BE667EF9DCBBAC55A06295CE870B07029BFCDB2DCE28D959F2815B16F81798"%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 409 | ERROR | The behaviour of hexadecimal numeric strings was%0A     |       | inconsistent prior to PHP 7 and support has been%0A     |       | removed in PHP 7. Found:%0A     |       | "0x483ADA7726A3C4655DA4FBFC0E1108A8FD17B448A68554199C47D08FFB10D4B8"%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A----------------------------------------------------------------------%0A
