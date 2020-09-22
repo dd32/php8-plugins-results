@@ -1,0 +1,255 @@
+
+includes/secureimage/securimage.php
+  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 1920
+
+includes/secureimage/WavFile.php
+  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 1555
+FILE: includes/MCAPI.class.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 39 | ERROR | Declaration of a PHP4 style class constructor is
+    |       | deprecated since PHP 7.0 and removed since PHP 8.0
+    |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+----------------------------------------------------------------------
+
+
+FILE: includes/secureimage/securimage.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 1920 | ERROR | [x] Curly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found:
+      |       |     $code['display']{$i}
+      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------
+
+
+FILE: includes/secureimage/WavFile.php
+----------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 1555 | ERROR | [x] Curly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found:
+      |       |     $this->_samples{$offset + $i}
+      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 1555 | ERROR | [x] Curly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found:
+      |       |     $sampleBinary{$i}
+      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------
+
+
+FILE: methods/ajax.php
+----------------------------------------------------------------------
+FOUND 11 ERRORS AFFECTING 9 LINES
+----------------------------------------------------------------------
+ 488 | ERROR | Indirect access to variables, properties and methods
+     |       | will be evaluated strictly in left-to-right order
+     |       | since PHP 7.0. Use curly braces to remove
+     |       | ambiguity.
+     |       | (PHPCompatibility.Variables.NewUniformVariableSyntax.Found)
+ 490 | ERROR | Indirect access to variables, properties and methods
+     |       | will be evaluated strictly in left-to-right order
+     |       | since PHP 7.0. Use curly braces to remove
+     |       | ambiguity.
+     |       | (PHPCompatibility.Variables.NewUniformVariableSyntax.Found)
+ 491 | ERROR | Indirect access to variables, properties and methods
+     |       | will be evaluated strictly in left-to-right order
+     |       | since PHP 7.0. Use curly braces to remove
+     |       | ambiguity.
+     |       | (PHPCompatibility.Variables.NewUniformVariableSyntax.Found)
+ 503 | ERROR | Indirect access to variables, properties and methods
+     |       | will be evaluated strictly in left-to-right order
+     |       | since PHP 7.0. Use curly braces to remove
+     |       | ambiguity.
+     |       | (PHPCompatibility.Variables.NewUniformVariableSyntax.Found)
+ 503 | ERROR | Indirect access to variables, properties and methods
+     |       | will be evaluated strictly in left-to-right order
+     |       | since PHP 7.0. Use curly braces to remove
+     |       | ambiguity.
+     |       | (PHPCompatibility.Variables.NewUniformVariableSyntax.Found)
+ 505 | ERROR | Indirect access to variables, properties and methods
+     |       | will be evaluated strictly in left-to-right order
+     |       | since PHP 7.0. Use curly braces to remove
+     |       | ambiguity.
+     |       | (PHPCompatibility.Variables.NewUniformVariableSyntax.Found)
+ 505 | ERROR | Indirect access to variables, properties and methods
+     |       | will be evaluated strictly in left-to-right order
+     |       | since PHP 7.0. Use curly braces to remove
+     |       | ambiguity.
+     |       | (PHPCompatibility.Variables.NewUniformVariableSyntax.Found)
+ 724 | ERROR | Indirect access to variables, properties and methods
+     |       | will be evaluated strictly in left-to-right order
+     |       | since PHP 7.0. Use curly braces to remove
+     |       | ambiguity.
+     |       | (PHPCompatibility.Variables.NewUniformVariableSyntax.Found)
+ 731 | ERROR | Indirect access to variables, properties and methods
+     |       | will be evaluated strictly in left-to-right order
+     |       | since PHP 7.0. Use curly braces to remove
+     |       | ambiguity.
+     |       | (PHPCompatibility.Variables.NewUniformVariableSyntax.Found)
+ 738 | ERROR | Indirect access to variables, properties and methods
+     |       | will be evaluated strictly in left-to-right order
+     |       | since PHP 7.0. Use curly braces to remove
+     |       | ambiguity.
+     |       | (PHPCompatibility.Variables.NewUniformVariableSyntax.Found)
+ 745 | ERROR | Indirect access to variables, properties and methods
+     |       | will be evaluated strictly in left-to-right order
+     |       | since PHP 7.0. Use curly braces to remove
+     |       | ambiguity.
+     |       | (PHPCompatibility.Variables.NewUniformVariableSyntax.Found)
+----------------------------------------------------------------------
+
+
+FILE: methods/rc.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 10 | ERROR | Function get_magic_quotes_gpc() is deprecated since PHP
+    |       | 7.4 and removed since PHP 8.0
+    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_gpcDeprecatedRemoved)
+----------------------------------------------------------------------
+
+
+FILE: methods/signup.php
+----------------------------------------------------------------------
+FOUND 8 ERRORS AFFECTING 4 LINES
+----------------------------------------------------------------------
+ 30 | ERROR | Extension 'ereg' is deprecated since PHP 5.3 and
+    |       | removed since PHP 7.0; Use pcre instead
+    |       | (PHPCompatibility.Extensions.RemovedExtensions.eregDeprecatedRemoved)
+ 30 | ERROR | Function ereg() is deprecated since PHP 5.3 and removed
+    |       | since PHP 7.0; Use preg_match() instead
+    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eregDeprecatedRemoved)
+ 36 | ERROR | Extension 'ereg' is deprecated since PHP 5.3 and
+    |       | removed since PHP 7.0; Use pcre instead
+    |       | (PHPCompatibility.Extensions.RemovedExtensions.eregDeprecatedRemoved)
+ 36 | ERROR | Function ereg() is deprecated since PHP 5.3 and removed
+    |       | since PHP 7.0; Use preg_match() instead
+    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eregDeprecatedRemoved)
+ 39 | ERROR | Extension 'ereg' is deprecated since PHP 5.3 and
+    |       | removed since PHP 7.0; Use pcre instead
+    |       | (PHPCompatibility.Extensions.RemovedExtensions.eregDeprecatedRemoved)
+ 39 | ERROR | Function ereg() is deprecated since PHP 5.3 and removed
+    |       | since PHP 7.0; Use preg_match() instead
+    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eregDeprecatedRemoved)
+ 45 | ERROR | Extension 'ereg' is deprecated since PHP 5.3 and
+    |       | removed since PHP 7.0; Use pcre instead
+    |       | (PHPCompatibility.Extensions.RemovedExtensions.eregDeprecatedRemoved)
+ 45 | ERROR | Function ereg() is deprecated since PHP 5.3 and removed
+    |       | since PHP 7.0; Use preg_match() instead
+    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eregDeprecatedRemoved)
+----------------------------------------------------------------------
+
+
+FILE: seo-rets.php
+----------------------------------------------------------------------
+FOUND 17 ERRORS AFFECTING 17 LINES
+----------------------------------------------------------------------
+  248 | ERROR | Function create_function() is deprecated since PHP
+      |       | 7.2 and removed since PHP 8.0; Use an anonymous
+      |       | function instead
+      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
+  262 | ERROR | Function create_function() is deprecated since PHP
+      |       | 7.2 and removed since PHP 8.0; Use an anonymous
+      |       | function instead
+      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
+  289 | ERROR | Function create_function() is deprecated since PHP
+      |       | 7.2 and removed since PHP 8.0; Use an anonymous
+      |       | function instead
+      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
+  308 | ERROR | Function create_function() is deprecated since PHP
+      |       | 7.2 and removed since PHP 8.0; Use an anonymous
+      |       | function instead
+      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
+  329 | ERROR | Function create_function() is deprecated since PHP
+      |       | 7.2 and removed since PHP 8.0; Use an anonymous
+      |       | function instead
+      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
+  337 | ERROR | Function create_function() is deprecated since PHP
+      |       | 7.2 and removed since PHP 8.0; Use an anonymous
+      |       | function instead
+      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
+ 3409 | ERROR | Function create_function() is deprecated since PHP
+      |       | 7.2 and removed since PHP 8.0; Use an anonymous
+      |       | function instead
+      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
+ 3414 | ERROR | Function create_function() is deprecated since PHP
+      |       | 7.2 and removed since PHP 8.0; Use an anonymous
+      |       | function instead
+      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
+ 3419 | ERROR | Function create_function() is deprecated since PHP
+      |       | 7.2 and removed since PHP 8.0; Use an anonymous
+      |       | function instead
+      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
+ 3423 | ERROR | Function create_function() is deprecated since PHP
+      |       | 7.2 and removed since PHP 8.0; Use an anonymous
+      |       | function instead
+      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
+ 3426 | ERROR | Function create_function() is deprecated since PHP
+      |       | 7.2 and removed since PHP 8.0; Use an anonymous
+      |       | function instead
+      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
+ 3429 | ERROR | Function create_function() is deprecated since PHP
+      |       | 7.2 and removed since PHP 8.0; Use an anonymous
+      |       | function instead
+      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
+ 3433 | ERROR | Function create_function() is deprecated since PHP
+      |       | 7.2 and removed since PHP 8.0; Use an anonymous
+      |       | function instead
+      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
+ 3437 | ERROR | Function create_function() is deprecated since PHP
+      |       | 7.2 and removed since PHP 8.0; Use an anonymous
+      |       | function instead
+      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
+ 3450 | ERROR | Function create_function() is deprecated since PHP
+      |       | 7.2 and removed since PHP 8.0; Use an anonymous
+      |       | function instead
+      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
+ 3878 | ERROR | Declaration of a PHP4 style class constructor is
+      |       | deprecated since PHP 7.0 and removed since PHP
+      |       | 8.0
+      |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+ 3892 | ERROR | Declaration of a PHP4 style class constructor is
+      |       | deprecated since PHP 7.0 and removed since PHP
+      |       | 8.0
+      |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+----------------------------------------------------------------------
+
+
+FILE: widgets/listings.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 7 | ERROR | Declaration of a PHP4 style class constructor is
+   |       | deprecated since PHP 7.0 and removed since PHP 8.0
+   |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+----------------------------------------------------------------------
+
+
+FILE: widgets/onebox.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 6 | ERROR | Declaration of a PHP4 style class constructor is
+   |       | deprecated since PHP 7.0 and removed since PHP 8.0
+   |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+----------------------------------------------------------------------
+
+
+FILE: widgets/search.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 7 | ERROR | Declaration of a PHP4 style class constructor is
+   |       | deprecated since PHP 7.0 and removed since PHP 8.0
+   |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+----------------------------------------------------------------------
