@@ -1,0 +1,118 @@
+::warning::Plugin: https://wordpress.org/plugins/hull/%0ATrac: https://plugins.trac.wordpress.org/browser/hull/
+No syntax errors detected in hull/hull/auth.php
+No syntax errors detected in hull/hull/hull-php/index.php
+No syntax errors detected in hull/hull/hull-php/src/Hull/Cache.php
+No syntax errors detected in hull/hull/hull-php/src/Hull/Client.php
+No syntax errors detected in hull/hull/hull-php/src/Hull/Connection.php
+No syntax errors detected in hull/hull/hull-php/src/Hull/Event.php
+No syntax errors detected in hull/hull/hull-php/src/Hull/Facebook.php
+No syntax errors detected in hull/hull/hull-php/src/Hull/Utils.php
+No syntax errors detected in hull/hull/hull-php/vendor/autoload.php
+No syntax errors detected in hull/hull/hull-php/vendor/composer/autoload_classmap.php
+No syntax errors detected in hull/hull/hull-php/vendor/composer/autoload_namespaces.php
+No syntax errors detected in hull/hull/hull-php/vendor/composer/autoload_real.php
+No syntax errors detected in hull/hull/hull-php/vendor/composer/ClassLoader.php
+No syntax errors detected in hull/hull/hull-php/vendor/facebook/php-sdk/examples/example.php
+No syntax errors detected in hull/hull/hull-php/vendor/facebook/php-sdk/examples/with_js_sdk.php
+No syntax errors detected in hull/hull/hull-php/vendor/facebook/php-sdk/src/base_facebook.php
+No syntax errors detected in hull/hull/hull-php/vendor/facebook/php-sdk/src/facebook.php
+No syntax errors detected in hull/hull/hull-php/vendor/facebook/php-sdk/tests/bootstrap.php
+No syntax errors detected in hull/hull/hull-php/vendor/facebook/php-sdk/tests/tests.php
+No syntax errors detected in hull/hull/index.php
+..[31mE[0m[31mE[0m[31mE[0m[31mE[0m[31mE[0m[31mE[0m.......[31mE[0m...[31mE[0m 20 / 20 (100%)
+
+
+
+[1mFILE: hull-php/src/Hull/Cache.php[0m
+----------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 4 | [31mERROR[0m | [1mDeclaration of a PHP4 style class constructor is
+   |       | deprecated since PHP 7.0 and removed since PHP 8.0[0m
+   |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+----------------------------------------------------------------------
+
+
+[1mFILE: hull-php/src/Hull/Client.php[0m
+----------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 18 | [31mERROR[0m | [1mDeclaration of a PHP4 style class constructor is
+    |       | deprecated since PHP 7.0 and removed since PHP 8.0[0m
+    |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+----------------------------------------------------------------------
+
+
+[1mFILE: hull-php/src/Hull/Connection.php[0m
+----------------------------------------------------------------------
+[1mFOUND 2 ERRORS AFFECTING 2 LINES[0m
+----------------------------------------------------------------------
+  9 | [31mERROR[0m | [1mpreg_replace() - /e modifier is deprecated since PHP
+    |       | 5.5 and removed since PHP 7.0[0m
+    |       | (PHPCompatibility.ParameterValues.RemovedPCREModifiers.Removed)
+ 32 | [31mERROR[0m | [1mDeclaration of a PHP4 style class constructor is
+    |       | deprecated since PHP 7.0 and removed since PHP 8.0[0m
+    |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+----------------------------------------------------------------------
+
+
+[1mFILE: hull-php/src/Hull/Event.php[0m
+----------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 11 | [31mERROR[0m | [1mDeclaration of a PHP4 style class constructor is
+    |       | deprecated since PHP 7.0 and removed since PHP 8.0[0m
+    |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+----------------------------------------------------------------------
+
+
+[1mFILE: hull-php/src/Hull/Facebook.php[0m
+----------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 3 | [31mERROR[0m | [1mDeclaration of a PHP4 style class constructor is
+   |       | deprecated since PHP 7.0 and removed since PHP 8.0[0m
+   |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+----------------------------------------------------------------------
+
+
+[1mFILE: hull-php/src/Hull/Utils.php[0m
+----------------------------------------------------------------------
+[1mFOUND 2 ERRORS AFFECTING 2 LINES[0m
+----------------------------------------------------------------------
+ 14 | [31mERROR[0m | [1mFunction create_function() is deprecated since PHP 7.2
+    |       | and removed since PHP 8.0; Use an anonymous function
+    |       | instead[0m
+    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
+ 28 | [31mERROR[0m | [1mFunction create_function() is deprecated since PHP 7.2
+    |       | and removed since PHP 8.0; Use an anonymous function
+    |       | instead[0m
+    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
+----------------------------------------------------------------------
+
+
+[1mFILE: hull-php/vendor/facebook/php-sdk/src/base_facebook.php[0m
+----------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 1209 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse
+      |       | order to implode has been deprecated since PHP 7.4
+      |       | and is removed since PHP 8.0; $glue should be the
+      |       | first parameter and $pieces the second[0m
+      |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
+----------------------------------------------------------------------
+
+
+[1mFILE: index.php[0m
+----------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 177 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse
+     |       | order to implode has been deprecated since PHP 7.4 and
+     |       | is removed since PHP 8.0; $glue should be the first
+     |       | parameter and $pieces the second[0m
+     |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
+----------------------------------------------------------------------
+
+Time: 1.12 secs; Memory: 28MB
+::error::FILE: hull-php/src/Hull/Cache.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 4 | ERROR | Declaration of a PHP4 style class constructor is%0A   |       | deprecated since PHP 7.0 and removed since PHP 8.0%0A   |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)%0A----------------------------------------------------------------------%0A%0A%0AFILE: hull-php/src/Hull/Client.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 18 | ERROR | Declaration of a PHP4 style class constructor is%0A    |       | deprecated since PHP 7.0 and removed since PHP 8.0%0A    |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)%0A----------------------------------------------------------------------%0A%0A%0AFILE: hull-php/src/Hull/Connection.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A----------------------------------------------------------------------%0A  9 | ERROR | preg_replace() - /e modifier is deprecated since PHP%0A    |       | 5.5 and removed since PHP 7.0%0A    |       | (PHPCompatibility.ParameterValues.RemovedPCREModifiers.Removed)%0A 32 | ERROR | Declaration of a PHP4 style class constructor is%0A    |       | deprecated since PHP 7.0 and removed since PHP 8.0%0A    |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)%0A----------------------------------------------------------------------%0A%0A%0AFILE: hull-php/src/Hull/Event.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 11 | ERROR | Declaration of a PHP4 style class constructor is%0A    |       | deprecated since PHP 7.0 and removed since PHP 8.0%0A    |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)%0A----------------------------------------------------------------------%0A%0A%0AFILE: hull-php/src/Hull/Facebook.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 3 | ERROR | Declaration of a PHP4 style class constructor is%0A   |       | deprecated since PHP 7.0 and removed since PHP 8.0%0A   |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)%0A----------------------------------------------------------------------%0A%0A%0AFILE: hull-php/src/Hull/Utils.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A----------------------------------------------------------------------%0A 14 | ERROR | Function create_function() is deprecated since PHP 7.2%0A    |       | and removed since PHP 8.0; Use an anonymous function%0A    |       | instead%0A    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)%0A 28 | ERROR | Function create_function() is deprecated since PHP 7.2%0A    |       | and removed since PHP 8.0; Use an anonymous function%0A    |       | instead%0A    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)%0A----------------------------------------------------------------------%0A%0A%0AFILE: hull-php/vendor/facebook/php-sdk/src/base_facebook.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 1209 | ERROR | Passing the $glue and $pieces parameters in reverse%0A      |       | order to implode has been deprecated since PHP 7.4%0A      |       | and is removed since PHP 8.0; $glue should be the%0A      |       | first parameter and $pieces the second%0A      |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A----------------------------------------------------------------------%0A%0A%0AFILE: index.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 177 | ERROR | Passing the $glue and $pieces parameters in reverse%0A     |       | order to implode has been deprecated since PHP 7.4 and%0A     |       | is removed since PHP 8.0; $glue should be the first%0A     |       | parameter and $pieces the second%0A     |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A----------------------------------------------------------------------%0A
