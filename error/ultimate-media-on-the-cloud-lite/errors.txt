@@ -1,0 +1,34 @@
+
+includes/addons/vendor/google-core/vendor/google/cloud-core/src/Batch/InMemoryConfigStorage.php
+  Warning: The magic method Google\Cloud\Core\Batch\InMemoryConfigStorage::__sleep() must have public visibility on line 73
+  Warning: The magic method Google\Cloud\Core\Batch\InMemoryConfigStorage::__wakeup() must have public visibility on line 80
+FILE: includes/addons/vendor/aws-sdk-v3/JmesPath/Utils.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 227 | ERROR | Passing the $glue and $pieces parameters in reverse
+     |       | order to implode has been deprecated since PHP 7.4 and
+     |       | is removed since PHP 8.0; $glue should be the first
+     |       | parameter and $pieces the second
+     |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
+----------------------------------------------------------------------
+
+
+FILE: ...ore/vendor/google/cloud-core/src/Batch/InMemoryConfigStorage.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 73 | ERROR | Visibility for magic method __sleep must be public.
+    |       | Found: private
+    |       | (PHPCompatibility.FunctionDeclarations.NonStaticMagicMethods.__sleepMethodVisibility)
+----------------------------------------------------------------------
+
+
+FILE: includes/systems/classes/Validation.class.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 311 | ERROR | Function get_magic_quotes_gpc() is deprecated since
+     |       | PHP 7.4 and removed since PHP 8.0
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_gpcDeprecatedRemoved)
+----------------------------------------------------------------------

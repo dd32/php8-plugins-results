@@ -1,0 +1,178 @@
+
+phpunit-portable/ezc/Base/ezc_bootstrap.php
+  Fatal error: __autoload() is no longer supported, use spl_autoload_register() instead on line 36
+
+phpunit-portable/ezc/ConsoleTools/input.php
+  Fatal error: Unparenthesized `a ? b : c ? d : e` is not supported.
+      Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)`
+      on line 519
+
+phpunit-portable/PHP/Token/Stream/TextUI/Command.php
+  Fatal error: __autoload() is no longer supported, use spl_autoload_register() instead on line 47
+
+phpunit-portable/Util/Configuration.php
+  Warning: Private methods cannot be final as they are never overridden by other classes on line 196
+
+phpunit-portable/Util/File.php
+  Warning: "continue" targeting switch is equivalent to "break".
+      Did you mean to use "continue 2"?
+      on line 252
+
+testlib/php/class.testcase.base.php
+  Parse error: syntax error, unexpected token "new" on line 214
+FILE: phpunit-portable/ezc/Base/ezc_bootstrap.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 36 | ERROR | Specifying an autoloader using an __autoload() function
+    |       | is deprecated since PHP 7.2 and no longer supported
+    |       | since PHP 8.0
+    |       | (PHPCompatibility.FunctionNameRestrictions.RemovedMagicAutoload.Removed)
+----------------------------------------------------------------------
+
+
+FILE: phpunit-portable/ezc/ConsoleTools/input.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 519 | ERROR | The left-associativity of the ternary operator has
+     |       | been deprecated in PHP 7.4 and removed in PHP 8.0.
+     |       | Multiple consecutive ternaries detected. Use
+     |       | parenthesis to clarify the order in which the
+     |       | operations should be executed
+     |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
+----------------------------------------------------------------------
+
+
+FILE: phpunit-portable/PHP/Token/Stream/TextUI/Command.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 47 | ERROR | Specifying an autoloader using an __autoload() function
+    |       | is deprecated since PHP 7.2 and no longer supported
+    |       | since PHP 8.0
+    |       | (PHPCompatibility.FunctionNameRestrictions.RemovedMagicAutoload.Removed)
+----------------------------------------------------------------------
+
+
+FILE: phpunit-portable/SymfonyComponents/YAML/sfYamlInline.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 138 | ERROR | Function create_function() is deprecated since PHP 7.2
+     |       | and removed since PHP 8.0; Use an anonymous function
+     |       | instead
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
+----------------------------------------------------------------------
+
+
+FILE: phpunit-portable/Util/Getopt.php
+----------------------------------------------------------------------
+FOUND 3 ERRORS AFFECTING 3 LINES
+----------------------------------------------------------------------
+  81 | ERROR | Function each() is deprecated since PHP 7.2 and
+     |       | removed since PHP 8.0; Use a foreach loop or
+     |       | ArrayIterator instead
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)
+ 140 | ERROR | Function each() is deprecated since PHP 7.2 and
+     |       | removed since PHP 8.0; Use a foreach loop or
+     |       | ArrayIterator instead
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)
+ 188 | ERROR | Function each() is deprecated since PHP 7.2 and
+     |       | removed since PHP 8.0; Use a foreach loop or
+     |       | ArrayIterator instead
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)
+----------------------------------------------------------------------
+
+
+FILE: phpunit-portable/Util/XML.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 68 | ERROR | preg_replace() - /e modifier is deprecated since PHP
+    |       | 5.5 and removed since PHP 7.0
+    |       | (PHPCompatibility.ParameterValues.RemovedPCREModifiers.Removed)
+----------------------------------------------------------------------
+
+
+FILE: testlib/js/test.core.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 21 | ERROR | Declaration of a PHP4 style class constructor is
+    |       | deprecated since PHP 7.0 and removed since PHP 8.0
+    |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+----------------------------------------------------------------------
+
+
+FILE: testlib/php/class.core.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 223 | ERROR | Declaration of a PHP4 style class constructor is
+     |       | deprecated since PHP 7.0 and removed since PHP 8.0
+     |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+----------------------------------------------------------------------
+
+
+FILE: testlib/php/class.profiler.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 32 | ERROR | Declaration of a PHP4 style class constructor is
+    |       | deprecated since PHP 7.0 and removed since PHP 8.0
+    |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+----------------------------------------------------------------------
+
+
+FILE: testlib/php/class.testcase.base.php
+----------------------------------------------------------------------
+FOUND 5 ERRORS AFFECTING 5 LINES
+----------------------------------------------------------------------
+ 214 | ERROR | [ ] Assigning the return value of new by reference is
+     |       |     deprecated in PHP 5.3 and has been removed in PHP
+     |       |     7.0
+     |       |     (PHPCompatibility.Syntax.RemovedNewReference.Removed)
+ 216 | ERROR | [ ] Assigning the return value of new by reference is
+     |       |     deprecated in PHP 5.3 and has been removed in PHP
+     |       |     7.0
+     |       |     (PHPCompatibility.Syntax.RemovedNewReference.Removed)
+ 360 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $file{0}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 410 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $class{0}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 428 | ERROR | [ ] Function create_function() is deprecated since PHP
+     |       |     7.2 and removed since PHP 8.0; Use an anonymous
+     |       |     function instead
+     |       |     (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------
+
+
+FILE: testlib/php/class.test.db.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 58 | ERROR | The "case_insensitive" parameter for function define()
+    |       | is deprecated since PHP 7.3 and removed since PHP
+    |       | 8.0
+    |       | (PHPCompatibility.FunctionUse.RemovedFunctionParameters.define_case_insensitiveDeprecatedRemoved)
+----------------------------------------------------------------------
+
+
+FILE: testlib/php/class.utils.php
+----------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+----------------------------------------------------------------------
+  52 | ERROR | Declaration of a PHP4 style class constructor is
+     |       | deprecated since PHP 7.0 and removed since PHP 8.0
+     |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+ 163 | ERROR | Declaration of a PHP4 style class constructor is
+     |       | deprecated since PHP 7.0 and removed since PHP 8.0
+     |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+----------------------------------------------------------------------
