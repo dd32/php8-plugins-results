@@ -1,0 +1,36 @@
+
+top_categories.php
+  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 24
+FILE: top_categories.php
+----------------------------------------------------------------------
+FOUND 7 ERRORS AFFECTING 5 LINES
+----------------------------------------------------------------------
+ 19 | ERROR | [ ] Extension 'ereg' is deprecated since PHP 5.3 and
+    |       |     removed since PHP 7.0; Use pcre instead
+    |       |     (PHPCompatibility.Extensions.RemovedExtensions.eregDeprecatedRemoved)
+ 19 | ERROR | [ ] Function eregi() is deprecated since PHP 5.3 and
+    |       |     removed since PHP 7.0; Use preg_match() (with the i
+    |       |     modifier) instead
+    |       |     (PHPCompatibility.FunctionUse.RemovedFunctions.eregiDeprecatedRemoved)
+ 22 | ERROR | [ ] Extension 'ereg' is deprecated since PHP 5.3 and
+    |       |     removed since PHP 7.0; Use pcre instead
+    |       |     (PHPCompatibility.Extensions.RemovedExtensions.eregDeprecatedRemoved)
+ 22 | ERROR | [ ] Function eregi() is deprecated since PHP 5.3 and
+    |       |     removed since PHP 7.0; Use preg_match() (with the i
+    |       |     modifier) instead
+    |       |     (PHPCompatibility.FunctionUse.RemovedFunctions.eregiDeprecatedRemoved)
+ 24 | ERROR | [x] Curly brace syntax for accessing array elements and
+    |       |     string offsets has been deprecated in PHP 7.4 and
+    |       |     removed in PHP 8.0. Found: $counts{$catname}
+    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 25 | ERROR | [x] Curly brace syntax for accessing array elements and
+    |       |     string offsets has been deprecated in PHP 7.4 and
+    |       |     removed in PHP 8.0. Found: $catlinks{$catname}
+    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 41 | ERROR | [x] Curly brace syntax for accessing array elements and
+    |       |     string offsets has been deprecated in PHP 7.4 and
+    |       |     removed in PHP 8.0. Found: $catlinks{$catname}
+    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 3 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------
