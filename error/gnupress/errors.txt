@@ -1,87 +1,120 @@
 
 plugin/htmlpurifier/HTMLPurifier.standalone.php
+  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 3176
 
 plugin/kcaptcha/kcaptcha.lib.php
+  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 65
 
 plugin/kcaptcha/kcaptcha_session.php
+  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 9
 FILE: bbs/write_update.php
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 FOUND 1 ERROR AFFECTING 1 LINE
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 544 | ERROR | Function get_magic_quotes_gpc() is deprecated since PHP 7.4 and removed since PHP 8.0
+----------------------------------------------------------------------
+ 544 | ERROR | Function get_magic_quotes_gpc() is deprecated since
+     |       | PHP 7.4 and removed since PHP 8.0
      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_gpcDeprecatedRemoved)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 FILE: lib/common.lib.php
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 FOUND 1 ERROR AFFECTING 1 LINE
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 242 | ERROR | Function session_register() is deprecated since PHP 5.3 and removed since PHP 5.4; Use $_SESSION instead
+----------------------------------------------------------------------
+ 242 | ERROR | Function session_register() is deprecated since PHP
+     |       | 5.3 and removed since PHP 5.4; Use $_SESSION
+     |       | instead
      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.session_registerDeprecatedRemoved)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 FILE: lib/recaptcha_hook.php
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 FOUND 1 ERROR AFFECTING 1 LINE
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 25 | ERROR | Declaration of a PHP4 style class constructor is deprecated since PHP 7.0 and removed since PHP 8.0
+----------------------------------------------------------------------
+ 25 | ERROR | Declaration of a PHP4 style class constructor is
+    |       | deprecated since PHP 7.0 and removed since PHP 8.0
     |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 FILE: plugin/htmlpurifier/HTMLPurifier.standalone.php
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 FOUND 5 ERRORS AFFECTING 4 LINES
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  1978 | ERROR | [ ] Function get_magic_quotes_gpc() is deprecated since PHP 7.4 and removed since PHP 8.0
+----------------------------------------------------------------------
+  1978 | ERROR | [ ] Function get_magic_quotes_gpc() is deprecated
+       |       |     since PHP 7.4 and removed since PHP 8.0
        |       |     (PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_gpcDeprecatedRemoved)
-  3176 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $str{$i}
+  3176 | ERROR | [x] Curly brace syntax for accessing array elements
+       |       |     and string offsets has been deprecated in PHP
+       |       |     7.4 and removed in PHP 8.0. Found: $str{$i}
        |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
- 11419 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $raw{0}
+ 11419 | ERROR | [x] Curly brace syntax for accessing array elements
+       |       |     and string offsets has been deprecated in PHP
+       |       |     7.4 and removed in PHP 8.0. Found: $raw{0}
        |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
- 16709 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $attr['size']{0}
+ 16709 | ERROR | [x] Curly brace syntax for accessing array elements
+       |       |     and string offsets has been deprecated in PHP
+       |       |     7.4 and removed in PHP 8.0. Found:
+       |       |     $attr['size']{0}
        |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
- 16709 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $attr['size']{0}
+ 16709 | ERROR | [x] Curly brace syntax for accessing array elements
+       |       |     and string offsets has been deprecated in PHP
+       |       |     7.4 and removed in PHP 8.0. Found:
+       |       |     $attr['size']{0}
        |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 PHPCBF CAN FIX THE 4 MARKED SNIFF VIOLATIONS AUTOMATICALLY
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
-FILE: plugin/htmlpurifier/standalone/HTMLPurifier/Printer/HTMLDefinition.php
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+FILE: .../htmlpurifier/standalone/HTMLPurifier/Printer/HTMLDefinition.php
+----------------------------------------------------------------------
 FOUND 2 ERRORS AFFECTING 2 LINES
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 39 | ERROR | Passing the $glue and $pieces parameters in reverse order to implode has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first
-    |       | parameter and $pieces the second (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
- 40 | ERROR | Passing the $glue and $pieces parameters in reverse order to implode has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first
-    |       | parameter and $pieces the second (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
+ 39 | ERROR | Passing the $glue and $pieces parameters in reverse
+    |       | order to implode has been deprecated since PHP 7.4 and
+    |       | is removed since PHP 8.0; $glue should be the first
+    |       | parameter and $pieces the second
+    |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
+ 40 | ERROR | Passing the $glue and $pieces parameters in reverse
+    |       | order to implode has been deprecated since PHP 7.4 and
+    |       | is removed since PHP 8.0; $glue should be the first
+    |       | parameter and $pieces the second
+    |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
+----------------------------------------------------------------------
 
 
 FILE: plugin/kcaptcha/kcaptcha.lib.php
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 FOUND 3 ERRORS AFFECTING 3 LINES
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 65 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $alphabet{$symbol}
+----------------------------------------------------------------------
+ 65 | ERROR | [x] Curly brace syntax for accessing array elements and
+    |       |     string offsets has been deprecated in PHP 7.4 and
+    |       |     removed in PHP 8.0. Found: $alphabet{$symbol}
     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
- 71 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $alphabet{$symbol}
+ 71 | ERROR | [x] Curly brace syntax for accessing array elements and
+    |       |     string offsets has been deprecated in PHP 7.4 and
+    |       |     removed in PHP 8.0. Found: $alphabet{$symbol}
     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
- 88 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $this->keystring{$i}
+ 88 | ERROR | [x] Curly brace syntax for accessing array elements and
+    |       |     string offsets has been deprecated in PHP 7.4 and
+    |       |     removed in PHP 8.0. Found: $this->keystring{$i}
     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 PHPCBF CAN FIX THE 3 MARKED SNIFF VIOLATIONS AUTOMATICALLY
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 FILE: plugin/kcaptcha/kcaptcha_session.php
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 FOUND 1 ERROR AFFECTING 1 LINE
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 9 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found:
-   |       |     $allowed_symbols{mt_rand(0,strlen($allowed_symbols)-1)} (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
+ 9 | ERROR | [x] Curly brace syntax for accessing array elements and
+   |       |     string offsets has been deprecated in PHP 7.4 and
+   |       |     removed in PHP 8.0. Found:
+   |       |     $allowed_symbols{mt_rand(0,strlen($allowed_symbols)-1)}
+   |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+----------------------------------------------------------------------
 PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
