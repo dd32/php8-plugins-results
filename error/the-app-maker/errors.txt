@@ -1,0 +1,35 @@
+
+add-ons/the-app-maps/the-app-maps.php
+  Fatal error: Cannot use $this as parameter on line 7
+
+add-ons/the-app-twitter/the-app-twitter.php
+  Fatal error: Cannot use $this as parameter on line 7
+FILE: add-ons/the-app-maps/the-app-maps.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 7 | ERROR | "$this" can no longer be used as a parameter since PHP
+   |       | 7.1.
+   |       | (PHPCompatibility.Variables.ForbiddenThisUseContexts.FunctionParam)
+----------------------------------------------------------------------
+
+
+FILE: add-ons/the-app-twitter/the-app-twitter.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 7 | ERROR | "$this" can no longer be used as a parameter since PHP
+   |       | 7.1.
+   |       | (PHPCompatibility.Variables.ForbiddenThisUseContexts.FunctionParam)
+----------------------------------------------------------------------
+
+
+FILE: TheAppMaker.class.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 567 | ERROR | Function create_function() is deprecated since PHP 7.2
+     |       | and removed since PHP 8.0; Use an anonymous function
+     |       | instead
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
+----------------------------------------------------------------------
