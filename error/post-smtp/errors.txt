@@ -1,35 +1,49 @@
 
 Postman/Postman-Mail/Zend-1.12.10/Validate/Isbn.php
-FILE: Postman/Postman-Mail/google-api-client/vendor/google/apiclient/src/Google/Service/Resource.php
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 170
+FILE: ...i-client/vendor/google/apiclient/src/Google/Service/Resource.php
+----------------------------------------------------------------------
 FOUND 1 ERROR AFFECTING 1 LINE
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 291 | ERROR | Passing the $glue and $pieces parameters in reverse order to implode has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first
-     |       | parameter and $pieces the second (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
+ 291 | ERROR | Passing the $glue and $pieces parameters in reverse
+     |       | order to implode has been deprecated since PHP 7.4 and
+     |       | is removed since PHP 8.0; $glue should be the first
+     |       | parameter and $pieces the second
+     |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
+----------------------------------------------------------------------
 
 
-FILE: Postman/Postman-Mail/mailgun/vendor/php-http/curl-client/src/PromiseCore.php
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+FILE: ...man-Mail/mailgun/vendor/php-http/curl-client/src/PromiseCore.php
+----------------------------------------------------------------------
 FOUND 2 ERRORS AFFECTING 2 LINES
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 79 | ERROR | Using a string as the assertion passed to assert() is deprecated since PHP 7.2 and removed since PHP 8.0. Found: 'is_resource($handle)'
+----------------------------------------------------------------------
+ 79 | ERROR | Using a string as the assertion passed to assert() is
+    |       | deprecated since PHP 7.2 and removed since PHP 8.0.
+    |       | Found: 'is_resource($handle)'
     |       | (PHPCompatibility.ParameterValues.RemovedAssertStringAssertion.Found)
- 80 | ERROR | Using a string as the assertion passed to assert() is deprecated since PHP 7.2 and removed since PHP 8.0. Found: 'get_resource_type($handle) === "curl"'
+ 80 | ERROR | Using a string as the assertion passed to assert() is
+    |       | deprecated since PHP 7.2 and removed since PHP 8.0.
+    |       | Found: 'get_resource_type($handle) === "curl"'
     |       | (PHPCompatibility.ParameterValues.RemovedAssertStringAssertion.Found)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 FILE: Postman/Postman-Mail/Zend-1.12.10/Validate/Isbn.php
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 FOUND 3 ERRORS AFFECTING 3 LINES
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 170 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $isbn10{$i}
+----------------------------------------------------------------------
+ 170 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $isbn10{$i}
      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
- 188 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $isbn13{$i}
+ 188 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $isbn13{$i}
      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
- 190 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $isbn13{$i}
+ 190 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $isbn13{$i}
      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 PHPCBF CAN FIX THE 3 MARKED SNIFF VIOLATIONS AUTOMATICALLY
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
