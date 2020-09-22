@@ -530,6 +530,8 @@ No syntax errors detected in wp-mail-smtp/wp-mail-smtp/vendor_prefixed/sendinblu
 No syntax errors detected in wp-mail-smtp/wp-mail-smtp/vendor_prefixed/sendinblue/api-v3-sdk/lib/Model/GetCampaignStats.php
 No syntax errors detected in wp-mail-smtp/wp-mail-smtp/vendor_prefixed/sendinblue/api-v3-sdk/lib/Model/GetChildAccountCreationStatus.php
 No syntax errors detected in wp-mail-smtp/wp-mail-smtp/vendor_prefixed/sendinblue/api-v3-sdk/lib/Model/GetChildDomain.php
+
+Fatal error: Cannot use "parent" when current class scope has no parent in wp-mail-smtp/wp-mail-smtp/vendor_prefixed/sendinblue/api-v3-sdk/lib/Model/GetChildDomains.php on line 157
 Errors parsing wp-mail-smtp/wp-mail-smtp/vendor_prefixed/sendinblue/api-v3-sdk/lib/Model/GetChildDomains.php
 No syntax errors detected in wp-mail-smtp/wp-mail-smtp/vendor_prefixed/sendinblue/api-v3-sdk/lib/Model/GetChildInfoApiKeys.php
 No syntax errors detected in wp-mail-smtp/wp-mail-smtp/vendor_prefixed/sendinblue/api-v3-sdk/lib/Model/GetChildInfoApiKeysV2.php
@@ -594,8 +596,12 @@ No syntax errors detected in wp-mail-smtp/wp-mail-smtp/vendor_prefixed/sendinblu
 No syntax errors detected in wp-mail-smtp/wp-mail-smtp/vendor_prefixed/sendinblue/api-v3-sdk/lib/Model/GetSmtpTemplateOverviewSender.php
 No syntax errors detected in wp-mail-smtp/wp-mail-smtp/vendor_prefixed/sendinblue/api-v3-sdk/lib/Model/GetSmtpTemplates.php
 No syntax errors detected in wp-mail-smtp/wp-mail-smtp/vendor_prefixed/sendinblue/api-v3-sdk/lib/Model/GetSsoToken.php
+
+Fatal error: Cannot use "parent" when current class scope has no parent in wp-mail-smtp/wp-mail-smtp/vendor_prefixed/sendinblue/api-v3-sdk/lib/Model/GetStatsByBrowser.php on line 157
 Errors parsing wp-mail-smtp/wp-mail-smtp/vendor_prefixed/sendinblue/api-v3-sdk/lib/Model/GetStatsByBrowser.php
 No syntax errors detected in wp-mail-smtp/wp-mail-smtp/vendor_prefixed/sendinblue/api-v3-sdk/lib/Model/GetStatsByDevice.php
+
+Fatal error: Cannot use "parent" when current class scope has no parent in wp-mail-smtp/wp-mail-smtp/vendor_prefixed/sendinblue/api-v3-sdk/lib/Model/GetStatsByDomain.php on line 157
 Errors parsing wp-mail-smtp/wp-mail-smtp/vendor_prefixed/sendinblue/api-v3-sdk/lib/Model/GetStatsByDomain.php
 No syntax errors detected in wp-mail-smtp/wp-mail-smtp/vendor_prefixed/sendinblue/api-v3-sdk/lib/Model/GetTransacAggregatedSmsReport.php
 No syntax errors detected in wp-mail-smtp/wp-mail-smtp/vendor_prefixed/sendinblue/api-v3-sdk/lib/Model/GetTransacBlockedContactsContacts.php
@@ -670,8 +676,7 @@ No syntax errors detected in wp-mail-smtp/wp-mail-smtp/vendor_prefixed/symfony/p
 No syntax errors detected in wp-mail-smtp/wp-mail-smtp/vendor_prefixed/symfony/polyfill-php72/Php72.php
 No syntax errors detected in wp-mail-smtp/wp-mail-smtp/wp_mail_smtp.php
 No syntax errors detected in wp-mail-smtp/wp-mail-smtp/wp-mail-smtp.php
-::error::%0Avendor_prefixed/sendinblue/api-v3-sdk/lib/Model/GetChildDomains.php%0A%0Avendor_prefixed/sendinblue/api-v3-sdk/lib/Model/GetStatsByBrowser.php%0A%0Avendor_prefixed/sendinblue/api-v3-sdk/lib/Model/GetStatsByDomain.php
-No syntax errors detected in wp-mail-smtp/wp-mail-smtp/wp-mail-smtp.php
+::error::%0Avendor_prefixed/sendinblue/api-v3-sdk/lib/Model/GetChildDomains.php%0A  Fatal error: Cannot use "parent" when current class scope has no parent on line 157%0A%0Avendor_prefixed/sendinblue/api-v3-sdk/lib/Model/GetStatsByBrowser.php%0A  Fatal error: Cannot use "parent" when current class scope has no parent on line 157%0A%0Avendor_prefixed/sendinblue/api-v3-sdk/lib/Model/GetStatsByDomain.php%0A  Fatal error: Cannot use "parent" when current class scope has no parent on line 157
 ............................................................  60 / 656 (9%)
 ............................................................ 120 / 656 (18%)
 ............................................................ 180 / 656 (27%)
@@ -686,31 +691,34 @@ No syntax errors detected in wp-mail-smtp/wp-mail-smtp/wp-mail-smtp.php
 
 
 
-[1mFILE: vendor_prefixed/sendinblue/api-v3-sdk/lib/Model/GetChildDomains.php[0m
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[1mFILE: ...dor_prefixed/sendinblue/api-v3-sdk/lib/Model/GetChildDomains.php[0m
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 157 | [31mERROR[0m | [1mUsing "parent" inside a class without parent is deprecated since PHP 7.4 and removed since PHP 8.0[0m
+----------------------------------------------------------------------
+ 157 | [31mERROR[0m | [1mUsing "parent" inside a class without parent is
+     |       | deprecated since PHP 7.4 and removed since PHP 8.0[0m
      |       | (PHPCompatibility.Classes.RemovedOrphanedParent.Removed)
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
-[1mFILE: vendor_prefixed/sendinblue/api-v3-sdk/lib/Model/GetStatsByBrowser.php[0m
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[1mFILE: ...r_prefixed/sendinblue/api-v3-sdk/lib/Model/GetStatsByBrowser.php[0m
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 157 | [31mERROR[0m | [1mUsing "parent" inside a class without parent is deprecated since PHP 7.4 and removed since PHP 8.0[0m
+----------------------------------------------------------------------
+ 157 | [31mERROR[0m | [1mUsing "parent" inside a class without parent is
+     |       | deprecated since PHP 7.4 and removed since PHP 8.0[0m
      |       | (PHPCompatibility.Classes.RemovedOrphanedParent.Removed)
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
-[1mFILE: vendor_prefixed/sendinblue/api-v3-sdk/lib/Model/GetStatsByDomain.php[0m
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[1mFILE: ...or_prefixed/sendinblue/api-v3-sdk/lib/Model/GetStatsByDomain.php[0m
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 157 | [31mERROR[0m | [1mUsing "parent" inside a class without parent is deprecated since PHP 7.4 and removed since PHP 8.0[0m
+----------------------------------------------------------------------
+ 157 | [31mERROR[0m | [1mUsing "parent" inside a class without parent is
+     |       | deprecated since PHP 7.4 and removed since PHP 8.0[0m
      |       | (PHPCompatibility.Classes.RemovedOrphanedParent.Removed)
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
-Time: 18.91 secs; Memory: 54.01MB
-::error::FILE: vendor_prefixed/sendinblue/api-v3-sdk/lib/Model/GetChildDomains.php%0A---------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A---------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 157 | ERROR | Using "parent" inside a class without parent is deprecated since PHP 7.4 and removed since PHP 8.0%0A     |       | (PHPCompatibility.Classes.RemovedOrphanedParent.Removed)%0A---------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: vendor_prefixed/sendinblue/api-v3-sdk/lib/Model/GetStatsByBrowser.php%0A---------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A---------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 157 | ERROR | Using "parent" inside a class without parent is deprecated since PHP 7.4 and removed since PHP 8.0%0A     |       | (PHPCompatibility.Classes.RemovedOrphanedParent.Removed)%0A---------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: vendor_prefixed/sendinblue/api-v3-sdk/lib/Model/GetStatsByDomain.php%0A---------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A---------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 157 | ERROR | Using "parent" inside a class without parent is deprecated since PHP 7.4 and removed since PHP 8.0%0A     |       | (PHPCompatibility.Classes.RemovedOrphanedParent.Removed)%0A---------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
+Time: 15.18 secs; Memory: 54.01MB
+::error::FILE: ...dor_prefixed/sendinblue/api-v3-sdk/lib/Model/GetChildDomains.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 157 | ERROR | Using "parent" inside a class without parent is%0A     |       | deprecated since PHP 7.4 and removed since PHP 8.0%0A     |       | (PHPCompatibility.Classes.RemovedOrphanedParent.Removed)%0A----------------------------------------------------------------------%0A%0A%0AFILE: ...r_prefixed/sendinblue/api-v3-sdk/lib/Model/GetStatsByBrowser.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 157 | ERROR | Using "parent" inside a class without parent is%0A     |       | deprecated since PHP 7.4 and removed since PHP 8.0%0A     |       | (PHPCompatibility.Classes.RemovedOrphanedParent.Removed)%0A----------------------------------------------------------------------%0A%0A%0AFILE: ...or_prefixed/sendinblue/api-v3-sdk/lib/Model/GetStatsByDomain.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 157 | ERROR | Using "parent" inside a class without parent is%0A     |       | deprecated since PHP 7.4 and removed since PHP 8.0%0A     |       | (PHPCompatibility.Classes.RemovedOrphanedParent.Removed)%0A----------------------------------------------------------------------%0A
