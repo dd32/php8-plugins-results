@@ -1,0 +1,65 @@
+::warning::Plugin: https://wordpress.org/plugins/awesome-twitter-feeds/%0ATrac: https://plugins.trac.wordpress.org/browser/awesome-twitter-feeds/
+No syntax errors detected in awesome-twitter-feeds/awesome-twitter-feeds/classes/class-atf-admin.php
+No syntax errors detected in awesome-twitter-feeds/awesome-twitter-feeds/classes/class-atf-plugin.php
+No syntax errors detected in awesome-twitter-feeds/awesome-twitter-feeds/classes/class-atf-widget.php
+No syntax errors detected in awesome-twitter-feeds/awesome-twitter-feeds/inc/avs-metaboxes-master/classes/class.avs-metabox-field.php
+No syntax errors detected in awesome-twitter-feeds/awesome-twitter-feeds/inc/avs-metaboxes-master/classes/class.avs-metabox.php
+No syntax errors detected in awesome-twitter-feeds/awesome-twitter-feeds/inc/avs-metaboxes-master/classes/field-types/class.avs-metabox-field-checkbox.php
+No syntax errors detected in awesome-twitter-feeds/awesome-twitter-feeds/inc/avs-metaboxes-master/classes/field-types/class.avs-metabox-field-colorpicker.php
+No syntax errors detected in awesome-twitter-feeds/awesome-twitter-feeds/inc/avs-metaboxes-master/classes/field-types/class.avs-metabox-field-editor.php
+No syntax errors detected in awesome-twitter-feeds/awesome-twitter-feeds/inc/avs-metaboxes-master/classes/field-types/class.avs-metabox-field-email.php
+No syntax errors detected in awesome-twitter-feeds/awesome-twitter-feeds/inc/avs-metaboxes-master/classes/field-types/class.avs-metabox-field-image.php
+No syntax errors detected in awesome-twitter-feeds/awesome-twitter-feeds/inc/avs-metaboxes-master/classes/field-types/class.avs-metabox-field-number.php
+No syntax errors detected in awesome-twitter-feeds/awesome-twitter-feeds/inc/avs-metaboxes-master/classes/field-types/class.avs-metabox-field-select.php
+No syntax errors detected in awesome-twitter-feeds/awesome-twitter-feeds/inc/avs-metaboxes-master/classes/field-types/class.avs-metabox-field-textarea.php
+No syntax errors detected in awesome-twitter-feeds/awesome-twitter-feeds/inc/avs-metaboxes-master/classes/field-types/class.avs-metabox-field-text.php
+No syntax errors detected in awesome-twitter-feeds/awesome-twitter-feeds/inc/avs-metaboxes-master/classes/field-types/class.avs-metabox-field-url.php
+No syntax errors detected in awesome-twitter-feeds/awesome-twitter-feeds/inc/avs-metaboxes-master/examples/full.php
+No syntax errors detected in awesome-twitter-feeds/awesome-twitter-feeds/inc/avs-metaboxes-master/init.php
+No syntax errors detected in awesome-twitter-feeds/awesome-twitter-feeds/inc/twitteroauth-master/autoload.php
+No syntax errors detected in awesome-twitter-feeds/awesome-twitter-feeds/inc/twitteroauth-master/src/Config.php
+No syntax errors detected in awesome-twitter-feeds/awesome-twitter-feeds/inc/twitteroauth-master/src/Consumer.php
+No syntax errors detected in awesome-twitter-feeds/awesome-twitter-feeds/inc/twitteroauth-master/src/HmacSha1.php
+No syntax errors detected in awesome-twitter-feeds/awesome-twitter-feeds/inc/twitteroauth-master/src/Request.php
+No syntax errors detected in awesome-twitter-feeds/awesome-twitter-feeds/inc/twitteroauth-master/src/Response.php
+
+Fatal error: Array and string offset access syntax with curly braces is no longer supported in awesome-twitter-feeds/awesome-twitter-feeds/inc/twitteroauth-master/src/SignatureMethod.php on line 61
+Errors parsing awesome-twitter-feeds/awesome-twitter-feeds/inc/twitteroauth-master/src/SignatureMethod.php
+No syntax errors detected in awesome-twitter-feeds/awesome-twitter-feeds/inc/twitteroauth-master/src/Token.php
+No syntax errors detected in awesome-twitter-feeds/awesome-twitter-feeds/inc/twitteroauth-master/src/TwitterOAuthException.php
+No syntax errors detected in awesome-twitter-feeds/awesome-twitter-feeds/inc/twitteroauth-master/src/TwitterOAuth.php
+No syntax errors detected in awesome-twitter-feeds/awesome-twitter-feeds/inc/twitteroauth-master/src/Util/JsonDecoder.php
+No syntax errors detected in awesome-twitter-feeds/awesome-twitter-feeds/inc/twitteroauth-master/src/Util.php
+No syntax errors detected in awesome-twitter-feeds/awesome-twitter-feeds/inc/twitteroauth-master/tests/AbstractSignatureMethodTest.php
+No syntax errors detected in awesome-twitter-feeds/awesome-twitter-feeds/inc/twitteroauth-master/tests/bootstrap.php
+No syntax errors detected in awesome-twitter-feeds/awesome-twitter-feeds/inc/twitteroauth-master/tests/ConsumerTest.php
+No syntax errors detected in awesome-twitter-feeds/awesome-twitter-feeds/inc/twitteroauth-master/tests/HmacSha1Test.php
+No syntax errors detected in awesome-twitter-feeds/awesome-twitter-feeds/inc/twitteroauth-master/tests/TokenTest.php
+No syntax errors detected in awesome-twitter-feeds/awesome-twitter-feeds/inc/twitteroauth-master/tests/TwitterOAuthTest.php
+No syntax errors detected in awesome-twitter-feeds/awesome-twitter-feeds/inc/twitteroauth-master/tests/Util/JsonDecoderTest.php
+No syntax errors detected in awesome-twitter-feeds/awesome-twitter-feeds/main.php
+No syntax errors detected in awesome-twitter-feeds/awesome-twitter-feeds/templates/template-widget-admin.php
+No syntax errors detected in awesome-twitter-feeds/awesome-twitter-feeds/uninstall.php
+::error::%0Ainc/twitteroauth-master/src/SignatureMethod.php%0A  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 61
+.......................[32mE[0m............... 39 / 39 (100%)
+
+
+
+[1mFILE: inc/twitteroauth-master/src/SignatureMethod.php[0m
+----------------------------------------------------------------------
+[1mFOUND 2 ERRORS AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 61 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and
+    |       |     string offsets has been deprecated in PHP 7.4 and
+    |       |     removed in PHP 8.0. Found: $built{$i}[0m
+    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 61 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and
+    |       |     string offsets has been deprecated in PHP 7.4 and
+    |       |     removed in PHP 8.0. Found: $signature{$i}[0m
+    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+----------------------------------------------------------------------
+[1mPHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
+----------------------------------------------------------------------
+
+Time: 412ms; Memory: 12MB
+::error::FILE: inc/twitteroauth-master/src/SignatureMethod.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 61 | ERROR | [x] Curly brace syntax for accessing array elements and%0A    |       |     string offsets has been deprecated in PHP 7.4 and%0A    |       |     removed in PHP 8.0. Found: $built{$i}%0A    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 61 | ERROR | [x] Curly brace syntax for accessing array elements and%0A    |       |     string offsets has been deprecated in PHP 7.4 and%0A    |       |     removed in PHP 8.0. Found: $signature{$i}%0A    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A----------------------------------------------------------------------%0APHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A----------------------------------------------------------------------%0A

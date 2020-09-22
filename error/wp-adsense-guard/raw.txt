@@ -1,0 +1,41 @@
+::warning::Plugin: https://wordpress.org/plugins/wp-adsense-guard/%0ATrac: https://plugins.trac.wordpress.org/browser/wp-adsense-guard/
+No syntax errors detected in wp-adsense-guard/wp-adsense-guard/config.php
+No syntax errors detected in wp-adsense-guard/wp-adsense-guard/includes/agent.php
+No syntax errors detected in wp-adsense-guard/wp-adsense-guard/includes/AgentSrc/countries.php
+No syntax errors detected in wp-adsense-guard/wp-adsense-guard/includes/AgentSrc/Crawlers.php
+No syntax errors detected in wp-adsense-guard/wp-adsense-guard/includes/AgentSrc/index.php
+No syntax errors detected in wp-adsense-guard/wp-adsense-guard/includes/badwords.php
+No syntax errors detected in wp-adsense-guard/wp-adsense-guard/includes/base.php
+No syntax errors detected in wp-adsense-guard/wp-adsense-guard/includes/browser.php
+No syntax errors detected in wp-adsense-guard/wp-adsense-guard/includes/dictionary.php
+No syntax errors detected in wp-adsense-guard/wp-adsense-guard/includes/encriptor.php
+
+Fatal error: Unparenthesized `a ? b : c ? d : e` is not supported. Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)` in wp-adsense-guard/wp-adsense-guard/includes/functions.php on line 103
+Errors parsing wp-adsense-guard/wp-adsense-guard/includes/functions.php
+No syntax errors detected in wp-adsense-guard/wp-adsense-guard/includes/geoip.php
+No syntax errors detected in wp-adsense-guard/wp-adsense-guard/includes/help.php
+No syntax errors detected in wp-adsense-guard/wp-adsense-guard/includes/html.php
+No syntax errors detected in wp-adsense-guard/wp-adsense-guard/includes/mobile.php
+No syntax errors detected in wp-adsense-guard/wp-adsense-guard/index.php
+No syntax errors detected in wp-adsense-guard/wp-adsense-guard/modules/adblock.php
+No syntax errors detected in wp-adsense-guard/wp-adsense-guard/modules/guard.php
+No syntax errors detected in wp-adsense-guard/wp-adsense-guard/modules/nots.php
+::error::%0Aincludes/functions.php%0A  Fatal error: Unparenthesized `a ? b : c ? d : e` is not supported.%0A      Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)`%0A      on line 103
+..........[31mE[0m........ 19 / 19 (100%)
+
+
+
+[1mFILE: includes/functions.php[0m
+----------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 103 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has
+     |       | been deprecated in PHP 7.4 and removed in PHP 8.0.
+     |       | Multiple consecutive ternaries detected. Use
+     |       | parenthesis to clarify the order in which the
+     |       | operations should be executed[0m
+     |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
+----------------------------------------------------------------------
+
+Time: 1.67 secs; Memory: 28MB
+::error::FILE: includes/functions.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 103 | ERROR | The left-associativity of the ternary operator has%0A     |       | been deprecated in PHP 7.4 and removed in PHP 8.0.%0A     |       | Multiple consecutive ternaries detected. Use%0A     |       | parenthesis to clarify the order in which the%0A     |       | operations should be executed%0A     |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A----------------------------------------------------------------------%0A
