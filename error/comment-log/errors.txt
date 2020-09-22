@@ -1,0 +1,358 @@
+
+commentlog.php
+  Parse error: syntax error, unexpected token "new" on line 84
+
+PEAR/HTTP/Client/CookieManager.php
+  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 208
+
+PEAR/HTTP/Client.php
+  Parse error: syntax error, unexpected token "new" on line 147
+
+PEAR/HTTP/Request.php
+  Parse error: syntax error, unexpected token "new" on line 402
+
+PEAR/Net/URL.php
+  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 193
+
+PEAR/Pager/Common.php
+  Parse error: syntax error, unexpected token "new" on line 1266
+
+PEAR/XML/Parser.php
+  Parse error: syntax error, unexpected token "new" on line 576
+
+PEAR/XML/Unserializer.php
+  Parse error: syntax error, unexpected token "new" on line 689
+
+PEAR/XML/Util.php
+  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 723
+FILE: commentlog.php
+----------------------------------------------------------------------
+FOUND 6 ERRORS AFFECTING 6 LINES
+----------------------------------------------------------------------
+  84 | ERROR | Assigning the return value of new by reference is
+     |       | deprecated in PHP 5.3 and has been removed in PHP
+     |       | 7.0
+     |       | (PHPCompatibility.Syntax.RemovedNewReference.Removed)
+ 169 | ERROR | Assigning the return value of new by reference is
+     |       | deprecated in PHP 5.3 and has been removed in PHP
+     |       | 7.0
+     |       | (PHPCompatibility.Syntax.RemovedNewReference.Removed)
+ 282 | ERROR | Assigning the return value of new by reference is
+     |       | deprecated in PHP 5.3 and has been removed in PHP
+     |       | 7.0
+     |       | (PHPCompatibility.Syntax.RemovedNewReference.Removed)
+ 297 | ERROR | Assigning the return value of new by reference is
+     |       | deprecated in PHP 5.3 and has been removed in PHP
+     |       | 7.0
+     |       | (PHPCompatibility.Syntax.RemovedNewReference.Removed)
+ 299 | ERROR | Assigning the return value of new by reference is
+     |       | deprecated in PHP 5.3 and has been removed in PHP
+     |       | 7.0
+     |       | (PHPCompatibility.Syntax.RemovedNewReference.Removed)
+ 409 | ERROR | Assigning the return value of new by reference is
+     |       | deprecated in PHP 5.3 and has been removed in PHP
+     |       | 7.0
+     |       | (PHPCompatibility.Syntax.RemovedNewReference.Removed)
+----------------------------------------------------------------------
+
+
+FILE: PEAR/HTML/Common.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 80 | ERROR | Declaration of a PHP4 style class constructor is
+    |       | deprecated since PHP 7.0 and removed since PHP 8.0
+    |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+----------------------------------------------------------------------
+
+
+FILE: PEAR/HTTP/Client/CookieManager.php
+----------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+----------------------------------------------------------------------
+  78 | ERROR | [ ] Declaration of a PHP4 style class constructor is
+     |       |     deprecated since PHP 7.0 and removed since PHP
+     |       |     8.0
+     |       |     (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+ 208 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found:
+     |       |     $cookieDomain{0}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------
+
+
+FILE: PEAR/HTTP/Client.php
+----------------------------------------------------------------------
+FOUND 4 ERRORS AFFECTING 4 LINES
+----------------------------------------------------------------------
+ 142 | ERROR | [ ] Declaration of a PHP4 style class constructor is
+     |       |     deprecated since PHP 7.0 and removed since PHP
+     |       |     8.0
+     |       |     (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+ 147 | ERROR | [ ] Assigning the return value of new by reference is
+     |       |     deprecated in PHP 5.3 and has been removed in PHP
+     |       |     7.0
+     |       |     (PHPCompatibility.Syntax.RemovedNewReference.Removed)
+ 196 | ERROR | [ ] Assigning the return value of new by reference is
+     |       |     deprecated in PHP 5.3 and has been removed in PHP
+     |       |     7.0
+     |       |     (PHPCompatibility.Syntax.RemovedNewReference.Removed)
+ 522 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $location{0}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------
+
+
+FILE: PEAR/HTTP/Request/Listener.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 70 | ERROR | Declaration of a PHP4 style class constructor is
+    |       | deprecated since PHP 7.0 and removed since PHP 8.0
+    |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+----------------------------------------------------------------------
+
+
+FILE: PEAR/HTTP/Request.php
+----------------------------------------------------------------------
+FOUND 19 ERRORS AFFECTING 19 LINES
+----------------------------------------------------------------------
+   63 | ERROR | [ ] The "case_insensitive" parameter for function
+      |       |     define() is deprecated since PHP 7.3 and removed
+      |       |     since PHP 8.0
+      |       |     (PHPCompatibility.FunctionUse.RemovedFunctionParameters.define_case_insensitiveDeprecatedRemoved)
+   64 | ERROR | [ ] The "case_insensitive" parameter for function
+      |       |     define() is deprecated since PHP 7.3 and removed
+      |       |     since PHP 8.0
+      |       |     (PHPCompatibility.FunctionUse.RemovedFunctionParameters.define_case_insensitiveDeprecatedRemoved)
+   65 | ERROR | [ ] The "case_insensitive" parameter for function
+      |       |     define() is deprecated since PHP 7.3 and removed
+      |       |     since PHP 8.0
+      |       |     (PHPCompatibility.FunctionUse.RemovedFunctionParameters.define_case_insensitiveDeprecatedRemoved)
+   66 | ERROR | [ ] The "case_insensitive" parameter for function
+      |       |     define() is deprecated since PHP 7.3 and removed
+      |       |     since PHP 8.0
+      |       |     (PHPCompatibility.FunctionUse.RemovedFunctionParameters.define_case_insensitiveDeprecatedRemoved)
+   67 | ERROR | [ ] The "case_insensitive" parameter for function
+      |       |     define() is deprecated since PHP 7.3 and removed
+      |       |     since PHP 8.0
+      |       |     (PHPCompatibility.FunctionUse.RemovedFunctionParameters.define_case_insensitiveDeprecatedRemoved)
+   68 | ERROR | [ ] The "case_insensitive" parameter for function
+      |       |     define() is deprecated since PHP 7.3 and removed
+      |       |     since PHP 8.0
+      |       |     (PHPCompatibility.FunctionUse.RemovedFunctionParameters.define_case_insensitiveDeprecatedRemoved)
+   69 | ERROR | [ ] The "case_insensitive" parameter for function
+      |       |     define() is deprecated since PHP 7.3 and removed
+      |       |     since PHP 8.0
+      |       |     (PHPCompatibility.FunctionUse.RemovedFunctionParameters.define_case_insensitiveDeprecatedRemoved)
+   89 | ERROR | [ ] The "case_insensitive" parameter for function
+      |       |     define() is deprecated since PHP 7.3 and removed
+      |       |     since PHP 8.0
+      |       |     (PHPCompatibility.FunctionUse.RemovedFunctionParameters.define_case_insensitiveDeprecatedRemoved)
+   90 | ERROR | [ ] The "case_insensitive" parameter for function
+      |       |     define() is deprecated since PHP 7.3 and removed
+      |       |     since PHP 8.0
+      |       |     (PHPCompatibility.FunctionUse.RemovedFunctionParameters.define_case_insensitiveDeprecatedRemoved)
+  302 | ERROR | [ ] Declaration of a PHP4 style class constructor is
+      |       |     deprecated since PHP 7.0 and removed since PHP
+      |       |     8.0
+      |       |     (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+  402 | ERROR | [ ] Assigning the return value of new by reference is
+      |       |     deprecated in PHP 5.3 and has been removed in PHP
+      |       |     7.0
+      |       |     (PHPCompatibility.Syntax.RemovedNewReference.Removed)
+  696 | ERROR | [ ] INI directive 'magic_quotes_runtime' is
+      |       |     deprecated since PHP 5.3 and removed since PHP
+      |       |     5.4
+      |       |     (PHPCompatibility.IniDirectives.RemovedIniDirectives.magic_quotes_runtimeDeprecatedRemoved)
+  720 | ERROR | [ ] Assigning the return value of new by reference is
+      |       |     deprecated in PHP 5.3 and has been removed in PHP
+      |       |     7.0
+      |       |     (PHPCompatibility.Syntax.RemovedNewReference.Removed)
+  733 | ERROR | [ ] Assigning the return value of new by reference is
+      |       |     deprecated in PHP 5.3 and has been removed in PHP
+      |       |     7.0
+      |       |     (PHPCompatibility.Syntax.RemovedNewReference.Removed)
+  753 | ERROR | [ ] INI directive 'magic_quotes_runtime' is
+      |       |     deprecated since PHP 5.3 and removed since PHP
+      |       |     5.4
+      |       |     (PHPCompatibility.IniDirectives.RemovedIniDirectives.magic_quotes_runtimeDeprecatedRemoved)
+  778 | ERROR | [ ] Assigning the return value of new by reference is
+      |       |     deprecated in PHP 5.3 and has been removed in PHP
+      |       |     7.0
+      |       |     (PHPCompatibility.Syntax.RemovedNewReference.Removed)
+  781 | ERROR | [x] Curly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found: $redirect{0}
+      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+  939 | ERROR | [ ] Function create_function() is deprecated since
+      |       |     PHP 7.2 and removed since PHP 8.0; Use an
+      |       |     anonymous function instead
+      |       |     (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
+ 1163 | ERROR | [ ] Declaration of a PHP4 style class constructor is
+      |       |     deprecated since PHP 7.0 and removed since PHP
+      |       |     8.0
+      |       |     (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------
+
+
+FILE: PEAR/Net/URL.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 193 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $value{0}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------
+
+
+FILE: PEAR/Pager/Common.php
+----------------------------------------------------------------------
+FOUND 3 ERRORS AFFECTING 3 LINES
+----------------------------------------------------------------------
+  974 | ERROR | Function get_magic_quotes_gpc() is deprecated since
+      |       | PHP 7.4 and removed since PHP 8.0
+      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_gpcDeprecatedRemoved)
+ 1266 | ERROR | Assigning the return value of new by reference is
+      |       | deprecated in PHP 5.3 and has been removed in PHP
+      |       | 7.0
+      |       | (PHPCompatibility.Syntax.RemovedNewReference.Removed)
+ 1292 | ERROR | Assigning the return value of new by reference is
+      |       | deprecated in PHP 5.3 and has been removed in PHP
+      |       | 7.0
+      |       | (PHPCompatibility.Syntax.RemovedNewReference.Removed)
+----------------------------------------------------------------------
+
+
+FILE: PEAR/Pager/HtmlWidgets.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 60 | ERROR | Declaration of a PHP4 style class constructor is
+    |       | deprecated since PHP 7.0 and removed since PHP 8.0
+    |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+----------------------------------------------------------------------
+
+
+FILE: PEAR/Pager/Jumping.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 68 | ERROR | Declaration of a PHP4 style class constructor is
+    |       | deprecated since PHP 7.0 and removed since PHP 8.0
+    |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+----------------------------------------------------------------------
+
+
+FILE: PEAR/Pager/Pager.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 141 | ERROR | Declaration of a PHP4 style class constructor is
+     |       | deprecated since PHP 7.0 and removed since PHP 8.0
+     |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+----------------------------------------------------------------------
+
+
+FILE: PEAR/Pager/Sliding.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 66 | ERROR | Declaration of a PHP4 style class constructor is
+    |       | deprecated since PHP 7.0 and removed since PHP 8.0
+    |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+----------------------------------------------------------------------
+
+
+FILE: PEAR/XML/Parser/Simple.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 131 | ERROR | Declaration of a PHP4 style class constructor is
+     |       | deprecated since PHP 7.0 and removed since PHP 8.0
+     |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+----------------------------------------------------------------------
+
+
+FILE: PEAR/XML/Parser.php
+----------------------------------------------------------------------
+FOUND 6 ERRORS AFFECTING 4 LINES
+----------------------------------------------------------------------
+ 388 | ERROR | Extension 'ereg' is deprecated since PHP 5.3 and
+     |       | removed since PHP 7.0; Use pcre instead
+     |       | (PHPCompatibility.Extensions.RemovedExtensions.eregDeprecatedRemoved)
+ 388 | ERROR | Function eregi() is deprecated since PHP 5.3 and
+     |       | removed since PHP 7.0; Use preg_match() (with the i
+     |       | modifier) instead
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eregiDeprecatedRemoved)
+ 441 | ERROR | Extension 'ereg' is deprecated since PHP 5.3 and
+     |       | removed since PHP 7.0; Use pcre instead
+     |       | (PHPCompatibility.Extensions.RemovedExtensions.eregDeprecatedRemoved)
+ 441 | ERROR | Function eregi() is deprecated since PHP 5.3 and
+     |       | removed since PHP 7.0; Use preg_match() (with the i
+     |       | modifier) instead
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eregiDeprecatedRemoved)
+ 576 | ERROR | Assigning the return value of new by reference is
+     |       | deprecated in PHP 5.3 and has been removed in PHP
+     |       | 7.0
+     |       | (PHPCompatibility.Syntax.RemovedNewReference.Removed)
+ 677 | ERROR | Declaration of a PHP4 style class constructor is
+     |       | deprecated since PHP 7.0 and removed since PHP 8.0
+     |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+----------------------------------------------------------------------
+
+
+FILE: PEAR/XML/Serializer.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 493 | ERROR | Declaration of a PHP4 style class constructor is
+     |       | deprecated since PHP 7.0 and removed since PHP 8.0
+     |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+----------------------------------------------------------------------
+
+
+FILE: PEAR/XML/Unserializer.php
+----------------------------------------------------------------------
+FOUND 4 ERRORS AFFECTING 4 LINES
+----------------------------------------------------------------------
+ 372 | ERROR | Declaration of a PHP4 style class constructor is
+     |       | deprecated since PHP 7.0 and removed since PHP 8.0
+     |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+ 689 | ERROR | Assigning the return value of new by reference is
+     |       | deprecated in PHP 5.3 and has been removed in PHP
+     |       | 7.0
+     |       | (PHPCompatibility.Syntax.RemovedNewReference.Removed)
+ 691 | ERROR | Assigning the return value of new by reference is
+     |       | deprecated in PHP 5.3 and has been removed in PHP
+     |       | 7.0
+     |       | (PHPCompatibility.Syntax.RemovedNewReference.Removed)
+ 850 | ERROR | Assigning the return value of new by reference is
+     |       | deprecated in PHP 5.3 and has been removed in PHP
+     |       | 7.0
+     |       | (PHPCompatibility.Syntax.RemovedNewReference.Removed)
+----------------------------------------------------------------------
+
+
+FILE: PEAR/XML/Util.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 723 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $string{0}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------

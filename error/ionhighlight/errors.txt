@@ -1,0 +1,94 @@
+
+syntaxhighlighter.php
+  Parse error: syntax error, unexpected token "new" on line 92
+
+Text/Highlighter/Generator.php
+  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 442
+
+Text/Highlighter/Renderer/XML.php
+  Parse error: syntax error, unexpected token "new" on line 86
+
+Text/Highlighter.php
+  Parse error: syntax error, unexpected token "new" on line 210
+FILE: PEAR.php
+----------------------------------------------------------------------
+FOUND 4 ERRORS AFFECTING 4 LINES
+----------------------------------------------------------------------
+  55 | ERROR | INI directive 'track_errors' is deprecated since PHP
+     |       | 7.2 and removed since PHP 8.0
+     |       | (PHPCompatibility.IniDirectives.RemovedIniDirectives.track_errorsDeprecatedRemoved)
+ 155 | ERROR | Declaration of a PHP4 style class constructor is
+     |       | deprecated since PHP 7.0 and removed since PHP 8.0
+     |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+ 788 | ERROR | Function each() is deprecated since PHP 7.2 and
+     |       | removed since PHP 8.0; Use a foreach loop or
+     |       | ArrayIterator instead
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)
+ 866 | ERROR | Declaration of a PHP4 style class constructor is
+     |       | deprecated since PHP 7.0 and removed since PHP 8.0
+     |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+----------------------------------------------------------------------
+
+
+FILE: syntaxhighlighter.php
+----------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+----------------------------------------------------------------------
+  92 | ERROR | Assigning the return value of new by reference is
+     |       | deprecated in PHP 5.3 and has been removed in PHP
+     |       | 7.0
+     |       | (PHPCompatibility.Syntax.RemovedNewReference.Removed)
+ 106 | ERROR | Assigning the return value of new by reference is
+     |       | deprecated in PHP 5.3 and has been removed in PHP
+     |       | 7.0
+     |       | (PHPCompatibility.Syntax.RemovedNewReference.Removed)
+----------------------------------------------------------------------
+
+
+FILE: Text/Highlighter/Generator.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 442 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $text{0}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------
+
+
+FILE: Text/Highlighter/Renderer/Console.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 182 | ERROR | preg_replace() - /e modifier is deprecated since PHP
+     |       | 5.5 and removed since PHP 7.0
+     |       | (PHPCompatibility.ParameterValues.RemovedPCREModifiers.Removed)
+----------------------------------------------------------------------
+
+
+FILE: Text/Highlighter/Renderer/XML.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 86 | ERROR | Assigning the return value of new by reference is
+    |       | deprecated in PHP 5.3 and has been removed in PHP
+    |       | 7.0
+    |       | (PHPCompatibility.Syntax.RemovedNewReference.Removed)
+----------------------------------------------------------------------
+
+
+FILE: Text/Highlighter.php
+----------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+----------------------------------------------------------------------
+ 210 | ERROR | Assigning the return value of new by reference is
+     |       | deprecated in PHP 5.3 and has been removed in PHP
+     |       | 7.0
+     |       | (PHPCompatibility.Syntax.RemovedNewReference.Removed)
+ 364 | ERROR | Assigning the return value of new by reference is
+     |       | deprecated in PHP 5.3 and has been removed in PHP
+     |       | 7.0
+     |       | (PHPCompatibility.Syntax.RemovedNewReference.Removed)
+----------------------------------------------------------------------
