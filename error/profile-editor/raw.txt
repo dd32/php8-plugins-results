@@ -1,0 +1,38 @@
+::warning::Plugin: https://wordpress.org/plugins/profile-editor/%0ATrac: https://plugins.trac.wordpress.org/browser/profile-editor/
+No syntax errors detected in profile-editor/profile-editor/includes/class-profile-editor.php
+No syntax errors detected in profile-editor/profile-editor/includes/class-profile-editor-settings.php
+No syntax errors detected in profile-editor/profile-editor/includes/lib/class-profile-editor-admin-api.php
+No syntax errors detected in profile-editor/profile-editor/includes/lib/class-profile-editor-post-type.php
+No syntax errors detected in profile-editor/profile-editor/includes/lib/class-profile-editor-taxonomy.php
+No syntax errors detected in profile-editor/profile-editor/includes/widgets/widget-frontend-login.php
+No syntax errors detected in profile-editor/profile-editor/index.php
+No syntax errors detected in profile-editor/profile-editor/profile-editor.php
+No syntax errors detected in profile-editor/profile-editor/templates/loggedin-state.php
+No syntax errors detected in profile-editor/profile-editor/templates/login-form.php
+No syntax errors detected in profile-editor/profile-editor/uninstall.php
+.[31mE[0m...[31mE[0m..... 11 / 11 (100%)
+
+
+
+[1mFILE: includes/class-profile-editor-settings.php[0m
+----------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 386 | [31mERROR[0m | [1mFunction create_function() is deprecated since PHP 7.2
+     |       | and removed since PHP 8.0; Use an anonymous function
+     |       | instead[0m
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
+----------------------------------------------------------------------
+
+
+[1mFILE: includes/widgets/widget-frontend-login.php[0m
+----------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 8 | [31mERROR[0m | [1mDeclaration of a PHP4 style class constructor is
+   |       | deprecated since PHP 7.0 and removed since PHP 8.0[0m
+   |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+----------------------------------------------------------------------
+
+Time: 450ms; Memory: 26MB
+::error::FILE: includes/class-profile-editor-settings.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 386 | ERROR | Function create_function() is deprecated since PHP 7.2%0A     |       | and removed since PHP 8.0; Use an anonymous function%0A     |       | instead%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)%0A----------------------------------------------------------------------%0A%0A%0AFILE: includes/widgets/widget-frontend-login.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 8 | ERROR | Declaration of a PHP4 style class constructor is%0A   |       | deprecated since PHP 7.0 and removed since PHP 8.0%0A   |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)%0A----------------------------------------------------------------------%0A
