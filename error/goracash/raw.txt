@@ -16,6 +16,8 @@ No syntax errors detected in goracash/goracash/includes/goracash-api-php-client/
 No syntax errors detected in goracash/goracash/includes/goracash-api-php-client/src/Logger/Clean.php
 No syntax errors detected in goracash/goracash/includes/goracash-api-php-client/src/Logger/Exception.php
 No syntax errors detected in goracash/goracash/includes/goracash-api-php-client/src/Logger/File.php
+
+Fatal error: Cannot use 'Null' as class name as it is reserved in goracash/goracash/includes/goracash-api-php-client/src/Logger/Null.php on line 26
 Errors parsing goracash/goracash/includes/goracash-api-php-client/src/Logger/Null.php
 No syntax errors detected in goracash/goracash/includes/goracash-api-php-client/src/Logger/Primary.php
 No syntax errors detected in goracash/goracash/includes/goracash-api-php-client/src/Logger/Psr.php
@@ -57,18 +59,20 @@ No syntax errors detected in goracash/goracash/includes/iframe.php
 No syntax errors detected in goracash/goracash/includes/iframe.widget.php
 No syntax errors detected in goracash/goracash/uninstall.php
 No syntax errors detected in goracash/goracash/wp-goracash.php
-::error::%0Aincludes/goracash-api-php-client/src/Logger/Null.php
+::error::%0Aincludes/goracash-api-php-client/src/Logger/Null.php%0A  Fatal error: Cannot use 'Null' as class name as it is reserved on line 26
 .................[31mE[0m........................................ 58 / 58 (100%)
 
 
 
 [1mFILE: includes/goracash-api-php-client/src/Logger/Null.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 26 | [31mERROR[0m | [1m'null' is a reserved keyword as of PHP version 7.0 and should not be used to name a class, interface or trait or as part of a namespace (T_CLASS)[0m
+----------------------------------------------------------------------
+ 26 | [31mERROR[0m | [1m'null' is a reserved keyword as of PHP version 7.0 and
+    |       | should not be used to name a class, interface or trait
+    |       | or as part of a namespace (T_CLASS)[0m
     |       | (PHPCompatibility.Keywords.ForbiddenNamesAsDeclared.nullFound)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
-Time: 1.25 secs; Memory: 14MB
-::error::FILE: includes/goracash-api-php-client/src/Logger/Null.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 26 | ERROR | 'null' is a reserved keyword as of PHP version 7.0 and should not be used to name a class, interface or trait or as part of a namespace (T_CLASS)%0A    |       | (PHPCompatibility.Keywords.ForbiddenNamesAsDeclared.nullFound)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
+Time: 1.11 secs; Memory: 14MB
+::error::FILE: includes/goracash-api-php-client/src/Logger/Null.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 26 | ERROR | 'null' is a reserved keyword as of PHP version 7.0 and%0A    |       | should not be used to name a class, interface or trait%0A    |       | or as part of a namespace (T_CLASS)%0A    |       | (PHPCompatibility.Keywords.ForbiddenNamesAsDeclared.nullFound)%0A----------------------------------------------------------------------%0A
