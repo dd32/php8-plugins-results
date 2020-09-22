@@ -1,24 +1,30 @@
 ::warning::Plugin: https://wordpress.org/plugins/customer-manager-for-woocommerce/%0ATrac: https://plugins.trac.wordpress.org/browser/customer-manager-for-woocommerce/
 No syntax errors detected in customer-manager-for-woocommerce/customer-manager-for-woocommerce/includes/cust_magr_zero_order.php
 No syntax errors detected in customer-manager-for-woocommerce/customer-manager-for-woocommerce/includes/cust_mgr_guest.php
+
+Fatal error: Unparenthesized `a ? b : c ? d : e` is not supported. Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)` in customer-manager-for-woocommerce/customer-manager-for-woocommerce/includes/cust_mgr_registered.php on line 97
 Errors parsing customer-manager-for-woocommerce/customer-manager-for-woocommerce/includes/cust_mgr_registered.php
 No syntax errors detected in customer-manager-for-woocommerce/customer-manager-for-woocommerce/includes/pagesetting.php
 No syntax errors detected in customer-manager-for-woocommerce/customer-manager-for-woocommerce/libs/execute-libs.php
 No syntax errors detected in customer-manager-for-woocommerce/customer-manager-for-woocommerce/libs/tgm/class-tgm-init.php
 No syntax errors detected in customer-manager-for-woocommerce/customer-manager-for-woocommerce/libs/tgm/class-tgm-plugin-activation.php
 No syntax errors detected in customer-manager-for-woocommerce/customer-manager-for-woocommerce/mainfilter.php
-::error::%0Aincludes/cust_mgr_registered.php
+::error::%0Aincludes/cust_mgr_registered.php%0A  Fatal error: Unparenthesized `a ? b : c ? d : e` is not supported.%0A      Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)`%0A      on line 97
 ..[31mE[0m..... 8 / 8 (100%)
 
 
 
 [1mFILE: includes/cust_mgr_registered.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 97 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has been deprecated in PHP 7.4 and removed in PHP 8.0. Multiple consecutive ternaries detected. Use parenthesis to
-    |       | clarify the order in which the operations should be executed[0m (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
+ 97 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has been
+    |       | deprecated in PHP 7.4 and removed in PHP 8.0. Multiple
+    |       | consecutive ternaries detected. Use parenthesis to
+    |       | clarify the order in which the operations should be
+    |       | executed[0m
+    |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
+----------------------------------------------------------------------
 
-Time: 539ms; Memory: 36MB
-::error::FILE: includes/cust_mgr_registered.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 97 | ERROR | The left-associativity of the ternary operator has been deprecated in PHP 7.4 and removed in PHP 8.0. Multiple consecutive ternaries detected. Use parenthesis to%0A    |       | clarify the order in which the operations should be executed (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
+Time: 538ms; Memory: 36MB
+::error::FILE: includes/cust_mgr_registered.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 97 | ERROR | The left-associativity of the ternary operator has been%0A    |       | deprecated in PHP 7.4 and removed in PHP 8.0. Multiple%0A    |       | consecutive ternaries detected. Use parenthesis to%0A    |       | clarify the order in which the operations should be%0A    |       | executed%0A    |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A----------------------------------------------------------------------%0A

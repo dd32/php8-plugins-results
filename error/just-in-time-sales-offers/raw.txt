@@ -35,6 +35,8 @@ No syntax errors detected in just-in-time-sales-offers/just-in-time-sales-offers
 No syntax errors detected in just-in-time-sales-offers/just-in-time-sales-offers/models/offer/class-jitso-offer-shortcode.php
 No syntax errors detected in just-in-time-sales-offers/just-in-time-sales-offers/models/offer/index.php
 No syntax errors detected in just-in-time-sales-offers/just-in-time-sales-offers/models/plugin-integrations/index.php
+
+Fatal error: Unparenthesized `a ? b : c ? d : e` is not supported. Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)` in just-in-time-sales-offers/just-in-time-sales-offers/models/plugin-integrations/woocommerce-composite-products/class-jitso-woocommerce-composite-products.php on line 182
 Errors parsing just-in-time-sales-offers/just-in-time-sales-offers/models/plugin-integrations/woocommerce-composite-products/class-jitso-woocommerce-composite-products.php
 No syntax errors detected in just-in-time-sales-offers/just-in-time-sales-offers/models/plugin-integrations/woocommerce-composite-products/index.php
 No syntax errors detected in just-in-time-sales-offers/just-in-time-sales-offers/models/plugin-integrations/woocommerce-product-bundles/class-jitso-woocommerce-product-bundles.php
@@ -54,18 +56,22 @@ No syntax errors detected in just-in-time-sales-offers/just-in-time-sales-offers
 No syntax errors detected in just-in-time-sales-offers/just-in-time-sales-offers/views/offer/cpt/sales-offer-pages-meta-box.php
 No syntax errors detected in just-in-time-sales-offers/just-in-time-sales-offers/views/offer/cpt/view-just-in-time-sales-offers-upgrade-meta-box.php
 No syntax errors detected in just-in-time-sales-offers/just-in-time-sales-offers/views/offer/index.php
-::error::%0Amodels/plugin-integrations/woocommerce-composite-products/class-jitso-woocommerce-composite-products.php
+::error::%0Amodels/plugin-integrations/woocommerce-composite-products/class-jitso-woocommerce-composite-products.php%0A  Fatal error: Unparenthesized `a ? b : c ? d : e` is not supported.%0A      Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)`%0A      on line 182
 ....................................[31mE[0m.................. 55 / 55 (100%)
 
 
 
-[1mFILE: models/plugin-integrations/woocommerce-composite-products/class-jitso-woocommerce-composite-products.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[1mFILE: ...omposite-products/class-jitso-woocommerce-composite-products.php[0m
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 182 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has been deprecated in PHP 7.4 and removed in PHP 8.0. Multiple consecutive ternaries detected. Use parenthesis to
-     |       | clarify the order in which the operations should be executed[0m (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
+ 182 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has
+     |       | been deprecated in PHP 7.4 and removed in PHP 8.0.
+     |       | Multiple consecutive ternaries detected. Use
+     |       | parenthesis to clarify the order in which the
+     |       | operations should be executed[0m
+     |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
+----------------------------------------------------------------------
 
-Time: 1.42 secs; Memory: 16MB
-::error::FILE: models/plugin-integrations/woocommerce-composite-products/class-jitso-woocommerce-composite-products.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 182 | ERROR | The left-associativity of the ternary operator has been deprecated in PHP 7.4 and removed in PHP 8.0. Multiple consecutive ternaries detected. Use parenthesis to%0A     |       | clarify the order in which the operations should be executed (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
+Time: 990ms; Memory: 16MB
+::error::FILE: ...omposite-products/class-jitso-woocommerce-composite-products.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 182 | ERROR | The left-associativity of the ternary operator has%0A     |       | been deprecated in PHP 7.4 and removed in PHP 8.0.%0A     |       | Multiple consecutive ternaries detected. Use%0A     |       | parenthesis to clarify the order in which the%0A     |       | operations should be executed%0A     |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A----------------------------------------------------------------------%0A
