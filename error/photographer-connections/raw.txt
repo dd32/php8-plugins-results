@@ -1,0 +1,61 @@
+::warning::Plugin: https://wordpress.org/plugins/photographer-connections/%0ATrac: https://plugins.trac.wordpress.org/browser/photographer-connections/
+No syntax errors detected in photographer-connections/photographer-connections/library/functions/curl.php
+No syntax errors detected in photographer-connections/photographer-connections/modules/album-exposure/templates/page-album-exposure.php
+No syntax errors detected in photographer-connections/photographer-connections/modules/album-exposure.php
+No syntax errors detected in photographer-connections/photographer-connections/modules/pictage.php
+No syntax errors detected in photographer-connections/photographer-connections/modules/shootq.php
+No syntax errors detected in photographer-connections/photographer-connections/modules/smugmug/functions/smugmug-categories.php
+No syntax errors detected in photographer-connections/photographer-connections/modules/smugmug/functions/Untitled.php
+No syntax errors detected in photographer-connections/photographer-connections/modules/smugmug/phpSmug.php
+No syntax errors detected in photographer-connections/photographer-connections/modules/smugmug.php
+No syntax errors detected in photographer-connections/photographer-connections/module-sample.php
+No syntax errors detected in photographer-connections/photographer-connections/photographer-connections.php
+....[31mE[0m..[31mE[0m[31mE[0m.. 11 / 11 (100%)
+
+
+
+[1mFILE: modules/shootq.php[0m
+----------------------------------------------------------------------
+[1mFOUND 2 ERRORS AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 101 | [31mERROR[0m | [1mExtension 'ereg' is deprecated since PHP 5.3 and
+     |       | removed since PHP 7.0; Use pcre instead[0m
+     |       | (PHPCompatibility.Extensions.RemovedExtensions.eregDeprecatedRemoved)
+ 101 | [31mERROR[0m | [1mFunction eregi() is deprecated since PHP 5.3 and
+     |       | removed since PHP 7.0; Use preg_match() (with the i
+     |       | modifier) instead[0m
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eregiDeprecatedRemoved)
+----------------------------------------------------------------------
+
+
+[1mFILE: modules/smugmug/phpSmug.php[0m
+----------------------------------------------------------------------
+[1mFOUND 2 ERRORS AFFECTING 2 LINES[0m
+----------------------------------------------------------------------
+  988 | [31mERROR[0m | [1mThe "result" parameter for function parse_str() is
+      |       | missing. Passing this parameter is no longer
+      |       | optional. The optional nature of the parameter is
+      |       | deprecated since PHP 7.2 and removed since PHP
+      |       | 8.0[0m
+      |       | (PHPCompatibility.FunctionUse.OptionalToRequiredFunctionParameters.parse_str_resultSoftRequiredHardRequired)
+ 1199 | [31mERROR[0m | [1mThe "result" parameter for function parse_str() is
+      |       | missing. Passing this parameter is no longer
+      |       | optional. The optional nature of the parameter is
+      |       | deprecated since PHP 7.2 and removed since PHP
+      |       | 8.0[0m
+      |       | (PHPCompatibility.FunctionUse.OptionalToRequiredFunctionParameters.parse_str_resultSoftRequiredHardRequired)
+----------------------------------------------------------------------
+
+
+[1mFILE: modules/smugmug.php[0m
+----------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 179 | [31mERROR[0m | [1mFunction session_unregister() is deprecated since PHP
+     |       | 5.3 and removed since PHP 5.4; Use $_SESSION
+     |       | instead[0m
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.session_unregisterDeprecatedRemoved)
+----------------------------------------------------------------------
+
+Time: 390ms; Memory: 20MB
+::error::FILE: modules/shootq.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 101 | ERROR | Extension 'ereg' is deprecated since PHP 5.3 and%0A     |       | removed since PHP 7.0; Use pcre instead%0A     |       | (PHPCompatibility.Extensions.RemovedExtensions.eregDeprecatedRemoved)%0A 101 | ERROR | Function eregi() is deprecated since PHP 5.3 and%0A     |       | removed since PHP 7.0; Use preg_match() (with the i%0A     |       | modifier) instead%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eregiDeprecatedRemoved)%0A----------------------------------------------------------------------%0A%0A%0AFILE: modules/smugmug/phpSmug.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A----------------------------------------------------------------------%0A  988 | ERROR | The "result" parameter for function parse_str() is%0A      |       | missing. Passing this parameter is no longer%0A      |       | optional. The optional nature of the parameter is%0A      |       | deprecated since PHP 7.2 and removed since PHP%0A      |       | 8.0%0A      |       | (PHPCompatibility.FunctionUse.OptionalToRequiredFunctionParameters.parse_str_resultSoftRequiredHardRequired)%0A 1199 | ERROR | The "result" parameter for function parse_str() is%0A      |       | missing. Passing this parameter is no longer%0A      |       | optional. The optional nature of the parameter is%0A      |       | deprecated since PHP 7.2 and removed since PHP%0A      |       | 8.0%0A      |       | (PHPCompatibility.FunctionUse.OptionalToRequiredFunctionParameters.parse_str_resultSoftRequiredHardRequired)%0A----------------------------------------------------------------------%0A%0A%0AFILE: modules/smugmug.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 179 | ERROR | Function session_unregister() is deprecated since PHP%0A     |       | 5.3 and removed since PHP 5.4; Use $_SESSION%0A     |       | instead%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.session_unregisterDeprecatedRemoved)%0A----------------------------------------------------------------------%0A

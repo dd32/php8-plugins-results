@@ -1,0 +1,59 @@
+::warning::Plugin: https://wordpress.org/plugins/wp-easy-tools-compression/%0ATrac: https://plugins.trac.wordpress.org/browser/wp-easy-tools-compression/
+No syntax errors detected in wp-easy-tools-compression/wp-easy-tools-compression/ajax/wtc_ajax_admin.php
+No syntax errors detected in wp-easy-tools-compression/wp-easy-tools-compression/components/diet.php
+No syntax errors detected in wp-easy-tools-compression/wp-easy-tools-compression/components/Kraken.php
+No syntax errors detected in wp-easy-tools-compression/wp-easy-tools-compression/components/tinyorg.php
+No syntax errors detected in wp-easy-tools-compression/wp-easy-tools-compression/components/wtc_db.php
+No syntax errors detected in wp-easy-tools-compression/wp-easy-tools-compression/components/wtc_form.php
+No syntax errors detected in wp-easy-tools-compression/wp-easy-tools-compression/components/wtc_validator.php
+No syntax errors detected in wp-easy-tools-compression/wp-easy-tools-compression/css/wtc_css.php
+No syntax errors detected in wp-easy-tools-compression/wp-easy-tools-compression/models/wtc_image_settings.php
+No syntax errors detected in wp-easy-tools-compression/wp-easy-tools-compression/models/wtc_media.php
+No syntax errors detected in wp-easy-tools-compression/wp-easy-tools-compression/models/wtc_settings(2).php
+No syntax errors detected in wp-easy-tools-compression/wp-easy-tools-compression/models/wtc_settings.php
+No syntax errors detected in wp-easy-tools-compression/wp-easy-tools-compression/sql/sql.php
+No syntax errors detected in wp-easy-tools-compression/wp-easy-tools-compression/vendor/WP_HTML_Compression.php
+No syntax errors detected in wp-easy-tools-compression/wp-easy-tools-compression/wp-easy-tools.php
+[31mE[0m.....[31mE[0m[31mE[0m....... 15 / 15 (100%)
+
+
+
+[1mFILE: ajax/wtc_ajax_admin.php[0m
+----------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 10 | [31mERROR[0m | [1mIndirect access to variables, properties and methods
+    |       | will be evaluated strictly in left-to-right order since
+    |       | PHP 7.0. Use curly braces to remove ambiguity.[0m
+    |       | (PHPCompatibility.Variables.NewUniformVariableSyntax.Found)
+----------------------------------------------------------------------
+
+
+[1mFILE: components/wtc_validator.php[0m
+----------------------------------------------------------------------
+[1mFOUND 2 ERRORS AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 57 | [31mERROR[0m | [1mExtension 'ereg' is deprecated since PHP 5.3 and
+    |       | removed since PHP 7.0; Use pcre instead[0m
+    |       | (PHPCompatibility.Extensions.RemovedExtensions.eregDeprecatedRemoved)
+ 57 | [31mERROR[0m | [1mFunction eregi() is deprecated since PHP 5.3 and
+    |       | removed since PHP 7.0; Use preg_match() (with the i
+    |       | modifier) instead[0m
+    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eregiDeprecatedRemoved)
+----------------------------------------------------------------------
+
+
+[1mFILE: css/wtc_css.php[0m
+----------------------------------------------------------------------
+[1mFOUND 2 ERRORS AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 37 | [31mERROR[0m | [1mExtension 'ereg' is deprecated since PHP 5.3 and
+    |       | removed since PHP 7.0; Use pcre instead[0m
+    |       | (PHPCompatibility.Extensions.RemovedExtensions.eregDeprecatedRemoved)
+ 37 | [31mERROR[0m | [1mFunction ereg_replace() is deprecated since PHP 5.3 and
+    |       | removed since PHP 7.0; Use preg_replace() instead[0m
+    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.ereg_replaceDeprecatedRemoved)
+----------------------------------------------------------------------
+
+Time: 231ms; Memory: 12MB
+::error::FILE: ajax/wtc_ajax_admin.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 10 | ERROR | Indirect access to variables, properties and methods%0A    |       | will be evaluated strictly in left-to-right order since%0A    |       | PHP 7.0. Use curly braces to remove ambiguity.%0A    |       | (PHPCompatibility.Variables.NewUniformVariableSyntax.Found)%0A----------------------------------------------------------------------%0A%0A%0AFILE: components/wtc_validator.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 57 | ERROR | Extension 'ereg' is deprecated since PHP 5.3 and%0A    |       | removed since PHP 7.0; Use pcre instead%0A    |       | (PHPCompatibility.Extensions.RemovedExtensions.eregDeprecatedRemoved)%0A 57 | ERROR | Function eregi() is deprecated since PHP 5.3 and%0A    |       | removed since PHP 7.0; Use preg_match() (with the i%0A    |       | modifier) instead%0A    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eregiDeprecatedRemoved)%0A----------------------------------------------------------------------%0A%0A%0AFILE: css/wtc_css.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 37 | ERROR | Extension 'ereg' is deprecated since PHP 5.3 and%0A    |       | removed since PHP 7.0; Use pcre instead%0A    |       | (PHPCompatibility.Extensions.RemovedExtensions.eregDeprecatedRemoved)%0A 37 | ERROR | Function ereg_replace() is deprecated since PHP 5.3 and%0A    |       | removed since PHP 7.0; Use preg_replace() instead%0A    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.ereg_replaceDeprecatedRemoved)%0A----------------------------------------------------------------------%0A
