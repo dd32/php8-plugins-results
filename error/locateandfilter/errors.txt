@@ -1,0 +1,34 @@
+FILE: admin/js/edit_area/edit_area_compressor.php
+----------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+----------------------------------------------------------------------
+ 146 | ERROR | preg_replace() - /e modifier is deprecated since PHP
+     |       | 5.5 and removed since PHP 7.0
+     |       | (PHPCompatibility.ParameterValues.RemovedPCREModifiers.Removed)
+ 150 | ERROR | preg_replace() - /e modifier is deprecated since PHP
+     |       | 5.5 and removed since PHP 7.0
+     |       | (PHPCompatibility.ParameterValues.RemovedPCREModifiers.Removed)
+----------------------------------------------------------------------
+
+
+FILE: includes/class.upgrademe.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 62 | ERROR | Using 'break' outside of a loop or switch structure is
+    |       | invalid and will throw a fatal error since PHP 7.0
+    |       | (PHPCompatibility.ControlStructures.ForbiddenBreakContinueOutsideLoop.FatalError)
+----------------------------------------------------------------------
+
+
+FILE: public/class-locate-and-filter-public.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 1100 | ERROR | Self-closing XHTML tags are ignored. Only
+      |       | non-self-closing tags should be used in the
+      |       | strip_tags() $allowable_tags parameter since PHP
+      |       | 5.3.4. Found:
+      |       | "<input><a></a><br><br/><p></p><b></b><em></em><i></i><span></span><ul><li></li></ul>"
+      |       | (PHPCompatibility.ParameterValues.ForbiddenStripTagsSelfClosingXHTML.Found)
+----------------------------------------------------------------------
