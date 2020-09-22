@@ -120,7 +120,11 @@ No syntax errors detected in contactic/contactic/Spout-2.7.1/Common/Helper/FileS
 No syntax errors detected in contactic/contactic/Spout-2.7.1/Common/Helper/GlobalFunctionsHelper.php
 No syntax errors detected in contactic/contactic/Spout-2.7.1/Common/Helper/StringHelper.php
 
+Warning: Private methods cannot be final as they are never overridden by other classes in contactic/contactic/Spout-2.7.1/Common/Singleton.php on line 39
+
 Warning: The magic method Box\Spout\Common\Singleton::__wakeup() must have public visibility in contactic/contactic/Spout-2.7.1/Common/Singleton.php on line 39
+
+Warning: Private methods cannot be final as they are never overridden by other classes in contactic/contactic/Spout-2.7.1/Common/Singleton.php on line 40
 No syntax errors detected in contactic/contactic/Spout-2.7.1/Common/Singleton.php
 No syntax errors detected in contactic/contactic/Spout-2.7.1/Common/Type.php
 No syntax errors detected in contactic/contactic/Spout-2.7.1/Reader/AbstractReader.php
@@ -214,8 +218,7 @@ No syntax errors detected in contactic/contactic/view/CTC_View.php
 No syntax errors detected in contactic/contactic/view/CTC_ViewShortCodeBuilder.php
 No syntax errors detected in contactic/contactic/view/CTC_ViewWebhooks.php
 No syntax errors detected in contactic/contactic/view/CTC_ViewWhatsInDB.php
-::error::%0ASpout-2.7.1/Common/Singleton.php%0A  Warning: The magic method Box\Spout\Common\Singleton::__wakeup() must have public visibility on line 39
-No syntax errors detected in contactic/contactic/view/CTC_ViewWhatsInDB.php
+::error::%0ASpout-2.7.1/Common/Singleton.php%0A  Warning: Private methods cannot be final as they are never overridden by other classes on line 39%0A  Warning: The magic method Box\Spout\Common\Singleton::__wakeup() must have public visibility on line 39%0A  Warning: Private methods cannot be final as they are never overridden by other classes on line 40
 .[31mE[0m..........................................................  60 / 213 (28%)
 ............................................................ 120 / 213 (56%)
 ............................................................ 180 / 213 (85%)
@@ -224,12 +227,15 @@ No syntax errors detected in contactic/contactic/view/CTC_ViewWhatsInDB.php
 
 
 [1mFILE: ContacticPlugin.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 954 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse order to implode has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first
-     |       | parameter and $pieces the second[0m (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
+ 954 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse
+     |       | order to implode has been deprecated since PHP 7.4 and
+     |       | is removed since PHP 8.0; $glue should be the first
+     |       | parameter and $pieces the second[0m
+     |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
+----------------------------------------------------------------------
 
-Time: 2.81 secs; Memory: 26MB
-::error::FILE: ContacticPlugin.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 954 | ERROR | Passing the $glue and $pieces parameters in reverse order to implode has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first%0A     |       | parameter and $pieces the second (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
+Time: 2.82 secs; Memory: 26MB
+::error::FILE: ContacticPlugin.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 954 | ERROR | Passing the $glue and $pieces parameters in reverse%0A     |       | order to implode has been deprecated since PHP 7.4 and%0A     |       | is removed since PHP 8.0; $glue should be the first%0A     |       | parameter and $pieces the second%0A     |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A----------------------------------------------------------------------%0A
