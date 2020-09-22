@@ -1,0 +1,87 @@
+::warning::Plugin: https://wordpress.org/plugins/digi-id-authentication/%0ATrac: https://plugins.trac.wordpress.org/browser/digi-id-authentication/
+No syntax errors detected in digi-id-authentication/digi-id-authentication/ajax.php
+No syntax errors detected in digi-id-authentication/digi-id-authentication/callback.php
+No syntax errors detected in digi-id-authentication/digi-id-authentication/classes/CurveFpInterface.php
+No syntax errors detected in digi-id-authentication/digi-id-authentication/classes/CurveFp.php
+No syntax errors detected in digi-id-authentication/digi-id-authentication/classes/digiid_google.php
+No syntax errors detected in digi-id-authentication/digi-id-authentication/classes/digiid.php
+No syntax errors detected in digi-id-authentication/digi-id-authentication/classes/gmp_Utils.php
+No syntax errors detected in digi-id-authentication/digi-id-authentication/classes/NumberTheory.php
+No syntax errors detected in digi-id-authentication/digi-id-authentication/classes/PointInterface.php
+No syntax errors detected in digi-id-authentication/digi-id-authentication/classes/Point.php
+No syntax errors detected in digi-id-authentication/digi-id-authentication/classes/PublicKeyInterface.php
+No syntax errors detected in digi-id-authentication/digi-id-authentication/classes/PublicKey.php
+No syntax errors detected in digi-id-authentication/digi-id-authentication/classes/SignatureInterface.php
+No syntax errors detected in digi-id-authentication/digi-id-authentication/classes/Signature.php
+No syntax errors detected in digi-id-authentication/digi-id-authentication/digiid-wp-authentication.php
+No syntax errors detected in digi-id-authentication/digi-id-authentication/required_classes.php
+....[31mE[0m[31mE[0m[31mE[0m......... 16 / 16 (100%)
+
+
+
+[1mFILE: classes/digiid_google.php[0m
+----------------------------------------------------------------------
+[1mFOUND 4 ERRORS AFFECTING 4 LINES[0m
+----------------------------------------------------------------------
+ 53 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+    |       | inconsistent prior to PHP 7 and support has been
+    |       | removed in PHP 7. Found:
+    |       | '0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEFFFFFC2F'[0m
+    |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
+ 58 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+    |       | inconsistent prior to PHP 7 and support has been
+    |       | removed in PHP 7. Found:
+    |       | '0x79BE667EF9DCBBAC55A06295CE870B07029BFCDB2DCE28D959F2815B16F81798'[0m
+    |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
+ 59 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+    |       | inconsistent prior to PHP 7 and support has been
+    |       | removed in PHP 7. Found:
+    |       | '0x483ADA7726A3C4655DA4FBFC0E1108A8FD17B448A68554199C47D08FFB10D4B8'[0m
+    |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
+ 60 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+    |       | inconsistent prior to PHP 7 and support has been
+    |       | removed in PHP 7. Found:
+    |       | '0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEBAAEDCE6AF48A03BBFD25E8CD0364141'[0m
+    |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
+----------------------------------------------------------------------
+
+
+[1mFILE: classes/digiid.php[0m
+----------------------------------------------------------------------
+[1mFOUND 4 ERRORS AFFECTING 4 LINES[0m
+----------------------------------------------------------------------
+ 40 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+    |       | inconsistent prior to PHP 7 and support has been
+    |       | removed in PHP 7. Found:
+    |       | '0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEFFFFFC2F'[0m
+    |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
+ 45 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+    |       | inconsistent prior to PHP 7 and support has been
+    |       | removed in PHP 7. Found:
+    |       | '0x79BE667EF9DCBBAC55A06295CE870B07029BFCDB2DCE28D959F2815B16F81798'[0m
+    |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
+ 46 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+    |       | inconsistent prior to PHP 7 and support has been
+    |       | removed in PHP 7. Found:
+    |       | '0x483ADA7726A3C4655DA4FBFC0E1108A8FD17B448A68554199C47D08FFB10D4B8'[0m
+    |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
+ 47 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+    |       | inconsistent prior to PHP 7 and support has been
+    |       | removed in PHP 7. Found:
+    |       | '0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEBAAEDCE6AF48A03BBFD25E8CD0364141'[0m
+    |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
+----------------------------------------------------------------------
+
+
+[1mFILE: classes/gmp_Utils.php[0m
+----------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 51 | [31mERROR[0m | [1mFunction gmp_random() is deprecated since PHP 7.2 and
+    |       | removed since PHP 8.0; Use gmp_random_bits() or
+    |       | gmp_random_range() instead[0m
+    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.gmp_randomDeprecatedRemoved)
+----------------------------------------------------------------------
+
+Time: 625ms; Memory: 18MB
+::error::FILE: classes/digiid_google.php%0A----------------------------------------------------------------------%0AFOUND 4 ERRORS AFFECTING 4 LINES%0A----------------------------------------------------------------------%0A 53 | ERROR | The behaviour of hexadecimal numeric strings was%0A    |       | inconsistent prior to PHP 7 and support has been%0A    |       | removed in PHP 7. Found:%0A    |       | '0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEFFFFFC2F'%0A    |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 58 | ERROR | The behaviour of hexadecimal numeric strings was%0A    |       | inconsistent prior to PHP 7 and support has been%0A    |       | removed in PHP 7. Found:%0A    |       | '0x79BE667EF9DCBBAC55A06295CE870B07029BFCDB2DCE28D959F2815B16F81798'%0A    |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 59 | ERROR | The behaviour of hexadecimal numeric strings was%0A    |       | inconsistent prior to PHP 7 and support has been%0A    |       | removed in PHP 7. Found:%0A    |       | '0x483ADA7726A3C4655DA4FBFC0E1108A8FD17B448A68554199C47D08FFB10D4B8'%0A    |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 60 | ERROR | The behaviour of hexadecimal numeric strings was%0A    |       | inconsistent prior to PHP 7 and support has been%0A    |       | removed in PHP 7. Found:%0A    |       | '0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEBAAEDCE6AF48A03BBFD25E8CD0364141'%0A    |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A----------------------------------------------------------------------%0A%0A%0AFILE: classes/digiid.php%0A----------------------------------------------------------------------%0AFOUND 4 ERRORS AFFECTING 4 LINES%0A----------------------------------------------------------------------%0A 40 | ERROR | The behaviour of hexadecimal numeric strings was%0A    |       | inconsistent prior to PHP 7 and support has been%0A    |       | removed in PHP 7. Found:%0A    |       | '0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEFFFFFC2F'%0A    |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 45 | ERROR | The behaviour of hexadecimal numeric strings was%0A    |       | inconsistent prior to PHP 7 and support has been%0A    |       | removed in PHP 7. Found:%0A    |       | '0x79BE667EF9DCBBAC55A06295CE870B07029BFCDB2DCE28D959F2815B16F81798'%0A    |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 46 | ERROR | The behaviour of hexadecimal numeric strings was%0A    |       | inconsistent prior to PHP 7 and support has been%0A    |       | removed in PHP 7. Found:%0A    |       | '0x483ADA7726A3C4655DA4FBFC0E1108A8FD17B448A68554199C47D08FFB10D4B8'%0A    |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 47 | ERROR | The behaviour of hexadecimal numeric strings was%0A    |       | inconsistent prior to PHP 7 and support has been%0A    |       | removed in PHP 7. Found:%0A    |       | '0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEBAAEDCE6AF48A03BBFD25E8CD0364141'%0A    |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A----------------------------------------------------------------------%0A%0A%0AFILE: classes/gmp_Utils.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 51 | ERROR | Function gmp_random() is deprecated since PHP 7.2 and%0A    |       | removed since PHP 8.0; Use gmp_random_bits() or%0A    |       | gmp_random_range() instead%0A    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.gmp_randomDeprecatedRemoved)%0A----------------------------------------------------------------------%0A
