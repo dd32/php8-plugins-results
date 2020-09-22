@@ -1,0 +1,99 @@
+
+secImg/securimage.php
+  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 1282
+FILE: secImg/securimage.php
+----------------------------------------------------------------------
+FOUND 28 ERRORS AFFECTING 15 LINES
+----------------------------------------------------------------------
+ 1282 | ERROR | [x] Curly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found:
+      |       |     $code['display']{$i}
+      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 1330 | ERROR | [x] Curly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found:
+      |       |     $this->charset{rand(0, $cslen - 1)}
+      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 1420 | ERROR | [ ] Extension 'sqlite' is removed since PHP 5.4
+      |       |     (PHPCompatibility.Extensions.RemovedExtensions.sqliteRemoved)
+ 1420 | ERROR | [ ] Function sqlite_query() is removed since PHP
+      |       |     5.4
+      |       |     (PHPCompatibility.FunctionUse.RemovedFunctions.sqlite_queryRemoved)
+ 1448 | ERROR | [ ] Extension 'sqlite' is removed since PHP 5.4
+      |       |     (PHPCompatibility.Extensions.RemovedExtensions.sqliteRemoved)
+ 1448 | ERROR | [ ] Function sqlite_open() is removed since PHP
+      |       |     5.4
+      |       |     (PHPCompatibility.FunctionUse.RemovedFunctions.sqlite_openRemoved)
+ 1451 | ERROR | [ ] Extension 'sqlite' is removed since PHP 5.4
+      |       |     (PHPCompatibility.Extensions.RemovedExtensions.sqliteRemoved)
+ 1451 | ERROR | [ ] Function sqlite_query() is removed since PHP
+      |       |     5.4
+      |       |     (PHPCompatibility.FunctionUse.RemovedFunctions.sqlite_queryRemoved)
+ 1453 | ERROR | [ ] Extension 'sqlite' is removed since PHP 5.4
+      |       |     (PHPCompatibility.Extensions.RemovedExtensions.sqliteRemoved)
+ 1453 | ERROR | [ ] Function sqlite_num_rows() is removed since PHP
+      |       |     5.4
+      |       |     (PHPCompatibility.FunctionUse.RemovedFunctions.sqlite_num_rowsRemoved)
+ 1454 | ERROR | [ ] Extension 'sqlite' is removed since PHP 5.4
+      |       |     (PHPCompatibility.Extensions.RemovedExtensions.sqliteRemoved)
+ 1454 | ERROR | [ ] Function sqlite_query() is removed since PHP
+      |       |     5.4
+      |       |     (PHPCompatibility.FunctionUse.RemovedFunctions.sqlite_queryRemoved)
+ 1487 | ERROR | [ ] Extension 'sqlite' is removed since PHP 5.4
+      |       |     (PHPCompatibility.Extensions.RemovedExtensions.sqliteRemoved)
+ 1487 | ERROR | [ ] Function sqlite_escape_string() is removed since
+      |       |     PHP 5.4
+      |       |     (PHPCompatibility.FunctionUse.RemovedFunctions.sqlite_escape_stringRemoved)
+ 1490 | ERROR | [ ] Extension 'sqlite' is removed since PHP 5.4
+      |       |     (PHPCompatibility.Extensions.RemovedExtensions.sqliteRemoved)
+ 1490 | ERROR | [ ] Function sqlite_escape_string() is removed since
+      |       |     PHP 5.4
+      |       |     (PHPCompatibility.FunctionUse.RemovedFunctions.sqlite_escape_stringRemoved)
+ 1494 | ERROR | [ ] Extension 'sqlite' is removed since PHP 5.4
+      |       |     (PHPCompatibility.Extensions.RemovedExtensions.sqliteRemoved)
+ 1494 | ERROR | [ ] Function sqlite_query() is removed since PHP
+      |       |     5.4
+      |       |     (PHPCompatibility.FunctionUse.RemovedFunctions.sqlite_queryRemoved)
+ 1495 | ERROR | [ ] Extension 'sqlite' is removed since PHP 5.4
+      |       |     (PHPCompatibility.Extensions.RemovedExtensions.sqliteRemoved)
+ 1495 | ERROR | [ ] Function sqlite_num_rows() is removed since PHP
+      |       |     5.4
+      |       |     (PHPCompatibility.FunctionUse.RemovedFunctions.sqlite_num_rowsRemoved)
+ 1496 | ERROR | [ ] Extension 'sqlite' is removed since PHP 5.4
+      |       |     (PHPCompatibility.Extensions.RemovedExtensions.sqliteRemoved)
+ 1496 | ERROR | [ ] Function sqlite_fetch_array() is removed since
+      |       |     PHP 5.4
+      |       |     (PHPCompatibility.FunctionUse.RemovedFunctions.sqlite_fetch_arrayRemoved)
+ 1520 | ERROR | [ ] Extension 'sqlite' is removed since PHP 5.4
+      |       |     (PHPCompatibility.Extensions.RemovedExtensions.sqliteRemoved)
+ 1520 | ERROR | [ ] Function sqlite_escape_string() is removed since
+      |       |     PHP 5.4
+      |       |     (PHPCompatibility.FunctionUse.RemovedFunctions.sqlite_escape_stringRemoved)
+ 1522 | ERROR | [ ] Extension 'sqlite' is removed since PHP 5.4
+      |       |     (PHPCompatibility.Extensions.RemovedExtensions.sqliteRemoved)
+ 1522 | ERROR | [ ] Function sqlite_query() is removed since PHP
+      |       |     5.4
+      |       |     (PHPCompatibility.FunctionUse.RemovedFunctions.sqlite_queryRemoved)
+ 1535 | ERROR | [ ] Extension 'sqlite' is removed since PHP 5.4
+      |       |     (PHPCompatibility.Extensions.RemovedExtensions.sqliteRemoved)
+ 1535 | ERROR | [ ] Function sqlite_query() is removed since PHP
+      |       |     5.4
+      |       |     (PHPCompatibility.FunctionUse.RemovedFunctions.sqlite_queryRemoved)
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------
+
+
+FILE: wpContact.php
+----------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+----------------------------------------------------------------------
+ 31 | ERROR | Declaration of a PHP4 style class constructor is
+    |       | deprecated since PHP 7.0 and removed since PHP 8.0
+    |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+ 69 | ERROR | Function create_function() is deprecated since PHP 7.2
+    |       | and removed since PHP 8.0; Use an anonymous function
+    |       | instead
+    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
+----------------------------------------------------------------------
