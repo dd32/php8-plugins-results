@@ -1,0 +1,36 @@
+::warning::Plugin: https://wordpress.org/plugins/regiondetect/%0ATrac: https://plugins.trac.wordpress.org/browser/regiondetect/
+No syntax errors detected in regiondetect/regiondetect/geoip.php
+No syntax errors detected in regiondetect/regiondetect/interface.php
+No syntax errors detected in regiondetect/regiondetect/regiondetect.php
+[31mE[0m.[31mE[0m 3 / 3 (100%)
+
+
+
+[1mFILE: geoip.php[0m
+----------------------------------------------------------------------
+[1mFOUND 2 ERRORS AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 561 | [31mERROR[0m | [1mExtension 'ereg' is deprecated since PHP 5.3 and
+     |       | removed since PHP 7.0; Use pcre instead[0m
+     |       | (PHPCompatibility.Extensions.RemovedExtensions.eregDeprecatedRemoved)
+ 561 | [31mERROR[0m | [1mFunction ereg() is deprecated since PHP 5.3 and
+     |       | removed since PHP 7.0; Use preg_match() instead[0m
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eregDeprecatedRemoved)
+----------------------------------------------------------------------
+
+
+[1mFILE: regiondetect.php[0m
+----------------------------------------------------------------------
+[1mFOUND 2 ERRORS AFFECTING 2 LINES[0m
+----------------------------------------------------------------------
+ 366 | [31mERROR[0m | [1mDeclaration of a PHP4 style class constructor is
+     |       | deprecated since PHP 7.0 and removed since PHP 8.0[0m
+     |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+ 593 | [31mERROR[0m | [1mFunction split() is deprecated since PHP 5.3 and
+     |       | removed since PHP 7.0; Use preg_split(), explode() or
+     |       | str_split() instead[0m
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.splitDeprecatedRemoved)
+----------------------------------------------------------------------
+
+Time: 240ms; Memory: 20MB
+::error::FILE: geoip.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 561 | ERROR | Extension 'ereg' is deprecated since PHP 5.3 and%0A     |       | removed since PHP 7.0; Use pcre instead%0A     |       | (PHPCompatibility.Extensions.RemovedExtensions.eregDeprecatedRemoved)%0A 561 | ERROR | Function ereg() is deprecated since PHP 5.3 and%0A     |       | removed since PHP 7.0; Use preg_match() instead%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eregDeprecatedRemoved)%0A----------------------------------------------------------------------%0A%0A%0AFILE: regiondetect.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A----------------------------------------------------------------------%0A 366 | ERROR | Declaration of a PHP4 style class constructor is%0A     |       | deprecated since PHP 7.0 and removed since PHP 8.0%0A     |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)%0A 593 | ERROR | Function split() is deprecated since PHP 5.3 and%0A     |       | removed since PHP 7.0; Use preg_split(), explode() or%0A     |       | str_split() instead%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.splitDeprecatedRemoved)%0A----------------------------------------------------------------------%0A
