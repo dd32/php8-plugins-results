@@ -116,6 +116,7 @@ No syntax errors detected in duplicator/duplicator/installer/dup-installer/views
 No syntax errors detected in duplicator/duplicator/installer/dup-installer/views/view.s2.dbtest.php
 No syntax errors detected in duplicator/duplicator/installer/dup-installer/views/view.s3.php
 No syntax errors detected in duplicator/duplicator/installer/dup-installer/views/view.s4.php
+No syntax errors detected in duplicator/duplicator/installer/dup-installer/views/view.security.error.php
 No syntax errors detected in duplicator/duplicator/installer/index.php
 No syntax errors detected in duplicator/duplicator/languages/index.php
 No syntax errors detected in duplicator/duplicator/lib/config/class.wp.config.tranformer.php
@@ -222,41 +223,36 @@ No syntax errors detected in duplicator/duplicator/views/tools/diagnostics/suppo
 No syntax errors detected in duplicator/duplicator/views/tools/index.php
 No syntax errors detected in duplicator/duplicator/views/tools/templates.php
 ::error::%0Ainstaller/dup-installer/classes/utilities/class.u.notices.manager.php%0A  Warning: The magic method DUPX_NOTICE_MANAGER::__wakeup() must have public visibility on line 1010%0A%0Ainstaller/dup-installer/classes/utilities/class.u.search.reaplce.manager.php%0A  Warning: The magic method DUPX_S_R_MANAGER::__wakeup() must have public visibility on line 260
-No syntax errors detected in duplicator/duplicator/views/tools/templates.php
-............................................................  60 / 218 (28%)
-.....................[31mE[0m...................................... 120 / 218 (55%)
-............................[31mE[0m...[31mE[0m........................... 180 / 218 (83%)
-......................................                       218 / 218 (100%)
+............................................................  60 / 219 (27%)
+.....................[31mE[0m...................................... 120 / 219 (55%)
+.................................[31mE[0m.......................... 180 / 219 (82%)
+.......................................                      219 / 219 (100%)
 
 
 
 [1mFILE: installer/dup-installer/classes/Crypt/Base.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 2 ERRORS AFFECTING 2 LINES[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 1183 | [31mERROR[0m | [1mFunction mdecrypt_generic() is deprecated since PHP 7.1 and removed since PHP 7.2; Use OpenSSL instead[0m
+----------------------------------------------------------------------
+ 1183 | [31mERROR[0m | [1mFunction mdecrypt_generic() is deprecated since PHP
+      |       | 7.1 and removed since PHP 7.2; Use OpenSSL
+      |       | instead[0m
       |       | (PHPCompatibility.FunctionUse.RemovedFunctions.mdecrypt_genericDeprecatedRemoved)
- 2558 | [31mERROR[0m | [1mFunction create_function() is deprecated since PHP 7.2 and removed since PHP 8.0; Use an anonymous function instead[0m
+ 2558 | [31mERROR[0m | [1mFunction create_function() is deprecated since PHP
+      |       | 7.2 and removed since PHP 8.0; Use an anonymous
+      |       | function instead[0m
       |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-
-[1mFILE: lib/dup_archive/tester/classes/class.datester.logging.php[0m
---------------------------------------------------------------------------------------------------------------------------------------------------------------------
-[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
---------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 83 | [31mERROR[0m | [1m"$this" can no longer be used in a plain function or method since PHP 7.1.[0m
-    |       | (PHPCompatibility.Variables.ForbiddenThisUseContexts.OutsideObjectContext)
---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 [1mFILE: lib/dup_archive/tester/datester.php[0m
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 550 | [31mERROR[0m | [1m"$this" can no longer be used in a plain function or method since PHP 7.1.[0m
+----------------------------------------------------------------------
+ 550 | [31mERROR[0m | [1m"$this" can no longer be used in a plain function or
+     |       | method since PHP 7.1.[0m
      |       | (PHPCompatibility.Variables.ForbiddenThisUseContexts.OutsideObjectContext)
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
-Time: 7.31 secs; Memory: 30MB
-::error::FILE: installer/dup-installer/classes/Crypt/Base.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 1183 | ERROR | Function mdecrypt_generic() is deprecated since PHP 7.1 and removed since PHP 7.2; Use OpenSSL instead%0A      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.mdecrypt_genericDeprecatedRemoved)%0A 2558 | ERROR | Function create_function() is deprecated since PHP 7.2 and removed since PHP 8.0; Use an anonymous function instead%0A      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: lib/dup_archive/tester/classes/class.datester.logging.php%0A--------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A--------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 83 | ERROR | "$this" can no longer be used in a plain function or method since PHP 7.1.%0A    |       | (PHPCompatibility.Variables.ForbiddenThisUseContexts.OutsideObjectContext)%0A--------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: lib/dup_archive/tester/datester.php%0A---------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A---------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 550 | ERROR | "$this" can no longer be used in a plain function or method since PHP 7.1.%0A     |       | (PHPCompatibility.Variables.ForbiddenThisUseContexts.OutsideObjectContext)%0A---------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
+Time: 6.11 secs; Memory: 36MB
+::error::FILE: installer/dup-installer/classes/Crypt/Base.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A----------------------------------------------------------------------%0A 1183 | ERROR | Function mdecrypt_generic() is deprecated since PHP%0A      |       | 7.1 and removed since PHP 7.2; Use OpenSSL%0A      |       | instead%0A      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.mdecrypt_genericDeprecatedRemoved)%0A 2558 | ERROR | Function create_function() is deprecated since PHP%0A      |       | 7.2 and removed since PHP 8.0; Use an anonymous%0A      |       | function instead%0A      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)%0A----------------------------------------------------------------------%0A%0A%0AFILE: lib/dup_archive/tester/datester.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 550 | ERROR | "$this" can no longer be used in a plain function or%0A     |       | method since PHP 7.1.%0A     |       | (PHPCompatibility.Variables.ForbiddenThisUseContexts.OutsideObjectContext)%0A----------------------------------------------------------------------%0A
