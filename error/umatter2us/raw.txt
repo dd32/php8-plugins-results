@@ -1,0 +1,40 @@
+::warning::Plugin: https://wordpress.org/plugins/umatter2us/%0ATrac: https://plugins.trac.wordpress.org/browser/umatter2us/
+No syntax errors detected in umatter2us/umatter2us/class-qualtrics.php
+No syntax errors detected in umatter2us/umatter2us/feedback.php
+No syntax errors detected in umatter2us/umatter2us/meetings.php
+No syntax errors detected in umatter2us/umatter2us/members.php
+No syntax errors detected in umatter2us/umatter2us/objectives.php
+No syntax errors detected in umatter2us/umatter2us/qualtrics.php
+No syntax errors detected in umatter2us/umatter2us/umatter2us.php
+.[31mE[0m....[31mE[0m 7 / 7 (100%)
+
+
+
+[1mFILE: feedback.php[0m
+----------------------------------------------------------------------
+[1mFOUND 2 ERRORS AFFECTING 2 LINES[0m
+----------------------------------------------------------------------
+ 1064 | [31mERROR[0m | [1mFunction create_function() is deprecated since PHP
+      |       | 7.2 and removed since PHP 8.0; Use an anonymous
+      |       | function instead[0m
+      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
+ 1211 | [31mERROR[0m | [1mFunction create_function() is deprecated since PHP
+      |       | 7.2 and removed since PHP 8.0; Use an anonymous
+      |       | function instead[0m
+      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
+----------------------------------------------------------------------
+
+
+[1mFILE: umatter2us.php[0m
+----------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 836 | [31mERROR[0m | [1mThe "result" parameter for function parse_str() is
+     |       | missing. Passing this parameter is no longer optional.
+     |       | The optional nature of the parameter is deprecated
+     |       | since PHP 7.2 and removed since PHP 8.0[0m
+     |       | (PHPCompatibility.FunctionUse.OptionalToRequiredFunctionParameters.parse_str_resultSoftRequiredHardRequired)
+----------------------------------------------------------------------
+
+Time: 655ms; Memory: 20MB
+::error::FILE: feedback.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A----------------------------------------------------------------------%0A 1064 | ERROR | Function create_function() is deprecated since PHP%0A      |       | 7.2 and removed since PHP 8.0; Use an anonymous%0A      |       | function instead%0A      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)%0A 1211 | ERROR | Function create_function() is deprecated since PHP%0A      |       | 7.2 and removed since PHP 8.0; Use an anonymous%0A      |       | function instead%0A      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)%0A----------------------------------------------------------------------%0A%0A%0AFILE: umatter2us.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 836 | ERROR | The "result" parameter for function parse_str() is%0A     |       | missing. Passing this parameter is no longer optional.%0A     |       | The optional nature of the parameter is deprecated%0A     |       | since PHP 7.2 and removed since PHP 8.0%0A     |       | (PHPCompatibility.FunctionUse.OptionalToRequiredFunctionParameters.parse_str_resultSoftRequiredHardRequired)%0A----------------------------------------------------------------------%0A
