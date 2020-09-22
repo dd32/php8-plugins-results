@@ -20,6 +20,8 @@ No syntax errors detected in alopeyk-woocommerce-shipping/alopeyk-woocommerce-sh
 No syntax errors detected in alopeyk-woocommerce-shipping/alopeyk-woocommerce-shipping/admin/partials/alopeyk-woocommerce-shipping-admin-support-page.php
 No syntax errors detected in alopeyk-woocommerce-shipping/alopeyk-woocommerce-shipping/alopeyk-woocommerce-shipping.php
 No syntax errors detected in alopeyk-woocommerce-shipping/alopeyk-woocommerce-shipping/includes/class-alopeyk-woocommerce-shipping-activator.php
+
+Fatal error: Unparenthesized `a ? b : c ? d : e` is not supported. Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)` in alopeyk-woocommerce-shipping/alopeyk-woocommerce-shipping/includes/class-alopeyk-woocommerce-shipping-common.php on line 1653
 Errors parsing alopeyk-woocommerce-shipping/alopeyk-woocommerce-shipping/includes/class-alopeyk-woocommerce-shipping-common.php
 No syntax errors detected in alopeyk-woocommerce-shipping/alopeyk-woocommerce-shipping/includes/class-alopeyk-woocommerce-shipping-deactivator.php
 No syntax errors detected in alopeyk-woocommerce-shipping/alopeyk-woocommerce-shipping/includes/class-alopeyk-woocommerce-shipping-i18n.php
@@ -49,22 +51,32 @@ No syntax errors detected in alopeyk-woocommerce-shipping/alopeyk-woocommerce-sh
 No syntax errors detected in alopeyk-woocommerce-shipping/alopeyk-woocommerce-shipping/vendor/composer/autoload_real.php
 No syntax errors detected in alopeyk-woocommerce-shipping/alopeyk-woocommerce-shipping/vendor/composer/autoload_static.php
 No syntax errors detected in alopeyk-woocommerce-shipping/alopeyk-woocommerce-shipping/vendor/composer/ClassLoader.php
-::error::%0Aincludes/class-alopeyk-woocommerce-shipping-common.php
+::error::%0Aincludes/class-alopeyk-woocommerce-shipping-common.php%0A  Fatal error: Unparenthesized `a ? b : c ? d : e` is not supported.%0A      Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)`%0A      on line 1653
 .....................[31mE[0m............................ 50 / 50 (100%)
 
 
 
 [1mFILE: includes/class-alopeyk-woocommerce-shipping-common.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 3 ERRORS AFFECTING 3 LINES[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 1653 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has been deprecated in PHP 7.4 and removed in PHP 8.0. Multiple consecutive ternaries detected. Use parenthesis to
-      |       | clarify the order in which the operations should be executed[0m (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
- 1676 | [31mERROR[0m | [1mIndirect access to variables, properties and methods will be evaluated strictly in left-to-right order since PHP 7.0. Use curly braces to remove ambiguity.[0m
+----------------------------------------------------------------------
+ 1653 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has
+      |       | been deprecated in PHP 7.4 and removed in PHP 8.0.
+      |       | Multiple consecutive ternaries detected. Use
+      |       | parenthesis to clarify the order in which the
+      |       | operations should be executed[0m
+      |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
+ 1676 | [31mERROR[0m | [1mIndirect access to variables, properties and methods
+      |       | will be evaluated strictly in left-to-right order
+      |       | since PHP 7.0. Use curly braces to remove
+      |       | ambiguity.[0m
       |       | (PHPCompatibility.Variables.NewUniformVariableSyntax.Found)
- 1677 | [31mERROR[0m | [1mIndirect access to variables, properties and methods will be evaluated strictly in left-to-right order since PHP 7.0. Use curly braces to remove ambiguity.[0m
+ 1677 | [31mERROR[0m | [1mIndirect access to variables, properties and methods
+      |       | will be evaluated strictly in left-to-right order
+      |       | since PHP 7.0. Use curly braces to remove
+      |       | ambiguity.[0m
       |       | (PHPCompatibility.Variables.NewUniformVariableSyntax.Found)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
-Time: 1.33 secs; Memory: 40MB
-::error::FILE: includes/class-alopeyk-woocommerce-shipping-common.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 3 ERRORS AFFECTING 3 LINES%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 1653 | ERROR | The left-associativity of the ternary operator has been deprecated in PHP 7.4 and removed in PHP 8.0. Multiple consecutive ternaries detected. Use parenthesis to%0A      |       | clarify the order in which the operations should be executed (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A 1676 | ERROR | Indirect access to variables, properties and methods will be evaluated strictly in left-to-right order since PHP 7.0. Use curly braces to remove ambiguity.%0A      |       | (PHPCompatibility.Variables.NewUniformVariableSyntax.Found)%0A 1677 | ERROR | Indirect access to variables, properties and methods will be evaluated strictly in left-to-right order since PHP 7.0. Use curly braces to remove ambiguity.%0A      |       | (PHPCompatibility.Variables.NewUniformVariableSyntax.Found)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
+Time: 1.26 secs; Memory: 40MB
+::error::FILE: includes/class-alopeyk-woocommerce-shipping-common.php%0A----------------------------------------------------------------------%0AFOUND 3 ERRORS AFFECTING 3 LINES%0A----------------------------------------------------------------------%0A 1653 | ERROR | The left-associativity of the ternary operator has%0A      |       | been deprecated in PHP 7.4 and removed in PHP 8.0.%0A      |       | Multiple consecutive ternaries detected. Use%0A      |       | parenthesis to clarify the order in which the%0A      |       | operations should be executed%0A      |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A 1676 | ERROR | Indirect access to variables, properties and methods%0A      |       | will be evaluated strictly in left-to-right order%0A      |       | since PHP 7.0. Use curly braces to remove%0A      |       | ambiguity.%0A      |       | (PHPCompatibility.Variables.NewUniformVariableSyntax.Found)%0A 1677 | ERROR | Indirect access to variables, properties and methods%0A      |       | will be evaluated strictly in left-to-right order%0A      |       | since PHP 7.0. Use curly braces to remove%0A      |       | ambiguity.%0A      |       | (PHPCompatibility.Variables.NewUniformVariableSyntax.Found)%0A----------------------------------------------------------------------%0A

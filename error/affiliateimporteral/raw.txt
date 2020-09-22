@@ -15,6 +15,10 @@ No syntax errors detected in affiliateimporteral/affiliateimporteral/layout/tool
 No syntax errors detected in affiliateimporteral/affiliateimporteral/schedule.php
 No syntax errors detected in affiliateimporteral/affiliateimporteral/screenoptions.php
 No syntax errors detected in affiliateimporteral/affiliateimporteral/src/AEIDN/Abstract/Account.php
+
+Warning: Private methods cannot be final as they are never overridden by other classes in affiliateimporteral/affiliateimporteral/src/AEIDN/Abstract/Configurator.php on line 132
+
+Warning: Private methods cannot be final as they are never overridden by other classes in affiliateimporteral/affiliateimporteral/src/AEIDN/Abstract/Configurator.php on line 219
 No syntax errors detected in affiliateimporteral/affiliateimporteral/src/AEIDN/Abstract/Configurator.php
 No syntax errors detected in affiliateimporteral/affiliateimporteral/src/AEIDN/Abstract/Loader.php
 No syntax errors detected in affiliateimporteral/affiliateimporteral/src/AEIDN/Goods/Goods.php
@@ -51,17 +55,21 @@ No syntax errors detected in affiliateimporteral/affiliateimporteral/src/Dnolbon
 No syntax errors detected in affiliateimporteral/affiliateimporteral/src/Dnolbon/Wordpress/WordpressStats.php
 No syntax errors detected in affiliateimporteral/affiliateimporteral/src/Dnolbon/Wordpress/WordpressTranslates.php
 No syntax errors detected in affiliateimporteral/affiliateimporteral/src/Dnolbon/Wordpress/WpListTable.php
+::error::%0Asrc/AEIDN/Abstract/Configurator.php%0A  Warning: Private methods cannot be final as they are never overridden by other classes on line 132%0A  Warning: Private methods cannot be final as they are never overridden by other classes on line 219
 .............................[31mE[0m...................... 52 / 52 (100%)
 
 
 
 [1mFILE: src/AEIDN/WooCommerce/OrderList.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 40 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse order to implode has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first
-    |       | parameter and $pieces the second[0m (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
+ 40 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse
+    |       | order to implode has been deprecated since PHP 7.4 and
+    |       | is removed since PHP 8.0; $glue should be the first
+    |       | parameter and $pieces the second[0m
+    |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
+----------------------------------------------------------------------
 
-Time: 1.16 secs; Memory: 18MB
-::error::FILE: src/AEIDN/WooCommerce/OrderList.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 40 | ERROR | Passing the $glue and $pieces parameters in reverse order to implode has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first%0A    |       | parameter and $pieces the second (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
+Time: 1.13 secs; Memory: 18MB
+::error::FILE: src/AEIDN/WooCommerce/OrderList.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 40 | ERROR | Passing the $glue and $pieces parameters in reverse%0A    |       | order to implode has been deprecated since PHP 7.4 and%0A    |       | is removed since PHP 8.0; $glue should be the first%0A    |       | parameter and $pieces the second%0A    |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A----------------------------------------------------------------------%0A
