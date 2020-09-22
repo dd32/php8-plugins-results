@@ -1,0 +1,49 @@
+::warning::Plugin: https://wordpress.org/plugins/basic-dev-tools/%0ATrac: https://plugins.trac.wordpress.org/browser/basic-dev-tools/
+No syntax errors detected in basic-dev-tools/basic-dev-tools/basic-dev-tools.php
+No syntax errors detected in basic-dev-tools/basic-dev-tools/includes/cron-manager.php
+No syntax errors detected in basic-dev-tools/basic-dev-tools/includes/index.php
+No syntax errors detected in basic-dev-tools/basic-dev-tools/includes/post-type-manager.php
+No syntax errors detected in basic-dev-tools/basic-dev-tools/includes/settings-manager.php
+No syntax errors detected in basic-dev-tools/basic-dev-tools/includes/tableobject/table_object.php
+No syntax errors detected in basic-dev-tools/basic-dev-tools/includes/tableobject/templates/generic_form.php
+No syntax errors detected in basic-dev-tools/basic-dev-tools/includes/tableobject/templates/generic_show.php
+No syntax errors detected in basic-dev-tools/basic-dev-tools/includes/tableobject/templates/reduced_form.php
+No syntax errors detected in basic-dev-tools/basic-dev-tools/includes/tableobject/templates/reduced_show.php
+.[31mE[0m...[31mE[0m.... 10 / 10 (100%)
+
+
+
+[1mFILE: includes/cron-manager.php[0m
+----------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 343 | [31mERROR[0m | [1mFunction each() is deprecated since PHP 7.2 and
+     |       | removed since PHP 8.0; Use a foreach loop or
+     |       | ArrayIterator instead[0m
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)
+----------------------------------------------------------------------
+
+
+[1mFILE: includes/tableobject/table_object.php[0m
+----------------------------------------------------------------------
+[1mFOUND 3 ERRORS AFFECTING 3 LINES[0m
+----------------------------------------------------------------------
+ 270 | [31mERROR[0m | [1mIndirect access to variables, properties and methods
+     |       | will be evaluated strictly in left-to-right order
+     |       | since PHP 7.0. Use curly braces to remove
+     |       | ambiguity.[0m
+     |       | (PHPCompatibility.Variables.NewUniformVariableSyntax.Found)
+ 292 | [31mERROR[0m | [1mIndirect access to variables, properties and methods
+     |       | will be evaluated strictly in left-to-right order
+     |       | since PHP 7.0. Use curly braces to remove
+     |       | ambiguity.[0m
+     |       | (PHPCompatibility.Variables.NewUniformVariableSyntax.Found)
+ 312 | [31mERROR[0m | [1mIndirect access to variables, properties and methods
+     |       | will be evaluated strictly in left-to-right order
+     |       | since PHP 7.0. Use curly braces to remove
+     |       | ambiguity.[0m
+     |       | (PHPCompatibility.Variables.NewUniformVariableSyntax.Found)
+----------------------------------------------------------------------
+
+Time: 224ms; Memory: 12MB
+::error::FILE: includes/cron-manager.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 343 | ERROR | Function each() is deprecated since PHP 7.2 and%0A     |       | removed since PHP 8.0; Use a foreach loop or%0A     |       | ArrayIterator instead%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)%0A----------------------------------------------------------------------%0A%0A%0AFILE: includes/tableobject/table_object.php%0A----------------------------------------------------------------------%0AFOUND 3 ERRORS AFFECTING 3 LINES%0A----------------------------------------------------------------------%0A 270 | ERROR | Indirect access to variables, properties and methods%0A     |       | will be evaluated strictly in left-to-right order%0A     |       | since PHP 7.0. Use curly braces to remove%0A     |       | ambiguity.%0A     |       | (PHPCompatibility.Variables.NewUniformVariableSyntax.Found)%0A 292 | ERROR | Indirect access to variables, properties and methods%0A     |       | will be evaluated strictly in left-to-right order%0A     |       | since PHP 7.0. Use curly braces to remove%0A     |       | ambiguity.%0A     |       | (PHPCompatibility.Variables.NewUniformVariableSyntax.Found)%0A 312 | ERROR | Indirect access to variables, properties and methods%0A     |       | will be evaluated strictly in left-to-right order%0A     |       | since PHP 7.0. Use curly braces to remove%0A     |       | ambiguity.%0A     |       | (PHPCompatibility.Variables.NewUniformVariableSyntax.Found)%0A----------------------------------------------------------------------%0A
