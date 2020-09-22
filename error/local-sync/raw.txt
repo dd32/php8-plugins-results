@@ -1,0 +1,78 @@
+::warning::Plugin: https://wordpress.org/plugins/local-sync/%0ATrac: https://plugins.trac.wordpress.org/browser/local-sync/
+No syntax errors detected in local-sync/local-sync/admin/class-local-sync-admin.php
+No syntax errors detected in local-sync/local-sync/admin/class-local-sync-app-functions.php
+No syntax errors detected in local-sync/local-sync/admin/class-local-sync-db-op.php
+No syntax errors detected in local-sync/local-sync/admin/class-local-sync-exclude-option.php
+No syntax errors detected in local-sync/local-sync/admin/class-local-sync-file-ext.php
+No syntax errors detected in local-sync/local-sync/admin/class-local-sync-file-iterator.php
+No syntax errors detected in local-sync/local-sync/admin/class-local-sync-files-op.php
+No syntax errors detected in local-sync/local-sync/admin/class-local-sync-replace-db-links.php
+No syntax errors detected in local-sync/local-sync/admin/class-local-sync-restore-op.php
+No syntax errors detected in local-sync/local-sync/admin/class-local-sync-shell-dump.php
+No syntax errors detected in local-sync/local-sync/admin/class-local-sync-zip-facade.php
+No syntax errors detected in local-sync/local-sync/admin/index.php
+No syntax errors detected in local-sync/local-sync/admin/partials/local-sync-admin-display.php
+No syntax errors detected in local-sync/local-sync/admin/views/local-sync-settings-display.php
+No syntax errors detected in local-sync/local-sync/includes/class-local-sync-activator.php
+No syntax errors detected in local-sync/local-sync/includes/class-local-sync-deactivator.php
+No syntax errors detected in local-sync/local-sync/includes/class-local-sync-handle-server-requests.php
+No syntax errors detected in local-sync/local-sync/includes/class-local-sync-i18n.php
+No syntax errors detected in local-sync/local-sync/includes/class-local-sync-loader.php
+No syntax errors detected in local-sync/local-sync/includes/class-local-sync-options.php
+No syntax errors detected in local-sync/local-sync/includes/class-local-sync.php
+No syntax errors detected in local-sync/local-sync/includes/class-local-sync-utils.php
+No syntax errors detected in local-sync/local-sync/includes/index.php
+No syntax errors detected in local-sync/local-sync/index.php
+No syntax errors detected in local-sync/local-sync/local-sync-bridge/class-local-sync-file-system.php
+No syntax errors detected in local-sync/local-sync/local-sync-bridge/index.php
+No syntax errors detected in local-sync/local-sync/local-sync-bridge/iwp-pclzip.php
+No syntax errors detected in local-sync/local-sync/local-sync-bridge/wp-files/class-wp-error.php
+No syntax errors detected in local-sync/local-sync/local-sync-bridge/wp-files/class-wp-filesystem-base.php
+No syntax errors detected in local-sync/local-sync/local-sync-bridge/wp-files/class-wp-filesystem-direct.php
+No syntax errors detected in local-sync/local-sync/local-sync-bridge/wp-files/class-wp-filesystem-ftpext.php
+No syntax errors detected in local-sync/local-sync/local-sync-bridge/wp-files/class-wp-filesystem-ftpsockets.php
+No syntax errors detected in local-sync/local-sync/local-sync-bridge/wp-files/class-wp-filesystem-ssh2.php
+No syntax errors detected in local-sync/local-sync/local-sync-bridge/wp-files/default-constants.php
+No syntax errors detected in local-sync/local-sync/local-sync-bridge/wp-files/file.php
+No syntax errors detected in local-sync/local-sync/local-sync-bridge/wp-files/wp-db-custom.php
+No syntax errors detected in local-sync/local-sync/local-sync-bridge/wp-modified-functions.php
+No syntax errors detected in local-sync/local-sync/local-sync-constants.php
+No syntax errors detected in local-sync/local-sync/local-sync-debug.php
+No syntax errors detected in local-sync/local-sync/local-sync-generic-functions.php
+No syntax errors detected in local-sync/local-sync/local-sync.php
+No syntax errors detected in local-sync/local-sync/public/class-local-sync-public.php
+No syntax errors detected in local-sync/local-sync/public/index.php
+No syntax errors detected in local-sync/local-sync/public/partials/local-sync-public-display.php
+No syntax errors detected in local-sync/local-sync/uninstall.php
+.......[31mE[0m..................[31mE[0m.................. 45 / 45 (100%)
+
+
+
+[1mFILE: admin/class-local-sync-replace-db-links.php[0m
+----------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 258 | [31mERROR[0m | [1mFunction create_function() is deprecated since PHP 7.2
+     |       | and removed since PHP 8.0; Use an anonymous function
+     |       | instead[0m
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
+----------------------------------------------------------------------
+
+
+[1mFILE: local-sync-bridge/iwp-pclzip.php[0m
+----------------------------------------------------------------------
+[1mFOUND 3 ERRORS AFFECTING 3 LINES[0m
+----------------------------------------------------------------------
+ 6186 | [31mERROR[0m | [1mFunction get_magic_quotes_runtime() is deprecated
+      |       | since PHP 7.4 and removed since PHP 8.0[0m
+      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_runtimeDeprecatedRemoved)
+ 6190 | [31mERROR[0m | [1mFunction set_magic_quotes_runtime() is deprecated
+      |       | since PHP 5.3 and removed since PHP 7.0[0m
+      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.set_magic_quotes_runtimeDeprecatedRemoved)
+ 6221 | [31mERROR[0m | [1mFunction set_magic_quotes_runtime() is deprecated
+      |       | since PHP 5.3 and removed since PHP 7.0[0m
+      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.set_magic_quotes_runtimeDeprecatedRemoved)
+----------------------------------------------------------------------
+
+Time: 3.17 secs; Memory: 46.01MB
+::error::FILE: admin/class-local-sync-replace-db-links.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 258 | ERROR | Function create_function() is deprecated since PHP 7.2%0A     |       | and removed since PHP 8.0; Use an anonymous function%0A     |       | instead%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)%0A----------------------------------------------------------------------%0A%0A%0AFILE: local-sync-bridge/iwp-pclzip.php%0A----------------------------------------------------------------------%0AFOUND 3 ERRORS AFFECTING 3 LINES%0A----------------------------------------------------------------------%0A 6186 | ERROR | Function get_magic_quotes_runtime() is deprecated%0A      |       | since PHP 7.4 and removed since PHP 8.0%0A      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_runtimeDeprecatedRemoved)%0A 6190 | ERROR | Function set_magic_quotes_runtime() is deprecated%0A      |       | since PHP 5.3 and removed since PHP 7.0%0A      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.set_magic_quotes_runtimeDeprecatedRemoved)%0A 6221 | ERROR | Function set_magic_quotes_runtime() is deprecated%0A      |       | since PHP 5.3 and removed since PHP 7.0%0A      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.set_magic_quotes_runtimeDeprecatedRemoved)%0A----------------------------------------------------------------------%0A
