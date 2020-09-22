@@ -1,0 +1,56 @@
+
+vendor/guzzlehttp/guzzle/src/Event/Emitter.php
+  Fatal error: Cannot use lexical variable $eventName as a parameter name on line 48
+
+vendor/guzzlehttp/guzzle/src/Message/MessageFactory.php
+  Warning: "continue" targeting switch is equivalent to "break".
+      Did you mean to use "continue 2"?
+      on line 197
+  Warning: "continue" targeting switch is equivalent to "break".
+      Did you mean to use "continue 2"?
+      on line 216
+  Warning: "continue" targeting switch is equivalent to "break".
+      Did you mean to use "continue 2"?
+      on line 254
+  Warning: "continue" targeting switch is equivalent to "break".
+      Did you mean to use "continue 2"?
+      on line 357
+
+vendor/guzzlehttp/ringphp/src/Client/CurlFactory.php
+  Warning: "continue" targeting switch is equivalent to "break".
+      Did you mean to use "continue 2"?
+      on line 363
+  Warning: "continue" targeting switch is equivalent to "break".
+      Did you mean to use "continue 2"?
+      on line 382
+FILE: includes/cmb/init.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 208 | ERROR | Function name, class name, namespace name or constant
+     |       | name can not be reserved keyword '__DIR__' (since
+     |       | version 5.3)
+     |       | (PHPCompatibility.Keywords.ForbiddenNames.__dir__Found)
+----------------------------------------------------------------------
+
+
+FILE: includes/p2p/p2p-admin/dropdown.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 50 | ERROR | Function each() is deprecated since PHP 7.2 and removed
+    |       | since PHP 8.0; Use a foreach loop or ArrayIterator
+    |       | instead
+    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)
+----------------------------------------------------------------------
+
+
+FILE: vendor/guzzlehttp/guzzle/src/Event/Emitter.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 48 | ERROR | Variables bound to a closure via the use construct
+    |       | cannot use the same name as superglobals, $this, or a
+    |       | declared parameter since PHP 7.1. Found: $eventName
+    |       | (PHPCompatibility.FunctionDeclarations.ForbiddenVariableNamesInClosureUse.FoundShadowParam)
+----------------------------------------------------------------------
