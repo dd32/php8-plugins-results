@@ -45,6 +45,10 @@ No syntax errors detected in futurio-extra/futurio-extra/include/controls/views/
 No syntax errors detected in futurio-extra/futurio-extra/include/controls/views/textarea.php
 No syntax errors detected in futurio-extra/futurio-extra/include/core/class-kirki-active-callback.php
 No syntax errors detected in futurio-extra/futurio-extra/include/core/class-kirki-config.php
+
+Warning: Private methods cannot be final as they are never overridden by other classes in futurio-extra/futurio-extra/include/core/class-kirki-control.php on line 65
+
+Warning: Private methods cannot be final as they are never overridden by other classes in futurio-extra/futurio-extra/include/core/class-kirki-control.php on line 101
 No syntax errors detected in futurio-extra/futurio-extra/include/core/class-kirki-control.php
 No syntax errors detected in futurio-extra/futurio-extra/include/core/class-kirki-field.php
 No syntax errors detected in futurio-extra/futurio-extra/include/core/class-kirki-helper.php
@@ -57,6 +61,12 @@ No syntax errors detected in futurio-extra/futurio-extra/include/core/class-kirk
 No syntax errors detected in futurio-extra/futurio-extra/include/core/class-kirki-section.php
 No syntax errors detected in futurio-extra/futurio-extra/include/core/class-kirki-sections.php
 No syntax errors detected in futurio-extra/futurio-extra/include/core/class-kirki-setting-site-option.php
+
+Warning: Private methods cannot be final as they are never overridden by other classes in futurio-extra/futurio-extra/include/core/class-kirki-settings.php on line 67
+
+Warning: Private methods cannot be final as they are never overridden by other classes in futurio-extra/futurio-extra/include/core/class-kirki-settings.php on line 109
+
+Warning: Private methods cannot be final as they are never overridden by other classes in futurio-extra/futurio-extra/include/core/class-kirki-settings.php on line 133
 No syntax errors detected in futurio-extra/futurio-extra/include/core/class-kirki-settings.php
 No syntax errors detected in futurio-extra/futurio-extra/include/core/class-kirki-setting-user-meta.php
 No syntax errors detected in futurio-extra/futurio-extra/include/core/class-kirki-toolkit.php
@@ -225,7 +235,7 @@ No syntax errors detected in futurio-extra/futurio-extra/options/posts-pages.php
 No syntax errors detected in futurio-extra/futurio-extra/options/sidebar.php
 No syntax errors detected in futurio-extra/futurio-extra/options/top-bar.php
 No syntax errors detected in futurio-extra/futurio-extra/options/woocommerce.php
-No syntax errors detected in futurio-extra/futurio-extra/options/woocommerce.php
+::error::%0Ainclude/core/class-kirki-control.php%0A  Warning: Private methods cannot be final as they are never overridden by other classes on line 65%0A  Warning: Private methods cannot be final as they are never overridden by other classes on line 101%0A%0Ainclude/core/class-kirki-settings.php%0A  Warning: Private methods cannot be final as they are never overridden by other classes on line 67%0A  Warning: Private methods cannot be final as they are never overridden by other classes on line 109%0A  Warning: Private methods cannot be final as they are never overridden by other classes on line 133
 ............................................................  60 / 226 (27%)
 .....S.SS..........................................S..[31mE[0m..... 120 / 226 (53%)
 ............................................................ 180 / 226 (80%)
@@ -234,12 +244,15 @@ No syntax errors detected in futurio-extra/futurio-extra/options/woocommerce.php
 
 
 [1mFILE: include/modules/css/class-kirki-css-to-file.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 115 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse order to implode has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first
-     |       | parameter and $pieces the second[0m (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
+ 115 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse
+     |       | order to implode has been deprecated since PHP 7.4 and
+     |       | is removed since PHP 8.0; $glue should be the first
+     |       | parameter and $pieces the second[0m
+     |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
+----------------------------------------------------------------------
 
-Time: 4.29 secs; Memory: 112.01MB
-::error::FILE: include/modules/css/class-kirki-css-to-file.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 115 | ERROR | Passing the $glue and $pieces parameters in reverse order to implode has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first%0A     |       | parameter and $pieces the second (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
+Time: 4.77 secs; Memory: 112.01MB
+::error::FILE: include/modules/css/class-kirki-css-to-file.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 115 | ERROR | Passing the $glue and $pieces parameters in reverse%0A     |       | order to implode has been deprecated since PHP 7.4 and%0A     |       | is removed since PHP 8.0; $glue should be the first%0A     |       | parameter and $pieces the second%0A     |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A----------------------------------------------------------------------%0A
