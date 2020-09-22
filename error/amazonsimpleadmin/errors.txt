@@ -1,41 +1,57 @@
 
 lib/AsaAmazon/com/amazon/paapi5/v1/BrowseNodeChildren.php
+  Fatal error: Cannot use "parent" when current class scope has no parent on line 174
 
 lib/AsaAmazon/com/amazon/paapi5/v1/Properties.php
+  Fatal error: Cannot use "parent" when current class scope has no parent on line 174
+
+lib/AsaZend/Rest/Client.php
+  Warning: Private methods cannot be final as they are never overridden by other classes on line 101
 
 lib/AsaZend/Validate/Isbn.php
+  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 171
 FILE: lib/AsaAmazon/com/amazon/paapi5/v1/BrowseNodeChildren.php
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 FOUND 2 ERRORS AFFECTING 2 LINES
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 174 | ERROR | Using "parent" inside a class without parent is deprecated since PHP 7.4 and removed since PHP 8.0
+----------------------------------------------------------------------
+ 174 | ERROR | Using "parent" inside a class without parent is
+     |       | deprecated since PHP 7.4 and removed since PHP 8.0
      |       | (PHPCompatibility.Classes.RemovedOrphanedParent.Removed)
- 187 | ERROR | Using "parent" inside a class without parent is deprecated since PHP 7.4 and removed since PHP 8.0
+ 187 | ERROR | Using "parent" inside a class without parent is
+     |       | deprecated since PHP 7.4 and removed since PHP 8.0
      |       | (PHPCompatibility.Classes.RemovedOrphanedParent.Removed)
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 FILE: lib/AsaAmazon/com/amazon/paapi5/v1/Properties.php
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 FOUND 2 ERRORS AFFECTING 2 LINES
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 174 | ERROR | Using "parent" inside a class without parent is deprecated since PHP 7.4 and removed since PHP 8.0
+----------------------------------------------------------------------
+ 174 | ERROR | Using "parent" inside a class without parent is
+     |       | deprecated since PHP 7.4 and removed since PHP 8.0
      |       | (PHPCompatibility.Classes.RemovedOrphanedParent.Removed)
- 187 | ERROR | Using "parent" inside a class without parent is deprecated since PHP 7.4 and removed since PHP 8.0
+ 187 | ERROR | Using "parent" inside a class without parent is
+     |       | deprecated since PHP 7.4 and removed since PHP 8.0
      |       | (PHPCompatibility.Classes.RemovedOrphanedParent.Removed)
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 FILE: lib/AsaZend/Validate/Isbn.php
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 FOUND 3 ERRORS AFFECTING 3 LINES
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 171 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $isbn10{$i}
+----------------------------------------------------------------------
+ 171 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $isbn10{$i}
      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
- 189 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $isbn13{$i}
+ 189 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $isbn13{$i}
      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
- 191 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $isbn13{$i}
+ 191 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $isbn13{$i}
      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 PHPCBF CAN FIX THE 3 MARKED SNIFF VIOLATIONS AUTOMATICALLY
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------

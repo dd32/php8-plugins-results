@@ -71,6 +71,8 @@ No syntax errors detected in text-slider/text-slider/includes/htmlpurifier/libra
 No syntax errors detected in text-slider/text-slider/includes/htmlpurifier/library/HTMLPurifier/AttrValidator.php
 No syntax errors detected in text-slider/text-slider/includes/htmlpurifier/library/HTMLPurifier/Bootstrap.php
 No syntax errors detected in text-slider/text-slider/includes/htmlpurifier/library/HTMLPurifier/ChildDef/Chameleon.php
+
+Fatal error: Array and string offset access syntax with curly braces is no longer supported in text-slider/text-slider/includes/htmlpurifier/library/HTMLPurifier/ChildDef/Custom.php on line 48
 Errors parsing text-slider/text-slider/includes/htmlpurifier/library/HTMLPurifier/ChildDef/Custom.php
 No syntax errors detected in text-slider/text-slider/includes/htmlpurifier/library/HTMLPurifier/ChildDef/Empty.php
 No syntax errors detected in text-slider/text-slider/includes/htmlpurifier/library/HTMLPurifier/ChildDef/List.php
@@ -104,6 +106,8 @@ No syntax errors detected in text-slider/text-slider/includes/htmlpurifier/libra
 No syntax errors detected in text-slider/text-slider/includes/htmlpurifier/library/HTMLPurifier/Doctype.php
 No syntax errors detected in text-slider/text-slider/includes/htmlpurifier/library/HTMLPurifier/DoctypeRegistry.php
 No syntax errors detected in text-slider/text-slider/includes/htmlpurifier/library/HTMLPurifier/ElementDef.php
+
+Fatal error: Array and string offset access syntax with curly braces is no longer supported in text-slider/text-slider/includes/htmlpurifier/library/HTMLPurifier/Encoder.php on line 157
 Errors parsing text-slider/text-slider/includes/htmlpurifier/library/HTMLPurifier/Encoder.php
 No syntax errors detected in text-slider/text-slider/includes/htmlpurifier/library/HTMLPurifier/EntityLookup.php
 No syntax errors detected in text-slider/text-slider/includes/htmlpurifier/library/HTMLPurifier/EntityParser.php
@@ -191,6 +195,8 @@ No syntax errors detected in text-slider/text-slider/includes/htmlpurifier/libra
 No syntax errors detected in text-slider/text-slider/includes/htmlpurifier/library/HTMLPurifier/Strategy.php
 No syntax errors detected in text-slider/text-slider/includes/htmlpurifier/library/HTMLPurifier/StringHashParser.php
 No syntax errors detected in text-slider/text-slider/includes/htmlpurifier/library/HTMLPurifier/StringHash.php
+
+Fatal error: Array and string offset access syntax with curly braces is no longer supported in text-slider/text-slider/includes/htmlpurifier/library/HTMLPurifier/TagTransform/Font.php on line 78
 Errors parsing text-slider/text-slider/includes/htmlpurifier/library/HTMLPurifier/TagTransform/Font.php
 No syntax errors detected in text-slider/text-slider/includes/htmlpurifier/library/HTMLPurifier/TagTransform/Simple.php
 No syntax errors detected in text-slider/text-slider/includes/htmlpurifier/library/HTMLPurifier/TagTransform.php
@@ -229,6 +235,8 @@ No syntax errors detected in text-slider/text-slider/includes/htmlpurifier/libra
 No syntax errors detected in text-slider/text-slider/includes/htmlpurifier/library/HTMLPurifier/VarParserException.php
 No syntax errors detected in text-slider/text-slider/includes/htmlpurifier/library/HTMLPurifier/VarParser.php
 No syntax errors detected in text-slider/text-slider/includes/htmlpurifier/library/HTMLPurifier/Zipper.php
+
+Fatal error: __autoload() is no longer supported, use spl_autoload_register() instead in text-slider/text-slider/includes/htmlpurifier/library/HTMLPurifier.autoload.php on line 17
 Errors parsing text-slider/text-slider/includes/htmlpurifier/library/HTMLPurifier.autoload.php
 No syntax errors detected in text-slider/text-slider/includes/htmlpurifier/library/HTMLPurifier.auto.php
 No syntax errors detected in text-slider/text-slider/includes/htmlpurifier/library/HTMLPurifier.composer.php
@@ -242,8 +250,7 @@ No syntax errors detected in text-slider/text-slider/public/class-text-slider.ph
 No syntax errors detected in text-slider/text-slider/public/views/public.php
 No syntax errors detected in text-slider/text-slider/text-slider.php
 No syntax errors detected in text-slider/text-slider/uninstall.php
-::error::%0Aincludes/htmlpurifier/library/HTMLPurifier/ChildDef/Custom.php%0A%0Aincludes/htmlpurifier/library/HTMLPurifier/Encoder.php%0A%0Aincludes/htmlpurifier/library/HTMLPurifier/TagTransform/Font.php%0A%0Aincludes/htmlpurifier/library/HTMLPurifier.autoload.php
-No syntax errors detected in text-slider/text-slider/uninstall.php
+::error::%0Aincludes/htmlpurifier/library/HTMLPurifier/ChildDef/Custom.php%0A  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 48%0A%0Aincludes/htmlpurifier/library/HTMLPurifier/Encoder.php%0A  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 157%0A%0Aincludes/htmlpurifier/library/HTMLPurifier/TagTransform/Font.php%0A  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 78%0A%0Aincludes/htmlpurifier/library/HTMLPurifier.autoload.php%0A  Fatal error: __autoload() is no longer supported, use spl_autoload_register() instead on line 17
 ............................................................  60 / 243 (25%)
 ............[32mE[0m.......[31mE[0m........................[32mE[0m.............. 120 / 243 (49%)
 ..........................................................[31mE[0m. 180 / 243 (74%)
@@ -253,67 +260,84 @@ No syntax errors detected in text-slider/text-slider/uninstall.php
 
 
 [1mFILE: includes/htmlpurifier/library/HTMLPurifier/ChildDef/Custom.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 48 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $raw{0}[0m
+----------------------------------------------------------------------
+ 48 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and
+    |       |     string offsets has been deprecated in PHP 7.4 and
+    |       |     removed in PHP 8.0. Found: $raw{0}[0m
     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mPHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 [1mFILE: includes/htmlpurifier/library/HTMLPurifier/Config.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 797 | [31mERROR[0m | [1mFunction get_magic_quotes_gpc() is deprecated since PHP 7.4 and removed since PHP 8.0[0m
+----------------------------------------------------------------------
+ 797 | [31mERROR[0m | [1mFunction get_magic_quotes_gpc() is deprecated since
+     |       | PHP 7.4 and removed since PHP 8.0[0m
      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_gpcDeprecatedRemoved)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 [1mFILE: includes/htmlpurifier/library/HTMLPurifier/Encoder.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 157 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $str{$i}[0m
+----------------------------------------------------------------------
+ 157 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $str{$i}[0m
      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mPHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
-[1mFILE: includes/htmlpurifier/library/HTMLPurifier/Printer/HTMLDefinition.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[1mFILE: ...des/htmlpurifier/library/HTMLPurifier/Printer/HTMLDefinition.php[0m
+----------------------------------------------------------------------
 [1mFOUND 2 ERRORS AFFECTING 2 LINES[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 46 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse order to implode has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first
-    |       | parameter and $pieces the second[0m (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
- 47 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse order to implode has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first
-    |       | parameter and $pieces the second[0m (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
+ 46 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse
+    |       | order to implode has been deprecated since PHP 7.4 and
+    |       | is removed since PHP 8.0; $glue should be the first
+    |       | parameter and $pieces the second[0m
+    |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
+ 47 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse
+    |       | order to implode has been deprecated since PHP 7.4 and
+    |       | is removed since PHP 8.0; $glue should be the first
+    |       | parameter and $pieces the second[0m
+    |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
+----------------------------------------------------------------------
 
 
 [1mFILE: includes/htmlpurifier/library/HTMLPurifier/TagTransform/Font.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 2 ERRORS AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 78 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $attr['size']{0}[0m
+----------------------------------------------------------------------
+ 78 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and
+    |       |     string offsets has been deprecated in PHP 7.4 and
+    |       |     removed in PHP 8.0. Found: $attr['size']{0}[0m
     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
- 78 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $attr['size']{0}[0m
+ 78 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and
+    |       |     string offsets has been deprecated in PHP 7.4 and
+    |       |     removed in PHP 8.0. Found: $attr['size']{0}[0m
     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mPHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 [1mFILE: includes/htmlpurifier/library/HTMLPurifier.autoload.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 17 | [31mERROR[0m | [1mSpecifying an autoloader using an __autoload() function is deprecated since PHP 7.2 and no longer supported since PHP 8.0[0m
+----------------------------------------------------------------------
+ 17 | [31mERROR[0m | [1mSpecifying an autoloader using an __autoload() function
+    |       | is deprecated since PHP 7.2 and no longer supported
+    |       | since PHP 8.0[0m
     |       | (PHPCompatibility.FunctionNameRestrictions.RemovedMagicAutoload.Removed)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
-Time: 3.17 secs; Memory: 36MB
-::error::FILE: includes/htmlpurifier/library/HTMLPurifier/ChildDef/Custom.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 48 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $raw{0}%0A    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0APHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: includes/htmlpurifier/library/HTMLPurifier/Config.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 797 | ERROR | Function get_magic_quotes_gpc() is deprecated since PHP 7.4 and removed since PHP 8.0%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_gpcDeprecatedRemoved)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: includes/htmlpurifier/library/HTMLPurifier/Encoder.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 157 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $str{$i}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0APHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: includes/htmlpurifier/library/HTMLPurifier/Printer/HTMLDefinition.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 46 | ERROR | Passing the $glue and $pieces parameters in reverse order to implode has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first%0A    |       | parameter and $pieces the second (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A 47 | ERROR | Passing the $glue and $pieces parameters in reverse order to implode has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first%0A    |       | parameter and $pieces the second (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: includes/htmlpurifier/library/HTMLPurifier/TagTransform/Font.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 78 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $attr['size']{0}%0A    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 78 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $attr['size']{0}%0A    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0APHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: includes/htmlpurifier/library/HTMLPurifier.autoload.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 17 | ERROR | Specifying an autoloader using an __autoload() function is deprecated since PHP 7.2 and no longer supported since PHP 8.0%0A    |       | (PHPCompatibility.FunctionNameRestrictions.RemovedMagicAutoload.Removed)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
+Time: 2.99 secs; Memory: 36MB
+::error::FILE: includes/htmlpurifier/library/HTMLPurifier/ChildDef/Custom.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 48 | ERROR | [x] Curly brace syntax for accessing array elements and%0A    |       |     string offsets has been deprecated in PHP 7.4 and%0A    |       |     removed in PHP 8.0. Found: $raw{0}%0A    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A----------------------------------------------------------------------%0APHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A----------------------------------------------------------------------%0A%0A%0AFILE: includes/htmlpurifier/library/HTMLPurifier/Config.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 797 | ERROR | Function get_magic_quotes_gpc() is deprecated since%0A     |       | PHP 7.4 and removed since PHP 8.0%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_gpcDeprecatedRemoved)%0A----------------------------------------------------------------------%0A%0A%0AFILE: includes/htmlpurifier/library/HTMLPurifier/Encoder.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 157 | ERROR | [x] Curly brace syntax for accessing array elements%0A     |       |     and string offsets has been deprecated in PHP 7.4%0A     |       |     and removed in PHP 8.0. Found: $str{$i}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A----------------------------------------------------------------------%0APHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A----------------------------------------------------------------------%0A%0A%0AFILE: ...des/htmlpurifier/library/HTMLPurifier/Printer/HTMLDefinition.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A----------------------------------------------------------------------%0A 46 | ERROR | Passing the $glue and $pieces parameters in reverse%0A    |       | order to implode has been deprecated since PHP 7.4 and%0A    |       | is removed since PHP 8.0; $glue should be the first%0A    |       | parameter and $pieces the second%0A    |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A 47 | ERROR | Passing the $glue and $pieces parameters in reverse%0A    |       | order to implode has been deprecated since PHP 7.4 and%0A    |       | is removed since PHP 8.0; $glue should be the first%0A    |       | parameter and $pieces the second%0A    |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A----------------------------------------------------------------------%0A%0A%0AFILE: includes/htmlpurifier/library/HTMLPurifier/TagTransform/Font.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 78 | ERROR | [x] Curly brace syntax for accessing array elements and%0A    |       |     string offsets has been deprecated in PHP 7.4 and%0A    |       |     removed in PHP 8.0. Found: $attr['size']{0}%0A    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 78 | ERROR | [x] Curly brace syntax for accessing array elements and%0A    |       |     string offsets has been deprecated in PHP 7.4 and%0A    |       |     removed in PHP 8.0. Found: $attr['size']{0}%0A    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A----------------------------------------------------------------------%0APHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A----------------------------------------------------------------------%0A%0A%0AFILE: includes/htmlpurifier/library/HTMLPurifier.autoload.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 17 | ERROR | Specifying an autoloader using an __autoload() function%0A    |       | is deprecated since PHP 7.2 and no longer supported%0A    |       | since PHP 8.0%0A    |       | (PHPCompatibility.FunctionNameRestrictions.RemovedMagicAutoload.Removed)%0A----------------------------------------------------------------------%0A
