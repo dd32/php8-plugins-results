@@ -1,0 +1,46 @@
+::warning::Plugin: https://wordpress.org/plugins/wpzeus-worker/%0ATrac: https://plugins.trac.wordpress.org/browser/wpzeus-worker/
+No syntax errors detected in wpzeus-worker/wpzeus-worker/api.php
+No syntax errors detected in wpzeus-worker/wpzeus-worker/backup.class.php
+No syntax errors detected in wpzeus-worker/wpzeus-worker/comment.class.php
+No syntax errors detected in wpzeus-worker/wpzeus-worker/core.class.php
+No syntax errors detected in wpzeus-worker/wpzeus-worker/helper.class.php
+No syntax errors detected in wpzeus-worker/wpzeus-worker/init.php
+No syntax errors detected in wpzeus-worker/wpzeus-worker/installer.class.php
+No syntax errors detected in wpzeus-worker/wpzeus-worker/link.class.php
+No syntax errors detected in wpzeus-worker/wpzeus-worker/plugins/cleanup/cleanup.php
+No syntax errors detected in wpzeus-worker/wpzeus-worker/plugins/extra_html_example/extra_html_example.php
+No syntax errors detected in wpzeus-worker/wpzeus-worker/plugins/search/search.php
+No syntax errors detected in wpzeus-worker/wpzeus-worker/post.class.php
+No syntax errors detected in wpzeus-worker/wpzeus-worker/stats.class.php
+.[31mE[0m..........[31mE[0m 13 / 13 (100%)
+
+
+
+[1mFILE: backup.class.php[0m
+----------------------------------------------------------------------
+[1mFOUND 2 ERRORS AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 275 | [31mERROR[0m | [1mExtension 'ereg' is deprecated since PHP 5.3 and
+     |       | removed since PHP 7.0; Use pcre instead[0m
+     |       | (PHPCompatibility.Extensions.RemovedExtensions.eregDeprecatedRemoved)
+ 275 | [31mERROR[0m | [1mFunction ereg_replace() is deprecated since PHP 5.3
+     |       | and removed since PHP 7.0; Use preg_replace()
+     |       | instead[0m
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.ereg_replaceDeprecatedRemoved)
+----------------------------------------------------------------------
+
+
+[1mFILE: stats.class.php[0m
+----------------------------------------------------------------------
+[1mFOUND 2 ERRORS AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 359 | [31mERROR[0m | [1mExtension 'ereg' is deprecated since PHP 5.3 and
+     |       | removed since PHP 7.0; Use pcre instead[0m
+     |       | (PHPCompatibility.Extensions.RemovedExtensions.eregDeprecatedRemoved)
+ 359 | [31mERROR[0m | [1mFunction ereg() is deprecated since PHP 5.3 and
+     |       | removed since PHP 7.0; Use preg_match() instead[0m
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eregDeprecatedRemoved)
+----------------------------------------------------------------------
+
+Time: 409ms; Memory: 14MB
+::error::FILE: backup.class.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 275 | ERROR | Extension 'ereg' is deprecated since PHP 5.3 and%0A     |       | removed since PHP 7.0; Use pcre instead%0A     |       | (PHPCompatibility.Extensions.RemovedExtensions.eregDeprecatedRemoved)%0A 275 | ERROR | Function ereg_replace() is deprecated since PHP 5.3%0A     |       | and removed since PHP 7.0; Use preg_replace()%0A     |       | instead%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.ereg_replaceDeprecatedRemoved)%0A----------------------------------------------------------------------%0A%0A%0AFILE: stats.class.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 359 | ERROR | Extension 'ereg' is deprecated since PHP 5.3 and%0A     |       | removed since PHP 7.0; Use pcre instead%0A     |       | (PHPCompatibility.Extensions.RemovedExtensions.eregDeprecatedRemoved)%0A 359 | ERROR | Function ereg() is deprecated since PHP 5.3 and%0A     |       | removed since PHP 7.0; Use preg_match() instead%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eregDeprecatedRemoved)%0A----------------------------------------------------------------------%0A

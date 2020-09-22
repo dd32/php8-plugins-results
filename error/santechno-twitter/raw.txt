@@ -1,0 +1,43 @@
+::warning::Plugin: https://wordpress.org/plugins/santechno-twitter/%0ATrac: https://plugins.trac.wordpress.org/browser/santechno-twitter/
+No syntax errors detected in santechno-twitter/santechno-twitter/index.php
+No syntax errors detected in santechno-twitter/santechno-twitter/widgets/codebird.php
+No syntax errors detected in santechno-twitter/santechno-twitter/widgets/displayTweet.php
+No syntax errors detected in santechno-twitter/santechno-twitter/widgets/SanTwitterWidget.class.php
+.[31mE[0m[31mE[0m[31mE[0m 4 / 4 (100%)
+
+
+
+[1mFILE: widgets/codebird.php[0m
+----------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 209 | [31mERROR[0m | [1mFunction get_magic_quotes_gpc() is deprecated since
+     |       | PHP 7.4 and removed since PHP 8.0[0m
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_gpcDeprecatedRemoved)
+----------------------------------------------------------------------
+
+
+[1mFILE: widgets/displayTweet.php[0m
+----------------------------------------------------------------------
+[1mFOUND 2 ERRORS AFFECTING 2 LINES[0m
+----------------------------------------------------------------------
+ 20 | [31mERROR[0m | [1m"$this" can no longer be used in a plain function or
+    |       | method since PHP 7.1.[0m
+    |       | (PHPCompatibility.Variables.ForbiddenThisUseContexts.OutsideObjectContext)
+ 28 | [31mERROR[0m | [1m"$this" can no longer be used in a plain function or
+    |       | method since PHP 7.1.[0m
+    |       | (PHPCompatibility.Variables.ForbiddenThisUseContexts.OutsideObjectContext)
+----------------------------------------------------------------------
+
+
+[1mFILE: widgets/SanTwitterWidget.class.php[0m
+----------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 5 | [31mERROR[0m | [1mDeclaration of a PHP4 style class constructor is
+   |       | deprecated since PHP 7.0 and removed since PHP 8.0[0m
+   |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+----------------------------------------------------------------------
+
+Time: 182ms; Memory: 16MB
+::error::FILE: widgets/codebird.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 209 | ERROR | Function get_magic_quotes_gpc() is deprecated since%0A     |       | PHP 7.4 and removed since PHP 8.0%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_gpcDeprecatedRemoved)%0A----------------------------------------------------------------------%0A%0A%0AFILE: widgets/displayTweet.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A----------------------------------------------------------------------%0A 20 | ERROR | "$this" can no longer be used in a plain function or%0A    |       | method since PHP 7.1.%0A    |       | (PHPCompatibility.Variables.ForbiddenThisUseContexts.OutsideObjectContext)%0A 28 | ERROR | "$this" can no longer be used in a plain function or%0A    |       | method since PHP 7.1.%0A    |       | (PHPCompatibility.Variables.ForbiddenThisUseContexts.OutsideObjectContext)%0A----------------------------------------------------------------------%0A%0A%0AFILE: widgets/SanTwitterWidget.class.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 5 | ERROR | Declaration of a PHP4 style class constructor is%0A   |       | deprecated since PHP 7.0 and removed since PHP 8.0%0A   |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)%0A----------------------------------------------------------------------%0A
