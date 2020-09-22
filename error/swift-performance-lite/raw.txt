@@ -42,6 +42,8 @@ No syntax errors detected in swift-performance-lite/swift-performance-lite/modul
 No syntax errors detected in swift-performance-lite/swift-performance-lite/modules/cache/rewrites/nginx.php
 No syntax errors detected in swift-performance-lite/swift-performance-lite/modules/cdn/cdn-manager.php
 No syntax errors detected in swift-performance-lite/swift-performance-lite/modules/cdn/maxcdn.php
+
+Fatal error: Array and string offset access syntax with curly braces is no longer supported in swift-performance-lite/swift-performance-lite/modules/cdn/oauth.inc.php on line 102
 Errors parsing swift-performance-lite/swift-performance-lite/modules/cdn/oauth.inc.php
 No syntax errors detected in swift-performance-lite/swift-performance-lite/modules/critical-font/critical-font.php
 No syntax errors detected in swift-performance-lite/swift-performance-lite/modules/critical-font/fonts/fontawesome/prototype.php
@@ -68,24 +70,27 @@ No syntax errors detected in swift-performance-lite/swift-performance-lite/templ
 No syntax errors detected in swift-performance-lite/swift-performance-lite/templates/set-purchase-key.php
 No syntax errors detected in swift-performance-lite/swift-performance-lite/templates/upgrade-pro.php
 No syntax errors detected in swift-performance-lite/swift-performance-lite/uninstall.php
-::error::%0Amodules/cdn/oauth.inc.php
-No syntax errors detected in swift-performance-lite/swift-performance-lite/uninstall.php
+::error::%0Amodules/cdn/oauth.inc.php%0A  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 102
 ...........................................[32mE[0m................ 60 / 69 (87%)
 .........                                                    69 / 69 (100%)
 
 
 
 [1mFILE: modules/cdn/oauth.inc.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 2 ERRORS AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 102 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $built{$i}[0m
+----------------------------------------------------------------------
+ 102 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $built{$i}[0m
      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
- 102 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $signature{$i}[0m
+ 102 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $signature{$i}[0m
      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mPHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
-Time: 2.87 secs; Memory: 34MB
-::error::FILE: modules/cdn/oauth.inc.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 102 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $built{$i}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 102 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $signature{$i}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0APHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
+Time: 2.9 secs; Memory: 34MB
+::error::FILE: modules/cdn/oauth.inc.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 102 | ERROR | [x] Curly brace syntax for accessing array elements%0A     |       |     and string offsets has been deprecated in PHP 7.4%0A     |       |     and removed in PHP 8.0. Found: $built{$i}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 102 | ERROR | [x] Curly brace syntax for accessing array elements%0A     |       |     and string offsets has been deprecated in PHP 7.4%0A     |       |     and removed in PHP 8.0. Found: $signature{$i}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A----------------------------------------------------------------------%0APHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A----------------------------------------------------------------------%0A

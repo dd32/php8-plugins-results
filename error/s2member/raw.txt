@@ -185,6 +185,8 @@ No syntax errors detected in s2member/s2member/src/includes/externals/mailchimp/
 No syntax errors detected in s2member/s2member/src/includes/externals/mailchimp/Mailchimp/Vip.php
 No syntax errors detected in s2member/s2member/src/includes/externals/mailchimp/Mailchimp-o.php
 No syntax errors detected in s2member/s2member/src/includes/externals/mailchimp/Mailchimp.php
+
+Fatal error: Array and string offset access syntax with curly braces is no longer supported in s2member/s2member/src/includes/externals/markdown/nc-markdown.inc.php on line 755
 Errors parsing s2member/s2member/src/includes/externals/markdown/nc-markdown.inc.php
 No syntax errors detected in s2member/s2member/src/includes/funcs.inc.php
 No syntax errors detected in s2member/s2member/src/includes/functions/api-functions.inc.php
@@ -270,8 +272,7 @@ No syntax errors detected in s2member/s2member/src/vendor/paragonie/random_compa
 No syntax errors detected in s2member/s2member/src/vendor/paragonie/random_compat/lib/random.php
 No syntax errors detected in s2member/s2member/src/vendor/paragonie/random_compat/other/build_phar.php
 No syntax errors detected in s2member/s2member/src/vendor/paragonie/random_compat/psalm-autoload.php
-::error::%0Asrc/includes/externals/markdown/nc-markdown.inc.php
-No syntax errors detected in s2member/s2member/src/vendor/paragonie/random_compat/psalm-autoload.php
+::error::%0Asrc/includes/externals/markdown/nc-markdown.inc.php%0A  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 755
 SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS  60 / 271 (22%)
 SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS 120 / 271 (44%)
 SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS 180 / 271 (66%)
@@ -281,14 +282,16 @@ SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS. 240 / 271 (89%)
 
 
 [1mFILE: src/vendor/paragonie/random_compat/lib/byte_safe_strings.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 2 ERRORS AFFECTING 2 LINES[0m
--------------------------------------------------------------------------------------------------------------------------------------------------
- 32 | [31mERROR[0m | [1mThe constant "MB_OVERLOAD_STRING" is removed since PHP 8.0[0m
+----------------------------------------------------------------------
+ 32 | [31mERROR[0m | [1mThe constant "MB_OVERLOAD_STRING" is removed since PHP
+    |       | 8.0[0m
     |       | (PHPCompatibility.Constants.RemovedConstants.mb_overload_stringRemoved)
- 86 | [31mERROR[0m | [1mThe constant "MB_OVERLOAD_STRING" is removed since PHP 8.0[0m
+ 86 | [31mERROR[0m | [1mThe constant "MB_OVERLOAD_STRING" is removed since PHP
+    |       | 8.0[0m
     |       | (PHPCompatibility.Constants.RemovedConstants.mb_overload_stringRemoved)
--------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
-Time: 414ms; Memory: 14MB
-::error::FILE: src/vendor/paragonie/random_compat/lib/byte_safe_strings.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A-------------------------------------------------------------------------------------------------------------------------------------------------%0A 32 | ERROR | The constant "MB_OVERLOAD_STRING" is removed since PHP 8.0%0A    |       | (PHPCompatibility.Constants.RemovedConstants.mb_overload_stringRemoved)%0A 86 | ERROR | The constant "MB_OVERLOAD_STRING" is removed since PHP 8.0%0A    |       | (PHPCompatibility.Constants.RemovedConstants.mb_overload_stringRemoved)%0A-------------------------------------------------------------------------------------------------------------------------------------------------%0A
+Time: 417ms; Memory: 14MB
+::error::FILE: src/vendor/paragonie/random_compat/lib/byte_safe_strings.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A----------------------------------------------------------------------%0A 32 | ERROR | The constant "MB_OVERLOAD_STRING" is removed since PHP%0A    |       | 8.0%0A    |       | (PHPCompatibility.Constants.RemovedConstants.mb_overload_stringRemoved)%0A 86 | ERROR | The constant "MB_OVERLOAD_STRING" is removed since PHP%0A    |       | 8.0%0A    |       | (PHPCompatibility.Constants.RemovedConstants.mb_overload_stringRemoved)%0A----------------------------------------------------------------------%0A
