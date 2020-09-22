@@ -674,7 +674,6 @@ No syntax errors detected in buddypress/buddypress/cli/features/steps/then.php
 No syntax errors detected in buddypress/buddypress/cli/features/steps/when.php
 No syntax errors detected in buddypress/buddypress/cli/utils/behat-tags.php
 No syntax errors detected in buddypress/buddypress/cli/wp-cli-bp.php
-No syntax errors detected in buddypress/buddypress/cli/wp-cli-bp.php
 ...........................................................[31mE[0m  60 / 675 (9%)
 ............................................................ 120 / 675 (18%)
 ............................................................ 180 / 675 (27%)
@@ -691,12 +690,15 @@ No syntax errors detected in buddypress/buddypress/cli/wp-cli-bp.php
 
 
 [1mFILE: bp-core/admin/bp-core-admin-tools.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 629 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse order to implode has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first
-     |       | parameter and $pieces the second[0m (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
+ 629 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse
+     |       | order to implode has been deprecated since PHP 7.4 and
+     |       | is removed since PHP 8.0; $glue should be the first
+     |       | parameter and $pieces the second[0m
+     |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
+----------------------------------------------------------------------
 
-Time: 17.93 secs; Memory: 44.01MB
-::error::FILE: bp-core/admin/bp-core-admin-tools.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 629 | ERROR | Passing the $glue and $pieces parameters in reverse order to implode has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first%0A     |       | parameter and $pieces the second (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
+Time: 18.02 secs; Memory: 44.01MB
+::error::FILE: bp-core/admin/bp-core-admin-tools.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 629 | ERROR | Passing the $glue and $pieces parameters in reverse%0A     |       | order to implode has been deprecated since PHP 7.4 and%0A     |       | is removed since PHP 8.0; $glue should be the first%0A     |       | parameter and $pieces the second%0A     |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A----------------------------------------------------------------------%0A
