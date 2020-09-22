@@ -1,0 +1,110 @@
+
+Response.php
+  Fatal error: Cannot use "parent" when current class scope has no parent on line 111
+FILE: Assertion.php
+----------------------------------------------------------------------
+FOUND 12 ERRORS AFFECTING 12 LINES
+----------------------------------------------------------------------
+ 369 | ERROR | Using a string as the assertion passed to assert() is
+     |       | deprecated since PHP 7.2 and removed since PHP 8.0.
+     |       | Found: '$key->type === XMLSecurityKey::RSA_SHA1'
+     |       | (PHPCompatibility.ParameterValues.RemovedAssertStringAssertion.Found)
+ 397 | ERROR | Using a string as the assertion passed to assert() is
+     |       | deprecated since PHP 7.2 and removed since PHP 8.0.
+     |       | Found: 'is_string($id)'
+     |       | (PHPCompatibility.ParameterValues.RemovedAssertStringAssertion.Found)
+ 419 | ERROR | Using a string as the assertion passed to assert() is
+     |       | deprecated since PHP 7.2 and removed since PHP 8.0.
+     |       | Found: 'is_int($issueInstant)'
+     |       | (PHPCompatibility.ParameterValues.RemovedAssertStringAssertion.Found)
+ 441 | ERROR | Using a string as the assertion passed to assert() is
+     |       | deprecated since PHP 7.2 and removed since PHP 8.0.
+     |       | Found: 'is_string($issuer)'
+     |       | (PHPCompatibility.ParameterValues.RemovedAssertStringAssertion.Found)
+ 474 | ERROR | Using a string as the assertion passed to assert() is
+     |       | deprecated since PHP 7.2 and removed since PHP 8.0.
+     |       | Found: 'is_array($nameId) || is_null($nameId)'
+     |       | (PHPCompatibility.ParameterValues.RemovedAssertStringAssertion.Found)
+ 620 | ERROR | Using a string as the assertion passed to assert() is
+     |       | deprecated since PHP 7.2 and removed since PHP 8.0.
+     |       | Found: 'is_int($notBefore) || is_null($notBefore)'
+     |       | (PHPCompatibility.ParameterValues.RemovedAssertStringAssertion.Found)
+ 647 | ERROR | Using a string as the assertion passed to assert() is
+     |       | deprecated since PHP 7.2 and removed since PHP 8.0.
+     |       | Found: 'is_int($notOnOrAfter) ||
+     |       | is_null($notOnOrAfter)'
+     |       | (PHPCompatibility.ParameterValues.RemovedAssertStringAssertion.Found)
+ 704 | ERROR | Using a string as the assertion passed to assert() is
+     |       | deprecated since PHP 7.2 and removed since PHP 8.0.
+     |       | Found: 'is_int($authnInstant) ||
+     |       | is_null($authnInstant)'
+     |       | (PHPCompatibility.ParameterValues.RemovedAssertStringAssertion.Found)
+ 731 | ERROR | Using a string as the assertion passed to assert() is
+     |       | deprecated since PHP 7.2 and removed since PHP 8.0.
+     |       | Found: 'is_int($sessionNotOnOrAfter) ||
+     |       | is_null($sessionNotOnOrAfter)'
+     |       | (PHPCompatibility.ParameterValues.RemovedAssertStringAssertion.Found)
+ 756 | ERROR | Using a string as the assertion passed to assert() is
+     |       | deprecated since PHP 7.2 and removed since PHP 8.0.
+     |       | Found: 'is_string($sessionIndex) ||
+     |       | is_null($sessionIndex)'
+     |       | (PHPCompatibility.ParameterValues.RemovedAssertStringAssertion.Found)
+ 823 | ERROR | Using a string as the assertion passed to assert() is
+     |       | deprecated since PHP 7.2 and removed since PHP 8.0.
+     |       | Found: 'is_string($authnContextClassRef) ||
+     |       | is_null($authnContextClassRef)'
+     |       | (PHPCompatibility.ParameterValues.RemovedAssertStringAssertion.Found)
+ 950 | ERROR | Using a string as the assertion passed to assert() is
+     |       | deprecated since PHP 7.2 and removed since PHP 8.0.
+     |       | Found: 'is_string($nameFormat)'
+     |       | (PHPCompatibility.ParameterValues.RemovedAssertStringAssertion.Found)
+----------------------------------------------------------------------
+
+
+FILE: Response.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 111 | ERROR | Using "parent" inside a class without parent is
+     |       | deprecated since PHP 7.4 and removed since PHP 8.0
+     |       | (PHPCompatibility.Classes.RemovedOrphanedParent.Removed)
+----------------------------------------------------------------------
+
+
+FILE: Utilities.php
+----------------------------------------------------------------------
+FOUND 8 ERRORS AFFECTING 8 LINES
+----------------------------------------------------------------------
+  35 | ERROR | Using a string as the assertion passed to assert() is
+     |       | deprecated since PHP 7.2 and removed since PHP 8.0.
+     |       | Found: 'is_int($length)'
+     |       | (PHPCompatibility.ParameterValues.RemovedAssertStringAssertion.Found)
+  63 | ERROR | Using a string as the assertion passed to assert() is
+     |       | deprecated since PHP 7.2 and removed since PHP 8.0.
+     |       | Found: 'is_string($query)'
+     |       | (PHPCompatibility.ParameterValues.RemovedAssertStringAssertion.Found)
+ 133 | ERROR | Using a string as the assertion passed to assert() is
+     |       | deprecated since PHP 7.2 and removed since PHP 8.0.
+     |       | Found: 'is_string($namespaceURI)'
+     |       | (PHPCompatibility.ParameterValues.RemovedAssertStringAssertion.Found)
+ 134 | ERROR | Using a string as the assertion passed to assert() is
+     |       | deprecated since PHP 7.2 and removed since PHP 8.0.
+     |       | Found: 'is_string($localName)'
+     |       | (PHPCompatibility.ParameterValues.RemovedAssertStringAssertion.Found)
+ 219 | ERROR | Using a string as the assertion passed to assert() is
+     |       | deprecated since PHP 7.2 and removed since PHP 8.0.
+     |       | Found: 'array_key_exists("Signature", $info)'
+     |       | (PHPCompatibility.ParameterValues.RemovedAssertStringAssertion.Found)
+ 249 | ERROR | Using a string as the assertion passed to assert() is
+     |       | deprecated since PHP 7.2 and removed since PHP 8.0.
+     |       | Found: 'is_string($algorithm)'
+     |       | (PHPCompatibility.ParameterValues.RemovedAssertStringAssertion.Found)
+ 250 | ERROR | Using a string as the assertion passed to assert() is
+     |       | deprecated since PHP 7.2 and removed since PHP 8.0.
+     |       | Found: '$type === "public" || $type === "private"'
+     |       | (PHPCompatibility.ParameterValues.RemovedAssertStringAssertion.Found)
+ 317 | ERROR | Using a string as the assertion passed to assert() is
+     |       | deprecated since PHP 7.2 and removed since PHP 8.0.
+     |       | Found: '$key->type === XMLSecurityKey::RSA_SHA1'
+     |       | (PHPCompatibility.ParameterValues.RemovedAssertStringAssertion.Found)
+----------------------------------------------------------------------

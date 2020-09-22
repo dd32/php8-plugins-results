@@ -1,0 +1,64 @@
+::warning::Plugin: https://wordpress.org/plugins/response-promotion-redeemer/%0ATrac: https://plugins.trac.wordpress.org/browser/response-promotion-redeemer/
+No syntax errors detected in response-promotion-redeemer/response-promotion-redeemer/includes/admin-page.php
+No syntax errors detected in response-promotion-redeemer/response-promotion-redeemer/includes/csv-export.php
+No syntax errors detected in response-promotion-redeemer/response-promotion-redeemer/includes/display-functions.php
+No syntax errors detected in response-promotion-redeemer/response-promotion-redeemer/includes/form-shortcodes.php
+No syntax errors detected in response-promotion-redeemer/response-promotion-redeemer/includes/promo-codes.php
+No syntax errors detected in response-promotion-redeemer/response-promotion-redeemer/includes/promo-ctype.php
+No syntax errors detected in response-promotion-redeemer/response-promotion-redeemer/includes/rm-csv-generate.php
+No syntax errors detected in response-promotion-redeemer/response-promotion-redeemer/includes/scripts.php
+No syntax errors detected in response-promotion-redeemer/response-promotion-redeemer/index.php
+No syntax errors detected in response-promotion-redeemer/response-promotion-redeemer/response-promo-redeemer.php
+.[31mE[0m..[31mE[0m.[31mE[0m... 10 / 10 (100%)
+
+
+
+[1mFILE: includes/csv-export.php[0m
+----------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 44 | [31mERROR[0m | [1mIndirect access to variables, properties and methods
+    |       | will be evaluated strictly in left-to-right order since
+    |       | PHP 7.0. Use curly braces to remove ambiguity.[0m
+    |       | (PHPCompatibility.Variables.NewUniformVariableSyntax.Found)
+----------------------------------------------------------------------
+
+
+[1mFILE: includes/promo-codes.php[0m
+----------------------------------------------------------------------
+[1mFOUND 6 ERRORS AFFECTING 3 LINES[0m
+----------------------------------------------------------------------
+  85 | [31mERROR[0m | [1mExtension 'ereg' is deprecated since PHP 5.3 and
+     |       | removed since PHP 7.0; Use pcre instead[0m
+     |       | (PHPCompatibility.Extensions.RemovedExtensions.eregDeprecatedRemoved)
+  85 | [31mERROR[0m | [1mFunction ereg() is deprecated since PHP 5.3 and
+     |       | removed since PHP 7.0; Use preg_match() instead[0m
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eregDeprecatedRemoved)
+  92 | [31mERROR[0m | [1mExtension 'ereg' is deprecated since PHP 5.3 and
+     |       | removed since PHP 7.0; Use pcre instead[0m
+     |       | (PHPCompatibility.Extensions.RemovedExtensions.eregDeprecatedRemoved)
+  92 | [31mERROR[0m | [1mFunction ereg() is deprecated since PHP 5.3 and
+     |       | removed since PHP 7.0; Use preg_match() instead[0m
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eregDeprecatedRemoved)
+ 105 | [31mERROR[0m | [1mExtension 'ereg' is deprecated since PHP 5.3 and
+     |       | removed since PHP 7.0; Use pcre instead[0m
+     |       | (PHPCompatibility.Extensions.RemovedExtensions.eregDeprecatedRemoved)
+ 105 | [31mERROR[0m | [1mFunction eregi() is deprecated since PHP 5.3 and
+     |       | removed since PHP 7.0; Use preg_match() (with the i
+     |       | modifier) instead[0m
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eregiDeprecatedRemoved)
+----------------------------------------------------------------------
+
+
+[1mFILE: includes/rm-csv-generate.php[0m
+----------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 37 | [31mERROR[0m | [1mIndirect access to variables, properties and methods
+    |       | will be evaluated strictly in left-to-right order since
+    |       | PHP 7.0. Use curly braces to remove ambiguity.[0m
+    |       | (PHPCompatibility.Variables.NewUniformVariableSyntax.Found)
+----------------------------------------------------------------------
+
+Time: 176ms; Memory: 14MB
+::error::FILE: includes/csv-export.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 44 | ERROR | Indirect access to variables, properties and methods%0A    |       | will be evaluated strictly in left-to-right order since%0A    |       | PHP 7.0. Use curly braces to remove ambiguity.%0A    |       | (PHPCompatibility.Variables.NewUniformVariableSyntax.Found)%0A----------------------------------------------------------------------%0A%0A%0AFILE: includes/promo-codes.php%0A----------------------------------------------------------------------%0AFOUND 6 ERRORS AFFECTING 3 LINES%0A----------------------------------------------------------------------%0A  85 | ERROR | Extension 'ereg' is deprecated since PHP 5.3 and%0A     |       | removed since PHP 7.0; Use pcre instead%0A     |       | (PHPCompatibility.Extensions.RemovedExtensions.eregDeprecatedRemoved)%0A  85 | ERROR | Function ereg() is deprecated since PHP 5.3 and%0A     |       | removed since PHP 7.0; Use preg_match() instead%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eregDeprecatedRemoved)%0A  92 | ERROR | Extension 'ereg' is deprecated since PHP 5.3 and%0A     |       | removed since PHP 7.0; Use pcre instead%0A     |       | (PHPCompatibility.Extensions.RemovedExtensions.eregDeprecatedRemoved)%0A  92 | ERROR | Function ereg() is deprecated since PHP 5.3 and%0A     |       | removed since PHP 7.0; Use preg_match() instead%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eregDeprecatedRemoved)%0A 105 | ERROR | Extension 'ereg' is deprecated since PHP 5.3 and%0A     |       | removed since PHP 7.0; Use pcre instead%0A     |       | (PHPCompatibility.Extensions.RemovedExtensions.eregDeprecatedRemoved)%0A 105 | ERROR | Function eregi() is deprecated since PHP 5.3 and%0A     |       | removed since PHP 7.0; Use preg_match() (with the i%0A     |       | modifier) instead%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eregiDeprecatedRemoved)%0A----------------------------------------------------------------------%0A%0A%0AFILE: includes/rm-csv-generate.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 37 | ERROR | Indirect access to variables, properties and methods%0A    |       | will be evaluated strictly in left-to-right order since%0A    |       | PHP 7.0. Use curly braces to remove ambiguity.%0A    |       | (PHPCompatibility.Variables.NewUniformVariableSyntax.Found)%0A----------------------------------------------------------------------%0A
