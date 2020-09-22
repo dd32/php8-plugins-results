@@ -15,6 +15,8 @@ No syntax errors detected in backup-scheduler/backup-scheduler/core/text_diff.cl
 No syntax errors detected in backup-scheduler/backup-scheduler/core/translation.class.php
 No syntax errors detected in backup-scheduler/backup-scheduler/core/translation.inc.php
 No syntax errors detected in backup-scheduler/backup-scheduler/core/tree.class.php
+
+Fatal error: Array and string offset access syntax with curly braces is no longer supported in backup-scheduler/backup-scheduler/core/utils.class.php on line 102
 Errors parsing backup-scheduler/backup-scheduler/core/utils.class.php
 No syntax errors detected in backup-scheduler/backup-scheduler/core.class.php
 No syntax errors detected in backup-scheduler/backup-scheduler/core.php
@@ -35,33 +37,43 @@ No syntax errors detected in backup-scheduler/backup-scheduler/include/phpseclib
 No syntax errors detected in backup-scheduler/backup-scheduler/include/phpseclib0.3.1/Net/SSH1.php
 No syntax errors detected in backup-scheduler/backup-scheduler/include/phpseclib0.3.1/Net/SSH2.php
 No syntax errors detected in backup-scheduler/backup-scheduler/include/zip.class.php
-::error::%0Acore/utils.class.php
+::error::%0Acore/utils.class.php%0A  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 102
 ................[32mE[0m[31mE[0m... 21 / 21 (100%)
 
 
 
 [1mFILE: core/utils.class.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 3 ERRORS AFFECTING 3 LINES[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 102 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $chars{rand(0,
-     |       |     $chars_length)}[0m (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
- 106 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $chars{rand(0,
-     |       |     $chars_length)}[0m (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
- 305 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $path{strlen($path)-1}[0m
+----------------------------------------------------------------------
+ 102 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $chars{rand(0,
+     |       |     $chars_length)}[0m
      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 106 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $chars{rand(0,
+     |       |     $chars_length)}[0m
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 305 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found:
+     |       |     $path{strlen($path)-1}[0m
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+----------------------------------------------------------------------
 [1mPHPCBF CAN FIX THE 3 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 [1mFILE: core.class.php[0m
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 1501 | [31mERROR[0m | [1m"$this" can no longer be used in a plain function or method since PHP 7.1.[0m
+----------------------------------------------------------------------
+ 1501 | [31mERROR[0m | [1m"$this" can no longer be used in a plain function or
+      |       | method since PHP 7.1.[0m
       |       | (PHPCompatibility.Variables.ForbiddenThisUseContexts.OutsideObjectContext)
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
-Time: 1.65 secs; Memory: 30MB
-::error::FILE: core/utils.class.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 3 ERRORS AFFECTING 3 LINES%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 102 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $chars{rand(0,%0A     |       |     $chars_length)} (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 106 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $chars{rand(0,%0A     |       |     $chars_length)} (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 305 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $path{strlen($path)-1}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0APHPCBF CAN FIX THE 3 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: core.class.php%0A----------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 1501 | ERROR | "$this" can no longer be used in a plain function or method since PHP 7.1.%0A      |       | (PHPCompatibility.Variables.ForbiddenThisUseContexts.OutsideObjectContext)%0A----------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
+Time: 1.7 secs; Memory: 30MB
+::error::FILE: core/utils.class.php%0A----------------------------------------------------------------------%0AFOUND 3 ERRORS AFFECTING 3 LINES%0A----------------------------------------------------------------------%0A 102 | ERROR | [x] Curly brace syntax for accessing array elements%0A     |       |     and string offsets has been deprecated in PHP 7.4%0A     |       |     and removed in PHP 8.0. Found: $chars{rand(0,%0A     |       |     $chars_length)}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 106 | ERROR | [x] Curly brace syntax for accessing array elements%0A     |       |     and string offsets has been deprecated in PHP 7.4%0A     |       |     and removed in PHP 8.0. Found: $chars{rand(0,%0A     |       |     $chars_length)}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 305 | ERROR | [x] Curly brace syntax for accessing array elements%0A     |       |     and string offsets has been deprecated in PHP 7.4%0A     |       |     and removed in PHP 8.0. Found:%0A     |       |     $path{strlen($path)-1}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A----------------------------------------------------------------------%0APHPCBF CAN FIX THE 3 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A----------------------------------------------------------------------%0A%0A%0AFILE: core.class.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 1501 | ERROR | "$this" can no longer be used in a plain function or%0A      |       | method since PHP 7.1.%0A      |       | (PHPCompatibility.Variables.ForbiddenThisUseContexts.OutsideObjectContext)%0A----------------------------------------------------------------------%0A
