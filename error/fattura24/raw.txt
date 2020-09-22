@@ -4,6 +4,8 @@ No syntax errors detected in fattura24/fattura24/src/api_call.php
 No syntax errors detected in fattura24/fattura24/src/app.php
 No syntax errors detected in fattura24/fattura24/src/behaviour.php
 No syntax errors detected in fattura24/fattura24/src/constants.php
+
+Fatal error: Unparenthesized `a ? b : c ? d : e` is not supported. Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)` in fattura24/fattura24/src/f24_api_info.php on line 36
 Errors parsing fattura24/fattura24/src/f24_api_info.php
 No syntax errors detected in fattura24/fattura24/src/hooks.php
 No syntax errors detected in fattura24/fattura24/src/order_status.php
@@ -12,27 +14,33 @@ No syntax errors detected in fattura24/fattura24/src/settings_uty.php
 No syntax errors detected in fattura24/fattura24/src/tax.php
 No syntax errors detected in fattura24/fattura24/src/uty.php
 No syntax errors detected in fattura24/fattura24/src/warning.php
-::error::%0Asrc/f24_api_info.php
+::error::%0Asrc/f24_api_info.php%0A  Fatal error: Unparenthesized `a ? b : c ? d : e` is not supported.%0A      Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)`%0A      on line 36
 .....[31mE[0m...[31mE[0m... 13 / 13 (100%)
 
 
 
 [1mFILE: src/f24_api_info.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 36 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has been deprecated in PHP 7.4 and removed in PHP 8.0. Multiple consecutive ternaries detected. Use parenthesis to
-    |       | clarify the order in which the operations should be executed[0m (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
+ 36 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has been
+    |       | deprecated in PHP 7.4 and removed in PHP 8.0. Multiple
+    |       | consecutive ternaries detected. Use parenthesis to
+    |       | clarify the order in which the operations should be
+    |       | executed[0m
+    |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
+----------------------------------------------------------------------
 
 
 [1mFILE: src/settings_uty.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 296 | [31mERROR[0m | [1mUsing a string as the assertion passed to assert() is deprecated since PHP 7.2 and removed since PHP 8.0. Found: '$id != null'[0m
+----------------------------------------------------------------------
+ 296 | [31mERROR[0m | [1mUsing a string as the assertion passed to assert() is
+     |       | deprecated since PHP 7.2 and removed since PHP 8.0.
+     |       | Found: '$id != null'[0m
      |       | (PHPCompatibility.ParameterValues.RemovedAssertStringAssertion.Found)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
-Time: 600ms; Memory: 18MB
-::error::FILE: src/f24_api_info.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 36 | ERROR | The left-associativity of the ternary operator has been deprecated in PHP 7.4 and removed in PHP 8.0. Multiple consecutive ternaries detected. Use parenthesis to%0A    |       | clarify the order in which the operations should be executed (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: src/settings_uty.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 296 | ERROR | Using a string as the assertion passed to assert() is deprecated since PHP 7.2 and removed since PHP 8.0. Found: '$id != null'%0A     |       | (PHPCompatibility.ParameterValues.RemovedAssertStringAssertion.Found)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
+Time: 566ms; Memory: 18MB
+::error::FILE: src/f24_api_info.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 36 | ERROR | The left-associativity of the ternary operator has been%0A    |       | deprecated in PHP 7.4 and removed in PHP 8.0. Multiple%0A    |       | consecutive ternaries detected. Use parenthesis to%0A    |       | clarify the order in which the operations should be%0A    |       | executed%0A    |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A----------------------------------------------------------------------%0A%0A%0AFILE: src/settings_uty.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 296 | ERROR | Using a string as the assertion passed to assert() is%0A     |       | deprecated since PHP 7.2 and removed since PHP 8.0.%0A     |       | Found: '$id != null'%0A     |       | (PHPCompatibility.ParameterValues.RemovedAssertStringAssertion.Found)%0A----------------------------------------------------------------------%0A
