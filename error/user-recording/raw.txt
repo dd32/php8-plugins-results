@@ -1,0 +1,90 @@
+::warning::Plugin: https://wordpress.org/plugins/user-recording/%0ATrac: https://plugins.trac.wordpress.org/browser/user-recording/
+No syntax errors detected in user-recording/user-recording/fonts/fontloader.php
+No syntax errors detected in user-recording/user-recording/lib/LZString/LZContext.php
+No syntax errors detected in user-recording/user-recording/lib/LZString/LZData.php
+No syntax errors detected in user-recording/user-recording/lib/LZString/LZReverseDictionary.php
+
+Fatal error: Array and string offset access syntax with curly braces is no longer supported in user-recording/user-recording/lib/LZString/LZString.php on line 25
+Errors parsing user-recording/user-recording/lib/LZString/LZString.php
+No syntax errors detected in user-recording/user-recording/lib/LZString/LZUtil16.php
+
+Fatal error: Array and string offset access syntax with curly braces is no longer supported in user-recording/user-recording/lib/LZString/LZUtil.php on line 23
+Errors parsing user-recording/user-recording/lib/LZString/LZUtil.php
+No syntax errors detected in user-recording/user-recording/screens/child_player.php
+No syntax errors detected in user-recording/user-recording/screens/player.php
+No syntax errors detected in user-recording/user-recording/screens/settings.php
+No syntax errors detected in user-recording/user-recording/screens/support.php
+No syntax errors detected in user-recording/user-recording/smart-session-recording-ajax.php
+No syntax errors detected in user-recording/user-recording/smart-session-recording-beacon-saver.php
+No syntax errors detected in user-recording/user-recording/smart-session-recording-config.php
+No syntax errors detected in user-recording/user-recording/user-recording.php
+::error::%0Alib/LZString/LZString.php%0A  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 25%0A%0Alib/LZString/LZUtil.php%0A  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 23
+....[32mE[0m.[32mE[0m........ 15 / 15 (100%)
+
+
+
+[1mFILE: lib/LZString/LZString.php[0m
+----------------------------------------------------------------------
+[1mFOUND 3 ERRORS AFFECTING 3 LINES[0m
+----------------------------------------------------------------------
+  25 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found:
+     |       |     $keyStrUriSafe{$a}[0m
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+  62 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found:
+     |       |     $keyStrBase64{$a}[0m
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 333 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $w{0}[0m
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+----------------------------------------------------------------------
+[1mPHPCBF CAN FIX THE 3 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
+----------------------------------------------------------------------
+
+
+[1mFILE: lib/LZString/LZUtil.php[0m
+----------------------------------------------------------------------
+[1mFOUND 8 ERRORS AFFECTING 5 LINES[0m
+----------------------------------------------------------------------
+ 23 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and
+    |       |     string offsets has been deprecated in PHP 7.4 and
+    |       |     removed in PHP 8.0. Found: $alphabet{$i}[0m
+    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 74 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and
+    |       |     string offsets has been deprecated in PHP 7.4 and
+    |       |     removed in PHP 8.0. Found: $ch{0}[0m
+    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 77 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and
+    |       |     string offsets has been deprecated in PHP 7.4 and
+    |       |     removed in PHP 8.0. Found: $ch{1}[0m
+    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 78 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and
+    |       |     string offsets has been deprecated in PHP 7.4 and
+    |       |     removed in PHP 8.0. Found: $ch{1}[0m
+    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 78 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and
+    |       |     string offsets has been deprecated in PHP 7.4 and
+    |       |     removed in PHP 8.0. Found: $ch{2}[0m
+    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 80 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and
+    |       |     string offsets has been deprecated in PHP 7.4 and
+    |       |     removed in PHP 8.0. Found: $ch{1}[0m
+    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 80 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and
+    |       |     string offsets has been deprecated in PHP 7.4 and
+    |       |     removed in PHP 8.0. Found: $ch{2}[0m
+    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 80 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and
+    |       |     string offsets has been deprecated in PHP 7.4 and
+    |       |     removed in PHP 8.0. Found: $ch{3}[0m
+    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+----------------------------------------------------------------------
+[1mPHPCBF CAN FIX THE 8 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
+----------------------------------------------------------------------
+
+Time: 203ms; Memory: 12MB
+::error::FILE: lib/LZString/LZString.php%0A----------------------------------------------------------------------%0AFOUND 3 ERRORS AFFECTING 3 LINES%0A----------------------------------------------------------------------%0A  25 | ERROR | [x] Curly brace syntax for accessing array elements%0A     |       |     and string offsets has been deprecated in PHP 7.4%0A     |       |     and removed in PHP 8.0. Found:%0A     |       |     $keyStrUriSafe{$a}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A  62 | ERROR | [x] Curly brace syntax for accessing array elements%0A     |       |     and string offsets has been deprecated in PHP 7.4%0A     |       |     and removed in PHP 8.0. Found:%0A     |       |     $keyStrBase64{$a}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 333 | ERROR | [x] Curly brace syntax for accessing array elements%0A     |       |     and string offsets has been deprecated in PHP 7.4%0A     |       |     and removed in PHP 8.0. Found: $w{0}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A----------------------------------------------------------------------%0APHPCBF CAN FIX THE 3 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A----------------------------------------------------------------------%0A%0A%0AFILE: lib/LZString/LZUtil.php%0A----------------------------------------------------------------------%0AFOUND 8 ERRORS AFFECTING 5 LINES%0A----------------------------------------------------------------------%0A 23 | ERROR | [x] Curly brace syntax for accessing array elements and%0A    |       |     string offsets has been deprecated in PHP 7.4 and%0A    |       |     removed in PHP 8.0. Found: $alphabet{$i}%0A    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 74 | ERROR | [x] Curly brace syntax for accessing array elements and%0A    |       |     string offsets has been deprecated in PHP 7.4 and%0A    |       |     removed in PHP 8.0. Found: $ch{0}%0A    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 77 | ERROR | [x] Curly brace syntax for accessing array elements and%0A    |       |     string offsets has been deprecated in PHP 7.4 and%0A    |       |     removed in PHP 8.0. Found: $ch{1}%0A    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 78 | ERROR | [x] Curly brace syntax for accessing array elements and%0A    |       |     string offsets has been deprecated in PHP 7.4 and%0A    |       |     removed in PHP 8.0. Found: $ch{1}%0A    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 78 | ERROR | [x] Curly brace syntax for accessing array elements and%0A    |       |     string offsets has been deprecated in PHP 7.4 and%0A    |       |     removed in PHP 8.0. Found: $ch{2}%0A    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 80 | ERROR | [x] Curly brace syntax for accessing array elements and%0A    |       |     string offsets has been deprecated in PHP 7.4 and%0A    |       |     removed in PHP 8.0. Found: $ch{1}%0A    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 80 | ERROR | [x] Curly brace syntax for accessing array elements and%0A    |       |     string offsets has been deprecated in PHP 7.4 and%0A    |       |     removed in PHP 8.0. Found: $ch{2}%0A    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 80 | ERROR | [x] Curly brace syntax for accessing array elements and%0A    |       |     string offsets has been deprecated in PHP 7.4 and%0A    |       |     removed in PHP 8.0. Found: $ch{3}%0A    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A----------------------------------------------------------------------%0APHPCBF CAN FIX THE 8 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A----------------------------------------------------------------------%0A
