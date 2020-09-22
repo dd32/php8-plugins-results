@@ -1,0 +1,93 @@
+::warning::Plugin: https://wordpress.org/plugins/bangla-press/%0ATrac: https://plugins.trac.wordpress.org/browser/bangla-press/
+No syntax errors detected in bangla-press/bangla-press/banglapress.php
+
+Fatal error: Array and string offset access syntax with curly braces is no longer supported in bangla-press/bangla-press/system/classes/admin.php on line 330
+Errors parsing bangla-press/bangla-press/system/classes/admin.php
+No syntax errors detected in bangla-press/bangla-press/system/classes/check.php
+No syntax errors detected in bangla-press/bangla-press/system/classes/core.php
+No syntax errors detected in bangla-press/bangla-press/system/classes/install.php
+No syntax errors detected in bangla-press/bangla-press/system/classes/render.php
+No syntax errors detected in bangla-press/bangla-press/system/classes/uninstall.php
+No syntax errors detected in bangla-press/bangla-press/system/config/config.php
+No syntax errors detected in bangla-press/bangla-press/system/config/versions.php
+No syntax errors detected in bangla-press/bangla-press/system/helpers/ad_functions.php
+No syntax errors detected in bangla-press/bangla-press/system/helpers/functions.php
+No syntax errors detected in bangla-press/bangla-press/system/libraries/aduity_core.php
+No syntax errors detected in bangla-press/bangla-press/system/themes/default/archive.php
+No syntax errors detected in bangla-press/bangla-press/system/themes/default/comments.php
+No syntax errors detected in bangla-press/bangla-press/system/themes/default/footer.php
+No syntax errors detected in bangla-press/bangla-press/system/themes/default/functions.php
+No syntax errors detected in bangla-press/bangla-press/system/themes/default/header.php
+No syntax errors detected in bangla-press/bangla-press/system/themes/default/index.php
+No syntax errors detected in bangla-press/bangla-press/system/themes/default/page.php
+No syntax errors detected in bangla-press/bangla-press/system/themes/default/postcomment.php
+No syntax errors detected in bangla-press/bangla-press/system/themes/default/search.php
+No syntax errors detected in bangla-press/bangla-press/system/themes/default/single.php
+No syntax errors detected in bangla-press/bangla-press/system/views/admin_ads.php
+No syntax errors detected in bangla-press/bangla-press/system/views/admin_options.php
+No syntax errors detected in bangla-press/bangla-press/system/views/admin_themes_available_themes.php
+No syntax errors detected in bangla-press/bangla-press/system/views/admin_themes_current_theme.php
+No syntax errors detected in bangla-press/bangla-press/system/views/admin_themes.php
+::error::%0Asystem/classes/admin.php%0A  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 330
+.[32mE[0m..[31mE[0m[31mE[0m[31mE[0m....[31mE[0m............... 27 / 27 (100%)
+
+
+
+[1mFILE: system/classes/admin.php[0m
+----------------------------------------------------------------------
+[1mFOUND 2 ERRORS AFFECTING 2 LINES[0m
+----------------------------------------------------------------------
+ 330 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $theme_dir{0}[0m
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 348 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $theme_dir{0}[0m
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+----------------------------------------------------------------------
+[1mPHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
+----------------------------------------------------------------------
+
+
+[1mFILE: system/classes/install.php[0m
+----------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 18 | [31mERROR[0m | [1mDeclaration of a PHP4 style class constructor is
+    |       | deprecated since PHP 7.0 and removed since PHP 8.0[0m
+    |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+----------------------------------------------------------------------
+
+
+[1mFILE: system/classes/render.php[0m
+----------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 34 | [31mERROR[0m | [1mDeclaration of a PHP4 style class constructor is
+    |       | deprecated since PHP 7.0 and removed since PHP 8.0[0m
+    |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+----------------------------------------------------------------------
+
+
+[1mFILE: system/classes/uninstall.php[0m
+----------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 18 | [31mERROR[0m | [1mDeclaration of a PHP4 style class constructor is
+    |       | deprecated since PHP 7.0 and removed since PHP 8.0[0m
+    |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+----------------------------------------------------------------------
+
+
+[1mFILE: system/libraries/aduity_core.php[0m
+----------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 37 | [31mERROR[0m | [1mDeclaration of a PHP4 style class constructor is
+    |       | deprecated since PHP 7.0 and removed since PHP 8.0[0m
+    |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+----------------------------------------------------------------------
+
+Time: 239ms; Memory: 12MB
+::error::FILE: system/classes/admin.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A----------------------------------------------------------------------%0A 330 | ERROR | [x] Curly brace syntax for accessing array elements%0A     |       |     and string offsets has been deprecated in PHP 7.4%0A     |       |     and removed in PHP 8.0. Found: $theme_dir{0}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 348 | ERROR | [x] Curly brace syntax for accessing array elements%0A     |       |     and string offsets has been deprecated in PHP 7.4%0A     |       |     and removed in PHP 8.0. Found: $theme_dir{0}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A----------------------------------------------------------------------%0APHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A----------------------------------------------------------------------%0A%0A%0AFILE: system/classes/install.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 18 | ERROR | Declaration of a PHP4 style class constructor is%0A    |       | deprecated since PHP 7.0 and removed since PHP 8.0%0A    |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)%0A----------------------------------------------------------------------%0A%0A%0AFILE: system/classes/render.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 34 | ERROR | Declaration of a PHP4 style class constructor is%0A    |       | deprecated since PHP 7.0 and removed since PHP 8.0%0A    |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)%0A----------------------------------------------------------------------%0A%0A%0AFILE: system/classes/uninstall.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 18 | ERROR | Declaration of a PHP4 style class constructor is%0A    |       | deprecated since PHP 7.0 and removed since PHP 8.0%0A    |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)%0A----------------------------------------------------------------------%0A%0A%0AFILE: system/libraries/aduity_core.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 37 | ERROR | Declaration of a PHP4 style class constructor is%0A    |       | deprecated since PHP 7.0 and removed since PHP 8.0%0A    |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)%0A----------------------------------------------------------------------%0A

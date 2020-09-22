@@ -1,0 +1,12 @@
+
+vendor/guzzlehttp/guzzle/src/Event/Emitter.php
+  Fatal error: Cannot use lexical variable $eventName as a parameter name on line 49
+FILE: vendor/guzzlehttp/guzzle/src/Event/Emitter.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 49 | ERROR | Variables bound to a closure via the use construct
+    |       | cannot use the same name as superglobals, $this, or a
+    |       | declared parameter since PHP 7.1. Found: $eventName
+    |       | (PHPCompatibility.FunctionDeclarations.ForbiddenVariableNamesInClosureUse.FoundShadowParam)
+----------------------------------------------------------------------

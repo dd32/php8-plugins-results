@@ -1,0 +1,32 @@
+::warning::Plugin: https://wordpress.org/plugins/wp-bucket/%0ATrac: https://plugins.trac.wordpress.org/browser/wp-bucket/
+
+Fatal error: Array and string offset access syntax with curly braces is no longer supported in wp-bucket/wp-bucket/inc/OAuth.class.php on line 101
+Errors parsing wp-bucket/wp-bucket/inc/OAuth.class.php
+No syntax errors detected in wp-bucket/wp-bucket/inc/WP_Bucket.class.php
+No syntax errors detected in wp-bucket/wp-bucket/inc/WP_REST_OAuth.class.php
+No syntax errors detected in wp-bucket/wp-bucket/pages/login-by-bitbucket.php
+No syntax errors detected in wp-bucket/wp-bucket/pages/wp-bucket-test.php
+No syntax errors detected in wp-bucket/wp-bucket/wp_bucket.php
+::error::%0Ainc/OAuth.class.php%0A  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 101
+[32mE[0m..... 6 / 6 (100%)
+
+
+
+[1mFILE: inc/OAuth.class.php[0m
+----------------------------------------------------------------------
+[1mFOUND 2 ERRORS AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 101 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $built{$i}[0m
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 101 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $signature{$i}[0m
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+----------------------------------------------------------------------
+[1mPHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
+----------------------------------------------------------------------
+
+Time: 292ms; Memory: 14MB
+::error::FILE: inc/OAuth.class.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 101 | ERROR | [x] Curly brace syntax for accessing array elements%0A     |       |     and string offsets has been deprecated in PHP 7.4%0A     |       |     and removed in PHP 8.0. Found: $built{$i}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 101 | ERROR | [x] Curly brace syntax for accessing array elements%0A     |       |     and string offsets has been deprecated in PHP 7.4%0A     |       |     and removed in PHP 8.0. Found: $signature{$i}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A----------------------------------------------------------------------%0APHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A----------------------------------------------------------------------%0A
