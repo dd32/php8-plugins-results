@@ -1,0 +1,40 @@
+
+includes/Libraries/Upload/class-upload.php
+  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 2727
+FILE: includes/Extension/BuddyPress/class-buddypress.php
+----------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+----------------------------------------------------------------------
+ 95 | ERROR | The "case_insensitive" parameter for function define()
+    |       | is deprecated since PHP 7.3 and removed since PHP
+    |       | 8.0
+    |       | (PHPCompatibility.FunctionUse.RemovedFunctionParameters.define_case_insensitiveDeprecatedRemoved)
+ 99 | ERROR | The "case_insensitive" parameter for function define()
+    |       | is deprecated since PHP 7.3 and removed since PHP
+    |       | 8.0
+    |       | (PHPCompatibility.FunctionUse.RemovedFunctionParameters.define_case_insensitiveDeprecatedRemoved)
+----------------------------------------------------------------------
+
+
+FILE: includes/Libraries/feed/Item.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 400 | ERROR | Using 'break' outside of a loop or switch structure is
+     |       | invalid and will throw a fatal error since PHP 7.0
+     |       | (PHPCompatibility.ControlStructures.ForbiddenBreakContinueOutsideLoop.FatalError)
+----------------------------------------------------------------------
+
+
+FILE: includes/Libraries/Upload/class-upload.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 2727 | ERROR | [x] Curly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found:
+      |       |     $size{strlen($size)-1}
+      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------

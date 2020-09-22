@@ -1,0 +1,26 @@
+::warning::Plugin: https://wordpress.org/plugins/subnet-info/%0ATrac: https://plugins.trac.wordpress.org/browser/subnet-info/
+
+Fatal error: Array and string offset access syntax with curly braces is no longer supported in subnet-info/subnet-info/inc/class_subnetinfo_shortcode.php on line 359
+Errors parsing subnet-info/subnet-info/inc/class_subnetinfo_shortcode.php
+No syntax errors detected in subnet-info/subnet-info/index.php
+No syntax errors detected in subnet-info/subnet-info/subnetinfo.php
+No syntax errors detected in subnet-info/subnet-info/uninstall.php
+::error::%0Ainc/class_subnetinfo_shortcode.php%0A  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 359
+[32mE[0m... 4 / 4 (100%)
+
+
+
+[1mFILE: inc/class_subnetinfo_shortcode.php[0m
+----------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 359 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $hex{$i}[0m
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+----------------------------------------------------------------------
+[1mPHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
+----------------------------------------------------------------------
+
+Time: 117ms; Memory: 14MB
+::error::FILE: inc/class_subnetinfo_shortcode.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 359 | ERROR | [x] Curly brace syntax for accessing array elements%0A     |       |     and string offsets has been deprecated in PHP 7.4%0A     |       |     and removed in PHP 8.0. Found: $hex{$i}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A----------------------------------------------------------------------%0APHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A----------------------------------------------------------------------%0A
