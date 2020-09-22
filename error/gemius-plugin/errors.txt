@@ -1,0 +1,32 @@
+
+vendor/doctrine/common/tests/Doctrine/Tests/Common/Annotations/DocParserTest.php
+  Fatal error: Cannot use 'True' as class name as it is reserved on line 1106
+FILE: vendor/doctrine/common/lib/Doctrine/Common/ClassLoader.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 227 | ERROR | Indirect access to variables, properties and methods
+     |       | will be evaluated strictly in left-to-right order
+     |       | since PHP 7.0. Use curly braces to remove
+     |       | ambiguity.
+     |       | (PHPCompatibility.Variables.NewUniformVariableSyntax.Found)
+----------------------------------------------------------------------
+
+
+FILE: ...common/tests/Doctrine/Tests/Common/Annotations/DocParserTest.php
+----------------------------------------------------------------------
+FOUND 3 ERRORS AFFECTING 3 LINES
+----------------------------------------------------------------------
+ 1106 | ERROR | 'true' is a reserved keyword as of PHP version 7.0
+      |       | and should not be used to name a class, interface or
+      |       | trait or as part of a namespace (T_CLASS)
+      |       | (PHPCompatibility.Keywords.ForbiddenNamesAsDeclared.trueFound)
+ 1109 | ERROR | 'false' is a reserved keyword as of PHP version 7.0
+      |       | and should not be used to name a class, interface or
+      |       | trait or as part of a namespace (T_CLASS)
+      |       | (PHPCompatibility.Keywords.ForbiddenNamesAsDeclared.falseFound)
+ 1112 | ERROR | 'null' is a reserved keyword as of PHP version 7.0
+      |       | and should not be used to name a class, interface or
+      |       | trait or as part of a namespace (T_CLASS)
+      |       | (PHPCompatibility.Keywords.ForbiddenNamesAsDeclared.nullFound)
+----------------------------------------------------------------------

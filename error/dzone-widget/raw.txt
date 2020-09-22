@@ -1,0 +1,34 @@
+::warning::Plugin: https://wordpress.org/plugins/dzone-widget/%0ATrac: https://plugins.trac.wordpress.org/browser/dzone-widget/
+No syntax errors detected in dzone-widget/dzone-widget/dzone.config.php
+No syntax errors detected in dzone-widget/dzone-widget/dzone.php
+No syntax errors detected in dzone-widget/dzone-widget/dzone.post.php
+.[31mE[0m[31mE[0m 3 / 3 (100%)
+
+
+
+[1mFILE: dzone.php[0m
+----------------------------------------------------------------------
+[1mFOUND 2 ERRORS AFFECTING 2 LINES[0m
+----------------------------------------------------------------------
+  30 | [31mERROR[0m | [1mDeclaration of a PHP4 style class constructor is
+     |       | deprecated since PHP 7.0 and removed since PHP 8.0[0m
+     |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+ 162 | [31mERROR[0m | [1mFunction split() is deprecated since PHP 5.3 and
+     |       | removed since PHP 7.0; Use preg_split(), explode() or
+     |       | str_split() instead[0m
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.splitDeprecatedRemoved)
+----------------------------------------------------------------------
+
+
+[1mFILE: dzone.post.php[0m
+----------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 4 | [31mERROR[0m | [1mFunction split() is deprecated since PHP 5.3 and removed
+   |       | since PHP 7.0; Use preg_split(), explode() or
+   |       | str_split() instead[0m
+   |       | (PHPCompatibility.FunctionUse.RemovedFunctions.splitDeprecatedRemoved)
+----------------------------------------------------------------------
+
+Time: 77ms; Memory: 10MB
+::error::FILE: dzone.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A----------------------------------------------------------------------%0A  30 | ERROR | Declaration of a PHP4 style class constructor is%0A     |       | deprecated since PHP 7.0 and removed since PHP 8.0%0A     |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)%0A 162 | ERROR | Function split() is deprecated since PHP 5.3 and%0A     |       | removed since PHP 7.0; Use preg_split(), explode() or%0A     |       | str_split() instead%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.splitDeprecatedRemoved)%0A----------------------------------------------------------------------%0A%0A%0AFILE: dzone.post.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 4 | ERROR | Function split() is deprecated since PHP 5.3 and removed%0A   |       | since PHP 7.0; Use preg_split(), explode() or%0A   |       | str_split() instead%0A   |       | (PHPCompatibility.FunctionUse.RemovedFunctions.splitDeprecatedRemoved)%0A----------------------------------------------------------------------%0A
