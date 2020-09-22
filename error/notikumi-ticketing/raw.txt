@@ -1,0 +1,53 @@
+::warning::Plugin: https://wordpress.org/plugins/notikumi-ticketing/%0ATrac: https://plugins.trac.wordpress.org/browser/notikumi-ticketing/
+No syntax errors detected in notikumi-ticketing/notikumi-ticketing/admin/class-notikumi-admin.php
+No syntax errors detected in notikumi-ticketing/notikumi-ticketing/admin/index.php
+No syntax errors detected in notikumi-ticketing/notikumi-ticketing/admin/partials/credentials.php
+No syntax errors detected in notikumi-ticketing/notikumi-ticketing/admin/partials/events.php
+No syntax errors detected in notikumi-ticketing/notikumi-ticketing/admin/partials/templates.php
+No syntax errors detected in notikumi-ticketing/notikumi-ticketing/api-client/index.php
+No syntax errors detected in notikumi-ticketing/notikumi-ticketing/api-client/notikumi-client.php
+No syntax errors detected in notikumi-ticketing/notikumi-ticketing/includes/class-notikumi-activator.php
+No syntax errors detected in notikumi-ticketing/notikumi-ticketing/includes/class-notikumi-deactivator.php
+No syntax errors detected in notikumi-ticketing/notikumi-ticketing/includes/class-notikumi-i18n.php
+No syntax errors detected in notikumi-ticketing/notikumi-ticketing/includes/class-notikumi-loader.php
+No syntax errors detected in notikumi-ticketing/notikumi-ticketing/includes/class-notikumi.php
+
+Fatal error: Unparenthesized `a ? b : c ? d : e` is not supported. Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)` in notikumi-ticketing/notikumi-ticketing/includes/class-notikumi-render-helper.php on line 164
+Errors parsing notikumi-ticketing/notikumi-ticketing/includes/class-notikumi-render-helper.php
+No syntax errors detected in notikumi-ticketing/notikumi-ticketing/includes/index.php
+No syntax errors detected in notikumi-ticketing/notikumi-ticketing/includes/VirtualPage.php
+No syntax errors detected in notikumi-ticketing/notikumi-ticketing/index.php
+No syntax errors detected in notikumi-ticketing/notikumi-ticketing/notikumi-ticketing.php
+No syntax errors detected in notikumi-ticketing/notikumi-ticketing/public/class-notikumi-public.php
+No syntax errors detected in notikumi-ticketing/notikumi-ticketing/public/index.php
+No syntax errors detected in notikumi-ticketing/notikumi-ticketing/public/partials/notikumi-public-display.php
+No syntax errors detected in notikumi-ticketing/notikumi-ticketing/templates/original/php/event-page.php
+No syntax errors detected in notikumi-ticketing/notikumi-ticketing/templates/original/php/grid.php
+No syntax errors detected in notikumi-ticketing/notikumi-ticketing/templates/original/php/single-col.php
+No syntax errors detected in notikumi-ticketing/notikumi-ticketing/templates/original/php/three-cols.php
+No syntax errors detected in notikumi-ticketing/notikumi-ticketing/uninstall.php
+::error::%0Aincludes/class-notikumi-render-helper.php%0A  Fatal error: Unparenthesized `a ? b : c ? d : e` is not supported.%0A      Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)`%0A      on line 164
+............[31mE[0m............ 25 / 25 (100%)
+
+
+
+[1mFILE: includes/class-notikumi-render-helper.php[0m
+----------------------------------------------------------------------
+[1mFOUND 2 ERRORS AFFECTING 2 LINES[0m
+----------------------------------------------------------------------
+ 164 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has
+     |       | been deprecated in PHP 7.4 and removed in PHP 8.0.
+     |       | Multiple consecutive ternaries detected. Use
+     |       | parenthesis to clarify the order in which the
+     |       | operations should be executed[0m
+     |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
+ 166 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has
+     |       | been deprecated in PHP 7.4 and removed in PHP 8.0.
+     |       | Multiple consecutive ternaries detected. Use
+     |       | parenthesis to clarify the order in which the
+     |       | operations should be executed[0m
+     |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
+----------------------------------------------------------------------
+
+Time: 321ms; Memory: 14MB
+::error::FILE: includes/class-notikumi-render-helper.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A----------------------------------------------------------------------%0A 164 | ERROR | The left-associativity of the ternary operator has%0A     |       | been deprecated in PHP 7.4 and removed in PHP 8.0.%0A     |       | Multiple consecutive ternaries detected. Use%0A     |       | parenthesis to clarify the order in which the%0A     |       | operations should be executed%0A     |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A 166 | ERROR | The left-associativity of the ternary operator has%0A     |       | been deprecated in PHP 7.4 and removed in PHP 8.0.%0A     |       | Multiple consecutive ternaries detected. Use%0A     |       | parenthesis to clarify the order in which the%0A     |       | operations should be executed%0A     |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A----------------------------------------------------------------------%0A
