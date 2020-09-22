@@ -1,0 +1,40 @@
+::warning::Plugin: https://wordpress.org/plugins/ifs-simple-e-mail-management/%0ATrac: https://plugins.trac.wordpress.org/browser/ifs-simple-e-mail-management/
+No syntax errors detected in ifs-simple-e-mail-management/ifs-simple-e-mail-management/ifs-simple-e-mail-management.php
+No syntax errors detected in ifs-simple-e-mail-management/ifs-simple-e-mail-management/includes/add_mini_lib.php
+No syntax errors detected in ifs-simple-e-mail-management/ifs-simple-e-mail-management/includes/configure.php
+No syntax errors detected in ifs-simple-e-mail-management/ifs-simple-e-mail-management/includes/ifs-backend.php
+No syntax errors detected in ifs-simple-e-mail-management/ifs-simple-e-mail-management/includes/ifs-frontend.php
+No syntax errors detected in ifs-simple-e-mail-management/ifs-simple-e-mail-management/includes/main-lib.2013.06.18.php
+No syntax errors detected in ifs-simple-e-mail-management/ifs-simple-e-mail-management/includes/main-libfe.php
+No syntax errors detected in ifs-simple-e-mail-management/ifs-simple-e-mail-management/includes/main-lib.php
+No syntax errors detected in ifs-simple-e-mail-management/ifs-simple-e-mail-management/includes/send-e-mail.php
+.[31mE[0m....[31mE[0m.. 9 / 9 (100%)
+
+
+
+[1mFILE: includes/add_mini_lib.php[0m
+----------------------------------------------------------------------
+[1mFOUND 2 ERRORS AFFECTING 2 LINES[0m
+----------------------------------------------------------------------
+ 137 | [31mERROR[0m | [1mThe "hour" parameter for function gmmktime() is
+     |       | missing. Passing this parameter is no longer optional.
+     |       | The optional nature of the parameter is removed since
+     |       | PHP 8.0[0m
+     |       | (PHPCompatibility.FunctionUse.OptionalToRequiredFunctionParameters.gmmktime_hourHardRequired)
+ 286 | [31mERROR[0m | [1mFunction get_magic_quotes_gpc() is deprecated since
+     |       | PHP 7.4 and removed since PHP 8.0[0m
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_gpcDeprecatedRemoved)
+----------------------------------------------------------------------
+
+
+[1mFILE: includes/main-libfe.php[0m
+----------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 16 | [31mERROR[0m | [1mFunction get_magic_quotes_gpc() is deprecated since PHP
+    |       | 7.4 and removed since PHP 8.0[0m
+    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_gpcDeprecatedRemoved)
+----------------------------------------------------------------------
+
+Time: 238ms; Memory: 14MB
+::error::FILE: includes/add_mini_lib.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A----------------------------------------------------------------------%0A 137 | ERROR | The "hour" parameter for function gmmktime() is%0A     |       | missing. Passing this parameter is no longer optional.%0A     |       | The optional nature of the parameter is removed since%0A     |       | PHP 8.0%0A     |       | (PHPCompatibility.FunctionUse.OptionalToRequiredFunctionParameters.gmmktime_hourHardRequired)%0A 286 | ERROR | Function get_magic_quotes_gpc() is deprecated since%0A     |       | PHP 7.4 and removed since PHP 8.0%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_gpcDeprecatedRemoved)%0A----------------------------------------------------------------------%0A%0A%0AFILE: includes/main-libfe.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 16 | ERROR | Function get_magic_quotes_gpc() is deprecated since PHP%0A    |       | 7.4 and removed since PHP 8.0%0A    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_gpcDeprecatedRemoved)%0A----------------------------------------------------------------------%0A
