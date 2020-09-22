@@ -234,25 +234,29 @@ No syntax errors detected in 1-click-migration/1-click-migration/vendor/symfony/
 
 
 [1mFILE: inc/db/class-ocm-search-replace-db.php[0m
-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 2 ERRORS AFFECTING 2 LINES[0m
-------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 932 | [31mERROR[0m | [1mpreg_replace() - /e modifier is deprecated since PHP 5.5 and removed since PHP 7.0[0m
+----------------------------------------------------------------------
+ 932 | [31mERROR[0m | [1mpreg_replace() - /e modifier is deprecated since PHP
+     |       | 5.5 and removed since PHP 7.0[0m
      |       | (PHPCompatibility.ParameterValues.RemovedPCREModifiers.Removed)
- 937 | [31mERROR[0m | [1mpreg_replace() - /e modifier is deprecated since PHP 5.5 and removed since PHP 7.0[0m
+ 937 | [31mERROR[0m | [1mpreg_replace() - /e modifier is deprecated since PHP
+     |       | 5.5 and removed since PHP 7.0[0m
      |       | (PHPCompatibility.ParameterValues.RemovedPCREModifiers.Removed)
-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 [1mFILE: vendor/paragonie/random_compat/lib/byte_safe_strings.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 2 ERRORS AFFECTING 2 LINES[0m
--------------------------------------------------------------------------------------------------------------------------------------------------
- 33 | [31mERROR[0m | [1mThe constant "MB_OVERLOAD_STRING" is removed since PHP 8.0[0m
+----------------------------------------------------------------------
+ 33 | [31mERROR[0m | [1mThe constant "MB_OVERLOAD_STRING" is removed since PHP
+    |       | 8.0[0m
     |       | (PHPCompatibility.Constants.RemovedConstants.mb_overload_stringRemoved)
- 87 | [31mERROR[0m | [1mThe constant "MB_OVERLOAD_STRING" is removed since PHP 8.0[0m
+ 87 | [31mERROR[0m | [1mThe constant "MB_OVERLOAD_STRING" is removed since PHP
+    |       | 8.0[0m
     |       | (PHPCompatibility.Constants.RemovedConstants.mb_overload_stringRemoved)
--------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
-Time: 4.04 secs; Memory: 22MB
-::error::FILE: inc/db/class-ocm-search-replace-db.php%0A------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 932 | ERROR | preg_replace() - /e modifier is deprecated since PHP 5.5 and removed since PHP 7.0%0A     |       | (PHPCompatibility.ParameterValues.RemovedPCREModifiers.Removed)%0A 937 | ERROR | preg_replace() - /e modifier is deprecated since PHP 5.5 and removed since PHP 7.0%0A     |       | (PHPCompatibility.ParameterValues.RemovedPCREModifiers.Removed)%0A------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: vendor/paragonie/random_compat/lib/byte_safe_strings.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A-------------------------------------------------------------------------------------------------------------------------------------------------%0A 33 | ERROR | The constant "MB_OVERLOAD_STRING" is removed since PHP 8.0%0A    |       | (PHPCompatibility.Constants.RemovedConstants.mb_overload_stringRemoved)%0A 87 | ERROR | The constant "MB_OVERLOAD_STRING" is removed since PHP 8.0%0A    |       | (PHPCompatibility.Constants.RemovedConstants.mb_overload_stringRemoved)%0A-------------------------------------------------------------------------------------------------------------------------------------------------%0A
+Time: 3.83 secs; Memory: 22MB
+::error::FILE: inc/db/class-ocm-search-replace-db.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A----------------------------------------------------------------------%0A 932 | ERROR | preg_replace() - /e modifier is deprecated since PHP%0A     |       | 5.5 and removed since PHP 7.0%0A     |       | (PHPCompatibility.ParameterValues.RemovedPCREModifiers.Removed)%0A 937 | ERROR | preg_replace() - /e modifier is deprecated since PHP%0A     |       | 5.5 and removed since PHP 7.0%0A     |       | (PHPCompatibility.ParameterValues.RemovedPCREModifiers.Removed)%0A----------------------------------------------------------------------%0A%0A%0AFILE: vendor/paragonie/random_compat/lib/byte_safe_strings.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A----------------------------------------------------------------------%0A 33 | ERROR | The constant "MB_OVERLOAD_STRING" is removed since PHP%0A    |       | 8.0%0A    |       | (PHPCompatibility.Constants.RemovedConstants.mb_overload_stringRemoved)%0A 87 | ERROR | The constant "MB_OVERLOAD_STRING" is removed since PHP%0A    |       | 8.0%0A    |       | (PHPCompatibility.Constants.RemovedConstants.mb_overload_stringRemoved)%0A----------------------------------------------------------------------%0A
