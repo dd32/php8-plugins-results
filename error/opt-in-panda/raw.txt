@@ -209,6 +209,8 @@ No syntax errors detected in opt-in-panda/opt-in-panda/plugin/admin/pages/licens
 No syntax errors detected in opt-in-panda/opt-in-panda/plugin/admin/pages/premium.php
 No syntax errors detected in opt-in-panda/opt-in-panda/plugin/boot.php
 No syntax errors detected in opt-in-panda/opt-in-panda/plugin/includes/subscription/activecampaign/class.activecampaign.php
+
+Fatal error: Unparenthesized `a ? b : c ? d : e` is not supported. Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)` in opt-in-panda/opt-in-panda/plugin/includes/subscription/acumbamail/class.acumbamail.php on line 172
 Errors parsing opt-in-panda/opt-in-panda/plugin/includes/subscription/acumbamail/class.acumbamail.php
 No syntax errors detected in opt-in-panda/opt-in-panda/plugin/includes/subscription/aweber/class.aweber.php
 No syntax errors detected in opt-in-panda/opt-in-panda/plugin/includes/subscription/aweber/libs/aweber_collection.php
@@ -230,7 +232,11 @@ No syntax errors detected in opt-in-panda/opt-in-panda/plugin/includes/subscript
 No syntax errors detected in opt-in-panda/opt-in-panda/plugin/includes/subscription/mailchimp/libs/mailchimp.php
 No syntax errors detected in opt-in-panda/opt-in-panda/plugin/includes/subscription/mailchimp/libs/mailchimpV3.php
 No syntax errors detected in opt-in-panda/opt-in-panda/plugin/includes/subscription/mailpoet/class.mailpoet.php
+
+Fatal error: Unparenthesized `a ? b : c ? d : e` is not supported. Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)` in opt-in-panda/opt-in-panda/plugin/includes/subscription/mailster/class.mailster.php on line 418
 Errors parsing opt-in-panda/opt-in-panda/plugin/includes/subscription/mailster/class.mailster.php
+
+Fatal error: Unparenthesized `a ? b : c ? d : e` is not supported. Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)` in opt-in-panda/opt-in-panda/plugin/includes/subscription/mymail/class.mymail.php on line 418
 Errors parsing opt-in-panda/opt-in-panda/plugin/includes/subscription/mymail/class.mymail.php
 No syntax errors detected in opt-in-panda/opt-in-panda/plugin/includes/subscription/sendgrid/class.sendgrid.php
 No syntax errors detected in opt-in-panda/opt-in-panda/plugin/includes/subscription/sendgrid/libs/Client.php
@@ -244,7 +250,7 @@ No syntax errors detected in opt-in-panda/opt-in-panda/plugin/updates/010109.php
 No syntax errors detected in opt-in-panda/opt-in-panda/plugin/updates/010306.php
 No syntax errors detected in opt-in-panda/opt-in-panda/plugin/updates/020200.php
 No syntax errors detected in opt-in-panda/opt-in-panda/plugin/updates/020205.php
-::error::%0Aplugin/includes/subscription/acumbamail/class.acumbamail.php%0A%0Aplugin/includes/subscription/mailster/class.mailster.php%0A%0Aplugin/includes/subscription/mymail/class.mymail.php
+::error::%0Aplugin/includes/subscription/acumbamail/class.acumbamail.php%0A  Fatal error: Unparenthesized `a ? b : c ? d : e` is not supported.%0A      Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)`%0A      on line 172%0A%0Aplugin/includes/subscription/mailster/class.mailster.php%0A  Fatal error: Unparenthesized `a ? b : c ? d : e` is not supported.%0A      Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)`%0A      on line 418%0A%0Aplugin/includes/subscription/mymail/class.mymail.php%0A  Fatal error: Unparenthesized `a ? b : c ? d : e` is not supported.%0A      Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)`%0A      on line 418
 ............................................................  60 / 245 (24%)
 ............................................................ 120 / 245 (49%)
 ............................................................ 180 / 245 (73%)
@@ -254,30 +260,42 @@ No syntax errors detected in opt-in-panda/opt-in-panda/plugin/updates/020205.php
 
 
 [1mFILE: plugin/includes/subscription/acumbamail/class.acumbamail.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 173 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has been deprecated in PHP 7.4 and removed in PHP 8.0. Multiple consecutive ternaries detected. Use parenthesis to
-     |       | clarify the order in which the operations should be executed[0m (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
+ 173 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has
+     |       | been deprecated in PHP 7.4 and removed in PHP 8.0.
+     |       | Multiple consecutive ternaries detected. Use
+     |       | parenthesis to clarify the order in which the
+     |       | operations should be executed[0m
+     |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
+----------------------------------------------------------------------
 
 
 [1mFILE: plugin/includes/subscription/mailster/class.mailster.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 419 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has been deprecated in PHP 7.4 and removed in PHP 8.0. Multiple consecutive ternaries detected. Use parenthesis to
-     |       | clarify the order in which the operations should be executed[0m (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
+ 419 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has
+     |       | been deprecated in PHP 7.4 and removed in PHP 8.0.
+     |       | Multiple consecutive ternaries detected. Use
+     |       | parenthesis to clarify the order in which the
+     |       | operations should be executed[0m
+     |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
+----------------------------------------------------------------------
 
 
 [1mFILE: plugin/includes/subscription/mymail/class.mymail.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 419 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has been deprecated in PHP 7.4 and removed in PHP 8.0. Multiple consecutive ternaries detected. Use parenthesis to
-     |       | clarify the order in which the operations should be executed[0m (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
+ 419 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has
+     |       | been deprecated in PHP 7.4 and removed in PHP 8.0.
+     |       | Multiple consecutive ternaries detected. Use
+     |       | parenthesis to clarify the order in which the
+     |       | operations should be executed[0m
+     |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
+----------------------------------------------------------------------
 
-Time: 4.32 secs; Memory: 18MB
-::error::FILE: plugin/includes/subscription/acumbamail/class.acumbamail.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 173 | ERROR | The left-associativity of the ternary operator has been deprecated in PHP 7.4 and removed in PHP 8.0. Multiple consecutive ternaries detected. Use parenthesis to%0A     |       | clarify the order in which the operations should be executed (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: plugin/includes/subscription/mailster/class.mailster.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 419 | ERROR | The left-associativity of the ternary operator has been deprecated in PHP 7.4 and removed in PHP 8.0. Multiple consecutive ternaries detected. Use parenthesis to%0A     |       | clarify the order in which the operations should be executed (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: plugin/includes/subscription/mymail/class.mymail.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 419 | ERROR | The left-associativity of the ternary operator has been deprecated in PHP 7.4 and removed in PHP 8.0. Multiple consecutive ternaries detected. Use parenthesis to%0A     |       | clarify the order in which the operations should be executed (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
+Time: 4.48 secs; Memory: 18MB
+::error::FILE: plugin/includes/subscription/acumbamail/class.acumbamail.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 173 | ERROR | The left-associativity of the ternary operator has%0A     |       | been deprecated in PHP 7.4 and removed in PHP 8.0.%0A     |       | Multiple consecutive ternaries detected. Use%0A     |       | parenthesis to clarify the order in which the%0A     |       | operations should be executed%0A     |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A----------------------------------------------------------------------%0A%0A%0AFILE: plugin/includes/subscription/mailster/class.mailster.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 419 | ERROR | The left-associativity of the ternary operator has%0A     |       | been deprecated in PHP 7.4 and removed in PHP 8.0.%0A     |       | Multiple consecutive ternaries detected. Use%0A     |       | parenthesis to clarify the order in which the%0A     |       | operations should be executed%0A     |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A----------------------------------------------------------------------%0A%0A%0AFILE: plugin/includes/subscription/mymail/class.mymail.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 419 | ERROR | The left-associativity of the ternary operator has%0A     |       | been deprecated in PHP 7.4 and removed in PHP 8.0.%0A     |       | Multiple consecutive ternaries detected. Use%0A     |       | parenthesis to clarify the order in which the%0A     |       | operations should be executed%0A     |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A----------------------------------------------------------------------%0A
