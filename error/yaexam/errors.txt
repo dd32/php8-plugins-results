@@ -1,0 +1,46 @@
+FILE: includes/yaexam-formatting-functions.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 45 | ERROR | The "hour" parameter for function mktime() is missing.
+    |       | Passing this parameter is no longer optional. The
+    |       | optional nature of the parameter is deprecated since
+    |       | PHP 5.1 and removed since PHP 8.0
+    |       | (PHPCompatibility.FunctionUse.OptionalToRequiredFunctionParameters.mktime_hourSoftRequiredHardRequired)
+----------------------------------------------------------------------
+
+
+FILE: includes/yaexam-question-functions.php
+----------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+----------------------------------------------------------------------
+ 406 | ERROR | "$this" can no longer be used in a plain function or
+     |       | method since PHP 7.1.
+     |       | (PHPCompatibility.Variables.ForbiddenThisUseContexts.OutsideObjectContext)
+ 408 | ERROR | "$this" can no longer be used in a plain function or
+     |       | method since PHP 7.1.
+     |       | (PHPCompatibility.Variables.ForbiddenThisUseContexts.OutsideObjectContext)
+----------------------------------------------------------------------
+
+
+FILE: vendor/maennchen/zipstream-php/test/BigintTest.php
+----------------------------------------------------------------------
+FOUND 4 ERRORS AFFECTING 4 LINES
+----------------------------------------------------------------------
+ 15 | ERROR | The behaviour of hexadecimal numeric strings was
+    |       | inconsistent prior to PHP 7 and support has been
+    |       | removed in PHP 7. Found: '0x0000000012345678'
+    |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
+ 23 | ERROR | The behaviour of hexadecimal numeric strings was
+    |       | inconsistent prior to PHP 7 and support has been
+    |       | removed in PHP 7. Found: '0x0000000087654321'
+    |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
+ 53 | ERROR | The behaviour of hexadecimal numeric strings was
+    |       | inconsistent prior to PHP 7 and support has been
+    |       | removed in PHP 7. Found: '0x0000000100000000'
+    |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
+ 61 | ERROR | The behaviour of hexadecimal numeric strings was
+    |       | inconsistent prior to PHP 7 and support has been
+    |       | removed in PHP 7. Found: '0xFFFFFFFFFFFFFFFF'
+    |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
+----------------------------------------------------------------------

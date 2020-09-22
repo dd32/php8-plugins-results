@@ -1,0 +1,41 @@
+
+inc/yd-widget-framework.inc.php
+  Parse error: syntax error, unexpected token "&" on line 156
+
+yd-wpml-switcher.php
+  Parse error: syntax error, unexpected token "new" on line 124
+FILE: inc/yd-widget-framework.inc.php
+----------------------------------------------------------------------
+FOUND 5 ERRORS AFFECTING 4 LINES
+----------------------------------------------------------------------
+ 156 | ERROR | Using a call-time pass-by-reference is deprecated
+     |       | since PHP 5.3 and prohibited since PHP 5.4
+     |       | (PHPCompatibility.Syntax.ForbiddenCallTimePassByReference.NotAllowed)
+ 271 | ERROR | Declaration of a PHP4 style class constructor is
+     |       | deprecated since PHP 7.0 and removed since PHP 8.0
+     |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+ 440 | ERROR | Indirect access to variables, properties and methods
+     |       | will be evaluated strictly in left-to-right order
+     |       | since PHP 7.0. Use curly braces to remove
+     |       | ambiguity.
+     |       | (PHPCompatibility.Variables.NewUniformVariableSyntax.Found)
+ 440 | ERROR | Indirect access to variables, properties and methods
+     |       | will be evaluated strictly in left-to-right order
+     |       | since PHP 7.0. Use curly braces to remove
+     |       | ambiguity.
+     |       | (PHPCompatibility.Variables.NewUniformVariableSyntax.Found)
+ 597 | ERROR | Using a call-time pass-by-reference is deprecated
+     |       | since PHP 5.3 and prohibited since PHP 5.4
+     |       | (PHPCompatibility.Syntax.ForbiddenCallTimePassByReference.NotAllowed)
+----------------------------------------------------------------------
+
+
+FILE: yd-wpml-switcher.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 124 | ERROR | Assigning the return value of new by reference is
+     |       | deprecated in PHP 5.3 and has been removed in PHP
+     |       | 7.0
+     |       | (PHPCompatibility.Syntax.RemovedNewReference.Removed)
+----------------------------------------------------------------------
