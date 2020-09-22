@@ -1,0 +1,60 @@
+::warning::Plugin: https://wordpress.org/plugins/woopay-kcp/%0ATrac: https://plugins.trac.wordpress.org/browser/woopay-kcp/
+No syntax errors detected in woopay-kcp/woopay-kcp/assets/js/refund.php
+No syntax errors detected in woopay-kcp/woopay-kcp/assets/templates/emails/plain/woopay-kcp-awaiting-payment.php
+No syntax errors detected in woopay-kcp/woopay-kcp/assets/templates/emails/woopay-kcp-awaiting-payment.php
+No syntax errors detected in woopay-kcp/woopay-kcp/bin/lib/kcp_lib.php
+No syntax errors detected in woopay-kcp/woopay-kcp/bin/lib/kcp_mobile_lib.php
+No syntax errors detected in woopay-kcp/woopay-kcp/includes/abstracts/abstract-woopay-core.php
+No syntax errors detected in woopay-kcp/woopay-kcp/includes/class-woopay-kcp-actions.php
+No syntax errors detected in woopay-kcp/woopay-kcp/includes/class-woopay-kcp-api.php
+No syntax errors detected in woopay-kcp/woopay-kcp/includes/class-woopay-kcp-base.php
+No syntax errors detected in woopay-kcp/woopay-kcp/includes/class-woopay-kcp-email.php
+No syntax errors detected in woopay-kcp/woopay-kcp/includes/class-woopay-kcp-payment.php
+No syntax errors detected in woopay-kcp/woopay-kcp/includes/class-woopay-kcp-refund.php
+No syntax errors detected in woopay-kcp/woopay-kcp/includes/class-woopay-logger.php
+No syntax errors detected in woopay-kcp/woopay-kcp/includes/class-wooshipping.php
+No syntax errors detected in woopay-kcp/woopay-kcp/includes/methods/class-woopay-kcp-card.php
+No syntax errors detected in woopay-kcp/woopay-kcp/includes/methods/class-woopay-kcp-mobile.php
+No syntax errors detected in woopay-kcp/woopay-kcp/includes/methods/class-woopay-kcp-transfer.php
+No syntax errors detected in woopay-kcp/woopay-kcp/includes/methods/class-woopay-kcp-virtual.php
+No syntax errors detected in woopay-kcp/woopay-kcp/woopay-kcp.php
+...[31mE[0m[31mE[0m...[31mE[0m.......... 19 / 19 (100%)
+
+
+
+[1mFILE: bin/lib/kcp_lib.php[0m
+----------------------------------------------------------------------
+[1mFOUND 2 ERRORS AFFECTING 2 LINES[0m
+----------------------------------------------------------------------
+  32 | [31mERROR[0m | [1mDeclaration of a PHP4 style class constructor is
+     |       | deprecated since PHP 7.0 and removed since PHP 8.0[0m
+     |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+ 252 | [31mERROR[0m | [1mFunction each() is deprecated since PHP 7.2 and
+     |       | removed since PHP 8.0; Use a foreach loop or
+     |       | ArrayIterator instead[0m
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)
+----------------------------------------------------------------------
+
+
+[1mFILE: bin/lib/kcp_mobile_lib.php[0m
+----------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 102 | [31mERROR[0m | [1mDeclaration of a PHP4 style class constructor is
+     |       | deprecated since PHP 7.0 and removed since PHP 8.0[0m
+     |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+----------------------------------------------------------------------
+
+
+[1mFILE: includes/class-woopay-kcp-base.php[0m
+----------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 79 | [31mERROR[0m | [1mUsing an unparenthesized expression containing a "."
+    |       | before a "+" or "-" has been deprecated in PHP 7.4 and
+    |       | removed in PHP 8.0[0m
+    |       | (PHPCompatibility.Operators.ChangedConcatOperatorPrecedence.Found)
+----------------------------------------------------------------------
+
+Time: 704ms; Memory: 24MB
+::error::FILE: bin/lib/kcp_lib.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A----------------------------------------------------------------------%0A  32 | ERROR | Declaration of a PHP4 style class constructor is%0A     |       | deprecated since PHP 7.0 and removed since PHP 8.0%0A     |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)%0A 252 | ERROR | Function each() is deprecated since PHP 7.2 and%0A     |       | removed since PHP 8.0; Use a foreach loop or%0A     |       | ArrayIterator instead%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)%0A----------------------------------------------------------------------%0A%0A%0AFILE: bin/lib/kcp_mobile_lib.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 102 | ERROR | Declaration of a PHP4 style class constructor is%0A     |       | deprecated since PHP 7.0 and removed since PHP 8.0%0A     |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)%0A----------------------------------------------------------------------%0A%0A%0AFILE: includes/class-woopay-kcp-base.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 79 | ERROR | Using an unparenthesized expression containing a "."%0A    |       | before a "+" or "-" has been deprecated in PHP 7.4 and%0A    |       | removed in PHP 8.0%0A    |       | (PHPCompatibility.Operators.ChangedConcatOperatorPrecedence.Found)%0A----------------------------------------------------------------------%0A

@@ -1,0 +1,50 @@
+::warning::Plugin: https://wordpress.org/plugins/gravity-forms-enhancements/%0ATrac: https://plugins.trac.wordpress.org/browser/gravity-forms-enhancements/
+No syntax errors detected in gravity-forms-enhancements/gravity-forms-enhancements/GravityFormsEnhacnerInit.php
+No syntax errors detected in gravity-forms-enhancements/gravity-forms-enhancements/GravityFormsEnhacner.php
+No syntax errors detected in gravity-forms-enhancements/gravity-forms-enhancements/GravityFormsEnhancerCheck.php
+No syntax errors detected in gravity-forms-enhancements/gravity-forms-enhancements/GravityFormsRobotLoader.php
+No syntax errors detected in gravity-forms-enhancements/gravity-forms-enhancements/index.php
+No syntax errors detected in gravity-forms-enhancements/gravity-forms-enhancements/libs/GravityFormsEnhancer/Admin.php
+No syntax errors detected in gravity-forms-enhancements/gravity-forms-enhancements/libs/GravityFormsEnhancer/Enhancer.php
+No syntax errors detected in gravity-forms-enhancements/gravity-forms-enhancements/libs/GravityFormsEnhancer/EnhancerSettings.php
+No syntax errors detected in gravity-forms-enhancements/gravity-forms-enhancements/libs/GravityFormsEnhancer/Frontend.php
+No syntax errors detected in gravity-forms-enhancements/gravity-forms-enhancements/libs/GravityFormsEnhancer/Page/PageSettings.php
+No syntax errors detected in gravity-forms-enhancements/gravity-forms-enhancements/libs/GravityFormsEnhancer/RepositorySettings.php
+No syntax errors detected in gravity-forms-enhancements/gravity-forms-enhancements/libs/GravityFormsEnhancer/Utils/Strings.php
+No syntax errors detected in gravity-forms-enhancements/gravity-forms-enhancements/libs/GravityFormsEnhancer/WordPress/Filter.php
+No syntax errors detected in gravity-forms-enhancements/gravity-forms-enhancements/libs/GravityFormsEnhancer/WordPress/Notice.php
+No syntax errors detected in gravity-forms-enhancements/gravity-forms-enhancements/libs/GravityFormsEnhancer/WordPress/Settings.php
+
+Fatal error: Unparenthesized `a ? b : c ? d : e` is not supported. Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)` in gravity-forms-enhancements/gravity-forms-enhancements/libs/GravityFormsEnhancer/WordPress/Utils.php on line 58
+Errors parsing gravity-forms-enhancements/gravity-forms-enhancements/libs/GravityFormsEnhancer/WordPress/Utils.php
+No syntax errors detected in gravity-forms-enhancements/gravity-forms-enhancements/uninstall.php
+::error::%0Alibs/GravityFormsEnhancer/WordPress/Utils.php%0A  Fatal error: Unparenthesized `a ? b : c ? d : e` is not supported.%0A      Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)`%0A      on line 58
+..............[31mE[0m[31mE[0m. 17 / 17 (100%)
+
+
+
+[1mFILE: libs/GravityFormsEnhancer/WordPress/Settings.php[0m
+----------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 285 | [31mERROR[0m | [1mFunction create_function() is deprecated since PHP 7.2
+     |       | and removed since PHP 8.0; Use an anonymous function
+     |       | instead[0m
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
+----------------------------------------------------------------------
+
+
+[1mFILE: libs/GravityFormsEnhancer/WordPress/Utils.php[0m
+----------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 58 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has been
+    |       | deprecated in PHP 7.4 and removed in PHP 8.0. Multiple
+    |       | consecutive ternaries detected. Use parenthesis to
+    |       | clarify the order in which the operations should be
+    |       | executed[0m
+    |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
+----------------------------------------------------------------------
+
+Time: 319ms; Memory: 14MB
+::error::FILE: libs/GravityFormsEnhancer/WordPress/Settings.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 285 | ERROR | Function create_function() is deprecated since PHP 7.2%0A     |       | and removed since PHP 8.0; Use an anonymous function%0A     |       | instead%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)%0A----------------------------------------------------------------------%0A%0A%0AFILE: libs/GravityFormsEnhancer/WordPress/Utils.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 58 | ERROR | The left-associativity of the ternary operator has been%0A    |       | deprecated in PHP 7.4 and removed in PHP 8.0. Multiple%0A    |       | consecutive ternaries detected. Use parenthesis to%0A    |       | clarify the order in which the operations should be%0A    |       | executed%0A    |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A----------------------------------------------------------------------%0A
