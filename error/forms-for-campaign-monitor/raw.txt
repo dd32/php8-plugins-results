@@ -10,6 +10,8 @@ No syntax errors detected in forms-for-campaign-monitor/forms-for-campaign-monit
 No syntax errors detected in forms-for-campaign-monitor/forms-for-campaign-monitor/forms/core/DataType.php
 No syntax errors detected in forms-for-campaign-monitor/forms-for-campaign-monitor/forms/core/FontCollection.php
 No syntax errors detected in forms-for-campaign-monitor/forms-for-campaign-monitor/forms/core/Font.php
+
+Fatal error: Cannot use "parent" when current class scope has no parent in forms-for-campaign-monitor/forms-for-campaign-monitor/forms/core/Form/Element/AbstractElement.php on line 67
 Errors parsing forms-for-campaign-monitor/forms-for-campaign-monitor/forms/core/Form/Element/AbstractElement.php
 No syntax errors detected in forms-for-campaign-monitor/forms-for-campaign-monitor/forms/core/FormField.php
 No syntax errors detected in forms-for-campaign-monitor/forms-for-campaign-monitor/forms/core/Form.php
@@ -59,23 +61,25 @@ No syntax errors detected in forms-for-campaign-monitor/forms-for-campaign-monit
 No syntax errors detected in forms-for-campaign-monitor/forms-for-campaign-monitor/forms/views/templates/input.php
 No syntax errors detected in forms-for-campaign-monitor/forms-for-campaign-monitor/forms/views/templates/webfont.php
 No syntax errors detected in forms-for-campaign-monitor/forms-for-campaign-monitor/index.php
-::error::%0Aforms/core/Form/Element/AbstractElement.php
-No syntax errors detected in forms-for-campaign-monitor/forms-for-campaign-monitor/index.php
+::error::%0Aforms/core/Form/Element/AbstractElement.php%0A  Fatal error: Cannot use "parent" when current class scope has no parent on line 67
 ...........[31mE[0m................................................ 60 / 60 (100%)
 
 
 
 [1mFILE: forms/core/Form/Element/AbstractElement.php[0m
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 3 ERRORS AFFECTING 3 LINES[0m
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  67 | [31mERROR[0m | [1mUsing "parent" inside a class without parent is deprecated since PHP 7.4 and removed since PHP 8.0[0m
+----------------------------------------------------------------------
+  67 | [31mERROR[0m | [1mUsing "parent" inside a class without parent is
+     |       | deprecated since PHP 7.4 and removed since PHP 8.0[0m
      |       | (PHPCompatibility.Classes.RemovedOrphanedParent.Removed)
- 172 | [31mERROR[0m | [1mUsing "parent" inside a class without parent is deprecated since PHP 7.4 and removed since PHP 8.0[0m
+ 172 | [31mERROR[0m | [1mUsing "parent" inside a class without parent is
+     |       | deprecated since PHP 7.4 and removed since PHP 8.0[0m
      |       | (PHPCompatibility.Classes.RemovedOrphanedParent.Removed)
- 445 | [31mERROR[0m | [1mUsing "parent" inside a class without parent is deprecated since PHP 7.4 and removed since PHP 8.0[0m
+ 445 | [31mERROR[0m | [1mUsing "parent" inside a class without parent is
+     |       | deprecated since PHP 7.4 and removed since PHP 8.0[0m
      |       | (PHPCompatibility.Classes.RemovedOrphanedParent.Removed)
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
-Time: 1.14 secs; Memory: 20MB
-::error::FILE: forms/core/Form/Element/AbstractElement.php%0A---------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 3 ERRORS AFFECTING 3 LINES%0A---------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A  67 | ERROR | Using "parent" inside a class without parent is deprecated since PHP 7.4 and removed since PHP 8.0%0A     |       | (PHPCompatibility.Classes.RemovedOrphanedParent.Removed)%0A 172 | ERROR | Using "parent" inside a class without parent is deprecated since PHP 7.4 and removed since PHP 8.0%0A     |       | (PHPCompatibility.Classes.RemovedOrphanedParent.Removed)%0A 445 | ERROR | Using "parent" inside a class without parent is deprecated since PHP 7.4 and removed since PHP 8.0%0A     |       | (PHPCompatibility.Classes.RemovedOrphanedParent.Removed)%0A---------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
+Time: 1.11 secs; Memory: 20MB
+::error::FILE: forms/core/Form/Element/AbstractElement.php%0A----------------------------------------------------------------------%0AFOUND 3 ERRORS AFFECTING 3 LINES%0A----------------------------------------------------------------------%0A  67 | ERROR | Using "parent" inside a class without parent is%0A     |       | deprecated since PHP 7.4 and removed since PHP 8.0%0A     |       | (PHPCompatibility.Classes.RemovedOrphanedParent.Removed)%0A 172 | ERROR | Using "parent" inside a class without parent is%0A     |       | deprecated since PHP 7.4 and removed since PHP 8.0%0A     |       | (PHPCompatibility.Classes.RemovedOrphanedParent.Removed)%0A 445 | ERROR | Using "parent" inside a class without parent is%0A     |       | deprecated since PHP 7.4 and removed since PHP 8.0%0A     |       | (PHPCompatibility.Classes.RemovedOrphanedParent.Removed)%0A----------------------------------------------------------------------%0A

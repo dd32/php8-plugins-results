@@ -1,20 +1,22 @@
 ::warning::Plugin: https://wordpress.org/plugins/simple-ldap-login/%0ATrac: https://plugins.trac.wordpress.org/browser/simple-ldap-login/
+
+Fatal error: Array and string offset access syntax with curly braces is no longer supported in simple-ldap-login/simple-ldap-login/includes/adLDAP.php on line 2267
 Errors parsing simple-ldap-login/simple-ldap-login/includes/adLDAP.php
 No syntax errors detected in simple-ldap-login/simple-ldap-login/Simple-LDAP-Login-Admin.php
 No syntax errors detected in simple-ldap-login/simple-ldap-login/Simple-LDAP-Login.php
-::error::%0Aincludes/adLDAP.php
-No syntax errors detected in simple-ldap-login/simple-ldap-login/Simple-LDAP-Login.php
+::error::%0Aincludes/adLDAP.php%0A  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 2267
 [31mE[0m.. 3 / 3 (100%)
 
 
 
 [1mFILE: includes/adLDAP.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 2282 | [31mERROR[0m | [1mpreg_replace() - /e modifier is deprecated since PHP 5.5 and removed since PHP 7.0[0m
+----------------------------------------------------------------------
+ 2282 | [31mERROR[0m | [1mpreg_replace() - /e modifier is deprecated since PHP
+      |       | 5.5 and removed since PHP 7.0[0m
       |       | (PHPCompatibility.ParameterValues.RemovedPCREModifiers.Removed)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
-Time: 413ms; Memory: 26MB
-::error::FILE: includes/adLDAP.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 2282 | ERROR | preg_replace() - /e modifier is deprecated since PHP 5.5 and removed since PHP 7.0%0A      |       | (PHPCompatibility.ParameterValues.RemovedPCREModifiers.Removed)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
+Time: 447ms; Memory: 26MB
+::error::FILE: includes/adLDAP.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 2282 | ERROR | preg_replace() - /e modifier is deprecated since PHP%0A      |       | 5.5 and removed since PHP 7.0%0A      |       | (PHPCompatibility.ParameterValues.RemovedPCREModifiers.Removed)%0A----------------------------------------------------------------------%0A
