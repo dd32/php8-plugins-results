@@ -1,0 +1,156 @@
+
+services/google/src/Google/Utils.php
+  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 65
+
+services/twitteroauth/src/SignatureMethod.php
+  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 61
+FILE: services/google/src/Google/Service/Resource.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 291 | ERROR | Passing the $glue and $pieces parameters in reverse
+     |       | order to implode has been deprecated since PHP 7.4 and
+     |       | is removed since PHP 8.0; $glue should be the first
+     |       | parameter and $pieces the second
+     |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
+----------------------------------------------------------------------
+
+
+FILE: services/google/src/Google/Utils.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 65 | ERROR | [x] Curly brace syntax for accessing array elements and
+    |       |     string offsets has been deprecated in PHP 7.4 and
+    |       |     removed in PHP 8.0. Found: $str{$ret}
+    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------
+
+
+FILE: services/google/vendor/symfony/css-selector/XPath/Translator.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 117 | ERROR | Passing the $glue and $pieces parameters in reverse
+     |       | order to implode has been deprecated since PHP 7.4 and
+     |       | is removed since PHP 8.0; $glue should be the first
+     |       | parameter and $pieces the second
+     |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
+----------------------------------------------------------------------
+
+
+FILE: services/google/vendor/symfony/dom-crawler/Crawler.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 830 | ERROR | Passing the $glue and $pieces parameters in reverse
+     |       | order to implode has been deprecated since PHP 7.4 and
+     |       | is removed since PHP 8.0; $glue should be the first
+     |       | parameter and $pieces the second
+     |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
+----------------------------------------------------------------------
+
+
+FILE: services/LinkedIn/http.php
+----------------------------------------------------------------------
+FOUND 14 ERRORS AFFECTING 14 LINES
+----------------------------------------------------------------------
+  428 | ERROR | The variable '$php_errormsg' is deprecated since PHP
+      |       | 7.2 and removed since PHP 8.0; Use error_get_last()
+      |       | instead
+      |       | (PHPCompatibility.Variables.RemovedPredefinedGlobalVariables.php_errormsgDeprecatedRemoved)
+  986 | ERROR | The variable '$php_errormsg' is deprecated since PHP
+      |       | 7.2 and removed since PHP 8.0; Use error_get_last()
+      |       | instead
+      |       | (PHPCompatibility.Variables.RemovedPredefinedGlobalVariables.php_errormsgDeprecatedRemoved)
+  987 | ERROR | The variable '$php_errormsg' is deprecated since PHP
+      |       | 7.2 and removed since PHP 8.0; Use error_get_last()
+      |       | instead
+      |       | (PHPCompatibility.Variables.RemovedPredefinedGlobalVariables.php_errormsgDeprecatedRemoved)
+  988 | ERROR | The variable '$php_errormsg' is deprecated since PHP
+      |       | 7.2 and removed since PHP 8.0; Use error_get_last()
+      |       | instead
+      |       | (PHPCompatibility.Variables.RemovedPredefinedGlobalVariables.php_errormsgDeprecatedRemoved)
+ 1032 | ERROR | The variable '$php_errormsg' is deprecated since PHP
+      |       | 7.2 and removed since PHP 8.0; Use error_get_last()
+      |       | instead
+      |       | (PHPCompatibility.Variables.RemovedPredefinedGlobalVariables.php_errormsgDeprecatedRemoved)
+ 1211 | ERROR | The variable '$php_errormsg' is deprecated since PHP
+      |       | 7.2 and removed since PHP 8.0; Use error_get_last()
+      |       | instead
+      |       | (PHPCompatibility.Variables.RemovedPredefinedGlobalVariables.php_errormsgDeprecatedRemoved)
+ 1216 | ERROR | The variable '$php_errormsg' is deprecated since PHP
+      |       | 7.2 and removed since PHP 8.0; Use error_get_last()
+      |       | instead
+      |       | (PHPCompatibility.Variables.RemovedPredefinedGlobalVariables.php_errormsgDeprecatedRemoved)
+ 1330 | ERROR | The variable '$php_errormsg' is deprecated since PHP
+      |       | 7.2 and removed since PHP 8.0; Use error_get_last()
+      |       | instead
+      |       | (PHPCompatibility.Variables.RemovedPredefinedGlobalVariables.php_errormsgDeprecatedRemoved)
+ 1338 | ERROR | The variable '$php_errormsg' is deprecated since PHP
+      |       | 7.2 and removed since PHP 8.0; Use error_get_last()
+      |       | instead
+      |       | (PHPCompatibility.Variables.RemovedPredefinedGlobalVariables.php_errormsgDeprecatedRemoved)
+ 1399 | ERROR | The variable '$php_errormsg' is deprecated since PHP
+      |       | 7.2 and removed since PHP 8.0; Use error_get_last()
+      |       | instead
+      |       | (PHPCompatibility.Variables.RemovedPredefinedGlobalVariables.php_errormsgDeprecatedRemoved)
+ 1407 | ERROR | The variable '$php_errormsg' is deprecated since PHP
+      |       | 7.2 and removed since PHP 8.0; Use error_get_last()
+      |       | instead
+      |       | (PHPCompatibility.Variables.RemovedPredefinedGlobalVariables.php_errormsgDeprecatedRemoved)
+ 1992 | ERROR | The variable '$php_errormsg' is deprecated since PHP
+      |       | 7.2 and removed since PHP 8.0; Use error_get_last()
+      |       | instead
+      |       | (PHPCompatibility.Variables.RemovedPredefinedGlobalVariables.php_errormsgDeprecatedRemoved)
+ 2004 | ERROR | The variable '$php_errormsg' is deprecated since PHP
+      |       | 7.2 and removed since PHP 8.0; Use error_get_last()
+      |       | instead
+      |       | (PHPCompatibility.Variables.RemovedPredefinedGlobalVariables.php_errormsgDeprecatedRemoved)
+ 2012 | ERROR | The variable '$php_errormsg' is deprecated since PHP
+      |       | 7.2 and removed since PHP 8.0; Use error_get_last()
+      |       | instead
+      |       | (PHPCompatibility.Variables.RemovedPredefinedGlobalVariables.php_errormsgDeprecatedRemoved)
+----------------------------------------------------------------------
+
+
+FILE: services/LinkedIn/oauth_client.php
+----------------------------------------------------------------------
+FOUND 4 ERRORS AFFECTING 4 LINES
+----------------------------------------------------------------------
+  955 | ERROR | The variable '$php_errormsg' is deprecated since PHP
+      |       | 7.2 and removed since PHP 8.0; Use error_get_last()
+      |       | instead
+      |       | (PHPCompatibility.Variables.RemovedPredefinedGlobalVariables.php_errormsgDeprecatedRemoved)
+ 1089 | ERROR | The variable '$php_errormsg' is deprecated since PHP
+      |       | 7.2 and removed since PHP 8.0; Use error_get_last()
+      |       | instead
+      |       | (PHPCompatibility.Variables.RemovedPredefinedGlobalVariables.php_errormsgDeprecatedRemoved)
+ 1143 | ERROR | The variable '$php_errormsg' is deprecated since PHP
+      |       | 7.2 and removed since PHP 8.0; Use error_get_last()
+      |       | instead
+      |       | (PHPCompatibility.Variables.RemovedPredefinedGlobalVariables.php_errormsgDeprecatedRemoved)
+ 1197 | ERROR | The variable '$php_errormsg' is deprecated since PHP
+      |       | 7.2 and removed since PHP 8.0; Use error_get_last()
+      |       | instead
+      |       | (PHPCompatibility.Variables.RemovedPredefinedGlobalVariables.php_errormsgDeprecatedRemoved)
+----------------------------------------------------------------------
+
+
+FILE: services/twitteroauth/src/SignatureMethod.php
+----------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 61 | ERROR | [x] Curly brace syntax for accessing array elements and
+    |       |     string offsets has been deprecated in PHP 7.4 and
+    |       |     removed in PHP 8.0. Found: $built{$i}
+    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 61 | ERROR | [x] Curly brace syntax for accessing array elements and
+    |       |     string offsets has been deprecated in PHP 7.4 and
+    |       |     removed in PHP 8.0. Found: $signature{$i}
+    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------
