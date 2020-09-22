@@ -1,0 +1,104 @@
+::warning::Plugin: https://wordpress.org/plugins/socialauth-wp/%0ATrac: https://plugins.trac.wordpress.org/browser/socialauth-wp/
+No syntax errors detected in socialauth-wp/socialauth-wp/admin-settings.php
+No syntax errors detected in socialauth-wp/socialauth-wp/common.php
+No syntax errors detected in socialauth-wp/socialauth-wp/connect.php
+No syntax errors detected in socialauth-wp/socialauth-wp/email_verification_template.php
+No syntax errors detected in socialauth-wp/socialauth-wp/feature-friends.php
+No syntax errors detected in socialauth-wp/socialauth-wp/hybridauth/config.php
+No syntax errors detected in socialauth-wp/socialauth-wp/hybridauth/Hybrid/Auth.php
+No syntax errors detected in socialauth-wp/socialauth-wp/hybridauth/Hybrid/Endpoint.php
+No syntax errors detected in socialauth-wp/socialauth-wp/hybridauth/Hybrid/Error.php
+No syntax errors detected in socialauth-wp/socialauth-wp/hybridauth/Hybrid/Logger.php
+No syntax errors detected in socialauth-wp/socialauth-wp/hybridauth/Hybrid/Provider_Adapter.php
+No syntax errors detected in socialauth-wp/socialauth-wp/hybridauth/Hybrid/Provider_Model_OAuth1.php
+No syntax errors detected in socialauth-wp/socialauth-wp/hybridauth/Hybrid/Provider_Model_OAuth2.php
+No syntax errors detected in socialauth-wp/socialauth-wp/hybridauth/Hybrid/Provider_Model_OpenID.php
+No syntax errors detected in socialauth-wp/socialauth-wp/hybridauth/Hybrid/Provider_Model.php
+No syntax errors detected in socialauth-wp/socialauth-wp/hybridauth/Hybrid/Providers/AOL.php
+No syntax errors detected in socialauth-wp/socialauth-wp/hybridauth/Hybrid/Providers/Facebook.php
+No syntax errors detected in socialauth-wp/socialauth-wp/hybridauth/Hybrid/Providers/Foursquare.php
+No syntax errors detected in socialauth-wp/socialauth-wp/hybridauth/Hybrid/Providers/Google.php
+No syntax errors detected in socialauth-wp/socialauth-wp/hybridauth/Hybrid/Providers/LinkedIn.php
+No syntax errors detected in socialauth-wp/socialauth-wp/hybridauth/Hybrid/Providers/Live.php
+No syntax errors detected in socialauth-wp/socialauth-wp/hybridauth/Hybrid/Providers/MySpace.php
+No syntax errors detected in socialauth-wp/socialauth-wp/hybridauth/Hybrid/Providers/OpenID.php
+No syntax errors detected in socialauth-wp/socialauth-wp/hybridauth/Hybrid/Providers/Twitter.php
+No syntax errors detected in socialauth-wp/socialauth-wp/hybridauth/Hybrid/Providers/Yahoo.php
+No syntax errors detected in socialauth-wp/socialauth-wp/hybridauth/Hybrid/Storage.php
+No syntax errors detected in socialauth-wp/socialauth-wp/hybridauth/Hybrid/thirdparty/Facebook/base_facebook.php
+No syntax errors detected in socialauth-wp/socialauth-wp/hybridauth/Hybrid/thirdparty/Facebook/facebook.php
+
+Fatal error: Cannot unset $this in socialauth-wp/socialauth-wp/hybridauth/Hybrid/thirdparty/LinkedIn/LinkedIn.php on line 176
+Errors parsing socialauth-wp/socialauth-wp/hybridauth/Hybrid/thirdparty/LinkedIn/LinkedIn.php
+No syntax errors detected in socialauth-wp/socialauth-wp/hybridauth/Hybrid/thirdparty/OAuth/OAuth1Client.php
+No syntax errors detected in socialauth-wp/socialauth-wp/hybridauth/Hybrid/thirdparty/OAuth/OAuth2Client.php
+
+Fatal error: Array and string offset access syntax with curly braces is no longer supported in socialauth-wp/socialauth-wp/hybridauth/Hybrid/thirdparty/OAuth/OAuth.php on line 105
+Errors parsing socialauth-wp/socialauth-wp/hybridauth/Hybrid/thirdparty/OAuth/OAuth.php
+No syntax errors detected in socialauth-wp/socialauth-wp/hybridauth/Hybrid/thirdparty/OpenID/LightOpenID.php
+No syntax errors detected in socialauth-wp/socialauth-wp/hybridauth/Hybrid/User_Activity.php
+No syntax errors detected in socialauth-wp/socialauth-wp/hybridauth/Hybrid/User_Contact.php
+No syntax errors detected in socialauth-wp/socialauth-wp/hybridauth/Hybrid/User.php
+No syntax errors detected in socialauth-wp/socialauth-wp/hybridauth/Hybrid/User_Profile.php
+No syntax errors detected in socialauth-wp/socialauth-wp/hybridauth/index.php
+No syntax errors detected in socialauth-wp/socialauth-wp/hybridauth/install.php
+No syntax errors detected in socialauth-wp/socialauth-wp/logout.php
+No syntax errors detected in socialauth-wp/socialauth-wp/media.php
+No syntax errors detected in socialauth-wp/socialauth-wp/pagination.class.php
+No syntax errors detected in socialauth-wp/socialauth-wp/social-auth-wp.php
+No syntax errors detected in socialauth-wp/socialauth-wp/ui.php
+No syntax errors detected in socialauth-wp/socialauth-wp/verifyEmail.php
+::error::%0Ahybridauth/Hybrid/thirdparty/LinkedIn/LinkedIn.php%0A  Fatal error: Cannot unset $this on line 176%0A%0Ahybridauth/Hybrid/thirdparty/OAuth/OAuth.php%0A  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 105
+..........................[31mE[0m.[31mE[0m..[32mE[0m[31mE[0m............ 45 / 45 (100%)
+
+
+
+[1mFILE: hybridauth/Hybrid/thirdparty/Facebook/base_facebook.php[0m
+----------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 1204 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse
+      |       | order to implode has been deprecated since PHP 7.4
+      |       | and is removed since PHP 8.0; $glue should be the
+      |       | first parameter and $pieces the second[0m
+      |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
+----------------------------------------------------------------------
+
+
+[1mFILE: hybridauth/Hybrid/thirdparty/LinkedIn/LinkedIn.php[0m
+----------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 176 | [31mERROR[0m | [1m"$this" can no longer be unset since PHP 7.1.[0m
+     |       | (PHPCompatibility.Variables.ForbiddenThisUseContexts.Unset)
+----------------------------------------------------------------------
+
+
+[1mFILE: hybridauth/Hybrid/thirdparty/OAuth/OAuth.php[0m
+----------------------------------------------------------------------
+[1mFOUND 2 ERRORS AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 105 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $built{$i}[0m
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 105 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $signature{$i}[0m
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+----------------------------------------------------------------------
+[1mPHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
+----------------------------------------------------------------------
+
+
+[1mFILE: hybridauth/Hybrid/thirdparty/OpenID/LightOpenID.php[0m
+----------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 738 | [31mERROR[0m | [1mFunction get_magic_quotes_gpc() is deprecated since
+     |       | PHP 7.4 and removed since PHP 8.0[0m
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_gpcDeprecatedRemoved)
+----------------------------------------------------------------------
+
+Time: 1.45 secs; Memory: 26MB
+::error::FILE: hybridauth/Hybrid/thirdparty/Facebook/base_facebook.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 1204 | ERROR | Passing the $glue and $pieces parameters in reverse%0A      |       | order to implode has been deprecated since PHP 7.4%0A      |       | and is removed since PHP 8.0; $glue should be the%0A      |       | first parameter and $pieces the second%0A      |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A----------------------------------------------------------------------%0A%0A%0AFILE: hybridauth/Hybrid/thirdparty/LinkedIn/LinkedIn.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 176 | ERROR | "$this" can no longer be unset since PHP 7.1.%0A     |       | (PHPCompatibility.Variables.ForbiddenThisUseContexts.Unset)%0A----------------------------------------------------------------------%0A%0A%0AFILE: hybridauth/Hybrid/thirdparty/OAuth/OAuth.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 105 | ERROR | [x] Curly brace syntax for accessing array elements%0A     |       |     and string offsets has been deprecated in PHP 7.4%0A     |       |     and removed in PHP 8.0. Found: $built{$i}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 105 | ERROR | [x] Curly brace syntax for accessing array elements%0A     |       |     and string offsets has been deprecated in PHP 7.4%0A     |       |     and removed in PHP 8.0. Found: $signature{$i}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A----------------------------------------------------------------------%0APHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A----------------------------------------------------------------------%0A%0A%0AFILE: hybridauth/Hybrid/thirdparty/OpenID/LightOpenID.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 738 | ERROR | Function get_magic_quotes_gpc() is deprecated since%0A     |       | PHP 7.4 and removed since PHP 8.0%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_gpcDeprecatedRemoved)%0A----------------------------------------------------------------------%0A
