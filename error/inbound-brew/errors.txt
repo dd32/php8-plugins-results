@@ -1,0 +1,26 @@
+
+src/Modules/Settings/Controllers/Settings.php
+  Fatal error: Unparenthesized `a ? b : c ? d : e` is not supported.
+      Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)`
+      on line 732
+FILE: src/Modules/CTA/Models/CallToAction.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 80 | ERROR | "$this" can no longer be used in a plain function or
+    |       | method since PHP 7.1.
+    |       | (PHPCompatibility.Variables.ForbiddenThisUseContexts.OutsideObjectContext)
+----------------------------------------------------------------------
+
+
+FILE: src/Modules/Settings/Controllers/Settings.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 732 | ERROR | The left-associativity of the ternary operator has
+     |       | been deprecated in PHP 7.4 and removed in PHP 8.0.
+     |       | Multiple consecutive ternaries detected. Use
+     |       | parenthesis to clarify the order in which the
+     |       | operations should be executed
+     |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
+----------------------------------------------------------------------
