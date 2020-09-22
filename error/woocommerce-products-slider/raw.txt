@@ -1,8 +1,12 @@
 ::warning::Plugin: https://wordpress.org/plugins/woocommerce-products-slider/%0ATrac: https://plugins.trac.wordpress.org/browser/woocommerce-products-slider/
 No syntax errors detected in woocommerce-products-slider/woocommerce-products-slider/includes/3rd-party/3rd-party.php
 No syntax errors detected in woocommerce-products-slider/woocommerce-products-slider/includes/3rd-party/advanced-product-labels-for-woocommerce.php
+
+Fatal error: Unparenthesized `a ? b : c ? d : e` is not supported. Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)` in woocommerce-products-slider/woocommerce-products-slider/includes/3rd-party/dokan-lite/class-metabox-wcps-hook.php on line 33
 Errors parsing woocommerce-products-slider/woocommerce-products-slider/includes/3rd-party/dokan-lite/class-metabox-wcps-hook.php
 No syntax errors detected in woocommerce-products-slider/woocommerce-products-slider/includes/3rd-party/dokan-lite/functions-layout-element.php
+
+Fatal error: Unparenthesized `a ? b : c ? d : e` is not supported. Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)` in woocommerce-products-slider/woocommerce-products-slider/includes/3rd-party/easy-digital-downloads/class-metabox-wcps-hook.php on line 22
 Errors parsing woocommerce-products-slider/woocommerce-products-slider/includes/3rd-party/easy-digital-downloads/class-metabox-wcps-hook.php
 No syntax errors detected in woocommerce-products-slider/woocommerce-products-slider/includes/3rd-party/easy-digital-downloads/functions-layout-element.php
 No syntax errors detected in woocommerce-products-slider/woocommerce-products-slider/includes/3rd-party/easy-digital-downloads/wcps-slider-hook.php
@@ -43,36 +47,59 @@ No syntax errors detected in woocommerce-products-slider/woocommerce-products-sl
 No syntax errors detected in woocommerce-products-slider/woocommerce-products-slider/index.php
 No syntax errors detected in woocommerce-products-slider/woocommerce-products-slider/templates/wcps-slider/wcps-slider-hook.php
 No syntax errors detected in woocommerce-products-slider/woocommerce-products-slider/woocommerce-products-slider.php
-::error::%0Aincludes/3rd-party/dokan-lite/class-metabox-wcps-hook.php%0A%0Aincludes/3rd-party/easy-digital-downloads/class-metabox-wcps-hook.php
-No syntax errors detected in woocommerce-products-slider/woocommerce-products-slider/woocommerce-products-slider.php
+::error::%0Aincludes/3rd-party/dokan-lite/class-metabox-wcps-hook.php%0A  Fatal error: Unparenthesized `a ? b : c ? d : e` is not supported.%0A      Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)`%0A      on line 33%0A%0Aincludes/3rd-party/easy-digital-downloads/class-metabox-wcps-hook.php%0A  Fatal error: Unparenthesized `a ? b : c ? d : e` is not supported.%0A      Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)`%0A      on line 22
 ..[31mE[0m.[31mE[0m....................................... 44 / 44 (100%)
 
 
 
 [1mFILE: includes/3rd-party/dokan-lite/class-metabox-wcps-hook.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 3 ERRORS AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 33 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has been deprecated in PHP 7.4 and removed in PHP 8.0. Multiple consecutive ternaries detected. Use parenthesis to
-    |       | clarify the order in which the operations should be executed[0m (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
- 33 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has been deprecated in PHP 7.4 and removed in PHP 8.0. Multiple consecutive ternaries detected. Use parenthesis to
-    |       | clarify the order in which the operations should be executed[0m (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
- 33 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has been deprecated in PHP 7.4 and removed in PHP 8.0. Multiple consecutive ternaries detected. Use parenthesis to
-    |       | clarify the order in which the operations should be executed[0m (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
+ 33 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has been
+    |       | deprecated in PHP 7.4 and removed in PHP 8.0. Multiple
+    |       | consecutive ternaries detected. Use parenthesis to
+    |       | clarify the order in which the operations should be
+    |       | executed[0m
+    |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
+ 33 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has been
+    |       | deprecated in PHP 7.4 and removed in PHP 8.0. Multiple
+    |       | consecutive ternaries detected. Use parenthesis to
+    |       | clarify the order in which the operations should be
+    |       | executed[0m
+    |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
+ 33 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has been
+    |       | deprecated in PHP 7.4 and removed in PHP 8.0. Multiple
+    |       | consecutive ternaries detected. Use parenthesis to
+    |       | clarify the order in which the operations should be
+    |       | executed[0m
+    |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
+----------------------------------------------------------------------
 
 
-[1mFILE: includes/3rd-party/easy-digital-downloads/class-metabox-wcps-hook.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[1mFILE: ...des/3rd-party/easy-digital-downloads/class-metabox-wcps-hook.php[0m
+----------------------------------------------------------------------
 [1mFOUND 3 ERRORS AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 22 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has been deprecated in PHP 7.4 and removed in PHP 8.0. Multiple consecutive ternaries detected. Use parenthesis to
-    |       | clarify the order in which the operations should be executed[0m (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
- 22 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has been deprecated in PHP 7.4 and removed in PHP 8.0. Multiple consecutive ternaries detected. Use parenthesis to
-    |       | clarify the order in which the operations should be executed[0m (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
- 22 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has been deprecated in PHP 7.4 and removed in PHP 8.0. Multiple consecutive ternaries detected. Use parenthesis to
-    |       | clarify the order in which the operations should be executed[0m (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
+ 22 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has been
+    |       | deprecated in PHP 7.4 and removed in PHP 8.0. Multiple
+    |       | consecutive ternaries detected. Use parenthesis to
+    |       | clarify the order in which the operations should be
+    |       | executed[0m
+    |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
+ 22 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has been
+    |       | deprecated in PHP 7.4 and removed in PHP 8.0. Multiple
+    |       | consecutive ternaries detected. Use parenthesis to
+    |       | clarify the order in which the operations should be
+    |       | executed[0m
+    |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
+ 22 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has been
+    |       | deprecated in PHP 7.4 and removed in PHP 8.0. Multiple
+    |       | consecutive ternaries detected. Use parenthesis to
+    |       | clarify the order in which the operations should be
+    |       | executed[0m
+    |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
+----------------------------------------------------------------------
 
-Time: 2.27 secs; Memory: 50.01MB
-::error::FILE: includes/3rd-party/dokan-lite/class-metabox-wcps-hook.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 3 ERRORS AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 33 | ERROR | The left-associativity of the ternary operator has been deprecated in PHP 7.4 and removed in PHP 8.0. Multiple consecutive ternaries detected. Use parenthesis to%0A    |       | clarify the order in which the operations should be executed (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A 33 | ERROR | The left-associativity of the ternary operator has been deprecated in PHP 7.4 and removed in PHP 8.0. Multiple consecutive ternaries detected. Use parenthesis to%0A    |       | clarify the order in which the operations should be executed (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A 33 | ERROR | The left-associativity of the ternary operator has been deprecated in PHP 7.4 and removed in PHP 8.0. Multiple consecutive ternaries detected. Use parenthesis to%0A    |       | clarify the order in which the operations should be executed (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: includes/3rd-party/easy-digital-downloads/class-metabox-wcps-hook.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 3 ERRORS AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 22 | ERROR | The left-associativity of the ternary operator has been deprecated in PHP 7.4 and removed in PHP 8.0. Multiple consecutive ternaries detected. Use parenthesis to%0A    |       | clarify the order in which the operations should be executed (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A 22 | ERROR | The left-associativity of the ternary operator has been deprecated in PHP 7.4 and removed in PHP 8.0. Multiple consecutive ternaries detected. Use parenthesis to%0A    |       | clarify the order in which the operations should be executed (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A 22 | ERROR | The left-associativity of the ternary operator has been deprecated in PHP 7.4 and removed in PHP 8.0. Multiple consecutive ternaries detected. Use parenthesis to%0A    |       | clarify the order in which the operations should be executed (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
+Time: 2.46 secs; Memory: 50.01MB
+::error::FILE: includes/3rd-party/dokan-lite/class-metabox-wcps-hook.php%0A----------------------------------------------------------------------%0AFOUND 3 ERRORS AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 33 | ERROR | The left-associativity of the ternary operator has been%0A    |       | deprecated in PHP 7.4 and removed in PHP 8.0. Multiple%0A    |       | consecutive ternaries detected. Use parenthesis to%0A    |       | clarify the order in which the operations should be%0A    |       | executed%0A    |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A 33 | ERROR | The left-associativity of the ternary operator has been%0A    |       | deprecated in PHP 7.4 and removed in PHP 8.0. Multiple%0A    |       | consecutive ternaries detected. Use parenthesis to%0A    |       | clarify the order in which the operations should be%0A    |       | executed%0A    |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A 33 | ERROR | The left-associativity of the ternary operator has been%0A    |       | deprecated in PHP 7.4 and removed in PHP 8.0. Multiple%0A    |       | consecutive ternaries detected. Use parenthesis to%0A    |       | clarify the order in which the operations should be%0A    |       | executed%0A    |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A----------------------------------------------------------------------%0A%0A%0AFILE: ...des/3rd-party/easy-digital-downloads/class-metabox-wcps-hook.php%0A----------------------------------------------------------------------%0AFOUND 3 ERRORS AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 22 | ERROR | The left-associativity of the ternary operator has been%0A    |       | deprecated in PHP 7.4 and removed in PHP 8.0. Multiple%0A    |       | consecutive ternaries detected. Use parenthesis to%0A    |       | clarify the order in which the operations should be%0A    |       | executed%0A    |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A 22 | ERROR | The left-associativity of the ternary operator has been%0A    |       | deprecated in PHP 7.4 and removed in PHP 8.0. Multiple%0A    |       | consecutive ternaries detected. Use parenthesis to%0A    |       | clarify the order in which the operations should be%0A    |       | executed%0A    |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A 22 | ERROR | The left-associativity of the ternary operator has been%0A    |       | deprecated in PHP 7.4 and removed in PHP 8.0. Multiple%0A    |       | consecutive ternaries detected. Use parenthesis to%0A    |       | clarify the order in which the operations should be%0A    |       | executed%0A    |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A----------------------------------------------------------------------%0A
