@@ -3,6 +3,8 @@ No syntax errors detected in dotmailer-sign-up-widget/dotmailer-sign-up-widget/d
 No syntax errors detected in dotmailer-sign-up-widget/dotmailer-sign-up-widget/dm_signup_form.php
 No syntax errors detected in dotmailer-sign-up-widget/dotmailer-sign-up-widget/dm_widget.php
 No syntax errors detected in dotmailer-sign-up-widget/dotmailer-sign-up-widget/DotMailerConnect.php
+
+Fatal error: Unparenthesized `a ? b : c ? d : e` is not supported. Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)` in dotmailer-sign-up-widget/dotmailer-sign-up-widget/functions.php on line 27
 Errors parsing dotmailer-sign-up-widget/dotmailer-sign-up-widget/functions.php
 No syntax errors detected in dotmailer-sign-up-widget/dotmailer-sign-up-widget/initialize.php
 No syntax errors detected in dotmailer-sign-up-widget/dotmailer-sign-up-widget/vendor/autoload.php
@@ -110,6 +112,8 @@ No syntax errors detected in dotmailer-sign-up-widget/dotmailer-sign-up-widget/v
 No syntax errors detected in dotmailer-sign-up-widget/dotmailer-sign-up-widget/vendor/romanpitak/dotmailer-api-v2-client/src/DataTypes/JsonArray.php
 No syntax errors detected in dotmailer-sign-up-widget/dotmailer-sign-up-widget/vendor/romanpitak/dotmailer-api-v2-client/src/DataTypes/JsonObject.php
 No syntax errors detected in dotmailer-sign-up-widget/dotmailer-sign-up-widget/vendor/romanpitak/dotmailer-api-v2-client/src/DataTypes/MagicArray.php
+
+Fatal error: Cannot use 'Mixed' as class name as it is reserved in dotmailer-sign-up-widget/dotmailer-sign-up-widget/vendor/romanpitak/dotmailer-api-v2-client/src/DataTypes/Mixed.php on line 11
 Errors parsing dotmailer-sign-up-widget/dotmailer-sign-up-widget/vendor/romanpitak/dotmailer-api-v2-client/src/DataTypes/Mixed.php
 No syntax errors detected in dotmailer-sign-up-widget/dotmailer-sign-up-widget/vendor/romanpitak/dotmailer-api-v2-client/src/DataTypes/XsBase64Binary.php
 No syntax errors detected in dotmailer-sign-up-widget/dotmailer-sign-up-widget/vendor/romanpitak/dotmailer-api-v2-client/src/DataTypes/XsBoolean.php
@@ -139,7 +143,7 @@ No syntax errors detected in dotmailer-sign-up-widget/dotmailer-sign-up-widget/v
 No syntax errors detected in dotmailer-sign-up-widget/dotmailer-sign-up-widget/vendor/romanpitak/php-rest-client/src/Request.php
 No syntax errors detected in dotmailer-sign-up-widget/dotmailer-sign-up-widget/vendor/romanpitak/php-rest-client/src/ResponseException.php
 No syntax errors detected in dotmailer-sign-up-widget/dotmailer-sign-up-widget/vendor/romanpitak/php-rest-client/src/Response.php
-::error::%0Afunctions.php%0A%0Avendor/romanpitak/dotmailer-api-v2-client/src/DataTypes/Mixed.php
+::error::%0Afunctions.php%0A  Fatal error: Unparenthesized `a ? b : c ? d : e` is not supported.%0A      Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)`%0A      on line 27%0A%0Avendor/romanpitak/dotmailer-api-v2-client/src/DataTypes/Mixed.php%0A  Fatal error: Cannot use 'Mixed' as class name as it is reserved on line 11
 ....[31mE[0m.......................................................  60 / 140 (43%)
 ............................................................ 120 / 140 (86%)
 ....................                                         140 / 140 (100%)
@@ -147,14 +151,22 @@ No syntax errors detected in dotmailer-sign-up-widget/dotmailer-sign-up-widget/v
 
 
 [1mFILE: functions.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 2 ERRORS AFFECTING 2 LINES[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 27 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has been deprecated in PHP 7.4 and removed in PHP 8.0. Multiple consecutive ternaries detected. Use parenthesis to
-    |       | clarify the order in which the operations should be executed[0m (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
- 32 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has been deprecated in PHP 7.4 and removed in PHP 8.0. Multiple consecutive ternaries detected. Use parenthesis to
-    |       | clarify the order in which the operations should be executed[0m (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
+ 27 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has been
+    |       | deprecated in PHP 7.4 and removed in PHP 8.0. Multiple
+    |       | consecutive ternaries detected. Use parenthesis to
+    |       | clarify the order in which the operations should be
+    |       | executed[0m
+    |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
+ 32 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has been
+    |       | deprecated in PHP 7.4 and removed in PHP 8.0. Multiple
+    |       | consecutive ternaries detected. Use parenthesis to
+    |       | clarify the order in which the operations should be
+    |       | executed[0m
+    |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
+----------------------------------------------------------------------
 
-Time: 775ms; Memory: 16MB
-::error::FILE: functions.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 27 | ERROR | The left-associativity of the ternary operator has been deprecated in PHP 7.4 and removed in PHP 8.0. Multiple consecutive ternaries detected. Use parenthesis to%0A    |       | clarify the order in which the operations should be executed (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A 32 | ERROR | The left-associativity of the ternary operator has been deprecated in PHP 7.4 and removed in PHP 8.0. Multiple consecutive ternaries detected. Use parenthesis to%0A    |       | clarify the order in which the operations should be executed (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
+Time: 754ms; Memory: 16MB
+::error::FILE: functions.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A----------------------------------------------------------------------%0A 27 | ERROR | The left-associativity of the ternary operator has been%0A    |       | deprecated in PHP 7.4 and removed in PHP 8.0. Multiple%0A    |       | consecutive ternaries detected. Use parenthesis to%0A    |       | clarify the order in which the operations should be%0A    |       | executed%0A    |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A 32 | ERROR | The left-associativity of the ternary operator has been%0A    |       | deprecated in PHP 7.4 and removed in PHP 8.0. Multiple%0A    |       | consecutive ternaries detected. Use parenthesis to%0A    |       | clarify the order in which the operations should be%0A    |       | executed%0A    |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A----------------------------------------------------------------------%0A

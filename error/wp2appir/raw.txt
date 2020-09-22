@@ -59,6 +59,8 @@ No syntax errors detected in wp2appir/wp2appir/register/class/SmsIR_Verification
 No syntax errors detected in wp2appir/wp2appir/register/class_custom_register.php
 No syntax errors detected in wp2appir/wp2appir/register/fields.php
 No syntax errors detected in wp2appir/wp2appir/register/mr2app_custom_register.php
+
+Fatal error: Unparenthesized `a ? b : c ? d : e` is not supported. Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)` in wp2appir/wp2appir/register/new_field.php on line 161
 Errors parsing wp2appir/wp2appir/register/new_field.php
 No syntax errors detected in wp2appir/wp2appir/register/register.php
 No syntax errors detected in wp2appir/wp2appir/register/setting.php
@@ -70,19 +72,23 @@ No syntax errors detected in wp2appir/wp2appir/sale_meta/plans.php
 No syntax errors detected in wp2appir/wp2appir/sale_meta/sale_meta.php
 No syntax errors detected in wp2appir/wp2appir/sale_meta/sales.php
 No syntax errors detected in wp2appir/wp2appir/wp2appir.php
-::error::%0Aregister/new_field.php
+::error::%0Aregister/new_field.php%0A  Fatal error: Unparenthesized `a ? b : c ? d : e` is not supported.%0A      Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)`%0A      on line 161
 ............................................................ 60 / 71 (85%)
 [31mE[0m..........                                                  71 / 71 (100%)
 
 
 
 [1mFILE: register/new_field.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 161 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has been deprecated in PHP 7.4 and removed in PHP 8.0. Multiple consecutive ternaries detected. Use parenthesis to
-     |       | clarify the order in which the operations should be executed[0m (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
+ 161 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has
+     |       | been deprecated in PHP 7.4 and removed in PHP 8.0.
+     |       | Multiple consecutive ternaries detected. Use
+     |       | parenthesis to clarify the order in which the
+     |       | operations should be executed[0m
+     |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
+----------------------------------------------------------------------
 
-Time: 1.49 secs; Memory: 16MB
-::error::FILE: register/new_field.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 161 | ERROR | The left-associativity of the ternary operator has been deprecated in PHP 7.4 and removed in PHP 8.0. Multiple consecutive ternaries detected. Use parenthesis to%0A     |       | clarify the order in which the operations should be executed (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
+Time: 1.29 secs; Memory: 16MB
+::error::FILE: register/new_field.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 161 | ERROR | The left-associativity of the ternary operator has%0A     |       | been deprecated in PHP 7.4 and removed in PHP 8.0.%0A     |       | Multiple consecutive ternaries detected. Use%0A     |       | parenthesis to clarify the order in which the%0A     |       | operations should be executed%0A     |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A----------------------------------------------------------------------%0A
