@@ -252,6 +252,8 @@ No syntax errors detected in mediavine-create/mediavine-create/scoped-vendor/the
 No syntax errors detected in mediavine-create/mediavine-create/scoped-vendor/thewirecutter/paapi5-php-sdk/src/com/amazon/paapi5/v1/Availability.php
 No syntax errors detected in mediavine-create/mediavine-create/scoped-vendor/thewirecutter/paapi5-php-sdk/src/com/amazon/paapi5/v1/BrowseNodeAncestor.php
 No syntax errors detected in mediavine-create/mediavine-create/scoped-vendor/thewirecutter/paapi5-php-sdk/src/com/amazon/paapi5/v1/BrowseNodeChild.php
+
+Fatal error: Cannot use "parent" when current class scope has no parent in mediavine-create/mediavine-create/scoped-vendor/thewirecutter/paapi5-php-sdk/src/com/amazon/paapi5/v1/BrowseNodeChildren.php on line 145
 Errors parsing mediavine-create/mediavine-create/scoped-vendor/thewirecutter/paapi5-php-sdk/src/com/amazon/paapi5/v1/BrowseNodeChildren.php
 No syntax errors detected in mediavine-create/mediavine-create/scoped-vendor/thewirecutter/paapi5-php-sdk/src/com/amazon/paapi5/v1/BrowseNodeInfo.php
 No syntax errors detected in mediavine-create/mediavine-create/scoped-vendor/thewirecutter/paapi5-php-sdk/src/com/amazon/paapi5/v1/BrowseNode.php
@@ -314,6 +316,8 @@ No syntax errors detected in mediavine-create/mediavine-create/scoped-vendor/the
 No syntax errors detected in mediavine-create/mediavine-create/scoped-vendor/thewirecutter/paapi5-php-sdk/src/com/amazon/paapi5/v1/ProductAdvertisingAPIClientException.php
 No syntax errors detected in mediavine-create/mediavine-create/scoped-vendor/thewirecutter/paapi5-php-sdk/src/com/amazon/paapi5/v1/ProductAdvertisingAPIServiceException.php
 No syntax errors detected in mediavine-create/mediavine-create/scoped-vendor/thewirecutter/paapi5-php-sdk/src/com/amazon/paapi5/v1/ProductInfo.php
+
+Fatal error: Cannot use "parent" when current class scope has no parent in mediavine-create/mediavine-create/scoped-vendor/thewirecutter/paapi5-php-sdk/src/com/amazon/paapi5/v1/Properties.php on line 145
 Errors parsing mediavine-create/mediavine-create/scoped-vendor/thewirecutter/paapi5-php-sdk/src/com/amazon/paapi5/v1/Properties.php
 No syntax errors detected in mediavine-create/mediavine-create/scoped-vendor/thewirecutter/paapi5-php-sdk/src/com/amazon/paapi5/v1/RefinementBin.php
 No syntax errors detected in mediavine-create/mediavine-create/scoped-vendor/thewirecutter/paapi5-php-sdk/src/com/amazon/paapi5/v1/Refinement.php
@@ -438,8 +442,7 @@ No syntax errors detected in mediavine-create/mediavine-create/vendor/sentry/sen
 No syntax errors detected in mediavine-create/mediavine-create/vendor/sentry/sentry/lib/Raven/Stacktrace.php
 No syntax errors detected in mediavine-create/mediavine-create/vendor/sentry/sentry/lib/Raven/TransactionStack.php
 No syntax errors detected in mediavine-create/mediavine-create/vendor/sentry/sentry/lib/Raven/Util.php
-::error::%0Ascoped-vendor/thewirecutter/paapi5-php-sdk/src/com/amazon/paapi5/v1/BrowseNodeChildren.php%0A%0Ascoped-vendor/thewirecutter/paapi5-php-sdk/src/com/amazon/paapi5/v1/Properties.php
-No syntax errors detected in mediavine-create/mediavine-create/vendor/sentry/sentry/lib/Raven/Util.php
+::error::%0Ascoped-vendor/thewirecutter/paapi5-php-sdk/src/com/amazon/paapi5/v1/BrowseNodeChildren.php%0A  Fatal error: Cannot use "parent" when current class scope has no parent on line 145%0A%0Ascoped-vendor/thewirecutter/paapi5-php-sdk/src/com/amazon/paapi5/v1/Properties.php%0A  Fatal error: Cannot use "parent" when current class scope has no parent on line 145
 ............................................................  60 / 439 (14%)
 ............................................................ 120 / 439 (27%)
 ............................................................ 180 / 439 (41%)
@@ -451,26 +454,30 @@ No syntax errors detected in mediavine-create/mediavine-create/vendor/sentry/sen
 
 
 
-[1mFILE: scoped-vendor/thewirecutter/paapi5-php-sdk/src/com/amazon/paapi5/v1/BrowseNodeChildren.php[0m
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[1mFILE: ...r/paapi5-php-sdk/src/com/amazon/paapi5/v1/BrowseNodeChildren.php[0m
+----------------------------------------------------------------------
 [1mFOUND 2 ERRORS AFFECTING 2 LINES[0m
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 145 | [31mERROR[0m | [1mUsing "parent" inside a class without parent is deprecated since PHP 7.4 and removed since PHP 8.0[0m
+----------------------------------------------------------------------
+ 145 | [31mERROR[0m | [1mUsing "parent" inside a class without parent is
+     |       | deprecated since PHP 7.4 and removed since PHP 8.0[0m
      |       | (PHPCompatibility.Classes.RemovedOrphanedParent.Removed)
- 156 | [31mERROR[0m | [1mUsing "parent" inside a class without parent is deprecated since PHP 7.4 and removed since PHP 8.0[0m
+ 156 | [31mERROR[0m | [1mUsing "parent" inside a class without parent is
+     |       | deprecated since PHP 7.4 and removed since PHP 8.0[0m
      |       | (PHPCompatibility.Classes.RemovedOrphanedParent.Removed)
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
-[1mFILE: scoped-vendor/thewirecutter/paapi5-php-sdk/src/com/amazon/paapi5/v1/Properties.php[0m
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[1mFILE: ...irecutter/paapi5-php-sdk/src/com/amazon/paapi5/v1/Properties.php[0m
+----------------------------------------------------------------------
 [1mFOUND 2 ERRORS AFFECTING 2 LINES[0m
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 145 | [31mERROR[0m | [1mUsing "parent" inside a class without parent is deprecated since PHP 7.4 and removed since PHP 8.0[0m
+----------------------------------------------------------------------
+ 145 | [31mERROR[0m | [1mUsing "parent" inside a class without parent is
+     |       | deprecated since PHP 7.4 and removed since PHP 8.0[0m
      |       | (PHPCompatibility.Classes.RemovedOrphanedParent.Removed)
- 156 | [31mERROR[0m | [1mUsing "parent" inside a class without parent is deprecated since PHP 7.4 and removed since PHP 8.0[0m
+ 156 | [31mERROR[0m | [1mUsing "parent" inside a class without parent is
+     |       | deprecated since PHP 7.4 and removed since PHP 8.0[0m
      |       | (PHPCompatibility.Classes.RemovedOrphanedParent.Removed)
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
-Time: 7.91 secs; Memory: 24MB
-::error::FILE: scoped-vendor/thewirecutter/paapi5-php-sdk/src/com/amazon/paapi5/v1/BrowseNodeChildren.php%0A---------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A---------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 145 | ERROR | Using "parent" inside a class without parent is deprecated since PHP 7.4 and removed since PHP 8.0%0A     |       | (PHPCompatibility.Classes.RemovedOrphanedParent.Removed)%0A 156 | ERROR | Using "parent" inside a class without parent is deprecated since PHP 7.4 and removed since PHP 8.0%0A     |       | (PHPCompatibility.Classes.RemovedOrphanedParent.Removed)%0A---------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: scoped-vendor/thewirecutter/paapi5-php-sdk/src/com/amazon/paapi5/v1/Properties.php%0A---------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A---------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 145 | ERROR | Using "parent" inside a class without parent is deprecated since PHP 7.4 and removed since PHP 8.0%0A     |       | (PHPCompatibility.Classes.RemovedOrphanedParent.Removed)%0A 156 | ERROR | Using "parent" inside a class without parent is deprecated since PHP 7.4 and removed since PHP 8.0%0A     |       | (PHPCompatibility.Classes.RemovedOrphanedParent.Removed)%0A---------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
+Time: 8.04 secs; Memory: 24MB
+::error::FILE: ...r/paapi5-php-sdk/src/com/amazon/paapi5/v1/BrowseNodeChildren.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A----------------------------------------------------------------------%0A 145 | ERROR | Using "parent" inside a class without parent is%0A     |       | deprecated since PHP 7.4 and removed since PHP 8.0%0A     |       | (PHPCompatibility.Classes.RemovedOrphanedParent.Removed)%0A 156 | ERROR | Using "parent" inside a class without parent is%0A     |       | deprecated since PHP 7.4 and removed since PHP 8.0%0A     |       | (PHPCompatibility.Classes.RemovedOrphanedParent.Removed)%0A----------------------------------------------------------------------%0A%0A%0AFILE: ...irecutter/paapi5-php-sdk/src/com/amazon/paapi5/v1/Properties.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A----------------------------------------------------------------------%0A 145 | ERROR | Using "parent" inside a class without parent is%0A     |       | deprecated since PHP 7.4 and removed since PHP 8.0%0A     |       | (PHPCompatibility.Classes.RemovedOrphanedParent.Removed)%0A 156 | ERROR | Using "parent" inside a class without parent is%0A     |       | deprecated since PHP 7.4 and removed since PHP 8.0%0A     |       | (PHPCompatibility.Classes.RemovedOrphanedParent.Removed)%0A----------------------------------------------------------------------%0A
