@@ -1,0 +1,32 @@
+::warning::Plugin: https://wordpress.org/plugins/woo-rubric-solutions-gateway/%0ATrac: https://plugins.trac.wordpress.org/browser/woo-rubric-solutions-gateway/
+
+Fatal error: Array and string offset access syntax with curly braces is no longer supported in woo-rubric-solutions-gateway/woo-rubric-solutions-gateway/lib/InachoCreditCard.php on line 210
+Errors parsing woo-rubric-solutions-gateway/woo-rubric-solutions-gateway/lib/InachoCreditCard.php
+No syntax errors detected in woo-rubric-solutions-gateway/woo-rubric-solutions-gateway/lib/RubricApi.php
+No syntax errors detected in woo-rubric-solutions-gateway/woo-rubric-solutions-gateway/lib/WC_Gateway_Rubric.php
+No syntax errors detected in woo-rubric-solutions-gateway/woo-rubric-solutions-gateway/main.php
+No syntax errors detected in woo-rubric-solutions-gateway/woo-rubric-solutions-gateway/templates/payment_fields.php
+No syntax errors detected in woo-rubric-solutions-gateway/woo-rubric-solutions-gateway/templates/terms.php
+::error::%0Alib/InachoCreditCard.php%0A  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 210
+[32mE[0m..... 6 / 6 (100%)
+
+
+
+[1mFILE: lib/InachoCreditCard.php[0m
+----------------------------------------------------------------------
+[1mFOUND 2 ERRORS AFFECTING 2 LINES[0m
+----------------------------------------------------------------------
+ 210 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $number{$i-1}[0m
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 215 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $number{$i-1}[0m
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+----------------------------------------------------------------------
+[1mPHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
+----------------------------------------------------------------------
+
+Time: 137ms; Memory: 12MB
+::error::FILE: lib/InachoCreditCard.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A----------------------------------------------------------------------%0A 210 | ERROR | [x] Curly brace syntax for accessing array elements%0A     |       |     and string offsets has been deprecated in PHP 7.4%0A     |       |     and removed in PHP 8.0. Found: $number{$i-1}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 215 | ERROR | [x] Curly brace syntax for accessing array elements%0A     |       |     and string offsets has been deprecated in PHP 7.4%0A     |       |     and removed in PHP 8.0. Found: $number{$i-1}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A----------------------------------------------------------------------%0APHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A----------------------------------------------------------------------%0A
