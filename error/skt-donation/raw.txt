@@ -249,6 +249,8 @@ No syntax errors detected in skt-donation/skt-donation/payment-method/twocheckou
 No syntax errors detected in skt-donation/skt-donation/payment-method/twocheckout/vendor/phpunit/phpunit/PHPUnit/TextUI/ResultPrinter.php
 No syntax errors detected in skt-donation/skt-donation/payment-method/twocheckout/vendor/phpunit/phpunit/PHPUnit/TextUI/TestRunner.php
 No syntax errors detected in skt-donation/skt-donation/payment-method/twocheckout/vendor/phpunit/phpunit/PHPUnit/Util/Class.php
+
+Warning: Private methods cannot be final as they are never overridden by other classes in skt-donation/skt-donation/payment-method/twocheckout/vendor/phpunit/phpunit/PHPUnit/Util/Configuration.php on line 199
 No syntax errors detected in skt-donation/skt-donation/payment-method/twocheckout/vendor/phpunit/phpunit/PHPUnit/Util/Configuration.php
 No syntax errors detected in skt-donation/skt-donation/payment-method/twocheckout/vendor/phpunit/phpunit/PHPUnit/Util/DeprecatedFeature/Logger.php
 No syntax errors detected in skt-donation/skt-donation/payment-method/twocheckout/vendor/phpunit/phpunit/PHPUnit/Util/DeprecatedFeature.php
@@ -326,6 +328,8 @@ No syntax errors detected in skt-donation/skt-donation/payment-method/twocheckou
 No syntax errors detected in skt-donation/skt-donation/payment-method/twocheckout/vendor/phpunit/phpunit/Tests/_files/RequirementsTest.php
 No syntax errors detected in skt-donation/skt-donation/payment-method/twocheckout/vendor/phpunit/phpunit/Tests/_files/SampleArrayAccess.php
 No syntax errors detected in skt-donation/skt-donation/payment-method/twocheckout/vendor/phpunit/phpunit/Tests/_files/SampleClass.php
+
+Warning: Private methods cannot be final as they are never overridden by other classes in skt-donation/skt-donation/payment-method/twocheckout/vendor/phpunit/phpunit/Tests/_files/Singleton.php on line 10
 No syntax errors detected in skt-donation/skt-donation/payment-method/twocheckout/vendor/phpunit/phpunit/Tests/_files/Singleton.php
 No syntax errors detected in skt-donation/skt-donation/payment-method/twocheckout/vendor/phpunit/phpunit/Tests/_files/StackTest.php
 No syntax errors detected in skt-donation/skt-donation/payment-method/twocheckout/vendor/phpunit/phpunit/Tests/_files/Struct.php
@@ -446,7 +450,7 @@ No syntax errors detected in skt-donation/skt-donation/payment-method/twocheckou
 No syntax errors detected in skt-donation/skt-donation/payment-method/twocheckout/vendor/symfony/yaml/Unescaper.php
 No syntax errors detected in skt-donation/skt-donation/payment-method/twocheckout/vendor/symfony/yaml/Yaml.php
 No syntax errors detected in skt-donation/skt-donation/skt-donation.php
-::error::%0Apayment-method/twocheckout/vendor/phpunit/phpunit/PHPUnit/TextUI/Command.php%0A  Warning: "continue" targeting switch is equivalent to "break".%0A      Did you mean to use "continue 2"?%0A      on line 277%0A  Warning: "continue" targeting switch is equivalent to "break".%0A      Did you mean to use "continue 2"?%0A      on line 285
+::error::%0Apayment-method/twocheckout/vendor/phpunit/phpunit/PHPUnit/TextUI/Command.php%0A  Warning: "continue" targeting switch is equivalent to "break".%0A      Did you mean to use "continue 2"?%0A      on line 277%0A  Warning: "continue" targeting switch is equivalent to "break".%0A      Did you mean to use "continue 2"?%0A      on line 285%0A%0Apayment-method/twocheckout/vendor/phpunit/phpunit/PHPUnit/Util/Configuration.php%0A  Warning: Private methods cannot be final as they are never overridden by other classes on line 199%0A%0Apayment-method/twocheckout/vendor/phpunit/phpunit/Tests/_files/Singleton.php%0A  Warning: Private methods cannot be final as they are never overridden by other classes on line 10
 ...................[31mE[0m........................................  60 / 441 (14%)
 ............................................................ 120 / 441 (27%)
 .....................[31mE[0m...................................... 180 / 441 (41%)
@@ -459,45 +463,57 @@ No syntax errors detected in skt-donation/skt-donation/skt-donation.php
 
 
 [1mFILE: payment-method/paypal-subscription/stdpaypal.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 171 | [31mERROR[0m | [1mFunction get_magic_quotes_gpc() is deprecated since PHP 7.4 and removed since PHP 8.0[0m
+----------------------------------------------------------------------
+ 171 | [31mERROR[0m | [1mFunction get_magic_quotes_gpc() is deprecated since
+     |       | PHP 7.4 and removed since PHP 8.0[0m
      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_gpcDeprecatedRemoved)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
-[1mFILE: payment-method/twocheckout/vendor/phpunit/php-token-stream/Tests/_files/source.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[1mFILE: ...checkout/vendor/phpunit/php-token-stream/Tests/_files/source.php[0m
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 5 | [31mERROR[0m | [1mDeclaration of a PHP4 style class constructor is deprecated since PHP 7.0 and removed since PHP 8.0[0m
+----------------------------------------------------------------------
+ 5 | [31mERROR[0m | [1mDeclaration of a PHP4 style class constructor is
+   |       | deprecated since PHP 7.0 and removed since PHP 8.0[0m
    |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
-[1mFILE: payment-method/twocheckout/vendor/phpunit/phpunit/PHPUnit/Util/Getopt.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[1mFILE: ...ethod/twocheckout/vendor/phpunit/phpunit/PHPUnit/Util/Getopt.php[0m
+----------------------------------------------------------------------
 [1mFOUND 3 ERRORS AFFECTING 3 LINES[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  80 | [31mERROR[0m | [1mFunction each() is deprecated since PHP 7.2 and removed since PHP 8.0; Use a foreach loop or ArrayIterator instead[0m
+----------------------------------------------------------------------
+  80 | [31mERROR[0m | [1mFunction each() is deprecated since PHP 7.2 and
+     |       | removed since PHP 8.0; Use a foreach loop or
+     |       | ArrayIterator instead[0m
      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)
- 139 | [31mERROR[0m | [1mFunction each() is deprecated since PHP 7.2 and removed since PHP 8.0; Use a foreach loop or ArrayIterator instead[0m
+ 139 | [31mERROR[0m | [1mFunction each() is deprecated since PHP 7.2 and
+     |       | removed since PHP 8.0; Use a foreach loop or
+     |       | ArrayIterator instead[0m
      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)
- 187 | [31mERROR[0m | [1mFunction each() is deprecated since PHP 7.2 and removed since PHP 8.0; Use a foreach loop or ArrayIterator instead[0m
+ 187 | [31mERROR[0m | [1mFunction each() is deprecated since PHP 7.2 and
+     |       | removed since PHP 8.0; Use a foreach loop or
+     |       | ArrayIterator instead[0m
      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
-[1mFILE: payment-method/twocheckout/vendor/symfony/yaml/Tests/InlineTest.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[1mFILE: ...ment-method/twocheckout/vendor/symfony/yaml/Tests/InlineTest.php[0m
+----------------------------------------------------------------------
 [1mFOUND 2 ERRORS AFFECTING 2 LINES[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 269 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x4D2'[0m
+----------------------------------------------------------------------
+ 269 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+     |       | inconsistent prior to PHP 7 and support has been
+     |       | removed in PHP 7. Found: '0x4D2'[0m
      |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
- 344 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x4D2'[0m
+ 344 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+     |       | inconsistent prior to PHP 7 and support has been
+     |       | removed in PHP 7. Found: '0x4D2'[0m
      |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
-Time: 6.93 secs; Memory: 34MB
-::error::FILE: payment-method/paypal-subscription/stdpaypal.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 171 | ERROR | Function get_magic_quotes_gpc() is deprecated since PHP 7.4 and removed since PHP 8.0%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_gpcDeprecatedRemoved)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: payment-method/twocheckout/vendor/phpunit/php-token-stream/Tests/_files/source.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 5 | ERROR | Declaration of a PHP4 style class constructor is deprecated since PHP 7.0 and removed since PHP 8.0%0A   |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: payment-method/twocheckout/vendor/phpunit/phpunit/PHPUnit/Util/Getopt.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 3 ERRORS AFFECTING 3 LINES%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A  80 | ERROR | Function each() is deprecated since PHP 7.2 and removed since PHP 8.0; Use a foreach loop or ArrayIterator instead%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)%0A 139 | ERROR | Function each() is deprecated since PHP 7.2 and removed since PHP 8.0; Use a foreach loop or ArrayIterator instead%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)%0A 187 | ERROR | Function each() is deprecated since PHP 7.2 and removed since PHP 8.0; Use a foreach loop or ArrayIterator instead%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: payment-method/twocheckout/vendor/symfony/yaml/Tests/InlineTest.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 269 | ERROR | The behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x4D2'%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 344 | ERROR | The behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x4D2'%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
+Time: 6.31 secs; Memory: 34MB
+::error::FILE: payment-method/paypal-subscription/stdpaypal.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 171 | ERROR | Function get_magic_quotes_gpc() is deprecated since%0A     |       | PHP 7.4 and removed since PHP 8.0%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_gpcDeprecatedRemoved)%0A----------------------------------------------------------------------%0A%0A%0AFILE: ...checkout/vendor/phpunit/php-token-stream/Tests/_files/source.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 5 | ERROR | Declaration of a PHP4 style class constructor is%0A   |       | deprecated since PHP 7.0 and removed since PHP 8.0%0A   |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)%0A----------------------------------------------------------------------%0A%0A%0AFILE: ...ethod/twocheckout/vendor/phpunit/phpunit/PHPUnit/Util/Getopt.php%0A----------------------------------------------------------------------%0AFOUND 3 ERRORS AFFECTING 3 LINES%0A----------------------------------------------------------------------%0A  80 | ERROR | Function each() is deprecated since PHP 7.2 and%0A     |       | removed since PHP 8.0; Use a foreach loop or%0A     |       | ArrayIterator instead%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)%0A 139 | ERROR | Function each() is deprecated since PHP 7.2 and%0A     |       | removed since PHP 8.0; Use a foreach loop or%0A     |       | ArrayIterator instead%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)%0A 187 | ERROR | Function each() is deprecated since PHP 7.2 and%0A     |       | removed since PHP 8.0; Use a foreach loop or%0A     |       | ArrayIterator instead%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)%0A----------------------------------------------------------------------%0A%0A%0AFILE: ...ment-method/twocheckout/vendor/symfony/yaml/Tests/InlineTest.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A----------------------------------------------------------------------%0A 269 | ERROR | The behaviour of hexadecimal numeric strings was%0A     |       | inconsistent prior to PHP 7 and support has been%0A     |       | removed in PHP 7. Found: '0x4D2'%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 344 | ERROR | The behaviour of hexadecimal numeric strings was%0A     |       | inconsistent prior to PHP 7 and support has been%0A     |       | removed in PHP 7. Found: '0x4D2'%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A----------------------------------------------------------------------%0A
