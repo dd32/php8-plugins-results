@@ -29,24 +29,29 @@ No syntax errors detected in wp-structuring-markup/wp-structuring-markup/include
 No syntax errors detected in wp-structuring-markup/wp-structuring-markup/includes/meta/wp-structuring-meta-website.php
 No syntax errors detected in wp-structuring-markup/wp-structuring-markup/includes/wp-structuring-display-amp.php
 No syntax errors detected in wp-structuring-markup/wp-structuring-markup/includes/wp-structuring-display.php
+
+Fatal error: Unparenthesized `a ? b : c ? d : e` is not supported. Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)` in wp-structuring-markup/wp-structuring-markup/includes/wp-structuring-opening-hours.php on line 192
 Errors parsing wp-structuring-markup/wp-structuring-markup/includes/wp-structuring-opening-hours.php
 No syntax errors detected in wp-structuring-markup/wp-structuring-markup/includes/wp-structuring-short-code-breadcrumb.php
 No syntax errors detected in wp-structuring-markup/wp-structuring-markup/includes/wp-structuring-utility.php
 No syntax errors detected in wp-structuring-markup/wp-structuring-markup/uninstall.php
 No syntax errors detected in wp-structuring-markup/wp-structuring-markup/wp-structuring-markup.php
-::error::%0Aincludes/wp-structuring-opening-hours.php
-No syntax errors detected in wp-structuring-markup/wp-structuring-markup/wp-structuring-markup.php
+::error::%0Aincludes/wp-structuring-opening-hours.php%0A  Fatal error: Unparenthesized `a ? b : c ? d : e` is not supported.%0A      Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)`%0A      on line 192
 ..............................[31mE[0m.... 35 / 35 (100%)
 
 
 
 [1mFILE: includes/wp-structuring-opening-hours.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 192 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has been deprecated in PHP 7.4 and removed in PHP 8.0. Multiple consecutive ternaries detected. Use parenthesis to
-     |       | clarify the order in which the operations should be executed[0m (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
+ 192 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has
+     |       | been deprecated in PHP 7.4 and removed in PHP 8.0.
+     |       | Multiple consecutive ternaries detected. Use
+     |       | parenthesis to clarify the order in which the
+     |       | operations should be executed[0m
+     |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
+----------------------------------------------------------------------
 
-Time: 699ms; Memory: 16MB
-::error::FILE: includes/wp-structuring-opening-hours.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 192 | ERROR | The left-associativity of the ternary operator has been deprecated in PHP 7.4 and removed in PHP 8.0. Multiple consecutive ternaries detected. Use parenthesis to%0A     |       | clarify the order in which the operations should be executed (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
+Time: 713ms; Memory: 16MB
+::error::FILE: includes/wp-structuring-opening-hours.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 192 | ERROR | The left-associativity of the ternary operator has%0A     |       | been deprecated in PHP 7.4 and removed in PHP 8.0.%0A     |       | Multiple consecutive ternaries detected. Use%0A     |       | parenthesis to clarify the order in which the%0A     |       | operations should be executed%0A     |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A----------------------------------------------------------------------%0A
