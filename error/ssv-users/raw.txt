@@ -1,0 +1,57 @@
+::warning::Plugin: https://wordpress.org/plugins/ssv-users/%0ATrac: https://plugins.trac.wordpress.org/browser/ssv-users/
+No syntax errors detected in ssv-users/ssv-users/custom-post-type/change-password-page.php
+No syntax errors detected in ssv-users/ssv-users/custom-post-type/forgot-password-page.php
+No syntax errors detected in ssv-users/ssv-users/custom-post-type/login-fields.php
+No syntax errors detected in ssv-users/ssv-users/custom-post-type/post-type.php
+No syntax errors detected in ssv-users/ssv-users/custom-post-type/profile-fields.php
+No syntax errors detected in ssv-users/ssv-users/custom-post-type/registration-fields.php
+
+Fatal error: Unparenthesized `a ? b : c ? d : e` is not supported. Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)` in ssv-users/ssv-users/functions.php on line 235
+Errors parsing ssv-users/ssv-users/functions.php
+No syntax errors detected in ssv-users/ssv-users/general/functions.php
+No syntax errors detected in ssv-users/ssv-users/general/general.php
+No syntax errors detected in ssv-users/ssv-users/general/lib/SqlFormatter.php
+No syntax errors detected in ssv-users/ssv-users/general/models/custom-fields/Field.php
+No syntax errors detected in ssv-users/ssv-users/general/models/custom-fields/HeaderField.php
+No syntax errors detected in ssv-users/ssv-users/general/models/custom-fields/InputField.php
+No syntax errors detected in ssv-users/ssv-users/general/models/custom-fields/input-fields/CheckboxInputField.php
+No syntax errors detected in ssv-users/ssv-users/general/models/custom-fields/input-fields/CustomInputField.php
+No syntax errors detected in ssv-users/ssv-users/general/models/custom-fields/input-fields/DateInputField.php
+No syntax errors detected in ssv-users/ssv-users/general/models/custom-fields/input-fields/HiddenInputField.php
+No syntax errors detected in ssv-users/ssv-users/general/models/custom-fields/input-fields/ImageInputField.php
+No syntax errors detected in ssv-users/ssv-users/general/models/custom-fields/input-fields/RoleCheckboxInputField.php
+No syntax errors detected in ssv-users/ssv-users/general/models/custom-fields/input-fields/RoleSelectInputField.php
+No syntax errors detected in ssv-users/ssv-users/general/models/custom-fields/input-fields/SelectInputField.php
+No syntax errors detected in ssv-users/ssv-users/general/models/custom-fields/input-fields/TextInputField.php
+No syntax errors detected in ssv-users/ssv-users/general/models/custom-fields/LabelField.php
+No syntax errors detected in ssv-users/ssv-users/general/models/custom-fields/TabField.php
+No syntax errors detected in ssv-users/ssv-users/general/models/Form.php
+No syntax errors detected in ssv-users/ssv-users/general/models/Message.php
+No syntax errors detected in ssv-users/ssv-users/general/models/User.php
+No syntax errors detected in ssv-users/ssv-users/general/options/options.php
+No syntax errors detected in ssv-users/ssv-users/general/SSV_General.php
+No syntax errors detected in ssv-users/ssv-users/options/email.php
+No syntax errors detected in ssv-users/ssv-users/options/general.php
+No syntax errors detected in ssv-users/ssv-users/options/options.php
+No syntax errors detected in ssv-users/ssv-users/options/users-export.php
+No syntax errors detected in ssv-users/ssv-users/ssv-users.php
+No syntax errors detected in ssv-users/ssv-users/users-page.php
+::error::%0Afunctions.php%0A  Fatal error: Unparenthesized `a ? b : c ? d : e` is not supported.%0A      Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)`%0A      on line 235
+......[31mE[0m............................ 35 / 35 (100%)
+
+
+
+[1mFILE: functions.php[0m
+----------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 235 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has
+     |       | been deprecated in PHP 7.4 and removed in PHP 8.0.
+     |       | Multiple consecutive ternaries detected. Use
+     |       | parenthesis to clarify the order in which the
+     |       | operations should be executed[0m
+     |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
+----------------------------------------------------------------------
+
+Time: 1.2 secs; Memory: 20MB
+::error::FILE: functions.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 235 | ERROR | The left-associativity of the ternary operator has%0A     |       | been deprecated in PHP 7.4 and removed in PHP 8.0.%0A     |       | Multiple consecutive ternaries detected. Use%0A     |       | parenthesis to clarify the order in which the%0A     |       | operations should be executed%0A     |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A----------------------------------------------------------------------%0A
