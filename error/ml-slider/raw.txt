@@ -255,6 +255,8 @@ No syntax errors detected in ml-slider/ml-slider/assets/htmlpurifier/library/HTM
 No syntax errors detected in ml-slider/ml-slider/assets/htmlpurifier/library/HTMLPurifier/VarParserException.php
 No syntax errors detected in ml-slider/ml-slider/assets/htmlpurifier/library/HTMLPurifier/VarParser.php
 No syntax errors detected in ml-slider/ml-slider/assets/htmlpurifier/library/HTMLPurifier/Zipper.php
+
+Fatal error: __autoload() is no longer supported, use spl_autoload_register() instead in ml-slider/ml-slider/assets/htmlpurifier/library/HTMLPurifier.autoload-legacy.php on line 10
 Errors parsing ml-slider/ml-slider/assets/htmlpurifier/library/HTMLPurifier.autoload-legacy.php
 No syntax errors detected in ml-slider/ml-slider/assets/htmlpurifier/library/HTMLPurifier.autoload.php
 No syntax errors detected in ml-slider/ml-slider/assets/htmlpurifier/library/HTMLPurifier.auto.php
@@ -308,8 +310,7 @@ No syntax errors detected in ml-slider/ml-slider/themes/simply-dark/changelog.ph
 No syntax errors detected in ml-slider/ml-slider/themes/simply-dark/v1.0.0/theme.php
 No syntax errors detected in ml-slider/ml-slider/themes/starter/changelog.php
 No syntax errors detected in ml-slider/ml-slider/themes/starter/v1.0.0/theme.php
-::error::%0Aassets/htmlpurifier/library/HTMLPurifier.autoload-legacy.php
-No syntax errors detected in ml-slider/ml-slider/themes/starter/v1.0.0/theme.php
+::error::%0Aassets/htmlpurifier/library/HTMLPurifier.autoload-legacy.php%0A  Fatal error: __autoload() is no longer supported, use spl_autoload_register() instead on line 10
 ............................................................  60 / 309 (19%)
 ..............................................[31mE[0m............. 120 / 309 (39%)
 ............................................................ 180 / 309 (58%)
@@ -320,21 +321,24 @@ No syntax errors detected in ml-slider/ml-slider/themes/starter/v1.0.0/theme.php
 
 
 [1mFILE: assets/htmlpurifier/library/HTMLPurifier/Config.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 806 | [31mERROR[0m | [1mFunction get_magic_quotes_gpc() is deprecated since PHP 7.4 and removed since PHP 8.0[0m
+----------------------------------------------------------------------
+ 806 | [31mERROR[0m | [1mFunction get_magic_quotes_gpc() is deprecated since
+     |       | PHP 7.4 and removed since PHP 8.0[0m
      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_gpcDeprecatedRemoved)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 [1mFILE: assets/htmlpurifier/library/HTMLPurifier.autoload-legacy.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 10 | [31mERROR[0m | [1mSpecifying an autoloader using an __autoload() function is deprecated since PHP 7.2 and no longer supported since PHP 8.0[0m
+----------------------------------------------------------------------
+ 10 | [31mERROR[0m | [1mSpecifying an autoloader using an __autoload() function
+    |       | is deprecated since PHP 7.2 and no longer supported
+    |       | since PHP 8.0[0m
     |       | (PHPCompatibility.FunctionNameRestrictions.RemovedMagicAutoload.Removed)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
-Time: 4.1 secs; Memory: 36MB
-::error::FILE: assets/htmlpurifier/library/HTMLPurifier/Config.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 806 | ERROR | Function get_magic_quotes_gpc() is deprecated since PHP 7.4 and removed since PHP 8.0%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_gpcDeprecatedRemoved)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: assets/htmlpurifier/library/HTMLPurifier.autoload-legacy.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 10 | ERROR | Specifying an autoloader using an __autoload() function is deprecated since PHP 7.2 and no longer supported since PHP 8.0%0A    |       | (PHPCompatibility.FunctionNameRestrictions.RemovedMagicAutoload.Removed)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
+Time: 4.01 secs; Memory: 36MB
+::error::FILE: assets/htmlpurifier/library/HTMLPurifier/Config.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 806 | ERROR | Function get_magic_quotes_gpc() is deprecated since%0A     |       | PHP 7.4 and removed since PHP 8.0%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_gpcDeprecatedRemoved)%0A----------------------------------------------------------------------%0A%0A%0AFILE: assets/htmlpurifier/library/HTMLPurifier.autoload-legacy.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 10 | ERROR | Specifying an autoloader using an __autoload() function%0A    |       | is deprecated since PHP 7.2 and no longer supported%0A    |       | since PHP 8.0%0A    |       | (PHPCompatibility.FunctionNameRestrictions.RemovedMagicAutoload.Removed)%0A----------------------------------------------------------------------%0A
