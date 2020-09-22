@@ -1,0 +1,70 @@
+::warning::Plugin: https://wordpress.org/plugins/mysql-profiler/%0ATrac: https://plugins.trac.wordpress.org/browser/mysql-profiler/
+
+Parse error: syntax error, unexpected token "new" in mysql-profiler/mysql-profiler/lib/geshi/contrib/aliased.php on line 44
+Errors parsing mysql-profiler/mysql-profiler/lib/geshi/contrib/aliased.php
+No syntax errors detected in mysql-profiler/mysql-profiler/lib/geshi/contrib/cssgen.php
+
+Parse error: syntax error, unexpected token "new" in mysql-profiler/mysql-profiler/lib/geshi/contrib/example.php on line 41
+Errors parsing mysql-profiler/mysql-profiler/lib/geshi/contrib/example.php
+No syntax errors detected in mysql-profiler/mysql-profiler/lib/geshi/geshi/mysql.php
+No syntax errors detected in mysql-profiler/mysql-profiler/lib/geshi/geshi.php
+No syntax errors detected in mysql-profiler/mysql-profiler/lib/mysql_profiler.php
+No syntax errors detected in mysql-profiler/mysql-profiler/mysql_profiler.php
+::error::%0Alib/geshi/contrib/aliased.php%0A  Parse error: syntax error, unexpected token "new" on line 44%0A%0Alib/geshi/contrib/example.php%0A  Parse error: syntax error, unexpected token "new" on line 41
+[31mE[0m[31mE[0m[31mE[0m.[31mE[0m.. 7 / 7 (100%)
+
+
+
+[1mFILE: lib/geshi/contrib/aliased.php[0m
+----------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 44 | [31mERROR[0m | [1mAssigning the return value of new by reference is
+    |       | deprecated in PHP 5.3 and has been removed in PHP
+    |       | 7.0[0m
+    |       | (PHPCompatibility.Syntax.RemovedNewReference.Removed)
+----------------------------------------------------------------------
+
+
+[1mFILE: lib/geshi/contrib/cssgen.php[0m
+----------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 33 | [31mERROR[0m | [1mFunction set_magic_quotes_runtime() is deprecated since
+    |       | PHP 5.3 and removed since PHP 7.0[0m
+    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.set_magic_quotes_runtimeDeprecatedRemoved)
+----------------------------------------------------------------------
+
+
+[1mFILE: lib/geshi/contrib/example.php[0m
+----------------------------------------------------------------------
+[1mFOUND 2 ERRORS AFFECTING 2 LINES[0m
+----------------------------------------------------------------------
+ 27 | [31mERROR[0m | [1mFunction get_magic_quotes_gpc() is deprecated since PHP
+    |       | 7.4 and removed since PHP 8.0[0m
+    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_gpcDeprecatedRemoved)
+ 41 | [31mERROR[0m | [1mAssigning the return value of new by reference is
+    |       | deprecated in PHP 5.3 and has been removed in PHP
+    |       | 7.0[0m
+    |       | (PHPCompatibility.Syntax.RemovedNewReference.Removed)
+----------------------------------------------------------------------
+
+
+[1mFILE: lib/geshi/geshi.php[0m
+----------------------------------------------------------------------
+[1mFOUND 3 ERRORS AFFECTING 3 LINES[0m
+----------------------------------------------------------------------
+  432 | [31mERROR[0m | [1mDeclaration of a PHP4 style class constructor is
+      |       | deprecated since PHP 7.0 and removed since PHP
+      |       | 8.0[0m
+      |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+ 2134 | [31mERROR[0m | [1mpreg_replace() - /e modifier is deprecated since PHP
+      |       | 5.5 and removed since PHP 7.0[0m
+      |       | (PHPCompatibility.ParameterValues.RemovedPCREModifiers.Removed)
+ 2144 | [31mERROR[0m | [1mpreg_replace() - /e modifier is deprecated since PHP
+      |       | 5.5 and removed since PHP 7.0[0m
+      |       | (PHPCompatibility.ParameterValues.RemovedPCREModifiers.Removed)
+----------------------------------------------------------------------
+
+Time: 406ms; Memory: 28MB
+::error::FILE: lib/geshi/contrib/aliased.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 44 | ERROR | Assigning the return value of new by reference is%0A    |       | deprecated in PHP 5.3 and has been removed in PHP%0A    |       | 7.0%0A    |       | (PHPCompatibility.Syntax.RemovedNewReference.Removed)%0A----------------------------------------------------------------------%0A%0A%0AFILE: lib/geshi/contrib/cssgen.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 33 | ERROR | Function set_magic_quotes_runtime() is deprecated since%0A    |       | PHP 5.3 and removed since PHP 7.0%0A    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.set_magic_quotes_runtimeDeprecatedRemoved)%0A----------------------------------------------------------------------%0A%0A%0AFILE: lib/geshi/contrib/example.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A----------------------------------------------------------------------%0A 27 | ERROR | Function get_magic_quotes_gpc() is deprecated since PHP%0A    |       | 7.4 and removed since PHP 8.0%0A    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_gpcDeprecatedRemoved)%0A 41 | ERROR | Assigning the return value of new by reference is%0A    |       | deprecated in PHP 5.3 and has been removed in PHP%0A    |       | 7.0%0A    |       | (PHPCompatibility.Syntax.RemovedNewReference.Removed)%0A----------------------------------------------------------------------%0A%0A%0AFILE: lib/geshi/geshi.php%0A----------------------------------------------------------------------%0AFOUND 3 ERRORS AFFECTING 3 LINES%0A----------------------------------------------------------------------%0A  432 | ERROR | Declaration of a PHP4 style class constructor is%0A      |       | deprecated since PHP 7.0 and removed since PHP%0A      |       | 8.0%0A      |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)%0A 2134 | ERROR | preg_replace() - /e modifier is deprecated since PHP%0A      |       | 5.5 and removed since PHP 7.0%0A      |       | (PHPCompatibility.ParameterValues.RemovedPCREModifiers.Removed)%0A 2144 | ERROR | preg_replace() - /e modifier is deprecated since PHP%0A      |       | 5.5 and removed since PHP 7.0%0A      |       | (PHPCompatibility.ParameterValues.RemovedPCREModifiers.Removed)%0A----------------------------------------------------------------------%0A
