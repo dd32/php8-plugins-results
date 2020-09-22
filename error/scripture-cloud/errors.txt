@@ -1,0 +1,32 @@
+
+scripturecloud_scripturizer.php
+  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 71
+FILE: scripturecloud_scripturizer.php
+----------------------------------------------------------------------
+FOUND 3 ERRORS AFFECTING 3 LINES
+----------------------------------------------------------------------
+ 20 | ERROR | [ ] Function each() is deprecated since PHP 7.2 and
+    |       |     removed since PHP 8.0; Use a foreach loop or
+    |       |     ArrayIterator instead
+    |       |     (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)
+ 71 | ERROR | [x] Curly brace syntax for accessing array elements and
+    |       |     string offsets has been deprecated in PHP 7.4 and
+    |       |     removed in PHP 8.0. Found: $volume{0}
+    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 83 | ERROR | [ ] Function split() is deprecated since PHP 5.3 and
+    |       |     removed since PHP 7.0; Use preg_split(), explode()
+    |       |     or str_split() instead
+    |       |     (PHPCompatibility.FunctionUse.RemovedFunctions.splitDeprecatedRemoved)
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------
+
+
+FILE: scripturecloud_widget.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 4 | ERROR | Declaration of a PHP4 style class constructor is
+   |       | deprecated since PHP 7.0 and removed since PHP 8.0
+   |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+----------------------------------------------------------------------

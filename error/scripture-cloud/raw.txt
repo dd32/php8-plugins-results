@@ -1,0 +1,45 @@
+::warning::Plugin: https://wordpress.org/plugins/scripture-cloud/%0ATrac: https://plugins.trac.wordpress.org/browser/scripture-cloud/
+No syntax errors detected in scripture-cloud/scripture-cloud/scripturecloud.php
+
+Fatal error: Array and string offset access syntax with curly braces is no longer supported in scripture-cloud/scripture-cloud/scripturecloud_scripturizer.php on line 71
+Errors parsing scripture-cloud/scripture-cloud/scripturecloud_scripturizer.php
+No syntax errors detected in scripture-cloud/scripture-cloud/scripturecloud_show.php
+No syntax errors detected in scripture-cloud/scripture-cloud/scripturecloud_stats.php
+No syntax errors detected in scripture-cloud/scripture-cloud/scripturecloud_widget.php
+::error::%0Ascripturecloud_scripturizer.php%0A  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 71
+.[32mE[0m..[31mE[0m 5 / 5 (100%)
+
+
+
+[1mFILE: scripturecloud_scripturizer.php[0m
+----------------------------------------------------------------------
+[1mFOUND 3 ERRORS AFFECTING 3 LINES[0m
+----------------------------------------------------------------------
+ 20 | [31mERROR[0m | [ ] [1mFunction each() is deprecated since PHP 7.2 and
+    |       |     removed since PHP 8.0; Use a foreach loop or
+    |       |     ArrayIterator instead[0m
+    |       |     (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)
+ 71 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and
+    |       |     string offsets has been deprecated in PHP 7.4 and
+    |       |     removed in PHP 8.0. Found: $volume{0}[0m
+    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 83 | [31mERROR[0m | [ ] [1mFunction split() is deprecated since PHP 5.3 and
+    |       |     removed since PHP 7.0; Use preg_split(), explode()
+    |       |     or str_split() instead[0m
+    |       |     (PHPCompatibility.FunctionUse.RemovedFunctions.splitDeprecatedRemoved)
+----------------------------------------------------------------------
+[1mPHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
+----------------------------------------------------------------------
+
+
+[1mFILE: scripturecloud_widget.php[0m
+----------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 4 | [31mERROR[0m | [1mDeclaration of a PHP4 style class constructor is
+   |       | deprecated since PHP 7.0 and removed since PHP 8.0[0m
+   |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+----------------------------------------------------------------------
+
+Time: 159ms; Memory: 18MB
+::error::FILE: scripturecloud_scripturizer.php%0A----------------------------------------------------------------------%0AFOUND 3 ERRORS AFFECTING 3 LINES%0A----------------------------------------------------------------------%0A 20 | ERROR | [ ] Function each() is deprecated since PHP 7.2 and%0A    |       |     removed since PHP 8.0; Use a foreach loop or%0A    |       |     ArrayIterator instead%0A    |       |     (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)%0A 71 | ERROR | [x] Curly brace syntax for accessing array elements and%0A    |       |     string offsets has been deprecated in PHP 7.4 and%0A    |       |     removed in PHP 8.0. Found: $volume{0}%0A    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 83 | ERROR | [ ] Function split() is deprecated since PHP 5.3 and%0A    |       |     removed since PHP 7.0; Use preg_split(), explode()%0A    |       |     or str_split() instead%0A    |       |     (PHPCompatibility.FunctionUse.RemovedFunctions.splitDeprecatedRemoved)%0A----------------------------------------------------------------------%0APHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A----------------------------------------------------------------------%0A%0A%0AFILE: scripturecloud_widget.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 4 | ERROR | Declaration of a PHP4 style class constructor is%0A   |       | deprecated since PHP 7.0 and removed since PHP 8.0%0A   |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)%0A----------------------------------------------------------------------%0A
