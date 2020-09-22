@@ -1,0 +1,89 @@
+
+wp-populqrno.php
+  Parse error: syntax error, unexpected token "-", expecting "(" on line 18
+FILE: wp-populqrno.php
+----------------------------------------------------------------------
+FOUND 9 ERRORS AFFECTING 9 LINES
+----------------------------------------------------------------------
+  18 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found:
+     |       |     populqrno_shorturl_install() {
+     |       |     	add_option("ats-shorturl", '1', '', 'yes');
+     |       |     }
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+  21 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found:
+     |       |     populqrno_shorturl_remove() {
+     |       |     	delete_option('ats-shorturl');
+     |       |     }
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+  27 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found:
+     |       |     populqrno_size_install() {
+     |       |     	add_option("ats-size", 'small', '', 'yes');
+     |       |     }
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+  30 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found:
+     |       |     populqrno_size_remove() {
+     |       |     	delete_option('ats-size');
+     |       |     }
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+  36 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found:
+     |       |     populqrno_align_install() {
+     |       |     	add_option("ats-align", 'justify', '', 'yes');
+     |       |     }
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+  39 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found:
+     |       |     populqrno_align_remove() {
+     |       |     	delete_option('ats-align');
+     |       |     }
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+  45 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found:
+     |       |     populqrno_mode_install() {
+     |       |     	add_option("ats-mode", 'automatic', '', 'yes');
+     |       |     }
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+  48 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found:
+     |       |     populqrno_mode_remove() {
+     |       |     	delete_option('ats-mode');
+     |       |     }
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 111 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: populqrno($content)
+     |       |     {
+     |       |     	$buttons = ats_buttons();
+     |       |     	if (get_option('ats-mode') == "shortcode") { //
+     |       |     shortcode
+     |       |     		return str_replace(SHARE_IT_TAG, $buttons,
+     |       |     $content);
+     |       |     	}
+     |       |     	else if (get_option('ats-mode') == "manual") { //
+     |       |     PHP code
+     |       |     		return $content;
+     |       |     	}
+     |       |     	else { // auto-add
+     |       |     		if (is_single()) {
+     |       |     			$content .= $buttons;
+     |       |     			return $content;
+     |       |     		}
+     |       |     	}
+     |       |     	return $content;
+     |       |     }
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 9 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------
