@@ -1,0 +1,66 @@
+::warning::Plugin: https://wordpress.org/plugins/webthumb/%0ATrac: https://plugins.trac.wordpress.org/browser/webthumb/
+
+Fatal error: __autoload() is no longer supported, use spl_autoload_register() instead in webthumb/webthumb/Bluga/Autoload.php on line 48
+Errors parsing webthumb/webthumb/Bluga/Autoload.php
+No syntax errors detected in webthumb/webthumb/Bluga/Exception.php
+No syntax errors detected in webthumb/webthumb/Bluga/HTTP/Request/Adapter/Curl.php
+No syntax errors detected in webthumb/webthumb/Bluga/HTTP/Request/Adapter/Http.php
+No syntax errors detected in webthumb/webthumb/Bluga/HTTP/Request/Adapter/Phpsocket.php
+No syntax errors detected in webthumb/webthumb/Bluga/HTTP/Request/Adapter/Phpstream.php
+No syntax errors detected in webthumb/webthumb/Bluga/HTTP/Request/Adapter.php
+No syntax errors detected in webthumb/webthumb/Bluga/HTTP/Request/Exception.php
+No syntax errors detected in webthumb/webthumb/Bluga/HTTP/Request/Headers.php
+No syntax errors detected in webthumb/webthumb/Bluga/HTTP/Request/Response.php
+No syntax errors detected in webthumb/webthumb/Bluga/HTTP/Request/Uri.php
+No syntax errors detected in webthumb/webthumb/Bluga/HTTP/Request.php
+No syntax errors detected in webthumb/webthumb/Bluga/Propertybag.php
+No syntax errors detected in webthumb/webthumb/Bluga/Webthumb/AllFiles.php
+No syntax errors detected in webthumb/webthumb/Bluga/Webthumb/Job.php
+No syntax errors detected in webthumb/webthumb/Bluga/Webthumb/Request/Fetch.php
+No syntax errors detected in webthumb/webthumb/Bluga/Webthumb/Request/Status.php
+No syntax errors detected in webthumb/webthumb/Bluga/Webthumb/Request/Submit.php
+No syntax errors detected in webthumb/webthumb/Bluga/Webthumb/Request.php
+No syntax errors detected in webthumb/webthumb/Bluga/Webthumb.php
+No syntax errors detected in webthumb/webthumb/webthumb.php
+No syntax errors detected in webthumb/webthumb/wpf-grabthumb.php
+No syntax errors detected in webthumb/webthumb/wpf-webthumb_admin_cache.php
+No syntax errors detected in webthumb/webthumb/wpf-webthumb_admin_settings.php
+No syntax errors detected in webthumb/webthumb/wpf-webthumb_widget.php
+::error::%0ABluga/Autoload.php%0A  Fatal error: __autoload() is no longer supported, use spl_autoload_register() instead on line 48
+[31mE[0m.............[31mE[0m.........[31mE[0m 25 / 25 (100%)
+
+
+
+[1mFILE: Bluga/Autoload.php[0m
+----------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 48 | [31mERROR[0m | [1mSpecifying an autoloader using an __autoload() function
+    |       | is deprecated since PHP 7.2 and no longer supported
+    |       | since PHP 8.0[0m
+    |       | (PHPCompatibility.FunctionNameRestrictions.RemovedMagicAutoload.Removed)
+----------------------------------------------------------------------
+
+
+[1mFILE: Bluga/Webthumb/Job.php[0m
+----------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 22 | [31mERROR[0m | [1mFunction create_function() is deprecated since PHP 7.2
+    |       | and removed since PHP 8.0; Use an anonymous function
+    |       | instead[0m
+    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
+----------------------------------------------------------------------
+
+
+[1mFILE: wpf-webthumb_widget.php[0m
+----------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 4 | [31mERROR[0m | [1mDeclaration of a PHP4 style class constructor is
+   |       | deprecated since PHP 7.0 and removed since PHP 8.0[0m
+   |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+----------------------------------------------------------------------
+
+Time: 400ms; Memory: 12MB
+::error::FILE: Bluga/Autoload.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 48 | ERROR | Specifying an autoloader using an __autoload() function%0A    |       | is deprecated since PHP 7.2 and no longer supported%0A    |       | since PHP 8.0%0A    |       | (PHPCompatibility.FunctionNameRestrictions.RemovedMagicAutoload.Removed)%0A----------------------------------------------------------------------%0A%0A%0AFILE: Bluga/Webthumb/Job.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 22 | ERROR | Function create_function() is deprecated since PHP 7.2%0A    |       | and removed since PHP 8.0; Use an anonymous function%0A    |       | instead%0A    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)%0A----------------------------------------------------------------------%0A%0A%0AFILE: wpf-webthumb_widget.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 4 | ERROR | Declaration of a PHP4 style class constructor is%0A   |       | deprecated since PHP 7.0 and removed since PHP 8.0%0A   |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)%0A----------------------------------------------------------------------%0A
