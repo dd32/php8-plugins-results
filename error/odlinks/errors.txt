@@ -1,0 +1,185 @@
+
+admin/odl_admin_settings.php
+  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 102
+
+includes/odl_functions.php
+  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 79
+
+includes/odl_securimage.php
+  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 423
+
+includes/pagerank.php
+  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 34
+
+language/lang_sp.php
+  Parse error: syntax error, unexpected variable "$odl_lang" on line 58
+
+odl_main.php
+  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 295
+FILE: admin/odl_admin_settings.php
+----------------------------------------------------------------------
+FOUND 8 ERRORS AFFECTING 5 LINES
+----------------------------------------------------------------------
+ 102 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found:
+     |       |     $odl_lang{ODL_SUBMITTING_NOTE}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 102 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found:
+     |       |     $odl_lang{ODL_SUBMITTING_TEXT}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 151 | ERROR | [ ] Function each() is deprecated since PHP 7.2 and
+     |       |     removed since PHP 8.0; Use a foreach loop or
+     |       |     ArrayIterator instead
+     |       |     (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)
+ 152 | ERROR | [ ] Extension 'ereg' is deprecated since PHP 5.3 and
+     |       |     removed since PHP 7.0; Use pcre instead
+     |       |     (PHPCompatibility.Extensions.RemovedExtensions.eregDeprecatedRemoved)
+ 152 | ERROR | [ ] Function ereg() is deprecated since PHP 5.3 and
+     |       |     removed since PHP 7.0; Use preg_match()
+     |       |     instead
+     |       |     (PHPCompatibility.FunctionUse.RemovedFunctions.eregDeprecatedRemoved)
+ 211 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found:
+     |       |     $odl_lang{ODL_SUBMITTING_NOTE}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 211 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found:
+     |       |     $odl_lang{ODL_SUBMITTING_TEXT}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 308 | ERROR | [ ] Function each() is deprecated since PHP 7.2 and
+     |       |     removed since PHP 8.0; Use a foreach loop or
+     |       |     ArrayIterator instead
+     |       |     (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 4 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------
+
+
+FILE: includes/odl_functions.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 79 | ERROR | [x] Curly brace syntax for accessing array elements and
+    |       |     string offsets has been deprecated in PHP 7.4 and
+    |       |     removed in PHP 8.0. Found:
+    |       |     $navigationLinks{strlen($navigationLinks)-1}
+    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------
+
+
+FILE: includes/odl_securimage.php
+----------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+----------------------------------------------------------------------
+ 423 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $this->code{$i}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 552 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found:
+     |       |     $this->charset{rand(0, $cslen - 1)}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------
+
+
+FILE: includes/pagerank.php
+----------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+----------------------------------------------------------------------
+ 34 | ERROR | [x] Curly brace syntax for accessing array elements and
+    |       |     string offsets has been deprecated in PHP 7.4 and
+    |       |     removed in PHP 8.0. Found: $string{$i}
+    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 68 | ERROR | [x] Curly brace syntax for accessing array elements and
+    |       |     string offsets has been deprecated in PHP 7.4 and
+    |       |     removed in PHP 8.0. Found: $hashString{$i}
+    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------
+
+
+FILE: includes/_thumbshots.class.php
+----------------------------------------------------------------------
+FOUND 7 ERRORS AFFECTING 4 LINES
+----------------------------------------------------------------------
+ 509 | ERROR | The behaviour of hexadecimal numeric strings was
+     |       | inconsistent prior to PHP 7 and support has been
+     |       | removed in PHP 7. Found: '0x0'
+     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
+ 511 | ERROR | The behaviour of hexadecimal numeric strings was
+     |       | inconsistent prior to PHP 7 and support has been
+     |       | removed in PHP 7. Found: '0x62'
+     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
+ 511 | ERROR | The behaviour of hexadecimal numeric strings was
+     |       | inconsistent prior to PHP 7 and support has been
+     |       | removed in PHP 7. Found: '0x63'
+     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
+ 511 | ERROR | The behaviour of hexadecimal numeric strings was
+     |       | inconsistent prior to PHP 7 and support has been
+     |       | removed in PHP 7. Found: '0x64'
+     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
+ 511 | ERROR | The behaviour of hexadecimal numeric strings was
+     |       | inconsistent prior to PHP 7 and support has been
+     |       | removed in PHP 7. Found: '0x68'
+     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
+ 653 | ERROR | The behaviour of hexadecimal numeric strings was
+     |       | inconsistent prior to PHP 7 and support has been
+     |       | removed in PHP 7. Found: '0x0'
+     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
+ 691 | ERROR | The variable '$php_errormsg' is deprecated since PHP
+     |       | 7.2 and removed since PHP 8.0; Use error_get_last()
+     |       | instead
+     |       | (PHPCompatibility.Variables.RemovedPredefinedGlobalVariables.php_errormsgDeprecatedRemoved)
+----------------------------------------------------------------------
+
+
+FILE: odl_control.php
+----------------------------------------------------------------------
+FOUND 3 ERRORS AFFECTING 3 LINES
+----------------------------------------------------------------------
+ 128 | ERROR | Global variable '$HTTP_GET_VARS' is deprecated since
+     |       | PHP 5.3 and removed since PHP 5.4; Use $_GET
+     |       | instead
+     |       | (PHPCompatibility.Variables.RemovedPredefinedGlobalVariables.http_get_varsDeprecatedRemoved)
+ 129 | ERROR | Global variable '$HTTP_POST_VARS' is deprecated since
+     |       | PHP 5.3 and removed since PHP 5.4; Use $_POST
+     |       | instead
+     |       | (PHPCompatibility.Variables.RemovedPredefinedGlobalVariables.http_post_varsDeprecatedRemoved)
+ 131 | ERROR | Global variable '$HTTP_COOKIE_VARS' is deprecated
+     |       | since PHP 5.3 and removed since PHP 5.4; Use $_COOKIE
+     |       | instead
+     |       | (PHPCompatibility.Variables.RemovedPredefinedGlobalVariables.http_cookie_varsDeprecatedRemoved)
+----------------------------------------------------------------------
+
+
+FILE: odl_main.php
+----------------------------------------------------------------------
+FOUND 3 ERRORS AFFECTING 3 LINES
+----------------------------------------------------------------------
+ 295 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $badStr{$x}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 352 | ERROR | [ ] preg_replace() - /e modifier is deprecated since
+     |       |     PHP 5.5 and removed since PHP 7.0
+     |       |     (PHPCompatibility.ParameterValues.RemovedPCREModifiers.Removed)
+ 375 | ERROR | [ ] The "hour" parameter for function mktime() is
+     |       |     missing. Passing this parameter is no longer
+     |       |     optional. The optional nature of the parameter is
+     |       |     deprecated since PHP 5.1 and removed since PHP
+     |       |     8.0
+     |       |     (PHPCompatibility.FunctionUse.OptionalToRequiredFunctionParameters.mktime_hourSoftRequiredHardRequired)
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------
