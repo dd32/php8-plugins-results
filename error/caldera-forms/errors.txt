@@ -1,29 +1,44 @@
 
 includes/cf-pro-client/classes/api/local/files.php
+  Fatal error: Unparenthesized `a ? b : c ? d : e` is not supported.
+      Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)`
+      on line 48
 FILE: classes/core.php
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 FOUND 1 ERROR AFFECTING 1 LINE
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 1441 | ERROR | Function create_function() is deprecated since PHP 7.2 and removed since PHP 8.0; Use an anonymous function instead
+----------------------------------------------------------------------
+ 1441 | ERROR | Function create_function() is deprecated since PHP
+      |       | 7.2 and removed since PHP 8.0; Use an anonymous
+      |       | function instead
       |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 FILE: classes/field/util.php
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 FOUND 1 ERROR AFFECTING 1 LINE
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 500 | ERROR | Function money_format() is deprecated since PHP 7.4 and removed since PHP 8.0; Use NumberFormatter::formatCurrency() instead
+----------------------------------------------------------------------
+ 500 | ERROR | Function money_format() is deprecated since PHP 7.4
+     |       | and removed since PHP 8.0; Use
+     |       | NumberFormatter::formatCurrency() instead
      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.money_formatDeprecatedRemoved)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 FILE: includes/cf-pro-client/classes/api/local/files.php
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 FOUND 2 ERRORS AFFECTING 2 LINES
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 48 | ERROR | The left-associativity of the ternary operator has been deprecated in PHP 7.4 and removed in PHP 8.0. Multiple consecutive ternaries detected. Use parenthesis to
-    |       | clarify the order in which the operations should be executed (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
- 49 | ERROR | The left-associativity of the ternary operator has been deprecated in PHP 7.4 and removed in PHP 8.0. Multiple consecutive ternaries detected. Use parenthesis to
-    |       | clarify the order in which the operations should be executed (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
+ 48 | ERROR | The left-associativity of the ternary operator has been
+    |       | deprecated in PHP 7.4 and removed in PHP 8.0. Multiple
+    |       | consecutive ternaries detected. Use parenthesis to
+    |       | clarify the order in which the operations should be
+    |       | executed
+    |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
+ 49 | ERROR | The left-associativity of the ternary operator has been
+    |       | deprecated in PHP 7.4 and removed in PHP 8.0. Multiple
+    |       | consecutive ternaries detected. Use parenthesis to
+    |       | clarify the order in which the operations should be
+    |       | executed
+    |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
+----------------------------------------------------------------------
