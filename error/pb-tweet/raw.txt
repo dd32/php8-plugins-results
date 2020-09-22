@@ -1,0 +1,39 @@
+::warning::Plugin: https://wordpress.org/plugins/pb-tweet/%0ATrac: https://plugins.trac.wordpress.org/browser/pb-tweet/
+No syntax errors detected in pb-tweet/pb-tweet/lib/updater/get.php
+No syntax errors detected in pb-tweet/pb-tweet/lib/updater/updater.php
+No syntax errors detected in pb-tweet/pb-tweet/tweetbuddy.php
+.[31mE[0m[31mE[0m 3 / 3 (100%)
+
+
+
+[1mFILE: lib/updater/updater.php[0m
+----------------------------------------------------------------------
+[1mFOUND 3 ERRORS AFFECTING 3 LINES[0m
+----------------------------------------------------------------------
+  30 | [31mERROR[0m | [1mDeclaration of a PHP4 style class constructor is
+     |       | deprecated since PHP 7.0 and removed since PHP 8.0[0m
+     |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+ 200 | [31mERROR[0m | [1mThe "hour" parameter for function mktime() is missing.
+     |       | Passing this parameter is no longer optional. The
+     |       | optional nature of the parameter is deprecated since
+     |       | PHP 5.1 and removed since PHP 8.0[0m
+     |       | (PHPCompatibility.FunctionUse.OptionalToRequiredFunctionParameters.mktime_hourSoftRequiredHardRequired)
+ 227 | [31mERROR[0m | [1mThe "hour" parameter for function mktime() is missing.
+     |       | Passing this parameter is no longer optional. The
+     |       | optional nature of the parameter is deprecated since
+     |       | PHP 5.1 and removed since PHP 8.0[0m
+     |       | (PHPCompatibility.FunctionUse.OptionalToRequiredFunctionParameters.mktime_hourSoftRequiredHardRequired)
+----------------------------------------------------------------------
+
+
+[1mFILE: tweetbuddy.php[0m
+----------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 49 | [31mERROR[0m | [1mDeclaration of a PHP4 style class constructor is
+    |       | deprecated since PHP 7.0 and removed since PHP 8.0[0m
+    |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+----------------------------------------------------------------------
+
+Time: 160ms; Memory: 14MB
+::error::FILE: lib/updater/updater.php%0A----------------------------------------------------------------------%0AFOUND 3 ERRORS AFFECTING 3 LINES%0A----------------------------------------------------------------------%0A  30 | ERROR | Declaration of a PHP4 style class constructor is%0A     |       | deprecated since PHP 7.0 and removed since PHP 8.0%0A     |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)%0A 200 | ERROR | The "hour" parameter for function mktime() is missing.%0A     |       | Passing this parameter is no longer optional. The%0A     |       | optional nature of the parameter is deprecated since%0A     |       | PHP 5.1 and removed since PHP 8.0%0A     |       | (PHPCompatibility.FunctionUse.OptionalToRequiredFunctionParameters.mktime_hourSoftRequiredHardRequired)%0A 227 | ERROR | The "hour" parameter for function mktime() is missing.%0A     |       | Passing this parameter is no longer optional. The%0A     |       | optional nature of the parameter is deprecated since%0A     |       | PHP 5.1 and removed since PHP 8.0%0A     |       | (PHPCompatibility.FunctionUse.OptionalToRequiredFunctionParameters.mktime_hourSoftRequiredHardRequired)%0A----------------------------------------------------------------------%0A%0A%0AFILE: tweetbuddy.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 49 | ERROR | Declaration of a PHP4 style class constructor is%0A    |       | deprecated since PHP 7.0 and removed since PHP 8.0%0A    |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)%0A----------------------------------------------------------------------%0A
