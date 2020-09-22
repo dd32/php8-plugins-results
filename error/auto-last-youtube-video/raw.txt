@@ -108,6 +108,8 @@ No syntax errors detected in auto-last-youtube-video/auto-last-youtube-video/inc
 No syntax errors detected in auto-last-youtube-video/auto-last-youtube-video/inc/Zend/Loader/Exception.php
 No syntax errors detected in auto-last-youtube-video/auto-last-youtube-video/inc/Zend/Loader/PluginLoader/Exception.php
 No syntax errors detected in auto-last-youtube-video/auto-last-youtube-video/inc/Zend/Loader/PluginLoader/Interface.php
+
+Fatal error: Array and string offset access syntax with curly braces is no longer supported in auto-last-youtube-video/auto-last-youtube-video/inc/Zend/Loader/PluginLoader.php on line 131
 Errors parsing auto-last-youtube-video/auto-last-youtube-video/inc/Zend/Loader/PluginLoader.php
 No syntax errors detected in auto-last-youtube-video/auto-last-youtube-video/inc/Zend/Loader.php
 No syntax errors detected in auto-last-youtube-video/auto-last-youtube-video/inc/Zend/Uri/Exception.php
@@ -198,6 +200,8 @@ No syntax errors detected in auto-last-youtube-video/auto-last-youtube-video/inc
 No syntax errors detected in auto-last-youtube-video/auto-last-youtube-video/inc/Zend/Validate/Interface.php
 No syntax errors detected in auto-last-youtube-video/auto-last-youtube-video/inc/Zend/Validate/Int.php
 No syntax errors detected in auto-last-youtube-video/auto-last-youtube-video/inc/Zend/Validate/Ip.php
+
+Fatal error: Array and string offset access syntax with curly braces is no longer supported in auto-last-youtube-video/auto-last-youtube-video/inc/Zend/Validate/Isbn.php on line 171
 Errors parsing auto-last-youtube-video/auto-last-youtube-video/inc/Zend/Validate/Isbn.php
 No syntax errors detected in auto-last-youtube-video/auto-last-youtube-video/inc/Zend/Validate/LessThan.php
 No syntax errors detected in auto-last-youtube-video/auto-last-youtube-video/inc/Zend/Validate/NotEmpty.php
@@ -209,7 +213,7 @@ No syntax errors detected in auto-last-youtube-video/auto-last-youtube-video/inc
 No syntax errors detected in auto-last-youtube-video/auto-last-youtube-video/inc/Zend/Validate/Sitemap/Priority.php
 No syntax errors detected in auto-last-youtube-video/auto-last-youtube-video/inc/Zend/Validate/StringLength.php
 No syntax errors detected in auto-last-youtube-video/auto-last-youtube-video/inc/Zend/Validate.php
-::error::%0Ainc/Zend/Feed/Entry/Atom.php%0A  Warning: "continue" targeting switch is equivalent to "break".%0A      Did you mean to use "continue 2"?%0A      on line 104%0A%0Ainc/Zend/Loader/PluginLoader.php%0A%0Ainc/Zend/Validate/Isbn.php
+::error::%0Ainc/Zend/Feed/Entry/Atom.php%0A  Warning: "continue" targeting switch is equivalent to "break".%0A      Did you mean to use "continue 2"?%0A      on line 104%0A%0Ainc/Zend/Loader/PluginLoader.php%0A  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 131%0A%0Ainc/Zend/Validate/Isbn.php%0A  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 171
 ..[31mE[0m.......[31mE[0m[31mE[0m[31mE[0m..........................................[31mE[0m....  60 / 208 (29%)
 ..........................[31mE[0m....................[32mE[0m............ 120 / 208 (58%)
 ............................................................ 180 / 208 (87%)
@@ -218,95 +222,120 @@ No syntax errors detected in auto-last-youtube-video/auto-last-youtube-video/inc
 
 
 [1mFILE: inc/Zend/Feed/Abstract.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 2 ERRORS AFFECTING 2 LINES[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 112 | [31mERROR[0m | [1mINI directive 'track_errors' is deprecated since PHP 7.2 and removed since PHP 8.0[0m
+----------------------------------------------------------------------
+ 112 | [31mERROR[0m | [1mINI directive 'track_errors' is deprecated since PHP
+     |       | 7.2 and removed since PHP 8.0[0m
      |       | (PHPCompatibility.IniDirectives.RemovedIniDirectives.track_errorsDeprecatedRemoved)
- 119 | [31mERROR[0m | [1mThe variable '$php_errormsg' is deprecated since PHP 7.2 and removed since PHP 8.0; Use error_get_last() instead[0m
+ 119 | [31mERROR[0m | [1mThe variable '$php_errormsg' is deprecated since PHP
+     |       | 7.2 and removed since PHP 8.0; Use error_get_last()
+     |       | instead[0m
      |       | (PHPCompatibility.Variables.RemovedPredefinedGlobalVariables.php_errormsgDeprecatedRemoved)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 [1mFILE: inc/Zend/Feed/Element.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 196 | [31mERROR[0m | [1mFunction create_function() is deprecated since PHP 7.2 and removed since PHP 8.0; Use an anonymous function instead[0m
+----------------------------------------------------------------------
+ 196 | [31mERROR[0m | [1mFunction create_function() is deprecated since PHP 7.2
+     |       | and removed since PHP 8.0; Use an anonymous function
+     |       | instead[0m
      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 [1mFILE: inc/Zend/Feed/Entry/Abstract.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 2 ERRORS AFFECTING 2 LINES[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 81 | [31mERROR[0m | [1mINI directive 'track_errors' is deprecated since PHP 7.2 and removed since PHP 8.0[0m
+----------------------------------------------------------------------
+ 81 | [31mERROR[0m | [1mINI directive 'track_errors' is deprecated since PHP
+    |       | 7.2 and removed since PHP 8.0[0m
     |       | (PHPCompatibility.IniDirectives.RemovedIniDirectives.track_errorsDeprecatedRemoved)
- 88 | [31mERROR[0m | [1mThe variable '$php_errormsg' is deprecated since PHP 7.2 and removed since PHP 8.0; Use error_get_last() instead[0m
+ 88 | [31mERROR[0m | [1mThe variable '$php_errormsg' is deprecated since PHP
+    |       | 7.2 and removed since PHP 8.0; Use error_get_last()
+    |       | instead[0m
     |       | (PHPCompatibility.Variables.RemovedPredefinedGlobalVariables.php_errormsgDeprecatedRemoved)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 [1mFILE: inc/Zend/Feed/Entry/Atom.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 2 ERRORS AFFECTING 2 LINES[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 195 | [31mERROR[0m | [1mINI directive 'track_errors' is deprecated since PHP 7.2 and removed since PHP 8.0[0m
+----------------------------------------------------------------------
+ 195 | [31mERROR[0m | [1mINI directive 'track_errors' is deprecated since PHP
+     |       | 7.2 and removed since PHP 8.0[0m
      |       | (PHPCompatibility.IniDirectives.RemovedIniDirectives.track_errorsDeprecatedRemoved)
- 202 | [31mERROR[0m | [1mThe variable '$php_errormsg' is deprecated since PHP 7.2 and removed since PHP 8.0; Use error_get_last() instead[0m
+ 202 | [31mERROR[0m | [1mThe variable '$php_errormsg' is deprecated since PHP
+     |       | 7.2 and removed since PHP 8.0; Use error_get_last()
+     |       | instead[0m
      |       | (PHPCompatibility.Variables.RemovedPredefinedGlobalVariables.php_errormsgDeprecatedRemoved)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 [1mFILE: inc/Zend/Feed/Reader.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 3 ERRORS AFFECTING 3 LINES[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 368 | [31mERROR[0m | [1mINI directive 'track_errors' is deprecated since PHP 7.2 and removed since PHP 8.0[0m
+----------------------------------------------------------------------
+ 368 | [31mERROR[0m | [1mINI directive 'track_errors' is deprecated since PHP
+     |       | 7.2 and removed since PHP 8.0[0m
      |       | (PHPCompatibility.IniDirectives.RemovedIniDirectives.track_errorsDeprecatedRemoved)
- 430 | [31mERROR[0m | [1mINI directive 'track_errors' is deprecated since PHP 7.2 and removed since PHP 8.0[0m
+ 430 | [31mERROR[0m | [1mINI directive 'track_errors' is deprecated since PHP
+     |       | 7.2 and removed since PHP 8.0[0m
      |       | (PHPCompatibility.IniDirectives.RemovedIniDirectives.track_errorsDeprecatedRemoved)
- 435 | [31mERROR[0m | [1mThe variable '$php_errormsg' is deprecated since PHP 7.2 and removed since PHP 8.0; Use error_get_last() instead[0m
+ 435 | [31mERROR[0m | [1mThe variable '$php_errormsg' is deprecated since PHP
+     |       | 7.2 and removed since PHP 8.0; Use error_get_last()
+     |       | instead[0m
      |       | (PHPCompatibility.Variables.RemovedPredefinedGlobalVariables.php_errormsgDeprecatedRemoved)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 [1mFILE: inc/Zend/Feed.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 2 ERRORS AFFECTING 2 LINES[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 262 | [31mERROR[0m | [1mINI directive 'track_errors' is deprecated since PHP 7.2 and removed since PHP 8.0[0m
+----------------------------------------------------------------------
+ 262 | [31mERROR[0m | [1mINI directive 'track_errors' is deprecated since PHP
+     |       | 7.2 and removed since PHP 8.0[0m
      |       | (PHPCompatibility.IniDirectives.RemovedIniDirectives.track_errorsDeprecatedRemoved)
- 302 | [31mERROR[0m | [1mINI directive 'track_errors' is deprecated since PHP 7.2 and removed since PHP 8.0[0m
+ 302 | [31mERROR[0m | [1mINI directive 'track_errors' is deprecated since PHP
+     |       | 7.2 and removed since PHP 8.0[0m
      |       | (PHPCompatibility.IniDirectives.RemovedIniDirectives.track_errorsDeprecatedRemoved)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 [1mFILE: inc/Zend/Loader/PluginLoader.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 131 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $prefix{$last}[0m
+----------------------------------------------------------------------
+ 131 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $prefix{$last}[0m
      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mPHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 [1mFILE: inc/Zend/Validate/Isbn.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 3 ERRORS AFFECTING 3 LINES[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 171 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $isbn10{$i}[0m
+----------------------------------------------------------------------
+ 171 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $isbn10{$i}[0m
      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
- 189 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $isbn13{$i}[0m
+ 189 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $isbn13{$i}[0m
      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
- 191 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $isbn13{$i}[0m
+ 191 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $isbn13{$i}[0m
      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mPHPCBF CAN FIX THE 3 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
-Time: 4.13 secs; Memory: 26MB
-::error::FILE: inc/Zend/Feed/Abstract.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 112 | ERROR | INI directive 'track_errors' is deprecated since PHP 7.2 and removed since PHP 8.0%0A     |       | (PHPCompatibility.IniDirectives.RemovedIniDirectives.track_errorsDeprecatedRemoved)%0A 119 | ERROR | The variable '$php_errormsg' is deprecated since PHP 7.2 and removed since PHP 8.0; Use error_get_last() instead%0A     |       | (PHPCompatibility.Variables.RemovedPredefinedGlobalVariables.php_errormsgDeprecatedRemoved)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: inc/Zend/Feed/Element.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 196 | ERROR | Function create_function() is deprecated since PHP 7.2 and removed since PHP 8.0; Use an anonymous function instead%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: inc/Zend/Feed/Entry/Abstract.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 81 | ERROR | INI directive 'track_errors' is deprecated since PHP 7.2 and removed since PHP 8.0%0A    |       | (PHPCompatibility.IniDirectives.RemovedIniDirectives.track_errorsDeprecatedRemoved)%0A 88 | ERROR | The variable '$php_errormsg' is deprecated since PHP 7.2 and removed since PHP 8.0; Use error_get_last() instead%0A    |       | (PHPCompatibility.Variables.RemovedPredefinedGlobalVariables.php_errormsgDeprecatedRemoved)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: inc/Zend/Feed/Entry/Atom.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 195 | ERROR | INI directive 'track_errors' is deprecated since PHP 7.2 and removed since PHP 8.0%0A     |       | (PHPCompatibility.IniDirectives.RemovedIniDirectives.track_errorsDeprecatedRemoved)%0A 202 | ERROR | The variable '$php_errormsg' is deprecated since PHP 7.2 and removed since PHP 8.0; Use error_get_last() instead%0A     |       | (PHPCompatibility.Variables.RemovedPredefinedGlobalVariables.php_errormsgDeprecatedRemoved)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: inc/Zend/Feed/Reader.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 3 ERRORS AFFECTING 3 LINES%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 368 | ERROR | INI directive 'track_errors' is deprecated since PHP 7.2 and removed since PHP 8.0%0A     |       | (PHPCompatibility.IniDirectives.RemovedIniDirectives.track_errorsDeprecatedRemoved)%0A 430 | ERROR | INI directive 'track_errors' is deprecated since PHP 7.2 and removed since PHP 8.0%0A     |       | (PHPCompatibility.IniDirectives.RemovedIniDirectives.track_errorsDeprecatedRemoved)%0A 435 | ERROR | The variable '$php_errormsg' is deprecated since PHP 7.2 and removed since PHP 8.0; Use error_get_last() instead%0A     |       | (PHPCompatibility.Variables.RemovedPredefinedGlobalVariables.php_errormsgDeprecatedRemoved)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: inc/Zend/Feed.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 262 | ERROR | INI directive 'track_errors' is deprecated since PHP 7.2 and removed since PHP 8.0%0A     |       | (PHPCompatibility.IniDirectives.RemovedIniDirectives.track_errorsDeprecatedRemoved)%0A 302 | ERROR | INI directive 'track_errors' is deprecated since PHP 7.2 and removed since PHP 8.0%0A     |       | (PHPCompatibility.IniDirectives.RemovedIniDirectives.track_errorsDeprecatedRemoved)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: inc/Zend/Loader/PluginLoader.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 131 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $prefix{$last}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0APHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: inc/Zend/Validate/Isbn.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 3 ERRORS AFFECTING 3 LINES%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 171 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $isbn10{$i}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 189 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $isbn13{$i}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 191 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $isbn13{$i}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0APHPCBF CAN FIX THE 3 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
+Time: 4.09 secs; Memory: 26MB
+::error::FILE: inc/Zend/Feed/Abstract.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A----------------------------------------------------------------------%0A 112 | ERROR | INI directive 'track_errors' is deprecated since PHP%0A     |       | 7.2 and removed since PHP 8.0%0A     |       | (PHPCompatibility.IniDirectives.RemovedIniDirectives.track_errorsDeprecatedRemoved)%0A 119 | ERROR | The variable '$php_errormsg' is deprecated since PHP%0A     |       | 7.2 and removed since PHP 8.0; Use error_get_last()%0A     |       | instead%0A     |       | (PHPCompatibility.Variables.RemovedPredefinedGlobalVariables.php_errormsgDeprecatedRemoved)%0A----------------------------------------------------------------------%0A%0A%0AFILE: inc/Zend/Feed/Element.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 196 | ERROR | Function create_function() is deprecated since PHP 7.2%0A     |       | and removed since PHP 8.0; Use an anonymous function%0A     |       | instead%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)%0A----------------------------------------------------------------------%0A%0A%0AFILE: inc/Zend/Feed/Entry/Abstract.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A----------------------------------------------------------------------%0A 81 | ERROR | INI directive 'track_errors' is deprecated since PHP%0A    |       | 7.2 and removed since PHP 8.0%0A    |       | (PHPCompatibility.IniDirectives.RemovedIniDirectives.track_errorsDeprecatedRemoved)%0A 88 | ERROR | The variable '$php_errormsg' is deprecated since PHP%0A    |       | 7.2 and removed since PHP 8.0; Use error_get_last()%0A    |       | instead%0A    |       | (PHPCompatibility.Variables.RemovedPredefinedGlobalVariables.php_errormsgDeprecatedRemoved)%0A----------------------------------------------------------------------%0A%0A%0AFILE: inc/Zend/Feed/Entry/Atom.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A----------------------------------------------------------------------%0A 195 | ERROR | INI directive 'track_errors' is deprecated since PHP%0A     |       | 7.2 and removed since PHP 8.0%0A     |       | (PHPCompatibility.IniDirectives.RemovedIniDirectives.track_errorsDeprecatedRemoved)%0A 202 | ERROR | The variable '$php_errormsg' is deprecated since PHP%0A     |       | 7.2 and removed since PHP 8.0; Use error_get_last()%0A     |       | instead%0A     |       | (PHPCompatibility.Variables.RemovedPredefinedGlobalVariables.php_errormsgDeprecatedRemoved)%0A----------------------------------------------------------------------%0A%0A%0AFILE: inc/Zend/Feed/Reader.php%0A----------------------------------------------------------------------%0AFOUND 3 ERRORS AFFECTING 3 LINES%0A----------------------------------------------------------------------%0A 368 | ERROR | INI directive 'track_errors' is deprecated since PHP%0A     |       | 7.2 and removed since PHP 8.0%0A     |       | (PHPCompatibility.IniDirectives.RemovedIniDirectives.track_errorsDeprecatedRemoved)%0A 430 | ERROR | INI directive 'track_errors' is deprecated since PHP%0A     |       | 7.2 and removed since PHP 8.0%0A     |       | (PHPCompatibility.IniDirectives.RemovedIniDirectives.track_errorsDeprecatedRemoved)%0A 435 | ERROR | The variable '$php_errormsg' is deprecated since PHP%0A     |       | 7.2 and removed since PHP 8.0; Use error_get_last()%0A     |       | instead%0A     |       | (PHPCompatibility.Variables.RemovedPredefinedGlobalVariables.php_errormsgDeprecatedRemoved)%0A----------------------------------------------------------------------%0A%0A%0AFILE: inc/Zend/Feed.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A----------------------------------------------------------------------%0A 262 | ERROR | INI directive 'track_errors' is deprecated since PHP%0A     |       | 7.2 and removed since PHP 8.0%0A     |       | (PHPCompatibility.IniDirectives.RemovedIniDirectives.track_errorsDeprecatedRemoved)%0A 302 | ERROR | INI directive 'track_errors' is deprecated since PHP%0A     |       | 7.2 and removed since PHP 8.0%0A     |       | (PHPCompatibility.IniDirectives.RemovedIniDirectives.track_errorsDeprecatedRemoved)%0A----------------------------------------------------------------------%0A%0A%0AFILE: inc/Zend/Loader/PluginLoader.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 131 | ERROR | [x] Curly brace syntax for accessing array elements%0A     |       |     and string offsets has been deprecated in PHP 7.4%0A     |       |     and removed in PHP 8.0. Found: $prefix{$last}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A----------------------------------------------------------------------%0APHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A----------------------------------------------------------------------%0A%0A%0AFILE: inc/Zend/Validate/Isbn.php%0A----------------------------------------------------------------------%0AFOUND 3 ERRORS AFFECTING 3 LINES%0A----------------------------------------------------------------------%0A 171 | ERROR | [x] Curly brace syntax for accessing array elements%0A     |       |     and string offsets has been deprecated in PHP 7.4%0A     |       |     and removed in PHP 8.0. Found: $isbn10{$i}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 189 | ERROR | [x] Curly brace syntax for accessing array elements%0A     |       |     and string offsets has been deprecated in PHP 7.4%0A     |       |     and removed in PHP 8.0. Found: $isbn13{$i}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 191 | ERROR | [x] Curly brace syntax for accessing array elements%0A     |       |     and string offsets has been deprecated in PHP 7.4%0A     |       |     and removed in PHP 8.0. Found: $isbn13{$i}%0A     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A----------------------------------------------------------------------%0APHPCBF CAN FIX THE 3 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A----------------------------------------------------------------------%0A
