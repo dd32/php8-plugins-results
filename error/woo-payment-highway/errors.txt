@@ -1,0 +1,64 @@
+
+includes/vendor/respect/validation/library/Rules/NfeAccessKey.php
+  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 42
+
+woocommerce-gateway-payment-highway.php
+  Warning: The magic method WC_PaymentHighway::__wakeup() must have public visibility on line 78
+FILE: includes/vendor/nategood/httpful/tests/Httpful/HttpfulTest.php
+----------------------------------------------------------------------
+FOUND 3 ERRORS AFFECTING 3 LINES
+----------------------------------------------------------------------
+ 279 | ERROR | Function each() is deprecated since PHP 7.2 and
+     |       | removed since PHP 8.0; Use a foreach loop or
+     |       | ArrayIterator instead
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)
+ 282 | ERROR | Function each() is deprecated since PHP 7.2 and
+     |       | removed since PHP 8.0; Use a foreach loop or
+     |       | ArrayIterator instead
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)
+ 285 | ERROR | Function each() is deprecated since PHP 7.2 and
+     |       | removed since PHP 8.0; Use a foreach loop or
+     |       | ArrayIterator instead
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)
+----------------------------------------------------------------------
+
+
+FILE: ...ncludes/vendor/paragonie/random_compat/lib/byte_safe_strings.php
+----------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+----------------------------------------------------------------------
+ 32 | ERROR | The constant "MB_OVERLOAD_STRING" is removed since PHP
+    |       | 8.0
+    |       | (PHPCompatibility.Constants.RemovedConstants.mb_overload_stringRemoved)
+ 86 | ERROR | The constant "MB_OVERLOAD_STRING" is removed since PHP
+    |       | 8.0
+    |       | (PHPCompatibility.Constants.RemovedConstants.mb_overload_stringRemoved)
+----------------------------------------------------------------------
+
+
+FILE: ...ncludes/vendor/respect/validation/library/Rules/NfeAccessKey.php
+----------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+----------------------------------------------------------------------
+ 42 | ERROR | [x] Curly brace syntax for accessing array elements and
+    |       |     string offsets has been deprecated in PHP 7.4 and
+    |       |     removed in PHP 8.0. Found: $aK{ $i }
+    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 49 | ERROR | [x] Curly brace syntax for accessing array elements and
+    |       |     string offsets has been deprecated in PHP 7.4 and
+    |       |     removed in PHP 8.0. Found: $aK{ 43 }
+    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------
+
+
+FILE: ...ncludes/vendor/respect/validation/tests/unit/Rules/PeselTest.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 44 | ERROR | The behaviour of hexadecimal numeric strings was
+    |       | inconsistent prior to PHP 7 and support has been
+    |       | removed in PHP 7. Found: '0x4EADCD168'
+    |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
+----------------------------------------------------------------------
