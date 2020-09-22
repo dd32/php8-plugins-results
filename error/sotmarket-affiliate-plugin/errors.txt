@@ -1,0 +1,251 @@
+
+classes/String.php
+  Fatal error: Cannot use 'String' as class name as it is reserved on line 12
+
+sotmarket.php
+  Parse error: syntax error, unexpected token "new" on line 80
+FILE: assert.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 11 | ERROR | The constant "ASSERT_QUIET_EVAL" is removed since PHP
+    |       | 8.0
+    |       | (PHPCompatibility.Constants.RemovedConstants.assert_quiet_evalRemoved)
+----------------------------------------------------------------------
+
+
+FILE: classes/packages/RPCAPIPackage_Order.php
+----------------------------------------------------------------------
+FOUND 4 ERRORS AFFECTING 4 LINES
+----------------------------------------------------------------------
+ 152 | ERROR | Indirect access to variables, properties and methods
+     |       | will be evaluated strictly in left-to-right order
+     |       | since PHP 7.0. Use curly braces to remove
+     |       | ambiguity.
+     |       | (PHPCompatibility.Variables.NewUniformVariableSyntax.Found)
+ 174 | ERROR | Indirect access to variables, properties and methods
+     |       | will be evaluated strictly in left-to-right order
+     |       | since PHP 7.0. Use curly braces to remove
+     |       | ambiguity.
+     |       | (PHPCompatibility.Variables.NewUniformVariableSyntax.Found)
+ 189 | ERROR | Indirect access to variables, properties and methods
+     |       | will be evaluated strictly in left-to-right order
+     |       | since PHP 7.0. Use curly braces to remove
+     |       | ambiguity.
+     |       | (PHPCompatibility.Variables.NewUniformVariableSyntax.Found)
+ 204 | ERROR | Indirect access to variables, properties and methods
+     |       | will be evaluated strictly in left-to-right order
+     |       | since PHP 7.0. Use curly braces to remove
+     |       | ambiguity.
+     |       | (PHPCompatibility.Variables.NewUniformVariableSyntax.Found)
+----------------------------------------------------------------------
+
+
+FILE: classes/packages/RPCPackage_Order.php
+----------------------------------------------------------------------
+FOUND 4 ERRORS AFFECTING 4 LINES
+----------------------------------------------------------------------
+ 151 | ERROR | Indirect access to variables, properties and methods
+     |       | will be evaluated strictly in left-to-right order
+     |       | since PHP 7.0. Use curly braces to remove
+     |       | ambiguity.
+     |       | (PHPCompatibility.Variables.NewUniformVariableSyntax.Found)
+ 173 | ERROR | Indirect access to variables, properties and methods
+     |       | will be evaluated strictly in left-to-right order
+     |       | since PHP 7.0. Use curly braces to remove
+     |       | ambiguity.
+     |       | (PHPCompatibility.Variables.NewUniformVariableSyntax.Found)
+ 188 | ERROR | Indirect access to variables, properties and methods
+     |       | will be evaluated strictly in left-to-right order
+     |       | since PHP 7.0. Use curly braces to remove
+     |       | ambiguity.
+     |       | (PHPCompatibility.Variables.NewUniformVariableSyntax.Found)
+ 203 | ERROR | Indirect access to variables, properties and methods
+     |       | will be evaluated strictly in left-to-right order
+     |       | since PHP 7.0. Use curly braces to remove
+     |       | ambiguity.
+     |       | (PHPCompatibility.Variables.NewUniformVariableSyntax.Found)
+----------------------------------------------------------------------
+
+
+FILE: classes/SotmarketRPCClient.php
+----------------------------------------------------------------------
+FOUND 5 ERRORS AFFECTING 5 LINES
+----------------------------------------------------------------------
+  57 | ERROR | Using a string as the assertion passed to assert() is
+     |       | deprecated since PHP 7.2 and removed since PHP 8.0.
+     |       | Found: 'gettype($className) == "string" &&
+     |       | preg_match("/^[a-z_][a-z0-9_]*$/i", $className)'
+     |       | (PHPCompatibility.ParameterValues.RemovedAssertStringAssertion.Found)
+  65 | ERROR | Using a string as the assertion passed to assert() is
+     |       | deprecated since PHP 7.2 and removed since PHP 8.0.
+     |       | Found: '$rc->hasMethod("instance")'
+     |       | (PHPCompatibility.ParameterValues.RemovedAssertStringAssertion.Found)
+  67 | ERROR | Using a string as the assertion passed to assert() is
+     |       | deprecated since PHP 7.2 and removed since PHP 8.0.
+     |       | Found: '$rm->isPublic()'
+     |       | (PHPCompatibility.ParameterValues.RemovedAssertStringAssertion.Found)
+  68 | ERROR | Using a string as the assertion passed to assert() is
+     |       | deprecated since PHP 7.2 and removed since PHP 8.0.
+     |       | Found: '$rm->isStatic()'
+     |       | (PHPCompatibility.ParameterValues.RemovedAssertStringAssertion.Found)
+ 158 | ERROR | Using a string as the assertion passed to assert() is
+     |       | deprecated since PHP 7.2 and removed since PHP 8.0.
+     |       | Found: 'gettype($aFullResponse) == "array"'
+     |       | (PHPCompatibility.ParameterValues.RemovedAssertStringAssertion.Found)
+----------------------------------------------------------------------
+
+
+FILE: classes/SotmarketRPCServer.php
+----------------------------------------------------------------------
+FOUND 10 ERRORS AFFECTING 10 LINES
+----------------------------------------------------------------------
+  55 | ERROR | Using a string as the assertion passed to assert() is
+     |       | deprecated since PHP 7.2 and removed since PHP 8.0.
+     |       | Found: 'gettype($request) == "array"'
+     |       | (PHPCompatibility.ParameterValues.RemovedAssertStringAssertion.Found)
+  56 | ERROR | Using a string as the assertion passed to assert() is
+     |       | deprecated since PHP 7.2 and removed since PHP 8.0.
+     |       | Found: 'gettype(@$request["className"]) ==
+     |       | "string"'
+     |       | (PHPCompatibility.ParameterValues.RemovedAssertStringAssertion.Found)
+  57 | ERROR | Using a string as the assertion passed to assert() is
+     |       | deprecated since PHP 7.2 and removed since PHP 8.0.
+     |       | Found: 'gettype(@$request["methodName"]) ==
+     |       | "string"'
+     |       | (PHPCompatibility.ParameterValues.RemovedAssertStringAssertion.Found)
+  58 | ERROR | Using a string as the assertion passed to assert() is
+     |       | deprecated since PHP 7.2 and removed since PHP 8.0.
+     |       | Found: 'gettype(@$request["args"]) == "array"'
+     |       | (PHPCompatibility.ParameterValues.RemovedAssertStringAssertion.Found)
+  59 | ERROR | Using a string as the assertion passed to assert() is
+     |       | deprecated since PHP 7.2 and removed since PHP 8.0.
+     |       | Found: '@$request["auxdata"] === NULL ||
+     |       | ($request["auxdata"] instanceof
+     |       | SotmarketRPCRequestAuxData)'
+     |       | (PHPCompatibility.ParameterValues.RemovedAssertStringAssertion.Found)
+  72 | ERROR | Using a string as the assertion passed to assert() is
+     |       | deprecated since PHP 7.2 and removed since PHP 8.0.
+     |       | Found: '$response["auxdata"] === NULL ||
+     |       | ($response["auxdata"] instanceof
+     |       | SotmarketRPCResponseAuxData)'
+     |       | (PHPCompatibility.ParameterValues.RemovedAssertStringAssertion.Found)
+ 187 | ERROR | Using a string as the assertion passed to assert() is
+     |       | deprecated since PHP 7.2 and removed since PHP 8.0.
+     |       | Found: '$responseAuxData === NULL || ($responseAuxData
+     |       | instanceof SotmarketRPCResponseAuxData)'
+     |       | (PHPCompatibility.ParameterValues.RemovedAssertStringAssertion.Found)
+ 251 | ERROR | Using a string as the assertion passed to assert() is
+     |       | deprecated since PHP 7.2 and removed since PHP 8.0.
+     |       | Found: '$object instanceof
+     |       | SotmarketRPCServerObject'
+     |       | (PHPCompatibility.ParameterValues.RemovedAssertStringAssertion.Found)
+ 255 | ERROR | Using a string as the assertion passed to assert() is
+     |       | deprecated since PHP 7.2 and removed since PHP 8.0.
+     |       | Found: '$class->hasMethod($methodName)'
+     |       | (PHPCompatibility.ParameterValues.RemovedAssertStringAssertion.Found)
+ 257 | ERROR | Using a string as the assertion passed to assert() is
+     |       | deprecated since PHP 7.2 and removed since PHP 8.0.
+     |       | Found: '$method->isPublic()'
+     |       | (PHPCompatibility.ParameterValues.RemovedAssertStringAssertion.Found)
+----------------------------------------------------------------------
+
+
+FILE: classes/String.php
+----------------------------------------------------------------------
+FOUND 3 ERRORS AFFECTING 3 LINES
+----------------------------------------------------------------------
+  12 | ERROR | [ ] 'string' is a reserved keyword as of PHP version
+     |       |     7.0 and should not be used to name a class,
+     |       |     interface or trait or as part of a namespace
+     |       |     (T_CLASS)
+     |       |     (PHPCompatibility.Keywords.ForbiddenNamesAsDeclared.stringFound)
+ 131 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $str{$i++}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 146 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $str{$i + $j}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------
+
+
+FILE: SotmarketAdminTab.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 285 | ERROR | Function create_function() is deprecated since PHP 7.2
+     |       | and removed since PHP 8.0; Use an anonymous function
+     |       | instead
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
+----------------------------------------------------------------------
+
+
+FILE: SotmarketAnalogWidget.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 12 | ERROR | Declaration of a PHP4 style class constructor is
+    |       | deprecated since PHP 7.0 and removed since PHP 8.0
+    |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+----------------------------------------------------------------------
+
+
+FILE: SotmarketInfoWidget.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 8 | ERROR | Declaration of a PHP4 style class constructor is
+   |       | deprecated since PHP 7.0 and removed since PHP 8.0
+   |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+----------------------------------------------------------------------
+
+
+FILE: sotmarket.php
+----------------------------------------------------------------------
+FOUND 5 ERRORS AFFECTING 5 LINES
+----------------------------------------------------------------------
+ 23 | ERROR | Function create_function() is deprecated since PHP 7.2
+    |       | and removed since PHP 8.0; Use an anonymous function
+    |       | instead
+    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
+ 24 | ERROR | Function create_function() is deprecated since PHP 7.2
+    |       | and removed since PHP 8.0; Use an anonymous function
+    |       | instead
+    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
+ 25 | ERROR | Function create_function() is deprecated since PHP 7.2
+    |       | and removed since PHP 8.0; Use an anonymous function
+    |       | instead
+    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
+ 26 | ERROR | Function create_function() is deprecated since PHP 7.2
+    |       | and removed since PHP 8.0; Use an anonymous function
+    |       | instead
+    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
+ 80 | ERROR | Assigning the return value of new by reference is
+    |       | deprecated in PHP 5.3 and has been removed in PHP
+    |       | 7.0
+    |       | (PHPCompatibility.Syntax.RemovedNewReference.Removed)
+----------------------------------------------------------------------
+
+
+FILE: SotmarketPopularWidget.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 10 | ERROR | Declaration of a PHP4 style class constructor is
+    |       | deprecated since PHP 7.0 and removed since PHP 8.0
+    |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+----------------------------------------------------------------------
+
+
+FILE: SotmarketRelatedWidget.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 13 | ERROR | Declaration of a PHP4 style class constructor is
+    |       | deprecated since PHP 7.0 and removed since PHP 8.0
+    |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+----------------------------------------------------------------------

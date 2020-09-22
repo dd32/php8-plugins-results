@@ -1,0 +1,105 @@
+
+libraries/hphp.class_Element.php
+  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 37
+
+libraries/hphp.php
+  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 306
+FILE: libraries/hphp.class_Element.php
+----------------------------------------------------------------------
+FOUND 4 ERRORS AFFECTING 3 LINES
+----------------------------------------------------------------------
+ 37 | ERROR | [x] Curly brace syntax for accessing array elements and
+    |       |     string offsets has been deprecated in PHP 7.4 and
+    |       |     removed in PHP 8.0. Found: $t{0}
+    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 37 | ERROR | [x] Curly brace syntax for accessing array elements and
+    |       |     string offsets has been deprecated in PHP 7.4 and
+    |       |     removed in PHP 8.0. Found: $t{0}
+    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 38 | ERROR | [x] Curly brace syntax for accessing array elements and
+    |       |     string offsets has been deprecated in PHP 7.4 and
+    |       |     removed in PHP 8.0. Found: $t{0}
+    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 66 | ERROR | [ ] Declaration of a PHP4 style class constructor is
+    |       |     deprecated since PHP 7.0 and removed since PHP
+    |       |     8.0
+    |       |     (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 3 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------
+
+
+FILE: libraries/hphp.php
+----------------------------------------------------------------------
+FOUND 9 ERRORS AFFECTING 9 LINES
+----------------------------------------------------------------------
+  55 | ERROR | [ ] Function each() is deprecated since PHP 7.2 and
+     |       |     removed since PHP 8.0; Use a foreach loop or
+     |       |     ArrayIterator instead
+     |       |     (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)
+ 140 | ERROR | [ ] Using 'break' outside of a loop or switch
+     |       |     structure is invalid and will throw a fatal error
+     |       |     since PHP 7.0
+     |       |     (PHPCompatibility.ControlStructures.ForbiddenBreakContinueOutsideLoop.FatalError)
+ 306 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $this->O{$n}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 462 | ERROR | [ ] Function each() is deprecated since PHP 7.2 and
+     |       |     removed since PHP 8.0; Use a foreach loop or
+     |       |     ArrayIterator instead
+     |       |     (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)
+ 533 | ERROR | [ ] Function each() is deprecated since PHP 7.2 and
+     |       |     removed since PHP 8.0; Use a foreach loop or
+     |       |     ArrayIterator instead
+     |       |     (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)
+ 562 | ERROR | [ ] Passing the $glue and $pieces parameters in
+     |       |     reverse order to join has been deprecated since
+     |       |     PHP 7.4 and is removed since PHP 8.0; $glue should
+     |       |     be the first parameter and $pieces the second
+     |       |     (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
+ 578 | ERROR | [ ] Passing the $glue and $pieces parameters in
+     |       |     reverse order to join has been deprecated since
+     |       |     PHP 7.4 and is removed since PHP 8.0; $glue should
+     |       |     be the first parameter and $pieces the second
+     |       |     (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
+ 839 | ERROR | [ ] The left-associativity of the ternary operator has
+     |       |     been deprecated in PHP 7.4 and removed in PHP 8.0.
+     |       |     Multiple consecutive ternaries detected. Use
+     |       |     parenthesis to clarify the order in which the
+     |       |     operations should be executed
+     |       |     (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
+ 845 | ERROR | [ ] Function each() is deprecated since PHP 7.2 and
+     |       |     removed since PHP 8.0; Use a foreach loop or
+     |       |     ArrayIterator instead
+     |       |     (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------
+
+
+FILE: libraries/hphp.plugin_Element.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 32 | ERROR | Using 'break' outside of a loop or switch structure is
+    |       | invalid and will throw a fatal error since PHP 7.0
+    |       | (PHPCompatibility.ControlStructures.ForbiddenBreakContinueOutsideLoop.FatalError)
+----------------------------------------------------------------------
+
+
+FILE: libraries/hphp.table_store.php
+----------------------------------------------------------------------
+FOUND 3 ERRORS AFFECTING 3 LINES
+----------------------------------------------------------------------
+ 18 | ERROR | Using 'break' outside of a loop or switch structure is
+    |       | invalid and will throw a fatal error since PHP 7.0
+    |       | (PHPCompatibility.ControlStructures.ForbiddenBreakContinueOutsideLoop.FatalError)
+ 95 | ERROR | Using 'continue' outside of a loop or switch structure
+    |       | is invalid and will throw a fatal error since PHP
+    |       | 7.0
+    |       | (PHPCompatibility.ControlStructures.ForbiddenBreakContinueOutsideLoop.FatalError)
+ 96 | ERROR | Using 'break' outside of a loop or switch structure is
+    |       | invalid and will throw a fatal error since PHP 7.0
+    |       | (PHPCompatibility.ControlStructures.ForbiddenBreakContinueOutsideLoop.FatalError)
+----------------------------------------------------------------------
