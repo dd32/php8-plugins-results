@@ -107,12 +107,15 @@ No syntax errors detected in wp-onpage-seo/wp-onpage-seo/on_page_seo.php
 
 
 [1mFILE: application/services/AbsoluteUrl.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 97 | [31mERROR[0m | [1mPassing the encoding to mb_strrpos() as third parameter is soft deprecated since PHP 5.2, hard deprecated since PHP 7.4 and removed since PHP 8.0. Use an explicit 0
-    |       | as the offset in the third parameter.[0m (PHPCompatibility.ParameterValues.RemovedMbStrrposEncodingThirdParam.Removed)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
+ 97 | [31mERROR[0m | [1mPassing the encoding to mb_strrpos() as third parameter
+    |       | is soft deprecated since PHP 5.2, hard deprecated since
+    |       | PHP 7.4 and removed since PHP 8.0. Use an explicit 0 as
+    |       | the offset in the third parameter.[0m
+    |       | (PHPCompatibility.ParameterValues.RemovedMbStrrposEncodingThirdParam.Removed)
+----------------------------------------------------------------------
 
-Time: 1.13 secs; Memory: 14MB
-::error::FILE: application/services/AbsoluteUrl.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 97 | ERROR | Passing the encoding to mb_strrpos() as third parameter is soft deprecated since PHP 5.2, hard deprecated since PHP 7.4 and removed since PHP 8.0. Use an explicit 0%0A    |       | as the offset in the third parameter. (PHPCompatibility.ParameterValues.RemovedMbStrrposEncodingThirdParam.Removed)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
+Time: 769ms; Memory: 14MB
+::error::FILE: application/services/AbsoluteUrl.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 97 | ERROR | Passing the encoding to mb_strrpos() as third parameter%0A    |       | is soft deprecated since PHP 5.2, hard deprecated since%0A    |       | PHP 7.4 and removed since PHP 8.0. Use an explicit 0 as%0A    |       | the offset in the third parameter.%0A    |       | (PHPCompatibility.ParameterValues.RemovedMbStrrposEncodingThirdParam.Removed)%0A----------------------------------------------------------------------%0A
