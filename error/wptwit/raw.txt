@@ -1,0 +1,101 @@
+::warning::Plugin: https://wordpress.org/plugins/wptwit/%0ATrac: https://plugins.trac.wordpress.org/browser/wptwit/
+No syntax errors detected in wptwit/wptwit/lib/myTwit/lineMyTwit.class.php
+No syntax errors detected in wptwit/wptwit/lib/myTwit/mytwit.inc.php
+No syntax errors detected in wptwit/wptwit/view/footer.php
+No syntax errors detected in wptwit/wptwit/view/general.php
+No syntax errors detected in wptwit/wptwit/view/header.php
+No syntax errors detected in wptwit/wptwit/wpTwit.php
+No syntax errors detected in wptwit/wptwit/wpTwitWidget.php
+[31mE[0m[31mE[0m..[31mE[0m[31mE[0m[31mE[0m 7 / 7 (100%)
+
+
+
+[1mFILE: lib/myTwit/lineMyTwit.class.php[0m
+----------------------------------------------------------------------
+[1mFOUND 4 ERRORS AFFECTING 4 LINES[0m
+----------------------------------------------------------------------
+  94 | [31mERROR[0m | [1mThe "hour" parameter for function mktime() is missing.
+     |       | Passing this parameter is no longer optional. The
+     |       | optional nature of the parameter is deprecated since
+     |       | PHP 5.1 and removed since PHP 8.0[0m
+     |       | (PHPCompatibility.FunctionUse.OptionalToRequiredFunctionParameters.mktime_hourSoftRequiredHardRequired)
+  96 | [31mERROR[0m | [1mThe "hour" parameter for function mktime() is missing.
+     |       | Passing this parameter is no longer optional. The
+     |       | optional nature of the parameter is deprecated since
+     |       | PHP 5.1 and removed since PHP 8.0[0m
+     |       | (PHPCompatibility.FunctionUse.OptionalToRequiredFunctionParameters.mktime_hourSoftRequiredHardRequired)
+ 154 | [31mERROR[0m | [1mThe "hour" parameter for function mktime() is missing.
+     |       | Passing this parameter is no longer optional. The
+     |       | optional nature of the parameter is deprecated since
+     |       | PHP 5.1 and removed since PHP 8.0[0m
+     |       | (PHPCompatibility.FunctionUse.OptionalToRequiredFunctionParameters.mktime_hourSoftRequiredHardRequired)
+ 158 | [31mERROR[0m | [1mThe "hour" parameter for function mktime() is missing.
+     |       | Passing this parameter is no longer optional. The
+     |       | optional nature of the parameter is deprecated since
+     |       | PHP 5.1 and removed since PHP 8.0[0m
+     |       | (PHPCompatibility.FunctionUse.OptionalToRequiredFunctionParameters.mktime_hourSoftRequiredHardRequired)
+----------------------------------------------------------------------
+
+
+[1mFILE: lib/myTwit/mytwit.inc.php[0m
+----------------------------------------------------------------------
+[1mFOUND 4 ERRORS AFFECTING 4 LINES[0m
+----------------------------------------------------------------------
+  40 | [31mERROR[0m | [1mThe "hour" parameter for function mktime() is missing.
+     |       | Passing this parameter is no longer optional. The
+     |       | optional nature of the parameter is deprecated since
+     |       | PHP 5.1 and removed since PHP 8.0[0m
+     |       | (PHPCompatibility.FunctionUse.OptionalToRequiredFunctionParameters.mktime_hourSoftRequiredHardRequired)
+  81 | [31mERROR[0m | [1mThe "hour" parameter for function mktime() is missing.
+     |       | Passing this parameter is no longer optional. The
+     |       | optional nature of the parameter is deprecated since
+     |       | PHP 5.1 and removed since PHP 8.0[0m
+     |       | (PHPCompatibility.FunctionUse.OptionalToRequiredFunctionParameters.mktime_hourSoftRequiredHardRequired)
+  83 | [31mERROR[0m | [1mThe "hour" parameter for function mktime() is missing.
+     |       | Passing this parameter is no longer optional. The
+     |       | optional nature of the parameter is deprecated since
+     |       | PHP 5.1 and removed since PHP 8.0[0m
+     |       | (PHPCompatibility.FunctionUse.OptionalToRequiredFunctionParameters.mktime_hourSoftRequiredHardRequired)
+ 122 | [31mERROR[0m | [1mDeclaration of a PHP4 style class constructor is
+     |       | deprecated since PHP 7.0 and removed since PHP 8.0[0m
+     |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+----------------------------------------------------------------------
+
+
+[1mFILE: view/header.php[0m
+----------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 20 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse
+    |       | order to implode has been deprecated since PHP 7.4 and
+    |       | is removed since PHP 8.0; $glue should be the first
+    |       | parameter and $pieces the second[0m
+    |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
+----------------------------------------------------------------------
+
+
+[1mFILE: wpTwit.php[0m
+----------------------------------------------------------------------
+[1mFOUND 2 ERRORS AFFECTING 2 LINES[0m
+----------------------------------------------------------------------
+ 15 | [31mERROR[0m | [1mDeclaration of a PHP4 style class constructor is
+    |       | deprecated since PHP 7.0 and removed since PHP 8.0[0m
+    |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+ 21 | [31mERROR[0m | [1mFunction create_function() is deprecated since PHP 7.2
+    |       | and removed since PHP 8.0; Use an anonymous function
+    |       | instead[0m
+    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
+----------------------------------------------------------------------
+
+
+[1mFILE: wpTwitWidget.php[0m
+----------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 8 | [31mERROR[0m | [1mDeclaration of a PHP4 style class constructor is
+   |       | deprecated since PHP 7.0 and removed since PHP 8.0[0m
+   |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+----------------------------------------------------------------------
+
+Time: 142ms; Memory: 12MB
+::error::FILE: lib/myTwit/lineMyTwit.class.php%0A----------------------------------------------------------------------%0AFOUND 4 ERRORS AFFECTING 4 LINES%0A----------------------------------------------------------------------%0A  94 | ERROR | The "hour" parameter for function mktime() is missing.%0A     |       | Passing this parameter is no longer optional. The%0A     |       | optional nature of the parameter is deprecated since%0A     |       | PHP 5.1 and removed since PHP 8.0%0A     |       | (PHPCompatibility.FunctionUse.OptionalToRequiredFunctionParameters.mktime_hourSoftRequiredHardRequired)%0A  96 | ERROR | The "hour" parameter for function mktime() is missing.%0A     |       | Passing this parameter is no longer optional. The%0A     |       | optional nature of the parameter is deprecated since%0A     |       | PHP 5.1 and removed since PHP 8.0%0A     |       | (PHPCompatibility.FunctionUse.OptionalToRequiredFunctionParameters.mktime_hourSoftRequiredHardRequired)%0A 154 | ERROR | The "hour" parameter for function mktime() is missing.%0A     |       | Passing this parameter is no longer optional. The%0A     |       | optional nature of the parameter is deprecated since%0A     |       | PHP 5.1 and removed since PHP 8.0%0A     |       | (PHPCompatibility.FunctionUse.OptionalToRequiredFunctionParameters.mktime_hourSoftRequiredHardRequired)%0A 158 | ERROR | The "hour" parameter for function mktime() is missing.%0A     |       | Passing this parameter is no longer optional. The%0A     |       | optional nature of the parameter is deprecated since%0A     |       | PHP 5.1 and removed since PHP 8.0%0A     |       | (PHPCompatibility.FunctionUse.OptionalToRequiredFunctionParameters.mktime_hourSoftRequiredHardRequired)%0A----------------------------------------------------------------------%0A%0A%0AFILE: lib/myTwit/mytwit.inc.php%0A----------------------------------------------------------------------%0AFOUND 4 ERRORS AFFECTING 4 LINES%0A----------------------------------------------------------------------%0A  40 | ERROR | The "hour" parameter for function mktime() is missing.%0A     |       | Passing this parameter is no longer optional. The%0A     |       | optional nature of the parameter is deprecated since%0A     |       | PHP 5.1 and removed since PHP 8.0%0A     |       | (PHPCompatibility.FunctionUse.OptionalToRequiredFunctionParameters.mktime_hourSoftRequiredHardRequired)%0A  81 | ERROR | The "hour" parameter for function mktime() is missing.%0A     |       | Passing this parameter is no longer optional. The%0A     |       | optional nature of the parameter is deprecated since%0A     |       | PHP 5.1 and removed since PHP 8.0%0A     |       | (PHPCompatibility.FunctionUse.OptionalToRequiredFunctionParameters.mktime_hourSoftRequiredHardRequired)%0A  83 | ERROR | The "hour" parameter for function mktime() is missing.%0A     |       | Passing this parameter is no longer optional. The%0A     |       | optional nature of the parameter is deprecated since%0A     |       | PHP 5.1 and removed since PHP 8.0%0A     |       | (PHPCompatibility.FunctionUse.OptionalToRequiredFunctionParameters.mktime_hourSoftRequiredHardRequired)%0A 122 | ERROR | Declaration of a PHP4 style class constructor is%0A     |       | deprecated since PHP 7.0 and removed since PHP 8.0%0A     |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)%0A----------------------------------------------------------------------%0A%0A%0AFILE: view/header.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 20 | ERROR | Passing the $glue and $pieces parameters in reverse%0A    |       | order to implode has been deprecated since PHP 7.4 and%0A    |       | is removed since PHP 8.0; $glue should be the first%0A    |       | parameter and $pieces the second%0A    |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A----------------------------------------------------------------------%0A%0A%0AFILE: wpTwit.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A----------------------------------------------------------------------%0A 15 | ERROR | Declaration of a PHP4 style class constructor is%0A    |       | deprecated since PHP 7.0 and removed since PHP 8.0%0A    |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)%0A 21 | ERROR | Function create_function() is deprecated since PHP 7.2%0A    |       | and removed since PHP 8.0; Use an anonymous function%0A    |       | instead%0A    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)%0A----------------------------------------------------------------------%0A%0A%0AFILE: wpTwitWidget.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 8 | ERROR | Declaration of a PHP4 style class constructor is%0A   |       | deprecated since PHP 7.0 and removed since PHP 8.0%0A   |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)%0A----------------------------------------------------------------------%0A
