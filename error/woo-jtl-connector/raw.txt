@@ -909,6 +909,8 @@ No syntax errors detected in woo-jtl-connector/woo-jtl-connector/vendor/jtl/conn
 No syntax errors detected in woo-jtl-connector/woo-jtl-connector/vendor/jtl/connector/src/Model/SpecificValue.php
 No syntax errors detected in woo-jtl-connector/woo-jtl-connector/vendor/jtl/connector/src/Model/Statistic.php
 No syntax errors detected in woo-jtl-connector/woo-jtl-connector/vendor/jtl/connector/src/Model/StatusChange.php
+
+Warning: "boolean" will be interpreted as a class name. Did you mean "bool"? Write "\jtl\Connector\Model\boolean" or import the class with "use" to suppress this warning in woo-jtl-connector/woo-jtl-connector/vendor/jtl/connector/src/Model/TaxClass.php on line 79
 No syntax errors detected in woo-jtl-connector/woo-jtl-connector/vendor/jtl/connector/src/Model/TaxClass.php
 No syntax errors detected in woo-jtl-connector/woo-jtl-connector/vendor/jtl/connector/src/Model/TaxRate.php
 No syntax errors detected in woo-jtl-connector/woo-jtl-connector/vendor/jtl/connector/src/Model/TaxZoneCountry.php
@@ -1283,6 +1285,7 @@ No syntax errors detected in woo-jtl-connector/woo-jtl-connector/vendor/theiconi
 No syntax errors detected in woo-jtl-connector/woo-jtl-connector/vendor/theiconic/name-parser/src/Part/Suffix.php
 No syntax errors detected in woo-jtl-connector/woo-jtl-connector/vendor/theiconic/name-parser/tests/TheIconic/NameParser/ParserTest.php
 No syntax errors detected in woo-jtl-connector/woo-jtl-connector/woo-jtl-connector.php
+::error::%0Avendor/jtl/connector/src/Model/TaxClass.php%0A  Warning: "boolean" will be interpreted as a class name.%0A      Did you mean "bool"? Write "\jtl\Connector\Model\boolean" or import the class with "use" to suppress this warning%0A      on line 79
 ............................................................   60 / 1282 (5%)
 ............................................................  120 / 1282 (9%)
 ............................................................  180 / 1282 (14%)
@@ -1309,27 +1312,36 @@ No syntax errors detected in woo-jtl-connector/woo-jtl-connector/woo-jtl-connect
 
 
 [1mFILE: vendor/jtl/connector/src/Model/TaxClass.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 79 | [31mERROR[0m | [1m'boolean' is not a valid type declaration. Did you mean bool ?[0m
+----------------------------------------------------------------------
+ 79 | [31mERROR[0m | [1m'boolean' is not a valid type declaration. Did you mean
+    |       | bool ?[0m
     |       | (PHPCompatibility.FunctionDeclarations.NewParamTypeDeclarations.InvalidTypeHintFound)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 [1mFILE: vendor/symfony/yaml/Tests/InlineTest.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 4 ERRORS AFFECTING 4 LINES[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 364 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x4D2'[0m
+----------------------------------------------------------------------
+ 364 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+     |       | inconsistent prior to PHP 7 and support has been
+     |       | removed in PHP 7. Found: '0x4D2'[0m
      |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
- 365 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x_4_D_2_'[0m
+ 365 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+     |       | inconsistent prior to PHP 7 and support has been
+     |       | removed in PHP 7. Found: '0x_4_D_2_'[0m
      |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
- 445 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x4D2'[0m
+ 445 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+     |       | inconsistent prior to PHP 7 and support has been
+     |       | removed in PHP 7. Found: '0x4D2'[0m
      |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
- 528 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x_4_D_2_'[0m
+ 528 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+     |       | inconsistent prior to PHP 7 and support has been
+     |       | removed in PHP 7. Found: '0x_4_D_2_'[0m
      |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
-Time: 15.62 secs; Memory: 24MB
-::error::FILE: vendor/jtl/connector/src/Model/TaxClass.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 79 | ERROR | 'boolean' is not a valid type declaration. Did you mean bool ?%0A    |       | (PHPCompatibility.FunctionDeclarations.NewParamTypeDeclarations.InvalidTypeHintFound)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: vendor/symfony/yaml/Tests/InlineTest.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 4 ERRORS AFFECTING 4 LINES%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 364 | ERROR | The behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x4D2'%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 365 | ERROR | The behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x_4_D_2_'%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 445 | ERROR | The behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x4D2'%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 528 | ERROR | The behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x_4_D_2_'%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
+Time: 13.26 secs; Memory: 24MB
+::error::FILE: vendor/jtl/connector/src/Model/TaxClass.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 79 | ERROR | 'boolean' is not a valid type declaration. Did you mean%0A    |       | bool ?%0A    |       | (PHPCompatibility.FunctionDeclarations.NewParamTypeDeclarations.InvalidTypeHintFound)%0A----------------------------------------------------------------------%0A%0A%0AFILE: vendor/symfony/yaml/Tests/InlineTest.php%0A----------------------------------------------------------------------%0AFOUND 4 ERRORS AFFECTING 4 LINES%0A----------------------------------------------------------------------%0A 364 | ERROR | The behaviour of hexadecimal numeric strings was%0A     |       | inconsistent prior to PHP 7 and support has been%0A     |       | removed in PHP 7. Found: '0x4D2'%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 365 | ERROR | The behaviour of hexadecimal numeric strings was%0A     |       | inconsistent prior to PHP 7 and support has been%0A     |       | removed in PHP 7. Found: '0x_4_D_2_'%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 445 | ERROR | The behaviour of hexadecimal numeric strings was%0A     |       | inconsistent prior to PHP 7 and support has been%0A     |       | removed in PHP 7. Found: '0x4D2'%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 528 | ERROR | The behaviour of hexadecimal numeric strings was%0A     |       | inconsistent prior to PHP 7 and support has been%0A     |       | removed in PHP 7. Found: '0x_4_D_2_'%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A----------------------------------------------------------------------%0A
