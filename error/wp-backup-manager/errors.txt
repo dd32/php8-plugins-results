@@ -1,0 +1,106 @@
+
+includes/Dropbox/OAuth/Consumer/Curl.php
+  Warning: "continue" targeting switch is equivalent to "break".
+      Did you mean to use "continue 2"?
+      on line 182
+
+includes/Dropbox2/OAuth/Consumer/Curl.php
+  Warning: "continue" targeting switch is equivalent to "break".
+      Did you mean to use "continue 2"?
+      on line 225
+
+includes/Google/Utils.php
+  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 65
+
+includes/S3.php
+  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 2245
+FILE: backup.php
+----------------------------------------------------------------------
+FOUND 3 ERRORS AFFECTING 3 LINES
+----------------------------------------------------------------------
+ 1411 | ERROR | Function create_function() is deprecated since PHP
+      |       | 7.2 and removed since PHP 8.0; Use an anonymous
+      |       | function instead
+      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
+ 1413 | ERROR | Function create_function() is deprecated since PHP
+      |       | 7.2 and removed since PHP 8.0; Use an anonymous
+      |       | function instead
+      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
+ 1427 | ERROR | Function create_function() is deprecated since PHP
+      |       | 7.2 and removed since PHP 8.0; Use an anonymous
+      |       | function instead
+      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
+----------------------------------------------------------------------
+
+
+FILE: class-updraftplus.php
+----------------------------------------------------------------------
+FOUND 4 ERRORS AFFECTING 4 LINES
+----------------------------------------------------------------------
+ 3215 | ERROR | Function each() is deprecated since PHP 7.2 and
+      |       | removed since PHP 8.0; Use a foreach loop or
+      |       | ArrayIterator instead
+      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)
+ 4459 | ERROR | Function create_function() is deprecated since PHP
+      |       | 7.2 and removed since PHP 8.0; Use an anonymous
+      |       | function instead
+      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
+ 4461 | ERROR | Function create_function() is deprecated since PHP
+      |       | 7.2 and removed since PHP 8.0; Use an anonymous
+      |       | function instead
+      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
+ 4474 | ERROR | Function create_function() is deprecated since PHP
+      |       | 7.2 and removed since PHP 8.0; Use an anonymous
+      |       | function instead
+      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
+----------------------------------------------------------------------
+
+
+FILE: includes/Google/Http/REST.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 174 | ERROR | Passing the $glue and $pieces parameters in reverse
+     |       | order to implode has been deprecated since PHP 7.4 and
+     |       | is removed since PHP 8.0; $glue should be the first
+     |       | parameter and $pieces the second
+     |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
+----------------------------------------------------------------------
+
+
+FILE: includes/Google/Utils.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 65 | ERROR | [x] Curly brace syntax for accessing array elements and
+    |       |     string offsets has been deprecated in PHP 7.4 and
+    |       |     removed in PHP 8.0. Found: $str{$ret}
+    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------
+
+
+FILE: includes/S3.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 2245 | ERROR | [x] Curly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found: $value{0}
+      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------
+
+
+FILE: ...or/rackspace/php-opencloud/lib/OpenCloud/ObjectStore/Service.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 168 | ERROR | Passing the $glue and $pieces parameters in reverse
+     |       | order to implode has been deprecated since PHP 7.4 and
+     |       | is removed since PHP 8.0; $glue should be the first
+     |       | parameter and $pieces the second
+     |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
+----------------------------------------------------------------------

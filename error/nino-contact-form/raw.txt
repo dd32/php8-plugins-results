@@ -1,0 +1,51 @@
+::warning::Plugin: https://wordpress.org/plugins/nino-contact-form/%0ATrac: https://plugins.trac.wordpress.org/browser/nino-contact-form/
+No syntax errors detected in nino-contact-form/nino-contact-form/includes/admin/contact-form.php
+No syntax errors detected in nino-contact-form/nino-contact-form/includes/admin/contact-settings.php
+No syntax errors detected in nino-contact-form/nino-contact-form/includes/admin/form-processing.php
+No syntax errors detected in nino-contact-form/nino-contact-form/includes/admin-page.php
+No syntax errors detected in nino-contact-form/nino-contact-form/includes/contact-form-ajax.php
+No syntax errors detected in nino-contact-form/nino-contact-form/includes/contact-form-processing.php
+No syntax errors detected in nino-contact-form/nino-contact-form/includes/libraries/captcha/securimage_math.php
+No syntax errors detected in nino-contact-form/nino-contact-form/includes/libraries/captcha/securimage_multiple_words.php
+
+Fatal error: Array and string offset access syntax with curly braces is no longer supported in nino-contact-form/nino-contact-form/includes/libraries/captcha/securimage.php on line 1915
+Errors parsing nino-contact-form/nino-contact-form/includes/libraries/captcha/securimage.php
+No syntax errors detected in nino-contact-form/nino-contact-form/includes/libraries/captcha/securimage_show.php
+No syntax errors detected in nino-contact-form/nino-contact-form/includes/libraries/nino-contact-library.php
+No syntax errors detected in nino-contact-form/nino-contact-form/includes/nino-contact-render.php
+No syntax errors detected in nino-contact-form/nino-contact-form/includes/nino-contact-widget.php
+No syntax errors detected in nino-contact-form/nino-contact-form/nino-contact-form.php
+::error::%0Aincludes/libraries/captcha/securimage.php%0A  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 1915
+........[32mE[0m...[31mE[0m. 14 / 14 (100%)
+
+
+
+[1mFILE: includes/libraries/captcha/securimage.php[0m
+----------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 1915 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found:
+      |       |     $code['display']{$i}[0m
+      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+----------------------------------------------------------------------
+[1mPHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
+----------------------------------------------------------------------
+
+
+[1mFILE: includes/nino-contact-widget.php[0m
+----------------------------------------------------------------------
+[1mFOUND 2 ERRORS AFFECTING 2 LINES[0m
+----------------------------------------------------------------------
+ 13 | [31mERROR[0m | [1mDeclaration of a PHP4 style class constructor is
+    |       | deprecated since PHP 7.0 and removed since PHP 8.0[0m
+    |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+ 70 | [31mERROR[0m | [1mFunction create_function() is deprecated since PHP 7.2
+    |       | and removed since PHP 8.0; Use an anonymous function
+    |       | instead[0m
+    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
+----------------------------------------------------------------------
+
+Time: 542ms; Memory: 26MB
+::error::FILE: includes/libraries/captcha/securimage.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 1915 | ERROR | [x] Curly brace syntax for accessing array elements%0A      |       |     and string offsets has been deprecated in PHP 7.4%0A      |       |     and removed in PHP 8.0. Found:%0A      |       |     $code['display']{$i}%0A      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A----------------------------------------------------------------------%0APHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A----------------------------------------------------------------------%0A%0A%0AFILE: includes/nino-contact-widget.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A----------------------------------------------------------------------%0A 13 | ERROR | Declaration of a PHP4 style class constructor is%0A    |       | deprecated since PHP 7.0 and removed since PHP 8.0%0A    |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)%0A 70 | ERROR | Function create_function() is deprecated since PHP 7.2%0A    |       | and removed since PHP 8.0; Use an anonymous function%0A    |       | instead%0A    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)%0A----------------------------------------------------------------------%0A
