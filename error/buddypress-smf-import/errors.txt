@@ -1,0 +1,713 @@
+
+bbpress/bb-admin/export.php
+  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 48
+
+bbpress/bb-admin/includes/class.bb-install.php
+  Parse error: syntax error, unexpected token "new" on line 1280
+
+bbpress/bb-includes/backpress/class.wp-taxonomy.php
+  Parse error: syntax error, unexpected token "new" on line 581
+
+bbpress/bb-includes/backpress/functions.formatting.php
+  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 73
+
+bbpress/bb-includes/backpress/functions.wp-object-cache.php
+  Parse error: syntax error, unexpected token "new" on line 108
+
+bbpress/bb-includes/backpress/functions.wp-taxonomy.php
+  Parse error: syntax error, unexpected token "&" on line 179
+
+bbpress/bb-includes/backpress/pomo/mo.php
+  Parse error: syntax error, unexpected token "new" on line 171
+
+bbpress/bb-includes/backpress/pomo/sample/app.php
+  Parse error: syntax error, unexpected token "new" on line 36
+
+bbpress/bb-includes/class.bb-dir-map.php
+  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 72
+
+bbpress/bb-includes/class.bb-walker.php
+  Fatal error: Declaration of BB_Walker_Blank::start_lvl($output, $depth) must be compatible with BB_Walker::start_lvl($output) on line 130
+
+bbpress/bb-includes/functions.bb-core.php
+  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 1387
+
+bbpress/bb-includes/functions.bb-deprecated.php
+  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 553
+
+bbpress/bb-includes/functions.bb-l10n.php
+  Parse error: syntax error, unexpected token "new" on line 484
+
+bbpress/bb-includes/functions.bb-template.php
+  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 3192
+
+bbpress/bb-settings.php
+  Parse error: syntax error, unexpected token "new" on line 186
+FILE: bbpress/bb-admin/export.php
+----------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+----------------------------------------------------------------------
+ 48 | ERROR | [x] Curly brace syntax for accessing array elements and
+    |       |     string offsets has been deprecated in PHP 7.4 and
+    |       |     removed in PHP 8.0. Found: $k{0}
+    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 68 | ERROR | [x] Curly brace syntax for accessing array elements and
+    |       |     string offsets has been deprecated in PHP 7.4 and
+    |       |     removed in PHP 8.0. Found: $export{0}
+    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------
+
+
+FILE: bbpress/bb-admin/includes/class.bb-install.php
+----------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+----------------------------------------------------------------------
+  104 | ERROR | Declaration of a PHP4 style class constructor is
+      |       | deprecated since PHP 7.0 and removed since PHP
+      |       | 8.0
+      |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+ 1280 | ERROR | Assigning the return value of new by reference is
+      |       | deprecated in PHP 5.3 and has been removed in PHP
+      |       | 7.0
+      |       | (PHPCompatibility.Syntax.RemovedNewReference.Removed)
+----------------------------------------------------------------------
+
+
+FILE: bbpress/bb-admin/includes/functions.bb-admin.php
+----------------------------------------------------------------------
+FOUND 4 ERRORS AFFECTING 4 LINES
+----------------------------------------------------------------------
+  41 | ERROR | Function create_function() is deprecated since PHP 7.2
+     |       | and removed since PHP 8.0; Use an anonymous function
+     |       | instead
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
+ 150 | ERROR | Function create_function() is deprecated since PHP 7.2
+     |       | and removed since PHP 8.0; Use an anonymous function
+     |       | instead
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
+ 461 | ERROR | Declaration of a PHP4 style class constructor is
+     |       | deprecated since PHP 7.0 and removed since PHP 8.0
+     |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+ 671 | ERROR | Declaration of a PHP4 style class constructor is
+     |       | deprecated since PHP 7.0 and removed since PHP 8.0
+     |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+----------------------------------------------------------------------
+
+
+FILE: bbpress/bb-admin/options-discussion.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 51 | ERROR | Function create_function() is deprecated since PHP 7.2
+    |       | and removed since PHP 8.0; Use an anonymous function
+    |       | instead
+    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
+----------------------------------------------------------------------
+
+
+FILE: bbpress/bb-admin/options-wordpress.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 55 | ERROR | Function create_function() is deprecated since PHP 7.2
+    |       | and removed since PHP 8.0; Use an anonymous function
+    |       | instead
+    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
+----------------------------------------------------------------------
+
+
+FILE: bbpress/bb-includes/backpress/class.bpdb.php
+----------------------------------------------------------------------
+FOUND 5 ERRORS AFFECTING 5 LINES
+----------------------------------------------------------------------
+  9 | ERROR | The "case_insensitive" parameter for function define()
+    |       | is deprecated since PHP 7.3 and removed since PHP
+    |       | 8.0
+    |       | (PHPCompatibility.FunctionUse.RemovedFunctionParameters.define_case_insensitiveDeprecatedRemoved)
+ 10 | ERROR | The "case_insensitive" parameter for function define()
+    |       | is deprecated since PHP 7.3 and removed since PHP
+    |       | 8.0
+    |       | (PHPCompatibility.FunctionUse.RemovedFunctionParameters.define_case_insensitiveDeprecatedRemoved)
+ 11 | ERROR | The "case_insensitive" parameter for function define()
+    |       | is deprecated since PHP 7.3 and removed since PHP
+    |       | 8.0
+    |       | (PHPCompatibility.FunctionUse.RemovedFunctionParameters.define_case_insensitiveDeprecatedRemoved)
+ 12 | ERROR | The "case_insensitive" parameter for function define()
+    |       | is deprecated since PHP 7.3 and removed since PHP
+    |       | 8.0
+    |       | (PHPCompatibility.FunctionUse.RemovedFunctionParameters.define_case_insensitiveDeprecatedRemoved)
+ 13 | ERROR | The "case_insensitive" parameter for function define()
+    |       | is deprecated since PHP 7.3 and removed since PHP
+    |       | 8.0
+    |       | (PHPCompatibility.FunctionUse.RemovedFunctionParameters.define_case_insensitiveDeprecatedRemoved)
+----------------------------------------------------------------------
+
+
+FILE: bbpress/bb-includes/backpress/class.bp-log.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 75 | ERROR | Declaration of a PHP4 style class constructor is
+    |       | deprecated since PHP 7.0 and removed since PHP 8.0
+    |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+----------------------------------------------------------------------
+
+
+FILE: bbpress/bb-includes/backpress/class.bp-roles.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 67 | ERROR | Declaration of a PHP4 style class constructor is
+    |       | deprecated since PHP 7.0 and removed since PHP 8.0
+    |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+----------------------------------------------------------------------
+
+
+FILE: bbpress/bb-includes/backpress/class.bp-user.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 115 | ERROR | Declaration of a PHP4 style class constructor is
+     |       | deprecated since PHP 7.0 and removed since PHP 8.0
+     |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+----------------------------------------------------------------------
+
+
+FILE: bbpress/bb-includes/backpress/class.ixr.php
+----------------------------------------------------------------------
+FOUND 10 ERRORS AFFECTING 10 LINES
+----------------------------------------------------------------------
+  28 | ERROR | Declaration of a PHP4 style class constructor is
+     |       | deprecated since PHP 7.0 and removed since PHP 8.0
+     |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+ 158 | ERROR | Declaration of a PHP4 style class constructor is
+     |       | deprecated since PHP 7.0 and removed since PHP 8.0
+     |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+ 294 | ERROR | Declaration of a PHP4 style class constructor is
+     |       | deprecated since PHP 7.0 and removed since PHP 8.0
+     |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+ 464 | ERROR | Declaration of a PHP4 style class constructor is
+     |       | deprecated since PHP 7.0 and removed since PHP 8.0
+     |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+ 508 | ERROR | Declaration of a PHP4 style class constructor is
+     |       | deprecated since PHP 7.0 and removed since PHP 8.0
+     |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+ 627 | ERROR | Declaration of a PHP4 style class constructor is
+     |       | deprecated since PHP 7.0 and removed since PHP 8.0
+     |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+ 670 | ERROR | Declaration of a PHP4 style class constructor is
+     |       | deprecated since PHP 7.0 and removed since PHP 8.0
+     |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+ 718 | ERROR | Declaration of a PHP4 style class constructor is
+     |       | deprecated since PHP 7.0 and removed since PHP 8.0
+     |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+ 735 | ERROR | Declaration of a PHP4 style class constructor is
+     |       | deprecated since PHP 7.0 and removed since PHP 8.0
+     |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+ 883 | ERROR | Declaration of a PHP4 style class constructor is
+     |       | deprecated since PHP 7.0 and removed since PHP 8.0
+     |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+----------------------------------------------------------------------
+
+
+FILE: bbpress/bb-includes/backpress/class.mailer.php
+----------------------------------------------------------------------
+FOUND 10 ERRORS AFFECTING 9 LINES
+----------------------------------------------------------------------
+  472 | ERROR | Function split() is deprecated since PHP 5.3 and
+      |       | removed since PHP 7.0; Use preg_split(), explode() or
+      |       | str_split() instead
+      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.splitDeprecatedRemoved)
+  594 | ERROR | Extension 'ereg' is deprecated since PHP 5.3 and
+      |       | removed since PHP 7.0; Use pcre instead
+      |       | (PHPCompatibility.Extensions.RemovedExtensions.eregDeprecatedRemoved)
+  594 | ERROR | Function eregi() is deprecated since PHP 5.3 and
+      |       | removed since PHP 7.0; Use preg_match() (with the i
+      |       | modifier) instead
+      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eregiDeprecatedRemoved)
+ 1219 | ERROR | Function get_magic_quotes_runtime() is deprecated
+      |       | since PHP 7.4 and removed since PHP 8.0
+      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_runtimeDeprecatedRemoved)
+ 1220 | ERROR | Function set_magic_quotes_runtime() is deprecated
+      |       | since PHP 5.3 and removed since PHP 7.0
+      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.set_magic_quotes_runtimeDeprecatedRemoved)
+ 1224 | ERROR | Function set_magic_quotes_runtime() is deprecated
+      |       | since PHP 5.3 and removed since PHP 7.0
+      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.set_magic_quotes_runtimeDeprecatedRemoved)
+ 1386 | ERROR | Function each() is deprecated since PHP 7.2 and
+      |       | removed since PHP 8.0; Use a foreach loop or
+      |       | ArrayIterator instead
+      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)
+ 1644 | ERROR | Global variable '$HTTP_ENV_VARS' is deprecated since
+      |       | PHP 5.3 and removed since PHP 5.4; Use $_ENV
+      |       | instead
+      |       | (PHPCompatibility.Variables.RemovedPredefinedGlobalVariables.http_env_varsDeprecatedRemoved)
+ 1649 | ERROR | Global variable '$HTTP_ENV_VARS' is deprecated since
+      |       | PHP 5.3 and removed since PHP 5.4; Use $_ENV
+      |       | instead
+      |       | (PHPCompatibility.Variables.RemovedPredefinedGlobalVariables.http_env_varsDeprecatedRemoved)
+ 1737 | ERROR | Function split() is deprecated since PHP 5.3 and
+      |       | removed since PHP 7.0; Use preg_split(), explode() or
+      |       | str_split() instead
+      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.splitDeprecatedRemoved)
+----------------------------------------------------------------------
+
+
+FILE: bbpress/bb-includes/backpress/class.mailer-smtp.php
+----------------------------------------------------------------------
+FOUND 4 ERRORS AFFECTING 4 LINES
+----------------------------------------------------------------------
+  77 | ERROR | Declaration of a PHP4 style class constructor is
+     |       | deprecated since PHP 7.0 and removed since PHP 8.0
+     |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+ 344 | ERROR | Function each() is deprecated since PHP 7.2 and
+     |       | removed since PHP 8.0; Use a foreach loop or
+     |       | ArrayIterator instead
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)
+ 371 | ERROR | Function each() is deprecated since PHP 7.2 and
+     |       | removed since PHP 8.0; Use a foreach loop or
+     |       | ArrayIterator instead
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)
+ 455 | ERROR | Function each() is deprecated since PHP 7.2 and
+     |       | removed since PHP 8.0; Use a foreach loop or
+     |       | ArrayIterator instead
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)
+----------------------------------------------------------------------
+
+
+FILE: bbpress/bb-includes/backpress/class.passwordhash.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 44 | ERROR | Declaration of a PHP4 style class constructor is
+    |       | deprecated since PHP 7.0 and removed since PHP 8.0
+    |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+----------------------------------------------------------------------
+
+
+FILE: bbpress/bb-includes/backpress/class.wp-ajax-response.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 29 | ERROR | Declaration of a PHP4 style class constructor is
+    |       | deprecated since PHP 7.0 and removed since PHP 8.0
+    |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+----------------------------------------------------------------------
+
+
+FILE: bbpress/bb-includes/backpress/class.wp-dependencies.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 225 | ERROR | Declaration of a PHP4 style class constructor is
+     |       | deprecated since PHP 7.0 and removed since PHP 8.0
+     |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+----------------------------------------------------------------------
+
+
+FILE: bbpress/bb-includes/backpress/class.wp-error.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 51 | ERROR | Declaration of a PHP4 style class constructor is
+    |       | deprecated since PHP 7.0 and removed since PHP 8.0
+    |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+----------------------------------------------------------------------
+
+
+FILE: ...bpress/bb-includes/backpress/class.wp-object-cache-memcached.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 22 | ERROR | Declaration of a PHP4 style class constructor is
+    |       | deprecated since PHP 7.0 and removed since PHP 8.0
+    |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+----------------------------------------------------------------------
+
+
+FILE: bbpress/bb-includes/backpress/class.wp-taxonomy.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 581 | ERROR | Assigning the return value of new by reference is
+     |       | deprecated in PHP 5.3 and has been removed in PHP
+     |       | 7.0
+     |       | (PHPCompatibility.Syntax.RemovedNewReference.Removed)
+----------------------------------------------------------------------
+
+
+FILE: bbpress/bb-includes/backpress/functions.formatting.php
+----------------------------------------------------------------------
+FOUND 3 ERRORS AFFECTING 2 LINES
+----------------------------------------------------------------------
+   73 | ERROR | [x] Curly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found: $curl{0}
+      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+   73 | ERROR | [x] Curly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found: $curl{0}
+      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 1757 | ERROR | [ ] Function get_magic_quotes_gpc() is deprecated
+      |       |     since PHP 7.4 and removed since PHP 8.0
+      |       |     (PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_gpcDeprecatedRemoved)
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------
+
+
+FILE: bbpress/bb-includes/backpress/functions.kses.php
+----------------------------------------------------------------------
+FOUND 4 ERRORS AFFECTING 4 LINES
+----------------------------------------------------------------------
+ 104 | ERROR | Function create_function() is deprecated since PHP 7.2
+     |       | and removed since PHP 8.0; Use an anonymous function
+     |       | instead
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
+ 609 | ERROR | Using 'break' outside of a loop or switch structure is
+     |       | invalid and will throw a fatal error since PHP 7.0
+     |       | (PHPCompatibility.ControlStructures.ForbiddenBreakContinueOutsideLoop.FatalError)
+ 708 | ERROR | Function create_function() is deprecated since PHP 7.2
+     |       | and removed since PHP 8.0; Use an anonymous function
+     |       | instead
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
+ 709 | ERROR | Function create_function() is deprecated since PHP 7.2
+     |       | and removed since PHP 8.0; Use an anonymous function
+     |       | instead
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
+----------------------------------------------------------------------
+
+
+FILE: bbpress/bb-includes/backpress/functions.plugin-api.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 227 | ERROR | Indirect access to variables, properties and methods
+     |       | will be evaluated strictly in left-to-right order
+     |       | since PHP 7.0. Use curly braces to remove
+     |       | ambiguity.
+     |       | (PHPCompatibility.Variables.NewUniformVariableSyntax.Found)
+----------------------------------------------------------------------
+
+
+FILE: bbpress/bb-includes/backpress/functions.wp-object-cache.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 108 | ERROR | Assigning the return value of new by reference is
+     |       | deprecated in PHP 5.3 and has been removed in PHP
+     |       | 7.0
+     |       | (PHPCompatibility.Syntax.RemovedNewReference.Removed)
+----------------------------------------------------------------------
+
+
+FILE: bbpress/bb-includes/backpress/functions.wp-taxonomy.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 179 | ERROR | Using a call-time pass-by-reference is deprecated
+     |       | since PHP 5.3 and prohibited since PHP 5.4
+     |       | (PHPCompatibility.Syntax.ForbiddenCallTimePassByReference.NotAllowed)
+----------------------------------------------------------------------
+
+
+FILE: bbpress/bb-includes/backpress/pomo/entry.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 43 | ERROR | Declaration of a PHP4 style class constructor is
+    |       | deprecated since PHP 7.0 and removed since PHP 8.0
+    |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+----------------------------------------------------------------------
+
+
+FILE: bbpress/bb-includes/backpress/pomo/mo.php
+----------------------------------------------------------------------
+FOUND 4 ERRORS AFFECTING 4 LINES
+----------------------------------------------------------------------
+  33 | ERROR | Function create_function() is deprecated since PHP 7.2
+     |       | and removed since PHP 8.0; Use an anonymous function
+     |       | instead
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
+ 135 | ERROR | Function create_function() is deprecated since PHP 7.2
+     |       | and removed since PHP 8.0; Use an anonymous function
+     |       | instead
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
+ 136 | ERROR | Function create_function() is deprecated since PHP 7.2
+     |       | and removed since PHP 8.0; Use an anonymous function
+     |       | instead
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
+ 171 | ERROR | Assigning the return value of new by reference is
+     |       | deprecated in PHP 5.3 and has been removed in PHP
+     |       | 7.0
+     |       | (PHPCompatibility.Syntax.RemovedNewReference.Removed)
+----------------------------------------------------------------------
+
+
+FILE: bbpress/bb-includes/backpress/pomo/po.php
+----------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+----------------------------------------------------------------------
+ 153 | ERROR | Function create_function() is deprecated since PHP 7.2
+     |       | and removed since PHP 8.0; Use an anonymous function
+     |       | instead
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
+ 226 | ERROR | Function create_function() is deprecated since PHP 7.2
+     |       | and removed since PHP 8.0; Use an anonymous function
+     |       | instead
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
+----------------------------------------------------------------------
+
+
+FILE: bbpress/bb-includes/backpress/pomo/sample/app.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 36 | ERROR | Assigning the return value of new by reference is
+    |       | deprecated in PHP 5.3 and has been removed in PHP
+    |       | 7.0
+    |       | (PHPCompatibility.Syntax.RemovedNewReference.Removed)
+----------------------------------------------------------------------
+
+
+FILE: bbpress/bb-includes/backpress/pomo/streams.php
+----------------------------------------------------------------------
+FOUND 3 ERRORS AFFECTING 3 LINES
+----------------------------------------------------------------------
+ 20 | ERROR | Declaration of a PHP4 style class constructor is
+    |       | deprecated since PHP 7.0 and removed since PHP 8.0
+    |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+ 69 | ERROR | Declaration of a PHP4 style class constructor is
+    |       | deprecated since PHP 7.0 and removed since PHP 8.0
+    |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+ 92 | ERROR | Declaration of a PHP4 style class constructor is
+    |       | deprecated since PHP 7.0 and removed since PHP 8.0
+    |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+----------------------------------------------------------------------
+
+
+FILE: bbpress/bb-includes/backpress/pomo/translations.php
+----------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+----------------------------------------------------------------------
+ 131 | ERROR | Function create_function() is deprecated since PHP 7.2
+     |       | and removed since PHP 8.0; Use an anonymous function
+     |       | instead
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
+ 140 | ERROR | Function create_function() is deprecated since PHP 7.2
+     |       | and removed since PHP 8.0; Use an anonymous function
+     |       | instead
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
+----------------------------------------------------------------------
+
+
+FILE: bbpress/bb-includes/class.bb-dir-map.php
+----------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+----------------------------------------------------------------------
+ 17 | ERROR | [ ] Declaration of a PHP4 style class constructor is
+    |       |     deprecated since PHP 7.0 and removed since PHP
+    |       |     8.0
+    |       |     (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+ 72 | ERROR | [x] Curly brace syntax for accessing array elements and
+    |       |     string offsets has been deprecated in PHP 7.4 and
+    |       |     removed in PHP 8.0. Found:
+    |       |     $this->_current_file{0}
+    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------
+
+
+FILE: bbpress/bb-includes/class.bb-locale.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 354 | ERROR | Declaration of a PHP4 style class constructor is
+     |       | deprecated since PHP 7.0 and removed since PHP 8.0
+     |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+----------------------------------------------------------------------
+
+
+FILE: bbpress/bb-includes/class.bb-query.php
+----------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+----------------------------------------------------------------------
+  19 | ERROR | Declaration of a PHP4 style class constructor is
+     |       | deprecated since PHP 7.0 and removed since PHP 8.0
+     |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+ 879 | ERROR | Declaration of a PHP4 style class constructor is
+     |       | deprecated since PHP 7.0 and removed since PHP 8.0
+     |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+----------------------------------------------------------------------
+
+
+FILE: bbpress/bb-includes/class.bb-walker.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 165 | ERROR | Declaration of a PHP4 style class constructor is
+     |       | deprecated since PHP 7.0 and removed since PHP 8.0
+     |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+----------------------------------------------------------------------
+
+
+FILE: bbpress/bb-includes/functions.bb-core.php
+----------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+----------------------------------------------------------------------
+   42 | ERROR | [ ] Function get_magic_quotes_gpc() is deprecated
+      |       |     since PHP 7.4 and removed since PHP 8.0
+      |       |     (PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_gpcDeprecatedRemoved)
+ 1387 | ERROR | [x] Curly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found: $theme_dir{0}
+      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------
+
+
+FILE: bbpress/bb-includes/functions.bb-deprecated.php
+----------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+----------------------------------------------------------------------
+ 553 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found:
+     |       |     $path{strlen($path)-1}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 889 | ERROR | [ ] Declaration of a PHP4 style class constructor is
+     |       |     deprecated since PHP 7.0 and removed since PHP
+     |       |     8.0
+     |       |     (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------
+
+
+FILE: bbpress/bb-includes/functions.bb-forums.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 23 | ERROR | Function each() is deprecated since PHP 7.2 and removed
+    |       | since PHP 8.0; Use a foreach loop or ArrayIterator
+    |       | instead
+    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)
+----------------------------------------------------------------------
+
+
+FILE: bbpress/bb-includes/functions.bb-l10n.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 484 | ERROR | Assigning the return value of new by reference is
+     |       | deprecated in PHP 5.3 and has been removed in PHP
+     |       | 7.0
+     |       | (PHPCompatibility.Syntax.RemovedNewReference.Removed)
+----------------------------------------------------------------------
+
+
+FILE: bbpress/bb-includes/functions.bb-template.php
+----------------------------------------------------------------------
+FOUND 4 ERRORS AFFECTING 4 LINES
+----------------------------------------------------------------------
+ 1484 | ERROR | [ ] Function create_function() is deprecated since
+      |       |     PHP 7.2 and removed since PHP 8.0; Use an
+      |       |     anonymous function instead
+      |       |     (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
+ 3192 | ERROR | [x] Curly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found:
+      |       |     $counts{$tag->raw_tag}
+      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 3193 | ERROR | [x] Curly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found:
+      |       |     $taglinks{$tag->raw_tag}
+      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 3210 | ERROR | [x] Curly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found:
+      |       |     $taglinks{$tag}
+      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 3 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------
+
+
+FILE: bbpress/bb-settings.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 186 | ERROR | Assigning the return value of new by reference is
+     |       | deprecated in PHP 5.3 and has been removed in PHP
+     |       | 7.0
+     |       | (PHPCompatibility.Syntax.RemovedNewReference.Removed)
+----------------------------------------------------------------------
+
+
+FILE: bbpress/search.php
+----------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+----------------------------------------------------------------------
+ 10 | ERROR | Function create_function() is deprecated since PHP 7.2
+    |       | and removed since PHP 8.0; Use an anonymous function
+    |       | instead
+    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
+ 11 | ERROR | Function create_function() is deprecated since PHP 7.2
+    |       | and removed since PHP 8.0; Use an anonymous function
+    |       | instead
+    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
+----------------------------------------------------------------------
+
+
+FILE: bbpress/topic.php
+----------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+----------------------------------------------------------------------
+ 17 | ERROR | Function create_function() is deprecated since PHP 7.2
+    |       | and removed since PHP 8.0; Use an anonymous function
+    |       | instead
+    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
+ 18 | ERROR | Function create_function() is deprecated since PHP 7.2
+    |       | and removed since PHP 8.0; Use an anonymous function
+    |       | instead
+    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
+----------------------------------------------------------------------
+
+
+FILE: bbpress/xmlrpc.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 109 | ERROR | Declaration of a PHP4 style class constructor is
+     |       | deprecated since PHP 7.0 and removed since PHP 8.0
+     |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+----------------------------------------------------------------------
+
+
+FILE: include/buddypress-smf-functions.php
+----------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+----------------------------------------------------------------------
+ 992 | ERROR | preg_replace() - /e modifier is deprecated since PHP
+     |       | 5.5 and removed since PHP 7.0
+     |       | (PHPCompatibility.ParameterValues.RemovedPCREModifiers.Removed)
+ 995 | ERROR | preg_replace() - /e modifier is deprecated since PHP
+     |       | 5.5 and removed since PHP 7.0
+     |       | (PHPCompatibility.ParameterValues.RemovedPCREModifiers.Removed)
+----------------------------------------------------------------------
+
+
+FILE: redirect/index.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 21 | ERROR | Function split() is deprecated since PHP 5.3 and
+    |       | removed since PHP 7.0; Use preg_split(), explode() or
+    |       | str_split() instead
+    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.splitDeprecatedRemoved)
+----------------------------------------------------------------------

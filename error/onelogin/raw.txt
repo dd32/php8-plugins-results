@@ -1,0 +1,56 @@
+::warning::Plugin: https://wordpress.org/plugins/onelogin/%0ATrac: https://plugins.trac.wordpress.org/browser/onelogin/
+
+Fatal error: Switch statements may only contain one default clause in onelogin/onelogin/api.php on line 390
+Errors parsing onelogin/onelogin/api.php
+No syntax errors detected in onelogin/onelogin/extend/facebook/base_facebook.php
+No syntax errors detected in onelogin/onelogin/extend/facebook/Facebook.class.php
+No syntax errors detected in onelogin/onelogin/extend/facebook.php
+No syntax errors detected in onelogin/onelogin/index.php
+No syntax errors detected in onelogin/onelogin/uninstall.php
+::error::%0Aapi.php%0A  Fatal error: Switch statements may only contain one default clause on line 390
+[31mE[0m[31mE[0m[31mE[0m... 6 / 6 (100%)
+
+
+
+[1mFILE: api.php[0m
+----------------------------------------------------------------------
+[1mFOUND 3 ERRORS AFFECTING 2 LINES[0m
+----------------------------------------------------------------------
+ 358 | [31mERROR[0m | [1mSwitch statements can not have multiple default blocks
+     |       | since PHP 7.0[0m
+     |       | (PHPCompatibility.ControlStructures.ForbiddenSwitchWithMultipleDefaultBlocks.Found)
+ 726 | [31mERROR[0m | [1mExtension 'ereg' is deprecated since PHP 5.3 and
+     |       | removed since PHP 7.0; Use pcre instead[0m
+     |       | (PHPCompatibility.Extensions.RemovedExtensions.eregDeprecatedRemoved)
+ 726 | [31mERROR[0m | [1mFunction eregi_replace() is deprecated since PHP 5.3
+     |       | and removed since PHP 7.0; Use preg_replace() (with
+     |       | the i modifier) instead[0m
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eregi_replaceDeprecatedRemoved)
+----------------------------------------------------------------------
+
+
+[1mFILE: extend/facebook/base_facebook.php[0m
+----------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 1061 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse
+      |       | order to implode has been deprecated since PHP 7.4
+      |       | and is removed since PHP 8.0; $glue should be the
+      |       | first parameter and $pieces the second[0m
+      |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
+----------------------------------------------------------------------
+
+
+[1mFILE: extend/facebook/Facebook.class.php[0m
+----------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 297 | [31mERROR[0m | [1mThe "result" parameter for function parse_str() is
+     |       | missing. Passing this parameter is no longer optional.
+     |       | The optional nature of the parameter is deprecated
+     |       | since PHP 7.2 and removed since PHP 8.0[0m
+     |       | (PHPCompatibility.FunctionUse.OptionalToRequiredFunctionParameters.parse_str_resultSoftRequiredHardRequired)
+----------------------------------------------------------------------
+
+Time: 398ms; Memory: 16MB
+::error::FILE: api.php%0A----------------------------------------------------------------------%0AFOUND 3 ERRORS AFFECTING 2 LINES%0A----------------------------------------------------------------------%0A 358 | ERROR | Switch statements can not have multiple default blocks%0A     |       | since PHP 7.0%0A     |       | (PHPCompatibility.ControlStructures.ForbiddenSwitchWithMultipleDefaultBlocks.Found)%0A 726 | ERROR | Extension 'ereg' is deprecated since PHP 5.3 and%0A     |       | removed since PHP 7.0; Use pcre instead%0A     |       | (PHPCompatibility.Extensions.RemovedExtensions.eregDeprecatedRemoved)%0A 726 | ERROR | Function eregi_replace() is deprecated since PHP 5.3%0A     |       | and removed since PHP 7.0; Use preg_replace() (with%0A     |       | the i modifier) instead%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eregi_replaceDeprecatedRemoved)%0A----------------------------------------------------------------------%0A%0A%0AFILE: extend/facebook/base_facebook.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 1061 | ERROR | Passing the $glue and $pieces parameters in reverse%0A      |       | order to implode has been deprecated since PHP 7.4%0A      |       | and is removed since PHP 8.0; $glue should be the%0A      |       | first parameter and $pieces the second%0A      |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A----------------------------------------------------------------------%0A%0A%0AFILE: extend/facebook/Facebook.class.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 297 | ERROR | The "result" parameter for function parse_str() is%0A     |       | missing. Passing this parameter is no longer optional.%0A     |       | The optional nature of the parameter is deprecated%0A     |       | since PHP 7.2 and removed since PHP 8.0%0A     |       | (PHPCompatibility.FunctionUse.OptionalToRequiredFunctionParameters.parse_str_resultSoftRequiredHardRequired)%0A----------------------------------------------------------------------%0A

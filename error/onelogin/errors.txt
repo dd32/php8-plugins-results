@@ -1,0 +1,42 @@
+
+api.php
+  Fatal error: Switch statements may only contain one default clause on line 390
+FILE: api.php
+----------------------------------------------------------------------
+FOUND 3 ERRORS AFFECTING 2 LINES
+----------------------------------------------------------------------
+ 358 | ERROR | Switch statements can not have multiple default blocks
+     |       | since PHP 7.0
+     |       | (PHPCompatibility.ControlStructures.ForbiddenSwitchWithMultipleDefaultBlocks.Found)
+ 726 | ERROR | Extension 'ereg' is deprecated since PHP 5.3 and
+     |       | removed since PHP 7.0; Use pcre instead
+     |       | (PHPCompatibility.Extensions.RemovedExtensions.eregDeprecatedRemoved)
+ 726 | ERROR | Function eregi_replace() is deprecated since PHP 5.3
+     |       | and removed since PHP 7.0; Use preg_replace() (with
+     |       | the i modifier) instead
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eregi_replaceDeprecatedRemoved)
+----------------------------------------------------------------------
+
+
+FILE: extend/facebook/base_facebook.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 1061 | ERROR | Passing the $glue and $pieces parameters in reverse
+      |       | order to implode has been deprecated since PHP 7.4
+      |       | and is removed since PHP 8.0; $glue should be the
+      |       | first parameter and $pieces the second
+      |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
+----------------------------------------------------------------------
+
+
+FILE: extend/facebook/Facebook.class.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 297 | ERROR | The "result" parameter for function parse_str() is
+     |       | missing. Passing this parameter is no longer optional.
+     |       | The optional nature of the parameter is deprecated
+     |       | since PHP 7.2 and removed since PHP 8.0
+     |       | (PHPCompatibility.FunctionUse.OptionalToRequiredFunctionParameters.parse_str_resultSoftRequiredHardRequired)
+----------------------------------------------------------------------
