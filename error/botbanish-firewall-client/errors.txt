@@ -1,0 +1,54 @@
+
+BotBanish/bot/Subs/BotBanish_AccessError.php
+  Fatal error: Unparenthesized `a ? b : c ? d : e` is not supported.
+      Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)`
+      on line 134
+FILE: BotBanish/bot/Client/BotBanishClientCheck.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 19 | ERROR | Function set_magic_quotes_runtime() is deprecated since
+    |       | PHP 5.3 and removed since PHP 7.0
+    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.set_magic_quotes_runtimeDeprecatedRemoved)
+----------------------------------------------------------------------
+
+
+FILE: BotBanish/bot/Subs/BotBanish_AccessError.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 134 | ERROR | The left-associativity of the ternary operator has
+     |       | been deprecated in PHP 7.4 and removed in PHP 8.0.
+     |       | Multiple consecutive ternaries detected. Use
+     |       | parenthesis to clarify the order in which the
+     |       | operations should be executed
+     |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
+----------------------------------------------------------------------
+
+
+FILE: BotBanish/bot/Subs/BotBanish_DumpDatabase.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 330 | ERROR | Passing the $glue and $pieces parameters in reverse
+     |       | order to implode has been deprecated since PHP 7.4 and
+     |       | is removed since PHP 8.0; $glue should be the first
+     |       | parameter and $pieces the second
+     |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
+----------------------------------------------------------------------
+
+
+FILE: BotBanish/bot/Subs/BotBanish_Subs.php
+----------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+----------------------------------------------------------------------
+ 1333 | ERROR | Using 'break' outside of a loop or switch structure
+      |       | is invalid and will throw a fatal error since PHP
+      |       | 7.0
+      |       | (PHPCompatibility.ControlStructures.ForbiddenBreakContinueOutsideLoop.FatalError)
+ 1404 | ERROR | Self-closing XHTML tags are ignored. Only
+      |       | non-self-closing tags should be used in the
+      |       | strip_tags() $allowable_tags parameter since PHP
+      |       | 5.3.4. Found: '<br><br />'
+      |       | (PHPCompatibility.ParameterValues.ForbiddenStripTagsSelfClosingXHTML.Found)
+----------------------------------------------------------------------
