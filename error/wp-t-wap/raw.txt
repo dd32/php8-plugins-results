@@ -1,0 +1,66 @@
+::warning::Plugin: https://wordpress.org/plugins/wp-t-wap/%0ATrac: https://plugins.trac.wordpress.org/browser/wp-t-wap/
+No syntax errors detected in wp-t-wap/wp-t-wap/wap/append-form-advanced.php
+No syntax errors detected in wp-t-wap/wp-t-wap/wap/comment.php
+No syntax errors detected in wp-t-wap/wp-t-wap/wap/comments.php
+No syntax errors detected in wp-t-wap/wp-t-wap/wap/edit-comments.php
+No syntax errors detected in wp-t-wap/wp-t-wap/wap/edit-form-advanced.php
+No syntax errors detected in wp-t-wap/wp-t-wap/wap/edit.php
+No syntax errors detected in wp-t-wap/wp-t-wap/wap/edit-post-rows.php
+No syntax errors detected in wp-t-wap/wp-t-wap/wap/functions.php
+No syntax errors detected in wp-t-wap/wp-t-wap/wap/index.php
+No syntax errors detected in wp-t-wap/wp-t-wap/wap/index-wap2.php
+No syntax errors detected in wp-t-wap/wp-t-wap/wap/index-wap.php
+No syntax errors detected in wp-t-wap/wp-t-wap/wap/login.php
+No syntax errors detected in wp-t-wap/wp-t-wap/wap/post.php
+No syntax errors detected in wp-t-wap/wp-t-wap/wap/wap-comments-post.php
+No syntax errors detected in wp-t-wap/wp-t-wap/wap/wap-config.php
+No syntax errors detected in wp-t-wap/wp-t-wap/wap/wap-settings.php
+No syntax errors detected in wp-t-wap/wp-t-wap/wap/writer.php
+No syntax errors detected in wp-t-wap/wp-t-wap/wap.php
+.......[31mE[0m......[31mE[0m..[31mE[0m 18 / 18 (100%)
+
+
+
+[1mFILE: wap/functions.php[0m
+----------------------------------------------------------------------
+[1mFOUND 2 ERRORS AFFECTING 2 LINES[0m
+----------------------------------------------------------------------
+ 406 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse
+     |       | order to implode has been deprecated since PHP 7.4 and
+     |       | is removed since PHP 8.0; $glue should be the first
+     |       | parameter and $pieces the second[0m
+     |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
+ 439 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse
+     |       | order to implode has been deprecated since PHP 7.4 and
+     |       | is removed since PHP 8.0; $glue should be the first
+     |       | parameter and $pieces the second[0m
+     |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
+----------------------------------------------------------------------
+
+
+[1mFILE: wap/wap-config.php[0m
+----------------------------------------------------------------------
+[1mFOUND 2 ERRORS AFFECTING 2 LINES[0m
+----------------------------------------------------------------------
+ 3 | [31mERROR[0m | [1mThe "case_insensitive" parameter for function define()
+   |       | is deprecated since PHP 7.3 and removed since PHP
+   |       | 8.0[0m
+   |       | (PHPCompatibility.FunctionUse.RemovedFunctionParameters.define_case_insensitiveDeprecatedRemoved)
+ 4 | [31mERROR[0m | [1mThe "case_insensitive" parameter for function define()
+   |       | is deprecated since PHP 7.3 and removed since PHP
+   |       | 8.0[0m
+   |       | (PHPCompatibility.FunctionUse.RemovedFunctionParameters.define_case_insensitiveDeprecatedRemoved)
+----------------------------------------------------------------------
+
+
+[1mFILE: wap.php[0m
+----------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 14 | [31mERROR[0m | [1mDeclaration of a PHP4 style class constructor is
+    |       | deprecated since PHP 7.0 and removed since PHP 8.0[0m
+    |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+----------------------------------------------------------------------
+
+Time: 478ms; Memory: 18MB
+::error::FILE: wap/functions.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A----------------------------------------------------------------------%0A 406 | ERROR | Passing the $glue and $pieces parameters in reverse%0A     |       | order to implode has been deprecated since PHP 7.4 and%0A     |       | is removed since PHP 8.0; $glue should be the first%0A     |       | parameter and $pieces the second%0A     |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A 439 | ERROR | Passing the $glue and $pieces parameters in reverse%0A     |       | order to implode has been deprecated since PHP 7.4 and%0A     |       | is removed since PHP 8.0; $glue should be the first%0A     |       | parameter and $pieces the second%0A     |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A----------------------------------------------------------------------%0A%0A%0AFILE: wap/wap-config.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A----------------------------------------------------------------------%0A 3 | ERROR | The "case_insensitive" parameter for function define()%0A   |       | is deprecated since PHP 7.3 and removed since PHP%0A   |       | 8.0%0A   |       | (PHPCompatibility.FunctionUse.RemovedFunctionParameters.define_case_insensitiveDeprecatedRemoved)%0A 4 | ERROR | The "case_insensitive" parameter for function define()%0A   |       | is deprecated since PHP 7.3 and removed since PHP%0A   |       | 8.0%0A   |       | (PHPCompatibility.FunctionUse.RemovedFunctionParameters.define_case_insensitiveDeprecatedRemoved)%0A----------------------------------------------------------------------%0A%0A%0AFILE: wap.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 14 | ERROR | Declaration of a PHP4 style class constructor is%0A    |       | deprecated since PHP 7.0 and removed since PHP 8.0%0A    |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)%0A----------------------------------------------------------------------%0A

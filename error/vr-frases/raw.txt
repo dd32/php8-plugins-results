@@ -1,0 +1,39 @@
+::warning::Plugin: https://wordpress.org/plugins/vr-frases/%0ATrac: https://plugins.trac.wordpress.org/browser/vr-frases/
+No syntax errors detected in vr-frases/vr-frases/includes/vr-frases-admin.php
+No syntax errors detected in vr-frases/vr-frases/includes/vr-frases-functions.php
+No syntax errors detected in vr-frases/vr-frases/includes/vr-frases-options.php
+No syntax errors detected in vr-frases/vr-frases/includes/vr-frases-shortcodes.php
+No syntax errors detected in vr-frases/vr-frases/includes/vr-frases-template.php
+No syntax errors detected in vr-frases/vr-frases/includes/vr-frases-widgets.php
+No syntax errors detected in vr-frases/vr-frases/uninstall.php
+No syntax errors detected in vr-frases/vr-frases/vr-frases.php
+.[31mE[0m...[31mE[0m.. 8 / 8 (100%)
+
+
+
+[1mFILE: includes/vr-frases-functions.php[0m
+----------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 82 | [31mERROR[0m | [1mIndirect access to variables, properties and methods
+    |       | will be evaluated strictly in left-to-right order since
+    |       | PHP 7.0. Use curly braces to remove ambiguity.[0m
+    |       | (PHPCompatibility.Variables.NewUniformVariableSyntax.Found)
+----------------------------------------------------------------------
+
+
+[1mFILE: includes/vr-frases-widgets.php[0m
+----------------------------------------------------------------------
+[1mFOUND 2 ERRORS AFFECTING 2 LINES[0m
+----------------------------------------------------------------------
+  15 | [31mERROR[0m | [1mDeclaration of a PHP4 style class constructor is
+     |       | deprecated since PHP 7.0 and removed since PHP 8.0[0m
+     |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+ 161 | [31mERROR[0m | [1mFunction create_function() is deprecated since PHP 7.2
+     |       | and removed since PHP 8.0; Use an anonymous function
+     |       | instead[0m
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
+----------------------------------------------------------------------
+
+Time: 245ms; Memory: 16MB
+::error::FILE: includes/vr-frases-functions.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 82 | ERROR | Indirect access to variables, properties and methods%0A    |       | will be evaluated strictly in left-to-right order since%0A    |       | PHP 7.0. Use curly braces to remove ambiguity.%0A    |       | (PHPCompatibility.Variables.NewUniformVariableSyntax.Found)%0A----------------------------------------------------------------------%0A%0A%0AFILE: includes/vr-frases-widgets.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A----------------------------------------------------------------------%0A  15 | ERROR | Declaration of a PHP4 style class constructor is%0A     |       | deprecated since PHP 7.0 and removed since PHP 8.0%0A     |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)%0A 161 | ERROR | Function create_function() is deprecated since PHP 7.2%0A     |       | and removed since PHP 8.0; Use an anonymous function%0A     |       | instead%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)%0A----------------------------------------------------------------------%0A
