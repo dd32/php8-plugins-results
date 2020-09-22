@@ -205,6 +205,8 @@ No syntax errors detected in baqend/baqend/vendor/phpdocumentor/type-resolver/sr
 No syntax errors detected in baqend/baqend/vendor/phpdocumentor/type-resolver/src/Types/Float_.php
 No syntax errors detected in baqend/baqend/vendor/phpdocumentor/type-resolver/src/Types/Integer.php
 No syntax errors detected in baqend/baqend/vendor/phpdocumentor/type-resolver/src/Types/Iterable_.php
+
+Fatal error: Cannot use 'Mixed' as class name as it is reserved in baqend/baqend/vendor/phpdocumentor/type-resolver/src/Types/Mixed.php on line 20
 Errors parsing baqend/baqend/vendor/phpdocumentor/type-resolver/src/Types/Mixed.php
 No syntax errors detected in baqend/baqend/vendor/phpdocumentor/type-resolver/src/Types/Nullable.php
 No syntax errors detected in baqend/baqend/vendor/phpdocumentor/type-resolver/src/Types/Null_.php
@@ -353,7 +355,7 @@ No syntax errors detected in baqend/baqend/views/overview.php
 No syntax errors detected in baqend/baqend/views/speedKit.php
 No syntax errors detected in baqend/baqend/views/tabs.php
 No syntax errors detected in baqend/baqend/views/upgrade.php
-::error::%0Avendor/phpdocumentor/type-resolver/src/Types/Mixed.php
+::error::%0Avendor/phpdocumentor/type-resolver/src/Types/Mixed.php%0A  Fatal error: Cannot use 'Mixed' as class name as it is reserved on line 20
 ............................................................  60 / 350 (17%)
 ............................................................ 120 / 350 (34%)
 ........................[31mE[0m................................... 180 / 350 (51%)
@@ -364,14 +366,16 @@ No syntax errors detected in baqend/baqend/views/upgrade.php
 
 
 [1mFILE: vendor/paragonie/random_compat/lib/byte_safe_strings.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 2 ERRORS AFFECTING 2 LINES[0m
--------------------------------------------------------------------------------------------------------------------------------------------------
- 33 | [31mERROR[0m | [1mThe constant "MB_OVERLOAD_STRING" is removed since PHP 8.0[0m
+----------------------------------------------------------------------
+ 33 | [31mERROR[0m | [1mThe constant "MB_OVERLOAD_STRING" is removed since PHP
+    |       | 8.0[0m
     |       | (PHPCompatibility.Constants.RemovedConstants.mb_overload_stringRemoved)
- 87 | [31mERROR[0m | [1mThe constant "MB_OVERLOAD_STRING" is removed since PHP 8.0[0m
+ 87 | [31mERROR[0m | [1mThe constant "MB_OVERLOAD_STRING" is removed since PHP
+    |       | 8.0[0m
     |       | (PHPCompatibility.Constants.RemovedConstants.mb_overload_stringRemoved)
--------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
-Time: 4.51 secs; Memory: 22MB
-::error::FILE: vendor/paragonie/random_compat/lib/byte_safe_strings.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A-------------------------------------------------------------------------------------------------------------------------------------------------%0A 33 | ERROR | The constant "MB_OVERLOAD_STRING" is removed since PHP 8.0%0A    |       | (PHPCompatibility.Constants.RemovedConstants.mb_overload_stringRemoved)%0A 87 | ERROR | The constant "MB_OVERLOAD_STRING" is removed since PHP 8.0%0A    |       | (PHPCompatibility.Constants.RemovedConstants.mb_overload_stringRemoved)%0A-------------------------------------------------------------------------------------------------------------------------------------------------%0A
+Time: 4.41 secs; Memory: 22MB
+::error::FILE: vendor/paragonie/random_compat/lib/byte_safe_strings.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A----------------------------------------------------------------------%0A 33 | ERROR | The constant "MB_OVERLOAD_STRING" is removed since PHP%0A    |       | 8.0%0A    |       | (PHPCompatibility.Constants.RemovedConstants.mb_overload_stringRemoved)%0A 87 | ERROR | The constant "MB_OVERLOAD_STRING" is removed since PHP%0A    |       | 8.0%0A    |       | (PHPCompatibility.Constants.RemovedConstants.mb_overload_stringRemoved)%0A----------------------------------------------------------------------%0A
