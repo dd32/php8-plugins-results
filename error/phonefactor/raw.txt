@@ -1,0 +1,37 @@
+::warning::Plugin: https://wordpress.org/plugins/phonefactor/%0ATrac: https://plugins.trac.wordpress.org/browser/phonefactor/
+No syntax errors detected in phonefactor/phonefactor/pf/pf_auth.php
+No syntax errors detected in phonefactor/phonefactor/phonefactor.php
+No syntax errors detected in phonefactor/phonefactor/phonefactor-register.php
+.[31mE[0m[31mE[0m 3 / 3 (100%)
+
+
+
+[1mFILE: phonefactor.php[0m
+----------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 651 | [31mERROR[0m | [1mFunction split() is deprecated since PHP 5.3 and
+     |       | removed since PHP 7.0; Use preg_split(), explode() or
+     |       | str_split() instead[0m
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.splitDeprecatedRemoved)
+----------------------------------------------------------------------
+
+
+[1mFILE: phonefactor-register.php[0m
+----------------------------------------------------------------------
+[1mFOUND 3 ERRORS AFFECTING 2 LINES[0m
+----------------------------------------------------------------------
+  70 | [31mERROR[0m | [1mDeclaration of a PHP4 style class constructor is
+     |       | deprecated since PHP 7.0 and removed since PHP 8.0[0m
+     |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+ 139 | [31mERROR[0m | [1mExtension 'ereg' is deprecated since PHP 5.3 and
+     |       | removed since PHP 7.0; Use pcre instead[0m
+     |       | (PHPCompatibility.Extensions.RemovedExtensions.eregDeprecatedRemoved)
+ 139 | [31mERROR[0m | [1mFunction eregi() is deprecated since PHP 5.3 and
+     |       | removed since PHP 7.0; Use preg_match() (with the i
+     |       | modifier) instead[0m
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eregiDeprecatedRemoved)
+----------------------------------------------------------------------
+
+Time: 159ms; Memory: 14MB
+::error::FILE: phonefactor.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 651 | ERROR | Function split() is deprecated since PHP 5.3 and%0A     |       | removed since PHP 7.0; Use preg_split(), explode() or%0A     |       | str_split() instead%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.splitDeprecatedRemoved)%0A----------------------------------------------------------------------%0A%0A%0AFILE: phonefactor-register.php%0A----------------------------------------------------------------------%0AFOUND 3 ERRORS AFFECTING 2 LINES%0A----------------------------------------------------------------------%0A  70 | ERROR | Declaration of a PHP4 style class constructor is%0A     |       | deprecated since PHP 7.0 and removed since PHP 8.0%0A     |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)%0A 139 | ERROR | Extension 'ereg' is deprecated since PHP 5.3 and%0A     |       | removed since PHP 7.0; Use pcre instead%0A     |       | (PHPCompatibility.Extensions.RemovedExtensions.eregDeprecatedRemoved)%0A 139 | ERROR | Function eregi() is deprecated since PHP 5.3 and%0A     |       | removed since PHP 7.0; Use preg_match() (with the i%0A     |       | modifier) instead%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eregiDeprecatedRemoved)%0A----------------------------------------------------------------------%0A
