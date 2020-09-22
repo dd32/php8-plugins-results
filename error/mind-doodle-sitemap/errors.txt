@@ -1,24 +1,44 @@
 
 pages/tasks/new_task.php
+  Fatal error: Unparenthesized `a ? b : c ? d : e` is not supported.
+      Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)`
+      on line 170
 FILE: pages/tasks/new_task.php
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 FOUND 3 ERRORS AFFECTING 3 LINES
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 171 | ERROR | The left-associativity of the ternary operator has been deprecated in PHP 7.4 and removed in PHP 8.0. Multiple consecutive ternaries detected. Use parenthesis to
-     |       | clarify the order in which the operations should be executed (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
- 191 | ERROR | The left-associativity of the ternary operator has been deprecated in PHP 7.4 and removed in PHP 8.0. Multiple consecutive ternaries detected. Use parenthesis to
-     |       | clarify the order in which the operations should be executed (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
- 213 | ERROR | Self-closing XHTML tags are ignored. Only non-self-closing tags should be used in the strip_tags() $allowable_tags parameter since PHP 5.3.4. Found: '<div><p><li><br
-     |       | />' (PHPCompatibility.ParameterValues.ForbiddenStripTagsSelfClosingXHTML.Found)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
+ 171 | ERROR | The left-associativity of the ternary operator has
+     |       | been deprecated in PHP 7.4 and removed in PHP 8.0.
+     |       | Multiple consecutive ternaries detected. Use
+     |       | parenthesis to clarify the order in which the
+     |       | operations should be executed
+     |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
+ 191 | ERROR | The left-associativity of the ternary operator has
+     |       | been deprecated in PHP 7.4 and removed in PHP 8.0.
+     |       | Multiple consecutive ternaries detected. Use
+     |       | parenthesis to clarify the order in which the
+     |       | operations should be executed
+     |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
+ 213 | ERROR | Self-closing XHTML tags are ignored. Only
+     |       | non-self-closing tags should be used in the
+     |       | strip_tags() $allowable_tags parameter since PHP
+     |       | 5.3.4. Found: '<div><p><li><br />'
+     |       | (PHPCompatibility.ParameterValues.ForbiddenStripTagsSelfClosingXHTML.Found)
+----------------------------------------------------------------------
 
 
 FILE: shortcode/shortcode.php
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 FOUND 2 ERRORS AFFECTING 2 LINES
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  76 | ERROR | The "hour" parameter for function mktime() is missing. Passing this parameter is no longer optional. The optional nature of the parameter is deprecated since PHP 5.1
-     |       | and removed since PHP 8.0 (PHPCompatibility.FunctionUse.OptionalToRequiredFunctionParameters.mktime_hourSoftRequiredHardRequired)
- 223 | ERROR | The "hour" parameter for function mktime() is missing. Passing this parameter is no longer optional. The optional nature of the parameter is deprecated since PHP 5.1
-     |       | and removed since PHP 8.0 (PHPCompatibility.FunctionUse.OptionalToRequiredFunctionParameters.mktime_hourSoftRequiredHardRequired)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
+  76 | ERROR | The "hour" parameter for function mktime() is missing.
+     |       | Passing this parameter is no longer optional. The
+     |       | optional nature of the parameter is deprecated since
+     |       | PHP 5.1 and removed since PHP 8.0
+     |       | (PHPCompatibility.FunctionUse.OptionalToRequiredFunctionParameters.mktime_hourSoftRequiredHardRequired)
+ 223 | ERROR | The "hour" parameter for function mktime() is missing.
+     |       | Passing this parameter is no longer optional. The
+     |       | optional nature of the parameter is deprecated since
+     |       | PHP 5.1 and removed since PHP 8.0
+     |       | (PHPCompatibility.FunctionUse.OptionalToRequiredFunctionParameters.mktime_hourSoftRequiredHardRequired)
+----------------------------------------------------------------------
