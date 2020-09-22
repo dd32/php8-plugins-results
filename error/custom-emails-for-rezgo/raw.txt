@@ -1,0 +1,42 @@
+::warning::Plugin: https://wordpress.org/plugins/custom-emails-for-rezgo/%0ATrac: https://plugins.trac.wordpress.org/browser/custom-emails-for-rezgo/
+No syntax errors detected in custom-emails-for-rezgo/custom-emails-for-rezgo/html/bookings.php
+No syntax errors detected in custom-emails-for-rezgo/custom-emails-for-rezgo/html/edit_notification.php
+No syntax errors detected in custom-emails-for-rezgo/custom-emails-for-rezgo/html/log.php
+No syntax errors detected in custom-emails-for-rezgo/custom-emails-for-rezgo/html/notifications.php
+No syntax errors detected in custom-emails-for-rezgo/custom-emails-for-rezgo/html/settings.php
+No syntax errors detected in custom-emails-for-rezgo/custom-emails-for-rezgo/webhook.php
+No syntax errors detected in custom-emails-for-rezgo/custom-emails-for-rezgo/wp-rezgo-custom-emailer.php
+.....[31mE[0m[31mE[0m 7 / 7 (100%)
+
+
+
+[1mFILE: webhook.php[0m
+----------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 8 | [31mERROR[0m | [1mFunction get_magic_quotes_gpc() is deprecated since PHP
+   |       | 7.4 and removed since PHP 8.0[0m
+   |       | (PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_gpcDeprecatedRemoved)
+----------------------------------------------------------------------
+
+
+[1mFILE: wp-rezgo-custom-emailer.php[0m
+----------------------------------------------------------------------
+[1mFOUND 3 ERRORS AFFECTING 3 LINES[0m
+----------------------------------------------------------------------
+  57 | [31mERROR[0m | [1mDeclaration of a PHP4 style class constructor is
+     |       | deprecated since PHP 7.0 and removed since PHP 8.0[0m
+     |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+ 408 | [31mERROR[0m | [1mIndirect access to variables, properties and methods
+     |       | will be evaluated strictly in left-to-right order
+     |       | since PHP 7.0. Use curly braces to remove
+     |       | ambiguity.[0m
+     |       | (PHPCompatibility.Variables.NewUniformVariableSyntax.Found)
+ 622 | [31mERROR[0m | [1mFunction create_function() is deprecated since PHP 7.2
+     |       | and removed since PHP 8.0; Use an anonymous function
+     |       | instead[0m
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
+----------------------------------------------------------------------
+
+Time: 152ms; Memory: 12MB
+::error::FILE: webhook.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 8 | ERROR | Function get_magic_quotes_gpc() is deprecated since PHP%0A   |       | 7.4 and removed since PHP 8.0%0A   |       | (PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_gpcDeprecatedRemoved)%0A----------------------------------------------------------------------%0A%0A%0AFILE: wp-rezgo-custom-emailer.php%0A----------------------------------------------------------------------%0AFOUND 3 ERRORS AFFECTING 3 LINES%0A----------------------------------------------------------------------%0A  57 | ERROR | Declaration of a PHP4 style class constructor is%0A     |       | deprecated since PHP 7.0 and removed since PHP 8.0%0A     |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)%0A 408 | ERROR | Indirect access to variables, properties and methods%0A     |       | will be evaluated strictly in left-to-right order%0A     |       | since PHP 7.0. Use curly braces to remove%0A     |       | ambiguity.%0A     |       | (PHPCompatibility.Variables.NewUniformVariableSyntax.Found)%0A 622 | ERROR | Function create_function() is deprecated since PHP 7.2%0A     |       | and removed since PHP 8.0; Use an anonymous function%0A     |       | instead%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)%0A----------------------------------------------------------------------%0A
