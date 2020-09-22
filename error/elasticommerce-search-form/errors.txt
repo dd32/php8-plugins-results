@@ -1,0 +1,95 @@
+
+vendor/ruflin/elastica/lib/Elastica/Filter/Bool.php
+  Fatal error: Cannot use 'Bool' as class name as it is reserved on line 16
+
+vendor/ruflin/elastica/lib/Elastica/Query/Bool.php
+  Fatal error: Cannot use 'Bool' as class name as it is reserved on line 16
+
+vendor/ruflin/elastica/lib/Elastica/Query/Match.php
+  Parse error: syntax error, unexpected token "match", expecting identifier on line 12
+
+vendor/ruflin/elastica/lib/Elastica/Query/MatchPhrase.php
+  Parse error: syntax error, unexpected token "match" on line 11
+
+vendor/ruflin/elastica/lib/Elastica/Query/MatchPhrasePrefix.php
+  Parse error: syntax error, unexpected token "match" on line 11
+
+vendor/ruflin/elastica/lib/Elastica/QueryBuilder/DSL/Query.php
+  Parse error: syntax error, unexpected token "match" on line 66
+
+vendor/ruflin/elastica/lib/Elastica/Transport/Null.php
+  Fatal error: Cannot use 'Null' as class name as it is reserved on line 11
+
+vendor/ruflin/elastica/test/lib/Elastica/Test/Query/HasChildTest.php
+  Parse error: syntax error, unexpected token "match" on line 67
+
+vendor/ruflin/elastica/test/lib/Elastica/Test/Query/HasParentTest.php
+  Parse error: syntax error, unexpected token "match" on line 97
+
+vendor/ruflin/elastica/test/lib/Elastica/Test/Query/MatchTest.php
+  Parse error: syntax error, unexpected token "match" on line 29
+
+vendor/ruflin/elastica/test/lib/Elastica/Test/Query/PostFilterTest.php
+  Parse error: syntax error, unexpected token "match" on line 116
+
+vendor/ruflin/elastica/test/lib/Elastica/Test/Query/RescoreTest.php
+  Parse error: syntax error, unexpected token "match" on line 18
+
+vendor/ruflin/elastica/test/lib/Elastica/Test/QueryBuilder/DSL/FilterTest.php
+  Parse error: syntax error, unexpected token "match" on line 41
+
+vendor/ruflin/elastica/test/lib/Elastica/Test/QueryBuilder/DSL/QueryTest.php
+  Parse error: syntax error, unexpected token "match" on line 97
+FILE: vendor/ruflin/elastica/lib/Elastica/Filter/Bool.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 16 | ERROR | 'bool' is a reserved keyword as of PHP version 7.0 and
+    |       | should not be used to name a class, interface or trait
+    |       | or as part of a namespace (T_CLASS)
+    |       | (PHPCompatibility.Keywords.ForbiddenNamesAsDeclared.boolFound)
+----------------------------------------------------------------------
+
+
+FILE: vendor/ruflin/elastica/lib/Elastica/Multi/ResultSet.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 64 | ERROR | Function each() is deprecated since PHP 7.2 and removed
+    |       | since PHP 8.0; Use a foreach loop or ArrayIterator
+    |       | instead
+    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)
+----------------------------------------------------------------------
+
+
+FILE: vendor/ruflin/elastica/lib/Elastica/Query/Bool.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 16 | ERROR | 'bool' is a reserved keyword as of PHP version 7.0 and
+    |       | should not be used to name a class, interface or trait
+    |       | or as part of a namespace (T_CLASS)
+    |       | (PHPCompatibility.Keywords.ForbiddenNamesAsDeclared.boolFound)
+----------------------------------------------------------------------
+
+
+FILE: vendor/ruflin/elastica/lib/Elastica/Transport/Http.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 108 | ERROR | Function each() is deprecated since PHP 7.2 and
+     |       | removed since PHP 8.0; Use a foreach loop or
+     |       | ArrayIterator instead
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)
+----------------------------------------------------------------------
+
+
+FILE: vendor/ruflin/elastica/lib/Elastica/Transport/Null.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 11 | ERROR | 'null' is a reserved keyword as of PHP version 7.0 and
+    |       | should not be used to name a class, interface or trait
+    |       | or as part of a namespace (T_CLASS)
+    |       | (PHPCompatibility.Keywords.ForbiddenNamesAsDeclared.nullFound)
+----------------------------------------------------------------------
