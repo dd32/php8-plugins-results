@@ -789,6 +789,8 @@ No syntax errors detected in miniorange-oauth-20-server/miniorange-oauth-20-serv
 No syntax errors detected in miniorange-oauth-20-server/miniorange-oauth-20-server/vendor/twig/twig/lib/Twig/NodeCaptureInterface.php
 No syntax errors detected in miniorange-oauth-20-server/miniorange-oauth-20-server/vendor/twig/twig/lib/Twig/NodeInterface.php
 No syntax errors detected in miniorange-oauth-20-server/miniorange-oauth-20-server/vendor/twig/twig/lib/Twig/NodeOutputInterface.php
+
+Fatal error: Unparenthesized `a ? b : c ? d : e` is not supported. Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)` in miniorange-oauth-20-server/miniorange-oauth-20-server/vendor/twig/twig/lib/Twig/Node.php on line 42
 Errors parsing miniorange-oauth-20-server/miniorange-oauth-20-server/vendor/twig/twig/lib/Twig/Node.php
 No syntax errors detected in miniorange-oauth-20-server/miniorange-oauth-20-server/vendor/twig/twig/lib/Twig/NodeTraverser.php
 No syntax errors detected in miniorange-oauth-20-server/miniorange-oauth-20-server/vendor/twig/twig/lib/Twig/NodeVisitor/Escaper.php
@@ -1023,7 +1025,7 @@ No syntax errors detected in miniorange-oauth-20-server/miniorange-oauth-20-serv
 No syntax errors detected in miniorange-oauth-20-server/miniorange-oauth-20-server/vendor/twig/twig/src/Util/TemplateDirIterator.php
 No syntax errors detected in miniorange-oauth-20-server/miniorange-oauth-20-server/views/MOOAuthServerPointersManager.php
 No syntax errors detected in miniorange-oauth-20-server/miniorange-oauth-20-server/web/index.php
-::error::%0Avendor/twig/twig/lib/Twig/Node.php
+::error::%0Avendor/twig/twig/lib/Twig/Node.php%0A  Fatal error: Unparenthesized `a ? b : c ? d : e` is not supported.%0A      Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)`%0A      on line 42
 ............................................................   60 / 1024 (6%)
 ............................................................  120 / 1024 (12%)
 ............................................................  180 / 1024 (18%)
@@ -1046,14 +1048,22 @@ No syntax errors detected in miniorange-oauth-20-server/miniorange-oauth-20-serv
 
 
 [1mFILE: vendor/twig/twig/lib/Twig/Node.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 2 ERRORS AFFECTING 2 LINES[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  42 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has been deprecated in PHP 7.4 and removed in PHP 8.0. Multiple consecutive ternaries detected. Use parenthesis to
-     |       | clarify the order in which the operations should be executed[0m (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
- 198 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has been deprecated in PHP 7.4 and removed in PHP 8.0. Multiple consecutive ternaries detected. Use parenthesis to
-     |       | clarify the order in which the operations should be executed[0m (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
+  42 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has
+     |       | been deprecated in PHP 7.4 and removed in PHP 8.0.
+     |       | Multiple consecutive ternaries detected. Use
+     |       | parenthesis to clarify the order in which the
+     |       | operations should be executed[0m
+     |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
+ 198 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has
+     |       | been deprecated in PHP 7.4 and removed in PHP 8.0.
+     |       | Multiple consecutive ternaries detected. Use
+     |       | parenthesis to clarify the order in which the
+     |       | operations should be executed[0m
+     |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
+----------------------------------------------------------------------
 
-Time: 10.42 secs; Memory: 24MB
-::error::FILE: vendor/twig/twig/lib/Twig/Node.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A  42 | ERROR | The left-associativity of the ternary operator has been deprecated in PHP 7.4 and removed in PHP 8.0. Multiple consecutive ternaries detected. Use parenthesis to%0A     |       | clarify the order in which the operations should be executed (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A 198 | ERROR | The left-associativity of the ternary operator has been deprecated in PHP 7.4 and removed in PHP 8.0. Multiple consecutive ternaries detected. Use parenthesis to%0A     |       | clarify the order in which the operations should be executed (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
+Time: 9.83 secs; Memory: 24MB
+::error::FILE: vendor/twig/twig/lib/Twig/Node.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A----------------------------------------------------------------------%0A  42 | ERROR | The left-associativity of the ternary operator has%0A     |       | been deprecated in PHP 7.4 and removed in PHP 8.0.%0A     |       | Multiple consecutive ternaries detected. Use%0A     |       | parenthesis to clarify the order in which the%0A     |       | operations should be executed%0A     |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A 198 | ERROR | The left-associativity of the ternary operator has%0A     |       | been deprecated in PHP 7.4 and removed in PHP 8.0.%0A     |       | Multiple consecutive ternaries detected. Use%0A     |       | parenthesis to clarify the order in which the%0A     |       | operations should be executed%0A     |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A----------------------------------------------------------------------%0A

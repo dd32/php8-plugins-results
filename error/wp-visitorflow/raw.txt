@@ -113,6 +113,8 @@ No syntax errors detected in wp-visitorflow/wp-visitorflow/trunk/vendor/doctrine
 No syntax errors detected in wp-visitorflow/wp-visitorflow/trunk/vendor/doctrine/cache/lib/Doctrine/Common/Cache/PhpFileCache.php
 No syntax errors detected in wp-visitorflow/wp-visitorflow/trunk/vendor/doctrine/cache/lib/Doctrine/Common/Cache/PredisCache.php
 No syntax errors detected in wp-visitorflow/wp-visitorflow/trunk/vendor/doctrine/cache/lib/Doctrine/Common/Cache/RedisCache.php
+
+Fatal error: Cannot use Riak\Object as Object because 'Object' is a special class name in wp-visitorflow/wp-visitorflow/trunk/vendor/doctrine/cache/lib/Doctrine/Common/Cache/RiakCache.php on line 26
 Errors parsing wp-visitorflow/wp-visitorflow/trunk/vendor/doctrine/cache/lib/Doctrine/Common/Cache/RiakCache.php
 No syntax errors detected in wp-visitorflow/wp-visitorflow/trunk/vendor/doctrine/cache/lib/Doctrine/Common/Cache/SQLite3Cache.php
 No syntax errors detected in wp-visitorflow/wp-visitorflow/trunk/vendor/doctrine/cache/lib/Doctrine/Common/Cache/Version.php
@@ -235,6 +237,8 @@ No syntax errors detected in wp-visitorflow/wp-visitorflow/vendor/doctrine/cache
 No syntax errors detected in wp-visitorflow/wp-visitorflow/vendor/doctrine/cache/lib/Doctrine/Common/Cache/PhpFileCache.php
 No syntax errors detected in wp-visitorflow/wp-visitorflow/vendor/doctrine/cache/lib/Doctrine/Common/Cache/PredisCache.php
 No syntax errors detected in wp-visitorflow/wp-visitorflow/vendor/doctrine/cache/lib/Doctrine/Common/Cache/RedisCache.php
+
+Fatal error: Cannot use Riak\Object as Object because 'Object' is a special class name in wp-visitorflow/wp-visitorflow/vendor/doctrine/cache/lib/Doctrine/Common/Cache/RiakCache.php on line 26
 Errors parsing wp-visitorflow/wp-visitorflow/vendor/doctrine/cache/lib/Doctrine/Common/Cache/RiakCache.php
 No syntax errors detected in wp-visitorflow/wp-visitorflow/vendor/doctrine/cache/lib/Doctrine/Common/Cache/SQLite3Cache.php
 No syntax errors detected in wp-visitorflow/wp-visitorflow/vendor/doctrine/cache/lib/Doctrine/Common/Cache/Version.php
@@ -325,7 +329,7 @@ No syntax errors detected in wp-visitorflow/wp-visitorflow/vendor/piwik/device-d
 No syntax errors detected in wp-visitorflow/wp-visitorflow/vendor/piwik/device-detector/Yaml/Spyc.php
 No syntax errors detected in wp-visitorflow/wp-visitorflow/vendor/piwik/device-detector/Yaml/Symfony.php
 No syntax errors detected in wp-visitorflow/wp-visitorflow/wp-visitorflow.php
-::error::%0Atrunk/vendor/doctrine/cache/lib/Doctrine/Common/Cache/RiakCache.php%0A%0Avendor/doctrine/cache/lib/Doctrine/Common/Cache/RiakCache.php
+::error::%0Atrunk/vendor/doctrine/cache/lib/Doctrine/Common/Cache/RiakCache.php%0A  Fatal error: Cannot use Riak\Object as Object because 'Object' is a special class name on line 26%0A%0Avendor/doctrine/cache/lib/Doctrine/Common/Cache/RiakCache.php%0A  Fatal error: Cannot use Riak\Object as Object because 'Object' is a special class name on line 26
 ..............[31mE[0m........................................[31mE[0m....  60 / 326 (18%)
 ............................................................ 120 / 326 (37%)
 ............................................................ 180 / 326 (55%)
@@ -336,21 +340,23 @@ No syntax errors detected in wp-visitorflow/wp-visitorflow/wp-visitorflow.php
 
 
 [1mFILE: includes/classes/class-wp-visitorflow-database.php[0m
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 294 | [31mERROR[0m | [1m"$this" can no longer be used in a plain function or method since PHP 7.1.[0m
+----------------------------------------------------------------------
+ 294 | [31mERROR[0m | [1m"$this" can no longer be used in a plain function or
+     |       | method since PHP 7.1.[0m
      |       | (PHPCompatibility.Variables.ForbiddenThisUseContexts.OutsideObjectContext)
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 [1mFILE: trunk/includes/classes/class-wp-visitorflow-database.php[0m
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 294 | [31mERROR[0m | [1m"$this" can no longer be used in a plain function or method since PHP 7.1.[0m
+----------------------------------------------------------------------
+ 294 | [31mERROR[0m | [1m"$this" can no longer be used in a plain function or
+     |       | method since PHP 7.1.[0m
      |       | (PHPCompatibility.Variables.ForbiddenThisUseContexts.OutsideObjectContext)
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
-Time: 5.17 secs; Memory: 20MB
-::error::FILE: includes/classes/class-wp-visitorflow-database.php%0A---------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A---------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 294 | ERROR | "$this" can no longer be used in a plain function or method since PHP 7.1.%0A     |       | (PHPCompatibility.Variables.ForbiddenThisUseContexts.OutsideObjectContext)%0A---------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: trunk/includes/classes/class-wp-visitorflow-database.php%0A---------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A---------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 294 | ERROR | "$this" can no longer be used in a plain function or method since PHP 7.1.%0A     |       | (PHPCompatibility.Variables.ForbiddenThisUseContexts.OutsideObjectContext)%0A---------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
+Time: 4.95 secs; Memory: 20MB
+::error::FILE: includes/classes/class-wp-visitorflow-database.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 294 | ERROR | "$this" can no longer be used in a plain function or%0A     |       | method since PHP 7.1.%0A     |       | (PHPCompatibility.Variables.ForbiddenThisUseContexts.OutsideObjectContext)%0A----------------------------------------------------------------------%0A%0A%0AFILE: trunk/includes/classes/class-wp-visitorflow-database.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 294 | ERROR | "$this" can no longer be used in a plain function or%0A     |       | method since PHP 7.1.%0A     |       | (PHPCompatibility.Variables.ForbiddenThisUseContexts.OutsideObjectContext)%0A----------------------------------------------------------------------%0A
