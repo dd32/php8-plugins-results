@@ -1,93 +1,125 @@
 
 libraries/TeamSpeak3/Helper/Char.php
+  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 186
 
 libraries/TeamSpeak3/Helper/String.php
+  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 541
 
 libraries/TeamSpeak3/Node/Channelgroup.php
+  Fatal error: Cannot unset $this on line 79
 
 libraries/TeamSpeak3/Node/Channel.php
+  Fatal error: Cannot unset $this on line 408
 
 libraries/TeamSpeak3/Node/Servergroup.php
+  Fatal error: Cannot unset $this on line 79
 
 libraries/TeamSpeak3/Node/Server.php
+  Fatal error: Cannot unset $this on line 1351
 FILE: libraries/TeamSpeak3/Helper/Char.php
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 FOUND 7 ERRORS AFFECTING 4 LINES
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 186 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $this->char{0}
+----------------------------------------------------------------------
+ 186 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $this->char{0}
      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
- 198 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $this->char{1}
+ 198 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $this->char{1}
      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
- 202 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $this->char{1}
+ 202 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $this->char{1}
      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
- 202 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $this->char{2}
+ 202 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $this->char{2}
      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
- 206 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $this->char{1}
+ 206 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $this->char{1}
      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
- 206 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $this->char{2}
+ 206 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $this->char{2}
      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
- 206 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $this->char{3}
+ 206 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $this->char{3}
      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 PHPCBF CAN FIX THE 7 MARKED SNIFF VIOLATIONS AUTOMATICALLY
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 FILE: libraries/TeamSpeak3/Helper/String.php
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 FOUND 3 ERRORS AFFECTING 3 LINES
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 541 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found:
-     |       |     $this->string{$this->position} (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
- 565 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $this->string{$offset}
+----------------------------------------------------------------------
+ 541 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found:
+     |       |     $this->string{$this->position}
      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
- 575 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $this->string{$offset}
+ 565 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found:
+     |       |     $this->string{$offset}
      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 575 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found:
+     |       |     $this->string{$offset}
+     |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+----------------------------------------------------------------------
 PHPCBF CAN FIX THE 3 MARKED SNIFF VIOLATIONS AUTOMATICALLY
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 FILE: libraries/TeamSpeak3/Node/Channelgroup.php
-------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 FOUND 1 ERROR AFFECTING 1 LINE
-------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
  79 | ERROR | "$this" can no longer be unset since PHP 7.1.
     |       | (PHPCompatibility.Variables.ForbiddenThisUseContexts.Unset)
-------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 FILE: libraries/TeamSpeak3/Node/Channel.php
--------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 FOUND 1 ERROR AFFECTING 1 LINE
--------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
  408 | ERROR | "$this" can no longer be unset since PHP 7.1.
      |       | (PHPCompatibility.Variables.ForbiddenThisUseContexts.Unset)
--------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 FILE: libraries/TeamSpeak3/Node/Servergroup.php
-------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 FOUND 1 ERROR AFFECTING 1 LINE
-------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
  79 | ERROR | "$this" can no longer be unset since PHP 7.1.
     |       | (PHPCompatibility.Variables.ForbiddenThisUseContexts.Unset)
-------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 FILE: libraries/TeamSpeak3/Node/Server.php
---------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 FOUND 1 ERROR AFFECTING 1 LINE
---------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
  1351 | ERROR | "$this" can no longer be unset since PHP 7.1.
       |       | (PHPCompatibility.Variables.ForbiddenThisUseContexts.Unset)
---------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 FILE: ts3_wp_viewer.php
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 FOUND 1 ERROR AFFECTING 1 LINE
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 132 | ERROR | Passing the $glue and $pieces parameters in reverse order to join has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first parameter
-     |       | and $pieces the second (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
+ 132 | ERROR | Passing the $glue and $pieces parameters in reverse
+     |       | order to join has been deprecated since PHP 7.4 and is
+     |       | removed since PHP 8.0; $glue should be the first
+     |       | parameter and $pieces the second
+     |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
+----------------------------------------------------------------------
