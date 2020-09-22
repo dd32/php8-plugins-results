@@ -372,6 +372,10 @@ No syntax errors detected in awebooking/awebooking/inc/Support/Plugin_Updater.ph
 No syntax errors detected in awebooking/awebooking/inc/Support/Service_Provider.php
 No syntax errors detected in awebooking/awebooking/inc/Support/Traits/Fluent_Getter.php
 
+Warning: Private methods cannot be final as they are never overridden by other classes in awebooking/awebooking/inc/Support/Traits/Singleton.php on line 31
+
+Warning: Private methods cannot be final as they are never overridden by other classes in awebooking/awebooking/inc/Support/Traits/Singleton.php on line 38
+
 Warning: The magic method AweBooking\Support\Traits\Singleton::__wakeup() must have public visibility in awebooking/awebooking/inc/Support/Traits/Singleton.php on line 38
 No syntax errors detected in awebooking/awebooking/inc/Support/Traits/Singleton.php
 No syntax errors detected in awebooking/awebooking/inc/Support/WP_Data.php
@@ -1024,8 +1028,7 @@ Errors parsing awebooking/awebooking/vendor/wplibs/view/src/Twig/Extensions/WP_T
 No syntax errors detected in awebooking/awebooking/vendor/wplibs/view/src/Twig/Loader.php
 No syntax errors detected in awebooking/awebooking/vendor/wplibs/view/src/View_Factory.php
 No syntax errors detected in awebooking/awebooking/vendor/wplibs/view/src/View.php
-::error::%0Ainc/Support/Traits/Singleton.php%0A  Warning: The magic method AweBooking\Support\Traits\Singleton::__wakeup() must have public visibility on line 38%0A%0Avendor/wplibs/view/src/Twig/Extensions/WP_Twig_Extension.php%0A  Parse error: syntax error, unexpected token "fn", expecting identifier on line 6
-No syntax errors detected in awebooking/awebooking/vendor/wplibs/view/src/View.php
+::error::%0Ainc/Support/Traits/Singleton.php%0A  Warning: Private methods cannot be final as they are never overridden by other classes on line 31%0A  Warning: Private methods cannot be final as they are never overridden by other classes on line 38%0A  Warning: The magic method AweBooking\Support\Traits\Singleton::__wakeup() must have public visibility on line 38%0A%0Avendor/wplibs/view/src/Twig/Extensions/WP_Twig_Extension.php%0A  Parse error: syntax error, unexpected token "fn", expecting identifier on line 6
 ............................................................   60 / 1016 (6%)
 ............................................................  120 / 1016 (12%)
 ............................................................  180 / 1016 (18%)
@@ -1045,4 +1048,4 @@ No syntax errors detected in awebooking/awebooking/vendor/wplibs/view/src/View.p
 ........................................................     1016 / 1016 (100%)
 
 
-Time: 13.82 secs; Memory: 28MB
+Time: 14.2 secs; Memory: 28MB
