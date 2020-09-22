@@ -1,0 +1,35 @@
+FILE: vendor/egeloen/http-adapter/src/HttpAdapterFactory.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 156 | ERROR | Indirect access to variables, properties and methods
+     |       | will be evaluated strictly in left-to-right order
+     |       | since PHP 7.0. Use curly braces to remove
+     |       | ambiguity.
+     |       | (PHPCompatibility.Variables.NewUniformVariableSyntax.Found)
+----------------------------------------------------------------------
+
+
+FILE: vendor/lstrojny/fxmlrpc/src/fXmlRpc/Parser/NativeParser.php
+----------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+----------------------------------------------------------------------
+ 44 | ERROR | Function xmlrpc_decode() is removed since PHP 8.0
+    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.xmlrpc_decodeRemoved)
+ 80 | ERROR | Function xmlrpc_is_fault() is removed since PHP 8.0
+    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.xmlrpc_is_faultRemoved)
+----------------------------------------------------------------------
+
+
+FILE: ...dor/lstrojny/fxmlrpc/src/fXmlRpc/Serializer/NativeSerializer.php
+----------------------------------------------------------------------
+FOUND 3 ERRORS AFFECTING 3 LINES
+----------------------------------------------------------------------
+ 55 | ERROR | Function xmlrpc_set_type() is removed since PHP 8.0
+    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.xmlrpc_set_typeRemoved)
+ 58 | ERROR | Function xmlrpc_set_type() is removed since PHP 8.0
+    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.xmlrpc_set_typeRemoved)
+ 69 | ERROR | Function xmlrpc_encode_request() is removed since PHP
+    |       | 8.0
+    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.xmlrpc_encode_requestRemoved)
+----------------------------------------------------------------------

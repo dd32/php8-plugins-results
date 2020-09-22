@@ -1,5 +1,46 @@
 ::warning::Plugin: https://wordpress.org/plugins/wp2pgpmail/%0ATrac: https://plugins.trac.wordpress.org/browser/wp2pgpmail/
-ERROR: The specified basepath "wp2pgpmail/wp2pgpmail" points to a non-existent directory
+No syntax errors detected in wp2pgpmail/wp2pgpmail/classes/formulaire.inc.php
+No syntax errors detected in wp2pgpmail/wp2pgpmail/classes/index.php
+No syntax errors detected in wp2pgpmail/wp2pgpmail/i18n/index.php
+No syntax errors detected in wp2pgpmail/wp2pgpmail/images/index.php
+No syntax errors detected in wp2pgpmail/wp2pgpmail/index.php
+No syntax errors detected in wp2pgpmail/wp2pgpmail/js/index.php
+No syntax errors detected in wp2pgpmail/wp2pgpmail/phpcaptcha/audio/index.php
+No syntax errors detected in wp2pgpmail/wp2pgpmail/phpcaptcha/backgrounds/index.php
+No syntax errors detected in wp2pgpmail/wp2pgpmail/phpcaptcha/example_form.ajax.php
+No syntax errors detected in wp2pgpmail/wp2pgpmail/phpcaptcha/example_form.php
+No syntax errors detected in wp2pgpmail/wp2pgpmail/phpcaptcha/images/index.php
+No syntax errors detected in wp2pgpmail/wp2pgpmail/phpcaptcha/index.php
+No syntax errors detected in wp2pgpmail/wp2pgpmail/phpcaptcha/securimage.php
+No syntax errors detected in wp2pgpmail/wp2pgpmail/phpcaptcha/securimage_play.php
+No syntax errors detected in wp2pgpmail/wp2pgpmail/phpcaptcha/securimage_show.php
 
-Run "phpcs --help" for usage information
-::error::
+Fatal error: Array and string offset access syntax with curly braces is no longer supported in wp2pgpmail/wp2pgpmail/phpcaptcha/WavFile.php on line 1569
+Errors parsing wp2pgpmail/wp2pgpmail/phpcaptcha/WavFile.php
+No syntax errors detected in wp2pgpmail/wp2pgpmail/phpcaptcha/words/index.php
+No syntax errors detected in wp2pgpmail/wp2pgpmail/wp2pgpmail.php
+::error::%0Aphpcaptcha/WavFile.php%0A  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 1569
+...............[32mE[0m.. 18 / 18 (100%)
+
+
+
+[1mFILE: phpcaptcha/WavFile.php[0m
+----------------------------------------------------------------------
+[1mFOUND 2 ERRORS AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 1569 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found:
+      |       |     $this->_samples{$offset + $i}[0m
+      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 1569 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements
+      |       |     and string offsets has been deprecated in PHP 7.4
+      |       |     and removed in PHP 8.0. Found:
+      |       |     $sampleBinary{$i}[0m
+      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+----------------------------------------------------------------------
+[1mPHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
+----------------------------------------------------------------------
+
+Time: 926ms; Memory: 30MB
+::error::FILE: phpcaptcha/WavFile.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 1569 | ERROR | [x] Curly brace syntax for accessing array elements%0A      |       |     and string offsets has been deprecated in PHP 7.4%0A      |       |     and removed in PHP 8.0. Found:%0A      |       |     $this->_samples{$offset + $i}%0A      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A 1569 | ERROR | [x] Curly brace syntax for accessing array elements%0A      |       |     and string offsets has been deprecated in PHP 7.4%0A      |       |     and removed in PHP 8.0. Found:%0A      |       |     $sampleBinary{$i}%0A      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A----------------------------------------------------------------------%0APHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A----------------------------------------------------------------------%0A
