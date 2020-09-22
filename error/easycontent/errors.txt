@@ -1,0 +1,93 @@
+FILE: vendor/cakephp/database/Type.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 109 | ERROR | Indirect access to variables, properties and methods
+     |       | will be evaluated strictly in left-to-right order
+     |       | since PHP 7.0. Use curly braces to remove
+     |       | ambiguity.
+     |       | (PHPCompatibility.Variables.NewUniformVariableSyntax.Found)
+----------------------------------------------------------------------
+
+
+FILE: vendor/paragonie/random_compat/lib/byte_safe_strings.php
+----------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+----------------------------------------------------------------------
+ 33 | ERROR | The constant "MB_OVERLOAD_STRING" is removed since PHP
+    |       | 8.0
+    |       | (PHPCompatibility.Constants.RemovedConstants.mb_overload_stringRemoved)
+ 87 | ERROR | The constant "MB_OVERLOAD_STRING" is removed since PHP
+    |       | 8.0
+    |       | (PHPCompatibility.Constants.RemovedConstants.mb_overload_stringRemoved)
+----------------------------------------------------------------------
+
+
+FILE: vendor/robmorgan/phinx/src/Phinx/Db/Adapter/SQLiteAdapter.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 916 | ERROR | preg_replace() - /e modifier is deprecated since PHP
+     |       | 5.5 and removed since PHP 7.0
+     |       | (PHPCompatibility.ParameterValues.RemovedPCREModifiers.Removed)
+----------------------------------------------------------------------
+
+
+FILE: vendor/symfony/config/Tests/Util/XmlUtilsTest.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 145 | ERROR | The behaviour of hexadecimal numeric strings was
+     |       | inconsistent prior to PHP 7 and support has been
+     |       | removed in PHP 7. Found: '0xFF'
+     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
+----------------------------------------------------------------------
+
+
+FILE: ...symfony/form/Tests/Extension/Validator/Util/ServerParamsTest.php
+----------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+----------------------------------------------------------------------
+ 59 | ERROR | The behaviour of hexadecimal numeric strings was
+    |       | inconsistent prior to PHP 7 and support has been
+    |       | removed in PHP 7. Found: '0x10'
+    |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
+ 60 | ERROR | The behaviour of hexadecimal numeric strings was
+    |       | inconsistent prior to PHP 7 and support has been
+    |       | removed in PHP 7. Found: '0xf'
+    |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
+----------------------------------------------------------------------
+
+
+FILE: vendor/symfony/http-foundation/Tests/ParameterBagTest.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 135 | ERROR | The behaviour of hexadecimal numeric strings was
+     |       | inconsistent prior to PHP 7 and support has been
+     |       | removed in PHP 7. Found: '0x100'
+     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
+----------------------------------------------------------------------
+
+
+FILE: vendor/symfony/yaml/Tests/InlineTest.php
+----------------------------------------------------------------------
+FOUND 4 ERRORS AFFECTING 4 LINES
+----------------------------------------------------------------------
+ 362 | ERROR | The behaviour of hexadecimal numeric strings was
+     |       | inconsistent prior to PHP 7 and support has been
+     |       | removed in PHP 7. Found: '0x4D2'
+     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
+ 363 | ERROR | The behaviour of hexadecimal numeric strings was
+     |       | inconsistent prior to PHP 7 and support has been
+     |       | removed in PHP 7. Found: '0x_4_D_2_'
+     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
+ 443 | ERROR | The behaviour of hexadecimal numeric strings was
+     |       | inconsistent prior to PHP 7 and support has been
+     |       | removed in PHP 7. Found: '0x4D2'
+     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
+ 526 | ERROR | The behaviour of hexadecimal numeric strings was
+     |       | inconsistent prior to PHP 7 and support has been
+     |       | removed in PHP 7. Found: '0x_4_D_2_'
+     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
+----------------------------------------------------------------------

@@ -1,0 +1,48 @@
+::warning::Plugin: https://wordpress.org/plugins/simple-event-scheduler/%0ATrac: https://plugins.trac.wordpress.org/browser/simple-event-scheduler/
+No syntax errors detected in simple-event-scheduler/simple-event-scheduler/includes/admin/class-se-scheduler-admin-menu.php
+No syntax errors detected in simple-event-scheduler/simple-event-scheduler/includes/admin/class-se-scheduler-admin-updates.php
+No syntax errors detected in simple-event-scheduler/simple-event-scheduler/includes/class-se-scheduler-cache.php
+No syntax errors detected in simple-event-scheduler/simple-event-scheduler/includes/class-se-scheduler-captcha.php
+No syntax errors detected in simple-event-scheduler/simple-event-scheduler/includes/class-se-scheduler-logic.php
+No syntax errors detected in simple-event-scheduler/simple-event-scheduler/includes/class-se-scheduler-post-types.php
+No syntax errors detected in simple-event-scheduler/simple-event-scheduler/includes/class-se-scheduler-query.php
+No syntax errors detected in simple-event-scheduler/simple-event-scheduler/includes/class-se-scheduler-scripts.php
+No syntax errors detected in simple-event-scheduler/simple-event-scheduler/includes/class-se-scheduler-settings.php
+No syntax errors detected in simple-event-scheduler/simple-event-scheduler/includes/class-se-scheduler-shortcodes.php
+No syntax errors detected in simple-event-scheduler/simple-event-scheduler/includes/class-se-scheduler-utilities.php
+No syntax errors detected in simple-event-scheduler/simple-event-scheduler/includes/post-types/class-se-scheduler-post-type-event.php
+No syntax errors detected in simple-event-scheduler/simple-event-scheduler/simple-event-scheduler.php
+No syntax errors detected in simple-event-scheduler/simple-event-scheduler/templates/admin/users-events.php
+No syntax errors detected in simple-event-scheduler/simple-event-scheduler/templates/content-eventcalendar.php
+No syntax errors detected in simple-event-scheduler/simple-event-scheduler/templates/content-events.php
+No syntax errors detected in simple-event-scheduler/simple-event-scheduler/templates/content-modal.php
+No syntax errors detected in simple-event-scheduler/simple-event-scheduler/uninstall.php
+......[31mE[0m........[31mE[0m.. 18 / 18 (100%)
+
+
+
+[1mFILE: includes/class-se-scheduler-query.php[0m
+----------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 73 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse
+    |       | order to implode has been deprecated since PHP 7.4 and
+    |       | is removed since PHP 8.0; $glue should be the first
+    |       | parameter and $pieces the second[0m
+    |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
+----------------------------------------------------------------------
+
+
+[1mFILE: templates/content-events.php[0m
+----------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 20 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse
+    |       | order to implode has been deprecated since PHP 7.4 and
+    |       | is removed since PHP 8.0; $glue should be the first
+    |       | parameter and $pieces the second[0m
+    |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
+----------------------------------------------------------------------
+
+Time: 339ms; Memory: 12MB
+::error::FILE: includes/class-se-scheduler-query.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 73 | ERROR | Passing the $glue and $pieces parameters in reverse%0A    |       | order to implode has been deprecated since PHP 7.4 and%0A    |       | is removed since PHP 8.0; $glue should be the first%0A    |       | parameter and $pieces the second%0A    |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A----------------------------------------------------------------------%0A%0A%0AFILE: templates/content-events.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 20 | ERROR | Passing the $glue and $pieces parameters in reverse%0A    |       | order to implode has been deprecated since PHP 7.4 and%0A    |       | is removed since PHP 8.0; $glue should be the first%0A    |       | parameter and $pieces the second%0A    |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A----------------------------------------------------------------------%0A
