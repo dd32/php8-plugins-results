@@ -1,0 +1,39 @@
+
+lib/admin-page-framework.min.php
+  Fatal error: Unparenthesized `a ? b : c ? d : e` is not supported.
+      Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)`
+      on line 4189
+FILE: lib/admin-page-framework.min.php
+----------------------------------------------------------------------
+FOUND 5 ERRORS AFFECTING 5 LINES
+----------------------------------------------------------------------
+ 4189 | ERROR | The left-associativity of the ternary operator has
+      |       | been deprecated in PHP 7.4 and removed in PHP 8.0.
+      |       | Multiple consecutive ternaries detected. Use
+      |       | parenthesis to clarify the order in which the
+      |       | operations should be executed
+      |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
+ 4411 | ERROR | The left-associativity of the ternary operator has
+      |       | been deprecated in PHP 7.4 and removed in PHP 8.0.
+      |       | Multiple consecutive ternaries detected. Use
+      |       | parenthesis to clarify the order in which the
+      |       | operations should be executed
+      |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
+ 4421 | ERROR | The left-associativity of the ternary operator has
+      |       | been deprecated in PHP 7.4 and removed in PHP 8.0.
+      |       | Multiple consecutive ternaries detected. Use
+      |       | parenthesis to clarify the order in which the
+      |       | operations should be executed
+      |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
+ 4428 | ERROR | The left-associativity of the ternary operator has
+      |       | been deprecated in PHP 7.4 and removed in PHP 8.0.
+      |       | Multiple consecutive ternaries detected. Use
+      |       | parenthesis to clarify the order in which the
+      |       | operations should be executed
+      |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
+ 8399 | ERROR | Indirect access to variables, properties and methods
+      |       | will be evaluated strictly in left-to-right order
+      |       | since PHP 7.0. Use curly braces to remove
+      |       | ambiguity.
+      |       | (PHPCompatibility.Variables.NewUniformVariableSyntax.Found)
+----------------------------------------------------------------------

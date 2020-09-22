@@ -1,0 +1,122 @@
+
+app/Controllers/FrontController.php
+  Fatal error: Unparenthesized `a ? b : c ? d : e` is not supported.
+      Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)`
+      on line 1091
+
+vendor/twig/twig/lib/Twig/Node.php
+  Fatal error: Unparenthesized `a ? b : c ? d : e` is not supported.
+      Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)`
+      on line 42
+
+vendor/vierbergenlars/php-semver/src/vierbergenlars/LibJs/Object.php
+  Fatal error: Cannot use 'Object' as class name as it is reserved on line 29
+FILE: app/Controllers/FrontController.php
+----------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+----------------------------------------------------------------------
+ 1091 | ERROR | The left-associativity of the ternary operator has
+      |       | been deprecated in PHP 7.4 and removed in PHP 8.0.
+      |       | Multiple consecutive ternaries detected. Use
+      |       | parenthesis to clarify the order in which the
+      |       | operations should be executed
+      |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
+ 1381 | ERROR | The left-associativity of the ternary operator has
+      |       | been deprecated in PHP 7.4 and removed in PHP 8.0.
+      |       | Multiple consecutive ternaries detected. Use
+      |       | parenthesis to clarify the order in which the
+      |       | operations should be executed
+      |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
+----------------------------------------------------------------------
+
+
+FILE: vendor/getherbert/framework/bootstrap/autoload.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 72 | ERROR | Function create_function() is deprecated since PHP 7.2
+    |       | and removed since PHP 8.0; Use an anonymous function
+    |       | instead
+    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
+----------------------------------------------------------------------
+
+
+FILE: vendor/paragonie/random_compat/lib/byte_safe_strings.php
+----------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+----------------------------------------------------------------------
+ 32 | ERROR | The constant "MB_OVERLOAD_STRING" is removed since PHP
+    |       | 8.0
+    |       | (PHPCompatibility.Constants.RemovedConstants.mb_overload_stringRemoved)
+ 86 | ERROR | The constant "MB_OVERLOAD_STRING" is removed since PHP
+    |       | 8.0
+    |       | (PHPCompatibility.Constants.RemovedConstants.mb_overload_stringRemoved)
+----------------------------------------------------------------------
+
+
+FILE: vendor/symfony/http-foundation/Tests/ParameterBagTest.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 134 | ERROR | The behaviour of hexadecimal numeric strings was
+     |       | inconsistent prior to PHP 7 and support has been
+     |       | removed in PHP 7. Found: '0x100'
+     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
+----------------------------------------------------------------------
+
+
+FILE: ...fony/http-kernel/Tests/DataCollector/MemoryDataCollectorTest.php
+----------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+----------------------------------------------------------------------
+ 47 | ERROR | The behaviour of hexadecimal numeric strings was
+    |       | inconsistent prior to PHP 7 and support has been
+    |       | removed in PHP 7. Found: '0x10'
+    |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
+ 48 | ERROR | The behaviour of hexadecimal numeric strings was
+    |       | inconsistent prior to PHP 7 and support has been
+    |       | removed in PHP 7. Found: '0xf'
+    |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
+----------------------------------------------------------------------
+
+
+FILE: vendor/twig/twig/lib/Twig/Node.php
+----------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+----------------------------------------------------------------------
+  42 | ERROR | The left-associativity of the ternary operator has
+     |       | been deprecated in PHP 7.4 and removed in PHP 8.0.
+     |       | Multiple consecutive ternaries detected. Use
+     |       | parenthesis to clarify the order in which the
+     |       | operations should be executed
+     |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
+ 227 | ERROR | The left-associativity of the ternary operator has
+     |       | been deprecated in PHP 7.4 and removed in PHP 8.0.
+     |       | Multiple consecutive ternaries detected. Use
+     |       | parenthesis to clarify the order in which the
+     |       | operations should be executed
+     |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
+----------------------------------------------------------------------
+
+
+FILE: ...r/vierbergenlars/php-semver/src/vierbergenlars/LibJs/JSArray.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 197 | ERROR | Function each() is deprecated since PHP 7.2 and
+     |       | removed since PHP 8.0; Use a foreach loop or
+     |       | ArrayIterator instead
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)
+----------------------------------------------------------------------
+
+
+FILE: ...or/vierbergenlars/php-semver/src/vierbergenlars/LibJs/Object.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 29 | ERROR | 'object' is a soft reserved keyword as of PHP version
+    |       | 7.0 and a reserved keyword as of PHP version 7.2 and
+    |       | should not be used to name a class, interface or trait
+    |       | or as part of a namespace (T_CLASS)
+    |       | (PHPCompatibility.Keywords.ForbiddenNamesAsDeclared.objectFound)
+----------------------------------------------------------------------
