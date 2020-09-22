@@ -1,0 +1,23 @@
+::warning::Plugin: https://wordpress.org/plugins/strictly-system-check/%0ATrac: https://plugins.trac.wordpress.org/browser/strictly-system-check/
+No syntax errors detected in strictly-system-check/strictly-system-check/strictly-system-check.class.php
+Errors parsing strictly-system-check/strictly-system-check/strictly-system-check-funcs.php
+No syntax errors detected in strictly-system-check/strictly-system-check/strictly-system-check.php
+No syntax errors detected in strictly-system-check/strictly-system-check/strictly-system-check-report.php
+No syntax errors detected in strictly-system-check/strictly-system-check/sysconfig.php
+::error::%0Astrictly-system-check-funcs.php
+.[32mE[0m... 5 / 5 (100%)
+
+
+
+[1mFILE: strictly-system-check-funcs.php[0m
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 86 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $size{strlen($size)-1}[0m
+    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[1mPHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Time: 496ms; Memory: 24MB
+::error::FILE: strictly-system-check-funcs.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 86 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $size{strlen($size)-1}%0A    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0APHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A

@@ -1,0 +1,28 @@
+
+crypt/cryptographp.inc.php
+FILE: crypt/cryptographp.inc.php
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+FOUND 5 ERRORS AFFECTING 3 LINES
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  71 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found:
+     |       |     $charelc{rand(0,strlen($charelc)-1)} (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+  71 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found:
+     |       |     $charelv{rand(0,strlen($charelv)-1)} (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+  72 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found:
+     |       |     $charel{rand(0,strlen($charel)-1)} (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+ 119 | ERROR | [ ] Extension 'ereg' is deprecated since PHP 5.3 and removed since PHP 7.0; Use pcre instead
+     |       |     (PHPCompatibility.Extensions.RemovedExtensions.eregDeprecatedRemoved)
+ 119 | ERROR | [ ] Function eregi() is deprecated since PHP 5.3 and removed since PHP 7.0; Use preg_match() (with the i modifier) instead
+     |       |     (PHPCompatibility.FunctionUse.RemovedFunctions.eregiDeprecatedRemoved)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 3 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+FILE: cryptographp.php
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 33 | ERROR | Declaration of a PHP4 style class constructor is deprecated since PHP 7.0 and removed since PHP 8.0
+    |       | (PHPCompatibility.FunctionNameRestrictions.RemovedPHP4StyleConstructors.Removed)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
