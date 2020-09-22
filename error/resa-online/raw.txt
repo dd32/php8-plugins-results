@@ -134,12 +134,14 @@ No syntax errors detected in resa-online/resa-online/main.php
 
 
 [1mFILE: includes/RESA_ExportImport.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 70 | [31mERROR[0m | [1mIndirect access to variables, properties and methods will be evaluated strictly in left-to-right order since PHP 7.0. Use curly braces to remove ambiguity.[0m
+----------------------------------------------------------------------
+ 70 | [31mERROR[0m | [1mIndirect access to variables, properties and methods
+    |       | will be evaluated strictly in left-to-right order since
+    |       | PHP 7.0. Use curly braces to remove ambiguity.[0m
     |       | (PHPCompatibility.Variables.NewUniformVariableSyntax.Found)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
-Time: 8.25 secs; Memory: 32MB
-::error::FILE: includes/RESA_ExportImport.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 70 | ERROR | Indirect access to variables, properties and methods will be evaluated strictly in left-to-right order since PHP 7.0. Use curly braces to remove ambiguity.%0A    |       | (PHPCompatibility.Variables.NewUniformVariableSyntax.Found)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
+Time: 8 secs; Memory: 32MB
+::error::FILE: includes/RESA_ExportImport.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 70 | ERROR | Indirect access to variables, properties and methods%0A    |       | will be evaluated strictly in left-to-right order since%0A    |       | PHP 7.0. Use curly braces to remove ambiguity.%0A    |       | (PHPCompatibility.Variables.NewUniformVariableSyntax.Found)%0A----------------------------------------------------------------------%0A

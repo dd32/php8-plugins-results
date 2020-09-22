@@ -1,65 +1,107 @@
 
 admin/class-wp-odoo-form-integrator-admin.php
+  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 422
 FILE: admin/class-wp-odoo-form-integrator-admin.php
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 FOUND 2 ERRORS AFFECTING 2 LINES
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 421 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $_GET{'pageno'}
+----------------------------------------------------------------------
+ 421 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $_GET{'pageno'}
      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
- 422 | ERROR | [x] Curly brace syntax for accessing array elements and string offsets has been deprecated in PHP 7.4 and removed in PHP 8.0. Found: $_GET{'pageno'}
+ 422 | ERROR | [x] Curly brace syntax for accessing array elements
+     |       |     and string offsets has been deprecated in PHP 7.4
+     |       |     and removed in PHP 8.0. Found: $_GET{'pageno'}
      |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 FILE: lib/ripcord-master/ripcord_client.php
-------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 FOUND 3 ERRORS AFFECTING 3 LINES
-------------------------------------------------------------------------------------------------------------------------------------------------------
- 227 | ERROR | Function xmlrpc_encode_request() is removed since PHP 8.0
+----------------------------------------------------------------------
+ 227 | ERROR | Function xmlrpc_encode_request() is removed since PHP
+     |       | 8.0
      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.xmlrpc_encode_requestRemoved)
- 229 | ERROR | Function xmlrpc_decode() is removed since PHP 8.0 (PHPCompatibility.FunctionUse.RemovedFunctions.xmlrpc_decodeRemoved)
- 255 | ERROR | Function xmlrpc_get_type() is removed since PHP 8.0 (PHPCompatibility.FunctionUse.RemovedFunctions.xmlrpc_get_typeRemoved)
-------------------------------------------------------------------------------------------------------------------------------------------------------
+ 229 | ERROR | Function xmlrpc_decode() is removed since PHP 8.0
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.xmlrpc_decodeRemoved)
+ 255 | ERROR | Function xmlrpc_get_type() is removed since PHP
+     |       | 8.0
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.xmlrpc_get_typeRemoved)
+----------------------------------------------------------------------
 
 
 FILE: lib/ripcord-master/ripcord.php
-------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 FOUND 6 ERRORS AFFECTING 6 LINES
-------------------------------------------------------------------------------------------------------------------------------------------
-  26 | ERROR | Function xmlrpc_is_fault() is removed since PHP 8.0
+----------------------------------------------------------------------
+  26 | ERROR | Function xmlrpc_is_fault() is removed since PHP
+     |       | 8.0
      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.xmlrpc_is_faultRemoved)
- 113 | ERROR | Function xmlrpc_set_type() is removed since PHP 8.0
+ 113 | ERROR | Function xmlrpc_set_type() is removed since PHP
+     |       | 8.0
      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.xmlrpc_set_typeRemoved)
- 126 | ERROR | Function xmlrpc_get_type() is removed since PHP 8.0
+ 126 | ERROR | Function xmlrpc_get_type() is removed since PHP
+     |       | 8.0
      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.xmlrpc_get_typeRemoved)
- 141 | ERROR | Function xmlrpc_set_type() is removed since PHP 8.0
+ 141 | ERROR | Function xmlrpc_set_type() is removed since PHP
+     |       | 8.0
      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.xmlrpc_set_typeRemoved)
- 154 | ERROR | Function xmlrpc_get_type() is removed since PHP 8.0
+ 154 | ERROR | Function xmlrpc_get_type() is removed since PHP
+     |       | 8.0
      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.xmlrpc_get_typeRemoved)
- 170 | ERROR | Function xmlrpc_get_type() is removed since PHP 8.0
+ 170 | ERROR | Function xmlrpc_get_type() is removed since PHP
+     |       | 8.0
      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.xmlrpc_get_typeRemoved)
-------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 FILE: lib/ripcord-master/ripcord_server.php
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 FOUND 14 ERRORS AFFECTING 14 LINES
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 114 | ERROR | Function xmlrpc_server_create() is removed since PHP 8.0 (PHPCompatibility.FunctionUse.RemovedFunctions.xmlrpc_server_createRemoved)
- 129 | ERROR | Function xmlrpc_server_register_introspection_callback() is removed since PHP 8.0
+----------------------------------------------------------------------
+ 114 | ERROR | Function xmlrpc_server_create() is removed since PHP
+     |       | 8.0
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.xmlrpc_server_createRemoved)
+ 129 | ERROR | Function
+     |       | xmlrpc_server_register_introspection_callback() is
+     |       | removed since PHP 8.0
      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.xmlrpc_server_register_introspection_callbackRemoved)
- 201 | ERROR | Function xmlrpc_server_register_method() is removed since PHP 8.0 (PHPCompatibility.FunctionUse.RemovedFunctions.xmlrpc_server_register_methodRemoved)
- 234 | ERROR | Function xmlrpc_encode_request() is removed since PHP 8.0 (PHPCompatibility.FunctionUse.RemovedFunctions.xmlrpc_encode_requestRemoved)
- 263 | ERROR | Function xmlrpc_encode_request() is removed since PHP 8.0 (PHPCompatibility.FunctionUse.RemovedFunctions.xmlrpc_encode_requestRemoved)
- 274 | ERROR | Function xmlrpc_encode_request() is removed since PHP 8.0 (PHPCompatibility.FunctionUse.RemovedFunctions.xmlrpc_encode_requestRemoved)
- 284 | ERROR | Function xmlrpc_decode_request() is removed since PHP 8.0 (PHPCompatibility.FunctionUse.RemovedFunctions.xmlrpc_decode_requestRemoved)
- 308 | ERROR | Function xmlrpc_encode_request() is removed since PHP 8.0 (PHPCompatibility.FunctionUse.RemovedFunctions.xmlrpc_encode_requestRemoved)
- 310 | ERROR | Function xmlrpc_encode_request() is removed since PHP 8.0 (PHPCompatibility.FunctionUse.RemovedFunctions.xmlrpc_encode_requestRemoved)
- 341 | ERROR | Function xmlrpc_server_call_method() is removed since PHP 8.0 (PHPCompatibility.FunctionUse.RemovedFunctions.xmlrpc_server_call_methodRemoved)
- 345 | ERROR | Function xmlrpc_encode_request() is removed since PHP 8.0 (PHPCompatibility.FunctionUse.RemovedFunctions.xmlrpc_encode_requestRemoved)
- 378 | ERROR | Function xmlrpc_encode_request() is removed since PHP 8.0 (PHPCompatibility.FunctionUse.RemovedFunctions.xmlrpc_encode_requestRemoved)
- 379 | ERROR | Function xmlrpc_server_call_method() is removed since PHP 8.0 (PHPCompatibility.FunctionUse.RemovedFunctions.xmlrpc_server_call_methodRemoved)
- 381 | ERROR | Function xmlrpc_decode() is removed since PHP 8.0 (PHPCompatibility.FunctionUse.RemovedFunctions.xmlrpc_decodeRemoved)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 201 | ERROR | Function xmlrpc_server_register_method() is removed
+     |       | since PHP 8.0
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.xmlrpc_server_register_methodRemoved)
+ 234 | ERROR | Function xmlrpc_encode_request() is removed since PHP
+     |       | 8.0
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.xmlrpc_encode_requestRemoved)
+ 263 | ERROR | Function xmlrpc_encode_request() is removed since PHP
+     |       | 8.0
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.xmlrpc_encode_requestRemoved)
+ 274 | ERROR | Function xmlrpc_encode_request() is removed since PHP
+     |       | 8.0
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.xmlrpc_encode_requestRemoved)
+ 284 | ERROR | Function xmlrpc_decode_request() is removed since PHP
+     |       | 8.0
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.xmlrpc_decode_requestRemoved)
+ 308 | ERROR | Function xmlrpc_encode_request() is removed since PHP
+     |       | 8.0
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.xmlrpc_encode_requestRemoved)
+ 310 | ERROR | Function xmlrpc_encode_request() is removed since PHP
+     |       | 8.0
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.xmlrpc_encode_requestRemoved)
+ 341 | ERROR | Function xmlrpc_server_call_method() is removed since
+     |       | PHP 8.0
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.xmlrpc_server_call_methodRemoved)
+ 345 | ERROR | Function xmlrpc_encode_request() is removed since PHP
+     |       | 8.0
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.xmlrpc_encode_requestRemoved)
+ 378 | ERROR | Function xmlrpc_encode_request() is removed since PHP
+     |       | 8.0
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.xmlrpc_encode_requestRemoved)
+ 379 | ERROR | Function xmlrpc_server_call_method() is removed since
+     |       | PHP 8.0
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.xmlrpc_server_call_methodRemoved)
+ 381 | ERROR | Function xmlrpc_decode() is removed since PHP 8.0
+     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.xmlrpc_decodeRemoved)
+----------------------------------------------------------------------

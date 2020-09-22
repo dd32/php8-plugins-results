@@ -6,19 +6,25 @@ No syntax errors detected in cf7-views/cf7-views/inc/admin/class-cf7-views-postt
 No syntax errors detected in cf7-views/cf7-views/inc/admin/review/class-cf7-views-review.php
 No syntax errors detected in cf7-views/cf7-views/inc/class-cf7-views-shortcode.php
 No syntax errors detected in cf7-views/cf7-views/inc/helpers.php
+
+Fatal error: Unparenthesized `a ? b : c ? d : e` is not supported. Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)` in cf7-views/cf7-views/inc/pagination.php on line 89
 Errors parsing cf7-views/cf7-views/inc/pagination.php
-::error::%0Ainc/pagination.php
+::error::%0Ainc/pagination.php%0A  Fatal error: Unparenthesized `a ? b : c ? d : e` is not supported.%0A      Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)`%0A      on line 89
 .......[31mE[0m 8 / 8 (100%)
 
 
 
 [1mFILE: inc/pagination.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 89 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has been deprecated in PHP 7.4 and removed in PHP 8.0. Multiple consecutive ternaries detected. Use parenthesis to
-    |       | clarify the order in which the operations should be executed[0m (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
+ 89 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has been
+    |       | deprecated in PHP 7.4 and removed in PHP 8.0. Multiple
+    |       | consecutive ternaries detected. Use parenthesis to
+    |       | clarify the order in which the operations should be
+    |       | executed[0m
+    |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
+----------------------------------------------------------------------
 
-Time: 216ms; Memory: 12MB
-::error::FILE: inc/pagination.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 89 | ERROR | The left-associativity of the ternary operator has been deprecated in PHP 7.4 and removed in PHP 8.0. Multiple consecutive ternaries detected. Use parenthesis to%0A    |       | clarify the order in which the operations should be executed (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
+Time: 212ms; Memory: 12MB
+::error::FILE: inc/pagination.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 89 | ERROR | The left-associativity of the ternary operator has been%0A    |       | deprecated in PHP 7.4 and removed in PHP 8.0. Multiple%0A    |       | consecutive ternaries detected. Use parenthesis to%0A    |       | clarify the order in which the operations should be%0A    |       | executed%0A    |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A----------------------------------------------------------------------%0A
