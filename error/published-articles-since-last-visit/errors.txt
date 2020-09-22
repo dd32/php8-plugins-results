@@ -1,0 +1,24 @@
+
+class.gaparse.php
+  Fatal error: Cannot re-assign auto-global variable _COOKIE on line 32
+FILE: class.gaparse.php
+----------------------------------------------------------------------
+FOUND 4 ERRORS AFFECTING 4 LINES
+----------------------------------------------------------------------
+ 32 | ERROR | Parameter shadowing super global ($_COOKIE) causes a
+    |       | fatal error since PHP 5.4
+    |       | (PHPCompatibility.FunctionDeclarations.ForbiddenParameterShadowSuperGlobals._cookieFound)
+ 40 | ERROR | Function split() is deprecated since PHP 5.3 and
+    |       | removed since PHP 7.0; Use preg_split(), explode() or
+    |       | str_split() instead
+    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.splitDeprecatedRemoved)
+ 43 | ERROR | The "result" parameter for function parse_str() is
+    |       | missing. Passing this parameter is no longer optional.
+    |       | The optional nature of the parameter is deprecated
+    |       | since PHP 7.2 and removed since PHP 8.0
+    |       | (PHPCompatibility.FunctionUse.OptionalToRequiredFunctionParameters.parse_str_resultSoftRequiredHardRequired)
+ 64 | ERROR | Function split() is deprecated since PHP 5.3 and
+    |       | removed since PHP 7.0; Use preg_split(), explode() or
+    |       | str_split() instead
+    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.splitDeprecatedRemoved)
+----------------------------------------------------------------------

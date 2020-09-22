@@ -1,0 +1,37 @@
+::warning::Plugin: https://wordpress.org/plugins/published-articles-since-last-visit/%0ATrac: https://plugins.trac.wordpress.org/browser/published-articles-since-last-visit/
+
+Fatal error: Cannot re-assign auto-global variable _COOKIE in published-articles-since-last-visit/published-articles-since-last-visit/class.gaparse.php on line 32
+Errors parsing published-articles-since-last-visit/published-articles-since-last-visit/class.gaparse.php
+No syntax errors detected in published-articles-since-last-visit/published-articles-since-last-visit/googleanalytics.class.php
+No syntax errors detected in published-articles-since-last-visit/published-articles-since-last-visit/norilsk_admin.php
+No syntax errors detected in published-articles-since-last-visit/published-articles-since-last-visit/norilsk.php
+No syntax errors detected in published-articles-since-last-visit/published-articles-since-last-visit/uninstall.php
+::error::%0Aclass.gaparse.php%0A  Fatal error: Cannot re-assign auto-global variable _COOKIE on line 32
+[31mE[0m.... 5 / 5 (100%)
+
+
+
+[1mFILE: class.gaparse.php[0m
+----------------------------------------------------------------------
+[1mFOUND 4 ERRORS AFFECTING 4 LINES[0m
+----------------------------------------------------------------------
+ 32 | [31mERROR[0m | [1mParameter shadowing super global ($_COOKIE) causes a
+    |       | fatal error since PHP 5.4[0m
+    |       | (PHPCompatibility.FunctionDeclarations.ForbiddenParameterShadowSuperGlobals._cookieFound)
+ 40 | [31mERROR[0m | [1mFunction split() is deprecated since PHP 5.3 and
+    |       | removed since PHP 7.0; Use preg_split(), explode() or
+    |       | str_split() instead[0m
+    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.splitDeprecatedRemoved)
+ 43 | [31mERROR[0m | [1mThe "result" parameter for function parse_str() is
+    |       | missing. Passing this parameter is no longer optional.
+    |       | The optional nature of the parameter is deprecated
+    |       | since PHP 7.2 and removed since PHP 8.0[0m
+    |       | (PHPCompatibility.FunctionUse.OptionalToRequiredFunctionParameters.parse_str_resultSoftRequiredHardRequired)
+ 64 | [31mERROR[0m | [1mFunction split() is deprecated since PHP 5.3 and
+    |       | removed since PHP 7.0; Use preg_split(), explode() or
+    |       | str_split() instead[0m
+    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.splitDeprecatedRemoved)
+----------------------------------------------------------------------
+
+Time: 144ms; Memory: 12MB
+::error::FILE: class.gaparse.php%0A----------------------------------------------------------------------%0AFOUND 4 ERRORS AFFECTING 4 LINES%0A----------------------------------------------------------------------%0A 32 | ERROR | Parameter shadowing super global ($_COOKIE) causes a%0A    |       | fatal error since PHP 5.4%0A    |       | (PHPCompatibility.FunctionDeclarations.ForbiddenParameterShadowSuperGlobals._cookieFound)%0A 40 | ERROR | Function split() is deprecated since PHP 5.3 and%0A    |       | removed since PHP 7.0; Use preg_split(), explode() or%0A    |       | str_split() instead%0A    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.splitDeprecatedRemoved)%0A 43 | ERROR | The "result" parameter for function parse_str() is%0A    |       | missing. Passing this parameter is no longer optional.%0A    |       | The optional nature of the parameter is deprecated%0A    |       | since PHP 7.2 and removed since PHP 8.0%0A    |       | (PHPCompatibility.FunctionUse.OptionalToRequiredFunctionParameters.parse_str_resultSoftRequiredHardRequired)%0A 64 | ERROR | Function split() is deprecated since PHP 5.3 and%0A    |       | removed since PHP 7.0; Use preg_split(), explode() or%0A    |       | str_split() instead%0A    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.splitDeprecatedRemoved)%0A----------------------------------------------------------------------%0A
