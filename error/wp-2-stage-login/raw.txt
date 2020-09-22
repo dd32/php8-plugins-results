@@ -1,0 +1,32 @@
+::warning::Plugin: https://wordpress.org/plugins/wp-2-stage-login/%0ATrac: https://plugins.trac.wordpress.org/browser/wp-2-stage-login/
+No syntax errors detected in wp-2-stage-login/wp-2-stage-login/2stage-login.php
+No syntax errors detected in wp-2-stage-login/wp-2-stage-login/ajax-functions.php
+
+Fatal error: Array and string offset access syntax with curly braces is no longer supported in wp-2-stage-login/wp-2-stage-login/plugin-functions.php on line 63
+Errors parsing wp-2-stage-login/wp-2-stage-login/plugin-functions.php
+No syntax errors detected in wp-2-stage-login/wp-2-stage-login/settings/gl-settings.php
+No syntax errors detected in wp-2-stage-login/wp-2-stage-login/settings/menu_settings.php
+No syntax errors detected in wp-2-stage-login/wp-2-stage-login/templates/forms/login/formbody.php
+No syntax errors detected in wp-2-stage-login/wp-2-stage-login/templates/forms/login/form_footer.php
+No syntax errors detected in wp-2-stage-login/wp-2-stage-login/templates/forms/login/form_header.php
+No syntax errors detected in wp-2-stage-login/wp-2-stage-login/templates/tpl_generic_login.php
+::error::%0Aplugin-functions.php%0A  Fatal error: Array and string offset access syntax with curly braces is no longer supported on line 63
+..[32mE[0m...... 9 / 9 (100%)
+
+
+
+[1mFILE: plugin-functions.php[0m
+----------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 63 | [31mERROR[0m | [x] [1mCurly brace syntax for accessing array elements and
+    |       |     string offsets has been deprecated in PHP 7.4 and
+    |       |     removed in PHP 8.0. Found: $seeds{mt_rand(0,
+    |       |     $seeds_count - 1)}[0m
+    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)
+----------------------------------------------------------------------
+[1mPHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
+----------------------------------------------------------------------
+
+Time: 128ms; Memory: 12MB
+::error::FILE: plugin-functions.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 63 | ERROR | [x] Curly brace syntax for accessing array elements and%0A    |       |     string offsets has been deprecated in PHP 7.4 and%0A    |       |     removed in PHP 8.0. Found: $seeds{mt_rand(0,%0A    |       |     $seeds_count - 1)}%0A    |       |     (PHPCompatibility.Syntax.RemovedCurlyBraceArrayAccess.Removed)%0A----------------------------------------------------------------------%0APHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY%0A----------------------------------------------------------------------%0A
