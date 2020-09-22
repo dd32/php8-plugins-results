@@ -2979,6 +2979,8 @@ No syntax errors detected in backup-wd/backup-wd/vendor/aannnaa7/dropbox-php-sdk
 No syntax errors detected in backup-wd/backup-wd/vendor/aannnaa7/dropbox-php-sdk-with-cacert/src/Dropbox/Store/SessionPersistentDataStore.php
 No syntax errors detected in backup-wd/backup-wd/vendor/aannnaa7/dropbox-php-sdk-with-cacert/tests/DropboxTest.php
 No syntax errors detected in backup-wd/backup-wd/vendor/araqel/archivetar/PEAR.php
+
+Fatal error: Cannot use result of built-in function in write context in backup-wd/backup-wd/vendor/araqel/archivetar/Tar.php on line 652
 Errors parsing backup-wd/backup-wd/vendor/araqel/archivetar/Tar.php
 No syntax errors detected in backup-wd/backup-wd/vendor/autoload.php
 No syntax errors detected in backup-wd/backup-wd/vendor/bin/jp.php
@@ -3772,8 +3774,7 @@ No syntax errors detected in backup-wd/backup-wd/wd/templates/display_deactivati
 No syntax errors detected in backup-wd/backup-wd/wd/templates/display_overview.php
 No syntax errors detected in backup-wd/backup-wd/wd/templates/display_subscribe.php
 No syntax errors detected in backup-wd/backup-wd/wd/wd.php
-::error::%0Avendor/araqel/archivetar/Tar.php
-No syntax errors detected in backup-wd/backup-wd/wd/wd.php
+::error::%0Avendor/araqel/archivetar/Tar.php%0A  Fatal error: Cannot use result of built-in function in write context on line 652
 ...............................................[31mE[0m............   60 / 3747 (2%)
 ............................................................  120 / 3747 (3%)
 ............................................................  180 / 3747 (5%)
@@ -3841,379 +3842,531 @@ No syntax errors detected in backup-wd/backup-wd/wd/wd.php
 
 
 [1mFILE: includes/buwd-type-db.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 447 | [31mERROR[0m | [1mFunction each() is deprecated since PHP 7.2 and removed since PHP 8.0; Use a foreach loop or ArrayIterator instead[0m
+----------------------------------------------------------------------
+ 447 | [31mERROR[0m | [1mFunction each() is deprecated since PHP 7.2 and
+     |       | removed since PHP 8.0; Use a foreach loop or
+     |       | ArrayIterator instead[0m
      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
-[1mFILE: vendor/aannnaa7/apiclient-without-services/src/Google/Service/Resource.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[1mFILE: ...nnaa7/apiclient-without-services/src/Google/Service/Resource.php[0m
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 291 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse order to implode has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first
-     |       | parameter and $pieces the second[0m (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
+ 291 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse
+     |       | order to implode has been deprecated since PHP 7.4 and
+     |       | is removed since PHP 8.0; $glue should be the first
+     |       | parameter and $pieces the second[0m
+     |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
+----------------------------------------------------------------------
 
 
 [1mFILE: vendor/aannnaa7/aws-sdk-php-minimized/src/DynamoDb/Marshaler.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 261 | [31mERROR[0m | [1mFunction each() is deprecated since PHP 7.2 and removed since PHP 8.0; Use a foreach loop or ArrayIterator instead[0m
+----------------------------------------------------------------------
+ 261 | [31mERROR[0m | [1mFunction each() is deprecated since PHP 7.2 and
+     |       | removed since PHP 8.0; Use a foreach loop or
+     |       | ArrayIterator instead[0m
      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 [1mFILE: vendor/araqel/archivetar/PEAR.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 2 ERRORS AFFECTING 2 LINES[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  52 | [31mERROR[0m | [1mINI directive 'track_errors' is deprecated since PHP 7.2 and removed since PHP 8.0[0m
+----------------------------------------------------------------------
+  52 | [31mERROR[0m | [1mINI directive 'track_errors' is deprecated since PHP
+     |       | 7.2 and removed since PHP 8.0[0m
      |       | (PHPCompatibility.IniDirectives.RemovedIniDirectives.track_errorsDeprecatedRemoved)
- 785 | [31mERROR[0m | [1mFunction each() is deprecated since PHP 7.2 and removed since PHP 8.0; Use a foreach loop or ArrayIterator instead[0m
+ 785 | [31mERROR[0m | [1mFunction each() is deprecated since PHP 7.2 and
+     |       | removed since PHP 8.0; Use a foreach loop or
+     |       | ArrayIterator instead[0m
      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
-[1mFILE: vendor/microsoft/azure-storage/tests/framework/RestProxyTestBase.php[0m
------------------------------------------------------------------------------------------------------------------------------------------------
+[1mFILE: ...or/microsoft/azure-storage/tests/framework/RestProxyTestBase.php[0m
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
------------------------------------------------------------------------------------------------------------------------------------------------
- 69 | [31mERROR[0m | [1mThe constant "ASSERT_QUIET_EVAL" is removed since PHP 8.0[0m
+----------------------------------------------------------------------
+ 69 | [31mERROR[0m | [1mThe constant "ASSERT_QUIET_EVAL" is removed since PHP
+    |       | 8.0[0m
     |       | (PHPCompatibility.Constants.RemovedConstants.assert_quiet_evalRemoved)
------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 [1mFILE: vendor/microsoft/azure-storage/tests/framework/TestResources.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 7 ERRORS AFFECTING 7 LINES[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  929 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CACB9BD7C6B1B2'[0m
+----------------------------------------------------------------------
+  929 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+      |       | inconsistent prior to PHP 7 and support has been
+      |       | removed in PHP 7. Found: '0x8CACB9BD7C6B1B2'[0m
       |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
-  949 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CACB9BD7C6B1B2'[0m
+  949 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+      |       | inconsistent prior to PHP 7 and support has been
+      |       | removed in PHP 7. Found: '0x8CACB9BD7C6B1B2'[0m
       |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
-  956 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CACB9BD7C1EEEC'[0m
+  956 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+      |       | inconsistent prior to PHP 7 and support has been
+      |       | removed in PHP 7. Found: '0x8CACB9BD7C1EEEC'[0m
       |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
- 1234 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CAFB82EFF70C46'[0m
+ 1234 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+      |       | inconsistent prior to PHP 7 and support has been
+      |       | removed in PHP 7. Found: '0x8CAFB82EFF70C46'[0m
       |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
- 1274 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CAFB82EFF70C46'[0m
+ 1274 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+      |       | inconsistent prior to PHP 7 and support has been
+      |       | removed in PHP 7. Found: '0x8CAFB82EFF70C46'[0m
       |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
- 1315 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CAFB82EFF70C46'[0m
+ 1315 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+      |       | inconsistent prior to PHP 7 and support has been
+      |       | removed in PHP 7. Found: '0x8CAFB82EFF70C46'[0m
       |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
- 1350 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CAFB82EFF70C46'[0m
+ 1350 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+      |       | inconsistent prior to PHP 7 and support has been
+      |       | removed in PHP 7. Found: '0x8CAFB82EFF70C46'[0m
       |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
-[1mFILE: vendor/microsoft/azure-storage/tests/functional/Blob/BlobServiceFunctionalTestData.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[1mFILE: ...-storage/tests/functional/Blob/BlobServiceFunctionalTestData.php[0m
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 63 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x123456789ABCDEF'[0m
+----------------------------------------------------------------------
+ 63 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+    |       | inconsistent prior to PHP 7 and support has been
+    |       | removed in PHP 7. Found: '0x123456789ABCDEF'[0m
     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
-[1mFILE: vendor/microsoft/azure-storage/tests/functional/File/FileServiceFunctionalTestData.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[1mFILE: ...-storage/tests/functional/File/FileServiceFunctionalTestData.php[0m
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 55 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x123456789ABCDEF'[0m
+----------------------------------------------------------------------
+ 55 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+    |       | inconsistent prior to PHP 7 and support has been
+    |       | removed in PHP 7. Found: '0x123456789ABCDEF'[0m
     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
-[1mFILE: vendor/microsoft/azure-storage/tests/functional/File/FileServiceFunctionalTest.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[1mFILE: ...zure-storage/tests/functional/File/FileServiceFunctionalTest.php[0m
+----------------------------------------------------------------------
 [1mFOUND 2 ERRORS AFFECTING 2 LINES[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 1166 | [31mERROR[0m | [1mUsing an unparenthesized expression containing a "." before a "+" or "-" has been deprecated in PHP 7.4 and removed in PHP 8.0[0m
+----------------------------------------------------------------------
+ 1166 | [31mERROR[0m | [1mUsing an unparenthesized expression containing a "."
+      |       | before a "+" or "-" has been deprecated in PHP 7.4
+      |       | and removed in PHP 8.0[0m
       |       | (PHPCompatibility.Operators.ChangedConcatOperatorPrecedence.Found)
- 1176 | [31mERROR[0m | [1mUsing an unparenthesized expression containing a "." before a "+" or "-" has been deprecated in PHP 7.4 and removed in PHP 8.0[0m
+ 1176 | [31mERROR[0m | [1mUsing an unparenthesized expression containing a "."
+      |       | before a "+" or "-" has been deprecated in PHP 7.4
+      |       | and removed in PHP 8.0[0m
       |       | (PHPCompatibility.Operators.ChangedConcatOperatorPrecedence.Found)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
-[1mFILE: vendor/microsoft/azure-storage/tests/unit/Blob/BlobRestProxyTest.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[1mFILE: ...or/microsoft/azure-storage/tests/unit/Blob/BlobRestProxyTest.php[0m
+----------------------------------------------------------------------
 [1mFOUND 3 ERRORS AFFECTING 3 LINES[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  503 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CAFB82EFF70C46'[0m
+----------------------------------------------------------------------
+  503 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+      |       | inconsistent prior to PHP 7 and support has been
+      |       | removed in PHP 7. Found: '0x8CAFB82EFF70C46'[0m
       |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
- 2509 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CAFB82EFF70C46'[0m
+ 2509 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+      |       | inconsistent prior to PHP 7 and support has been
+      |       | removed in PHP 7. Found: '0x8CAFB82EFF70C46'[0m
       |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
- 2528 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CAFB82EFF70C46'[0m
+ 2528 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+      |       | inconsistent prior to PHP 7 and support has been
+      |       | removed in PHP 7. Found: '0x8CAFB82EFF70C46'[0m
       |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
-[1mFILE: vendor/microsoft/azure-storage/tests/unit/Blob/Models/AccessConditionTest.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[1mFILE: ...oft/azure-storage/tests/unit/Blob/Models/AccessConditionTest.php[0m
+----------------------------------------------------------------------
 [1mFOUND 3 ERRORS AFFECTING 3 LINES[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  53 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CAFB82EFF70C46'[0m
+----------------------------------------------------------------------
+  53 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+     |       | inconsistent prior to PHP 7 and support has been
+     |       | removed in PHP 7. Found: '0x8CAFB82EFF70C46'[0m
      |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
- 110 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CAFB82EFF70C46'[0m
+ 110 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+     |       | inconsistent prior to PHP 7 and support has been
+     |       | removed in PHP 7. Found: '0x8CAFB82EFF70C46'[0m
      |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
- 129 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CAFB82EFF70C46'[0m
+ 129 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+     |       | inconsistent prior to PHP 7 and support has been
+     |       | removed in PHP 7. Found: '0x8CAFB82EFF70C46'[0m
      |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
-[1mFILE: vendor/microsoft/azure-storage/tests/unit/Blob/Models/BlobPropertiesTest.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[1mFILE: ...soft/azure-storage/tests/unit/Blob/Models/BlobPropertiesTest.php[0m
+----------------------------------------------------------------------
 [1mFOUND 10 ERRORS AFFECTING 10 LINES[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  97 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CAFB82EFF70C46'[0m
+----------------------------------------------------------------------
+  97 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+     |       | inconsistent prior to PHP 7 and support has been
+     |       | removed in PHP 7. Found: '0x8CAFB82EFF70C46'[0m
      |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
- 115 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CAFB82EFF70C46'[0m
+ 115 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+     |       | inconsistent prior to PHP 7 and support has been
+     |       | removed in PHP 7. Found: '0x8CAFB82EFF70C46'[0m
      |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
- 133 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CAFB82EFF70C46'[0m
+ 133 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+     |       | inconsistent prior to PHP 7 and support has been
+     |       | removed in PHP 7. Found: '0x8CAFB82EFF70C46'[0m
      |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
- 169 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CAFB82EFF70C46'[0m
+ 169 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+     |       | inconsistent prior to PHP 7 and support has been
+     |       | removed in PHP 7. Found: '0x8CAFB82EFF70C46'[0m
      |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
- 187 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CAFB82EFF70C46'[0m
+ 187 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+     |       | inconsistent prior to PHP 7 and support has been
+     |       | removed in PHP 7. Found: '0x8CAFB82EFF70C46'[0m
      |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
- 205 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CAFB82EFF70C46'[0m
+ 205 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+     |       | inconsistent prior to PHP 7 and support has been
+     |       | removed in PHP 7. Found: '0x8CAFB82EFF70C46'[0m
      |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
- 223 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CAFB82EFF70C46'[0m
+ 223 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+     |       | inconsistent prior to PHP 7 and support has been
+     |       | removed in PHP 7. Found: '0x8CAFB82EFF70C46'[0m
      |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
- 241 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CAFB82EFF70C46'[0m
+ 241 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+     |       | inconsistent prior to PHP 7 and support has been
+     |       | removed in PHP 7. Found: '0x8CAFB82EFF70C46'[0m
      |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
- 259 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CAFB82EFF70C46'[0m
+ 259 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+     |       | inconsistent prior to PHP 7 and support has been
+     |       | removed in PHP 7. Found: '0x8CAFB82EFF70C46'[0m
      |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
- 277 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CAFB82EFF70C46'[0m
+ 277 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+     |       | inconsistent prior to PHP 7 and support has been
+     |       | removed in PHP 7. Found: '0x8CAFB82EFF70C46'[0m
      |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
-[1mFILE: vendor/microsoft/azure-storage/tests/unit/Blob/Models/CommitBlobBlocksOptionsTest.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[1mFILE: ...e-storage/tests/unit/Blob/Models/CommitBlobBlocksOptionsTest.php[0m
+----------------------------------------------------------------------
 [1mFOUND 7 ERRORS AFFECTING 7 LINES[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  48 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CAFB82EFF70C46'[0m
+----------------------------------------------------------------------
+  48 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+     |       | inconsistent prior to PHP 7 and support has been
+     |       | removed in PHP 7. Found: '0x8CAFB82EFF70C46'[0m
      |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
-  66 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CAFB82EFF70C46'[0m
+  66 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+     |       | inconsistent prior to PHP 7 and support has been
+     |       | removed in PHP 7. Found: '0x8CAFB82EFF70C46'[0m
      |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
-  84 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CAFB82EFF70C46'[0m
+  84 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+     |       | inconsistent prior to PHP 7 and support has been
+     |       | removed in PHP 7. Found: '0x8CAFB82EFF70C46'[0m
      |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
- 102 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CAFB82EFF70C46'[0m
+ 102 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+     |       | inconsistent prior to PHP 7 and support has been
+     |       | removed in PHP 7. Found: '0x8CAFB82EFF70C46'[0m
      |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
- 120 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CAFB82EFF70C46'[0m
+ 120 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+     |       | inconsistent prior to PHP 7 and support has been
+     |       | removed in PHP 7. Found: '0x8CAFB82EFF70C46'[0m
      |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
- 138 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CAFB82EFF70C46'[0m
+ 138 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+     |       | inconsistent prior to PHP 7 and support has been
+     |       | removed in PHP 7. Found: '0x8CAFB82EFF70C46'[0m
      |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
- 156 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CAFB82EFF70C46'[0m
+ 156 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+     |       | inconsistent prior to PHP 7 and support has been
+     |       | removed in PHP 7. Found: '0x8CAFB82EFF70C46'[0m
      |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
-[1mFILE: vendor/microsoft/azure-storage/tests/unit/Blob/Models/ContainerPropertiesTest.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[1mFILE: ...azure-storage/tests/unit/Blob/Models/ContainerPropertiesTest.php[0m
+----------------------------------------------------------------------
 [1mFOUND 2 ERRORS AFFECTING 2 LINES[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 48 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CACB9BD7C6B1B2'[0m
+----------------------------------------------------------------------
+ 48 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+    |       | inconsistent prior to PHP 7 and support has been
+    |       | removed in PHP 7. Found: '0x8CACB9BD7C6B1B2'[0m
     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
- 65 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CACB9BD7C6B1B2'[0m
+ 65 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+    |       | inconsistent prior to PHP 7 and support has been
+    |       | removed in PHP 7. Found: '0x8CACB9BD7C6B1B2'[0m
     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
-[1mFILE: vendor/microsoft/azure-storage/tests/unit/Blob/Models/ContainerTest.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[1mFILE: ...microsoft/azure-storage/tests/unit/Blob/Models/ContainerTest.php[0m
+----------------------------------------------------------------------
 [1mFOUND 2 ERRORS AFFECTING 2 LINES[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 152 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CACB9BD7C1EEEC'[0m
+----------------------------------------------------------------------
+ 152 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+     |       | inconsistent prior to PHP 7 and support has been
+     |       | removed in PHP 7. Found: '0x8CACB9BD7C1EEEC'[0m
      |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
- 171 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CACB9BD7C1EEEC'[0m
+ 171 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+     |       | inconsistent prior to PHP 7 and support has been
+     |       | removed in PHP 7. Found: '0x8CACB9BD7C1EEEC'[0m
      |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
-[1mFILE: vendor/microsoft/azure-storage/tests/unit/Blob/Models/CopyBlobOptionsTest.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[1mFILE: ...oft/azure-storage/tests/unit/Blob/Models/CopyBlobOptionsTest.php[0m
+----------------------------------------------------------------------
 [1mFOUND 2 ERRORS AFFECTING 2 LINES[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 105 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CAFB82EFF70C46'[0m
+----------------------------------------------------------------------
+ 105 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+     |       | inconsistent prior to PHP 7 and support has been
+     |       | removed in PHP 7. Found: '0x8CAFB82EFF70C46'[0m
      |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
- 120 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CAFB82EFF70C46'[0m
+ 120 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+     |       | inconsistent prior to PHP 7 and support has been
+     |       | removed in PHP 7. Found: '0x8CAFB82EFF70C46'[0m
      |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
-[1mFILE: vendor/microsoft/azure-storage/tests/unit/Blob/Models/CreateBlobBlockOptionsTest.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[1mFILE: ...re-storage/tests/unit/Blob/Models/CreateBlobBlockOptionsTest.php[0m
+----------------------------------------------------------------------
 [1mFOUND 2 ERRORS AFFECTING 2 LINES[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 47 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CAFB82EFF70C46'[0m
+----------------------------------------------------------------------
+ 47 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+    |       | inconsistent prior to PHP 7 and support has been
+    |       | removed in PHP 7. Found: '0x8CAFB82EFF70C46'[0m
     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
- 65 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CAFB82EFF70C46'[0m
+ 65 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+    |       | inconsistent prior to PHP 7 and support has been
+    |       | removed in PHP 7. Found: '0x8CAFB82EFF70C46'[0m
     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
-[1mFILE: vendor/microsoft/azure-storage/tests/unit/Blob/Models/CreateBlobOptionsTest.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[1mFILE: ...t/azure-storage/tests/unit/Blob/Models/CreateBlobOptionsTest.php[0m
+----------------------------------------------------------------------
 [1mFOUND 7 ERRORS AFFECTING 7 LINES[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  50 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CAFB82EFF70C46'[0m
+----------------------------------------------------------------------
+  50 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+     |       | inconsistent prior to PHP 7 and support has been
+     |       | removed in PHP 7. Found: '0x8CAFB82EFF70C46'[0m
      |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
-  68 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CAFB82EFF70C46'[0m
+  68 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+     |       | inconsistent prior to PHP 7 and support has been
+     |       | removed in PHP 7. Found: '0x8CAFB82EFF70C46'[0m
      |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
-  86 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CAFB82EFF70C46'[0m
+  86 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+     |       | inconsistent prior to PHP 7 and support has been
+     |       | removed in PHP 7. Found: '0x8CAFB82EFF70C46'[0m
      |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
- 104 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CAFB82EFF70C46'[0m
+ 104 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+     |       | inconsistent prior to PHP 7 and support has been
+     |       | removed in PHP 7. Found: '0x8CAFB82EFF70C46'[0m
      |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
- 122 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CAFB82EFF70C46'[0m
+ 122 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+     |       | inconsistent prior to PHP 7 and support has been
+     |       | removed in PHP 7. Found: '0x8CAFB82EFF70C46'[0m
      |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
- 140 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CAFB82EFF70C46'[0m
+ 140 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+     |       | inconsistent prior to PHP 7 and support has been
+     |       | removed in PHP 7. Found: '0x8CAFB82EFF70C46'[0m
      |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
- 158 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CAFB82EFF70C46'[0m
+ 158 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+     |       | inconsistent prior to PHP 7 and support has been
+     |       | removed in PHP 7. Found: '0x8CAFB82EFF70C46'[0m
      |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
-[1mFILE: vendor/microsoft/azure-storage/tests/unit/Blob/Models/CreateBlobPagesOptionsTest.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[1mFILE: ...re-storage/tests/unit/Blob/Models/CreateBlobPagesOptionsTest.php[0m
+----------------------------------------------------------------------
 [1mFOUND 2 ERRORS AFFECTING 2 LINES[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 81 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CAFB82EFF70C46'[0m
+----------------------------------------------------------------------
+ 81 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+    |       | inconsistent prior to PHP 7 and support has been
+    |       | removed in PHP 7. Found: '0x8CAFB82EFF70C46'[0m
     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
- 99 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CAFB82EFF70C46'[0m
+ 99 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+    |       | inconsistent prior to PHP 7 and support has been
+    |       | removed in PHP 7. Found: '0x8CAFB82EFF70C46'[0m
     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
-[1mFILE: vendor/microsoft/azure-storage/tests/unit/Blob/Models/DeleteBlobOptionsTest.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[1mFILE: ...t/azure-storage/tests/unit/Blob/Models/DeleteBlobOptionsTest.php[0m
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 49 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CAFB82EFF70C46'[0m
+----------------------------------------------------------------------
+ 49 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+    |       | inconsistent prior to PHP 7 and support has been
+    |       | removed in PHP 7. Found: '0x8CAFB82EFF70C46'[0m
     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
-[1mFILE: vendor/microsoft/azure-storage/tests/unit/Blob/Models/GetBlobMetadataOptionsTest.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[1mFILE: ...re-storage/tests/unit/Blob/Models/GetBlobMetadataOptionsTest.php[0m
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 49 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CAFB82EFF70C46'[0m
+----------------------------------------------------------------------
+ 49 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+    |       | inconsistent prior to PHP 7 and support has been
+    |       | removed in PHP 7. Found: '0x8CAFB82EFF70C46'[0m
     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
-[1mFILE: vendor/microsoft/azure-storage/tests/unit/Blob/Models/GetBlobOptionsTest.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[1mFILE: ...soft/azure-storage/tests/unit/Blob/Models/GetBlobOptionsTest.php[0m
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 50 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CAFB82EFF70C46'[0m
+----------------------------------------------------------------------
+ 50 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+    |       | inconsistent prior to PHP 7 and support has been
+    |       | removed in PHP 7. Found: '0x8CAFB82EFF70C46'[0m
     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
-[1mFILE: vendor/microsoft/azure-storage/tests/unit/Blob/Models/GetBlobPropertiesOptionsTest.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[1mFILE: ...-storage/tests/unit/Blob/Models/GetBlobPropertiesOptionsTest.php[0m
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 49 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CAFB82EFF70C46'[0m
+----------------------------------------------------------------------
+ 49 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+    |       | inconsistent prior to PHP 7 and support has been
+    |       | removed in PHP 7. Found: '0x8CAFB82EFF70C46'[0m
     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
-[1mFILE: vendor/microsoft/azure-storage/tests/unit/Blob/Models/GetContainerACLResultTest.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[1mFILE: ...ure-storage/tests/unit/Blob/Models/GetContainerACLResultTest.php[0m
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 57 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CAFB82EFF70C46'[0m
+----------------------------------------------------------------------
+ 57 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+    |       | inconsistent prior to PHP 7 and support has been
+    |       | removed in PHP 7. Found: '0x8CAFB82EFF70C46'[0m
     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
-[1mFILE: vendor/microsoft/azure-storage/tests/unit/Blob/Models/LeaseResultTest.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[1mFILE: ...crosoft/azure-storage/tests/unit/Blob/Models/LeaseResultTest.php[0m
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 48 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CAFB82EFF70C46'[0m
+----------------------------------------------------------------------
+ 48 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+    |       | inconsistent prior to PHP 7 and support has been
+    |       | removed in PHP 7. Found: '0x8CAFB82EFF70C46'[0m
     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
-[1mFILE: vendor/microsoft/azure-storage/tests/unit/Blob/Models/ListBlobBlocksOptionsTest.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[1mFILE: ...ure-storage/tests/unit/Blob/Models/ListBlobBlocksOptionsTest.php[0m
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 84 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CAFB82EFF70C46'[0m
+----------------------------------------------------------------------
+ 84 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+    |       | inconsistent prior to PHP 7 and support has been
+    |       | removed in PHP 7. Found: '0x8CAFB82EFF70C46'[0m
     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
-[1mFILE: vendor/microsoft/azure-storage/tests/unit/Blob/Models/ListPageBlobRangesOptionsTest.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[1mFILE: ...storage/tests/unit/Blob/Models/ListPageBlobRangesOptionsTest.php[0m
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 50 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CAFB82EFF70C46'[0m
+----------------------------------------------------------------------
+ 50 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+    |       | inconsistent prior to PHP 7 and support has been
+    |       | removed in PHP 7. Found: '0x8CAFB82EFF70C46'[0m
     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
-[1mFILE: vendor/microsoft/azure-storage/tests/unit/Blob/Models/SetBlobPropertiesOptionsTest.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[1mFILE: ...-storage/tests/unit/Blob/Models/SetBlobPropertiesOptionsTest.php[0m
+----------------------------------------------------------------------
 [1mFOUND 7 ERRORS AFFECTING 7 LINES[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  68 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CAFB82EFF70C46'[0m
+----------------------------------------------------------------------
+  68 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+     |       | inconsistent prior to PHP 7 and support has been
+     |       | removed in PHP 7. Found: '0x8CAFB82EFF70C46'[0m
      |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
-  86 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CAFB82EFF70C46'[0m
+  86 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+     |       | inconsistent prior to PHP 7 and support has been
+     |       | removed in PHP 7. Found: '0x8CAFB82EFF70C46'[0m
      |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
- 122 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CAFB82EFF70C46'[0m
+ 122 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+     |       | inconsistent prior to PHP 7 and support has been
+     |       | removed in PHP 7. Found: '0x8CAFB82EFF70C46'[0m
      |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
- 140 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CAFB82EFF70C46'[0m
+ 140 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+     |       | inconsistent prior to PHP 7 and support has been
+     |       | removed in PHP 7. Found: '0x8CAFB82EFF70C46'[0m
      |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
- 158 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CAFB82EFF70C46'[0m
+ 158 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+     |       | inconsistent prior to PHP 7 and support has been
+     |       | removed in PHP 7. Found: '0x8CAFB82EFF70C46'[0m
      |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
- 176 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CAFB82EFF70C46'[0m
+ 176 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+     |       | inconsistent prior to PHP 7 and support has been
+     |       | removed in PHP 7. Found: '0x8CAFB82EFF70C46'[0m
      |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
- 194 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CAFB82EFF70C46'[0m
+ 194 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+     |       | inconsistent prior to PHP 7 and support has been
+     |       | removed in PHP 7. Found: '0x8CAFB82EFF70C46'[0m
      |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
-[1mFILE: vendor/microsoft/azure-storage/tests/unit/File/FileRestProxyTest.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[1mFILE: ...or/microsoft/azure-storage/tests/unit/File/FileRestProxyTest.php[0m
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 186 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CAFB82EFF70C46'[0m
+----------------------------------------------------------------------
+ 186 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+     |       | inconsistent prior to PHP 7 and support has been
+     |       | removed in PHP 7. Found: '0x8CAFB82EFF70C46'[0m
      |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
-[1mFILE: vendor/microsoft/azure-storage/tests/unit/Table/Models/EntityTest.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[1mFILE: ...r/microsoft/azure-storage/tests/unit/Table/Models/EntityTest.php[0m
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 72 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CAFB82EFF70C46'[0m
+----------------------------------------------------------------------
+ 72 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+    |       | inconsistent prior to PHP 7 and support has been
+    |       | removed in PHP 7. Found: '0x8CAFB82EFF70C46'[0m
     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
-[1mFILE: vendor/microsoft/azure-storage/tests/unit/Table/Models/UpdateEntityResultTest.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[1mFILE: ...azure-storage/tests/unit/Table/Models/UpdateEntityResultTest.php[0m
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 48 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CACB9BD7C6B1B2'[0m
+----------------------------------------------------------------------
+ 48 | [31mERROR[0m | [1mThe behaviour of hexadecimal numeric strings was
+    |       | inconsistent prior to PHP 7 and support has been
+    |       | removed in PHP 7. Found: '0x8CACB9BD7C6B1B2'[0m
     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 [1mFILE: vendor/mtdowling/jmespath.php/src/Utils.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 227 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse order to implode has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first
-     |       | parameter and $pieces the second[0m (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
+ 227 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse
+     |       | order to implode has been deprecated since PHP 7.4 and
+     |       | is removed since PHP 8.0; $glue should be the first
+     |       | parameter and $pieces the second[0m
+     |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
+----------------------------------------------------------------------
 
-Time: 1 mins, 5.96 secs; Memory: 70.01MB
-::error::FILE: includes/buwd-type-db.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 447 | ERROR | Function each() is deprecated since PHP 7.2 and removed since PHP 8.0; Use a foreach loop or ArrayIterator instead%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: vendor/aannnaa7/apiclient-without-services/src/Google/Service/Resource.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 291 | ERROR | Passing the $glue and $pieces parameters in reverse order to implode has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first%0A     |       | parameter and $pieces the second (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: vendor/aannnaa7/aws-sdk-php-minimized/src/DynamoDb/Marshaler.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 261 | ERROR | Function each() is deprecated since PHP 7.2 and removed since PHP 8.0; Use a foreach loop or ArrayIterator instead%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: vendor/araqel/archivetar/PEAR.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A  52 | ERROR | INI directive 'track_errors' is deprecated since PHP 7.2 and removed since PHP 8.0%0A     |       | (PHPCompatibility.IniDirectives.RemovedIniDirectives.track_errorsDeprecatedRemoved)%0A 785 | ERROR | Function each() is deprecated since PHP 7.2 and removed since PHP 8.0; Use a foreach loop or ArrayIterator instead%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: vendor/microsoft/azure-storage/tests/framework/RestProxyTestBase.php%0A-----------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-----------------------------------------------------------------------------------------------------------------------------------------------%0A 69 | ERROR | The constant "ASSERT_QUIET_EVAL" is removed since PHP 8.0%0A    |       | (PHPCompatibility.Constants.RemovedConstants.assert_quiet_evalRemoved)%0A-----------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: vendor/microsoft/azure-storage/tests/framework/TestResources.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 7 ERRORS AFFECTING 7 LINES%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A  929 | ERROR | The behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CACB9BD7C6B1B2'%0A      |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A  949 | ERROR | The behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CACB9BD7C6B1B2'%0A      |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A  956 | ERROR | The behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CACB9BD7C1EEEC'%0A      |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 1234 | ERROR | The behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CAFB82EFF70C46'%0A      |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 1274 | ERROR | The behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CAFB82EFF70C46'%0A      |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 1315 | ERROR | The behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CAFB82EFF70C46'%0A      |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 1350 | ERROR | The behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CAFB82EFF70C46'%0A      |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: vendor/microsoft/azure-storage/tests/functional/Blob/BlobServiceFunctionalTestData.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 63 | ERROR | The behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x123456789ABCDEF'%0A    |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: vendor/microsoft/azure-storage/tests/functional/File/FileServiceFunctionalTestData.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 55 | ERROR | The behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x123456789ABCDEF'%0A    |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: vendor/microsoft/azure-storage/tests/functional/File/FileServiceFunctionalTest.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 1166 | ERROR | Using an unparenthesized expression containing a "." before a "+" or "-" has been deprecated in PHP 7.4 and removed in PHP 8.0%0A      |       | (PHPCompatibility.Operators.ChangedConcatOperatorPrecedence.Found)%0A 1176 | ERROR | Using an unparenthesized expression containing a "." before a "+" or "-" has been deprecated in PHP 7.4 and removed in PHP 8.0%0A      |       | (PHPCompatibility.Operators.ChangedConcatOperatorPrecedence.Found)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: vendor/microsoft/azure-storage/tests/unit/Blob/BlobRestProxyTest.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 3 ERRORS AFFECTING 3 LINES%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A  503 | ERROR | The behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CAFB82EFF70C46'%0A      |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 2509 | ERROR | The behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CAFB82EFF70C46'%0A      |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 2528 | ERROR | The behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CAFB82EFF70C46'%0A      |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: vendor/microsoft/azure-storage/tests/unit/Blob/Models/AccessConditionTest.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 3 ERRORS AFFECTING 3 LINES%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A  53 | ERROR | The behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CAFB82EFF70C46'%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 110 | ERROR | The behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CAFB82EFF70C46'%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 129 | ERROR | The behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CAFB82EFF70C46'%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: vendor/microsoft/azure-storage/tests/unit/Blob/Models/BlobPropertiesTest.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 10 ERRORS AFFECTING 10 LINES%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A  97 | ERROR | The behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CAFB82EFF70C46'%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 115 | ERROR | The behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CAFB82EFF70C46'%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 133 | ERROR | The behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CAFB82EFF70C46'%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 169 | ERROR | The behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CAFB82EFF70C46'%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 187 | ERROR | The behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CAFB82EFF70C46'%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 205 | ERROR | The behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CAFB82EFF70C46'%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 223 | ERROR | The behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CAFB82EFF70C46'%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 241 | ERROR | The behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CAFB82EFF70C46'%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 259 | ERROR | The behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CAFB82EFF70C46'%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 277 | ERROR | The behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CAFB82EFF70C46'%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: vendor/microsoft/azure-storage/tests/unit/Blob/Models/CommitBlobBlocksOptionsTest.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 7 ERRORS AFFECTING 7 LINES%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A  48 | ERROR | The behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CAFB82EFF70C46'%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A  66 | ERROR | The behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CAFB82EFF70C46'%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A  84 | ERROR | The behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CAFB82EFF70C46'%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 102 | ERROR | The behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CAFB82EFF70C46'%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 120 | ERROR | The behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CAFB82EFF70C46'%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 138 | ERROR | The behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CAFB82EFF70C46'%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 156 | ERROR | The behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CAFB82EFF70C46'%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: vendor/microsoft/azure-storage/tests/unit/Blob/Models/ContainerPropertiesTest.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 48 | ERROR | The behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CACB9BD7C6B1B2'%0A    |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 65 | ERROR | The behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CACB9BD7C6B1B2'%0A    |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: vendor/microsoft/azure-storage/tests/unit/Blob/Models/ContainerTest.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 152 | ERROR | The behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CACB9BD7C1EEEC'%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 171 | ERROR | The behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CACB9BD7C1EEEC'%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: vendor/microsoft/azure-storage/tests/unit/Blob/Models/CopyBlobOptionsTest.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 105 | ERROR | The behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CAFB82EFF70C46'%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 120 | ERROR | The behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CAFB82EFF70C46'%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: vendor/microsoft/azure-storage/tests/unit/Blob/Models/CreateBlobBlockOptionsTest.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 47 | ERROR | The behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CAFB82EFF70C46'%0A    |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 65 | ERROR | The behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CAFB82EFF70C46'%0A    |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: vendor/microsoft/azure-storage/tests/unit/Blob/Models/CreateBlobOptionsTest.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 7 ERRORS AFFECTING 7 LINES%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A  50 | ERROR | The behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CAFB82EFF70C46'%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A  68 | ERROR | The behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CAFB82EFF70C46'%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A  86 | ERROR | The behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CAFB82EFF70C46'%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 104 | ERROR | The behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CAFB82EFF70C46'%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 122 | ERROR | The behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CAFB82EFF70C46'%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 140 | ERROR | The behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CAFB82EFF70C46'%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 158 | ERROR | The behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CAFB82EFF70C46'%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: vendor/microsoft/azure-storage/tests/unit/Blob/Models/CreateBlobPagesOptionsTest.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 81 | ERROR | The behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CAFB82EFF70C46'%0A    |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 99 | ERROR | The behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CAFB82EFF70C46'%0A    |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: vendor/microsoft/azure-storage/tests/unit/Blob/Models/DeleteBlobOptionsTest.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 49 | ERROR | The behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CAFB82EFF70C46'%0A    |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: vendor/microsoft/azure-storage/tests/unit/Blob/Models/GetBlobMetadataOptionsTest.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 49 | ERROR | The behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CAFB82EFF70C46'%0A    |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: vendor/microsoft/azure-storage/tests/unit/Blob/Models/GetBlobOptionsTest.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 50 | ERROR | The behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CAFB82EFF70C46'%0A    |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: vendor/microsoft/azure-storage/tests/unit/Blob/Models/GetBlobPropertiesOptionsTest.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 49 | ERROR | The behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CAFB82EFF70C46'%0A    |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: vendor/microsoft/azure-storage/tests/unit/Blob/Models/GetContainerACLResultTest.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 57 | ERROR | The behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CAFB82EFF70C46'%0A    |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: vendor/microsoft/azure-storage/tests/unit/Blob/Models/LeaseResultTest.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 48 | ERROR | The behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CAFB82EFF70C46'%0A    |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: vendor/microsoft/azure-storage/tests/unit/Blob/Models/ListBlobBlocksOptionsTest.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 84 | ERROR | The behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CAFB82EFF70C46'%0A    |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: vendor/microsoft/azure-storage/tests/unit/Blob/Models/ListPageBlobRangesOptionsTest.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 50 | ERROR | The behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CAFB82EFF70C46'%0A    |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: vendor/microsoft/azure-storage/tests/unit/Blob/Models/SetBlobPropertiesOptionsTest.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 7 ERRORS AFFECTING 7 LINES%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A  68 | ERROR | The behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CAFB82EFF70C46'%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A  86 | ERROR | The behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CAFB82EFF70C46'%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 122 | ERROR | The behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CAFB82EFF70C46'%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 140 | ERROR | The behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CAFB82EFF70C46'%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 158 | ERROR | The behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CAFB82EFF70C46'%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 176 | ERROR | The behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CAFB82EFF70C46'%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 194 | ERROR | The behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CAFB82EFF70C46'%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: vendor/microsoft/azure-storage/tests/unit/File/FileRestProxyTest.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 186 | ERROR | The behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CAFB82EFF70C46'%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: vendor/microsoft/azure-storage/tests/unit/Table/Models/EntityTest.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 72 | ERROR | The behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CAFB82EFF70C46'%0A    |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: vendor/microsoft/azure-storage/tests/unit/Table/Models/UpdateEntityResultTest.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 48 | ERROR | The behaviour of hexadecimal numeric strings was inconsistent prior to PHP 7 and support has been removed in PHP 7. Found: '0x8CACB9BD7C6B1B2'%0A    |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: vendor/mtdowling/jmespath.php/src/Utils.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 227 | ERROR | Passing the $glue and $pieces parameters in reverse order to implode has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first%0A     |       | parameter and $pieces the second (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
+Time: 1 mins, 8.37 secs; Memory: 70.01MB
+::error::FILE: includes/buwd-type-db.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 447 | ERROR | Function each() is deprecated since PHP 7.2 and%0A     |       | removed since PHP 8.0; Use a foreach loop or%0A     |       | ArrayIterator instead%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)%0A----------------------------------------------------------------------%0A%0A%0AFILE: ...nnaa7/apiclient-without-services/src/Google/Service/Resource.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 291 | ERROR | Passing the $glue and $pieces parameters in reverse%0A     |       | order to implode has been deprecated since PHP 7.4 and%0A     |       | is removed since PHP 8.0; $glue should be the first%0A     |       | parameter and $pieces the second%0A     |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A----------------------------------------------------------------------%0A%0A%0AFILE: vendor/aannnaa7/aws-sdk-php-minimized/src/DynamoDb/Marshaler.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 261 | ERROR | Function each() is deprecated since PHP 7.2 and%0A     |       | removed since PHP 8.0; Use a foreach loop or%0A     |       | ArrayIterator instead%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)%0A----------------------------------------------------------------------%0A%0A%0AFILE: vendor/araqel/archivetar/PEAR.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A----------------------------------------------------------------------%0A  52 | ERROR | INI directive 'track_errors' is deprecated since PHP%0A     |       | 7.2 and removed since PHP 8.0%0A     |       | (PHPCompatibility.IniDirectives.RemovedIniDirectives.track_errorsDeprecatedRemoved)%0A 785 | ERROR | Function each() is deprecated since PHP 7.2 and%0A     |       | removed since PHP 8.0; Use a foreach loop or%0A     |       | ArrayIterator instead%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)%0A----------------------------------------------------------------------%0A%0A%0AFILE: ...or/microsoft/azure-storage/tests/framework/RestProxyTestBase.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 69 | ERROR | The constant "ASSERT_QUIET_EVAL" is removed since PHP%0A    |       | 8.0%0A    |       | (PHPCompatibility.Constants.RemovedConstants.assert_quiet_evalRemoved)%0A----------------------------------------------------------------------%0A%0A%0AFILE: vendor/microsoft/azure-storage/tests/framework/TestResources.php%0A----------------------------------------------------------------------%0AFOUND 7 ERRORS AFFECTING 7 LINES%0A----------------------------------------------------------------------%0A  929 | ERROR | The behaviour of hexadecimal numeric strings was%0A      |       | inconsistent prior to PHP 7 and support has been%0A      |       | removed in PHP 7. Found: '0x8CACB9BD7C6B1B2'%0A      |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A  949 | ERROR | The behaviour of hexadecimal numeric strings was%0A      |       | inconsistent prior to PHP 7 and support has been%0A      |       | removed in PHP 7. Found: '0x8CACB9BD7C6B1B2'%0A      |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A  956 | ERROR | The behaviour of hexadecimal numeric strings was%0A      |       | inconsistent prior to PHP 7 and support has been%0A      |       | removed in PHP 7. Found: '0x8CACB9BD7C1EEEC'%0A      |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 1234 | ERROR | The behaviour of hexadecimal numeric strings was%0A      |       | inconsistent prior to PHP 7 and support has been%0A      |       | removed in PHP 7. Found: '0x8CAFB82EFF70C46'%0A      |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 1274 | ERROR | The behaviour of hexadecimal numeric strings was%0A      |       | inconsistent prior to PHP 7 and support has been%0A      |       | removed in PHP 7. Found: '0x8CAFB82EFF70C46'%0A      |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 1315 | ERROR | The behaviour of hexadecimal numeric strings was%0A      |       | inconsistent prior to PHP 7 and support has been%0A      |       | removed in PHP 7. Found: '0x8CAFB82EFF70C46'%0A      |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 1350 | ERROR | The behaviour of hexadecimal numeric strings was%0A      |       | inconsistent prior to PHP 7 and support has been%0A      |       | removed in PHP 7. Found: '0x8CAFB82EFF70C46'%0A      |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A----------------------------------------------------------------------%0A%0A%0AFILE: ...-storage/tests/functional/Blob/BlobServiceFunctionalTestData.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 63 | ERROR | The behaviour of hexadecimal numeric strings was%0A    |       | inconsistent prior to PHP 7 and support has been%0A    |       | removed in PHP 7. Found: '0x123456789ABCDEF'%0A    |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A----------------------------------------------------------------------%0A%0A%0AFILE: ...-storage/tests/functional/File/FileServiceFunctionalTestData.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 55 | ERROR | The behaviour of hexadecimal numeric strings was%0A    |       | inconsistent prior to PHP 7 and support has been%0A    |       | removed in PHP 7. Found: '0x123456789ABCDEF'%0A    |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A----------------------------------------------------------------------%0A%0A%0AFILE: ...zure-storage/tests/functional/File/FileServiceFunctionalTest.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A----------------------------------------------------------------------%0A 1166 | ERROR | Using an unparenthesized expression containing a "."%0A      |       | before a "+" or "-" has been deprecated in PHP 7.4%0A      |       | and removed in PHP 8.0%0A      |       | (PHPCompatibility.Operators.ChangedConcatOperatorPrecedence.Found)%0A 1176 | ERROR | Using an unparenthesized expression containing a "."%0A      |       | before a "+" or "-" has been deprecated in PHP 7.4%0A      |       | and removed in PHP 8.0%0A      |       | (PHPCompatibility.Operators.ChangedConcatOperatorPrecedence.Found)%0A----------------------------------------------------------------------%0A%0A%0AFILE: ...or/microsoft/azure-storage/tests/unit/Blob/BlobRestProxyTest.php%0A----------------------------------------------------------------------%0AFOUND 3 ERRORS AFFECTING 3 LINES%0A----------------------------------------------------------------------%0A  503 | ERROR | The behaviour of hexadecimal numeric strings was%0A      |       | inconsistent prior to PHP 7 and support has been%0A      |       | removed in PHP 7. Found: '0x8CAFB82EFF70C46'%0A      |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 2509 | ERROR | The behaviour of hexadecimal numeric strings was%0A      |       | inconsistent prior to PHP 7 and support has been%0A      |       | removed in PHP 7. Found: '0x8CAFB82EFF70C46'%0A      |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 2528 | ERROR | The behaviour of hexadecimal numeric strings was%0A      |       | inconsistent prior to PHP 7 and support has been%0A      |       | removed in PHP 7. Found: '0x8CAFB82EFF70C46'%0A      |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A----------------------------------------------------------------------%0A%0A%0AFILE: ...oft/azure-storage/tests/unit/Blob/Models/AccessConditionTest.php%0A----------------------------------------------------------------------%0AFOUND 3 ERRORS AFFECTING 3 LINES%0A----------------------------------------------------------------------%0A  53 | ERROR | The behaviour of hexadecimal numeric strings was%0A     |       | inconsistent prior to PHP 7 and support has been%0A     |       | removed in PHP 7. Found: '0x8CAFB82EFF70C46'%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 110 | ERROR | The behaviour of hexadecimal numeric strings was%0A     |       | inconsistent prior to PHP 7 and support has been%0A     |       | removed in PHP 7. Found: '0x8CAFB82EFF70C46'%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 129 | ERROR | The behaviour of hexadecimal numeric strings was%0A     |       | inconsistent prior to PHP 7 and support has been%0A     |       | removed in PHP 7. Found: '0x8CAFB82EFF70C46'%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A----------------------------------------------------------------------%0A%0A%0AFILE: ...soft/azure-storage/tests/unit/Blob/Models/BlobPropertiesTest.php%0A----------------------------------------------------------------------%0AFOUND 10 ERRORS AFFECTING 10 LINES%0A----------------------------------------------------------------------%0A  97 | ERROR | The behaviour of hexadecimal numeric strings was%0A     |       | inconsistent prior to PHP 7 and support has been%0A     |       | removed in PHP 7. Found: '0x8CAFB82EFF70C46'%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 115 | ERROR | The behaviour of hexadecimal numeric strings was%0A     |       | inconsistent prior to PHP 7 and support has been%0A     |       | removed in PHP 7. Found: '0x8CAFB82EFF70C46'%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 133 | ERROR | The behaviour of hexadecimal numeric strings was%0A     |       | inconsistent prior to PHP 7 and support has been%0A     |       | removed in PHP 7. Found: '0x8CAFB82EFF70C46'%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 169 | ERROR | The behaviour of hexadecimal numeric strings was%0A     |       | inconsistent prior to PHP 7 and support has been%0A     |       | removed in PHP 7. Found: '0x8CAFB82EFF70C46'%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 187 | ERROR | The behaviour of hexadecimal numeric strings was%0A     |       | inconsistent prior to PHP 7 and support has been%0A     |       | removed in PHP 7. Found: '0x8CAFB82EFF70C46'%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 205 | ERROR | The behaviour of hexadecimal numeric strings was%0A     |       | inconsistent prior to PHP 7 and support has been%0A     |       | removed in PHP 7. Found: '0x8CAFB82EFF70C46'%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 223 | ERROR | The behaviour of hexadecimal numeric strings was%0A     |       | inconsistent prior to PHP 7 and support has been%0A     |       | removed in PHP 7. Found: '0x8CAFB82EFF70C46'%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 241 | ERROR | The behaviour of hexadecimal numeric strings was%0A     |       | inconsistent prior to PHP 7 and support has been%0A     |       | removed in PHP 7. Found: '0x8CAFB82EFF70C46'%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 259 | ERROR | The behaviour of hexadecimal numeric strings was%0A     |       | inconsistent prior to PHP 7 and support has been%0A     |       | removed in PHP 7. Found: '0x8CAFB82EFF70C46'%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 277 | ERROR | The behaviour of hexadecimal numeric strings was%0A     |       | inconsistent prior to PHP 7 and support has been%0A     |       | removed in PHP 7. Found: '0x8CAFB82EFF70C46'%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A----------------------------------------------------------------------%0A%0A%0AFILE: ...e-storage/tests/unit/Blob/Models/CommitBlobBlocksOptionsTest.php%0A----------------------------------------------------------------------%0AFOUND 7 ERRORS AFFECTING 7 LINES%0A----------------------------------------------------------------------%0A  48 | ERROR | The behaviour of hexadecimal numeric strings was%0A     |       | inconsistent prior to PHP 7 and support has been%0A     |       | removed in PHP 7. Found: '0x8CAFB82EFF70C46'%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A  66 | ERROR | The behaviour of hexadecimal numeric strings was%0A     |       | inconsistent prior to PHP 7 and support has been%0A     |       | removed in PHP 7. Found: '0x8CAFB82EFF70C46'%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A  84 | ERROR | The behaviour of hexadecimal numeric strings was%0A     |       | inconsistent prior to PHP 7 and support has been%0A     |       | removed in PHP 7. Found: '0x8CAFB82EFF70C46'%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 102 | ERROR | The behaviour of hexadecimal numeric strings was%0A     |       | inconsistent prior to PHP 7 and support has been%0A     |       | removed in PHP 7. Found: '0x8CAFB82EFF70C46'%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 120 | ERROR | The behaviour of hexadecimal numeric strings was%0A     |       | inconsistent prior to PHP 7 and support has been%0A     |       | removed in PHP 7. Found: '0x8CAFB82EFF70C46'%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 138 | ERROR | The behaviour of hexadecimal numeric strings was%0A     |       | inconsistent prior to PHP 7 and support has been%0A     |       | removed in PHP 7. Found: '0x8CAFB82EFF70C46'%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 156 | ERROR | The behaviour of hexadecimal numeric strings was%0A     |       | inconsistent prior to PHP 7 and support has been%0A     |       | removed in PHP 7. Found: '0x8CAFB82EFF70C46'%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A----------------------------------------------------------------------%0A%0A%0AFILE: ...azure-storage/tests/unit/Blob/Models/ContainerPropertiesTest.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A----------------------------------------------------------------------%0A 48 | ERROR | The behaviour of hexadecimal numeric strings was%0A    |       | inconsistent prior to PHP 7 and support has been%0A    |       | removed in PHP 7. Found: '0x8CACB9BD7C6B1B2'%0A    |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 65 | ERROR | The behaviour of hexadecimal numeric strings was%0A    |       | inconsistent prior to PHP 7 and support has been%0A    |       | removed in PHP 7. Found: '0x8CACB9BD7C6B1B2'%0A    |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A----------------------------------------------------------------------%0A%0A%0AFILE: ...microsoft/azure-storage/tests/unit/Blob/Models/ContainerTest.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A----------------------------------------------------------------------%0A 152 | ERROR | The behaviour of hexadecimal numeric strings was%0A     |       | inconsistent prior to PHP 7 and support has been%0A     |       | removed in PHP 7. Found: '0x8CACB9BD7C1EEEC'%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 171 | ERROR | The behaviour of hexadecimal numeric strings was%0A     |       | inconsistent prior to PHP 7 and support has been%0A     |       | removed in PHP 7. Found: '0x8CACB9BD7C1EEEC'%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A----------------------------------------------------------------------%0A%0A%0AFILE: ...oft/azure-storage/tests/unit/Blob/Models/CopyBlobOptionsTest.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A----------------------------------------------------------------------%0A 105 | ERROR | The behaviour of hexadecimal numeric strings was%0A     |       | inconsistent prior to PHP 7 and support has been%0A     |       | removed in PHP 7. Found: '0x8CAFB82EFF70C46'%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 120 | ERROR | The behaviour of hexadecimal numeric strings was%0A     |       | inconsistent prior to PHP 7 and support has been%0A     |       | removed in PHP 7. Found: '0x8CAFB82EFF70C46'%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A----------------------------------------------------------------------%0A%0A%0AFILE: ...re-storage/tests/unit/Blob/Models/CreateBlobBlockOptionsTest.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A----------------------------------------------------------------------%0A 47 | ERROR | The behaviour of hexadecimal numeric strings was%0A    |       | inconsistent prior to PHP 7 and support has been%0A    |       | removed in PHP 7. Found: '0x8CAFB82EFF70C46'%0A    |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 65 | ERROR | The behaviour of hexadecimal numeric strings was%0A    |       | inconsistent prior to PHP 7 and support has been%0A    |       | removed in PHP 7. Found: '0x8CAFB82EFF70C46'%0A    |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A----------------------------------------------------------------------%0A%0A%0AFILE: ...t/azure-storage/tests/unit/Blob/Models/CreateBlobOptionsTest.php%0A----------------------------------------------------------------------%0AFOUND 7 ERRORS AFFECTING 7 LINES%0A----------------------------------------------------------------------%0A  50 | ERROR | The behaviour of hexadecimal numeric strings was%0A     |       | inconsistent prior to PHP 7 and support has been%0A     |       | removed in PHP 7. Found: '0x8CAFB82EFF70C46'%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A  68 | ERROR | The behaviour of hexadecimal numeric strings was%0A     |       | inconsistent prior to PHP 7 and support has been%0A     |       | removed in PHP 7. Found: '0x8CAFB82EFF70C46'%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A  86 | ERROR | The behaviour of hexadecimal numeric strings was%0A     |       | inconsistent prior to PHP 7 and support has been%0A     |       | removed in PHP 7. Found: '0x8CAFB82EFF70C46'%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 104 | ERROR | The behaviour of hexadecimal numeric strings was%0A     |       | inconsistent prior to PHP 7 and support has been%0A     |       | removed in PHP 7. Found: '0x8CAFB82EFF70C46'%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 122 | ERROR | The behaviour of hexadecimal numeric strings was%0A     |       | inconsistent prior to PHP 7 and support has been%0A     |       | removed in PHP 7. Found: '0x8CAFB82EFF70C46'%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 140 | ERROR | The behaviour of hexadecimal numeric strings was%0A     |       | inconsistent prior to PHP 7 and support has been%0A     |       | removed in PHP 7. Found: '0x8CAFB82EFF70C46'%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 158 | ERROR | The behaviour of hexadecimal numeric strings was%0A     |       | inconsistent prior to PHP 7 and support has been%0A     |       | removed in PHP 7. Found: '0x8CAFB82EFF70C46'%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A----------------------------------------------------------------------%0A%0A%0AFILE: ...re-storage/tests/unit/Blob/Models/CreateBlobPagesOptionsTest.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A----------------------------------------------------------------------%0A 81 | ERROR | The behaviour of hexadecimal numeric strings was%0A    |       | inconsistent prior to PHP 7 and support has been%0A    |       | removed in PHP 7. Found: '0x8CAFB82EFF70C46'%0A    |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 99 | ERROR | The behaviour of hexadecimal numeric strings was%0A    |       | inconsistent prior to PHP 7 and support has been%0A    |       | removed in PHP 7. Found: '0x8CAFB82EFF70C46'%0A    |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A----------------------------------------------------------------------%0A%0A%0AFILE: ...t/azure-storage/tests/unit/Blob/Models/DeleteBlobOptionsTest.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 49 | ERROR | The behaviour of hexadecimal numeric strings was%0A    |       | inconsistent prior to PHP 7 and support has been%0A    |       | removed in PHP 7. Found: '0x8CAFB82EFF70C46'%0A    |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A----------------------------------------------------------------------%0A%0A%0AFILE: ...re-storage/tests/unit/Blob/Models/GetBlobMetadataOptionsTest.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 49 | ERROR | The behaviour of hexadecimal numeric strings was%0A    |       | inconsistent prior to PHP 7 and support has been%0A    |       | removed in PHP 7. Found: '0x8CAFB82EFF70C46'%0A    |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A----------------------------------------------------------------------%0A%0A%0AFILE: ...soft/azure-storage/tests/unit/Blob/Models/GetBlobOptionsTest.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 50 | ERROR | The behaviour of hexadecimal numeric strings was%0A    |       | inconsistent prior to PHP 7 and support has been%0A    |       | removed in PHP 7. Found: '0x8CAFB82EFF70C46'%0A    |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A----------------------------------------------------------------------%0A%0A%0AFILE: ...-storage/tests/unit/Blob/Models/GetBlobPropertiesOptionsTest.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 49 | ERROR | The behaviour of hexadecimal numeric strings was%0A    |       | inconsistent prior to PHP 7 and support has been%0A    |       | removed in PHP 7. Found: '0x8CAFB82EFF70C46'%0A    |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A----------------------------------------------------------------------%0A%0A%0AFILE: ...ure-storage/tests/unit/Blob/Models/GetContainerACLResultTest.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 57 | ERROR | The behaviour of hexadecimal numeric strings was%0A    |       | inconsistent prior to PHP 7 and support has been%0A    |       | removed in PHP 7. Found: '0x8CAFB82EFF70C46'%0A    |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A----------------------------------------------------------------------%0A%0A%0AFILE: ...crosoft/azure-storage/tests/unit/Blob/Models/LeaseResultTest.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 48 | ERROR | The behaviour of hexadecimal numeric strings was%0A    |       | inconsistent prior to PHP 7 and support has been%0A    |       | removed in PHP 7. Found: '0x8CAFB82EFF70C46'%0A    |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A----------------------------------------------------------------------%0A%0A%0AFILE: ...ure-storage/tests/unit/Blob/Models/ListBlobBlocksOptionsTest.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 84 | ERROR | The behaviour of hexadecimal numeric strings was%0A    |       | inconsistent prior to PHP 7 and support has been%0A    |       | removed in PHP 7. Found: '0x8CAFB82EFF70C46'%0A    |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A----------------------------------------------------------------------%0A%0A%0AFILE: ...storage/tests/unit/Blob/Models/ListPageBlobRangesOptionsTest.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 50 | ERROR | The behaviour of hexadecimal numeric strings was%0A    |       | inconsistent prior to PHP 7 and support has been%0A    |       | removed in PHP 7. Found: '0x8CAFB82EFF70C46'%0A    |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A----------------------------------------------------------------------%0A%0A%0AFILE: ...-storage/tests/unit/Blob/Models/SetBlobPropertiesOptionsTest.php%0A----------------------------------------------------------------------%0AFOUND 7 ERRORS AFFECTING 7 LINES%0A----------------------------------------------------------------------%0A  68 | ERROR | The behaviour of hexadecimal numeric strings was%0A     |       | inconsistent prior to PHP 7 and support has been%0A     |       | removed in PHP 7. Found: '0x8CAFB82EFF70C46'%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A  86 | ERROR | The behaviour of hexadecimal numeric strings was%0A     |       | inconsistent prior to PHP 7 and support has been%0A     |       | removed in PHP 7. Found: '0x8CAFB82EFF70C46'%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 122 | ERROR | The behaviour of hexadecimal numeric strings was%0A     |       | inconsistent prior to PHP 7 and support has been%0A     |       | removed in PHP 7. Found: '0x8CAFB82EFF70C46'%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 140 | ERROR | The behaviour of hexadecimal numeric strings was%0A     |       | inconsistent prior to PHP 7 and support has been%0A     |       | removed in PHP 7. Found: '0x8CAFB82EFF70C46'%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 158 | ERROR | The behaviour of hexadecimal numeric strings was%0A     |       | inconsistent prior to PHP 7 and support has been%0A     |       | removed in PHP 7. Found: '0x8CAFB82EFF70C46'%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 176 | ERROR | The behaviour of hexadecimal numeric strings was%0A     |       | inconsistent prior to PHP 7 and support has been%0A     |       | removed in PHP 7. Found: '0x8CAFB82EFF70C46'%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A 194 | ERROR | The behaviour of hexadecimal numeric strings was%0A     |       | inconsistent prior to PHP 7 and support has been%0A     |       | removed in PHP 7. Found: '0x8CAFB82EFF70C46'%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A----------------------------------------------------------------------%0A%0A%0AFILE: ...or/microsoft/azure-storage/tests/unit/File/FileRestProxyTest.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 186 | ERROR | The behaviour of hexadecimal numeric strings was%0A     |       | inconsistent prior to PHP 7 and support has been%0A     |       | removed in PHP 7. Found: '0x8CAFB82EFF70C46'%0A     |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A----------------------------------------------------------------------%0A%0A%0AFILE: ...r/microsoft/azure-storage/tests/unit/Table/Models/EntityTest.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 72 | ERROR | The behaviour of hexadecimal numeric strings was%0A    |       | inconsistent prior to PHP 7 and support has been%0A    |       | removed in PHP 7. Found: '0x8CAFB82EFF70C46'%0A    |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A----------------------------------------------------------------------%0A%0A%0AFILE: ...azure-storage/tests/unit/Table/Models/UpdateEntityResultTest.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 48 | ERROR | The behaviour of hexadecimal numeric strings was%0A    |       | inconsistent prior to PHP 7 and support has been%0A    |       | removed in PHP 7. Found: '0x8CACB9BD7C6B1B2'%0A    |       | (PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found)%0A----------------------------------------------------------------------%0A%0A%0AFILE: vendor/mtdowling/jmespath.php/src/Utils.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 227 | ERROR | Passing the $glue and $pieces parameters in reverse%0A     |       | order to implode has been deprecated since PHP 7.4 and%0A     |       | is removed since PHP 8.0; $glue should be the first%0A     |       | parameter and $pieces the second%0A     |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A----------------------------------------------------------------------%0A
