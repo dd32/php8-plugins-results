@@ -110,6 +110,8 @@ No syntax errors detected in wp-real-estate/wp-real-estate/includes/libraries/cm
 No syntax errors detected in wp-real-estate/wp-real-estate/includes/libraries/cmb2-grid/Cmb2GridPluginLoad.php
 No syntax errors detected in wp-real-estate/wp-real-estate/includes/libraries/cmb2-grid/Cmb2GridPlugin.php
 No syntax errors detected in wp-real-estate/wp-real-estate/includes/libraries/cmb2-grid/DesignPatterns/index.php
+
+Warning: Private methods cannot be final as they are never overridden by other classes in wp-real-estate/wp-real-estate/includes/libraries/cmb2-grid/DesignPatterns/Singleton.php on line 30
 No syntax errors detected in wp-real-estate/wp-real-estate/includes/libraries/cmb2-grid/DesignPatterns/Singleton.php
 No syntax errors detected in wp-real-estate/wp-real-estate/includes/libraries/cmb2-grid/Grid/Cmb2Grid.php
 No syntax errors detected in wp-real-estate/wp-real-estate/includes/libraries/cmb2-grid/Grid/Column.php
@@ -187,6 +189,7 @@ No syntax errors detected in wp-real-estate/wp-real-estate/templates/single-list
 No syntax errors detected in wp-real-estate/wp-real-estate/templates/single-listing.php
 No syntax errors detected in wp-real-estate/wp-real-estate/uninstall.php
 No syntax errors detected in wp-real-estate/wp-real-estate/wp-real-estate.php
+::error::%0Aincludes/libraries/cmb2-grid/DesignPatterns/Singleton.php%0A  Warning: Private methods cannot be final as they are never overridden by other classes on line 30
 ............................................................  60 / 188 (32%)
 .................................................[31mE[0m.......... 120 / 188 (64%)
 ............................................................ 180 / 188 (96%)
@@ -195,12 +198,14 @@ No syntax errors detected in wp-real-estate/wp-real-estate/wp-real-estate.php
 
 
 [1mFILE: includes/libraries/cmb2-grid/Cmb2GridPlugin.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 28 | [31mERROR[0m | [1mFunction create_function() is deprecated since PHP 7.2 and removed since PHP 8.0; Use an anonymous function instead[0m
+----------------------------------------------------------------------
+ 28 | [31mERROR[0m | [1mFunction create_function() is deprecated since PHP 7.2
+    |       | and removed since PHP 8.0; Use an anonymous function
+    |       | instead[0m
     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
-Time: 3.24 secs; Memory: 20MB
-::error::FILE: includes/libraries/cmb2-grid/Cmb2GridPlugin.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 28 | ERROR | Function create_function() is deprecated since PHP 7.2 and removed since PHP 8.0; Use an anonymous function instead%0A    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
+Time: 3.07 secs; Memory: 20MB
+::error::FILE: includes/libraries/cmb2-grid/Cmb2GridPlugin.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 28 | ERROR | Function create_function() is deprecated since PHP 7.2%0A    |       | and removed since PHP 8.0; Use an anonymous function%0A    |       | instead%0A    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)%0A----------------------------------------------------------------------%0A
