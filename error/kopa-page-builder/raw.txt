@@ -15,6 +15,8 @@ No syntax errors detected in kopa-page-builder/kopa-page-builder/inc/class-kpb-u
 No syntax errors detected in kopa-page-builder/kopa-page-builder/inc/class-kpb-widget.php
 No syntax errors detected in kopa-page-builder/kopa-page-builder/inc/fields/class-kpb-field-alert.php
 No syntax errors detected in kopa-page-builder/kopa-page-builder/inc/fields/class-kpb-field-attachment-image.php
+
+Fatal error: Unparenthesized `a ? b : c ? d : e` is not supported. Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)` in kopa-page-builder/kopa-page-builder/inc/fields/class-kpb-field-checkbox.php on line 9
 Errors parsing kopa-page-builder/kopa-page-builder/inc/fields/class-kpb-field-checkbox.php
 No syntax errors detected in kopa-page-builder/kopa-page-builder/inc/fields/class-kpb-field-color.php
 No syntax errors detected in kopa-page-builder/kopa-page-builder/inc/fields/class-kpb-field-icon.php
@@ -30,18 +32,22 @@ No syntax errors detected in kopa-page-builder/kopa-page-builder/inc/minifier/cl
 No syntax errors detected in kopa-page-builder/kopa-page-builder/inc/minifier/class-kpb-minifier-html.php
 No syntax errors detected in kopa-page-builder/kopa-page-builder/inc/shortcodes/class-kpb-shortcode-site-url.php
 No syntax errors detected in kopa-page-builder/kopa-page-builder/kopa-page-builder.php
-::error::%0Ainc/fields/class-kpb-field-checkbox.php
+::error::%0Ainc/fields/class-kpb-field-checkbox.php%0A  Fatal error: Unparenthesized `a ? b : c ? d : e` is not supported.%0A      Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)`%0A      on line 9
 ................[31mE[0m.............. 31 / 31 (100%)
 
 
 
 [1mFILE: inc/fields/class-kpb-field-checkbox.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 9 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has been deprecated in PHP 7.4 and removed in PHP 8.0. Multiple consecutive ternaries detected. Use parenthesis to
-   |       | clarify the order in which the operations should be executed[0m (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
+ 9 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has been
+   |       | deprecated in PHP 7.4 and removed in PHP 8.0. Multiple
+   |       | consecutive ternaries detected. Use parenthesis to
+   |       | clarify the order in which the operations should be
+   |       | executed[0m
+   |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
+----------------------------------------------------------------------
 
-Time: 434ms; Memory: 14MB
-::error::FILE: inc/fields/class-kpb-field-checkbox.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 9 | ERROR | The left-associativity of the ternary operator has been deprecated in PHP 7.4 and removed in PHP 8.0. Multiple consecutive ternaries detected. Use parenthesis to%0A   |       | clarify the order in which the operations should be executed (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
+Time: 390ms; Memory: 14MB
+::error::FILE: inc/fields/class-kpb-field-checkbox.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 9 | ERROR | The left-associativity of the ternary operator has been%0A   |       | deprecated in PHP 7.4 and removed in PHP 8.0. Multiple%0A   |       | consecutive ternaries detected. Use parenthesis to%0A   |       | clarify the order in which the operations should be%0A   |       | executed%0A   |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A----------------------------------------------------------------------%0A
