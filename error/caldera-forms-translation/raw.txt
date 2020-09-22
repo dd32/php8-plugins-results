@@ -8,6 +8,8 @@ No syntax errors detected in caldera-forms-translation/caldera-forms-translation
 
 Warning: "continue" targeting switch is equivalent to "break". Did you mean to use "continue 2"? in caldera-forms-translation/caldera-forms-translation/classes/factories.php on line 134
 No syntax errors detected in caldera-forms-translation/caldera-forms-translation/classes/factories.php
+
+Fatal error: Unparenthesized `a ? b : c ? d : e` is not supported. Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)` in caldera-forms-translation/caldera-forms-translation/classes/field.php on line 109
 Errors parsing caldera-forms-translation/caldera-forms-translation/classes/field.php
 No syntax errors detected in caldera-forms-translation/caldera-forms-translation/classes/filter.php
 No syntax errors detected in caldera-forms-translation/caldera-forms-translation/classes/form.php
@@ -31,18 +33,22 @@ No syntax errors detected in caldera-forms-translation/caldera-forms-translation
 No syntax errors detected in caldera-forms-translation/caldera-forms-translation/views/main-page.php
 No syntax errors detected in caldera-forms-translation/caldera-forms-translation/views/templates/field-list.php
 No syntax errors detected in caldera-forms-translation/caldera-forms-translation/views/templates/field.php
-::error::%0Aclasses/factories.php%0A  Warning: "continue" targeting switch is equivalent to "break".%0A      Did you mean to use "continue 2"?%0A      on line 134%0A%0Aclasses/field.php
+::error::%0Aclasses/factories.php%0A  Warning: "continue" targeting switch is equivalent to "break".%0A      Did you mean to use "continue 2"?%0A      on line 134%0A%0Aclasses/field.php%0A  Fatal error: Unparenthesized `a ? b : c ? d : e` is not supported.%0A      Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)`%0A      on line 109
 .......[31mE[0m...................... 30 / 30 (100%)
 
 
 
 [1mFILE: classes/field.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 109 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has been deprecated in PHP 7.4 and removed in PHP 8.0. Multiple consecutive ternaries detected. Use parenthesis to
-     |       | clarify the order in which the operations should be executed[0m (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
+ 109 | [31mERROR[0m | [1mThe left-associativity of the ternary operator has
+     |       | been deprecated in PHP 7.4 and removed in PHP 8.0.
+     |       | Multiple consecutive ternaries detected. Use
+     |       | parenthesis to clarify the order in which the
+     |       | operations should be executed[0m
+     |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)
+----------------------------------------------------------------------
 
-Time: 438ms; Memory: 14MB
-::error::FILE: classes/field.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 109 | ERROR | The left-associativity of the ternary operator has been deprecated in PHP 7.4 and removed in PHP 8.0. Multiple consecutive ternaries detected. Use parenthesis to%0A     |       | clarify the order in which the operations should be executed (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
+Time: 331ms; Memory: 14MB
+::error::FILE: classes/field.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 109 | ERROR | The left-associativity of the ternary operator has%0A     |       | been deprecated in PHP 7.4 and removed in PHP 8.0.%0A     |       | Multiple consecutive ternaries detected. Use%0A     |       | parenthesis to clarify the order in which the%0A     |       | operations should be executed%0A     |       | (PHPCompatibility.Operators.RemovedTernaryAssociativity.Found)%0A----------------------------------------------------------------------%0A

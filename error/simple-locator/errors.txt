@@ -1,5 +1,6 @@
 
 vendor/guzzlehttp/guzzle/src/Event/Emitter.php
+  Fatal error: Cannot use lexical variable $eventName as a parameter name on line 48
 
 vendor/guzzlehttp/guzzle/src/Message/MessageFactory.php
   Warning: "continue" targeting switch is equivalent to "break".
@@ -23,9 +24,11 @@ vendor/guzzlehttp/ringphp/src/Client/CurlFactory.php
       Did you mean to use "continue 2"?
       on line 382
 FILE: vendor/guzzlehttp/guzzle/src/Event/Emitter.php
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 FOUND 1 ERROR AFFECTING 1 LINE
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 48 | ERROR | Variables bound to a closure via the use construct cannot use the same name as superglobals, $this, or a declared parameter since PHP 7.1. Found: $eventName
+----------------------------------------------------------------------
+ 48 | ERROR | Variables bound to a closure via the use construct
+    |       | cannot use the same name as superglobals, $this, or a
+    |       | declared parameter since PHP 7.1. Found: $eventName
     |       | (PHPCompatibility.FunctionDeclarations.ForbiddenVariableNamesInClosureUse.FoundShadowParam)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
