@@ -790,7 +790,6 @@ No syntax errors detected in image-optimizer-wd/image-optimizer-wd/wd/templates/
 No syntax errors detected in image-optimizer-wd/image-optimizer-wd/wd/templates/display_overview.php
 No syntax errors detected in image-optimizer-wd/image-optimizer-wd/wd/templates/display_subscribe.php
 No syntax errors detected in image-optimizer-wd/image-optimizer-wd/wd/wd.php
-No syntax errors detected in image-optimizer-wd/image-optimizer-wd/wd/wd.php
 ......[31mE[0m.....................................................  60 / 790 (8%)
 ............................................................ 120 / 790 (15%)
 ............................................................ 180 / 790 (23%)
@@ -809,32 +808,41 @@ No syntax errors detected in image-optimizer-wd/image-optimizer-wd/wd/wd.php
 
 
 [1mFILE: includes/iowd-helper.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 2 ERRORS AFFECTING 2 LINES[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 64 | [31mERROR[0m | [1mFunction create_function() is deprecated since PHP 7.2 and removed since PHP 8.0; Use an anonymous function instead[0m
+----------------------------------------------------------------------
+ 64 | [31mERROR[0m | [1mFunction create_function() is deprecated since PHP 7.2
+    |       | and removed since PHP 8.0; Use an anonymous function
+    |       | instead[0m
     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
- 95 | [31mERROR[0m | [1mFunction create_function() is deprecated since PHP 7.2 and removed since PHP 8.0; Use an anonymous function instead[0m
+ 95 | [31mERROR[0m | [1mFunction create_function() is deprecated since PHP 7.2
+    |       | and removed since PHP 8.0; Use an anonymous function
+    |       | instead[0m
     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 [1mFILE: vendor/aannnaa7/aws-sdk-php-minimized/src/DynamoDb/Marshaler.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 261 | [31mERROR[0m | [1mFunction each() is deprecated since PHP 7.2 and removed since PHP 8.0; Use a foreach loop or ArrayIterator instead[0m
+----------------------------------------------------------------------
+ 261 | [31mERROR[0m | [1mFunction each() is deprecated since PHP 7.2 and
+     |       | removed since PHP 8.0; Use a foreach loop or
+     |       | ArrayIterator instead[0m
      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 [1mFILE: vendor/mtdowling/jmespath.php/src/Utils.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 227 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse order to implode has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first
-     |       | parameter and $pieces the second[0m (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
+ 227 | [31mERROR[0m | [1mPassing the $glue and $pieces parameters in reverse
+     |       | order to implode has been deprecated since PHP 7.4 and
+     |       | is removed since PHP 8.0; $glue should be the first
+     |       | parameter and $pieces the second[0m
+     |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)
+----------------------------------------------------------------------
 
-Time: 37.31 secs; Memory: 64.01MB
-::error::FILE: includes/iowd-helper.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 64 | ERROR | Function create_function() is deprecated since PHP 7.2 and removed since PHP 8.0; Use an anonymous function instead%0A    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)%0A 95 | ERROR | Function create_function() is deprecated since PHP 7.2 and removed since PHP 8.0; Use an anonymous function instead%0A    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: vendor/aannnaa7/aws-sdk-php-minimized/src/DynamoDb/Marshaler.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 261 | ERROR | Function each() is deprecated since PHP 7.2 and removed since PHP 8.0; Use a foreach loop or ArrayIterator instead%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: vendor/mtdowling/jmespath.php/src/Utils.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 227 | ERROR | Passing the $glue and $pieces parameters in reverse order to implode has been deprecated since PHP 7.4 and is removed since PHP 8.0; $glue should be the first%0A     |       | parameter and $pieces the second (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
+Time: 39.87 secs; Memory: 64.01MB
+::error::FILE: includes/iowd-helper.php%0A----------------------------------------------------------------------%0AFOUND 2 ERRORS AFFECTING 2 LINES%0A----------------------------------------------------------------------%0A 64 | ERROR | Function create_function() is deprecated since PHP 7.2%0A    |       | and removed since PHP 8.0; Use an anonymous function%0A    |       | instead%0A    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)%0A 95 | ERROR | Function create_function() is deprecated since PHP 7.2%0A    |       | and removed since PHP 8.0; Use an anonymous function%0A    |       | instead%0A    |       | (PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved)%0A----------------------------------------------------------------------%0A%0A%0AFILE: vendor/aannnaa7/aws-sdk-php-minimized/src/DynamoDb/Marshaler.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 261 | ERROR | Function each() is deprecated since PHP 7.2 and%0A     |       | removed since PHP 8.0; Use a foreach loop or%0A     |       | ArrayIterator instead%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved)%0A----------------------------------------------------------------------%0A%0A%0AFILE: vendor/mtdowling/jmespath.php/src/Utils.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 227 | ERROR | Passing the $glue and $pieces parameters in reverse%0A     |       | order to implode has been deprecated since PHP 7.4 and%0A     |       | is removed since PHP 8.0; $glue should be the first%0A     |       | parameter and $pieces the second%0A     |       | (PHPCompatibility.ParameterValues.RemovedImplodeFlexibleParamOrder.Removed)%0A----------------------------------------------------------------------%0A
