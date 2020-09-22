@@ -73,6 +73,8 @@ No syntax errors detected in flexmls-idx/flexmls-idx/integration/wpbakery/params
 No syntax errors detected in flexmls-idx/flexmls-idx/integration/wpbakery/params/script_tag.php
 No syntax errors detected in flexmls-idx/flexmls-idx/integration/wpbakery/params/section_title.php
 No syntax errors detected in flexmls-idx/flexmls-idx/integration/wpbakery/params/select_tag.php
+
+Fatal error: Cannot use "parent" when current class scope has no parent in flexmls-idx/flexmls-idx/integration/wpbakery/params/sortable_list_tag.php on line 8
 Errors parsing flexmls-idx/flexmls-idx/integration/wpbakery/params/sortable_list_tag.php
 No syntax errors detected in flexmls-idx/flexmls-idx/integration/wpbakery/params/text_field_tag.php
 No syntax errors detected in flexmls-idx/flexmls-idx/lib/account.php
@@ -153,7 +155,7 @@ No syntax errors detected in flexmls-idx/flexmls-idx/views/login.php
 No syntax errors detected in flexmls-idx/flexmls-idx/views/_property_types.php
 No syntax errors detected in flexmls-idx/flexmls-idx/Widgets/autoloader.php
 No syntax errors detected in flexmls-idx/flexmls-idx/Widgets/LeadGeneration.php
-::error::%0Aintegration/wpbakery/params/sortable_list_tag.php
+::error::%0Aintegration/wpbakery/params/sortable_list_tag.php%0A  Fatal error: Cannot use "parent" when current class scope has no parent on line 8
 ............................................................  60 / 154 (39%)
 ..............[31mE[0m......................[31mE[0m...................... 120 / 154 (78%)
 ......................[31mE[0m...........                           154 / 154 (100%)
@@ -161,30 +163,33 @@ No syntax errors detected in flexmls-idx/flexmls-idx/Widgets/LeadGeneration.php
 
 
 [1mFILE: integration/wpbakery/params/sortable_list_tag.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 8 | [31mERROR[0m | [1mUsing "parent" inside a class without parent is deprecated since PHP 7.4 and removed since PHP 8.0[0m
+----------------------------------------------------------------------
+ 8 | [31mERROR[0m | [1mUsing "parent" inside a class without parent is
+   |       | deprecated since PHP 7.4 and removed since PHP 8.0[0m
    |       | (PHPCompatibility.Classes.RemovedOrphanedParent.Removed)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 [1mFILE: lib/settings-page.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 1127 | [31mERROR[0m | [1mFunction get_magic_quotes_gpc() is deprecated since PHP 7.4 and removed since PHP 8.0[0m
+----------------------------------------------------------------------
+ 1127 | [31mERROR[0m | [1mFunction get_magic_quotes_gpc() is deprecated since
+      |       | PHP 7.4 and removed since PHP 8.0[0m
       |       | (PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_gpcDeprecatedRemoved)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 
 [1mFILE: views/admin-intro-support.php[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 [1mFOUND 1 ERROR AFFECTING 1 LINE[0m
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 122 | [31mERROR[0m | [1mFunction get_magic_quotes_gpc() is deprecated since PHP 7.4 and removed since PHP 8.0[0m
+----------------------------------------------------------------------
+ 122 | [31mERROR[0m | [1mFunction get_magic_quotes_gpc() is deprecated since
+     |       | PHP 7.4 and removed since PHP 8.0[0m
      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_gpcDeprecatedRemoved)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------
 
-Time: 2.38 secs; Memory: 20MB
-::error::FILE: integration/wpbakery/params/sortable_list_tag.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 8 | ERROR | Using "parent" inside a class without parent is deprecated since PHP 7.4 and removed since PHP 8.0%0A   |       | (PHPCompatibility.Classes.RemovedOrphanedParent.Removed)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: lib/settings-page.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 1127 | ERROR | Function get_magic_quotes_gpc() is deprecated since PHP 7.4 and removed since PHP 8.0%0A      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_gpcDeprecatedRemoved)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A%0A%0AFILE: views/admin-intro-support.php%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A 122 | ERROR | Function get_magic_quotes_gpc() is deprecated since PHP 7.4 and removed since PHP 8.0%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_gpcDeprecatedRemoved)%0A-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%0A
+Time: 2.45 secs; Memory: 20MB
+::error::FILE: integration/wpbakery/params/sortable_list_tag.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 8 | ERROR | Using "parent" inside a class without parent is%0A   |       | deprecated since PHP 7.4 and removed since PHP 8.0%0A   |       | (PHPCompatibility.Classes.RemovedOrphanedParent.Removed)%0A----------------------------------------------------------------------%0A%0A%0AFILE: lib/settings-page.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 1127 | ERROR | Function get_magic_quotes_gpc() is deprecated since%0A      |       | PHP 7.4 and removed since PHP 8.0%0A      |       | (PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_gpcDeprecatedRemoved)%0A----------------------------------------------------------------------%0A%0A%0AFILE: views/admin-intro-support.php%0A----------------------------------------------------------------------%0AFOUND 1 ERROR AFFECTING 1 LINE%0A----------------------------------------------------------------------%0A 122 | ERROR | Function get_magic_quotes_gpc() is deprecated since%0A     |       | PHP 7.4 and removed since PHP 8.0%0A     |       | (PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_gpcDeprecatedRemoved)%0A----------------------------------------------------------------------%0A
